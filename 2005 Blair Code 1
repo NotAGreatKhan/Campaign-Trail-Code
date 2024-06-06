@@ -1,0 +1,189 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 12,
+        "fields": {
+            "year": 1948,
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>In the election of 2001, Prime Minister Blair won the “Quiet Landslide” against the weak former Opposition Leader William Hague, his once gleaming popularity with the British people having waned since the halcyon optimism of the late 1990s.</p>\n\n<p>However now, with the blissful peace of the previous decade shattered and burned in the ashes of the World Trade Centre, Blair’s remaining good will may be permanently tarnished as his agenda shifts for the new century. Peace is an ever-fading dream as the Bush Administration prepares for an invasion of Iraq - yet Blair seems all too keen to rally behind the Texan ‘Decider’. Along with this, a certain character by the name of a Dr. David Kelly may play a part in sullying greatly the Government’s already shaky position.</p>\n\n<p>Heading into the general election, the economy continues to pull itself along under the Chancellery of Gordon Brown. The Conservative Party, now likely to be steered and disciplined by establishment MP Michael Howard, is pressuring the Prime Minister hard on the rapidly enveloping conflict. In order for Blair to achieve victory: he must successfully navigate the tenuous crises engulfing his premiership, and defend from multiple flanks by the renewed Liberal Democrats and steady Conservatives sniffing Labour-red blood bleeding from the soon to be sacrifices to a global “War On Terror”. Although the economy remains a stable argument to press on, that rail of Britain may not stay aligned for long if not properly welded.</p></div>\n",
+            "image_url": "https://imgur.com/AIMbCMh.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://www.jetsimon.com/public/static/images/clifford-bridges-2000.jpg",
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">1948 Election Books and Links</h4>David McCullough - <a href=\"http://www.amazon.com/exec/obidos/ASIN/B000FC0VVQ/amhius20-20\" target=\"_blank\">Truman</a></br>Andrew E. Busch - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0700618678/amhius20-20\" target=\"_blank\">Truman's Triumphs: The 1948 Election and the Making of Postwar America</a></br>David Pietruza - <a href=\"http://www.amazon.com/exec/obidos/ASIN/140276748X/amhius20-20\" target=\"_blank\">1948: Harry Truman's Improbable Victory and the Year that Transformed America</a></br>Richard Norton Smith - <a href=\"http://www.amazon.com/exec/obidos/ASIN/067141741X/amhius20-20\" target=\"_blank\">Thomas E. Dewey and His Times</a></br><a href=\"https://www.youtube.com/watch?v=rJABgG4YDwM\" target=\"_blank\">The 1948 Democratic Convention (newsreel footage)</a></br><a href=\"https://www.youtube.com/watch?v=ogg9YsxGQm4\" target=\"_blank\">The 1948 Republican Convention (newsreel footage)</a></br><a href=\"https://www.youtube.com/watch?v=LW2ae0Fznwg\" target=\"_blank\">The 1948 Election Explained (video)</a>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "1932 - Anyone But Hoover"
+        }
+    }
+]
+
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 117,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Labour Party",
+            "election": 12,
+            "party": "Labour",
+            "state": "--",
+            "priority": 2,
+            "description": "<div style='overflow-y:scroll;height:200px;'><p>The Labour Party was founded in the early 1920s by a group of middle-class intellectuals, trade union leaders and socialists to stand as an organisation that truly stood for the working man of Britain. By 1930, it had surpassed the Liberal Party as the second largest party in the nation, standing usually in official opposition to the Conservatives.</p>\n\n<p>Whilst Labour had achieved some success in Government, such as with Clement Atlee’s Government’s NHS, they had found little success in regards to staying in power against the unified sky-blue tide of the Tories. Wether it be the Labour-SDP split under Micheal Foot, the stiff disposition of Neil Kinnock, or the economic crisis under Harold Wilson, Labour had found great difficulty in cementing a long-term rule. But that would begin to change in 1994…</p>\n\n<p>Following the ascension of the charismatic Tony Blair to leadership in 1994, the party would be completely re-aligned by a significant tack to the centre; symbolised by the removal of Clause 4 from the Party Constitution, no longer tying the party to the ultimate aim of true socialism. The ensuing landslide victories in 1997 and 2001, had vindicated Labour’s overall shift to the centre. Presently however, new challenges continue to hound the Government, both abroad, and at home.</p>\n\n<p>The future of the decade and the “Party Of The People” are now at stake, with the Prime Minister dragging a burden greater than anyone could’ve possibly predicted.</p></div>",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 1,
+            "image_url": "https://imgur.com/Q6b6Pga.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 1948 Presidential Election.</h3><p>You have become the first Republican to win the White House in 20 years. You face a dangerous foreign situation, and your domestic agenda is likely to be opposed by Democrats and conservatives alike. Conversely, the support and confidence of the Republican establishment is almost guaranteed. With luck, you might become the first two-term Republican since Ulysses Grant.</p>",
+            "electoral_loss_message": "<h3>Sorry. You have lost the 1948 Presidential Election.</h3><p>Pundits and political pros are shocked at your collapse. The second-guessing will likely come fast and furious from your party. The Republicans have now lost five Presidential elections in a row, and have no obvious standard-bearer to break the trend in 1952. As for your own career, you are still the Governor of New York, but it is pretty unlikely that you'll be given another chance to prove yourself on the national stage.</p>",
+            "no_electoral_majority_message": "<h3>No candidate captured an Electoral College majority.</h3><p>This leaves everyone in a bad situation. Segregationists from the South are demanding concessions before they will support a candidate, leaving the House deadlocked. Perhaps you can work out a deal with Truman to circumvent this, based on who has the plurality of popular and electoral votes. It's always possible that one of you could serve as the other's Vice President.</p>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 124,
+        "fields": {
+            "first_name": "Tony C. L.",
+            "last_name": "Blair",
+            "election": 12,
+            "party": "Labour",
+            "state": "Sedgefield",
+            "priority": 9,
+            "description": "'",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://imgur.com/M0EANh3.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><i>”They say I hate the party, and its traditions. I don't. I love this party. There's only one tradition I hated: losing.”</i>\n\n<p><b>Anthony Charles Lynton Blair</b> is the incumbent Prime Minister and Leader of the Labour Party, who will be seeking a third term in the office. A centrist Member of Parliament, his ascension to the Leadership opened the floodgates of political change unseen since Margaret Thatcher, and with it, a seemingly final death-blow to the party’s devotion to socialist principles.</p>\n\n<p>His first tenure itself has seen an overall success economically, with a surplus in the budget, negotiations that served to end the fuel crisis, and a revitalised NHS coupled with a low crime rate. Although the “Foot-and-Mouth” cattle disease left an ugly mark on the agricultural industry.</p>\n\n<p>As 2001 marches on to 2005 however, new challenges will emerge  particularly in the foreign scene. The horrific terrorist attacks on the World Trade Centre has given the Devil’s hand free reign to pursue a “War On Terror”, and an invasion of Iraq. The decision from Tony Blair on whether or not to serve as Bush’s acolyte will come to define the four years in between the last and current general election.</p>\n\n<p>To secure an unprecedented third term (for Labour at least), Blair must secure and effectively define the renewed focus on his agenda abroad, tout the successes of his Administration domestically, and hastily secure his twin electoral fronts from encircling him and eradicating his majority in Government - or even the Labour Government itself. He has fought with all of his might to reforge this party anew, and he <i>will stand triumphant</i> against his enemies. Even if nations are brought down with it. He will prove that he is more than simply “America’s Poodle”.</p></div>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    }
+]
+
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 80,
+        "fields": {
+            "candidate": 117,
+            "running_mate": 124
+        }
+    }
+]
+
+
+campaignTrail_temp.credits = "Saif"
+
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 30,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 12,
+        "candidates": [
+            117
+        ]
+    }
+]
+
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 12,
+        "candidates": [
+            117
+        ]
+    }
+]
+
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 12,
+        "year": 1948,
+        "is_premium": 0,
+        "display_year": "2005 U.K. - Forward Not Back"
+    }
+]
+
+
+jet_data = {
+    "headerColor": "#d03e5b",
+    "windowColor": "#f0ebeb",
+    "containerColor": "#ababab",
+    "innerWindowColor": "#eadcde",
+    "bannerImageUrl": "https://imgur.com/zYLIXrF.png",
+    "backgroundImageUrl": "https://imgur.com/njdtbNU.png",
+    "endingTextColor": "#000000",
+    "customQuote": "\"Whatever the dangers of the action we take, the dangers of inaction are far, far greater",
+    "gameTitle": "Her Majesty’s Campaign Trail ‘05"
+}
+
+
+//#startcode
+
+
+
+
+corrr = '\n              <h2>Her Majesty’s Campaign Trail ‘05</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater" - Tony Blair</em></font>\n            ';
+
+
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e5b";
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
+
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+
+$(".container")[0].style.backgroundColor = "#ababab";
+
+
+document.getElementById("header").src = "https://imgur.com/zYLIXrF.png";
+
+
+document.body.background = "https://imgur.com/njdtbNU.png";
+
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+
+
+//#endcode
