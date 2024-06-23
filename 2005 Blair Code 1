@@ -180,7 +180,7 @@ $(".container")[0].style.backgroundColor = "#ababab";
 document.getElementById("header").src = "https://imgur.com/zYLIXrF.png";
 
 
-document.body.background = "https://imgur.com/njdtbNU.png";
+document.body.background = "https://imgur.com/erWHhIe.png";
 
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
