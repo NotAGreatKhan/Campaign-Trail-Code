@@ -68,7 +68,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 124,
+        "pk": 12543,
         "fields": {
             "first_name": "Tony C. L.",
             "last_name": "Blair",
