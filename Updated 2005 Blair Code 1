@@ -45,7 +45,7 @@ campaignTrail_temp.election_json = [
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
-        "pk": 12543,
+        "pk": 117,
         "fields": {
             "first_name": "The",
             "last_name": "Labour Party",
