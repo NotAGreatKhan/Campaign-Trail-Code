@@ -439,14 +439,14 @@ jet_data = {
     "bannerImageUrl": "https://imgur.com/zYLIXrF.png",
     "backgroundImageUrl": "https://imgur.com/erWHhIe.png",
     "endingTextColor": "#000000",
-    "customQuote": "\"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"",
+    "customQuote": "\"Whatever the dangers of the action we take, the dangers of inaction are far, far greater",
     "gameTitle": "Her Majesty’s Campaign Trail ‘05"
 }
 
 //#startcode
 
 
-corrr = '\n              <h2>Her Majesty’s Campaign Trail ‘05</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
+corrr = '\n              <h2>Her Majesty’s Campaign Trail ‘05</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater</em></font>\n            ';
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e5b";
