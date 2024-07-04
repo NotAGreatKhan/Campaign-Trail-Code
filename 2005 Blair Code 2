@@ -3040,25 +3040,6 @@ campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png";
 campaignTrail_temp.candidate_last_name = "Labour";
 campaignTrail_temp.running_mate_last_name = "Blair";
 
-campaignTrail_temp.multiple_endings = true;
-endingPicker = (out, totv, aa, quickstats) => {
-
-    function setImage(url) {
-        if(url == '' || url == null) return;
-        let interval = setInterval(function () {
-            img = document.getElementsByClassName("person_image")[0];
-            if (img != null) {
-                img.src = url;
-                clearInterval(interval);
-            }
-        }, 50);
-    }
-
-    if(quickstats[0] > 418) {
-        setImage("");
-        return `<p>`;
-    }
-}
 
 
 campaignTrail_temp.jet_data = [{
@@ -3068,18 +3049,6 @@ campaignTrail_temp.jet_data = [{
         "canImage": "https://imgur.com/rEe4Wy2.png",
         "runName": "Blair",
         "runImage": "https://imgur.com/aIcQJun.png"
-    },
-    "endings_enabled": true,
-    "ending_data": {
-        "1719137132663": {
-            "id": 1719137132663,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "",
-            "endingText": "<p>",
-            "amount": "418"
-        }
     },
     "mapping_enabled": true,
     "mapping_data": {
@@ -3332,9 +3301,13 @@ if (quickstats[0]<326 && aa[0].candidate == 12543) {
 return "<h3>Sorry! You have lost the 2024 General Election for Labour!</h3><p>It's a bigger upset than the 1970 election, or even the 1992 election. Somehow, despite all odds, the Tories have managed to pull off a victory. Rishi Sunak will be retained as Prime Minister, and will likely go down in the history books as one of the greatest Conservative leaders. He'll have a lot of work to pull off an economic recover, though.</p><p>You, however, are done. Slipping behind in an election like this is unheard of, and many Labour MPs are expecting (and hoping) you will resign after this. Your often mysterious and puzzling political career has come to an end. Best of luck in any future endeavors.</p>"
 } else if (aa[0].electoral_votes < 326 && aa[1].electoral_votes < 326 && aa[2].electoral_votes < 326 && aa[3].electoral_votes < 326 && aa[4].electoral_votes < 326 && aa[5].electoral_votes < 326 && aa[6].electoral_votes < 326 && aa[7].electoral_votes < 326 && aa[8].electoral_votes < 326 && aa[9].electoral_votes < 326 && aa[10].electoral_votes < 326 && aa[11].electoral_votes < 326 && aa[12].electoral_votes < 326) {
 return "<h3>The People of Britain have returned a Hung Parliament.</h3><p>This is a shock to practically everyone. Somehow, the Conservatives have outperformed expectations - or Labour lost too much to the Liberal Democrats. In any case, just like 2010, it's highly unlikely the Lib Dems will prop up a failing, sitting government, so be prepared to have Ed Davey as Deputy Prime Minister.</p><p>Of course, if the margin is close enough, you could also form agreements with the Alliance Party of Northern Ireland - depending on how many seats they got. Regardless, the math is in your favor, and you'll be called upon first to form His Majesty's Government. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair.</p>"
-} else if (quickstats[0] >= 326 && quickstats[0]<473) {
+} else if (quickstats[0] >= 324 && quickstats[0]<340) {
 return "<h3>Congratulations! You have won the 2024 General Election for Labour!</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
-} else if (quickstats[0] >= 473 && quickstats[0]<523) {
+} else if (quickstats[0] >= 340 && quickstats[0]<355) {
+return "<h3>Congratulations! You have won the 2024 General Election for Labour!</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
+} else if (quickstats[0] >= 355 && quickstats[0]<419) {
+return "<h3>Congratulations! You have won the 2024 General Election for Labour!</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
+} else if (quickstats[0] >= 419 && quickstats[0]<531) {
 return "<h3>Congratulations! You have won the 2024 General Election for Labour!</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
 } else if (quickstats[0] >= 531) {
 return "<h3>Congratulations! You have won the 2024 General Election for Labour!</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
