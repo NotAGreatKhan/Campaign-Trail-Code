@@ -1,56 +1,14 @@
 
 tooltipList = [
 	// World Leaders
-	{searchString: "Pootie-Poot", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Vladimir_Putin_taking_the_Presidential_Oath%2C_7_May_2000.jpg/1200px-Vladimir_Putin_taking_the_Presidential_Oath%2C_7_May_2000.jpg> Vova! President Vladimir Putin of the Russian Federation"},
-	{searchString: "Hu", explanationText: "<img src=https://cdnph.upi.com/svc/sv/upi/7431552526812/2019/1/4a50f1a7e0871baafc94c7b0ff117708/On-This-Day-Hu-Jintao-becomes-president-of-China.jpg> President Hu Jintao of the P.R. of China"},
-	{searchString: "Musharraf", explanationText: "<img src=https://www.chinadaily.com.cn/english/doc/2004-12/31/xin_471201310915438318434.jpg> President Pervez Musharraf of Pakistan"},
-	{searchString: "Kim Jong Il", explanationText: "<img src=https://www.irishexaminer.com/cms_media/module_img/2268/1134356_1_seoimage4x3_ie-177777_caf8a41134ae44f7ac603f11653bdfaa.jpg> Leader Kim Jong Il of the D.P.R. of Korea"},
-	{searchString: "Kim", explanationText: "<img src=https://www.irishexaminer.com/cms_media/module_img/2268/1134356_1_seoimage4x3_ie-177777_caf8a41134ae44f7ac603f11653bdfaa.jpg> Leader Kim Jong Il of the D.P.R. of Korea"},
-	{searchString: "Saddam", explanationText: "<img src=https://www.aljazeera.com/wp-content/uploads/2006/12/1_204177_1_5.jpeg?resize=270%2C180&quality=80> President Saddam Hussein of Iraq"},
-	{searchString: "Hussein", explanationText: "<img src=https://www.aljazeera.com/wp-content/uploads/2006/12/1_204177_1_5.jpeg?resize=270%2C180&quality=80> President Saddam Hussein of Iraq"},
-	{searchString: "Hugo", explanationText: "<img src=https://progressive.org/downloads/8944/download/hugo_chavez3.jpg?cb=809883c443bf40b5b7ae6db2550bb0ba&w=731> President Hugo Chávez of Venezuela"},
-	{searchString: "Saddam Hussein", explanationText: "<img src=https://www.aljazeera.com/wp-content/uploads/2006/12/1_204177_1_5.jpeg?resize=270%2C180&quality=80> President Saddam Hussein of Iraq"},
-	{searchString: "Bashar", explanationText: "<img src=https://video-images.vice.com/articles/5d8dede582800b0008fc5b10/lede/1569584737678-AP_0806180477.jpeg?crop=0.6494xw:1xh;0.1944xw,0xh> President Bashar al-Assad of Syria"},
-	// Cabinet Officials
-	{searchString: "Vice,", explanationText: "<img src=https://i.guim.co.uk/img/media/a37d41201e3dea2d4297ee3ef4c7673654f17aa9/0_87_2048_1229/master/2048.jpg?width=620&dpr=1&s=none> Dick Cheney - Vice President of the United States"},
-	{searchString: "Light Bulb", explanationText: "<img src=https://i2.cdn.turner.com/money/galleries/2010/news/1009/gallery.energy_policy_makers.fortune/images/andrew_lundquist.jpg> Andrew D. Lundquist - National Energy Policy Development Group Executive Director"},
-	{searchString: "Brother George", explanationText: "<img src=https://www.theledger.com/gcdn/authoring/2004/06/03/NLED/ghows-LK-2e2e9f20-c92c-4651-b3c0-153c59c2fe58-ee215530.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp> George Tenet - CIA Director"},
-	{searchString: "Rummy", explanationText: "<img src=https://www.thenation.com/wp-content/uploads/2021/07/Rumsfeld-GTY.jpg> Donald Rumsfeld - Secretary of Defense and Poppy's pal"},
-	{searchString: "Turd Blossom", explanationText: "<img src=https://cdn.britannica.com/17/103117-004-5BED9F8C/Karl-Rove-2006.jpg> Karl Rove - Senior Advisor and White House Dept. Chief of Staff"},
-	{searchString: "Gerson", explanationText: "<img src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XYQEIYDB54I63GGG4N62XTTUM4.jpg> Michael Gerson - White House Speech Writer"},
-	{searchString: "Danny Boy", explanationText: "<img src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XYQEIYDB54I63GGG4N62XTTUM4.jpg> Dan Bartlett - White House Communications Director"},
-	{searchString: "Bart", explanationText: "<img src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XYQEIYDB54I63GGG4N62XTTUM4.jpg> Dan Bartlett - White House Communications Director"},
-	{searchString: "Frum", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/David_Frum.jpg/220px-David_Frum.jpg> David Frum - White House Speech Writer"},
-	{searchString: "Ari-Bob", explanationText: "<img src=https://deadline.com/wp-content/uploads/2017/07/eb49bcb4-d38a-4f42-a811-c6c38b2a77df.jpg> Ari Fleischer - White House Speech Writer"},
-	// Characters
-	{searchString: "Lipinsky", explanationText: "<img src=https://www.govtrack.us/static/legislator-photos/400243-200px.jpeg> Representative Bill Lipinski"},
-	{searchString: "Lay", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/c/ce/Ken_Lay.jpg> Kenneth Lay - Chairman of Enron"},
-	{searchString: "Rush", explanationText: "<img src=https://i.insider.com/5e3af0f25bc79c6b1e307d42?width=700&format=jpeg&auto=webp> Rush Limbaugh - Radio guy, speaks into microphones"},
-	{searchString: "Arnie", explanationText: "<img src=https://s.yimg.com/ny/api/res/1.2/GLo7nLnt3CFENLsxK6kSFw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyMA--/https://media.zenfs.com/en/sacramento_bee_mcclatchy_569/04dad80e09d2ab69ff3d5b952e5ab79b> Arnold Schwarzenegger - Macho Governor of California, was in a few movies"},
-	{searchString: "Stenholm and Kolbe", explanationText: "<img src=https://www.concordcoalition.org/wp-content/uploads/2022/12/kolbe_stenholm.jpg> Reprentatives Jim Kolbe and Charles Stenholm - The brains behind the the private account plan"},
-	{searchString: "Baucus", explanationText: "<img src=https://www.politico.com/dims4/default/54beb26/2147483647/strip/true/crop/605x328+0+0/resize/630x342!/quality/90/?url=http%3A%2F%2Fs3-origin-images.politico.com%2F2013%2F04%2F23%2F130422_max_baucus_ap_605.jpg> Senator Max Baucus - Ranking Member of the Senate Finance Committee"},
-	{searchString: "Poppy", explanationText: "<img src=https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/web-Obit-George-HW-Bush-1-1543785088.jpg> Daddy!"},
-	{searchString: "Gog and Magog", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/2/2e/Toulouse_ms_815-049v-Gog%26Magog.jpg> Son of man, direct your face against Gog, of the land of Magog, the prince, leader of Meshech and Tubal, and prophesy concerning him"},
-	{searchString: "Ann Richards", explanationText: "<img src=https://m.media-amazon.com/images/M/MV5BYjgwMWJkZDYtODgxNS00MDFmLWEyMGUtY2QyMDQzNjFmNjAyXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_.jpg> That gal from Waco"},
-	{searchString: "Hanoi Fonda", explanationText: "<img src=https://pbs.twimg.com/media/EuDm044XcAA0crj?format=jpg&name=small> Jane Fonda - Spent more time in Viet Nam than you"},
-	{searchString: "Denny", explanationText: "<img src=https://www.ocregister.com/wp-content/uploads/migration/kpn/kpn8nw-05bccongresslg.jpg?w=640> Dennis Hastert - Minority Leader and Suspected Minority Abuser"},
-	{searchString: "Denny Hastert", explanationText: "<img src=https://www.ocregister.com/wp-content/uploads/migration/kpn/kpn8nw-05bccongresslg.jpg?w=640> Dennis Hastert - Minority Leader and Suspected Minority Abuser"},
-	{searchString: "Lott", explanationText: "<img src=https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/msnbc/Components/Photos/060117/060117_lott_hmed_9a.jpg> Trent Lott - Former Senate Majority Leader, one of those devil horned southerners"},
-	{searchString: "Don Henry", explanationText: "Victim #1"},
-	{searchString: "Vince Foster", explanationText: "Victim #2"},
-	{searchString: "Ron Brown", explanationText: "Victim #3"},
-	{searchString: "5-4 decision", explanationText: "<i>Lawrence v. Texas</i> - Sodomists playing their hand."},
-	{searchString: "November's elections", explanationText: "2002 midterms where Democrats retook the House and held the Senate."},
-	{searchString: "Congressional Budget Office", explanationText: "<img src=https://historycms.house.gov/uploadedImages/Historical_Highlights/1951-2000/ford-aoc-display.jpg> Federal agency responsible for providing budgets to Congress. Economic reality unfortunately has an anti-conservative bias"},
-	{searchString: "Blue Dogs", explanationText: "<img src=https://miro.medium.com/v2/resize:fit:640/format:webp/1*0nD35VC5PPK_I6PJwwOphA.jpeg> Blue Dogs - Conservative Democrats, a dying breed"},
-	{searchString: "McNally", explanationText: "<img src=https://s3.us-east-1.amazonaws.com/files.cnas.org/thumbnails/Bob_McNally-web.jpg> Bob McNally - One of those bunches of Special Assistants to the President"},
-	{searchString: "Tangent Man", explanationText: "<img src=https://www.patriotledger.com/gcdn/authoring/2007/12/10/NPAL/ghows-WL-408cb2ad-d59c-40bc-b991-0a39a4130075-6f659e5c.jpeg?crop=1699,960,x0,y0&width=1699&height=960&format=pjpg&auto=webp> Andrew Card - Chief of Staff, your attack dog against the liberal media"},
-	{searchString: "Jesse Jackson", explanationText: "<img src=https://news.harvard.edu/wp-content/uploads/2004/02/10-jesse1-450-2.jpg> Jesse Jackson - civil rights activist and two-time presidential candidate. A critic of both Reagan and Clinton, he has become a figure of fear and scorn for many white moderates"},
-	{searchString: "Tawana Brawley", explanationText: "<img src=https://media.npr.org/assets/img/2013/08/05/tawanabrawley052way-7c58beebd613cdbbd09461ceb2a748c23bc800dd.jpg> Tawana Brawley - a young black woman from New York who, in 1987, accused four white men of kidnapping and raping her. A grand jury concluded she had not been the victim of an attack and may have sought to create the appearance of one"},
-	{searchString: "Zell", explanationText: "<img src=https://blogs.mprnews.org/newscut/files/2018/03/GettyImages-51254681.jpg> Senator Zell Miller - Your Democrat friend from Georgia and a hard-nosed, tough-on-crime conservative in the US Senate"},
-	{searchString: "Zell Miller", explanationText: "<img src=https://blogs.mprnews.org/newscut/files/2018/03/GettyImages-51254681.jpg> Senator Zell Miller - Your Democrat friend from Georgia and a hard-nosed, tough-on-crime conservative in the US Senate."},
-	{searchString: "Wolfowitz", explanationText: "<img src=https://media.defense.gov/2001/Mar/06/2002019036/1088/820/0/341857-A-ZTH38-266.jpg> Paul Wolfowitz - The Deputy Secretary of Defense. Architect and Destroyer of Nations. A true believer, in the Templar sense"},
-	{searchString: "Paul Wolfowitz", explanationText: "<img src=https://media.defense.gov/2001/Mar/06/2002019036/1088/820/0/341857-A-ZTH38-266.jpg> Paul Wolfowitz - The Deputy Secretary of Defense. Architect and Destroyer of Nations. A true believer, in the Templar sense"},
-	{searchString: "Speaker of the House", explanationText: "<img src=https://www.politico.com/dims4/default/94fb98d/2147483647/strip/true/crop/297x223+0+0/resize/630x473!/quality/90/?url=http%3A%2F%2Fs3-origin-images.politico.com%2Fnews%2F090209_gephardt_vogel.jpg> Richard Gephardt"}
+	{searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc> President George W. Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
+
+	// Government Members
+	{searchString: "Gordon,", explanationText: "<img src=https://imgur.com/o1QjCSM> James Gordon Brown, Chancellor of the Exchequer and currently MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
+	{searchString: "Gordon Brown,", explanationText: "<img src=https://imgur.com/o1QjCSM> James Gordon Brown, Chancellor of the Exchequer and currently MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
+
+        // Characters
+        {searchString: "Lipinsky", explanationText: "<img src=https://www.govtrack.us/static/legislator-photos/400243-200px.jpeg> Representative Bill Lipinski"},
+        {searchString: "Speaker of the House", explanationText: "<img src=https://www.politico.com/dims4/default/94fb98d/2147483647/strip/true/crop/297x223+0+0/resize/630x473!/quality/90/?url=http%3A%2F%2Fs3-origin-images.politico.com%2Fnews%2F090209_gephardt_vogel.jpg> Richard Gephardt"}
         
 ];
