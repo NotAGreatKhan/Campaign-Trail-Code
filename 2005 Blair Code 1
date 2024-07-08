@@ -458,7 +458,7 @@ function updateRunningMateForm() {
     const form = document.querySelector("#running_mate_form form");
     const heading = form.querySelector("h3");
     
-    heading.textContent = "Please select your candidate:";
+    heading.textContent = "Please select your party leader:";
   } catch {}
 }
 window.setInterval(updateRunningMateForm,200)
