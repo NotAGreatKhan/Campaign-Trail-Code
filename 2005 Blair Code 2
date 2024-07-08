@@ -4250,7 +4250,6 @@ style_overwrite.innerHTML =
   border-color: #94292e;
 }`
 `;
-document.head.appendChild(style_overwrite);
 
 campaignTrail_temp.candidate_image_url = "https://imgur.com/rEe4Wy2.png";
 campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png";
