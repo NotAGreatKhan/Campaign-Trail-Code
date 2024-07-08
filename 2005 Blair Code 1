@@ -443,6 +443,26 @@ jet_data = {
     "gameTitle": "Her Majesty’s Campaign Trail ‘05"
 }
 
+function updateCandidateForm() {
+  try {
+    const form = document.querySelector("#candidate_form form");
+    const heading = form.querySelector("h3");
+    
+    heading.textContent = "Please select your party:";
+  } catch {}
+}
+window.setInterval(updateCandidateForm,200)
+
+function updateRunningMateForm() {
+  try {
+    const form = document.querySelector("#running_mate_form form");
+    const heading = form.querySelector("h3");
+    
+    heading.textContent = "Please select your candidate:";
+  } catch {}
+}
+window.setInterval(updateRunningMateForm,200)
+
 //#startcode
 
 
