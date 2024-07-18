@@ -432,7 +432,7 @@ campaignTrail_temp.temp_election_list = [
 ]
 
 jet_data = {
-    "headerColor": "#d03e5b",
+    "headerColor": "#e4003b",
     "windowColor": "#f0ebeb",
     "containerColor": "#ababab",
     "innerWindowColor": "#eadcde",
@@ -469,7 +469,7 @@ window.setInterval(updateRunningMateForm,200)
 corrr = '\n              <h2>Her Majesty’s Campaign Trail ‘05</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
 
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e5b";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#e4003b";
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
 
