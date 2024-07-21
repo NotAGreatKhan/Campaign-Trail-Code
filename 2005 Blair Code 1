@@ -1,7 +1,7 @@
  let z = new MutationObserver((mutationsList, observer) => {
-      let running_mateSummary = document.querySelector("#running_mate_summary");
-      if (running_mateSummary && running_mateSummary.children[0].children[2].innerHTML != running_mateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
-          running_mateSummary.children[0].children[2].innerHTML = running_mateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
+      let runningMateSummary = document.querySelector("#running_mate_summary");
+      if (runningMateSummary && runningMateSummary.children[0].children[2].innerHTML != runningMateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
+          runningMateSummary.children[0].children[2].innerHTML = runningMateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
       }
   });
 
