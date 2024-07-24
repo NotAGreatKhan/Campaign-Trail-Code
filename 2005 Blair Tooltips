@@ -1,14 +1,14 @@
 
 tooltipList = [
 	// World Leaders
-	{searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc> President George W. Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
+	{searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png> President George Walker Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
 
 	// Government Members
-	{searchString: "Gordon,", explanationText: "<img src=https://imgur.com/o1QjCSM> James Gordon Brown, Chancellor of the Exchequer and currently MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
-	{searchString: "Gordon Brown,", explanationText: "<img src=https://imgur.com/o1QjCSM> James Gordon Brown, Chancellor of the Exchequer and currently MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
+	{searchString: "Gordon,", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
+	{searchString: "Gordon Brown,", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
 
         // Characters
-        {searchString: "Lipinsky", explanationText: "<img src=https://www.govtrack.us/static/legislator-photos/400243-200px.jpeg> Representative Bill Lipinski"},
-        {searchString: "Speaker of the House", explanationText: "<img src=https://www.politico.com/dims4/default/94fb98d/2147483647/strip/true/crop/297x223+0+0/resize/630x473!/quality/90/?url=http%3A%2F%2Fs3-origin-images.politico.com%2Fnews%2F090209_gephardt_vogel.jpg> Richard Gephardt"}
+        {searchString: "Leigh", explanationText: "<img src=https://www.govtrack.us/static/legislator-photos/400243-200px.jpeg> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
+        {searchString: "World Trade Centre", explanationText: "<img src=https://cdn.britannica.com/15/152315-050-226AA671/twin-towers-skyline-Lower-Manhattan-World-Trade-center.jpg?w=300.png> Richard Gephardt"}
         
 ];
