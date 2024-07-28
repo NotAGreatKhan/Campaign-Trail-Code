@@ -1,8 +1,3 @@
-RecReading=true;
-e=campaignTrail_temp
-if (!e.done) {
-e.done = true;
-
 let z = new MutationObserver((mutationsList, observer) => {
       let candidateSummary = document.querySelector("#candidate_summary");
       if (candidateSummary && candidateSummary.children[0].children[1].innerHTML != candidateSummary.children[0].children[1].innerHTML.replaceAll("Home State", "Constituency")) {
