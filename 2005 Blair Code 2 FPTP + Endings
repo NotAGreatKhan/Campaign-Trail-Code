@@ -13,6 +13,8 @@ distributeSeatsUK = () => {
         //if (state == 475) {return 0.1}
         //if (state == 460) {return 0}
 
+        // Lib Dem thresholds
+        if (state == 12488 && c == 12587) {return 0.35} // South East
         if (state == 12446) {return 0.099} // North East England
         if (state == 12452) {return 0.1} // North West England
         if (state == 12458) {return 0.11} // Yorkshire
@@ -43,7 +45,7 @@ distributeSeatsUK = () => {
         if (state == 12512 && c == 12739) {return 1}
         // Lib Dems in South of England
         if (state == 12494 && c == 12587) {return 4}
-        if (state == 12488 && c == 12587) {return 3}
+        if (state == 12488 && c == 12587) {return 5}
         // Lib Dems in Scotland
         if (state == 12506 && c == 12587) {return 5}       
         // Speaker in Scotland
