@@ -13,12 +13,12 @@ function addDynamicCSS() {
             position: relative;
             display: inline-block;
             cursor: pointer;
-            background-color: #d8dee8;
+            background-color: #ffd6db;
         }
 
         .mytooltip .mytooltiptext {
             width: 240px;
-            background-color: #d8dee8;
+            background-color: #ffd6db;
             color: black;
             text-align: center;
             border-radius: 6px;
