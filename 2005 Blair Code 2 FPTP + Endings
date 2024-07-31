@@ -1,1 +1,243 @@
+// For UK mod
+distributeSeatsUK = () => {
+    //Only let this function run once per game.
+    e.distributedseats;
+    if (e.distributedseats === 1) {return;}
+    e.distributedseats = 1;
 
+    // Helper functions
+    function get_state_threshold(state) {
+        // input: state id of current state
+        // output: float between 0.0 and 1.0, determining the minimum
+        // percent to pass the states' threshold
+        //if (state == 475) {return 0.1}
+        //if (state == 460) {return 0}
+
+        if (state == 12446) {return 0.099} // North East England
+        if (state == 12452) {return 0.1} // North West England
+        if (state == 12458) {return 0.11} // Yorkshire
+        if (state == 12464) {return 0.11} // East Midlands
+        if (state == 12470) {return 0.11} // West Midlands
+        if (state == 12476) {return 0.11} // East of England
+        if (state == 12482) {return 0.12} // London
+        if (state == 12488) {return 0.12} // South East
+        if (state == 12494) {return 0.12} // South West
+        if (state == 12500) {return 0.11} // Wales
+        if (state == 12506) {return 0.09} // Scotland
+        if (state == 12512) {return 0.05} // Northern Ireland
+        return 0;
+    }
+
+    function get_guarenteed_seats(state, c) {
+        // input: state id and candidate id
+        // output: int, number of seats c is guarenteed in state
+        //if (state == 466 && c == 80) {return 2}
+        //if (state == 460 && c == 80) {return 20}
+        if (state == 12500 && c == 12587) {return 1}
+        if (state == 12446 && c == 12587) {return 1}
+        if (state == 12506 && c == 12587) {return 2}
+        // Northern Ireland
+        if (state == 12512 && c == 12685) {return 9}
+        if (state == 12512 && c == 12703) {return 5}
+        if (state == 12512 && c == 12757) {return 3}
+        if (state == 12512 && c == 12739) {return 1}
+        // Lib Dems in South of England
+        if (state == 12494 && c == 12587) {return 4}
+        if (state == 12488 && c == 12587) {return 3}
+        // Speaker in Scotland
+        if (state == 12506 && c == 12775) {return 1}
+        return 0;
+    }
+
+    // zero out national seat counts
+    for(var ci = 0; ci < e.final_overall_results.length; ci++) {
+        e.final_overall_results[ci].electoral_votes = 0;
+    }
+
+    //loop over each state's results
+    for(var i = 0; i < e.final_state_results.length; i++) {
+        var state = e.final_state_results[i].state;
+        
+        // Store the index of the state in the final_state_results array.
+        var fsrIndex = e.final_state_results.map(f=>f.state).indexOf(state);
+        
+        // Store a read only copy of the state's results (for convenience)
+        var stateData = e.final_state_results[fsrIndex];
+
+        // Get the state's total popular votes and seats.
+        var tot_state_votes = e.states_json[e.states_json.map(f=>f.pk).indexOf(state)].fields.popular_votes;
+        var seats_left = e.states_json[e.states_json.map(f=>f.pk).indexOf(state)].fields.electoral_votes;
+        
+        // Begin tracking how many votes are actually competitive.
+        var competitivevotes = 0;
+
+        // First loop over each party in state
+        for(var j = 0; j < stateData.result.length; j++) {
+            var c = stateData.result[j].candidate;
+
+            // Zero out seats in that state
+            e.final_state_results[fsrIndex].result[j].electoral_votes = 0;
+
+            // Count the candidate's votes if and only if they pass the state threshold
+            var cur_c_votes = stateData.result[j].votes * 1.0;
+            var cur_c_to_totvotes = cur_c_votes / tot_state_votes
+            if (cur_c_to_totvotes >= get_state_threshold(state)) {
+                competitivevotes += cur_c_votes
+            }
+
+            // Add guarenteed seats to minor parties (greens?)
+            var guarenteed_seats = get_guarenteed_seats(state, c)
+            if (guarenteed_seats > 0) {
+                seats_left -= guarenteed_seats
+
+                // Give the party those seats in that state.
+                e.final_state_results[fsrIndex].result[j].electoral_votes += guarenteed_seats;
+
+                // Then add the seats to the national total.
+                e.final_overall_results[e.final_overall_results.map(f=>f.candidate).indexOf(c)].electoral_votes += guarenteed_seats;
+            
+            }
+
+        }
+
+        // By default, this is * 1.0. 
+
+        var votes_per_seat = (competitivevotes * 1.5) / seats_left
+
+        // Second loop: Actually add seats
+        for(var j = 0; j < stateData.result.length; j++) {
+            // Calculate what percent of the seats should be won.
+            var c = stateData.result[j].candidate;
+            var cur_c_votes = stateData.result[j].votes;
+            var seats = Math.floor(cur_c_votes * 1.0 / votes_per_seat)
+
+            // Calculate your percent of votes.
+            var cur_c_votes = stateData.result[j].votes * 1.0;
+            var cur_c_to_totvotes = cur_c_votes / tot_state_votes
+
+            // Add seats if there are any to add and you meet the threshold
+            if (seats > 0 && cur_c_to_totvotes >= get_state_threshold(state)) {
+                seats_left -= seats;
+
+                e.final_state_results[fsrIndex].result[j].electoral_votes += seats;
+                e.final_overall_results[e.final_overall_results.map(f=>f.candidate).indexOf(c)].electoral_votes += seats;
+            }
+        }
+
+        // Give any remaining seats to first place. simulate FPTP biasing towards first
+        if (seats_left > 0) {
+            var c = stateData.result[0].candidate;
+            e.final_state_results[fsrIndex].result[0].electoral_votes += seats_left;
+            e.final_overall_results[e.final_overall_results.map(f=>f.candidate).indexOf(c)].electoral_votes += seats_left;
+        }
+    }
+
+}
+
+let observerRunning = false;
+let changeChartRunning = false;
+let mcaHeightRunning = false;
+let processedNodes = new Set();
+
+async function handleMutations(mutationsList, observer) {
+    if (observerRunning) return;
+    observerRunning = true;
+
+    // stop observing
+    observer.disconnect();
+
+    // addScrollbar
+    const overallResult = document.getElementById('overall_result');
+    if (overallResult && !processedNodes.has(overallResult)) {
+        overallResult.style.overflow = 'auto';
+        const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
+        const handleClick = () => {
+            overallResult.style.overflow = 'auto';
+        };
+        buttons.forEach(button => button.addEventListener('click', handleClick));
+        processedNodes.add(overallResult);
+    }
+
+    // changechart
+    if (!changeChartRunning) {
+        changeChartRunning = true;
+        const elementIDs = ["overall_vote_statistics", "state_result_data_summary", "overall_details_container"];
+        for(let id of elementIDs) {
+            let element = document.getElementById(id);
+            if (element && !processedNodes.has(element)) {
+                let overallthing = element.innerHTML;
+                overallthing = overallthing.replace("Electoral Votes","Allocated Seats");
+                overallthing = overallthing.replace("Candidate","Party List");
+                element.innerHTML = overallthing;
+                processedNodes.add(element);
+            }
+        }
+        changeChartRunning = false;
+    }
+ // mcaHeight
+    if (!mcaHeightRunning) {
+        mcaHeightRunning = true;
+        let results_container = document.getElementById("results_container");
+        let chart = document.getElementById("myChart");
+        if (results_container && !processedNodes.has(results_container)) {
+            if (!chart){
+                results_container.style.height = "98%";
+                results_container.style.overflow = "scroll";
+            } else {
+                let mca = document.getElementById("main_content_area");
+                if (mca) {
+                    mca.style.height = "80%";
+                }
+            }
+            processedNodes.add(results_container);
+        }
+        mcaHeightRunning = false;
+    }
+
+    // Resume observing
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+    observerRunning = false;
+}
+
+let singleObserver = new MutationObserver(handleMutations);
+singleObserver.observe(document.documentElement, { childList: true, subtree: true });
+
+
+
+endingPicker = (out, totv, aa, quickstats) => {
+
+distributeSeatsUK();
+
+    //out = "win", "loss", or "tie" for your candidate
+//totv = total votes in entire election
+//aa = all final overall results data
+//quickstats = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
+if (quickstats[0]<324 && aa[0].candidate == 12565) {
+e.image = ["https://imgur.com/0bqHDaj.png"];
+return "<h3>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3><p>As David Dimbleby’s voice rings out on the television screen, all you feel is a stinging ache. The ever-optimistic shred of your mind clings to the desperate volition of at least a narrow victory being possible, but then the seats come in. Seat after seat. Colleague after colleague, falling to a new Tory government. Your ideals of a renewed, safer nation, burnt to ashes under the heels of that damn war.</p><p>What exactly went wrong? Was it Iraq? Was it those blasted attacks that Howard threw at you? Whatever it was, you have lost the election, that’s all that truly matters to your unyielding ambitious conscience. It really is over. Perhaps you were not “winning the argument that economic dynamism and social justice must go hand in hand” after all. You call Howard to congratulate him for his victory, and prepare to give your last speech outside that now-looming black door.</p><p>You will almost certainly resign as party leader following this defeat, your merit as an election-winning machine definitively exhausted after this. It is likely your loyal Chancellor Gordon Brown will succeed you for leadership, and provide a more measured (if stale) voice to the Opposition. It is unlikely that Labour will secure power again for a while, though you are aware it is premature to make hurried conclusions now.</p><p>After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those snivelling sky-blue Tories will scurry their way back into government.</p><p>You can almost feel John Smith’s sorrowful bitterness at you, as you stare into the void. Into the abyss.</p>"
+} 
+else if (aa[0].electoral_votes < 324 && aa[1].electoral_votes < 324 && aa[2].electoral_votes < 324 && aa[3].electoral_votes < 324 && aa[4].electoral_votes < 324 && aa[5].electoral_votes < 324 && aa[6].electoral_votes < 324 && aa[7].electoral_votes < 324 && aa[8].electoral_votes < 324 && aa[9].electoral_votes < 324 && aa[10].electoral_votes < 324 && aa[11].electoral_votes < 324 && aa[12].electoral_votes < 324 && aa[13].electoral_votes < 324) {
+e.image = ["https://imgur.com/ZVxm7Y7.png"];
+return "<h3>As Big Ben strikes 10, we can predict a hung Parliament for Britain, this is certainly a let down for Labour.</h3><p>It seems as though you, and the nation, share the utter surprise evident in David Dimbleby’s voice. Nobody really anticipated this outcome, save for the Liberal Democrat hopefuls wishing to finally break into government. Whilst this is certainly disappointing for national security reforms you were hoping to make, there is an avenue for continued governance with a coalition via the Liberal Democrats if you are able to form such a government. Regardless of the outcome, it is clear the LibDems are significant winners tonight, and will make governance a multi-faceted task to perform.</p><p>Your mind wonders the many possibilities that could’ve unfolded, anything, just anything, better than this folly of a deadlock. What really went wrong? Was it the Iraq War? Was it the blasted attacks hurled at you? Whatever it was, it is likely you will resign as party leader within the next 1 to 2 years at the maximum.</p><p>Just when you thought you were past the thick of it, another roadblock has been lobbed at you. Coalition negotiations are going to be tough, but depending on the seat shares, there could be a viable way out for you. Strap in, Tony, because it’s going to be quite the few days ahead of you…</p>"
+} 
+else if (quickstats[0] >= 324 && quickstats[0]<340) {
+return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.</p><p>With a majority secured, you may be able to pursue those national security reforms you have desired for so long now. With how slim your majority is in Parliament though, don’t count on it to go too smoothly. All it would take is a significant amount of whip suspensions, resignations and by-election defeats, to eradicate your majority all together. Suffice to say, Gordon Brown is definitely going to be crossing his fingers whenever you resign in the near future.</p><p>You fought with all you could, but in the end, only the most pitiful dividend was handed out. Best of luck, Prime Minister, you’re sure as hell going to need it.</p>"
+} 
+else if (quickstats[0] >= 340 && quickstats[0]<355) {
+return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a modest majority in Parliament.</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
+} 
+else if (quickstats[0] >= 355 && quickstats[0]<385) {
+return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
+} 
+else if (quickstats[0] >= 385 && quickstats[0]<419) {
+return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
+} 
+else if (quickstats[0] >= 419) {
+return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide, surpassing their record in 1997!</h3><p>This comes as no surprise to everyone, but it is still exciting for you and your party. After a nearly 15 year spell in opposition, Labour has returned from the backbenches. Returns show the Tories have been torn apart, from their own unpopularity and the Reform Splinter. It'll take awhile for them to recover their political power.</p><p>In the meantime, you have a lot on your agenda that you can pursue. Your five missions - economic growth, clean energy, NHS reform, safer streets, and economic opportunities should all be primary focuses for you. If you can pull Britain's economy back up, who knows how long you could be in office? Just don't stay too long - after all, look what happened to Tony Blair's reputation.</p>"
+} 
+else {
+return "<h3>Error Handler</h3><p>Contact No-Reading</p>"
+}
+
+}
+campaignTrail_temp.multiple_endings=true
