@@ -33,9 +33,9 @@ distributeSeatsUK = () => {
         // output: int, number of seats c is guarenteed in state
         //if (state == 466 && c == 80) {return 2}
         //if (state == 460 && c == 80) {return 20}
+        // Lib Dems elsewhere
         if (state == 12500 && c == 12587) {return 1}
         if (state == 12446 && c == 12587) {return 1}
-        if (state == 12506 && c == 12587) {return 2}
         // Northern Ireland
         if (state == 12512 && c == 12685) {return 9}
         if (state == 12512 && c == 12703) {return 5}
@@ -44,6 +44,8 @@ distributeSeatsUK = () => {
         // Lib Dems in South of England
         if (state == 12494 && c == 12587) {return 4}
         if (state == 12488 && c == 12587) {return 3}
+        // Lib Dems in Scotland
+        if (state == 12506 && c == 12587) {return 5}       
         // Speaker in Scotland
         if (state == 12506 && c == 12775) {return 1}
         return 0;
