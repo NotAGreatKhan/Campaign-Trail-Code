@@ -15,6 +15,8 @@ distributeSeatsUK = () => {
 
         // Lib Dem thresholds
         if (state == 12488 && c == 12587) {return 0.35} // South East
+        if (state == 12500 && c == 12587) {return 0.375} // Wales
+        // Thresholds
         if (state == 12446) {return 0.099} // North East England
         if (state == 12452) {return 0.1} // North West England
         if (state == 12458) {return 0.11} // Yorkshire
@@ -36,7 +38,7 @@ distributeSeatsUK = () => {
         //if (state == 466 && c == 80) {return 2}
         //if (state == 460 && c == 80) {return 20}
         // Lib Dems elsewhere
-        if (state == 12500 && c == 12587) {return 1}
+        if (state == 12500 && c == 12587) {return 4}
         if (state == 12446 && c == 12587) {return 1}
         // Northern Ireland
         if (state == 12512 && c == 12685) {return 9}
