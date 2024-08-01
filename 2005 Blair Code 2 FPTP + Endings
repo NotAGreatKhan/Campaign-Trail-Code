@@ -1,4 +1,3 @@
-// For UK mod
 distributeSeatsUK = () => {
     //Only let this function run once per game.
     e.distributedseats;
