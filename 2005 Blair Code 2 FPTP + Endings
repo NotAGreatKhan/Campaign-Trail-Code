@@ -18,6 +18,7 @@ distributeSeatsUK = () => {
         if (state == 12500 && c == 12587) {return 0.375} // Wales
         if (state == 12446 && c == 12587) {return 0.38} // North East England
         if (state == 12452 && c == 12587) {return 0.25} // North West England
+        if (state == 12458 && c == 12587) {return 0.33} // Yorkshire
         // Thresholds
         if (state == 12446) {return 0.099} // North East England
         if (state == 12452) {return 0.1} // North West England
@@ -46,6 +47,7 @@ distributeSeatsUK = () => {
         if (state == 12500 && c == 12587) {return 4} // Wales
         if (state == 12446 && c == 12587) {return 1} // North East England
         if (state == 12452 && c == 12587) {return 6} // North West England
+        if (state == 12458 && c == 12587) {return 3} // Yorkshire
         // Northern Ireland
         if (state == 12512 && c == 12685) {return 9}
         if (state == 12512 && c == 12703) {return 5}
@@ -114,7 +116,7 @@ distributeSeatsUK = () => {
 
         // By default, this is * 1.0. 
 
-        var votes_per_seat = (competitivevotes * 1.56) / seats_left
+        var votes_per_seat = (competitivevotes * 1.575) / seats_left
 
         // Second loop: Actually add seats
         for(var j = 0; j < stateData.result.length; j++) {
