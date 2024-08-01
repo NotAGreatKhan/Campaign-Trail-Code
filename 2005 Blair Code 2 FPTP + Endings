@@ -38,6 +38,8 @@ distributeSeatsUK = () => {
         // output: int, number of seats c is guarenteed in state
         //if (state == 466 && c == 80) {return 2}
         //if (state == 460 && c == 80) {return 20}
+        // Independent/Others
+        if (state == 12500 && c == 12667) {return 1} // Wales        
         // Lib Dems elsewhere
         if (state == 12482 && c == 12587) {return 8} // London
         if (state == 12500 && c == 12587) {return 4} // Wales
@@ -110,7 +112,7 @@ distributeSeatsUK = () => {
 
         // By default, this is * 1.0. 
 
-        var votes_per_seat = (competitivevotes * 1.5) / seats_left
+        var votes_per_seat = (competitivevotes * 1.56) / seats_left
 
         // Second loop: Actually add seats
         for(var j = 0; j < stateData.result.length; j++) {
