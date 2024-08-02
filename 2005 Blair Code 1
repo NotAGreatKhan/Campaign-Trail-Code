@@ -103,7 +103,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#4848a8",
             "secondary_color_hex": null,
             "is_active": 0,
-            "image_url": "https://https://imgur.com/0bqHDaj.png",
+            "image_url": "https://imgur.com/5bwxgqy.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -126,7 +126,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#ffb752",
             "secondary_color_hex": null,
             "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "image_url": "https://imgur.com/J2gXM1R.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -378,7 +378,7 @@ campaignTrail_temp.running_mate_json = [
     }
 ]
 
-campaignTrail_temp.credits = "Saif"
+campaignTrail_temp.credits = "u/No-Reading9991, with writing help from u/Milothebest222, and coding help from u/ItsAstronomical"
 
 HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f"];
 HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party"];
