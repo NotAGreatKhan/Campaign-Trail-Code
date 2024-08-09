@@ -120,7 +120,7 @@ distributeSeatsUK = () => {
 
         // By default, this is * 1.0. 
 
-        var votes_per_seat = (competitivevotes * 1.575) / seats_left
+        var votes_per_seat = (competitivevotes * 1.6) / seats_left
 
         // Second loop: Actually add seats
         for(var j = 0; j < stateData.result.length; j++) {
@@ -242,10 +242,10 @@ else if (quickstats[0] >= 324 && quickstats[0]<340) {
 return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.</p><p>With a majority secured, you may be able to pursue those national security reforms you have desired for so long now. With how slim your majority is in Parliament though, don’t count on it to go too smoothly. All it would take is a significant amount of whip suspensions, resignations and by-election defeats, to eradicate your majority all together. Suffice to say, Gordon Brown is definitely going to be crossing his fingers whenever you resign in the near future.</p><p>You fought with all you could, but in the end, only the most pitiful dividend was handed out. Best of luck, Prime Minister, you’re sure as hell going to need it.</p>"
 } 
 else if (quickstats[0] >= 340 && quickstats[0]<355) {
-return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a modest majority in Parliament.</h3><p> </p><p> </p><p> </p>"
+return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a modest majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, you let out a small, and reserved, sigh of relief. You have retained your position as PM. Even in spite of this, you have bled a lot of support to the Liberal Democrats and Conservatives. A lackluster performance, by your standards. At least for now, you can rest easy knowing your majority can survive some resignations here and there.</p><p>With this majority secured, you may be able to pursue those national security reforms you have desired for so long now. Though with how controversial they’ll be, don’t bet all of your cards on it going smoothly with your modest majority. Gordon Brown will definitely be crossing his fingers whenever you resign.</p><p>You fought through the battle with all you could, but only a tepid endorsement of your agenda was given to you. Best of luck, Prime Minister, because you sure as hell are going to need it.</p>"
 } 
 else if (quickstats[0] >= 355 && quickstats[0]<385) {
-return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3><p> </p><p> </p>"
+return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, you let out perhaps the biggest sigh of relief of your premiership. Despite the significant bleeding of support, you have held on to your position as PM, and can at least somewhat securely pursue the reforms you have been hoping to achieve.</p><p>  </p>"
 } 
 else if (quickstats[0] >= 385 && quickstats[0]<419) {
 return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3><p> </p><p> </p>"
