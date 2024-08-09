@@ -258,9 +258,12 @@ return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won,
 else if (quickstats[0] >= 385 && quickstats[0]<419) {
 return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3><p> </p><p> </p>"
 } 
-else if (quickstats[0] >= 419) {
+else if (quickstats[0] >= 419 && quickstats[0]<500) {
 return "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide, surpassing their record in 1997!</h3><p> </p><p> </p>"
 } 
+else if (quickstats[0] >= 500) {
+return "<h3>A Conversation between Prime Minister Tony Blair, and Communications Director Alastair Campbell. March 17, 2003, the day before the anti-war vote.</h3><p>[ALASTAIR]: This isn’t looking good, Tony, the upcoming commons vote, it could be the biggest rebellion of MPs in our government’s history.</p><p>[BLAIR]: Even more than the one for the Higher Education Act?</p><p>[ALASTAIR]: Even more than that.</p><p>[BLAIR]: There has to be something we can do to stem the flow of this… I hate to say this, but we may need to use that <i>other</i> intelligence MI5 was able to collate.</p><p>[ALASTAIR]: You mean, Operation BIGSHOT?</p><p>[BLAIR]: I’m afraid so, Alastair.</p><p>[ALASTAIR]: Damnit, it shouldn’t have even come close to this. I’ll get Peter in here, and talk it with him, should get the job done.</p><p>[BLAIR]: Good, we have to win this thing. For us. For Labour.</p><p>-End of Transcription.</p>"
+}
 else {
 return "<h3>Error Handler</h3><p>Contact No-Reading</p>"
 }
