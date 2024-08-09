@@ -12,6 +12,10 @@ distributeSeatsUK = () => {
         //if (state == 475) {return 0.1}
         //if (state == 460) {return 0}
 
+        // Conservative thresholds
+        if (state == 12506 && c == 12565) {return 0.25} // Scotland
+        if (state == 12446 && c == 12565) {return 0.275} // North East England
+        if (state == 12452 && c == 12565) {return 0.35} // North West England 
         // Lib Dem thresholds
         if (state == 12482 && c == 12587) {return 0.325} // London
         if (state == 12488 && c == 12587) {return 0.35} // South East 
@@ -42,6 +46,10 @@ distributeSeatsUK = () => {
         // output: int, number of seats c is guarenteed in state
         //if (state == 466 && c == 80) {return 2}
         //if (state == 460 && c == 80) {return 20}
+        // Conservatives
+        if (state == 12506 && c == 12565) {return 1} // Scotland
+        if (state == 12446 && c == 12565) {return 1} // North East England
+        if (state == 12452 && c == 12565) {return 8} // North West England        
         // Independent/Others
         if (state == 12500 && c == 12667) {return 1} // Wales        
         // Lib Dems elsewhere
