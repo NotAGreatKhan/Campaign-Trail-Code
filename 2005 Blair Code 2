@@ -1240,7 +1240,7 @@ campaignTrail_temp.states_json = [
             "name": "North East England",
             "abbr": "NEE",
             "electoral_votes": 30,
-            "popular_votes": 1098200,
+            "popular_votes": 1098176,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
@@ -1254,7 +1254,7 @@ campaignTrail_temp.states_json = [
             "name": "North West England",
             "abbr": "NWE",
             "electoral_votes": 76,
-            "popular_votes": 2945000,
+            "popular_votes": 2944990,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
@@ -1268,7 +1268,7 @@ campaignTrail_temp.states_json = [
             "name": "Yorkshire and the Humber",
             "abbr": "YH",
             "electoral_votes": 56,
-            "popular_votes": 2119200,
+            "popular_votes": 2119232,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
@@ -1282,7 +1282,7 @@ campaignTrail_temp.states_json = [
             "name": "East Midlands",
             "abbr": "EM",
             "electoral_votes": 44,
-            "popular_votes": 2015300,
+            "popular_votes": 2015282,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
@@ -1296,7 +1296,7 @@ campaignTrail_temp.states_json = [
             "name": "West Midlands",
             "abbr": "WM",
             "electoral_votes": 59,
-            "popular_votes": 2423200,
+            "popular_votes": 2423216,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
@@ -1310,7 +1310,7 @@ campaignTrail_temp.states_json = [
             "name": "East of England",
             "abbr": "EE",
             "electoral_votes": 56,
-            "popular_votes": 2649800,
+            "popular_votes": 2649813,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
@@ -1324,7 +1324,7 @@ campaignTrail_temp.states_json = [
             "name": "London",
             "abbr": "LN",
             "electoral_votes": 74,
-            "popular_votes": 2919100,
+            "popular_votes": 2919130,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
@@ -1338,7 +1338,7 @@ campaignTrail_temp.states_json = [
             "name": "South East",
             "abbr": "SE",
             "electoral_votes": 83,
-            "popular_votes": 3901100,
+            "popular_votes": 3901148,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
@@ -1352,7 +1352,7 @@ campaignTrail_temp.states_json = [
             "name": "South West",
             "abbr": "SW",
             "electoral_votes": 51,
-            "popular_votes": 2553300,
+            "popular_votes": 2553315,
             "poll_closing_time": 120,
             "winner_take_all_flg": 0,
             "election": 12
