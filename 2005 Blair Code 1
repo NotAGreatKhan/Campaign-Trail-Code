@@ -502,6 +502,7 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 //#endcode
 
+//Music Player
 RecReading=true
 
   // Select the node that will be observed for mutations
@@ -860,7 +861,7 @@ RecReading=true
       display: flex;
       flex-direction: row;
     height:191px;
-      background-Image: url("https://i.imgur.com/Ok791w6.png");
+      background-Image: url("https://imgur.com/XrTiekb.png");
     }
 
     #display-box {
