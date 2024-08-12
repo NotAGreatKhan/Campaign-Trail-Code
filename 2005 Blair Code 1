@@ -493,6 +493,34 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 //#endcode
 
+campaignTrail_temp.banner1 = createBanner("https://i.imgur.com/drW9qWE.png", containerRef, true);
+campaignTrail_temp.banner2 = createBanner("https://i.imgur.com/8VfpinM.png", containerRef, false);
+
+campaignTrail_temp.global_parameter_json[0].fields.question_count = 26
+
+RecReading=true
+
+// Select the node that will be observed for mutations
+const windowsAdvisorTargetNode = document.getElementById("game_window");
+
+// Options for the observer (which mutations to observe)
+const windowsAdvisorConfig = { attributes: true, childList: true, subtree: true };
+
+// Callback function to execute when mutations are observed
+const callback = (mutationList, observer) => {
+    visitWindow = document.getElementsByClassName("overlay_window")[0];
+
+    if(visitWindow == null || visitWindow.classList.contains("done")) {
+        return;
+    }
+    visitWindow.classList.add("done");
+    visitWindow.classList.add("window");
+    let titleBar = visitWindow.querySelector("h3");
+    titleBar.classList.add("title-bar");
+    titleBar.classList.add("title-bar-text")
+    titleBar.style.paddingLeft = "3px";
+};
+
 class Song {
   constructor(title, artist, coverLink, audioLink) {
     this.title = title;
