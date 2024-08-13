@@ -608,10 +608,10 @@ RecReading=true
     );
 
     const song2 = new Song(
-      "Arrest the President",
-      "Ice Cube",
-      "https://i.imgur.com/BBOMLln.png",
-      "https://audio.jukehost.co.uk/c2cWOAnjSfzh2YI3OhW923cClDn3Iqic"
+      "Dare",
+      "Gorillaz",
+      "https://imgur.com/UQuUPyB.png",
+      "https://audio.jukehost.co.uk/dkV6Ta0nfgVVkLV2AXgM3ZegryZhRpP4"
     );
 
     const song3 = new Song(
