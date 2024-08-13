@@ -677,7 +677,7 @@ RecReading=true
 
   const infoContainer = document.createElement("div");
   infoContainer.id = "info-container";
-  infoContainer.style.backgroundImage = "url('https://i.imgur.com/BB1ejv6.png')";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/AxVh28b.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
   infoContainer.style.color = "white"; // Set text color to white
 
