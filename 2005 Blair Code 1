@@ -679,7 +679,7 @@ RecReading=true
   infoContainer.id = "info-container";
   infoContainer.style.backgroundImage = "url('https://imgur.com/AxVh28b.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
-  infoContainer.style.color = "white"; // Set text color to white
+  infoContainer.style.color = "black"; // Set text color to white
 
   const songInfo = document.createElement("div");
   songInfo.id = "song-info";
