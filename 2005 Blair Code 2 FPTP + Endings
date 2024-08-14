@@ -68,8 +68,6 @@ distributeSeatsUK = () => {
         // Lib Dems in South of England
         if (state == 12494 && c == 12587) {return 4} // South West
         if (state == 12488 && c == 12587) {return 5} // South East
-        // Lib Dems in Scotland
-        if (state == 12506 && c == 12587) {return 5}       
         // Speaker in Scotland
         if (state == 12506 && c == 12775) {return 1}
         return 0;
