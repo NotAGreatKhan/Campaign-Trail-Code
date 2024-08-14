@@ -679,7 +679,7 @@ RecReading=true
   infoContainer.id = "info-container";
   infoContainer.style.backgroundImage = "url('https://imgur.com/AxVh28b.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
-  infoContainer.style.color = "black"; // Set text color to white
+  infoContainer.style.color = "black"; // Set text color to black
 
   const songInfo = document.createElement("div");
   songInfo.id = "song-info";
@@ -769,7 +769,7 @@ RecReading=true
     volumeContainer.id = "volume-container";
 
   const volumeLabel = document.createElement("img");
-  volumeLabel.src = "https://i.imgur.com/0BJYsXt.png";
+  volumeLabel.src = "https://imgur.com/jTBkGdi.png";
   volumeLabel.alt = "Volume";
   volumeContainer.appendChild(volumeLabel);
 
