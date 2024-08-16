@@ -769,7 +769,7 @@ RecReading=true
     volumeContainer.id = "volume-container";
 
   const volumeLabel = document.createElement("img");
-  volumeLabel.src = "https://imgur.com/8Q3rhzM.png";
+  volumeLabel.src = "https://imgur.com/FHoumEj.png";
   volumeLabel.alt = "Volume";
   volumeContainer.appendChild(volumeLabel);
 
