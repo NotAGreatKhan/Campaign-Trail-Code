@@ -622,49 +622,17 @@ RecReading=true
     );
 
     const song4 = new Song(
-      "Troubled Times",
-      "Green Day",
+      "Beautiful Day",
+      "U2",
       "https://i.imgur.com/unNGqOH.png",
-      "https://audio.jukehost.co.uk/CeVuU7lokNQcuzCWWR2cJ6I6qJuSffzT"
-    );
-
-    const song5 = new Song(
-      "Is This the Life We Really Want",
-      "Roger Waters",
-      "https://i.imgur.com/3NCgTGN.png",
-      "https://audio.jukehost.co.uk/ng58tjZYGQSrNKrGgmH5pFp4wobiaUPe"
-    );
-
-    const song6 = new Song(
-      "The Kids are Alt-Right",
-      "Bad Religion",
-      "https://i.imgur.com/KzlAiiO.png",
-      "https://audio.jukehost.co.uk/f9HDWEKzRO8NtI5ePOLgh0Nn6pz4nXmQ"
-    );
-
-    const song7 = new Song(
-      "Vigilante Man",
-      "Glen Hansard",
-      "https://i.imgur.com/SvUzGQH.png",
-      "https://audio.jukehost.co.uk/MasC7udHqmabHGNLCJdlD9sSHIx9gpnV"
-    );
-
-    const song8 = new Song(
-      "Real American",
-      "Rick Derringer",
-      "https://i.imgur.com/CalYXXW.png",
-      "https://audio.jukehost.co.uk/5aZ2PQqoNvJN2kPuLCaOoGSHmkmI95lk"
+      "https://audio.jukehost.co.uk/SQ9HYrmYdUCLfa2OGjAzAe19sMZqTrvf"
     );
 
     playlist.addSong(song1);
     playlist.addSong(song2);
     playlist.addSong(song3);
     playlist.addSong(song4);
-    playlist.addSong(song5);
-    playlist.addSong(song6);
-    playlist.addSong(song7);
-    playlist.addSong(song8);
-
+    
     const playerContainer = document.createElement("div");
     playerContainer.id = "player";
 
