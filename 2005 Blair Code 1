@@ -601,10 +601,10 @@ RecReading=true
 
 
     const song1 = new Song(
-      "Little Dark Age",
-      "MGMT",
+      "Speed of Sound",
+      "Coldplay",
       "https://i.imgur.com/d2ctDiz.png",
-      "https://audio.jukehost.co.uk/LQF5RB2PrVcCeObaqQafC2FTwkysnWdT"
+      "https://audio.jukehost.co.uk/fg8AMzl2ricrBYaQRJkt3HTLqvRl25jo"
     );
 
     const song2 = new Song(
