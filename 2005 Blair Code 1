@@ -603,7 +603,7 @@ RecReading=true
     const song1 = new Song(
       "Speed of Sound",
       "Coldplay",
-      "https://i.imgur.com/d2ctDiz.png",
+      "https://imgur.com/Ub1c0zt.png",
       "https://audio.jukehost.co.uk/fg8AMzl2ricrBYaQRJkt3HTLqvRl25jo"
     );
 
@@ -624,7 +624,7 @@ RecReading=true
     const song4 = new Song(
       "Beautiful Day",
       "U2",
-      "https://i.imgur.com/unNGqOH.png",
+      "https://imgur.com/8jjrwrt.png",
       "https://audio.jukehost.co.uk/SQ9HYrmYdUCLfa2OGjAzAe19sMZqTrvf"
     );
 
