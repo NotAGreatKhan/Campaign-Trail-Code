@@ -615,10 +615,10 @@ RecReading=true
     );
 
     const song3 = new Song(
-      "This is America",
-      "Childish Gambino",
-      "https://i.imgur.com/cBtRj9K.png",
-      "https://audio.jukehost.co.uk/ZaGEkUEbz72UP4IMnC01mwSxwqX4gen6"
+      "I Bet You Look Good On The Dancefloor",
+      "Arctic Monkeys",
+      "https://imgur.com/FmyjhSy.png",
+      "https://audio.jukehost.co.uk/oBdrXNL6r7pOeNAPj6BWr8Zagc7CBurS"
     );
 
     const song4 = new Song(
