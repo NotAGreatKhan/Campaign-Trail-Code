@@ -829,7 +829,7 @@ RecReading=true
       display: flex;
       flex-direction: row;
     height:191px;
-      background-Image: url("https://imgur.com/1U5J4Zb.png");
+      background-Image: url("https://imgur.com/uDXpBKg.png");
     }
 
     #display-box {
