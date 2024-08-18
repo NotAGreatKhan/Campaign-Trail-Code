@@ -674,7 +674,7 @@ RecReading=true
 
   const prevButton = document.createElement("img");
   prevButton.id = "prevButton";
-  prevButton.src = "https://i.imgur.com/imIqTEA.png";
+  prevButton.src = "https://imgur.com/QyN8Ojs.png";
   prevButton.alt = "Previous";
   controls.appendChild(prevButton);
 
@@ -686,7 +686,7 @@ RecReading=true
 
   const nextButton = document.createElement("img");
   nextButton.id = "nextButton";
-  nextButton.src = "https://i.imgur.com/7TtaN04.png";
+  nextButton.src = "https://imgur.com/Ztr2WXV.png";
   nextButton.alt = "Next";
   controls.appendChild(nextButton);
 
