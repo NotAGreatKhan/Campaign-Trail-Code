@@ -696,10 +696,10 @@ RecReading=true
     const audio = document.getElementById("audio");
     if (audio.paused) {
       audio.play();
-      playPauseButton.src = "https://imgur.com/kRt7zCn.png"; // Set the pause image
+      playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the pause image
     } else {
       audio.pause();
-      playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the play image
+      playPauseButton.src = "https://imgur.com/kRt7zCn.png"; // Set the play image
     }
   });
 
