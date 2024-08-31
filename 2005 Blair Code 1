@@ -61,7 +61,7 @@ function updateHeader() {
     gameHeader.setAttribute("id", "modifiedHeader");
   }
 }
-window.setInterval(removeCandidateSummary,10)
+window.setInterval(removeRunningMateSummary,10)
   
 let z = new MutationObserver((mutationsList, observer) => {
     let runningmateSummary = document.querySelector("#runningmate_summary");
