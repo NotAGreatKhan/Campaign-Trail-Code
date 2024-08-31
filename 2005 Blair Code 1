@@ -21,36 +21,34 @@ function updateCandidateForm() {
   formobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
 
-var formobserver = new MutationObserver(updateCandidateForm);
+var formobserver = new MutationObserver(updateRunningMatedateForm);
 formobserver.observe(document.documentElement, { childList: true, subtree: true });
 
+function removeRunningMateSummary() {
+try {
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+} catch {}
+}
+window.setInterval(removeRunningMateSummary,200)
+
 function updateRunningMateForm() {
-  runformobserver.disconnect();
+  formobserver.disconnect();
   const heading = document.querySelector("#running_mate_form form h3");
 
   if (heading) {
     heading.textContent = "Please select your party leader:";
   }
-  runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+  formobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
 
-var runformobserver = new MutationObserver(updateRunningMateForm);
-runformobserver.observe(document.documentElement, { childList: true, subtree: true });
-
-function removeCandidateSummary() {
-   sumobserver.disconnect();
-  const candidateSummary = document.querySelector("#candidate_summary");
-  if (candidateSummary) {
-    const ulList = candidateSummary.querySelector("ul");
-    if (ulList) {
-      candidateSummary.removeChild(ulList);
-    }
-  }
-  sumobserver.observe(document.body, {childList: true,subtree: true});
-}
-
-var sumobserver = new MutationObserver(removeCandidateSummary);
-sumobserver.observe(document.body, {childList: true,subtree: true});
+var formobserver = new MutationObserver(updateRunningMateForm);
+formobserver.observe(document.documentElement, { childList: true, subtree: true });
 
 function removeRunningMateSummary() {
    sumobserver.disconnect();
