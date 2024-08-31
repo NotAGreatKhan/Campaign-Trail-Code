@@ -25,6 +25,7 @@ function updateRunningMateForm() {
   } catch {}
 }
 }
+}
 window.setInterval(updateRunningMateForm,200)
 
 let z = new MutationObserver((mutationsList, observer) => {
