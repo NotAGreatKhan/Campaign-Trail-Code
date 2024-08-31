@@ -1,3 +1,30 @@
+function updateCandidateForm() {
+  try {
+    const form = document.querySelector("#candidate_form form");
+    const heading = form.querySelector("h3");
+    
+    heading.textContent = "Please select your party:";
+  } catch {}
+}
+window.setInterval(updateCandidateForm,200)
+
+function updateRunningMateForm() {
+  try {
+    const form = document.querySelector("#running_mate_form form");
+    const heading = form.querySelector("h3");
+    
+    heading.textContent = "Please select your party leader:";
+  } catch {}
+}
+window.setInterval(updateRunningMateForm,200)
+
+let z = new MutationObserver((mutationsList, observer) => {
+    let candidateSummary = document.querySelector("#candidate_summary");
+    if (candidateSummary && candidateSummary.children[0].children[2].innerHTML != candidateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
+        candidateSummary.children[0].children[2].innerHTML = candidateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
+    }
+});
+
 campaignTrail_temp.global_parameter_json = [
     {
         "model": "campaign_trail.global_parameter",
@@ -457,26 +484,6 @@ jet_data = {
     "customQuote": "\"Whatever the dangers of the action we take, the dangers of inaction are far, far greater\"",
     "gameTitle": "Her Majesty’s Campaign Trail"
 }
-
-function updateCandidateForm() {
-  try {
-    const form = document.querySelector("#candidate_form form");
-    const heading = form.querySelector("h3");
-    
-    heading.textContent = "Please select your party:";
-  } catch {}
-}
-window.setInterval(updateCandidateForm,200)
-
-function updateRunningMateForm() {
-  try {
-    const form = document.querySelector("#running_mate_form form");
-    const heading = form.querySelector("h3");
-    
-    heading.textContent = "Please select your party leader:";
-  } catch {}
-}
-window.setInterval(updateRunningMateForm,200)
 
 //#startcode
 
