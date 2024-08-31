@@ -61,7 +61,14 @@ function updateHeader() {
     gameHeader.setAttribute("id", "modifiedHeader");
   }
 }
-
+window.setInterval(removeCandidateSummary,10)
+  
+let z = new MutationObserver((mutationsList, observer) => {
+    let candidateSummary = document.querySelector("#candidate_summary");
+    if (candidateSummary && candidateSummary.children[0].children[2].innerHTML != candidateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
+        candidateSummary.children[0].children[2].innerHTML = candidateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
+    }
+});
 var headerobserver = new MutationObserver(updateHeader);
 headerobserver.observe(document.documentElement, { childList: true, subtree: true });
 
