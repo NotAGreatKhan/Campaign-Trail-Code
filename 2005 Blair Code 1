@@ -64,9 +64,9 @@ function updateHeader() {
 window.setInterval(removeCandidateSummary,10)
   
 let z = new MutationObserver((mutationsList, observer) => {
-    let candidateSummary = document.querySelector("#candidate_summary");
-    if (candidateSummary && candidateSummary.children[0].children[2].innerHTML != candidateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
-        candidateSummary.children[0].children[2].innerHTML = candidateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
+    let runningmateSummary = document.querySelector("#runningmate_summary");
+    if (runningmateSummary && runningmateSummary.children[0].children[2].innerHTML != runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
+        runningmateSummary.children[0].children[2].innerHTML = runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
     }
 });
 var headerobserver = new MutationObserver(updateHeader);
