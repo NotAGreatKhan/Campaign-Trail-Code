@@ -49,6 +49,18 @@ function removeCandidateSummary() {
   sumobserver.observe(document.body, {childList: true,subtree: true});
 }
 
+function removeRunningMateSummary() {
+   sumobserver.disconnect();
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
 var sumobserver = new MutationObserver(removeCandidateSummary);
 sumobserver.observe(document.body, {childList: true,subtree: true});
 
