@@ -55,18 +55,19 @@ distributeSeatsUK = () => {
         // Lib Dems elsewhere
         if (state == 12464 && c == 12587) {return 1} // East Midlands
         if (state == 12482 && c == 12587) {return 8} // London
-        if (state == 12500 && c == 12587) {return 4} // Wales
+        if (state == 12500 && c == 12587) {return 3} // Wales
         if (state == 12446 && c == 12587) {return 1} // North East England
-        if (state == 12452 && c == 12587) {return 6} // North West England
-        if (state == 12458 && c == 12587) {return 3} // Yorkshire
-        if (state == 12476 && c == 12587) {return 3} // East of England
+        if (state == 12452 && c == 12587) {return 5} // North West England
+        if (state == 12458 && c == 12587) {return 2} // Yorkshire
+        if (state == 12476 && c == 12587) {return 2} // East of England
+        if (state == 12506 && c == 12587) {return 2} // Scotland        
         // Northern Ireland
         if (state == 12512 && c == 12685) {return 9}
         if (state == 12512 && c == 12703) {return 5}
         if (state == 12512 && c == 12757) {return 3}
         if (state == 12512 && c == 12739) {return 1}
         // Lib Dems in South of England
-        if (state == 12494 && c == 12587) {return 4} // South West
+        if (state == 12494 && c == 12587) {return 3} // South West
         if (state == 12488 && c == 12587) {return 5} // South East
         // Speaker in Scotland
         if (state == 12506 && c == 12775) {return 1}
