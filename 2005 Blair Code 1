@@ -21,7 +21,7 @@ function updateCandidateForm() {
   formobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
 
-var formobserver = new MutationObserver(updateRunningMatedateForm);
+var formobserver = new MutationObserver(updateCandidateForm);
 formobserver.observe(document.documentElement, { childList: true, subtree: true });
 
 function removeRunningMateSummary() {
@@ -35,20 +35,35 @@ try {
   }
 } catch {}
 }
-window.setInterval(removeRunningMateSummary,200)
+window.setInterval(removeCandidateSummary,200)
 
 function updateRunningMateForm() {
-  formobserver.disconnect();
+  runformobserver.disconnect();
   const heading = document.querySelector("#running_mate_form form h3");
 
   if (heading) {
     heading.textContent = "Please select your party leader:";
   }
-  formobserver.observe(document.documentElement, { childList: true, subtree: true });
+  runformobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
 
-var formobserver = new MutationObserver(updateRunningMateForm);
-formobserver.observe(document.documentElement, { childList: true, subtree: true });
+var runformobserver = new MutationObserver(updateRunningMateForm);
+runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeCandidateSummary() {
+   sumobserver.disconnect();
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
 
 function removeRunningMateSummary() {
    sumobserver.disconnect();
@@ -74,7 +89,7 @@ function updateHeader() {
     gameHeader.setAttribute("id", "modifiedHeader");
   }
 }
-window.setInterval(removeCandidateSummary,10)
+window.setInterval(removeRunningMateSummary,10)
   
 let z = new MutationObserver((mutationsList, observer) => {
     let runningmateSummary = document.querySelector("#runningmate_summary");
