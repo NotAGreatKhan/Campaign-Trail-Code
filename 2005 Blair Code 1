@@ -1,3 +1,11 @@
+RecReading=true;
+e=campaignTrail_temp
+if (!e.done) {
+e.done = true;
+
+if(document.getElementById("position-display")==null)
+{
+
 function updateCandidateForm() {
   try {
     const form = document.querySelector("#candidate_form form");
@@ -15,6 +23,7 @@ function updateRunningMateForm() {
     
     heading.textContent = "Please select your party leader:";
   } catch {}
+}
 }
 window.setInterval(updateRunningMateForm,200)
 
