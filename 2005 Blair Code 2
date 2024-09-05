@@ -4469,6 +4469,8 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
+const style_overwrite = document.createElement("style");
+
 if(ans == 12802 || ans == 12803){
     campaignTrail_temp.candidate_last_name = 'Labour';
     campaignTrail_temp.candidate_image_url = 'https://imgur.com/rEe4Wy2.png';
