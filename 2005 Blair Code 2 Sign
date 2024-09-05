@@ -1,1 +1,13 @@
-
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #c44558;
+  border-color: #94292e;
+}`
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #c44558;
+  border-color: #94292e;
+}
+`;
+document.head.appendChild(style_overwrite);
