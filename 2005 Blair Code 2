@@ -4469,20 +4469,20 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-document.head.appendChild(customStyling);
+//document.head.appendChild(customStyling);
 
-if(ans == 12802 || ans == 12803){
-    campaignTrail_temp.candidate_last_name = 'Labour';
-    campaignTrail_temp.candidate_image_url = 'https://imgur.com/rEe4Wy2.png';
-    campaignTrail_temp.running_mate_last_name = 'Blair';
-    campaignTrail_temp.running_mate_image_url = 'https://imgur.com/aIcQJun.png';  
-}
-if(ans == 12797 || ans == 12798){
-    campaignTrail_temp.candidate_last_name = 'Chancellor';
-    campaignTrail_temp.candidate_image_url = 'https://imgur.com/W039QAR.png';
-    campaignTrail_temp.running_mate_last_name = 'Brown';
-    campaignTrail_temp.running_mate_image_url = 'https://imgur.com/6tjeQpZ.png';
-}
+//if(ans == 12802 || ans == 12803){
+    //campaignTrail_temp.candidate_last_name = 'Labour';
+    //campaignTrail_temp.candidate_image_url = 'https://imgur.com/rEe4Wy2.png';
+    //campaignTrail_temp.running_mate_last_name = 'Blair';
+    //campaignTrail_temp.running_mate_image_url = 'https://imgur.com/aIcQJun.png';  
+//}
+//if(ans == 12797 || ans == 12798){
+    //campaignTrail_temp.candidate_last_name = 'Chancellor';
+    //campaignTrail_temp.candidate_image_url = 'https://imgur.com/W039QAR.png';
+    //campaignTrail_temp.running_mate_last_name = 'Brown';
+    //campaignTrail_temp.running_mate_image_url = 'https://imgur.com/6tjeQpZ.png';
+//}
 
 campaignTrail_temp.candidate_image_url = "https://imgur.com/rEe4Wy2.png";
 campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png";
