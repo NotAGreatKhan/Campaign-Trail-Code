@@ -569,7 +569,8 @@ style_overwrite.innerHTML =
 `#campaign_sign {
   background-color: #d03e54;
   border-color: #9a2323;
-}
+}`
+;
 
 corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
 
