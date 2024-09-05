@@ -572,6 +572,8 @@ style_overwrite.innerHTML =
 }`
 ;
 
+document.head.appendChild(style);
+
 corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
 
 
