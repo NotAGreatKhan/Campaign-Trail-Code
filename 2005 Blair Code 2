@@ -4469,7 +4469,7 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-const style_overwrite = document.createElement("style");
+document.head.appendChild(customStyling);
 
 if(ans == 12802 || ans == 12803){
     campaignTrail_temp.candidate_last_name = 'Labour';
