@@ -4470,9 +4470,7 @@ campaignTrail_temp.answer_feedback_json = [
 ]
 
 document.head.appendChild(customStyling); 
-campaignTrail_temp.running_mate_image_url="https://i.imgur.com/0btK87v.jpg"
-campaignTrail_temp.running_mate_last_name = 'Jefferson';
-    
+  
     if(ans == 12802 || ans == 12803){
         campaignTrail_temp.candidate_last_name = 'Labour';
         campaignTrail_temp.candidate_image_url = 'https://imgur.com/rEe4Wy2.png';
