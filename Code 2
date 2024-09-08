@@ -10,7 +10,30 @@ function getQuestionNumberFromPk(pk) {
 
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
-
+    if(ans == 12802){
+        campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.running_mate_last_name = "Blair";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png"  
+    }
+    if(ans == 12803){
+        campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.running_mate_last_name = "Blair";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png"  
+    }    
+    if(ans == 12797){
+        campaignTrail_temp.candidate_last_name = "Chancellor";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+    }
+    if(ans == 12798){
+        campaignTrail_temp.candidate_last_name = "Chancellor";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+    }
 }
 
 campaignTrail_temp.questions_json = [
