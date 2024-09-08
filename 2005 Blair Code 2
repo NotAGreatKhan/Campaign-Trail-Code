@@ -4508,9 +4508,6 @@ style_overwrite.innerHTML =
 .inner_window_question h3 {
 background-color: #ffcfcf;
 }
-.overlay_window h3 {
-background-color: #ffcfcf;
-}`
 ;
 document.head.appendChild(style_overwrite);
 
