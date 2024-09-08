@@ -201,6 +201,7 @@ tooltipList = [
   {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
   {searchString: "World Trade Centre", explanationText: "<img src=https://cdn.britannica.com/15/152315-050-226AA671/twin-towers-skyline-Lower-Manhattan-World-Trade-center.jpg?w=300.png> The centre of financial trade and power of New York City, and a symbol of American pride."},
   {searchString: "Cheney", explanationText: "<img src=> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."}
+
 ];
 
 campaignTrail_temp.election_json = [
