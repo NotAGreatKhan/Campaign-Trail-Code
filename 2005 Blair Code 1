@@ -650,16 +650,16 @@ addDynamicCSS();
 
 tooltipList = [
  // World Leaders
- {searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png> President George Walker Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
+ {searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png><br> President George Walker Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
 
  // Government Members
- {searchString: "Gordon", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
- {searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
+ {searchString: "Gordon", explanationText: "<img src=https://imgur.com/o1QjCSM.png><br> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
+ {searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/o1QjCSM.png><br> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
 
   // Characters
-  {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
-  {searchString: "World Trade Centre", explanationText: "<img src=https://cdn.britannica.com/15/152315-050-226AA671/twin-towers-skyline-Lower-Manhattan-World-Trade-center.jpg?w=300.png> The centre of financial trade and power of New York City, and a symbol of American pride."},
-  {searchString: "Cheney", explanationText: "<img src=> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
+  {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png><br> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
+  {searchString: "World Trade Centre", explanationText: "<img src=https://cdn.britannica.com/15/152315-050-226AA671/twin-towers-skyline-Lower-Manhattan-World-Trade-center.jpg?w=300.png><br> The centre of financial trade and power of New York City, and a symbol of American pride."},
+  {searchString: "Cheney", explanationText: "<img src=><br> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
 
 ];
 
