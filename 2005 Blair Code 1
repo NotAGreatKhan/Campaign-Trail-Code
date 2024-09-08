@@ -586,65 +586,60 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 //#endcode
 
+
 function addDynamicCSS() {
-    var css = `
+  var css = `
+      .inner_window_question h3 .mytooltip{
+          background-color: #ffb7b7;
+      }
 
-        label {
-          display:inline;
-        }
+      .mytooltip {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          background-color: #ffd0d0;
+      }
 
-        .inner_window_question h3 .mytooltip{
-            background-color: lightred;
-        }
+      .mytooltip .mytooltiptext {
+          width: 240px;
+          background-color: #ffd0d0;
+          color: black;
+          text-align: center;
+          border-radius: 6px;
+          padding: 10px;
+          position: absolute;
+          z-index: 99;
+          bottom: 20%;
+          left: 20%;
+          margin-left: -90px;
+          opacity: 0;
+          transition: opacity 0.3s;
+          border: 1px solid black;
+          pointer-events: none;
+          font-size: 13px !important;
+          line-height: 1.5em !important;
+          font-weight: normal !important;
+          font-style: normal !important;
+      }
 
-        .mytooltip {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            background-color: #f2baba;
-        }
+      .mytooltip .mytooltiptext img {
+          max-width: 240px;
+          height: auto;
+      }
 
-        .mytooltip .mytooltiptext {
-            width: 240px;
-            background-color: #f2baba;
-            color: black;
-            text-align: center;
-            border-radius: 6px;
-            padding: 10px;
-            position: absolute;
-            z-index: 99;
-            bottom: 20%;
-            left: 20%;
-            margin-left: -90px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            border: 1px solid black;
-            pointer-events: none;
-            font-size: 13px !important;
-            line-height: 1.5em !important;
-            font-weight: normal !important;
-            font-style: normal !important;
-        }
+      .mytooltip:hover .mytooltiptext {
+          opacity: 1;
+          transition-delay: 0.5s;
+      }
+  `;
 
-        .mytooltip .mytooltiptext img {
-            max-width: 240px;
-            height: auto;
-        }
-
-        .mytooltip:hover .mytooltiptext {
-            opacity: 1;
-            transition-delay: 0.5s;
-        }
-    `;
-
-    var styleElem = document.createElement('style');
-    styleElem.type = 'text/css';
-    
-    styleElem.appendChild(document.createTextNode(css));
-    
-    document.head.appendChild(styleElem);
+  var styleElem = document.createElement('style');
+  styleElem.type = 'text/css';
+  
+  styleElem.appendChild(document.createTextNode(css));
+  
+  document.head.appendChild(styleElem);
 }
-
 
 addDynamicCSS();
 
@@ -659,8 +654,7 @@ tooltipList = [
   // Characters
   {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png><br> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
   {searchString: "World Trade Centre", explanationText: "<img src=https://cdn.britannica.com/15/152315-050-226AA671/twin-towers-skyline-Lower-Manhattan-World-Trade-center.jpg?w=300.png><br> The centre of financial trade and power of New York City, and a symbol of American pride."},
-  {searchString: "Cheney", explanationText: "<img src=><br> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
-
+  {searchString: "Cheney", explanationText: "<img src=><br> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."}
 ];
 
 //Music Player
