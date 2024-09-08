@@ -12,13 +12,13 @@ cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
     if(ans == 12802){
         campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/rEe4Wy2.png"
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/C4DzgyF.png"
         campaignTrail_temp.running_mate_last_name = "Blair";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png"  
     }
     if(ans == 12803){
         campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/rEe4Wy2.png"
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/C4DzgyF.png"
         campaignTrail_temp.running_mate_last_name = "Blair";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png"  
     }    
@@ -4515,7 +4515,7 @@ campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
     "banner_data": {
         "canName": "Labour",
-        "canImage": "https://imgur.com/rEe4Wy2.png",
+        "canImage": "https://imgur.com/C4DzgyF.png",
         "runName": "Blair",
         "runImage": "https://imgur.com/aIcQJun.png"
     },
