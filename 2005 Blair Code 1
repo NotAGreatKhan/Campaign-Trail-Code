@@ -692,27 +692,34 @@ RecReading=true
     );
 
     const song2 = new Song(
+      "Everybody's Changing",
+      "Keane",
+      "https://imgur.com/0RaJ0HF.png",
+      "https://audio.jukehost.co.uk/Ysn3OPRVDFsW2PsSX6jJEhhCvpaljOn6"
+    );
+
+    const song3 = new Song(
       "Dare",
       "Gorillaz",
       "https://imgur.com/UQuUPyB.png",
       "https://audio.jukehost.co.uk/dkV6Ta0nfgVVkLV2AXgM3ZegryZhRpP4"
     );
 
-    const song3 = new Song(
+    const song4 = new Song(
       "Take Me Out",
       "Franz Ferdinand",
       "https://imgur.com/OzJKvQg.png",
       "https://audio.jukehost.co.uk/spAFN999Bmwgy77DCFSrF1bCy2ab0bik"
     );
     
-    const song4 = new Song(
+    const song5 = new Song(
       "I Bet You Look Good On The Dancefloor",
       "Arctic Monkeys",
       "https://imgur.com/FmyjhSy.png",
       "https://audio.jukehost.co.uk/oBdrXNL6r7pOeNAPj6BWr8Zagc7CBurS"
     );
 
-    const song5 = new Song(
+    const song6 = new Song(
       "Beautiful Day",
       "U2",
       "https://imgur.com/8jjrwrt.png",
@@ -726,6 +733,7 @@ RecReading=true
     playlist.addSong(song3);
     playlist.addSong(song4);
     playlist.addSong(song5);
+    playlist.addSong(song6);
 
     const playerContainer = document.createElement("div");
     playerContainer.id = "player";
