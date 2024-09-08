@@ -4509,7 +4509,7 @@ style_overwrite.innerHTML =
 background-color: #ffcfcf;
 }
 .overlay_window h3 {
-background-color: #ff8c8c;
+background-color: #ffcfcf;
 }`
 ;
 document.head.appendChild(style_overwrite);
