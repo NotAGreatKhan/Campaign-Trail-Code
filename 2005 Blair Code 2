@@ -4494,7 +4494,7 @@ campaignTrail_temp.answer_feedback_json = [
 ]
 
 
-campaignTrail_temp.candidate_image_url = "https://imgur.com/rEe4Wy2.png";
+campaignTrail_temp.candidate_image_url = "https://imgur.com/C4DzgyF.png";
 campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png";
 campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
 campaignTrail_temp.running_mate_last_name = "Blair";
