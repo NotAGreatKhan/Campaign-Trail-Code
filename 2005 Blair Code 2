@@ -4504,13 +4504,14 @@ style_overwrite.innerHTML =
 `#campaign_sign {
   background-color: #c44558;
   border-color: #94292e;
-}`
-style_overwrite.innerHTML = 
-`#campaign_sign {
-  background-color: #c44558;
-  border-color: #94292e;
 }
-`;
+.inner_window_question h3 {
+background-color: #ffcfcf;
+}
+.overlay_window h3 {
+background-color: #ff8c8c;
+}`
+;
 document.head.appendChild(style_overwrite);
 
 campaignTrail_temp.jet_data = [{
