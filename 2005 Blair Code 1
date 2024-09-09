@@ -143,7 +143,38 @@ campaignTrail_temp.election_json = [
             "creator": "Dan Bryan",
             "display_year": "2005 UK - Forward Not Back"
         }
-    }
+    },
+    {
+        "model": "campaign_trail.election",
+        "pk": 11,
+        "fields": {
+            "year": 2000,
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>The year 1997 marked the greatest rupturing of the British political dynamic in two decades. The Conservative Party collapsing under its own fatigue, sleaze, and incessant infighting. Labour, ushered in on a promise of revitalising the country; that is what they are fervently wedded to accomplish.</p>\n\n<p>The task ahead of them contains no shortage of risks and perils. The dogged IRA in Northern Ireland continue to make peace little more than a distant dream, that dream must now become finalised with Blair at the helm. The economy — still reeling from Black Wednesday in 1992 — must be steered back into path, in order for newly sworn in Chancellor Brown to make a “fairer Britain for all”. But if they can steer the great ship of state back on course, <i>if</i> they can, then whatever poor sap becomes the Opposition Leader shall provide little strain to be dispatched.</p>\n\n<p>With such a mountainous task ahead, the general election will shape up to be referendum on the governance of New Labour. Prime Minister Blair, Chancellor Gordon Brown, and the whole party, cannot afford to lose their mandate that they fought for over 18 years to achieve…</p></div>\n",
+            "image_url": "https://imgur.com/KK8GCoE.png",
+            "winning_electoral_vote_number": 330,
+            "advisor_url": "https://imgur.com/QjvmIad.png",
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">1948 Election Books and Links</h4>David McCullough - <a href=\"http://www.amazon.com/exec/obidos/ASIN/B000FC0VVQ/amhius20-20\" target=\"_blank\">Truman</a></br>Andrew E. Busch - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0700618678/amhius20-20\" target=\"_blank\">Truman's Triumphs: The 1948 Election and the Making of Postwar America</a></br>David Pietruza - <a href=\"http://www.amazon.com/exec/obidos/ASIN/140276748X/amhius20-20\" target=\"_blank\">1948: Harry Truman's Improbable Victory and the Year that Transformed America</a></br>Richard Norton Smith - <a href=\"http://www.amazon.com/exec/obidos/ASIN/067141741X/amhius20-20\" target=\"_blank\">Thomas E. Dewey and His Times</a></br><a href=\"https://www.youtube.com/watch?v=rJABgG4YDwM\" target=\"_blank\">The 1948 Democratic Convention (newsreel footage)</a></br><a href=\"https://www.youtube.com/watch?v=ogg9YsxGQm4\" target=\"_blank\">The 1948 Republican Convention (newsreel footage)</a></br><a href=\"https://www.youtube.com/watch?v=LW2ae0Fznwg\" target=\"_blank\">The 1948 Election Explained (video)</a>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "2001 UK - Ambitions For Britain"
+        }
+     }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 12,
+        "year": 2005,
+        "is_premium": 0,
+        "display_year": "2005 UK - Forward Not Back"
+    },
+    {
+        "id": 11,
+        "year": 2001,
+        "is_premium": 0,
+        "display_year": "2001 UK - Ambitions For Britain"
+    },
 ]
 
 campaignTrail_temp.candidate_json = [
