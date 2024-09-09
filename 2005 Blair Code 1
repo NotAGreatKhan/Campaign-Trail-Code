@@ -174,7 +174,7 @@ campaignTrail_temp.temp_election_list = [
         "year": 2001,
         "is_premium": 0,
         "display_year": "2001 UK - Ambitions For Britain"
-    },
+    }
 ]
 
 campaignTrail_temp.candidate_json = [
