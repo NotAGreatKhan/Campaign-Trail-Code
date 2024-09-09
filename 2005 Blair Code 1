@@ -137,7 +137,7 @@ campaignTrail_temp.election_json = [
             "image_url": "https://imgur.com/AIMbCMh.png",
             "winning_electoral_vote_number": 324,
             "advisor_url": "https://imgur.com/QjvmIad.png",
-            "recommended_reading": "",
+            "recommended_reading": "This election has no further reading yet.",
             "has_visits": 1,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
             "creator": "Dan Bryan",
@@ -153,10 +153,6 @@ campaignTrail_temp.election_json = [
             "image_url": "https://imgur.com/KK8GCoE.png",
             "winning_electoral_vote_number": 330,
             "advisor_url": "https://imgur.com/QjvmIad.png",
-            "recommended_reading": "",
-            "has_visits": 1,
-            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
-            "creator": "Dan Bryan",
             "display_year": "2001 UK - Ambitions For Britain"
         }
      }
