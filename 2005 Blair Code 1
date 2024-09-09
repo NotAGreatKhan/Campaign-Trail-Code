@@ -148,7 +148,7 @@ campaignTrail_temp.election_json = [
         "model": "campaign_trail.election",
         "pk": 11,
         "fields": {
-            "year": 2000,
+            "year": 1948,
             "summary": "<div style='overflow-y:scroll;height:200px;'><p>The year 1997 marked the greatest rupturing of the British political dynamic in two decades. The Conservative Party collapsing under its own fatigue, sleaze, and incessant infighting. Labour, ushered in on a promise of revitalising the country; that is what they are fervently wedded to accomplish.</p>\n\n<p>The task ahead of them contains no shortage of risks and perils. The dogged IRA in Northern Ireland continue to make peace little more than a distant dream, that dream must now become finalised with Blair at the helm. The economy — still reeling from Black Wednesday in 1992 — must be steered back into path, in order for newly sworn in Chancellor Brown to make a “fairer Britain for all”. But if they can steer the great ship of state back on course, <i>if</i> they can, then whatever poor sap becomes the Opposition Leader shall provide little strain to be dispatched.</p>\n\n<p>With such a mountainous task ahead, the general election will shape up to be referendum on the governance of New Labour. Prime Minister Blair, Chancellor Gordon Brown, and the whole party, cannot afford to lose their mandate that they fought for over 18 years to achieve…</p></div>\n",
             "image_url": "https://imgur.com/KK8GCoE.png",
             "winning_electoral_vote_number": 330,
