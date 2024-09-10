@@ -132,7 +132,7 @@ campaignTrail_temp.election_json = [
         "model": "campaign_trail.election",
         "pk": 12,
         "fields": {
-            "year": 1948,
+            "year": 2005,
             "summary": "<div style='overflow-y:scroll;height:200px;'><p>In the election of 2001, Prime Minister Blair won the “Quiet Landslide” against the weak former Opposition Leader William Hague, his once gleaming popularity with the British people having waned since the halcyon optimism of the late 1990s.</p>\n\n<p>However now, with the blissful peace of the previous decade shattered and burned in the ashes of the World Trade Centre, Blair’s remaining goodwill may be permanently tarnished as his agenda shifts for the new century. Peace is an ever-fading dream as the Bush Administration prepares for an invasion of Iraq - yet Blair seems all too keen to rally behind the Texan ‘Decider’. Along with this, a certain character by the name of a Dr. David Kelly may play a part in sullying greatly the Government’s already shaky position.</p>\n\n<p>Heading into the general election, the economy continues to pull itself along under the Chancellery of Gordon Brown. The Conservative Party, now likely to be steered and disciplined by establishment MP Michael Howard, is pressuring the Prime Minister hard on the issues of the day. In order for Blair to achieve victory: he must successfully navigate the tenuous crises engulfing his premiership, and defend from multiple flanks by the renewed Liberal Democrats and steady Conservatives sniffing Labour-red blood bleeding from the soon to be sacrifices to a global “War On Terror”. Although the economy remains a stable argument to press on, that rail of Britain may not stay aligned for long if not properly welded.</p></div>\n",
             "image_url": "https://imgur.com/AIMbCMh.png",
             "winning_electoral_vote_number": 324,
@@ -148,7 +148,7 @@ campaignTrail_temp.election_json = [
         "model": "campaign_trail.election",
         "pk": 16,
         "fields": {
-            "year": 1916,
+            "year": 2001,
             "summary": "<div style='overflow-y:scroll;height:200px;'><p>The year 1997 marked the greatest rupturing of the British political dynamic in two decades. The Conservative Party collapsing under its own fatigue, sleaze, and incessant infighting. Labour, ushered in on a promise of revitalising the country; that is what they are fervently wedded to accomplish.</p>\n\n<p>The task ahead of them contains no shortage of risks and perils. The dogged IRA in Northern Ireland continue to make peace little more than a distant dream, that dream must now become finalised with Blair at the helm. The economy — still reeling from Black Wednesday in 1992 — must be steered back into path, in order for newly sworn in Chancellor Brown to make a “fairer Britain for all”. But if they can steer the great ship of state back on course, <i>if</i> they can, then whatever poor sap becomes the Opposition Leader shall provide little strain to be dispatched.</p>\n\n<p>With such a mountainous task ahead, the general election will shape up to be referendum on the governance of New Labour. Prime Minister Blair, Chancellor Gordon Brown, and the whole party, cannot afford to lose their mandate that they fought for over 18 years to achieve…</p></div>\n",
             "image_url": "https://imgur.com/KK8GCoE.png",
             "winning_electoral_vote_number": 330,
@@ -161,13 +161,13 @@ campaignTrail_temp.election_json = [
 campaignTrail_temp.temp_election_list = [
     {
         "id": 12,
-        "year": 1948,
+        "year": 2005,
         "is_premium": 0,
         "display_year": "2005 UK - Forward Not Back"
     },
     {
         "id": 16,
-        "year": 1916,
+        "year": 2001,
         "is_premium": 0,
         "display_year": "2001 UK - Ambitions For Britain"
     }
