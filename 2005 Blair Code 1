@@ -128,7 +128,19 @@ campaignTrail_temp.global_parameter_json = [
 ]
 
 campaignTrail_temp.election_json = [
-    {
+     {
+        "model": "campaign_trail.election",
+        "pk": 12,
+        "fields": {
+            "year": 2010,
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>New Labour is drifting further and further away from the idealism and hope that brought it into the halls of Number 10. A bitter and divisive saga between Blair and Brown has finally ripped apart and fizzled out, with Brown replacing his former boss’ job in the hot seat.</p>\n\n<p>Gordon Brown wishes to carve out his own agenda for the future — with many challenges from the opposition this time though: Lower wealth inequality, a stable economy. Progress in the social fabric of the country. The housing bubble appears to have other plans though…</p>\n\n<p>Brown will not only need to stave off rumours and attacks in his government, but simultaneously lead the domestic and global effort to combat the 2008 financial crash. Anything less would scratch the end of the New Labour dream that he has toiled for over a decade to manifest. All the while staving off the modernising and youthful David Cameron; with Nick Clegg to his other flank.</p>\n\n<p>They said it would be impossible. To make economic stability and social dynamism go hand in hand, to win 3 successive elections for Labour. And now, he’ll win a fourth — no matter how much blood, sweat and tears he must sacrifice.</p></div>\n",
+            "image_url": "https://imgur.com/Tps0Miw.png",
+            "winning_electoral_vote_number": 326,
+            "advisor_url": "https://imgur.com/QjvmIad.png",
+            "display_year": "2010 UK - A Future Fair For All"
+        }
+     },
+     {
         "model": "campaign_trail.election",
         "pk": 12,
         "fields": {
@@ -171,6 +183,12 @@ campaignTrail_temp.election_json = [
 ]
 
 campaignTrail_temp.temp_election_list = [
+    {
+        "id": 12,
+        "year": 2010,
+        "is_premium": 0,
+        "display_year": "2010 UK - A Future Fair For All"
+    },
     {
         "id": 12,
         "year": 2005,
