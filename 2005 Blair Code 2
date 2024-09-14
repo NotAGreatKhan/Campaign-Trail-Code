@@ -4081,7 +4081,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3493,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": 1
+            "global_multiplier": 0.8
         }
     },
     {
@@ -5562,8 +5562,8 @@ campaignTrail_temp.answer_feedback_json = [
 
 campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png";
 campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png";
-campaignTrail_temp.candidate_last_name = "Labour";
-campaignTrail_temp.running_mate_last_name = "Blair";
+campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
+campaignTrail_temp.running_mate_last_name = "Tony Blair";
 
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
@@ -5583,9 +5583,9 @@ document.head.appendChild(style_overwrite);
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
     "banner_data": {
-        "canName": "Labour",
+        "canName": "<small>Prime Minister</small>",
         "canImage": "https://imgur.com/0VBvUlO.png",
-        "runName": "Blair",
+        "runName": "Tony Blair",
         "runImage": "https://imgur.com/aIcQJun.png"
     },
     "mapping_enabled": true,
