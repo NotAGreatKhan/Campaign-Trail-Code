@@ -1,4 +1,4 @@
-if(ans == 12807){
+    if(ans == 12807){
         campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
         campaignTrail_temp.running_mate_last_name = "Tony Blair";
