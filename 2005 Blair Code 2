@@ -49,6 +49,22 @@ cyoAdventure = function (a) {
     if(ans == 12865){
         document.body.background = "https://imgur.com/erWHhIe.png"    
     }
+    if(ans == 12862){
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.running_mate_last_name = "Blair";
+    }
+    if(ans == 12863){
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.running_mate_last_name = "Blair";
+    }
+    if(ans == 12864){
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.running_mate_last_name = "Blair";
+    }
+    if(ans == 12865){
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.running_mate_last_name = "Blair";
+    }
 }
 
 campaignTrail_temp.questions_json = [
