@@ -22,4 +22,19 @@
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
     }
+    if(ans == 3493){
+        document.body.background = "https://imgur.com/tjqFeeK.png"    
+    }
+    if(ans == 12862){
+        document.body.background = "https://imgur.com/erWHhIe.png"    
+    }
+    if(ans == 12863){
+        document.body.background = "https://imgur.com/erWHhIe.png"    
+    }
+    if(ans == 12864){
+        document.body.background = "https://imgur.com/erWHhIe.png"    
+    }
+    if(ans == 12865){
+        document.body.background = "https://imgur.com/erWHhIe.png"    
+    }
 }
