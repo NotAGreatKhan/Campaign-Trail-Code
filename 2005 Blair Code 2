@@ -26,6 +26,7 @@ resignation += 1;
 if(ans == 12834){
 resignation += 1;
 }
+}
 
 if((resignation >=7)){
 campaignTrail_temp.questions_json[14] = {
