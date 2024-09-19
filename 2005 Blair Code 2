@@ -28,7 +28,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }   
 }
 
-if(resignation >=7){
+if(resignation >= 7){
 campaignTrail_temp.questions_json[14] = {
 "model": "campaign_trail.question",
 "pk": 100000,
