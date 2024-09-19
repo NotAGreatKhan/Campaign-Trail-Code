@@ -5884,6 +5884,24 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "You unveil your manifesto in Central Glasgow. Whilst Scotland has traditionally been Labour country, the emergence of the SNP, and the LibDems, could change that. This should help in keeping them down."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100003,
+        "fields": {
+            "answer": 100001,
+            "candidate": 12543,
+            "answer_feedback": "You did your best Tony. Now though, it’s time for a new man to lead the country. Probably not a surprise as to who it will be."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100004,
+        "fields": {
+            "answer": 100002,
+            "candidate": 12543,
+            "answer_feedback": "It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now."
+        }
     }
 ]
 
