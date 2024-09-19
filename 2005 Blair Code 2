@@ -1201,8 +1201,6 @@ campaignTrail_temp.answers_json = [
             "description": "The South isn’t particularly known as Labour country, but with our stance on Britain's foreign agenda, we could crack that region with some targeted visits. Maybe we can build some new ground there."
         }
     },
-
-    
     {
         "model": "campaign_trail.answer",
         "pk": 100001,
