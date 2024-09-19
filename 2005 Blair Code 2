@@ -5,25 +5,7 @@ var Resign = 0;
 campaignTrail_temp.cyoa = true
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
-if(ans == 12542){
-Resign += 1;
-}
-if(ans == 12798){
-Resign += 1;
-}
-if(ans == 12814){
-Resign += 1;
-}
-if(ans == 12819){
-Resign += 1;
-}
-if(ans == 12824){
-Resign += 1;
-}
-if(ans == 12828){
-Resign += 1;
-}
-if(ans == 12834){
+if(ans == 12542 || ans == 12798 || ans == 12814| | ans == 12819 || ans == 12824 || ans == 12828 || ans == 12834){
 Resign += 1;
 }
 }
