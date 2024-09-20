@@ -696,57 +696,62 @@ function createBanner(url, sibling, isLeft) {
 }
 
 function addDynamicCSS() {
-  var css = `
-      .inner_window_question h3 .mytooltip{
-          background-color: #ffb7b7;
-      }
+    var css = `
 
-      .mytooltip {
-          position: relative;
-          display: inline-block;
-          cursor: pointer;
-          background-color: #ffd0d0;
-      }
+        label {
+          display:inline-block;
+        }
 
-      .mytooltip .mytooltiptext {
-          width: 240px;
-          background-color: #ffd0d0;
-          color: black;
-          text-align: center;
-          border-radius: 6px;
-          padding: 10px;
-          position: absolute;
-          z-index: 99;
-          bottom: 20%;
-          left: 20%;
-          margin-left: -90px;
-          opacity: 0;
-          transition: opacity 0.3s;
-          border: 1px solid black;
-          pointer-events: none;
-          font-size: 13px !important;
-          line-height: 1.5em !important;
-          font-weight: normal !important;
-          font-style: normal !important;
-      }
+        .inner_window_question h3 .mytooltip{
+            background-color: lightskyblue;
+        }
 
-      .mytooltip .mytooltiptext img {
-          max-width: 240px;
-          height: auto;
-      }
+        .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background-color: #d8dee8;
+        }
 
-      .mytooltip:hover .mytooltiptext {
-          opacity: 1;
-          transition-delay: 0.5s;
-      }
-  `;
+        .mytooltip .mytooltiptext {
+            width: 240px;
+            background-color: #d8dee8;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 99;
+            bottom: 20%;
+            left: 20%;
+            margin-left: -90px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid black;
+            pointer-events: none;
+            font-size: 13px !important;
+            line-height: 1.5em !important;
+            font-weight: normal !important;
+            font-style: normal !important;
+        }
 
-  var styleElem = document.createElement('style');
-  styleElem.type = 'text/css';
-  
-  styleElem.appendChild(document.createTextNode(css));
-  
-  document.head.appendChild(styleElem);
+        .mytooltip .mytooltiptext img {
+            max-width: 240px;
+            height: auto;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+    `;
+
+    var styleElem = document.createElement('style');
+    styleElem.type = 'text/css';
+    
+    styleElem.appendChild(document.createTextNode(css));
+    
+    document.head.appendChild(styleElem);
 }
 
 addDynamicCSS();
