@@ -868,64 +868,64 @@ coverElement.id = "cover";
 displayBox.appendChild(coverElement);
 
 const infoContainer = document.createElement("div");
-infoContainer.id = "info-container";
-infoContainer.style.backgroundImage = "url('https://i.ibb.co/M73CBjW/overlay.png')";
-infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
-infoContainer.style.color = "white"; // Set text color to white
+  infoContainer.id = "info-container";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/AxVh28b.png')";
+  infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
+  infoContainer.style.color = "black"; // Set text color to black
 
-const songInfo = document.createElement("div");
-songInfo.id = "song-info";
+  const songInfo = document.createElement("div");
+  songInfo.id = "song-info";
 
-const titleElement = document.createElement("h3");
-titleElement.id = "title";
-titleElement.style.fontWeight = 'normal'; // Make it normal as per previous request
-songInfo.appendChild(titleElement);
+  const titleElement = document.createElement("h3");
+  titleElement.id = "title";
+  titleElement.style.fontWeight = 'normal'; // Make it normal as per previous request
+  songInfo.appendChild(titleElement);
 
-const artistElement = document.createElement("p");
-artistElement.id = "artist";
-songInfo.appendChild(artistElement);
+  const artistElement = document.createElement("p");
+  artistElement.id = "artist";
+  songInfo.appendChild(artistElement);
 
-infoContainer.appendChild(songInfo);
-displayBox.appendChild(infoContainer);
+  infoContainer.appendChild(songInfo);
+  displayBox.appendChild(infoContainer);
 
-playerContainer.appendChild(displayBox);
+  playerContainer.appendChild(displayBox);
 
-const controlsContainer = document.createElement("div");
-controlsContainer.id = "controls-container";
+  const controlsContainer = document.createElement("div");
+  controlsContainer.id = "controls-container";
 
-const controls = document.createElement("div");
-controls.id = "controls";
+  const controls = document.createElement("div");
+  controls.id = "controls";
 
-const prevButton = document.createElement("img");
-prevButton.id = "prevButton";
-prevButton.src = "https://i.ibb.co/gMyNq5T/back.png";
-prevButton.alt = "Previous";
-controls.appendChild(prevButton);
+  const prevButton = document.createElement("img");
+  prevButton.id = "prevButton";
+  prevButton.src = "https://imgur.com/QyN8Ojs.png";
+  prevButton.alt = "Previous";
+  controls.appendChild(prevButton);
 
-const playPauseButton = document.createElement("img");
-playPauseButton.id = "playPauseButton";
-playPauseButton.src = "https://i.ibb.co/5TwzzWN/pause.png"; // Set the default play image
-playPauseButton.alt = "Play/Pause";
-controls.appendChild(playPauseButton);
+  const playPauseButton = document.createElement("img");
+  playPauseButton.id = "playPauseButton";
+  playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the default play image
+  playPauseButton.alt = "Play/Pause";
+  controls.appendChild(playPauseButton);
 
-const nextButton = document.createElement("img");
-nextButton.id = "nextButton";
-nextButton.src = "https://i.ibb.co/5Rx0cYt/forward.png";
-nextButton.alt = "Next";
-controls.appendChild(nextButton);
+  const nextButton = document.createElement("img");
+  nextButton.id = "nextButton";
+  nextButton.src = "https://imgur.com/Ztr2WXV.png";
+  nextButton.alt = "Next";
+  controls.appendChild(nextButton);
 
-controlsContainer.appendChild(controls);
+  controlsContainer.appendChild(controls);
 
-playPauseButton.addEventListener("click", function () {
-  const audio = document.getElementById("audio");
-  if (audio.paused) {
-    audio.play();
-    playPauseButton.src = "https://i.ibb.co/5TwzzWN/pause.png"; // Set the pause image
-  } else {
-    audio.pause();
-    playPauseButton.src = "https://i.ibb.co/G5TsX12/play.png"; // Set the play image
-  }
-});
+  playPauseButton.addEventListener("click", function () {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+      playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the pause image
+    } else {
+      audio.pause();
+      playPauseButton.src = "https://imgur.com/kRt7zCn.png"; // Set the play image
+    }
+  });
 
 nextButton.addEventListener("click", function () {
   playlist.playNext();
@@ -961,7 +961,7 @@ prevButton.addEventListener("click", function () {
 	volumeContainer.id = "volume-container";
 
 const volumeLabel = document.createElement("img");
-volumeLabel.src = "https://i.ibb.co/9Gkg5Qp/volume.png";
+volumeLabel.src = "https://imgur.com/FHoumEj.png";
 volumeLabel.alt = "Volume";
 volumeContainer.appendChild(volumeLabel);
 
