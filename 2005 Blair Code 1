@@ -1053,7 +1053,7 @@ style.textContent = `
     display: flex;
     flex-direction: row;
 	height:191px;
-    background-Image: url("https://i.ibb.co/dKL29kY/background.png");
+    background-Image: url("https://imgur.com/uDXpBKg.png");
   }
 
   #display-box {
