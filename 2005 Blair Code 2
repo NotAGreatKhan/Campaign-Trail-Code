@@ -1168,22 +1168,6 @@ campaignTrail_temp.answers_json = [
             "question": 13160,
             "description": "The South isn’t particularly known as Labour country, but with our stance on Britain's foreign agenda, we could crack that region with some targeted visits. Maybe we can build some new ground there."
         }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 100001,
-        "fields": {
-            "question": 100000,
-            "description": "I… I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over..."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 100002,
-        "fields": {
-            "question": 100000,
-            "description": "No… No, no, no. This won’t be how I go down, I won’t let it. I’m fighting this out! I need to, for the country, for New Labour. Everything we have accomplished together. Everything we could do in our grasp, and we’re just going to let go of that? No, I will contest whatever motion of No Confidence, whatever leadership challenge. I don’t care! I’m not… I’m not going out like this."
-        }
     }
 ]
 
@@ -4802,26 +4786,6 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12543,
             "global_multiplier": 0.35
         }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 100005,
-        "fields": {
-            "answer": 100001,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": -0.1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 100006,
-        "fields": {
-            "answer": 100002,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": -0.105
-        }
     }
 ]
 
@@ -5870,24 +5834,6 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 12870,
             "candidate": 12543,
             "answer_feedback": "You unveil your manifesto in Central Glasgow. Whilst Scotland has traditionally been Labour country, the emergence of the SNP, and the LibDems, could change that. This should help in keeping them down."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 100003,
-        "fields": {
-            "answer": 100001,
-            "candidate": 12543,
-            "answer_feedback": "You did your best Tony. Now though, it’s time for a new man to lead the country. Probably not a surprise as to who it will be."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 100004,
-        "fields": {
-            "answer": 100002,
-            "candidate": 12543,
-            "answer_feedback": "It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now."
         }
     }
 ]
