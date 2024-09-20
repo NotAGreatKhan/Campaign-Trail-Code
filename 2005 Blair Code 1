@@ -809,53 +809,46 @@ function setupMusicPlayer() {
 
 
   const song1 = new Song(
-    "Counting Bodies Like Sheep",
-    "A Perfect Circle",
-    "https://upload.wikimedia.org/wikipedia/en/1/11/A_perfect_circle_counting_bodies.jpg",
-    "https://audio.jukehost.co.uk/H03r89sKddgV0CLNDHNdqu6IBpBGCRTr"
-  );
-  
-  const song2 = new Song(
-    "American Idiot",
-    "Green Day",
-    "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Green_Day_-_American_Idiot_album_cover.png/220px-Green_Day_-_American_Idiot_album_cover.png",
-    "https://audio.jukehost.co.uk/37xW79v6txBYeEgXI3jzCRHS5yGnHJFl"
-  );
+      "Speed of Sound",
+      "Coldplay",
+      "https://imgur.com/Ub1c0zt.png",
+      "https://audio.jukehost.co.uk/fg8AMzl2ricrBYaQRJkt3HTLqvRl25jo"
+    );
 
-  const song3 = new Song(
-    "America's Army™",
-    "Propagandhi",
-    "https://www.aversionline.com/assets/images/cache/propagandhi-potemkin-city-limits-cover_-_28de80_-_e82f5d0e6510d9fbbcd89617445200bc31aaf6c6.jpg",
-    "https://audio.jukehost.co.uk/WppjtiBwaIWyswZYGF5pbMNbF7f9mv7H"
-  );
+    const song2 = new Song(
+      "Everybody's Changing",
+      "Keane",
+      "https://imgur.com/0RaJ0HF.png",
+      "https://audio.jukehost.co.uk/Ysn3OPRVDFsW2PsSX6jJEhhCvpaljOn6"
+    );
 
-  const song4 = new Song(
-    "Prayer of the Refugee",
-    "Rise Against",
-    "https://upload.wikimedia.org/wikipedia/en/7/73/Rise_Against_-_The_Sufferer_%26_The_Witness.jpg",
-    "https://audio.jukehost.co.uk/wZbLTTDel7YTrEqIcfPeQFHCGcsr1WrP"
-  );
+    const song3 = new Song(
+      "Dare",
+      "Gorillaz",
+      "https://imgur.com/UQuUPyB.png",
+      "https://audio.jukehost.co.uk/dkV6Ta0nfgVVkLV2AXgM3ZegryZhRpP4"
+    );
 
-  const song5 = new Song(
-    "Beast",
-    "Nico Vega",
-    "https://i1.sndcdn.com/artworks-2sg1kWr6e0wp-0-t500x500.jpg",
-    "https://audio.jukehost.co.uk/HrP06WgAWji67ytIBRrSAqGo5adsr39J"
-  );
+    const song4 = new Song(
+      "Take Me Out",
+      "Franz Ferdinand",
+      "https://imgur.com/OzJKvQg.png",
+      "https://audio.jukehost.co.uk/spAFN999Bmwgy77DCFSrF1bCy2ab0bik"
+    );
+    
+    const song5 = new Song(
+      "I Bet You Look Good On The Dancefloor",
+      "Arctic Monkeys",
+      "https://imgur.com/FmyjhSy.png",
+      "https://audio.jukehost.co.uk/oBdrXNL6r7pOeNAPj6BWr8Zagc7CBurS"
+    );
 
-  const song6 = new Song(
-    "B.Y.O.B.",
-    "System of a Down",
-    "https://upload.wikimedia.org/wikipedia/en/0/02/Mezmerize-LP.jpg",
-    "https://audio.jukehost.co.uk/TDnRpwxp5oGXmhaO0HXt6Xti2Wr3JQ2t"
-  );
-
-  const song7 = new Song(
-    "Mosh",
-    "Eminem",
-    "https://upload.wikimedia.org/wikipedia/en/b/b4/Encore_%28Eminem_album%29_coverart.jpg",
-    "https://audio.jukehost.co.uk/1ZqS3DttoOnMtFQ8VFTUzrXouWNlRr9V"
-  );
+    const song6 = new Song(
+      "Beautiful Day",
+      "U2",
+      "https://imgur.com/8jjrwrt.png",
+      "https://audio.jukehost.co.uk/SQ9HYrmYdUCLfa2OGjAzAe19sMZqTrvf"
+    );
 
   playlist.addSong(song1);
   playlist.addSong(song2);
@@ -863,7 +856,6 @@ function setupMusicPlayer() {
   playlist.addSong(song4);
   playlist.addSong(song5);
   playlist.addSong(song6);
-  playlist.addSong(song7);
 
   const playerContainer = document.createElement("div");
   playerContainer.id = "player";
