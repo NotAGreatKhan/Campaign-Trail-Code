@@ -1093,7 +1093,8 @@ RecReading=true
     }
     .is-vertical #volumeSlider {
     width: 16px;
-  }
+    appearance: slider-vertical;
+    }
 
     #controls {
       display: flex;
