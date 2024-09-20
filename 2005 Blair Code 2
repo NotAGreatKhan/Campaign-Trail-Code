@@ -414,7 +414,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12793,
         "fields": {
             "question": 12247,
-            "description": "\nWe must be in lockstep with America, not only for our continued alliance, but also for the security of our own nation from terror as well. Send in troops, and knock out the Taliban fighters who threaten the security of the international community.\n"
+            "description": "We must be in lockstep with America, not only for our continued alliance, but also for the security of our own nation from terror as well. Send in troops, and knock out the Taliban fighters who threaten the security of the international community."
         }
     },
     {
