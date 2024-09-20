@@ -1,4 +1,4 @@
-var resignation = 0;
+var Resign = 0;
 campaignTrail_temp.cyoa = true
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
