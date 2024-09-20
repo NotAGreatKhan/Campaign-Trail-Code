@@ -65,6 +65,27 @@ cyoAdventure = function (a) {
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.running_mate_last_name = "Blair";
     }
+    if(ans == 12542){
+      Resign += 1;
+    }
+    if(ans == 12798){
+      Resign += 1;
+    }
+    if(ans == 12814){
+      Resign += 1;
+    }
+    if(ans == 12819){
+      Resign += 1;
+    }
+    if(ans == 12824){
+      Resign += 1;
+    }
+    if(ans == 12828){
+      Resign += 1;
+    }
+    if(ans == 12834){
+      Resign += 1;
+    }
 }
 
 
