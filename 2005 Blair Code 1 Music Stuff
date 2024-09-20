@@ -1,3 +1,47 @@
+const song1 = new Song(
+      "Speed of Sound",
+      "Coldplay",
+      "https://imgur.com/Ub1c0zt.png",
+      "https://audio.jukehost.co.uk/fg8AMzl2ricrBYaQRJkt3HTLqvRl25jo"
+    );
+
+    const song2 = new Song(
+      "Everybody's Changing",
+      "Keane",
+      "https://imgur.com/0RaJ0HF.png",
+      "https://audio.jukehost.co.uk/Ysn3OPRVDFsW2PsSX6jJEhhCvpaljOn6"
+    );
+
+    const song3 = new Song(
+      "Dare",
+      "Gorillaz",
+      "https://imgur.com/UQuUPyB.png",
+      "https://audio.jukehost.co.uk/dkV6Ta0nfgVVkLV2AXgM3ZegryZhRpP4"
+    );
+
+    const song4 = new Song(
+      "Take Me Out",
+      "Franz Ferdinand",
+      "https://imgur.com/OzJKvQg.png",
+      "https://audio.jukehost.co.uk/spAFN999Bmwgy77DCFSrF1bCy2ab0bik"
+    );
+    
+    const song5 = new Song(
+      "I Bet You Look Good On The Dancefloor",
+      "Arctic Monkeys",
+      "https://imgur.com/FmyjhSy.png",
+      "https://audio.jukehost.co.uk/oBdrXNL6r7pOeNAPj6BWr8Zagc7CBurS"
+    );
+
+    const song6 = new Song(
+      "Beautiful Day",
+      "U2",
+      "https://imgur.com/8jjrwrt.png",
+      "https://audio.jukehost.co.uk/SQ9HYrmYdUCLfa2OGjAzAe19sMZqTrvf"
+    );
+
+
+
 const infoContainer = document.createElement("div");
   infoContainer.id = "info-container";
   infoContainer.style.backgroundImage = "url('https://imgur.com/AxVh28b.png')";
