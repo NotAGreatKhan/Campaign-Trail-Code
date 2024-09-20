@@ -1178,4 +1178,3 @@ document.head.appendChild(style);
 const gameWindow_player = document.getElementById("game_window");
 //use this function directly or put it in an event listener to start the music on the press of a certain button
 setupMusicPlayer();
-}
