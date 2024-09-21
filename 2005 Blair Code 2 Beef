@@ -1205,6 +1205,30 @@ campaignTrail_temp.answers_json = [
             "question": 100007,
             "description": "“…In the years to come, wherever I am, whatever I do, I’m with you. Wishing you well. I’m wanting you to win. You’re the future now – so make the most of it”."
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100012,
+        "fields": {
+            "question": 100011,
+            "description": "Our first priority should always be the economy. Because by maintaining a strong economy, the lives of the whole of Britain shall stay prosperous, and you then have the opportunity to invest in the future. Emphasise our economic record heavily."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100013,
+        "fields": {
+            "question": 100011,
+            "description": "Now that Tony is no longer leading the party, we can tactfully shift our position on, and away from, Iraq. The war itself has garnered great unpopularity since the military operation, so we need to be tactful in how we approach this. We’ll avoid bringing it up, but when asked, we’ll support the withdrawal of troops once order is restored — instead of the full nation building."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100014,
+        "fields": {
+            "question": 100011,
+            "description": "Let’s really lay it thick into the Tories – just like my old days in the ‘90s – we’ll hit them on their last record in government, their frankly ludicrous policies. The whole nine yards. Let’s finish this campaign."
+        }
     }
 ]
 
