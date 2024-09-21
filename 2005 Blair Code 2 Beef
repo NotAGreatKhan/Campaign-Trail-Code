@@ -86,8 +86,9 @@ cyoAdventure = function (a) {
     if(ans == 12834){
       Resign += 1;
     }
-    
-    if(resignation >= 7){
+}
+
+if(resignation >= 7){
     campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 100000,
@@ -96,7 +97,6 @@ cyoAdventure = function (a) {
         "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, <i>now</i>, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. As you go around your fellow cabinet members, their responses to you are strange in their unison and foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
         "likelihood": 1
     }
-   }
   }
 }
 
