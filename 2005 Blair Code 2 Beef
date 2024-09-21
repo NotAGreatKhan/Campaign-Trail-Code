@@ -97,7 +97,7 @@ cyoAdventure = function (a) {
         "likelihood": 1
     }
 }
-
+}
 
 campaignTrail_temp.questions_json = [
     {
