@@ -40,6 +40,9 @@
     if(ans == 100008){
         document.body.background = "https://imgur.com/erWHhIe.png"    
     }
+    if(ans == 100008){
+    document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
+    }
     if(ans == 12862){
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.running_mate_last_name = "Blair";
