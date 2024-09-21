@@ -6388,6 +6388,33 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "Fair sailing, Tony Blair."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100015,
+        "fields": {
+            "answer": 100012,
+            "candidate": 12543,
+            "answer_feedback": "As the economy continues to chug along, and as your record as Chancellor shines to the average voter, this angle is always going to be your strongest turf. Hopefully you can pull a victory after the resignation. To save New Labour."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100016,
+        "fields": {
+            "answer": 100013,
+            "candidate": 12543,
+            "answer_feedback": "Whilst a good idea on paper, the occupation has gone on for over 2 years. This is an issue that will just haunt you if you’re elected. At least you were Chancellor until now, instead of say, Foreign Secretary. It also helps you against the Conservatives, who fully support the war."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100017,
+        "fields": {
+            "answer": 100014,
+            "candidate": 12543,
+            "answer_feedback": "A true Gordon Brown forté. You don’t quite have the same energy as you did then, but they are decently effective at pressuring the still-reeling Opposition."
+        }
     }
 ]
 
