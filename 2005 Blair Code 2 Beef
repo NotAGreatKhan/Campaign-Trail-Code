@@ -98,6 +98,17 @@ cyoAdventure = function (a) {
         }
       }
     }
+    if(Resign >= 7){
+        campaignTrail_temp.questions_json[14] = {
+        "model": "campaign_trail.question",
+        "pk": 100007,
+        "fields": {
+            "priority": 0,
+            "description": "[February, 2005] The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
+            "likelihood": 1
+        }
+      }
+    }
 }
 
 campaignTrail_temp.questions_json = [
