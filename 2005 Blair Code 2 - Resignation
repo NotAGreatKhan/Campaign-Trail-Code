@@ -51,6 +51,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(Resign >= 7){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 100011,
+    "fields": {
+        "priority": 0,
+        "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+        "likelihood": 1
+      }
+    }
+  }
 
 
 //Answers
@@ -76,6 +87,32 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "fields": {
             "question": 100007,
             "description": "“…In the years to come, wherever I am, whatever I do, I’m with you. Wishing you well. I’m wanting you to win. You’re the future now – so make the most of it”."
+        }
+    },
+    
+
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100012,
+        "fields": {
+            "question": 100011,
+            "description": "Our first priority should always be the economy. Because by maintaining a strong economy, the lives of the whole of Britain shall stay prosperous, and you then have the opportunity to invest in the future. Emphasise our economic record heavily."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100013,
+        "fields": {
+            "question": 100011,
+            "description": "Now that Tony is no longer leading the party, we can tactfully shift our position on, and away from, Iraq. The war itself has garnered great unpopularity since the military operation, so we need to be tactful in how we approach this. We’ll avoid bringing it up, but when asked, we’ll support the withdrawal of troops once order is restored — instead of the full nation building."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100014,
+        "fields": {
+            "question": 100011,
+            "description": "Let’s really lay it thick into the Tories – just like my old days in the ‘90s – we’ll hit them on their last record in government, their frankly ludicrous policies. The whole nine yards. Let’s finish this campaign."
         }
     }
 
@@ -106,6 +143,35 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "answer": 100008,
             "candidate": 12543,
             "answer_feedback": "Fair sailing, Tony Blair."
+        }
+    },
+    
+
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100015,
+        "fields": {
+            "answer": 100012,
+            "candidate": 12543,
+            "answer_feedback": "As the economy continues to chug along, and as your record as Chancellor shines to the average voter, this angle is always going to be your strongest turf. Hopefully you can pull a victory after the resignation. To save New Labour."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100016,
+        "fields": {
+            "answer": 100013,
+            "candidate": 12543,
+            "answer_feedback": "Whilst a good idea on paper, the occupation has gone on for over 2 years. This is an issue that will just haunt you if you’re elected. At least you were Chancellor until now, instead of say, Foreign Secretary. It also helps you against the Conservatives, who fully support the war."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100017,
+        "fields": {
+            "answer": 100014,
+            "candidate": 12543,
+            "answer_feedback": "A true Gordon Brown forté. You don’t quite have the same energy as you did then, but they are decently effective at pressuring the still-reeling Opposition."
         }
     }
 
@@ -139,5 +205,37 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": -0.005
+        }
+    },
+    
+    
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 100018,
+        "fields": {
+            "answer": 100012,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 100019,
+        "fields": {
+            "answer": 100013,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 100020,
+        "fields": {
+            "answer": 100014,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.05
         }
     }
