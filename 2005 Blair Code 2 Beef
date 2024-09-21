@@ -88,7 +88,7 @@ cyoAdventure = function (a) {
     }
 }
 
-if(resignation >= 7){
+if(Resign >= 7){
     campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 100000,
