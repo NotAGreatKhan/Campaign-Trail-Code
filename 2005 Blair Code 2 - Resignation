@@ -1,4 +1,5 @@
 var Resign = 0;
+
 campaignTrail_temp.cyoa = true
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
@@ -25,18 +26,33 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }   
 }
 
-//Questions
-if(resignation >= 7){
-campaignTrail_temp.questions_json[14] = {
-"model": "campaign_trail.question",
-"pk": 100000,
-"fields": {
-    "priority": 0,
-    "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, <i>now</i>, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. As you go around your fellow cabinet members, their responses to you are strange in their unison and foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
-    "likelihood": 1
-}
 
-   
+//Questions
+    if(Resign >= 7){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 100000,
+    "fields": {
+        "priority": 0,
+        "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, <i>now</i>, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. As you go around your fellow cabinet members, their responses to you are strange in their unison and foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
+        "likelihood": 1
+      }
+    }
+  } 
+
+    if(Resign >= 7){
+    campaignTrail_temp.questions_json[14] = {
+    "model": "campaign_trail.question",
+    "pk": 100007,
+    "fields": {
+        "priority": 0,
+        "description": "[February, 2005] The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
+        "likelihood": 1
+      }
+    }
+  }
+
+
 //Answers
     {
         "model": "campaign_trail.answer",
@@ -52,6 +68,14 @@ campaignTrail_temp.questions_json[14] = {
         "fields": {
             "question": 100000,
             "description": "No… No, no, no. This won’t be how I go down, I won’t let it. I’m fighting this out! I need to, for the country, for New Labour. Everything we have accomplished together. Everything we could do in our grasp, and we’re just going to let go of that? No, I will contest whatever motion of No Confidence, whatever leadership challenge. I don’t care! I’m not… I’m not going out like this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100008,
+        "fields": {
+            "question": 100007,
+            "description": "“…In the years to come, wherever I am, whatever I do, I’m with you. Wishing you well. I’m wanting you to win. You’re the future now – so make the most of it”."
         }
     }
 
@@ -73,6 +97,15 @@ campaignTrail_temp.questions_json[14] = {
             "answer": 100002,
             "candidate": 12543,
             "answer_feedback": "It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100009,
+        "fields": {
+            "answer": 100008,
+            "candidate": 12543,
+            "answer_feedback": "Fair sailing, Tony Blair."
         }
     }
 
@@ -96,5 +129,15 @@ campaignTrail_temp.questions_json[14] = {
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": -0.105
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 100010,
+        "fields": {
+            "answer": 100008,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.005
         }
     }
