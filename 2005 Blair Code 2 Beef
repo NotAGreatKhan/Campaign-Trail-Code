@@ -1159,6 +1159,30 @@ campaignTrail_temp.answers_json = [
             "question": 12881,
             "description": "All I’ll say is that I will not contest a fourth term as the leader of the party. We will continue to govern this country on a prosperous future, and it will not end prematurely."
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100001,
+        "fields": {
+            "question": 100000,
+            "description": "I… I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100002,
+        "fields": {
+            "question": 100000,
+            "description": "No… No, no, no. This won’t be how I go down, I won’t let it. I’m fighting this out! I need to, for the country, for New Labour. Everything we have accomplished together. Everything we could do in our grasp, and we’re just going to let go of that? No, I will contest whatever motion of No Confidence, whatever leadership challenge. I don’t care! I’m not… I’m not going out like this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100008,
+        "fields": {
+            "question": 100007,
+            "description": "“…In the years to come, wherever I am, whatever I do, I’m with you. Wishing you well. I’m wanting you to win. You’re the future now – so make the most of it”."
+        }
     }
 ]
 
