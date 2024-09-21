@@ -49,6 +49,9 @@ cyoAdventure = function (a) {
     if(ans == 12865){
         document.body.background = "https://imgur.com/erWHhIe.png"    
     }
+    if(ans == 100008){
+        document.body.background = "https://imgur.com/erWHhIe.png"    
+    }
     if(ans == 12862){
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.running_mate_last_name = "Blair";
@@ -65,6 +68,11 @@ cyoAdventure = function (a) {
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.running_mate_last_name = "Blair";
     }
+    if(ans == 100008){
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+    }    
     if(ans == 12542){
       Resign += 1;
     }
