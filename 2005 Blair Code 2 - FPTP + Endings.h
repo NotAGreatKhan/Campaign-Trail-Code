@@ -232,15 +232,16 @@ singleObserver.observe(document.documentElement, { childList: true, subtree: tru
 endingPicker = (out, totv, aa, quickstats) => {
 
     function setImage(url) {
-        if(url == '' || url == null) return;
-        let interval = setInterval(function () {
+        if(used != true) {
+            setInterval(function () {
             img = document.getElementsByClassName("person_image")[0];
             if (img != null) {
                 img.src = url;
                 clearInterval(interval);
             }
-        }, 50);
+        }, 100);
     }
+}
 
 distributeSeatsUK();
 
