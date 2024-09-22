@@ -8,6 +8,7 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
+var Resign = 0;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 if(ans == 12542){
@@ -68,7 +69,6 @@ if(ans == 12542){
       }
     }
   }
-}
 
 campaignTrail_temp.questions_json = [
     {
