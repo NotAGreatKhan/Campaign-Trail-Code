@@ -7646,7 +7646,61 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "This angle of solving crime – the poverty and root causes – is more akin to the socially liberal side of the debate. This is popular with the left side of the spectrum, however it does give the Conservatives free reign to dominate the Law and Order vote."
         }
-    }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100003,
+        "fields": {
+            "answer": 100001,
+            "candidate": 12543,
+            "answer_feedback": "You did your best Tony. Now though, it’s time for a new man to lead the country. Probably not a surprise as to who it will be."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100004,
+        "fields": {
+            "answer": 100002,
+            "candidate": 12543,
+            "answer_feedback": "It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100009,
+        "fields": {
+            "answer": 100008,
+            "candidate": 12543,
+            "answer_feedback": "Fair sailing, Tony Blair."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100015,
+        "fields": {
+            "answer": 100012,
+            "candidate": 12543,
+            "answer_feedback": "As the economy continues to chug along, and as your record as Chancellor shines to the average voter, this angle is always going to be your strongest turf. Hopefully you can pull a victory after the resignation. To save New Labour."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100016,
+        "fields": {
+            "answer": 100013,
+            "candidate": 12543,
+            "answer_feedback": "Whilst a good idea on paper, the occupation has gone on for over 2 years. This is an issue that will just haunt you if you’re elected. At least you were Chancellor until now, instead of say, Foreign Secretary. It also helps you against the Conservatives, who fully support the war."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 100017,
+        "fields": {
+            "answer": 100014,
+            "candidate": 12543,
+            "answer_feedback": "A true Gordon Brown forté. You don’t quite have the same energy as you did then, but they are decently effective at pressuring the still-reeling Opposition."
+        }
+    }        
 ]
 
 campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png";
