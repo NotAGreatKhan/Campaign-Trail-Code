@@ -6518,92 +6518,83 @@ campaignTrail_temp.jet_data = [{
         "1721146071458": {
             "id": 1721146071458,
             "variable": 0,
-            "operator": "==",
+            "operator": "<",
             "value": 0,
-            "endingImage": "https://i.postimg.cc/85T1gp43/Car.jpg",
-            "endingText": "<h3>FBI Report on the Occurrences of October 26th, 2016</h3><p>10/25: POTUS Romney had returned to the White House after a long day of campaigning the day before. He was tired, and for an unknown reason decided to start listening to the song \"In Da Club\\\" by 50 Cent. It is unknown who introduced it to the President.</p><p>10/26: POTUS Romney secured an unknown quantity of MDMA from [CENSORED] Congressman [CENSORED] at [CENSORED]. After the Pentagon meeting concerning Al-Assad revealed his potential incapacity for the office, the FBI contacted the CIA, who then replaced him with a lookalike and undertook necessary protocol the election to ensure the electoral result of 232 votes. Mr. Romney was placed in an according mental institution. The tragic death of his lookalike was then staged on February 3rd, 2017. Not even VPOTUS Ryan or the First Lady knew. STATUS: Unqualified Success.</p><p>It had been now a few years. The citizen who went by the name of Mike sat in the porch of his home in rural Massachusetts, reading a local newspaper. Since he had come to terms with the futility of the popular vote, Mike had not voted in presidential elections, and did not care for them in the least. Still, he read the paper to see who had won. He closed the paper as he saw 2024 had been called for President Haley.</p>",
-            "amount": "0"
+            "endingImage": "https://imgur.com/0bqHDaj.png",
+            "endingText": "<h3>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3><p>As David Dimbleby’s voice rings out on the television screen, all you feel is a stinging ache. The ever-optimistic shred of your mind clings to the desperate volition of at least a narrow victory being possible, but then the seats come in. Seat after seat. Colleague after colleague, falling to a new Tory government. Your ideals of a renewed, safer nation, burnt to ashes under the heels of that damn war.</p><p>What exactly went wrong? Was it Iraq? Was it those blasted attacks that Howard threw at you? Whatever it was, you have lost the election, that’s all that truly matters to your unyielding ambitious conscience. It really is over. Perhaps you were not “winning the argument that economic dynamism and social justice must go hand in hand” after all. You call Howard to congratulate him for his victory, and prepare to give your last speech outside that now-looming black door.</p><p>You will almost certainly resign as party leader following this defeat, your merit as an election-winning machine definitively exhausted after this. It is likely your loyal Chancellor Gordon Brown will succeed you for leadership, and provide a more measured (if stale) voice to the Opposition. It is unlikely that Labour will secure power again for a while, though you are aware it is premature to make hurried conclusions now.</p><p>After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those snivelling sky-blue Tories will scurry their way back into government.</p><p>You can almost feel John Smith’s sorrowful bitterness at you, as you stare into the void. Into the abyss.</p>",
+            "amount": "324"
         },
         "1721177188403": {
             "id": 1721177188403,
             "variable": 0,
             "operator": "<",
             "value": 0,
-            "endingImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWYqTk24Vcle6tJ5vNGYW5O_iqAKR2MVOqug&s",
-            "endingText": "<h3>How Ba-ad Can You Be?</h3><p>President Romney looked down ─ there was nothing he could do now as one by one every important state (and some more on top of that) went blue. He was miserable, a pathetic excuse for the highest office of the land. Romney tried to remember the feeling of winning the last election, but he couldn't muster it in his sadness. It was truly over ─ and the Biden presidency had just began, handed the golden key, in with a record number of votes.</p><p>Every Republican, every one of his staffers, every one of his aides who looked at Romney looked at him with a face of tremendous sadness. It was well and truly over. Romney did all the bog-standard stuff, conceding the election, calling President-elect Biden. And while he did that, he could see the loathsome Democrats looking at him with pity in their eyes, but their smiles wider than the line of the Equator. <b>It was over.</b></p><p>It would only be in four years that Romney truly realised the magnitude of his loss. In despair, he could only watch his country fall into the abyss...</p>",
-            "amount": "130"
+            "endingImage": "https://imgur.com/ZVxm7Y7.png",
+            "endingText": "<h3>As Big Ben strikes 10, we can predict a hung Parliament for Britain, this is certainly a let down for Labour.</h3><p>It seems as though you, and the nation, share the utter surprise evident in David Dimbleby’s voice. Nobody really anticipated this outcome, save for the Liberal Democrat hopefuls wishing to finally break into government. Whilst this is certainly disappointing for national security reforms you were hoping to make, there is an avenue for continued governance with a coalition via the Liberal Democrats if you are able to form such a government. Regardless of the outcome, it is clear the LibDems are significant winners tonight, and will make governance a multi-faceted task to perform.</p><p>Your mind wonders the many possibilities that could’ve unfolded, anything, just anything, better than this folly of a deadlock. What really went wrong? Was it the Iraq War? Was it the blasted attacks hurled at you? Whatever it was, it is likely you will resign as party leader within the next 1 to 2 years at the maximum.</p><p>Just when you thought you were past the thick of it, another roadblock has been lobbed at you. Coalition negotiations are going to be tough, but depending on the seat shares, there could be a viable way out for you. Strap in, Tony, because it’s going to be quite the few days ahead of you…</p>",
+            "amount": "324"
         },
         "1721177657604": {
             "id": 1721177657604,
             "variable": 0,
-            "operator": "<",
+            "operator": ">= && <",
             "value": 0,
-            "endingImage": "https://i.postimg.cc/1Xts4vLr/Untitled-design.png",
-            "endingText": "<h3>There was nothing we could do...</h3><p>Romney buried his head into his hands ─ he was so far, yet it felt so close, to achieving victory. To securing world peace. All the people needed to see was that it would only take one more war, one last despot toppled, and then things would be good. Why, why couldn't the American people see that things like the economy didn't matter (all you needed was a capital empire) when you had countries like Iran and people like Islamic extremist terrorists on this Earth?</p><p>It was truly over. Republicans gritted their teeth, this was not unexpected and there was nothing they could do. The race was conceded, the trouble was over. Biden smiled, from his sleeves the odour of populism reeked, seeking to evoke the long-gone days of FDR. Handing the country over to socialists like Bernie Sanders, that's what the Democrats were happy with.</p><p>It had now been a few years. Mr. Romney glanced at the nearest TV, playing CNN, after leaving a meeting with some up-and-coming artificial intelligence entrepreneurs. He frowned as he saw he'd be paying more taxes next year, thanks to President Harris.</p>",
-            "amount": "230"
+            "endingImage": "https://imgur.com/2Vtwwm7.png",
+            "endingText": "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.</p><p>With a majority secured, you may be able to pursue those national security reforms you have desired for so long now. With how slim your majority is in Parliament though, don’t count on it to go too smoothly. All it would take is a significant amount of whip suspensions, resignations and by-election defeats, to eradicate your majority all together. Suffice to say, Gordon Brown is definitely going to be crossing his fingers whenever you resign in the near future.</p><p>You fought with all you could, but in the end, only the most pitiful dividend was handed out. Best of luck, Prime Minister, you’re sure as hell going to need it.</p>",
+            "amount": "324 && 340"
         },
         "1721178500851": {
             "id": 1721178500851,
             "variable": 0,
-            "operator": "<",
+            "operator": " ",
             "value": 0,
-            "endingImage": "https://i.postimg.cc/qRQpkPZ7/Mitt-Romney-7097643193.jpg",
-            "endingText": "<h3>By a Hair's Breadth</h3><p>Romney was pacing, from one side to another. The night had just been declared for Joe Biden, but it was close, so close. He chuckled as he thought of all those Congressmen and Senators who had pitted him to fail, who had never had the faith. But it was a competitive election, just still Romney had lost.</p><p>While he conceded the election, the President was still in high hopes. He had not the faintest shadow of doubt that this loss was a victory for his foreign agenda, and after all that was all he cared about. There would be no cosying up to Iran in this Biden administration.</p><p>Years later, Mitt sat in his family home in Utah, in the living room. The former President had had it all, and was now a figure of advice to any up-and-coming politician who might want it. What more could he want? He could think of that easily: a Republican party not led by isolationist libertarians such as President Weld, Vice-President Johnson, and Senator Amash.</p> ",
-            "amount": "269"
+            "endingImage": " ",
+            "endingText": " ",
+            "amount": " "
         },
         "1721178515317": {
             "id": 1721178515317,
             "variable": 0,
-            "operator": "==",
+            "operator": " ",
             "value": 0,
-            "endingImage": "https://i.postimg.cc/1zG9dnGw/TELEMMGLPICT000349432906-16950297990150-trans-Nv-BQz-QNjv4-Bq-A7-N2-Cxn-JWn-YI3t-Cb-VBgu9f4-Xpit-DMGvdp2n7-FDd82.jpg",
-            "endingText": "<h3>Chaos and Carnage</h3><p><i>Si vis pace, para bellum.</i> Those were the words that came to Romney's mind as he saw the election results. Only now he wasn't referring to the countless American foreign interventions. The war that was about to be waged by the Republican Party was on the home front, and it was a fight for the country itself.</p><p>Romney knew he had the backing of the majority of states. He was unphased, in fact, as the voting began. The results were predictable ─ the election was his, stolen from Biden, the winner of the popular vote. He would take on one hell of a challenge: to run an administration doomed from the start.</p><p>Though he might have thought he had safeguarded the nation from socialists like Bernie Sanders, the President was in for a surprise in 2020. But now, in 2024, he had hope. He trusted the rising star conservative from Louisiana, Mike Johnson, to beat Vice-President Ryan as President Sanders dropped out.</p>",
-            "amount": "269"
+            "endingImage": " ",
+            "endingText": " ",
+            "amount": " "
         },
         "1721178515501": {
             "id": 1721178515501,
             "variable": 0,
-            "operator": "<",
+            "operator": " ",
             "value": 0,
-            "endingImage": "https://i.guim.co.uk/img/media/fb83911074e01d6aaf1161ce9f3ceeefb5920e3a/0_85_3500_2101/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=c53a17a06e10000ba196c1494e83fc66",
-            "endingText": "<h3>Once again, Mitt Romney has defied the odds...</h3><p>Mitt Romney was extremely pensive as he took in the results. He had won, he saw, and a smile made its way onto his face. But he could see it was far from clear-cut: the margins were razor-thin, and yet again he had lost the popular vote. He was ashamed of it, but he smiled at the thought ─ he had stolen the election.</p><p>But the odd-shattering victory doomed Romney's administration from day one. He was forced to cede his ground and soon found out that governing with a Democratic Congress was no easy feat. Gradually, the Middle East frontlines became static, and the men sent there no more than lambs to a slaughter. The failure of the economic agenda that would never be passed could at least be blamed on the Democrats.</p><p>The Democrats wanted new faces come 2020, and new faces they did have. But a different kind of new face. Gone was the optimism of Obama as Charlie Crist stepped onto the podium, and glided his way to election on a big tent platform. Romney only looked on in horror as he saw his party divided between the goddamned populist Trump and the establishment, unsure of what course to take next. His approval ratings meant he had to stay silent.</p>",
-            "amount": "290"
+            "endingImage": " ",
+            "endingText": " ",
+            "amount": " "
         },
         "1721178519693": {
             "id": 1721178519693,
             "variable": 0,
-            "operator": "<",
+            "operator": " ",
             "value": 0,
-            "endingImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAjDYE-8ykhKdP2LAkF2zy7gF75TdM4KJVzA&s",
-            "endingText": "<h3>Yet again, Mitt Romney defies the odds...</h3><p>Mitt Romney was extremely pensive as he took in the results. He had won, he saw, and a smile made its way onto his face. The result was nonetheless close, and Romney had only edged out a marginal victory in the popular vote ─ but he could breathe a deep sigh of relief, for the night was his, and this time he had actually won.</p><p>But the unexpected victory doomed Romney's administration from day one. He was forced to cede his ground, and soon found out that governing with a Democratic Congress was no easy feat. Gradually, the Middle East frontlines became static, and the men sent there no more than lambs to a slaughter. The failure of the economic agenda that would never be passed could at least be blamed on the Democrats.</p><p>The Democrats wanted new faces come 2020, and new faces they did have. But a different kind of new face. Gone was the optimism of Obama as Charlie Crist stepped onto the podium, and glided his way to election on a big tent platform. Romney only looked on in horror as he saw his party divided between the goddamned populist Trump and the establishment, unsure of what course to take next. His approval ratings meant he had to stay silent.</p>",
-            "amount": "320"
+            "endingImage": " ",
+            "endingText": " ",
+            "amount": " "
         },
         "1721178523380": {
             "id": 1721178523380,
             "variable": 0,
-            "operator": "<",
+            "operator": " ",
             "value": 0,
-            "endingImage": "https://pbs.twimg.com/profile_images/964489716622966784/xbtCe2td_400x400.jpg",
-            "endingText": "<h3>Enough is Enough</h3><p>\"We fought for this, and because of that we won. The people turned out to vote for their President because they saw how important this election was, a choice between freedom and socialism.\" Mitt was beaming as he spoke ─ he had won, and he had won decisively. America had trusted him for four more years.</p><p>It was not possible to say it was smooth sailing from then on, but it was certainly not difficult for Romney. Until the 2018 midterms, a Republican Congress ensured that his projects could go through without much worry, and the protests seen in September 2016 subsided as decisive action was taken on the frontlines. Romney was proud of his job and his work ─ he was the President of the biggest nation in the free world.</p><p>The Democrats would fall to radicalism after the defeat of the establishment. They would field the idealist O'Malley but it was to now avail, not against Jeb Bush. The flag of freedom would continue to fly on, and fly on proudly. Romney did not leave office being exactly popular, but it was indisputable that he had not been a bad president.</p>",
-            "amount": "400"
+            "endingImage": " ",
+            "endingText": " ",
+            "amount": " "
         },
         "1721178533475": {
             "id": 1721178533475,
             "variable": 0,
-            "operator": "<",
+            "operator": " ",
             "value": 0,
-            "endingImage": "https://i.postimg.cc/59Zd73XH/Screenshot-2024-08-26-17-45-04.png",
-            "endingText": "<h3>A Blowout in Washington, D.C.</h3><p>The country was experiencing an eclipse in the normal path of its two-party system that it had not seen since the era of Reagan and Bush Sr. Romney had done what everyone had thought was impossible: he had flipped the score, the comfort that Biden had sat on initially, to a mandate presidents could only dream of.</p><p>It was evident from the campaign that only be evoking the sentiments of the Reagan era could a large majority, both in the Electoral College and in Congress, could be achieved. Even though he only had four years left, it was time for Romney to make it Morning Again in America, and put a decisive end to tyrants in the Middle East. <i>That's what they said.</i></p><p>But despite all the Romney administration could try, it was impossible to hide their American nightmare. It didn't take too long for the vast electoral fraud to be uncovered by the FBI, and suddenly everyone could see Romney's victory was nothing like Reagan's, it was like Nixon's. He cheated. Cheated the American people.</p>",
-            "amount": "536"
-        },
-        "1724785253389": {
-            "id": 1724785253389,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "https://campaigntrailshowcase.com/static/images/donald-trump-2020.jpg",
-            "endingText": "<h3>Donald, I need your advice...</h3><p>\"There's no other way, Mr. President,\" said Donald, \"this election is a fight for the beautiful soul of America, and the freedom of the beautiful hard working American people. I know you don't like it, but we gotta do it, we gotta make sure we win, and keep those commies away from the White House.\"</p><p>\"You are right, Donald, but-\" started Mitt. He was interrupted by Donald, who said \"There are no buts, Mr. President, the only thing that I can guarantee you is certain is that if we don't do anything, we're going to let that nutjob Sanders run the place. We can't let that happen, we just can't.\"</p><p>Mitt buried his head in his hands. He hated it, but what could he do? \"How do we do it?\" \"Easy,\" Donald replied, \"we start off accusing the Democrats of something small, build up the outrage, then we ask the generals, the ones with the spines, to step in ─ then America's all ours. I think there was a country, where they did that. Chile, I think.\"",
-            "amount": "535"
+            "endingImage": " ",
+            "endingText": " ",
+            "amount": " "
         }    
     }
 }
