@@ -1187,6 +1187,54 @@ campaignTrail_temp.answers_json = [
             "question": 12881,
             "description": "All I’ll say is that I will not contest a fourth term as the leader of the party. We will continue to govern this country on a prosperous future, and it will not end prematurely."
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100001,
+        "fields": {
+            "question": 100000,
+            "description": "I… I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100002,
+        "fields": {
+            "question": 100000,
+            "description": "No… No, no, no. This won’t be how I go down, I won’t let it. I’m fighting this out! I need to, for the country, for New Labour. Everything we have accomplished together. Everything we could do in our grasp, and we’re just going to let go of that? No, I will contest whatever motion of No Confidence, whatever leadership challenge. I don’t care! I’m not… I’m not going out like this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100008,
+        "fields": {
+            "question": 100007,
+            "description": "“…In the years to come, wherever I am, whatever I do, I’m with you. Wishing you well. I’m wanting you to win. You’re the future now – so make the most of it”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100012,
+        "fields": {
+            "question": 100011,
+            "description": "Our first priority should always be the economy. Because by maintaining a strong economy, the lives of the whole of Britain shall stay prosperous, and you then have the opportunity to invest in the future. Emphasise our economic record heavily."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100013,
+        "fields": {
+            "question": 100011,
+            "description": "Now that Tony is no longer leading the party, we can tactfully shift our position on, and away from, Iraq. The war itself has garnered great unpopularity since the military operation, so we need to be tactful in how we approach this. We’ll avoid bringing it up, but when asked, we’ll support the withdrawal of troops once order is restored — instead of the full nation building."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 100014,
+        "fields": {
+            "question": 100011,
+            "description": "Let’s really lay it thick into the Tories – just like my old days in the ‘90s – we’ll hit them on their last record in government, their frankly ludicrous policies. The whole nine yards. Let’s finish this campaign."
+        }
     }
 ]
 
