@@ -344,6 +344,15 @@ if (used != true) {
 
 else if ((campaignTrail_temp.player_answers == 100008) && quickstats[0]<324 && aa[0].candidate == 12543) {
 return "<h3>As Big Ben strikes 10, we can predict that the Conservatives have won this election, in a second and final death-blow to New Labour</h3>"
+if (used != true) {
+        setInterval(function () {
+            used = true;
+            imgg = document.getElementsByClassName("person_image")[0];
+            if (imgg != null) {
+                imgg.src = "https://imgur.com/ydfBei4.png";
+            }
+        }, 100);
+    }
 }
 
 else {
