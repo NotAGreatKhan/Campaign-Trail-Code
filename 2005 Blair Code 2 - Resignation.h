@@ -89,8 +89,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "description": "“…In the years to come, wherever I am, whatever I do, I’m with you. Wishing you well. I’m wanting you to win. You’re the future now – so make the most of it”."
         }
     },
-    
-
     {
         "model": "campaign_trail.answer",
         "pk": 100012,
@@ -145,8 +143,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "answer_feedback": "Fair sailing, Tony Blair."
         }
     },
-    
-
     {
         "model": "campaign_trail.answer_feedback",
         "pk": 100015,
@@ -207,8 +203,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "global_multiplier": -0.005
         }
     },
-    
-    
     {
         "model": "campaign_trail.answer_score_global",
         "pk": 100018,
