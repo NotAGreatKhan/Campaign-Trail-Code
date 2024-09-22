@@ -172,7 +172,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
 
-//Answer Effects
+//Global Answer Effects
     {
         "model": "campaign_trail.answer_score_global",
         "pk": 100005,
