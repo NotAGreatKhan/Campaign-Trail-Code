@@ -108,9 +108,9 @@ cyoAdventure = function (a) {
         "priority": 0,
         "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, <i>now</i>, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. As you go around your fellow cabinet members, their responses to you are strange in their unison and foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
         "likelihood": 1
+        }
       }
-    }
-  } 
+    } 
 
     if(Resign >= 7){
     campaignTrail_temp.questions_json[14] = {
@@ -120,9 +120,9 @@ cyoAdventure = function (a) {
         "priority": 0,
         "description": "[February, 2005] The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
         "likelihood": 1
+        }
       }
     }
-  }
     if(Resign >= 7){
     campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
@@ -131,9 +131,9 @@ cyoAdventure = function (a) {
         "priority": 0,
         "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
         "likelihood": 1
+        }
       }
     }
-  }
 }
 
 campaignTrail_temp.questions_json = [
