@@ -98,7 +98,6 @@ cyoAdventure = function (a) {
     if(ans == 12834){
       Resign += 1;
     }   
-}
 
 //Questions
     if(Resign >= 7){
@@ -135,6 +134,7 @@ cyoAdventure = function (a) {
       }
     }
   }
+}
 
 campaignTrail_temp.questions_json = [
     {
