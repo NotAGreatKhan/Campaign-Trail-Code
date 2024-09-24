@@ -25,6 +25,7 @@ distributeSeatsUK = () => {
         if (state == 12458 && c == 12587) {return 0.33} // Yorkshire
         if (state == 12476 && c == 12587) {return 0.3} // East of England
         if (state == 12464 && c == 12587) {return 0.35} // East Midlands
+        if (state == 12506 && c == 12587) {return 0.3} // Scotland
         // Thresholds
         if (state == 12446) {return 0.099} // North East England
         if (state == 12452) {return 0.1} // North West England
@@ -60,7 +61,7 @@ distributeSeatsUK = () => {
         if (state == 12452 && c == 12587) {return 5} // North West England
         if (state == 12458 && c == 12587) {return 2} // Yorkshire
         if (state == 12476 && c == 12587) {return 2} // East of England
-        if (state == 12506 && c == 12587) {return 2} // Scotland        
+        if (state == 12506 && c == 12587) {return 10} // Scotland        
         // Northern Ireland
         if (state == 12512 && c == 12685) {return 9}
         if (state == 12512 && c == 12703) {return 5}
@@ -238,7 +239,7 @@ distributeSeatsUK();
 //aa = all final overall results data
 //quickstats = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
 
-if (quickstats[0]<324 && aa[0].candidate == 12543){   
+if (quickstats[0] >= 50 && quickstats[0]<326){   
 if (used != true) {
       setInterval(function () {
           used = true;
