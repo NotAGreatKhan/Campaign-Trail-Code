@@ -229,7 +229,7 @@ let singleObserver = new MutationObserver(handleMutations);
 singleObserver.observe(document.documentElement, { childList: true, subtree: true });
 
 
-
+campaignTrail_temp.multiple_endings=true
 endingPicker = (out, totv, aa, quickstats) => {
     
 distributeSeatsUK();
@@ -240,6 +240,15 @@ distributeSeatsUK();
 //quickstats = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
 
 if (quickstats[0] >= 50 && quickstats[0]<324){      
+if (used != true) {
+        setInterval(function () {
+            used = true;
+            imgg = document.getElementsByClassName("person_image")[0];
+            if (imgg != null) {
+                imgg.src = "https://imgur.com/0bqHDaj.png";
+            }
+        }, 100);
+    }    
 return "<h3>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3><p>David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.</p><p>In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.</p><p>As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.</p><p>Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…</p><p>After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.</p><p>You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.</p><p>Into the abyss.</p>"
 } 
 else if (aa[0].electoral_votes < 324 && aa[1].electoral_votes < 324 && aa[2].electoral_votes < 324 && aa[3].electoral_votes < 324 && aa[4].electoral_votes < 324 && aa[5].electoral_votes < 324 && aa[6].electoral_votes < 324 && aa[7].electoral_votes < 324 && aa[8].electoral_votes < 324 && aa[9].electoral_votes < 324 && aa[10].electoral_votes < 324 && aa[11].electoral_votes < 324 && aa[12].electoral_votes < 324 && aa[13].electoral_votes < 324){
@@ -271,4 +280,3 @@ return "<h3>Error Handler</h3><p>Contact No-Reading</p>"
 }
 
 }
-campaignTrail_temp.multiple_endings=true
