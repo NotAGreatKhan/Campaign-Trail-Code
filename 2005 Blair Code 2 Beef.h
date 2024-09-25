@@ -123,6 +123,7 @@ cyoAdventure = function (a) {
         }
       }
     }
+    
     if(Resign >= 7){
     campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
