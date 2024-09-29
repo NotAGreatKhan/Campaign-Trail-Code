@@ -708,8 +708,6 @@ const startScreenUpdater = setInterval(function() {
       const goBackButton = document.getElementById("candidate_id_back");
       const candidateButton = document.getElementById("candidate_id_button");
       const runningMateButton = document.getElementById("running_mate_id_button");
-      const finalScreenBB = document.getElementById("opponent_selection_id_back");
-      const finalScreenID = document.getElementById("opponent_selection_id_button");
       
       if(candidateButton || c != 0){ // change theme on candidate viewing
           var c = document.getElementById("candidate_id")?.value ?? -1;
@@ -718,7 +716,7 @@ const startScreenUpdater = setInterval(function() {
               initContinue.click();
           }
       
-          else if(c == 12565 || c == 12587) {
+          else if(c == 125 || c == 126) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
