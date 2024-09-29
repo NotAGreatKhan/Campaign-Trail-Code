@@ -651,6 +651,10 @@ const startScreenUpdater = setInterval(function() {
       
       if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
           var c = document.getElementById("candidate_id")?.value ?? -1;
+          if(c == 12543 && !(candidateButton) && !(runningMateButton)) {
+              goBackButton.click();
+              initContinue.click();
+          }
       }
           else if(c == 12565 || c == 12587) {
               if(candidateButton) {
