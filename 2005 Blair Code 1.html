@@ -642,6 +642,42 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 e = campaignTrail_temp
 	
+const startScreenUpdater = setInterval(function() {
+	const goBackButton = document.getElementById("candidate_id_back");
+	const candidateButton = document.getElementById("candidate_id_button");
+	const runningMateButton = document.getElementById("running_mate_id_button");
+	const finalScreenBB = document.getElementById("opponent_selection_id_back");
+	const finalScreenID = document.getElementById("opponent_selection_id_button");
+    const difficultySlider = document.getElementById("difficulty_level");
+    const gameType = document.getElementById("game_type_id");
+    
+    if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
+		var c = document.getElementById("candidate_id").value;
+		if(c == 78 && !(candidateButton) && !(runningMateButton)) {
+            goBackButton.click();
+            const initContinue = document.getElementById("election_id_button");
+            initContinue.click();
+		}
+		else if(c == 12565 || c == 79) {
+            if(candidateButton) {
+                candidateButton.remove();
+            }
+		}
+	}
+    
+	else if(!candidateButton && runningMateButton) { 
+	    runningMateButton.click();
+        const finalBack = document.getElementById("opponent_selection_id_back");
+        finalBack.remove();
+        observer.disconnect()
+	}
+
+	if(finalScreenID) { // delete back button and delete the interval
+		finalScreenBB.remove();
+		clearInterval(startScreenUpdater);
+	}
+}, 1);
+
 	document.head.innerHTML += `<link
 	  rel="stylesheet"
 	  href="https://unpkg.com/xp.css"
