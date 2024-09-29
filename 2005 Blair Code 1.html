@@ -266,7 +266,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Conservative",
             "state": "--",
             "priority": 1,
-            "description": "<p>Put description here</p>",
+            "description": "<p>The Conservative and Unionist Party is the oldest still-active party in Britain, evolving from </p>",
             "color_hex": "#4848a8",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -279,6 +279,29 @@ campaignTrail_temp.candidate_json = [
             "running_mate": false
         }
     },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 125,
+        "fields": {
+            "first_name": "Michael",
+            "last_name": "Howard",
+            "election": 12,
+            "party": "Conservative",
+            "state": "Folkestone and Hythe",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#e74040",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 1,
+            "image_url": "https://imgur.com/M0EANh3.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Michael Howard</b></li><li><b>Role: Her Majesty's Leader of the Opposition</b></li><li><b>Constituency: Folkestone and Hythe</b></li><p> </p><i>”.”</i>\n\n<p><b></p>\n\n<p></p>\n\n<p></p>\n\n<p></p></div>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },    
     {
         "model": "campaign_trail.candidate",
         "pk": 12587,
@@ -300,6 +323,29 @@ campaignTrail_temp.candidate_json = [
             "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 126,
+        "fields": {
+            "first_name": "Charles P.",
+            "last_name": "Kennedy",
+            "election": 12,
+            "party": "Liberal Democrat",
+            "state": "Folkestone and Hythe",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#e74040",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 1,
+            "image_url": "https://imgur.com/M0EANh3.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Charles P. Kennedy</b></li><li><b>Role: Her Majesty's Leader of the Liberal Democrats</b></li><li><b>Constituency: Ross, Skye and Lochaber</b></li><p> </p><i>”.”</i>\n\n<p><b></p>\n\n<p></p>\n\n<p></p>\n\n<p></p></div>",
+            "candidate_score": 0,
+            "running_mate": true
         }
     },
     {
@@ -656,9 +702,9 @@ const startScreenUpdater = setInterval(function() {
               initContinue.click();
           }
       
-          else if(c == 12565 || c == 12587) {
-              if(candidateButton) {
-                  candidateButton.remove();
+          else if(c == 125 || c == 126) {
+              if(runningMateButton) {
+                  runningMateButton.remove();
               }
           }
       }
