@@ -651,14 +651,16 @@ const startScreenUpdater = setInterval(function() {
     const difficultySlider = document.getElementById("difficulty_level");
     const gameType = document.getElementById("game_type_id");
     
-    if((candidateButton || c != 0)&& !runningMateButton){
-		var c = document.getElementById("candidate_id").value;
-		else if(c == 12565 || c == 12587) {
+		if(c == 12565) {
             if(candidateButton) {
                 candidateButton.remove();
             }
 		}
-	}
+    if(c == 12587) {
+            if(candidateButton) {
+                candidateButton.remove();
+            }
+		}
 }, 1);
 
 	document.head.innerHTML += `<link
