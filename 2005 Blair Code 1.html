@@ -640,7 +640,7 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 //#endcode
 
-e = campaignTrail_temp
+var e = campaignTrail_temp
 
   const startScreenUpdater = setInterval(function() {
       const goBackButton = document.getElementById("candidate_id_back");
@@ -651,12 +651,17 @@ e = campaignTrail_temp
       
       if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
           var c = document.getElementById("candidate_id")?.value ?? -1;
-          if(c == 12565 || c == 12587) {
+          if(c == 12565) {
               if(candidateButton) {
                   candidateButton.remove();
               }
           }
-  }, 1);
+          if(c == 12587) {
+              if(candidateButton) {
+                  candidateButton.remove();
+              }
+          }
+}, 1);
 
 	document.head.innerHTML += `<link
 	  rel="stylesheet"
