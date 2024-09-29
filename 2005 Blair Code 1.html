@@ -640,7 +640,7 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 //#endcode
 
-var e = campaignTrail_temp
+e = campaignTrail_temp
 
   const startScreenUpdater = setInterval(function() {
       const goBackButton = document.getElementById("candidate_id_back");
@@ -649,7 +649,7 @@ var e = campaignTrail_temp
       const finalScreenBB = document.getElementById("opponent_selection_id_back");
       const finalScreenID = document.getElementById("opponent_selection_id_button");
       
-      if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
+      if(candidateButton || c != 0){ // change theme on candidate viewing
           var c = document.getElementById("candidate_id")?.value ?? -1;
           if(c == 12565) {
               if(candidateButton) {
