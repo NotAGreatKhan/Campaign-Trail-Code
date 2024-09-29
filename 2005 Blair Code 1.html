@@ -269,7 +269,7 @@ campaignTrail_temp.candidate_json = [
             "description": "<p>Put description here</p>",
             "color_hex": "#4848a8",
             "secondary_color_hex": null,
-            "is_active": 0,
+            "is_active": 1,
             "image_url": "https://imgur.com/5bwxgqy.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
@@ -292,7 +292,7 @@ campaignTrail_temp.candidate_json = [
             "description": "<p>Put description here</p>",
             "color_hex": "#ffb752",
             "secondary_color_hex": null,
-            "is_active": 0,
+            "is_active": 1,
             "image_url": "https://imgur.com/J2gXM1R.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
@@ -653,12 +653,7 @@ const startScreenUpdater = setInterval(function() {
     
     if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
 		var c = document.getElementById("candidate_id").value;
-		if(c == 78 && !(candidateButton) && !(runningMateButton)) {
-            goBackButton.click();
-            const initContinue = document.getElementById("election_id_button");
-            initContinue.click();
-		}
-		else if(c == 12565 || c == 79) {
+		else if(c == 12565 || c == 12587) {
             if(candidateButton) {
                 candidateButton.remove();
             }
