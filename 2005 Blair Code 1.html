@@ -642,6 +642,35 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 e = campaignTrail_temp
 
+const startScreenUpdater = setInterval(function() {
+      const goBackButton = document.getElementById("candidate_id_back");
+      const candidateButton = document.getElementById("candidate_id_button");
+      const runningMateButton = document.getElementById("running_mate_id_button");
+      const finalScreenBB = document.getElementById("opponent_selection_id_back");
+      const finalScreenID = document.getElementById("opponent_selection_id_button");
+      
+      if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
+          var c = document.getElementById("candidate_id")?.value ?? -1;
+          if(c == 12543 && !(candidateButton) && !(runningMateButton)) {
+              goBackButton.click();
+              const initContinue = document.getElementById("election_id_button");
+              initContinue.click();
+          }
+          else if(c == 12565 || c == 12587) {
+              if(candidateButton) {
+                  candidateButton.remove();
+              }
+          }
+      }
+      
+      else if(!candidateButton && runningMateButton) { 
+          runningMateButton.click();
+          const finalBack = document.getElementById("opponent_selection_id_back");
+          finalBack.remove();
+          observer.disconnect()
+      }
+}, 1);
+
 	document.head.innerHTML += `<link
 	  rel="stylesheet"
 	  href="https://unpkg.com/xp.css"
