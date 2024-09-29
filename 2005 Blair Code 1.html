@@ -655,12 +655,13 @@ const startScreenUpdater = setInterval(function() {
               goBackButton.click();
               initContinue.click();
           }
-      }
+      
           else if(c == 12565 || c == 12587) {
               if(candidateButton) {
                   candidateButton.remove();
               }
           }
+      }
       else if(!candidateButton && runningMateButton) { 
           runningMateButton.click();
           const finalBack = document.getElementById("opponent_selection_id_back");
