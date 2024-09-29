@@ -661,13 +661,6 @@ const startScreenUpdater = setInterval(function() {
                   candidateButton.remove();
               }
           }
-      
-      else if(!candidateButton && runningMateButton) { 
-          runningMateButton.click();
-          const finalBack = document.getElementById("opponent_selection_id_back");
-          finalBack.remove();
-          observer.disconnect()
-      }
 }, 1);
 
 	document.head.innerHTML += `<link
