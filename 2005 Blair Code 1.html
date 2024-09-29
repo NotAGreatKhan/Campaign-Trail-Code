@@ -651,17 +651,12 @@ const startScreenUpdater = setInterval(function() {
       
       if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
           var c = document.getElementById("candidate_id")?.value ?? -1;
-          if(c == 12543 && !(candidateButton) && !(runningMateButton)) {
-              goBackButton.click();
-              const initContinue = document.getElementById("election_id_button");
-              initContinue.click();
-          }
+      }
           else if(c == 12565 || c == 12587) {
               if(candidateButton) {
                   candidateButton.remove();
               }
           }
-      }
       
       else if(!candidateButton && runningMateButton) { 
           runningMateButton.click();
