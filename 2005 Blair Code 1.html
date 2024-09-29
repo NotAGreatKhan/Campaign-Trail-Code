@@ -668,11 +668,6 @@ const startScreenUpdater = setInterval(function() {
           finalBack.remove();
           observer.disconnect()
       }
-  
-      if(finalScreenID && finalScreenBB) { // delete back button and delete the interval
-          finalScreenBB.remove();
-          clearInterval(startScreenUpdater);
-      }
 }, 1);
 
 	document.head.innerHTML += `<link
