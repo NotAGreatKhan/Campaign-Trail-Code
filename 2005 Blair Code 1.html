@@ -651,25 +651,13 @@ const startScreenUpdater = setInterval(function() {
     const difficultySlider = document.getElementById("difficulty_level");
     const gameType = document.getElementById("game_type_id");
     
-    if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
+    if((candidateButton || c != 0)&& !runningMateButton){
 		var c = document.getElementById("candidate_id").value;
 		else if(c == 12565 || c == 12587) {
             if(candidateButton) {
                 candidateButton.remove();
             }
 		}
-	}
-    
-	else if(!candidateButton && runningMateButton) { 
-	    runningMateButton.click();
-        const finalBack = document.getElementById("opponent_selection_id_back");
-        finalBack.remove();
-        observer.disconnect()
-	}
-
-	if(finalScreenID) { // delete back button and delete the interval
-		finalScreenBB.remove();
-		clearInterval(startScreenUpdater);
 	}
 }, 1);
 
