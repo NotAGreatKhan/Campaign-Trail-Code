@@ -717,12 +717,7 @@ const startScreenUpdater = setInterval(function() {
               initContinue.click();
           }
           
-          else if(r == 125 && !(runningMateButton)) {
-              if(runningMateButton) {
-                  runningMateButton.remove();
-              }
-          },
-          else if(r == 126 && !(runningMateButton)) {
+          else if(r == 125 || r == 126 && !(runningMateButton)) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
