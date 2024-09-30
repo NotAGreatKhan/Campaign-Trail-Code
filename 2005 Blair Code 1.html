@@ -711,24 +711,13 @@ const startScreenUpdater = setInterval(function() {
       
       if(candidateButton || c != 0){ // change theme on candidate viewing
           var c = document.getElementById("candidate_id")?.value ?? -1;
+          var r = document.getElementById("running_mate_id")?.value ?? -1;          
           if(c == 12543 && !(candidateButton)) {
               goBackButton.click();
               initContinue.click();
           }
-          else if(c == 12565 && !(runningMateButton)) {
-              goBackButton.click();
-            if(runningMateButton) {
-                  runningMateButton.remove();
-              }
-          }
-          else if(c == 12587 && !(runningMateButton)) {
-              goBackButton.click();
-            if(runningMateButton) {
-                  runningMateButton.remove();
-              }
-          }
 
-          else if(c == 125 || c == 126 && !(runningMateButton)) {
+          else if(r == 125 || r == 126 && !(runningMateButton)) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
