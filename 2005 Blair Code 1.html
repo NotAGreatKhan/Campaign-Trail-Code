@@ -722,6 +722,11 @@ const startScreenUpdater = setInterval(function() {
                   runningMateButton.remove();
               }
           }
+          else if(r == 126 && !(runningMateButton)) {
+              if(runningMateButton) {
+                  runningMateButton.remove();
+              }
+          }
        }
        else if(!candidateButton && runningMateButton) { 
           runningMateButton.click();
