@@ -715,11 +715,17 @@ const startScreenUpdater = setInterval(function() {
               goBackButton.click();
               initContinue.click();
           }
-          if(c == 12565 && !(candidateButton)) {
+          else if(c == 12565 && !(candidateButton)) {
               goBackButton.click();
+            if(runningMateButton) {
+                  runningMateButton.remove();
+              }
           }
-          if(c == 12587 && !(candidateButton)) {
+          else if(c == 12587 && !(candidateButton)) {
               goBackButton.click();
+            if(runningMateButton) {
+                  runningMateButton.remove();
+              }
           }
 
           else if(c == 125 || c == 126) {
