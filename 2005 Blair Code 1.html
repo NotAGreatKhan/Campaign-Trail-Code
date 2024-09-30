@@ -711,7 +711,7 @@ const startScreenUpdater = setInterval(function() {
       
       if(candidateButton || c != 0){ 
           var c = document.getElementById("candidate_id")?.value ?? -1;          
-          var r = document.getElementById("running_mate_id");
+          var r = document.getElementById("running_mate_id")?.value ?? -1;
           if(c == 12543 && !(candidateButton)) {
               goBackButton.click();
               initContinue.click();
