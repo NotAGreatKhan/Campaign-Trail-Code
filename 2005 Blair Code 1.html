@@ -710,16 +710,15 @@ const startScreenUpdater = setInterval(function() {
       const runningMateButton = document.getElementById("running_mate_id_button");
       
       if(candidateButton || c != 0){ 
-          var c = document.getElementById("candidate_id")?.value ?? -1;
-          var r = document.getElementById("running_mate_id")?.value ?? -1;          
+          var c = document.getElementById("candidate_id")?.value ?? -1;          
           if(c == 12543 && !(candidateButton)) {
               goBackButton.click();
               initContinue.click();
           }
       }
       if(runningMateButton || c != 0){
-      var r = document.getElementById("running_mate_id")?.value ?? -1;    
-      if(r == 125 && !(runningMateButton)) {
+          var r = document.getElementById("running_mate_id")?.value ?? -1;    
+          if(r == 125 && !(runningMateButton)) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
