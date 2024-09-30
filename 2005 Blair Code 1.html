@@ -715,7 +715,15 @@ const startScreenUpdater = setInterval(function() {
               goBackButton.click();
               initContinue.click();
           }
-      
+          if(c == 12565 && !(candidateButton)) {
+              goBackButton.click();
+              initContinue.click();
+          }
+          if(c == 12587 && !(candidateButton)) {
+              goBackButton.click();
+              initContinue.click();
+          }
+
           else if(c == 125 || c == 126) {
               if(runningMateButton) {
                   runningMateButton.remove();
