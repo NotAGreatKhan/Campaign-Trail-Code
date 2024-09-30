@@ -709,21 +709,28 @@ const startScreenUpdater = setInterval(function() {
       const candidateButton = document.getElementById("candidate_id_button");
       const runningMateButton = document.getElementById("running_mate_id_button");
       
-      if(candidateButton || c != 0){ // change theme on candidate viewing
+      if(candidateButton || c != 0){ 
           var c = document.getElementById("candidate_id")?.value ?? -1;
           var r = document.getElementById("running_mate_id")?.value ?? -1;          
           if(c == 12543 && !(candidateButton)) {
               goBackButton.click();
               initContinue.click();
           }
-
-          else if(r == 125 || r == 126 && !(runningMateButton)) {
+      }
+      if(runningMateButton || c != 0){
+      var r = document.getElementById("running_mate_id")?.value ?? -1;    
+      if(r == 125 && !(runningMateButton)) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
           }
-      }
-      else if(!candidateButton && runningMateButton) { 
+      if(r == 126 && !(runningMateButton)) {
+              if(runningMateButton) {
+                  runningMateButton.remove();
+              }
+          }
+       }
+       else if(!candidateButton && runningMateButton) { 
           runningMateButton.click();
           const finalBack = document.getElementById("opponent_selection_id_back");
           finalBack.remove();
