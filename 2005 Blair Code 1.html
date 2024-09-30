@@ -711,19 +711,18 @@ const startScreenUpdater = setInterval(function() {
       
       if(candidateButton || c != 0){ 
           var c = document.getElementById("candidate_id")?.value ?? -1;          
+          var r = document.getElementById("running_mate_id")?.value ?? -1;
           if(c == 12543 && !(candidateButton)) {
               goBackButton.click();
               initContinue.click();
           }
-      }
-      if(runningMateButton || c != 0){
-          var r = document.getElementById("running_mate_id")?.value ?? -1;    
+          
           if(r == 125 && !(runningMateButton)) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
           }
-      if(r == 126 && !(runningMateButton)) {
+          if(r == 126 && !(runningMateButton)) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
