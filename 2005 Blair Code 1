@@ -297,7 +297,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Michael Howard</b></li><li><b>Role: Her Majesty's Leader of the Opposition</b></li><li><b>Constituency: Folkestone and Hythe</b></li><p> </p><i>”.”</i>\n\n<p><b></p>\n\n<p></p>\n\n<p></p>\n\n<p></p></div>",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Michael Howard</b></li><li><b>Role: Her Majesty's Leader of the Opposition</b></li><li><b>Constituency: Folkestone and Hythe</b></li><p> </p><i>”This is a great party - the longest standing, most successful party in the history of democracy. There has been no other party that has done so much, or achieved so much, as ours. We are its trustees.”</i>\n\n<p><b></p>\n\n<p></p>\n\n<p></p>\n\n<p></p></div>",
             "candidate_score": 1,
             "running_mate": true
         }
