@@ -8,137 +8,9 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
-var Resign = 0;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
-    if(ans == 12807){
-        campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png"  
-    }
-    if(ans == 12808){
-        campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png"  
-    }    
-    if(ans == 12797){
-        campaignTrail_temp.candidate_last_name = "Chancellor";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
-        campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
-    }
-    if(ans == 12798){
-        campaignTrail_temp.candidate_last_name = "Chancellor";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
-        campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
-    }
-    if(ans == 3493){
-        document.body.background = "https://imgur.com/tjqFeeK.png"    
-    }
-    if(ans == 12862){
-        document.body.background = "https://imgur.com/erWHhIe.png"    
-    }
-    if(ans == 12863){
-        document.body.background = "https://imgur.com/erWHhIe.png"    
-    }
-    if(ans == 12864){
-        document.body.background = "https://imgur.com/erWHhIe.png"    
-    }
-    if(ans == 12865){
-        document.body.background = "https://imgur.com/erWHhIe.png"    
-    }
-    if(ans == 100008){
-        document.body.background = "https://imgur.com/erWHhIe.png"    
-    }
-    if(ans == 100008){
-    document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
-    }
-    if(ans == 12862){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
-    }
-    if(ans == 12863){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"        
-        campaignTrail_temp.running_mate_last_name = "Blair";
-    }
-    if(ans == 12864){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
-    }
-    if(ans == 12865){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
-    }
-    if(ans == 100008){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate. last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
-    }
-    if(ans == 12542){
-      Resign += 1;
-    }
-    if(ans == 12798){
-      Resign += 1;
-    }
-    if(ans == 12814){
-      Resign += 1;
-    }
-    if(ans == 12819){
-      Resign += 1;
-    }
-    if(ans == 12824){
-      Resign += 1;
-    }
-    if(ans == 12828){
-      Resign += 1;
-    }
-    if(ans == 12834){
-      Resign += 1;
-    }   
-    
-    if(Resign >= 7){
-    campaignTrail_temp.questions_json[13] = {
-    "model": "campaign_trail.question",
-    "pk": 100000,
-    "fields": {
-        "priority": 0,
-        "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, <i>now</i>, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. As you go around your fellow cabinet members, their responses to you are strange in their unison and foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
-        "likelihood": 1
-        }
-      }
-    } 
 
-    if(Resign >= 7){
-    campaignTrail_temp.questions_json[14] = {
-    "model": "campaign_trail.question",
-    "pk": 100007,
-    "fields": {
-        "priority": 0,
-        "description": "[February, 2005] The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
-        "likelihood": 1
-        }
-      }
-    }
-    
-    if(Resign >= 7){
-    campaignTrail_temp.questions_json[31] = {
-    "model": "campaign_trail.question",
-    "pk": 100011,
-    "fields": {
-        "priority": 0,
-        "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
-        "likelihood": 1
-        }
-      }
-    }
 }
 
 campaignTrail_temp.questions_json = [
@@ -427,6 +299,24 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "[May 4, 2005] This campaign. This campaign has leached out every fibre of your being, and ardently extracting every electric current of your conscience. Finally though, election day is tomorrow. Where would you like to concentrate the last stops of your stumping before your eyes set upon that voluminous red screen at the Labour Party Headquarters?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13391,
+        "fields": {
+            "priority": 0,
+            "description": "[July 9, 2003] You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13410,
+        "fields": {
+            "priority": 0,
+            "description": "[January 28, 2004] The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
             "likelihood": 1
         }
     }
@@ -870,7 +760,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12894,
         "fields": {
             "question": 12891,
-            "description": "Since 1997, two million more people are in work, and the UK has the lowest unemployment for 30 years.Tax credits and the minimum wage are ensuring that work pays for everyone. If re-elected, we will ensure that economic prosperity and social dynamism will go hand in hand."
+            "description": "Since 1997, two million more people are in work, and the UK has the lowest unemployment for 30 years. Tax credits and the minimum wage are ensuring that work pays for everyone. If re-elected, we will ensure that economic prosperity and social dynamism will go hand in hand."
         }
     },
     {
@@ -1195,50 +1085,34 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100001,
+        "pk": 13392,
         "fields": {
-            "question": 100000,
-            "description": "I… I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over..."
+            "question": 13391,
+            "description": "I think the Leader of the Opposition would be hard-pressed to find anyone who seriously opposes the way in which we have carried out the military operation. We have presented the facts to the public: that Saddam Hussein is a threat to international security. If he is so critical of our handling, why is he backing the operation? Why hasn’t his own back-benches offered any meaningful opposition on our support of our American allies?"
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100002,
+        "pk": 13398,
         "fields": {
-            "question": 100000,
-            "description": "No… No, no, no. This won’t be how I go down, I won’t let it. I’m fighting this out! I need to, for the country, for New Labour. Everything we have accomplished together. Everything we could do in our grasp, and we’re just going to let go of that? No, I will contest whatever motion of No Confidence, whatever leadership challenge. I don’t care! I’m not… I’m not going out like this."
+            "question": 13391,
+            "description": "The Right Honourable Gentleman talks a big game about commanding the support of the people, yet he cannot even command the support of his own party! I would be careful hurling such hypocrisy around, I hear a leadership election may just be on his plate soon."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100008,
+        "pk": 13404,
         "fields": {
-            "question": 100007,
-            "description": "“…In the years to come, wherever I am, whatever I do, I’m with you. Wishing you well. I’m wanting you to win. You’re the future now – so make the most of it”."
+            "question": 13391,
+            "description": "The Leader of the Opposition cannot justifiably say he opposes what we do, when we have won the case for the operation on the credible and honest grounds that the Iraqi regime must be eliminated. Out of principle for the international security of the world and of this country."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100012,
+        "pk": 13411,
         "fields": {
-            "question": 100011,
-            "description": "Our first priority should always be the economy. Because by maintaining a strong economy, the lives of the whole of Britain shall stay prosperous, and you then have the opportunity to invest in the future. Emphasise our economic record heavily."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 100013,
-        "fields": {
-            "question": 100011,
-            "description": "Now that Tony is no longer leading the party, we can tactfully shift our position on, and away from, Iraq. The war itself has garnered great unpopularity since the military operation, so we need to be tactful in how we approach this. We’ll avoid bringing it up, but when asked, we’ll support the withdrawal of troops once order is restored — instead of the full nation building."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 100014,
-        "fields": {
-            "question": 100011,
-            "description": "Let’s really lay it thick into the Tories – just like my old days in the ‘90s – we’ll hit them on their last record in government, their frankly ludicrous policies. The whole nine yards. Let’s finish this campaign."
+            "question": 13410,
+            "description": "Alastair… He’s been our strongest soldier on this. He has. We’ve just got to put ourselves out there more. Keep going, we had to make this decision. And, we can’t turn back on this now. We – we just can’t."
         }
     }
 ]
@@ -2778,7 +2652,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12446,
-            "state_multiplier": 56
+            "state_multiplier": 52
         }
     },
     {
@@ -2787,7 +2661,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12452,
-            "state_multiplier": 49
+            "state_multiplier": 46
         }
     },
     {
@@ -2796,7 +2670,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12458,
-            "state_multiplier": 45
+            "state_multiplier": 42
         }
     },
     {
@@ -2805,7 +2679,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12464,
-            "state_multiplier": 42
+            "state_multiplier": 39
         }
     },
     {
@@ -2814,7 +2688,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12470,
-            "state_multiplier": 40
+            "state_multiplier": 39
         }
     },
     {
@@ -2823,7 +2697,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12476,
-            "state_multiplier": 31
+            "state_multiplier": 29
         }
     },
     {
@@ -2832,7 +2706,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12482,
-            "state_multiplier": 40
+            "state_multiplier": 35
         }
     },
     {
@@ -2841,7 +2715,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12488,
-            "state_multiplier": 25
+            "state_multiplier": 22
         }
     },
     {
@@ -2850,7 +2724,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12494,
-            "state_multiplier": 24
+            "state_multiplier": 21
         }
     },
     {
@@ -2868,7 +2742,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12543,
             "state": 12506,
-            "state_multiplier": 5
+            "state_multiplier": 41
         }
     },
     {
@@ -2886,7 +2760,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12446,
-            "state_multiplier": 21
+            "state_multiplier": 19
         }
     },
     {
@@ -2895,7 +2769,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12452,
-            "state_multiplier": 30
+            "state_multiplier": 28
         }
     },
     {
@@ -2904,7 +2778,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12458,
-            "state_multiplier": 30
+            "state_multiplier": 28
         }
     },
     {
@@ -2913,7 +2787,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12464,
-            "state_multiplier": 39
+            "state_multiplier": 37
         }
     },
     {
@@ -2922,7 +2796,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12470,
-            "state_multiplier": 37
+            "state_multiplier": 36
         }
     },
     {
@@ -2931,7 +2805,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12476,
-            "state_multiplier": 44
+            "state_multiplier": 41
         }
     },
     {
@@ -2949,7 +2823,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12488,
-            "state_multiplier": 45
+            "state_multiplier": 44
         }
     },
     {
@@ -2958,7 +2832,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12494,
-            "state_multiplier": 40
+            "state_multiplier": 36
         }
     },
     {
@@ -2976,7 +2850,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12565,
             "state": 12506,
-            "state_multiplier": 2.35
+            "state_multiplier": 18
         }
     },
     {
@@ -2994,7 +2868,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12446,
-            "state_multiplier": 23
+            "state_multiplier": 25
         }
     },
     {
@@ -3003,7 +2877,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12452,
-            "state_multiplier": 22
+            "state_multiplier": 26
         }
     },
     {
@@ -3012,7 +2886,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12458,
-            "state_multiplier": 21
+            "state_multiplier": 25
         }
     },
     {
@@ -3021,7 +2895,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12464,
-            "state_multiplier": 20
+            "state_multiplier": 23
         }
     },
     {
@@ -3030,7 +2904,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12470,
-            "state_multiplier": 19
+            "state_multiplier": 22
         }
     },
     {
@@ -3039,7 +2913,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12476,
-            "state_multiplier": 22
+            "state_multiplier": 25
         }
     },
     {
@@ -3048,7 +2922,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12482,
-            "state_multiplier": 22
+            "state_multiplier": 26
         }
     },
     {
@@ -3057,7 +2931,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12488,
-            "state_multiplier": 25
+            "state_multiplier": 28
         }
     },
     {
@@ -3066,7 +2940,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12494,
-            "state_multiplier": 33
+            "state_multiplier": 37
         }
     },
     {
@@ -3084,7 +2958,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12587,
             "state": 12506,
-            "state_multiplier": 3.5
+            "state_multiplier": 34
         }
     },
     {
@@ -3192,7 +3066,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12609,
             "state": 12506,
-            "state_multiplier": 2.65
+            "state_multiplier": 22
         }
     },
     {
@@ -3210,7 +3084,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12446,
-            "state_multiplier": 3
+            "state_multiplier": 3.5
         }
     },
     {
@@ -3219,7 +3093,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12452,
-            "state_multiplier": 1
+            "state_multiplier": 1.5
         }
     },
     {
@@ -3228,7 +3102,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12458,
-            "state_multiplier": 1
+            "state_multiplier": 2
         }
     },
     {
@@ -3237,7 +3111,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12464,
-            "state_multiplier": 1
+            "state_multiplier": 2
         }
     },
     {
@@ -3246,7 +3120,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12470,
-            "state_multiplier": 0.5
+            "state_multiplier": 1.5
         }
     },
     {
@@ -3255,7 +3129,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12476,
-            "state_multiplier": 0.5
+            "state_multiplier": 1.5
         }
     },
     {
@@ -3264,7 +3138,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12482,
-            "state_multiplier": 0.5
+            "state_multiplier": 2
         }
     },
     {
@@ -3282,7 +3156,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12494,
-            "state_multiplier": 0.5
+            "state_multiplier": 2.5
         }
     },
     {
@@ -3300,7 +3174,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12631,
             "state": 12506,
-            "state_multiplier": 0.5
+            "state_multiplier": 5
         }
     },
     {
@@ -3318,7 +3192,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12446,
-            "state_multiplier": 3
+            "state_multiplier": 3.5
         }
     },
     {
@@ -3327,7 +3201,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12452,
-            "state_multiplier": 2
+            "state_multiplier": 3
         }
     },
     {
@@ -3336,7 +3210,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12458,
-            "state_multiplier": 1
+            "state_multiplier": 2
         }
     },
     {
@@ -3345,7 +3219,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12464,
-            "state_multiplier": 1
+            "state_multiplier": 2
         }
     },
     {
@@ -3354,7 +3228,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12470,
-            "state_multiplier": 1
+            "state_multiplier": 3
         }
     },
     {
@@ -3363,7 +3237,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12476,
-            "state_multiplier": 1
+            "state_multiplier": 2
         }
     },
     {
@@ -3372,7 +3246,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12482,
-            "state_multiplier": 0
+            "state_multiplier": 1
         }
     },
     {
@@ -3381,7 +3255,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12488,
-            "state_multiplier": 0
+            "state_multiplier": 2
         }
     },
     {
@@ -3390,7 +3264,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12649,
             "state": 12494,
-            "state_multiplier": 0
+            "state_multiplier": 2
         }
     },
     {
@@ -3426,7 +3300,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12446,
-            "state_multiplier": 4.75
+            "state_multiplier": 4
         }
     },
     {
@@ -3435,7 +3309,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12452,
-            "state_multiplier": 4.5
+            "state_multiplier": 3
         }
     },
     {
@@ -3444,7 +3318,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12458,
-            "state_multiplier": 6
+            "state_multiplier": 3
         }
     },
     {
@@ -3453,7 +3327,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12464,
-            "state_multiplier": 6
+            "state_multiplier": 4
         }
     },
     {
@@ -3462,7 +3336,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12470,
-            "state_multiplier": 7
+            "state_multiplier": 4
         }
     },
     {
@@ -3471,7 +3345,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12476,
-            "state_multiplier": 5
+            "state_multiplier": 3
         }
     },
     {
@@ -3480,7 +3354,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12482,
-            "state_multiplier": 7
+            "state_multiplier": 5
         }
     },
     {
@@ -3489,7 +3363,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12488,
-            "state_multiplier": 5
+            "state_multiplier": 3
         }
     },
     {
@@ -3498,7 +3372,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12494,
-            "state_multiplier": 6
+            "state_multiplier": 2
         }
     },
     {
@@ -3516,7 +3390,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 12667,
             "state": 12506,
-            "state_multiplier": 1
+            "state_multiplier": 2
         }
     },
     {
@@ -5881,62 +5755,122 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 100005,
+        "pk": 13394,
         "fields": {
-            "answer": 100001,
+            "answer": 13392,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.1
+            "global_multiplier": 0.008
         }
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 100006,
+        "pk": 13395,
         "fields": {
-            "answer": 100002,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": -0.105
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 100010,
-        "fields": {
-            "answer": 100008,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": -0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 100018,
-        "fields": {
-            "answer": 100012,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 100019,
-        "fields": {
-            "answer": 100013,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": 0.002
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 100020,
-        "fields": {
-            "answer": 100014,
+            "answer": 13392,
             "candidate": 12565,
             "affected_candidate": 12565,
-            "global_multiplier": -0.05
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13396,
+        "fields": {
+            "answer": 13392,
+            "candidate": 12587,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13400,
+        "fields": {
+            "answer": 13398,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13401,
+        "fields": {
+            "answer": 13398,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.012
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13402,
+        "fields": {
+            "answer": 13398,
+            "candidate": 12587,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13406,
+        "fields": {
+            "answer": 13404,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13407,
+        "fields": {
+            "answer": 13404,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13408,
+        "fields": {
+            "answer": 13404,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13413,
+        "fields": {
+            "answer": 13411,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13414,
+        "fields": {
+            "answer": 13411,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13415,
+        "fields": {
+            "answer": 13411,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
         }
     }
 ]
@@ -6337,7 +6271,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13213,
         "fields": {
             "answer": 12872,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.12,
             "issue_importance": 4
         }
@@ -6387,7 +6321,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13268,
         "fields": {
             "answer": 12894,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.125,
             "issue_importance": 2
         }
@@ -6407,7 +6341,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13287,
         "fields": {
             "answer": 12898,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -0.12,
             "issue_importance": 0
         }
@@ -6537,7 +6471,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13360,
         "fields": {
             "answer": 12927,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.15,
             "issue_importance": 2
         }
@@ -6597,7 +6531,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13374,
         "fields": {
             "answer": 12930,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.25,
             "issue_importance": 3
         }
@@ -6640,6 +6574,46 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 28,
             "issue_score": 0.5,
             "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13397,
+        "fields": {
+            "answer": 13392,
+            "issue": 30,
+            "issue_score": -0.125,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13403,
+        "fields": {
+            "answer": 13398,
+            "issue": 30,
+            "issue_score": -0.31,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13409,
+        "fields": {
+            "answer": 13404,
+            "issue": 30,
+            "issue_score": -0.55,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13416,
+        "fields": {
+            "answer": 13411,
+            "issue": 30,
+            "issue_score": -0.71,
+            "issue_importance": 6
         }
     }
 ]
@@ -7714,56 +7688,38 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100003,
+        "pk": 13393,
         "fields": {
-            "answer": 100001,
+            "answer": 13392,
             "candidate": 12543,
-            "answer_feedback": "You did your best Tony. Now though, it’s time for a new man to lead the country. Probably not a surprise as to who it will be."
+            "answer_feedback": "Hear, hear. The Conservatives overwhelmingly backing the conflict puts significant limitations on how they can go about attacking you on this. Don’t forget though, support for the war is only at 48%. You will have to tread very carefully with this, on either side of the debate."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100004,
+        "pk": 13399,
         "fields": {
-            "answer": 100002,
+            "answer": 13398,
             "candidate": 12543,
-            "answer_feedback": "It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now."
+            "answer_feedback": "Hear, hear! This is absolutely his biggest weakness as Leader. Being about as charismatic as a wet stool, it takes little strain to counter his attacks. As his candidacy unravels at the seams though, a new leader will take his place that you will have to fight…"
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100009,
+        "pk": 13405,
         "fields": {
-            "answer": 100008,
+            "answer": 13404,
             "candidate": 12543,
-            "answer_feedback": "Fair sailing, Tony Blair."
+            "answer_feedback": "Support for the war is fairly evenly split down the middle. The word ‘war’, it’s a scary word to a lot of people. And the simple fact remains that the UN’s support has not been obtained. You wonder just how much you could’ve won that vote by had you used that <i>other</i> intelligence…"
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100015,
+        "pk": 13412,
         "fields": {
-            "answer": 100012,
+            "answer": 13411,
             "candidate": 12543,
-            "answer_feedback": "As the economy continues to chug along, and as your record as Chancellor shines to the average voter, this angle is always going to be your strongest turf. Hopefully you can pull a victory after the resignation. To save New Labour."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 100016,
-        "fields": {
-            "answer": 100013,
-            "candidate": 12543,
-            "answer_feedback": "Whilst a good idea on paper, the occupation has gone on for over 2 years. This is an issue that will just haunt you if you’re elected. At least you were Chancellor until now, instead of say, Foreign Secretary. It also helps you against the Conservatives, who fully support the war."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 100017,
-        "fields": {
-            "answer": 100014,
-            "candidate": 12543,
-            "answer_feedback": "A true Gordon Brown forté. You don’t quite have the same energy as you did then, but they are decently effective at pressuring the still-reeling Opposition."
+            "answer_feedback": "Your strongest political soldiers will always fight tooth-and-nail for the war you have. All of those deaths. Was it worth it?"
         }
     }
 ]
@@ -7773,20 +7729,7 @@ campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png";
 campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
 campaignTrail_temp.running_mate_last_name = "Blair";
 
-const style_overwrite = document.createElement("style");
-style_overwrite.innerHTML = 
-`#campaign_sign {
-  background-color: #c44558;
-  border-color: #94292e;
-}
-.inner_window_question h3 {
-background-color: #ffcfcf;
-}
-.overlay_window h3 {
-background-color: #ffcfcf;
-}`
-;
-document.head.appendChild(style_overwrite);
+
 
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
@@ -7824,7 +7767,7 @@ campaignTrail_temp.jet_data = [{
     },
     "endings_enabled": false,
     "ending_data": {
-}
+    }
 }
 ]
 
