@@ -65,6 +65,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     
 //Other CYOA Stuff  
     if(ans == 12813 || ans == 12815){
+    campaignTrail_temp.questions_json[6] = {
+    "model": "campaign_trail.question",
+    "pk": 13417,
+    "fields": {
+        "priority": 0,
+        "description": "[March 18, 2003] Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[7] = {
     "model": "campaign_trail.question",
     "pk": 13391,
@@ -74,7 +85,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  }
+  }   
     if(ans == 12825){
     campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
