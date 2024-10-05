@@ -62,7 +62,30 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-
+    
+//Other CYOA Stuff  
+    if(ans == 12813 || ans == 12815){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 13391,
+    "fields": {
+        "priority": 0,
+        "description": "[July 9, 2003] You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12825){
+    campaignTrail_temp.questions_json[9] = {
+    "model": "campaign_trail.question",
+    "pk": 13410,
+    "fields": {
+        "priority": 0,
+        "description": "[January 28, 2004] The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
+        "likelihood": 1
+      }
+    }
+  }
 
 //Answers
     {
