@@ -8,6 +8,7 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
+var Resign = 0;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
     if(ans == 12807){
@@ -76,6 +77,27 @@ cyoAdventure = function (a) {
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
     }
+    if(ans == 12542){
+      Resign += 1;
+    }
+    if(ans == 12798){
+      Resign += 1;
+    }
+    if(ans == 12814){
+      Resign += 1;
+    }
+    if(ans == 12819){
+      Resign += 1;
+    }
+    if(ans == 12824){
+      Resign += 1;
+    }
+    if(ans == 12828){
+      Resign += 1;
+    }
+    if(ans == 12834){
+      Resign += 1;
+    } 
 }
 
 campaignTrail_temp.questions_json = [
