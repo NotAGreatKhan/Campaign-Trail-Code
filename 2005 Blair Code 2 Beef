@@ -133,7 +133,7 @@ cyoAdventure = function (a) {
       }
     }
   }
-    if(ans == 12813 12815){
+    if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[7] = {
     "model": "campaign_trail.question",
     "pk": 13391,
