@@ -114,7 +114,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-  if(Negative >= 6){
+  if(Negative >= 5){
     campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13427,
