@@ -1,4 +1,5 @@
 var Resign = 0;
+var Negative = 0;
 
 campaignTrail_temp.cyoa = true
 cyoAdventure = function(a) {
@@ -24,8 +25,24 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12834){
       Resign += 1;
     }   
-}
-
+    if(ans == 12849){
+      Negative += 1;
+    }
+    if(ans == 12864){
+      Negative += 1;
+    }
+    if(ans == 12889){
+      Negative += 1;
+    }
+    if(ans == 12897){
+      Negative -= 1;
+    }
+    if(ans == 12909){
+      Negative += 1;
+    }
+    if(ans == 12917){
+      Negative += 1;
+    }
 
 //Questions
     if(Resign >= 7){
@@ -97,6 +114,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+}
 
 //Answers
     {
