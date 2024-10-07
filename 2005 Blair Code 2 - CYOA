@@ -1,5 +1,6 @@
 var Resign = 0;
 var Negative = 0;
+var OldLab = 0;
 
 campaignTrail_temp.cyoa = true
 cyoAdventure = function(a) {
@@ -42,6 +43,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 12917){
       Negative += 1;
+    }
+    if(ans == 12849){
+      OldLab += 1;
+    }
+    if(ans == 12808){
+      OldLab += 1;
+    }
+    if(ans == 12803){
+      OldLab += 1;
     }
 
 //Questions
@@ -114,13 +124,35 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-  if(Negative >= 5){
+    if(Negative >= 5){
     campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13427,
     "fields": {
         "priority": 0,
         "description": "[May 4, 2005] From the day that you came into office, you pledged to the British people that you would not get in the mud and slander your opponents. This campaign though, you have — in the eyes of the public — thrown that right out of the window and into the political fire. With the unusually personal vitriol of this year’s election season being lobbed around by both sides, the Liberal Democrats have seen unprecedented rises in the polls, as your personal favourability sags alongside the foreboding polarisation. What will you do to ensure this doesn’t mean your defeat – calamity even more so – tomorrow evening?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12808 && OldLab >= 3){
+    campaignTrail_temp.questions_json[18] = {
+    "model": "campaign_trail.question",
+    "pk": 13443,
+    "fields": {
+        "priority": 0,
+        "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12808 && OldLab < 3){
+    campaignTrail_temp.questions_json[18] = {
+    "model": "campaign_trail.question",
+    "pk": 13458,
+    "fields": {
+        "priority": 0,
+        "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
         "likelihood": 1
       }
     }
