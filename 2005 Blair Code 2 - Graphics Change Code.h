@@ -46,22 +46,18 @@
     if(ans == 12862){
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
     }
     if(ans == 12863){
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
     }
     if(ans == 12864){
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
     }
     if(ans == 12865){
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
     }
     if(ans == 100008){
         campaignTrail_temp.candidate_last_name = "Labour";
