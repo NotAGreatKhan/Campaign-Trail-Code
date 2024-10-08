@@ -177,6 +177,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }   
+    if(ans == 12813 || ans == 12815){
+    campaignTrail_temp.questions_json[9] = {
+    "model": "campaign_trail.question",
+    "pk": 13494,
+    "fields": {
+        "priority": 0,
+        "description": "[January, 2004] The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12825){
     campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
