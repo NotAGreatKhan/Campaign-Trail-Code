@@ -610,6 +610,13 @@ credits = function() {
   alert(text)
 }
 
+vpTableHistorical = {
+    "The Labour Party" : "Tony C. L. Blair",
+    "The Conservative Party" : "Michael Howard",
+    "The Liberal Democrats" : "Charles P. Kennedy",
+    "The Scotland National Party" : "Alex E. A. Salmond"
+}
+
 HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f"];
 HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party"];
 HistEV=["355","198","62","6"];
