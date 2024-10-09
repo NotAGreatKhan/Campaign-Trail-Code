@@ -8817,6 +8817,13 @@ campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png";
 campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
 campaignTrail_temp.running_mate_last_name = "Blair";
 
+vpTable = {
+    "The Labour Party" : "Tony C. L. Blair",   
+    "The Conservative Party" : "Michael Howard",   
+    "The Liberal Democrats" : "Charles P. Kennedy",
+    "The Scotland National Party" : "Alex E. A. Salmond"
+}
+
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
