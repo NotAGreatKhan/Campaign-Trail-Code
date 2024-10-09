@@ -194,6 +194,7 @@ async function handleMutations(mutationsList, observer) {
                 let overallthing = element.innerHTML;
                 overallthing = overallthing.replace("Electoral Votes","Allocated Seats");
                 overallthing = overallthing.replace("Candidate","Party List");
+                overallthing = overallthing.replace("Running Mate","Party Leader")
                 element.innerHTML = overallthing;
                 processedNodes.add(element);
             }
