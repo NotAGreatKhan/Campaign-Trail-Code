@@ -1,3 +1,10 @@
+vpTable = {
+    "The Labour Party" : "Tony C. L. Blair",   
+    "The Conservative Party" : "Michael Howard",   
+    "The Liberal Democrats" : "Charles P. Kennedy",
+    "The Scotland National Party" : "Alex E. A. Salmond"
+}
+
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
