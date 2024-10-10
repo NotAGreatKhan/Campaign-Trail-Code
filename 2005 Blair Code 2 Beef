@@ -52,10 +52,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12865){
         document.body.background = "https://imgur.com/erWHhIe.png"    
     }
-    if(ans == 100008){
+    if(ans == 13508){
         document.body.background = "https://imgur.com/erWHhIe.png"    
     }
-    if(ans == 100008){
+    if(ans == 13508){
     document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
     }
     if(ans == 12862){
@@ -74,7 +74,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
     }
-    if(ans == 100008){
+    if(ans == 13508){
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
@@ -135,7 +135,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(Resign >= 7){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
-    "pk": 100000,
+    "pk": 13499,
     "fields": {
         "priority": 0,
         "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, <i>now</i>, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. As you go around your fellow cabinet members, their responses to you are strange in their unison and foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
@@ -147,7 +147,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(Resign >= 7){
     campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
-    "pk": 100007,
+    "pk": 13500,
     "fields": {
         "priority": 0,
         "description": "[February, 2005] The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
@@ -158,7 +158,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(Resign >= 7){
     campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
-    "pk": 100011,
+    "pk": 13501,
     "fields": {
         "priority": 0,
         "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
@@ -257,6 +257,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
 }
+
 
 campaignTrail_temp.questions_json = [
     {
@@ -1456,49 +1457,49 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100001,
+        "pk": 13502,
         "fields": {
-            "question": 100000,
-            "description": "I… I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over..."
+            "question": 13499,
+            "description": "I… I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over... "
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100002,
+        "pk": 13503,
         "fields": {
-            "question": 100000,
-            "description": "No… No, no, no. This won’t be how I go down, I won’t let it. I’m fighting this out! I need to, for the country, for New Labour. Everything we have accomplished together. Everything we could do in our grasp, and we’re just going to let go of that? No, I will contest whatever motion of No Confidence, whatever leadership challenge. I don’t care! I’m not… I’m not going out like this."
+            "question": 13499,
+            "description": "No… No, no, no. This won’t be how I go down, I won’t let it. I’m fighting this out! I need to, for the country, for New Labour. Everything we have accomplished together. Everything we could do in our grasp, and we’re just going to let go of that? No, I will contest whatever motion of No Confidence, whatever leadership challenge. I don’t care! I’m not… I’m not going out like this. "
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100008,
+        "pk": 13508,
         "fields": {
-            "question": 100007,
+            "question": 13500,
             "description": "“…In the years to come, wherever I am, whatever I do, I’m with you. Wishing you well. I’m wanting you to win. You’re the future now – so make the most of it”."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100012,
+        "pk": 13511,
         "fields": {
-            "question": 100011,
+            "question": 13501,
             "description": "Our first priority should always be the economy. Because by maintaining a strong economy, the lives of the whole of Britain shall stay prosperous, and you then have the opportunity to invest in the future. Emphasise our economic record heavily."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100013,
+        "pk": 13516,
         "fields": {
-            "question": 100011,
+            "question": 13501,
             "description": "Now that Tony is no longer leading the party, we can tactfully shift our position on, and away from, Iraq. The war itself has garnered great unpopularity since the military operation, so we need to be tactful in how we approach this. We’ll avoid bringing it up, but when asked, we’ll support the withdrawal of troops once order is restored — instead of the full nation building."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 100014,
+        "pk": 13521,
         "fields": {
-            "question": 100011,
+            "question": 13501,
             "description": "Let’s really lay it thick into the Tories – just like my old days in the ‘90s – we’ll hit them on their last record in government, their frankly ludicrous policies. The whole nine yards. Let’s finish this campaign."
         }
     }
@@ -6532,9 +6533,9 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 100005,
+        "pk": 13506,
         "fields": {
-            "answer": 100001,
+            "answer": 13502,
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": -0.1
@@ -6542,19 +6543,19 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 100006,
+        "pk": 13507,
         "fields": {
-            "answer": 100002,
+            "answer": 13503,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.105
+            "global_multiplier": -1.05
         }
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 100010,
+        "pk": 13510,
         "fields": {
-            "answer": 100008,
+            "answer": 13508,
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": -0.005
@@ -6562,9 +6563,9 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 100018,
+        "pk": 13513,
         "fields": {
-            "answer": 100012,
+            "answer": 13511,
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": 0.05
@@ -6572,9 +6573,9 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 100019,
+        "pk": 13518,
         "fields": {
-            "answer": 100013,
+            "answer": 13516,
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": 0.002
@@ -6582,9 +6583,9 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 100020,
+        "pk": 13523,
         "fields": {
-            "answer": 100014,
+            "answer": 13521,
             "candidate": 12565,
             "affected_candidate": 12565,
             "global_multiplier": -0.05
@@ -7358,7 +7359,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13449,
         "fields": {
             "answer": 13444,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 4
         }
@@ -7378,7 +7379,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13456,
         "fields": {
             "answer": 13451,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 5
         }
@@ -7398,7 +7399,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13464,
         "fields": {
             "answer": 13459,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 4
         }
@@ -7418,7 +7419,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13471,
         "fields": {
             "answer": 13466,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 5
         }
@@ -7481,6 +7482,66 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 30,
             "issue_score": -0.65,
             "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13514,
+        "fields": {
+            "answer": 13511,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13515,
+        "fields": {
+            "answer": 13511,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13519,
+        "fields": {
+            "answer": 13516,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13520,
+        "fields": {
+            "answer": 13516,
+            "issue": 30,
+            "issue_score": -0.11,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13524,
+        "fields": {
+            "answer": 13521,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13525,
+        "fields": {
+            "answer": 13521,
+            "issue": 29,
+            "issue_score": 0.45,
+            "issue_importance": 7
         }
     }
 ]
@@ -8761,54 +8822,54 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100003,
+        "pk": 13504,
         "fields": {
-            "answer": 100001,
+            "answer": 13502,
             "candidate": 12543,
             "answer_feedback": "You did your best Tony. Now though, it’s time for a new man to lead the country. Probably not a surprise as to who it will be."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100004,
+        "pk": 13505,
         "fields": {
-            "answer": 100002,
+            "answer": 13503,
             "candidate": 12543,
             "answer_feedback": "It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100009,
+        "pk": 13509,
         "fields": {
-            "answer": 100008,
+            "answer": 13508,
             "candidate": 12543,
             "answer_feedback": "Fair sailing, Tony Blair."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100015,
+        "pk": 13512,
         "fields": {
-            "answer": 100012,
+            "answer": 13511,
             "candidate": 12543,
             "answer_feedback": "As the economy continues to chug along, and as your record as Chancellor shines to the average voter, this angle is always going to be your strongest turf. Hopefully you can pull a victory after the resignation. To save New Labour."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100016,
+        "pk": 13517,
         "fields": {
-            "answer": 100013,
+            "answer": 13516,
             "candidate": 12543,
-            "answer_feedback": "Whilst a good idea on paper, the occupation has gone on for over 2 years. This is an issue that will just haunt you if you’re elected. At least you were Chancellor until now, instead of say, Foreign Secretary. It also helps you against the Conservatives, who fully support the war."
+            "answer_feedback": "Whilst a good idea on paper, the occupation has gone on for over 2 years. This is an issue that will just haunt you if you’re elected, especially as you yourself supported the war. At least you were Chancellor until now, instead of say, Foreign Secretary. It also helps you against the Conservatives, who fully support the war."
         }
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 100017,
+        "pk": 13522,
         "fields": {
-            "answer": 100014,
+            "answer": 13521,
             "candidate": 12543,
             "answer_feedback": "A true Gordon Brown forté. You don’t quite have the same energy as you did then, but they are decently effective at pressuring the still-reeling Opposition."
         }
@@ -8882,4 +8943,4 @@ campaignTrail_temp.jet_data = [{
 }
 ]
 
-//For UK Mod
+// For UK Mod
