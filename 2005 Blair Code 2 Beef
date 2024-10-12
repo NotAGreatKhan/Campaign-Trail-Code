@@ -8908,7 +8908,7 @@ style.textContent = `
 #map_container {
     background-repeat: no-repeat;
 	background-size: cover;
-    background-image: url("https://imgur.com/ldVYagf.png");
+    background-image: url("https://imgur.com/ujq3rKv.png");
 }
 `;
 document.head.append(style);
