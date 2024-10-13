@@ -31,19 +31,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         document.body.background = "https://imgur.com/tjqFeeK.png"    
     }
     if(ans == 12862){
-        document.body.background = "https://imgur.com/HOmGHkY.png"    
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
     }
     if(ans == 12863){
-        document.body.background = "https://imgur.com/HOmGHkY.png"    
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
     }
     if(ans == 12864){
-        document.body.background = "https://imgur.com/HOmGHkY.png"    
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
     }
     if(ans == 12865){
-        document.body.background = "https://imgur.com/HOmGHkY.png"    
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
     }
     if(ans == 13508){
-        document.body.background = "https://imgur.com/HOmGHkY.png"    
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
     }
     if(ans == 13508){
     document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
