@@ -7,13 +7,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
         campaignTrail_temp.running_mate_last_name = "Blair";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png"  
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"  
     }
     if(ans == 12808){
         campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
         campaignTrail_temp.running_mate_last_name = "Blair";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/aIcQJun.png"  
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"  
     }    
     if(ans == 12797){
         campaignTrail_temp.candidate_last_name = "Chancellor";
