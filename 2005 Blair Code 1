@@ -783,27 +783,24 @@ function createBanner(url, sibling, isLeft) {
     return img;
 }
 
+//Tooltips
 function addDynamicCSS() {
     var css = `
 
-        label {
-          display:inline-block;
-        }
-
         .inner_window_question h3 .mytooltip{
-            background-color: lightskyblue;
+            background-color: #ffb7b7;
         }
 
         .mytooltip {
             position: relative;
             display: inline-block;
             cursor: pointer;
-            background-color: #d8dee8;
+            background-color: #ffd0d0;
         }
 
         .mytooltip .mytooltiptext {
             width: 240px;
-            background-color: #d8dee8;
+            background-color: #ffd0d0;
             color: black;
             text-align: center;
             border-radius: 6px;
@@ -842,20 +839,24 @@ function addDynamicCSS() {
     document.head.appendChild(styleElem);
 }
 
+
 addDynamicCSS();
 
 tooltipList = [
- // World Leaders
- {searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png><br> President George Walker Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
+	// World Leaders
+	{searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png> President George Walker Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
+        {searchString: "Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
+        {searchString: "President Jacques Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
+        {searchString: "President Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
 
- // Government Members
- {searchString: "Gordon", explanationText: "<img src=https://imgur.com/o1QjCSM.png><br> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
- {searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/o1QjCSM.png><br> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
+        // Government Members
+	{searchString: "Gordon,", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
+	{searchString: "Gordon Brown,", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
 
-  // Characters
-  {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png><br> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
-  {searchString: "World Trade Centre", explanationText: "<img src=https://cdn.britannica.com/15/152315-050-226AA671/twin-towers-skyline-Lower-Manhattan-World-Trade-center.jpg?w=300.png><br> The centre of financial trade and power of New York City, and a symbol of American pride."},
-  {searchString: "Cheney", explanationText: "<img src=><br> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."}
+        // Characters
+        {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
+        {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a symbol of American pride."},
+        {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
 ];
 
 //Music Player
