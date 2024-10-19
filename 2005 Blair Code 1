@@ -697,6 +697,8 @@ document.getElementById("header").src = "https://imgur.com/mZPha1C.png";
 
 document.body.background = "https://imgur.com/erWHhIe.png";
 
+document.body.style.backgroundSize = "cover"
+
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
 
 //#endcode
