@@ -64,8 +64,8 @@ tooltipList = [
         {searchString: "President Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
 
         // Government Members
-	{searchString: "Gordon,", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
-	{searchString: "Gordon Brown,", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
+	{searchString: "Gordon", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
+	{searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
 
         // Characters
         {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
