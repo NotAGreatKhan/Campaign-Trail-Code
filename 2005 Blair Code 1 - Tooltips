@@ -1,24 +1,20 @@
 function addDynamicCSS() {
     var css = `
 
-        label {
-          display:inline;
-        }
-
         .inner_window_question h3 .mytooltip{
-            background-color: lightred;
+            background-color: #ffb7b7;
         }
 
         .mytooltip {
             position: relative;
             display: inline-block;
             cursor: pointer;
-            background-color: #ffd6db;
+            background-color: #ffd0d0;
         }
 
         .mytooltip .mytooltiptext {
             width: 240px;
-            background-color: #ffd6db;
+            background-color: #ffd0d0;
             color: black;
             text-align: center;
             border-radius: 6px;
