@@ -783,7 +783,7 @@ function createBanner(url, sibling, isLeft) {
     return img;
 }
 
-//Tooltips
+// Tooltips
 function addDynamicCSS() {
     var css = `
 
@@ -856,10 +856,10 @@ tooltipList = [
         // Characters
         {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
         {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a symbol of American pride."},
-        {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
+        {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."}
 ];
 
-//Music Player
+// Music Player
 RecReading=true
 
 // Select the node that will be observed for mutations
