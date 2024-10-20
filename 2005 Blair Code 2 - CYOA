@@ -249,6 +249,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(ans == 12820){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 13596,
+    "fields": {
+        "priority": 0,
+        "description": "Yet another problem with the Liberal Democrats. Not only are they performing better in their own right than in previous elections, but they are sucking out a good chunk of Labour voters due to your troubling decisions in Iraq. We need to do something to keep them with us, but what?",
+        "likelihood": 1
+      }
+    }
+  }
 
 // Europe Stuff
     if(ans == 12797){
