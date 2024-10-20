@@ -124,7 +124,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       OldLab += 1;
     }
 
-//Questions
+// Questions
     if(Resign >= 7){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -160,7 +160,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     
-//Other CYOA Stuff  
+// Other CYOA Stuff  
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[6] = {
     "model": "campaign_trail.question",
@@ -245,6 +245,30 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Europe Stuff
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[5] = {
+    "model": "campaign_trail.question",
+    "pk": 13553,
+    "fields": {
+        "priority": 0,
+        "description": "You furrow your brow as your eyes glaze and bore into the reports on polling for the upcoming deliberations on a grand initiative. The great European project. Over the next following years, the elite and fellow centrist political class of the continent, will make the case for a piece of legislation to be ratified known as the European Constitution. If all constituent members vote in favour via a series of referendums, then a legally codified, free-trade union of the continent is all but assured.<p></p>Before you though stand two significant obstacles that could sink this: the French, and the Dutch. You only have the influence to target one of them. So, Tony, which one will it be?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[6] = {
+    "model": "campaign_trail.question",
+    "pk": 13560,
+    "fields": {
+        "priority": 0,
+        "description": "[March 18, 2003] Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
         "likelihood": 1
       }
     }
