@@ -1,8 +1,12 @@
 function addDynamicCSS() {
     var css = `
 
+        label {
+          cursor:default;
+        }
+  
         .inner_window_question h3 .mytooltip{
-            background-color: #ffb7b7;
+            background-color: red;
         }
 
         .mytooltip {
