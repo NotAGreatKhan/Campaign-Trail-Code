@@ -795,19 +795,19 @@ function addDynamicCSS() {
         }
   
         .inner_window_question h3 .mytooltip{
-            background-color: red;
+            background-color: #f58a8a;
         }
 
         .mytooltip {
             position: relative;
             display: inline-block;
             cursor: pointer;
-            background-color: #ffd0d0;
+            background-color: #ffbdbd;
         }
 
         .mytooltip .mytooltiptext {
             width: 240px;
-            background-color: #ffd0d0;
+            background-color: #ffbdbd;
             color: black;
             text-align: center;
             border-radius: 6px;
