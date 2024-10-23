@@ -30,7 +30,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 3493){
         document.body.background = "https://imgur.com/tjqFeeK.png"    
     }
-    if(ans == 12797){
+    if(ans == 13554 || ans == 13557){
         document.body.background = "https://imgur.com/w0SVuOH.png"    
     }
     if(ans == 12862){
