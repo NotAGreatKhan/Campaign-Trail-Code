@@ -124,7 +124,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       OldLab += 1;
     }
 
-// Questions
+// Resignation Questions
     if(Resign >= 7){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -249,10 +249,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12820){
+    if(ans == 12819 || ans == 13418){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
-    "pk": 13596,
+    "pk": 12901,
     "fields": {
         "priority": 0,
         "description": "Yet another problem with the Liberal Democrats. Not only are they performing better in their own right than in previous elections, but they are sucking out a good chunk of Labour voters due to your troubling decisions in Iraq. We need to do something to keep them with us, but what?",
@@ -260,12 +260,23 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(ans == 12820 || ans == 13420){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 13596,
+    "fields": {
+        "priority": 0,
+        "description": "Continuing with the subject of the Liberal Democrats, your adamant support of the United States’ geopolitical thrust towards Baghdad has led to some core Labour rank-and-file defecting into the arms of Charles Kennedy’s party. One positive silver lining is that the electoral exodus is not as large as was originally suspected, likely as a result of your reluctance to deploy troops as part of the invasion. How will you approach this development?",
+        "likelihood": 1
+      }
+    }
+  }
 
 // Europe Stuff
     if(ans == 12797){
-    campaignTrail_temp.questions_json[5] = {
+    campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
-    "pk": 13553,
+    "pk": 13596,
     "fields": {
         "priority": 0,
         "description": "You furrow your brow as your eyes glaze and bore into the reports on polling for the upcoming deliberations on a grand initiative. The great European project. Over the next following years, the elite and fellow centrist political class of the continent, will make the case for a piece of legislation to be ratified known as the European Constitution. If all constituent members vote in favour via a series of referendums, then a legally codified, free-trade union of the continent is all but assured.<p></p>Before you though stand two significant obstacles that could sink this: the French, and the Dutch. You only have the influence to target one of them. So, Tony, which one will it be?",
