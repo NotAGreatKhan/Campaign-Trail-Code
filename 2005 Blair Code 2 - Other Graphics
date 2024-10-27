@@ -5,6 +5,9 @@ vpTable = {
     "The Scotland National Party" : "Alex E. A. Salmond"
 }
 
+
+document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
+
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
