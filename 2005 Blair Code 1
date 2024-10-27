@@ -670,7 +670,7 @@ jet_data = {
     "windowColor": "#f0ebeb",
     "containerColor": "#ababab",
     "innerWindowColor": "#eadcde",
-    "bannerImageUrl": "https://imgur.com/mZPha1C.png",
+    "bannerImageUrl": "https://imgur.com/WFzudpB.png",
     "backgroundImageUrl": "https://imgur.com/erWHhIe.png",
     "endingTextColor": "#000000",
     "customQuote": "\"Whatever the dangers of the action we take, the dangers of inaction are far, far greater\"",
@@ -693,7 +693,7 @@ $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selected
 
 $(".container")[0].style.backgroundColor = "#ababab";
 
-document.getElementById("header").src = "https://imgur.com/mZPha1C.png";
+document.getElementById("header").src = "https://imgur.com/WFzudpB.png";
 
 document.body.background = "https://imgur.com/erWHhIe.png";
 
