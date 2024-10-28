@@ -155,7 +155,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Labour",
             "state": "Holborn and St. Pancras",
             "priority": 5,
-            "description": "'",
+            "description": "<li><b>Name: Kier R. Starmer</b></li><li><b>Role: Her Majesty's Prime Minister</b></li><li><b>Constituency: Holborn and St. Pancras</b></li><p> </p>",
             "color_hex": "#0000FF",
             "secondary_color_hex": "#90C0FF",
             "is_active": 0,
