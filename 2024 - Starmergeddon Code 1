@@ -253,13 +253,13 @@ jet_data = {
     "backgroundImageUrl": "https://imgur.com/o4ypypv.jpg",
     "endingTextColor": "#000000",
     "customQuote": "",
-    "gameTitle": "<b>Starmergeddon</b> "
+    "gameTitle": "Starmergeddon"
 }
 
 //#startcode
 
 
-corrr = '\n              <h2><b>Starmergeddon</b> </h2>\n            ';
+corrr = '\n              <h2>Starmergeddon</h2>\n            ';
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#e4003b";
