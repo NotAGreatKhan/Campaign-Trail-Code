@@ -108,7 +108,7 @@ campaignTrail_temp.election_json = [
         "pk": 21,
         "fields": {
             "year": 2020,
-            "summary": "<p>Joe Biden and Donald Trump face off in a heated 2020 election campaign. Held in the wake of a COVID-19 pandemic and nationwide protests, turnout is expected to be through the roof. Can Joe Biden hold together a large enough coalition of anti-Trump voters to make Trump a one-term President, or will Trump pull of another huge upset after trailing in the polls?</p>",
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>For 14 arduous years, the pint-sized gremlins that make up the Tory Party ruled over Britain under their slimy mandibles. Their "leaders" eroding away the very constitutions and conventions that make this country great. Their policies destroying the economic and social fabric of this nation.</p>\n\n<p>And yet, in spite of all of the pain under austerity, in spite of the unbridled incompetency of the orphaned Tory quintuplet, the landslide victory of the Labour Party under Free Gear Kier was an ocean across and skin-deep. Now, a Tory-lite with a stiff disposition and managerial coldness, is at the helm of the sinking ship. The Prime Minister of a United Kingdom long past its hay-day.</p>\n\n<p>If Kier Starmer wants to keep his anti-Tory coalition from shattering to a million pieces, he'll need to navigate through scandal, crisis, and opposition all simultaneously. Lest he falls into the twilight of the British state.</p></div>\n",
             "image_url": "",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://imgur.com/0YCw5hi.jpg",
