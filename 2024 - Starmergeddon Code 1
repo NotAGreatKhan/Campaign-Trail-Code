@@ -249,7 +249,7 @@ jet_data = {
     "windowColor": "#fffafb",
     "containerColor": "#FFFFFF",
     "innerWindowColor": "#fff0f0",
-    "bannerImageUrl": "https://imgur.com/2bHxjmx.jpg",
+    "bannerImageUrl": "https://imgur.com/H9mxaAp.jpg",
     "backgroundImageUrl": "https://imgur.com/o4ypypv.jpg",
     "endingTextColor": "#000000",
     "customQuote": "",
@@ -259,7 +259,13 @@ jet_data = {
 //#startcode
 
 
-corrr = '\n              <h2>The Starmergeddon</h2>\n            ';
+corrr = `
+<div style="font-size: 8px; font-family: monospace; color: white;">
+    <h2 style="font-style: normal;">
+      <img src="https://imgur.com/WENrRuY.jpg" alt="The Starmergeddon" style="margin-top: 11px; width: 962px; height: auto;">
+    </h2>
+  </div>
+';
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#e4003b";
@@ -272,7 +278,7 @@ $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selected
 
 $(".container")[0].style.backgroundColor = "#FFFFFF";
 
-document.getElementById("header").src = "https://imgur.com/2bHxjmx.jpg";
+document.getElementById("header").src = "https://imgur.com/WENrRuY.jpg";
 
 document.body.background = "https://imgur.com/o4ypypv.jpg";
 
