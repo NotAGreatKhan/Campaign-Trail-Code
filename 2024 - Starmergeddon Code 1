@@ -132,7 +132,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Labour",
             "state": "--",
             "priority": 1,
-            "description": "<p><b>The Labour Party</b> is the major centre-left party of the UK, founded by a group of trade union socialists and middle-class intellectuals in the mid 1920's.</p>",
+            "description": "<div style='overflow-y:scroll;height:200px;'><p><b>The Labour Party</b> is the major centre-left party of the UK, founded by a group of trade union socialists and middle-class intellectuals in the mid 1920's. The brainchild of the noble movement that may finally liberate the working class and truly represent their best interests in the country. Casting off the status-quo-politics the dying Liberal Party decayed into.</p><p>But it simply could not be that easy. The Thatcherite revolution of the 1980's thrusted a blue dagger straight into the heart of Labour's red flag. It was only after Tony Blair ravaged the party constitution, and dragged it lurching to the centre, only then the husk of a party was finally deemed worthy of governance by its creatures. The brief reprieve and hope instilled by socialist leader Jeremy Corbyn was smited down by the establishmentarians, who now have puppeted Kier Starmer to the 2024 general election.</p><p>If the party wishes to make its latest run in government anything more than a technoccratic vanity project, the man at the top will need to chin up, and define himself on the agenda that may actually lift the ship of state from beneath the waves.</p></div>",
             "color_hex": "#0000FF",
             "secondary_color_hex": "#90C0FF",
             "is_active": 1,
@@ -163,7 +163,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<li><b>Name: Kier R. Starmer</b></li><li><b>Role: Prime Minister</b></li><li><b>Constituency: Holborn St. Pancras</b></li><p> </p><p><b>Sir Kier Rodney Starmer</b> is the current Prime Minister of the United Kingdom.</p>",
+            "description_as_running_mate": "<li><b>Name: Kier R. Starmer</b></li><li><b>Role: Prime Minister</b></li><li><b>Constituency: Holborn St. Pancras</b></li><p> </p><p><b>'Sir' Kier Rodney Starmer</b> is the current Prime Minister of the United Kingdom. Through smoke-room plotting, establishment machinations, and an utter lack of principle and integrity, Starmer has slithered his way to the summit of Parliament. The King of the cratered hill without even being able to wear the crown. In any standard – ideal – circumstances, Starmer would never have even become Prime Minister, but a grand concoction of Tory incompetence and fracturing on the political right, practically ensured his promenade to victory.</p>",
             "candidate_score": 0,
             "running_mate": true
         }
