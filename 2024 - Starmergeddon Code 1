@@ -136,7 +136,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": "#90C0FF",
             "is_active": 1,
-            "image_url": "https://imgur.com/Q6b6Pga.png",
+            "image_url": "https://imgur.com/TYY3EuP.jpg",
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
@@ -249,7 +249,7 @@ jet_data = {
     "windowColor": "#fffafb",
     "containerColor": "#FFFFFF",
     "innerWindowColor": "#fff0f0",
-    "bannerImageUrl": "https://imgur.com/H9mxaAp.jpg",
+    "bannerImageUrl": "https://imgur.com/JHE5ASk.jpg",
     "backgroundImageUrl": "https://imgur.com/o4ypypv.jpg",
     "endingTextColor": "#000000",
     "customQuote": "",
@@ -278,7 +278,7 @@ $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selected
 
 $(".container")[0].style.backgroundColor = "#FFFFFF";
 
-document.getElementById("header").src = "https://imgur.com/H9mxaAp.jpg";
+document.getElementById("header").src = "https://imgur.com/JHE5ASk.jpg";
 
 document.body.background = "https://imgur.com/o4ypypv.jpg";
 
