@@ -153,7 +153,7 @@ campaignTrail_temp.candidate_json = [
             "last_name": "Starmer",
             "election": 21,
             "party": "Labour",
-            "state": "Holborn and St. Pancras",
+            "state": "Holborn and St Pancras",
             "priority": 5,
             "description": "'",
             "color_hex": "#0000FF",
@@ -163,7 +163,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<li><b>Name: Kier R. Starmer</b></li><li><b>Role: Prime Minister</b></li><li><b>Constituency: Holborn St. Pancras</b></li><p> </p><p><b>'Sir' Kier Rodney Starmer</b> is the current Prime Minister of the United Kingdom. Through smoke-room plotting, establishment machinations, and an utter lack of principle and integrity, Starmer has slithered his way to the summit of Parliament. The King of the cratered hill without even being able to wear the crown. In any standard – ideal – circumstances, Starmer would never have even become Prime Minister, but a grand concoction of Tory incompetence and fracturing on the political right, practically ensured his promenade to victory.</p>",
+            "description_as_running_mate": "<li><b>Name: Kier R. Starmer</b></li><li><b>Role: Prime Minister</b></li><li><b>Constituency: Holborn and St Pancras</b></li><p> </p><p><b>'Sir' Kier Rodney Starmer</b> is the current Prime Minister of the United Kingdom. Through smoke-room plotting, establishment machinations, and an utter lack of principle and integrity, Starmer has slithered his way to the summit of Parliament. The King of the cratered hill without even being able to wear the crown. In any standard – ideal – circumstances, Starmer would never have even become Prime Minister, but a grand concoction of Tory incompetence and fracturing on the political right, practically ensured his promenade to victory.</p>",
             "candidate_score": 0,
             "running_mate": true
         }
