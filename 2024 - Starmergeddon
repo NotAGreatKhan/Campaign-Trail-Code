@@ -1,0 +1,650 @@
+function removeCandidateSummary() {
+try {
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
+  }
+} catch {}
+}
+window.setInterval(removeCandidateSummary,200)
+
+function updateCandidateForm() {
+  formobserver.disconnect();
+  const heading = document.querySelector("#candidate_form form h3");
+
+  if (heading) {
+    heading.textContent = "Please select your party:";
+  }
+  formobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+var formobserver = new MutationObserver(updateCandidateForm);
+formobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeRunningMateSummary() {
+try {
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+} catch {}
+}
+window.setInterval(removeCandidateSummary,200)
+
+function updateRunningMateForm() {
+  runformobserver.disconnect();
+  const heading = document.querySelector("#running_mate_form form h3");
+
+  if (heading) {
+    heading.textContent = "Please select your party leader:";
+  }
+  runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+var runformobserver = new MutationObserver(updateRunningMateForm);
+runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeCandidateSummary() {
+   sumobserver.disconnect();
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
+
+function removeRunningMateSummary() {
+   sumobserver.disconnect();
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
+
+function updateHeader() {
+  var gameHeader = document.getElementsByClassName("game_header")[0];
+
+  if (gameHeader.getAttribute("id") !== "modifiedHeader") {
+    gameHeader.innerHTML = corrr;
+    gameHeader.style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+    gameHeader.setAttribute("id", "modifiedHeader");
+  }
+}
+window.setInterval(removeRunningMateSummary,10)
+  
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningmateSummary = document.querySelector("#runningmate_summary");
+    if (runningmateSummary && runningmateSummary.children[0].children[2].innerHTML != runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
+        runningmateSummary.children[0].children[2].innerHTML = runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
+    }
+});
+var headerobserver = new MutationObserver(updateHeader);
+headerobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+RecReading=true
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 32,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+     {
+        "model": "campaign_trail.election",
+        "pk": 12,
+        "fields": {
+            "year": 2024,
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>For 14 arduous years, the pint-sized gremlins that make up the Tory Party ruled over Britain under their slimy mandibles. Their 'leaders' eroding away the very constitutions and conventions that make this country great. Their policies destroying the economic and social fabric of this nation.</p><p>And yet, in spite of all of the pain under austerity, in spite of the unbridled incompetency of the orphaned Tory quintuplet, the landslide victory of the Labour Party under Free Gear Kier was an ocean across and skin-deep. Now, a Tory-lite with a stiff disposition and managerial coldness, is at the helm of the sinking ship. An amoral technocrat who would rather listen to the Blairites who fund him, than the people who elected him in the first place. The Prime Minister of a United Kingdom, long past its hay-day.</p><p>If Kier Starmer wants to keep his anti-Tory coalition from shattering to a million pieces, he'll need to navigate through scandal, crisis, and opposition all simultaneously. Lest he falls into the very same twilight of the British state.</p></div>\n",
+            "image_url": "https://imgur.com/D2V8WES.jpg",
+            "winning_electoral_vote_number": 326,
+            "advisor_url": "https://imgur.com/0YCw5hi.jpg",
+            "recommended_reading": "This election has no further reading.",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
+            "creator": "u/No-Reading9991",
+            "display_year": "2024 - Starmergeddon"
+        }
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 12,
+        "year": 2024,
+        "is_premium": 0,
+        "display_year": "2024 - Starmergeddon"
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12543,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Labour Party",
+            "election": 12,
+            "party": "Labour",
+            "state": "--",
+            "priority": 2,
+            "description": "<div style='overflow-y:scroll;height:290px;'><p><b>The Labour Party</b> is the major centre-left party of the UK, founded by a group of trade union socialists and middle-class intellectuals in the mid 1920's. The brainchild of the noble movement that may finally liberate the working class and truly represent their best interests in the country. Casting off the status-quo-politics the dying Liberal Party decayed into.</p><p>But it simply could not be that easy. The Thatcherite revolution of the 1980's thrusted a blue dagger straight into the heart of Labour's red flag. It was only after Tony Blair ravaged the party constitution, and dragged it lurching to the centre, only then the husk of a party was finally deemed worthy of governance by its creatures. The brief reprieve and hope instilled by socialist leader Jeremy Corbyn was smited down by the establishmentarians, who now have puppeted Kier Starmer to the 2024 general election.</p><p>If the party wishes to make its latest run in government anything more than a technocratic vanity project, the man at the top will need to chin up, and define himself on the agenda that may actually lift the ship of state from beneath the waves.</p></div>",
+            "color_hex": "#e84545",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 1,
+            "image_url": "https://imgur.com/TYY3EuP.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 1948 Presidential Election.</h3><p>You have become the first Republican to win the White House in 20 years. You face a dangerous foreign situation, and your domestic agenda is likely to be opposed by Democrats and conservatives alike. Conversely, the support and confidence of the Republican establishment is almost guaranteed. With luck, you might become the first two-term Republican since Ulysses Grant.</p>",
+            "electoral_loss_message": "<h3>Sorry. You have lost the 1948 Presidential Election.</h3><p>Pundits and political pros are shocked at your collapse. The second-guessing will likely come fast and furious from your party. The Republicans have now lost five Presidential elections in a row, and have no obvious standard-bearer to break the trend in 1952. As for your own career, you are still the Governor of New York, but it is pretty unlikely that you'll be given another chance to prove yourself on the national stage.</p>",
+            "no_electoral_majority_message": "<h3>No candidate captured an Electoral College majority.</h3><p>This leaves everyone in a bad situation. Segregationists from the South are demanding concessions before they will support a candidate, leaving the House deadlocked. Perhaps you can work out a deal with Truman to circumvent this, based on who has the plurality of popular and electoral votes. It's always possible that one of you could serve as the other's Vice President.</p>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 124,
+        "fields": {
+            "first_name": "Kier R.",
+            "last_name": "Starmer",
+            "election": 12,
+            "party": "Labour",
+            "state": "Holborn and St Pancras",
+            "priority": 9,
+            "description": "'",
+            "color_hex": "#e74040",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://imgur.com/wc3Y3lD.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Kier R. Starmer</b></li><li><b>Role: Prime Minister</b></li><li><b>Constituency: Holborn and St Pancras</b></li><p> </p><p><b>'Sir' Kier Rodney Starmer</b> is the current Prime Minister of the United Kingdom. Through smoke-room plotting, establishment machinations, and an utter lack of principle and integrity, Starmer has slithered his way to the summit of Parliament. The King of the cratered hill without even being able to wear the crown. In any standard – ideal – circumstances, Starmer would never have even become Prime Minister, but a grand concoction of Tory incompetence and fracturing on the political right, practically ensured his promenade to victory.</p><p>Starmer's politics is showing signs of being governed by a puzzlingly conflicting conscience. In the late 2010's he declared himself a close ally to Corbyn as Shadow Brexit Secretary. In 2020 he proclaimed he would be 'Corbynism without Corbyn' in the run for leadership. All of that, only to kick him to the curb and suspend his whip, over ficitious claims of party anti-semitism. Any way the wind blows, all to snatch the keys to the big black door.</p><p>If there is any hope Kier has at living up to his namesake, he is going to have to muster all of the political instinct he can scrape out of his empty barrel, and pull the government out of its historic socioeconomic chasm...</p></div>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12565,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Conservative Party",
+            "election": 12,
+            "party": "Conservative",
+            "state": "--",
+            "priority": 2,
+            "description": "<div style='overflow-y:scroll;height:290px;'><p><b>The Conservative and Unionist Party</b> is the oldest still-active party in Britain, evolving from the old Tory party that had predominantly overseen the rise of the modern British state.</p></div>",
+            "color_hex": "#4848a8",
+            "secondary_color_hex": "#4848a8",
+            "is_active": 0,
+            "image_url": "https://imgur.com/5bwxgqy.png",
+            "electoral_victory_message": "<h3>This guy wins!</h3>",
+            "electoral_loss_message": "<h3>This guy loses!</h3>",
+            "no_electoral_majority_message": "<h3>We all win?</h3>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 125,
+        "fields": {
+            "first_name": "Kemi",
+            "last_name": "Badenoch",
+            "election": 12,
+            "party": "Conservative",
+            "state": "North West Essex",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#4848a8",
+            "secondary_color_hex": "#4848a8",
+            "is_active": 0,
+            "image_url": "https://imgur.com/e8oE6I9.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Kemi Badenoch</b></li><li><b>Role: Leader of the Opposition</b></li><li><b>Constituency: North West Essex</b></li><p></p><p></p></div>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },    
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12587,
+        "fields": {
+            "first_name": "The ",
+            "last_name": "Liberal Democrats",
+            "election": 12,
+            "party": "Liberal Democrat",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ffb752",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://imgur.com/J2gXM1R.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 126,
+        "fields": {
+            "first_name": "Ed J.",
+            "last_name": "Davey",
+            "election": 12,
+            "party": "Liberal Democrat",
+            "state": "Kingston and Surbiton",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#ffb752",
+            "secondary_color_hex": "#ffb752",
+            "is_active": 0,
+            "image_url": "https://imgur.com/r43bgA1.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Ed J. Davey</b></li><li><b>Role: Leader of the Liberal Democrats</b></li><li><b>Constituency: Kingston and Surbiton</b></li><p> </p><i>”.”</i>\n\n<p><b></p>\n\n<p></p>\n\n<p></p>\n\n<p></p></div>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12609,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Scotland National Party",
+            "election": 12,
+            "party": "SNP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#fff81f",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12631,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Green Party",
+            "election": 12,
+            "party": "Greens",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#71d82c",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12649,
+        "fields": {
+            "first_name": "The",
+            "last_name": "UK Independence Party",
+            "election": 12,
+            "party": "UKIP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#a433e1",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12667,
+        "fields": {
+            "first_name": "",
+            "last_name": "Independent/Others",
+            "election": 12,
+            "party": "Ind/Oth",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#b0b0b0",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12685,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Democratic Unionist Party",
+            "election": 12,
+            "party": "DUP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#c37c18",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12703,
+        "fields": {
+            "first_name": "",
+            "last_name": "Sinn Féin",
+            "election": 12,
+            "party": "Sinn Féin",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#a8ea90",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12721,
+        "fields": {
+            "first_name": "",
+            "last_name": "Plaid Cymru",
+            "election": 12,
+            "party": "Plaid Cymru",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#3a741b",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12739,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Ulster Unionist Party",
+            "election": 12,
+            "party": "UUP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#89e1a4",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12757,
+        "fields": {
+            "first_name": "",
+            "last_name": "SDLP",
+            "election": 12,
+            "party": "SDLP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#01ad73",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 12775,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Speaker",
+            "election": 12,
+            "party": "N/A",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#dedede",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159966,
+        "fields": {
+            "candidate": 12543,
+            "running_mate": 124
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159967,
+        "fields": {
+            "candidate": 12565,
+            "running_mate": 125
+        }
+    }
+]
+
+campaignTrail_temp.credits = "<button onclick='credits()'>Credits</button>"
+
+credits = function() {
+  credits = ["[Coding]", "By: u/No-Reading9991, with honourable advice from u/ItsAstronomical", "", "[Writing]", "By: u/No-Reading9991, with much appreciated help from u/Milothebest", "", "[Extra Code]", "Music Player and 2000s Interface - W.", "Endings Code and FPTP System - 2024a by AeronauticBlueberry", "", "[And A Huge Thanks...]", "To you: The Campaign Trail Community who inspired me in the first place!"]
+  text = "[CREDITS]:\n\n"
+  for (i in credits) {
+      text += credits[i] + "\n"
+  }
+  alert(text)
+}
+
+vpTableHistorical = {
+    "The Labour Party" : "Tony C. L. Blair",
+    "The Conservative Party" : "Michael Howard",
+    "The Liberal Democrats" : "Charles P. Kennedy",
+    "The Scotland National Party" : "Alex E. A. Salmond"
+}
+
+HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f"];
+HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party"];
+HistEV=["355","198","62","6"];
+HistPV=["9,552,376","8,785,942","5,985,704","412,267"];
+HistPVP=["35.2%","32.4%","22.0%","1.5%"];
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 12,
+        "candidates": [
+            12543,
+            12565,
+            12587,
+            12609,
+            12631,
+            12649,
+            12667,
+            12685,
+            12703,
+            12721,
+            12739,
+            12757,
+            12775
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 12,
+        "candidates": [
+            12543,
+            12565,
+            12587,
+            12609,
+            12631,
+            12649,
+            12667,
+            12685,
+            12703,
+            12721,
+            12739,
+            12757,
+            12775
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#e4003b",
+    "windowColor": "#fffafb",
+    "containerColor": "#ffffff",
+    "innerWindowColor": "#fff0f0",
+    "bannerImageUrl": "https://imgur.com/JHE5ASk.jpg",
+    "backgroundImageUrl": "https://imgur.com/o4ypypv.jpg",
+    "endingTextColor": "#000000",
+    "customQuote": "",
+    "gameTitle": "The Starmergeddon"
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>The Starmergeddon</h2>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#e4003b";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#fffafb";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#ffffff";
+
+document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
+
+document.body.background = "https://imgur.com/JHE5ASk.jpg";
+
+document.body.style.backgroundSize = "cover"
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+
+//#endcode
