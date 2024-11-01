@@ -626,13 +626,13 @@ jet_data = {
 //#startcode
 
 
-corrr = '
+corrr = `
 <div style="font-size: 8px; font-family: monospace; color: white;">
     <h2 style="font-style: normal;">
       <img src="https://imgur.com/WENrRuY.png" alt="The Starmergeddon" style="margin-top: 11px;">
     </h2>
   </div>
-';
+`;
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#e4003b";
