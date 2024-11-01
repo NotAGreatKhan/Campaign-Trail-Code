@@ -557,17 +557,17 @@ credits = function() {
 }
 
 vpTableHistorical = {
-    "The Labour Party" : "Tony C. L. Blair",
-    "The Conservative Party" : "Michael Howard",
-    "The Liberal Democrats" : "Charles P. Kennedy",
-    "The Scotland National Party" : "Alex E. A. Salmond"
+    "The Labour Party" : "Kier R. Starmer",
+    "The Conservative Party" : "Kemi Badenoch",
+    "The Liberal Democrats" : "Ed J. Davey",
+    "The Scotland National Party" : "John Swinney"
 }
 
 HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f"];
 HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party"];
-HistEV=["355","198","62","6"];
-HistPV=["9,552,376","8,785,942","5,985,704","412,267"];
-HistPVP=["35.2%","32.4%","22.0%","1.5%"];
+HistEV=["--","--","--","--"];
+HistPV=["--","--","--","--"];
+HistPVP=["--","--","--","--"];
 
 campaignTrail_temp.opponents_default_json = [
     {
@@ -639,9 +639,9 @@ $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selected
 
 $(".container")[0].style.backgroundColor = "#ffffff";
 
-document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
+document.getElementById("header").src = "https://imgur.com/JHE5ASk.jpg";
 
-document.body.background = "https://imgur.com/JHE5ASk.jpg";
+document.body.background = "https://imgur.com/o4ypypv.jpg";
 
 document.body.style.backgroundSize = "cover"
 
