@@ -330,7 +330,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12797){
     campaignTrail_temp.questions_json[10] = {
     "model": "campaign_trail.question",
-    "pk": 13621,
+    "pk": 13647,
     "fields": {
         "priority": 0,
         "description": "[June 14, 2004] Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
