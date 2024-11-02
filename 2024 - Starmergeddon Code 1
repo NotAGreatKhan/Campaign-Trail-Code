@@ -158,7 +158,7 @@ campaignTrail_temp.temp_election_list = [
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
-        "pk": 12543,
+        "pk": 212543,
         "fields": {
             "first_name": "The",
             "last_name": "Labour Party",
@@ -204,7 +204,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12565,
+        "pk": 212565,
         "fields": {
             "first_name": "The",
             "last_name": "Conservative Party",
@@ -250,7 +250,7 @@ campaignTrail_temp.candidate_json = [
     },    
     {
         "model": "campaign_trail.candidate",
-        "pk": 12587,
+        "pk": 212587,
         "fields": {
             "first_name": "The ",
             "last_name": "Liberal Democrats",
@@ -296,7 +296,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12609,
+        "pk": 212609,
         "fields": {
             "first_name": "The",
             "last_name": "Scotland National Party",
@@ -319,7 +319,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12631,
+        "pk": 212631,
         "fields": {
             "first_name": "The",
             "last_name": "Green Party",
@@ -342,7 +342,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12649,
+        "pk": 212649,
         "fields": {
             "first_name": "The",
             "last_name": "UK Independence Party",
@@ -365,7 +365,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12667,
+        "pk": 212667,
         "fields": {
             "first_name": "",
             "last_name": "Independent/Others",
@@ -388,7 +388,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12685,
+        "pk": 212685,
         "fields": {
             "first_name": "The",
             "last_name": "Democratic Unionist Party",
@@ -411,7 +411,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12703,
+        "pk": 212703,
         "fields": {
             "first_name": "",
             "last_name": "Sinn Féin",
@@ -434,7 +434,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12721,
+        "pk": 212721,
         "fields": {
             "first_name": "",
             "last_name": "Plaid Cymru",
@@ -457,7 +457,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12739,
+        "pk": 212739,
         "fields": {
             "first_name": "The",
             "last_name": "Ulster Unionist Party",
@@ -480,7 +480,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12757,
+        "pk": 212757,
         "fields": {
             "first_name": "",
             "last_name": "SDLP",
@@ -503,7 +503,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 12775,
+        "pk": 212775,
         "fields": {
             "first_name": "The",
             "last_name": "Speaker",
@@ -531,7 +531,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 159966,
         "fields": {
-            "candidate": 12543,
+            "candidate": 212543,
             "running_mate": 124
         }
     },
@@ -539,7 +539,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 159967,
         "fields": {
-            "candidate": 12565,
+            "candidate": 212565,
             "running_mate": 125
         }
     }
@@ -573,19 +573,19 @@ campaignTrail_temp.opponents_default_json = [
     {
         "election": 12,
         "candidates": [
-            12543,
-            12565,
-            12587,
-            12609,
-            12631,
-            12649,
-            12667,
-            12685,
-            12703,
-            12721,
-            12739,
-            12757,
-            12775
+            212543,
+            212565,
+            212587,
+            212609,
+            212631,
+            212649,
+            212667,
+            212685,
+            212703,
+            212721,
+            212739,
+            212757,
+            212775
         ]
     }
 ]
@@ -594,19 +594,19 @@ campaignTrail_temp.opponents_weighted_json = [
     {
         "election": 12,
         "candidates": [
-            12543,
-            12565,
-            12587,
-            12609,
-            12631,
-            12649,
-            12667,
-            12685,
-            12703,
-            12721,
-            12739,
-            12757,
-            12775
+            212543,
+            212565,
+            212587,
+            212609,
+            212631,
+            212649,
+            212667,
+            212685,
+            212703,
+            212721,
+            212739,
+            212757,
+            212775
         ]
     }
 ]
@@ -654,3 +654,53 @@ document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
 
 //#endcode
+
+e = campaignTrail_temp
+
+document.head.innerHTML += `<style>
+	h3 {
+		font-size:1.17em!important;
+	}
+
+	label {
+		font-size:1em!important;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
+	}
+body {display:flex!important;}
+
+#game_window{max-width:1000px;}
+	</style>`
+let contentBox = document.getElementsByClassName("content_box")[0];
+let contentSingle = document.getElementsByClassName("content_single")[0];
+
+let containerRef = document.getElementsByClassName("container")[0];
+
+function createBanner(url, sibling, isLeft) {
+    let div = document.createElement("DIV");
+    let img = document.createElement("IMG");
+    div.style.position = "relative";
+    div.style.margin = "auto";
+    img.src = url;
+    
+
+    let x = document.createElement("DIV");
+    x.innerText = "_";
+    x.style.position = "absolute";
+    x.style.padding = "2px";
+    x.style.fontSize = "2pt";
+    x.style.cursor = "pointer";
+
+    div.appendChild(x);
+
+    div.appendChild(img);
+
+    if(isLeft) {
+        sibling.parentNode.insertBefore(div, sibling);
+    }
+    else {
+        sibling.parentNode.appendChild(div);
+    }
+    x.onclick = () => div.style.visibility = "hidden";
+    x.onclick = () => img.style.visibility = "hidden";
+    return img;
+}
