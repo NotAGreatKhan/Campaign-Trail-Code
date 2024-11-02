@@ -111,7 +111,7 @@ const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
   background-color: #e4003b;
-  border-color: #94292e;
+  border-color: #b2012d;
 }
 .inner_window_question h3 {
 background-color: #ffcfcf;
