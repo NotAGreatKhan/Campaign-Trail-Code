@@ -134,7 +134,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       OldLab += 1;
     }
 
-// Questions
+// Resignation Questions
     if(Resign >= 7){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -259,13 +259,24 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12820){
+    if(ans == 12819 || ans == 13418){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 12901,
+    "fields": {
+        "priority": 0,
+        "description": "Yet another problem with the Liberal Democrats. Not only are they performing better in their own right than in previous elections, but they are sucking out a good chunk of Labour voters due to your troubling decisions in Iraq. We need to do something to keep them with us, but what?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12820 || ans == 13420){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 13596,
     "fields": {
         "priority": 0,
-        "description": "Yet another problem with the Liberal Democrats. Not only are they performing better in their own right than in previous elections, but they are sucking out a good chunk of Labour voters due to your troubling decisions in Iraq. We need to do something to keep them with us, but what?",
+        "description": "Continuing with the subject of the Liberal Democrats, your adamant support of the United States’ geopolitical thrust towards Baghdad has led to some core Labour rank-and-file defecting into the arms of Charles Kennedy’s party. One positive silver lining is that the electoral exodus is not as large as was originally suspected, likely as a result of your reluctance to deploy troops as part of the invasion. How will you approach this development?",
         "likelihood": 1
       }
     }
@@ -275,7 +286,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12797){
     campaignTrail_temp.questions_json[5] = {
     "model": "campaign_trail.question",
-    "pk": 13553,
+    "pk": 13596,
     "fields": {
         "priority": 0,
         "description": "You furrow your brow as your eyes glaze and bore into the reports on polling for the upcoming deliberations on a grand initiative. The great European project. Over the next following years, the elite and fellow centrist political class of the continent, will make the case for a piece of legislation to be ratified known as the European Constitution. If all constituent members vote in favour via a series of referendums, then a legally codified, free-trade union of the continent is all but assured.<p></p>Before you though stand two significant obstacles that could sink this: the French, and the Dutch. You only have the influence to target one of them. So, Tony, which one will it be?",
@@ -290,6 +301,50 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "[March 18, 2003] Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 13554){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 13614,
+    "fields": {
+        "priority": 0,
+        "description": "[July, 2003] As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[9] = {
+    "model": "campaign_trail.question",
+    "pk": 13621,
+    "fields": {
+        "priority": 0,
+        "description": "[June 11, 2004] Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. Overall, you lose 298 councillors and 3 councils, while the Conservatives make a net gain of 8 councils and 167 councillors. The Liberal Democrats do hold you to the line in Newcastle and Leeds though. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 13621,
+    "fields": {
+        "priority": 0,
+        "description": "[June 14, 2004] Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 13657,
+    "fields": {
+        "priority": 0,
+        "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.",
         "likelihood": 1
       }
     }
@@ -1593,7 +1648,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13597,
         "fields": {
             "question": 13596,
-            "description": "put description here"
+            "description": "That is certainly relieving, but let us not be too hasty with anything on this. The media is already kicking up a bit of a row over Iraq, and it would be in our best interest not to hit on this too much. We are already in a better position due to our decisions, no need to, to squander it."
         }
     },
     {
@@ -1602,6 +1657,86 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 13494,
             "description": "Clearly it is not going, well, exactly according to plan. We have to do something about this. Let's contact Bush in America, and see if we can arrange an increase in the troop presence to keep the peace. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13604,
+        "fields": {
+            "question": 13596,
+            "description": "Not the worst case scenario, but we can’t just let this happen, can we? Let’s really win them back, on getting rid of Saddam Hussein, on reinforcing our international security. We can’t lose the argument now surely, we have the free world behind us."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13610,
+        "fields": {
+            "question": 393,
+            "description": "Not the worst case scenario, but we can’t just let this happen, can we? Let’s really win them back, on getting rid of Saddam Hussein, on reinforcing our international security. We can’t lose the argument now surely, we have the free world behind us."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13615,
+        "fields": {
+            "question": 13614,
+            "description": "Me and the President are in firm agreement on the overarching thrust of the Constitution, but many in France of course think differently. Instead of going on the attack, we should lay out an adequate defence of the Constitution on why it will not lead to unchallenged immigration, or the complete exodus of labour."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13617,
+        "fields": {
+            "question": 13614,
+            "description": "We should make the case to Chirac for the upcoming campaign to go on the offensive against the bile that the anti-EU parties will spew. On the issue of borders, we need to ensure that they can’t define the narrative with immigration."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13619,
+        "fields": {
+            "question": 13614,
+            "description": "I’ll discuss the possibility with Chirac of going on the offensive, but on the economic angle. The opposition will no doubt try to argue that freer borders will result in job loss. This Constitution will make the continent more secure in the law, and more free to seek jobs than ever before, and we need to call them out on it. But make sure he connects with the French people, and doesn’t go off pontificating."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13637,
+        "fields": {
+            "question": 13621,
+            "description": "Today has yielded sub-par results for us, that is certain. However, the election will ultimately be fought on the policies. These local elections were not really fought on that. People like our policies, and we will win the argument."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13642,
+        "fields": {
+            "question": 13621,
+            "description": "This has not been an ideal day for Labour, but it is absolutely true that Mr Howard is not capturing the councils he should have been capturing if he wants to make a break, they haven't made a break-out."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13648,
+        "fields": {
+            "question": 13647,
+            "description": "I’m definitely concerned, both as a politician and as a true European believer. The English People spoke, and it wasn't the way that I anticipated. I fear that it won’t be guaranteed in the next few years."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13652,
+        "fields": {
+            "question": 13647,
+            "description": "This is disappointing, but I will not give up the fight for our crucial relationship with a closer, fairer Europe. It is crucial not only for our economy, but our well-being and international relationship as a nation."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13658,
+        "fields": {
+            "question": 13657,
+            "description": "I just cannot sugarcoat this. This is bad, all of that effort, it was for – it was for nothing. Hopefully the Dutch are more receptive to it."
         }
     }
 ]
@@ -6861,6 +6996,236 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12565,
             "global_multiplier": -0.0085
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13606,
+        "fields": {
+            "answer": 13597,
+            "candidate": 12587,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13607,
+        "fields": {
+            "answer": 13604,
+            "candidate": 12587,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13612,
+        "fields": {
+            "answer": 13610,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13622,
+        "fields": {
+            "answer": 13615,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13623,
+        "fields": {
+            "answer": 13615,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13624,
+        "fields": {
+            "answer": 13615,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13625,
+        "fields": {
+            "answer": 13617,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13626,
+        "fields": {
+            "answer": 13617,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13627,
+        "fields": {
+            "answer": 13617,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13628,
+        "fields": {
+            "answer": 13619,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13629,
+        "fields": {
+            "answer": 13619,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13630,
+        "fields": {
+            "answer": 13619,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13639,
+        "fields": {
+            "answer": 13637,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13640,
+        "fields": {
+            "answer": 13637,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13641,
+        "fields": {
+            "answer": 13637,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13644,
+        "fields": {
+            "answer": 13642,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13645,
+        "fields": {
+            "answer": 13642,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13646,
+        "fields": {
+            "answer": 13642,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.0045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13650,
+        "fields": {
+            "answer": 13648,
+            "candidate": 12649,
+            "affected_candidate": 12649,
+            "global_multiplier": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13654,
+        "fields": {
+            "answer": 13652,
+            "candidate": 12649,
+            "affected_candidate": 12649,
+            "global_multiplier": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13655,
+        "fields": {
+            "answer": 13652,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13660,
+        "fields": {
+            "answer": 13658,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13661,
+        "fields": {
+            "answer": 13658,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
     }
 ]
 
@@ -7760,7 +8125,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13514,
         "fields": {
             "answer": 13511,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 4
         }
@@ -7780,7 +8145,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13519,
         "fields": {
             "answer": 13516,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 3
         }
@@ -7800,7 +8165,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13524,
         "fields": {
             "answer": 13521,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 3
         }
@@ -7820,7 +8185,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13542,
         "fields": {
             "answer": 12878,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.66,
             "issue_importance": 1
         }
@@ -7880,7 +8245,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13576,
         "fields": {
             "answer": 12887,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.125,
             "issue_importance": 1
         }
@@ -7910,7 +8275,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13579,
         "fields": {
             "answer": 12888,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.31,
             "issue_importance": 1
         }
@@ -7940,7 +8305,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13582,
         "fields": {
             "answer": 12889,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.55,
             "issue_importance": 1
         }
@@ -7983,6 +8348,126 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 30,
             "issue_score": -0.71,
             "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13608,
+        "fields": {
+            "answer": 13604,
+            "issue": 30,
+            "issue_score": -0.65,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13609,
+        "fields": {
+            "answer": 13597,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13613,
+        "fields": {
+            "answer": 13610,
+            "issue": 30,
+            "issue_score": -0.55,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13631,
+        "fields": {
+            "answer": 13615,
+            "issue": 31,
+            "issue_score": 0.6,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13632,
+        "fields": {
+            "answer": 13617,
+            "issue": 29,
+            "issue_score": 0.3,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13633,
+        "fields": {
+            "answer": 13617,
+            "issue": 31,
+            "issue_score": 0.6,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13634,
+        "fields": {
+            "answer": 13619,
+            "issue": "27",
+            "issue_score": 0.3,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13635,
+        "fields": {
+            "answer": 13619,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13636,
+        "fields": {
+            "answer": 13619,
+            "issue": 31,
+            "issue_score": 0.6,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13651,
+        "fields": {
+            "answer": 13648,
+            "issue": 31,
+            "issue_score": -0.31,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13656,
+        "fields": {
+            "answer": 13652,
+            "issue": 31,
+            "issue_score": -0.45,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13662,
+        "fields": {
+            "answer": 13658,
+            "issue": 31,
+            "issue_score": 0.03,
+            "issue_importance": 3
         }
     }
 ]
@@ -8510,7 +8995,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12820,
             "candidate": 12543,
-            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision. You have undermined your own war-time narrative. The one major upside to this though is that the LibDem's main gain in support (the anti-war crowd) is completely slashed."
+            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision in light of your staunch support of the American effort. Although noticeably less people back this move, the bleeding to the Liberal Democrats has been stopped dead in its track. "
         }
     },
     {
@@ -9113,7 +9598,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12917,
             "candidate": 12543,
-            "answer_feedback": "A passionate defence of immigration tackles their controversial messaging directly. Regardless, people are starting to pay more attention to the steadily rising immigration."
+            "answer_feedback": "A passionate defence of immigration tackles their controversial messaging directly. Regardless, people are starting to pay more attention to the steadily rising immigration. This is something that will dog you no matter what."
         }
     },
     {
@@ -9122,7 +9607,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12918,
             "candidate": 12543,
-            "answer_feedback": "Defending your record appears the best path here, all things considered. Still, this is an issue you will have to tackle one way or another. Nice dig at the fiscal angle of it though."
+            "answer_feedback": "Defending your record appears the best path here, all things considered. Still, this is an issue you will have to tackle one way or another. Nice dig at the fiscal angle of it though, even if the Conservatives have the advantage here."
         }
     },
     {
@@ -9284,7 +9769,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13420,
             "candidate": 12543,
-            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision. When a reporter asks on what grounds you turned around on such a decision, you state that: “We have done all that we can to support America in her mission, but I do not believe our troops should be sacrificed for it” rough, but it’s something."
+            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision in light of your staunch support of the American effort. Although noticeably less people back this move, the bleeding to the Liberal Democrats has been stopped dead in its track. "
         }
     },
     {
@@ -9293,7 +9778,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13418,
             "candidate": 12543,
-            "answer_feedback": "The vote is disappointingly defeated with a majority of 53. By your orders, 46,000 troops would be sent into a war larger than they could have even imagined. Hussein’s forces are routed and he is soon toppled from power. But with such a dip in domestic support, you’re virtually pursuing this war on your own – despite your honesty about it."
+            "answer_feedback": "The vote is disappointingly defeated with a majority of 53. By your orders, 46,000 troops would be sent into a war larger than they could have even imagined. Hussein’s forces are routed and he is soon toppled from power. But with a dip in domestic support, you’re virtually pursuing this war on your own – despite your honesty about it."
         }
     },
     {
@@ -9520,6 +10005,105 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "The consequence of your talk with the President results in an immediate increase in troop levels to try and maintain order as new insurgent groups sprout into being. Geopolitically it may be sound, but the desertions of civil-liberty and anti-war voters flocking to Kennedy with this in mind, will continue."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13603,
+        "fields": {
+            "answer": 13597,
+            "candidate": 12543,
+            "answer_feedback": "This should serve you fine enough, and it does prevent the LibDem rise in the polls from being exacerbated further. Iraq is going to be an issue you must take caution with, thankfully for you though, the Tories overwhelmingly back the war. So any of their attacks would, and will, be quite muted."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13605,
+        "fields": {
+            "answer": 13604,
+            "candidate": 12543,
+            "answer_feedback": "You don’t quite have the free world behind you – case-in-point France – support for the war is still relatively high if waning noticeably. Those who have flocked to the Liberal Democrats in stark contrast are pretty set, and most likely not planning on ever coming back. The Iraq War itself is still a very divisive issue."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13611,
+        "fields": {
+            "answer": 13610,
+            "candidate": 12543,
+            "answer_feedback": "You don’t quite have the free world behind you – case-in-point France – but support for the war is still relatively high if waning noticeably. Those who have flocked to the Liberal Democrats in stark contrast are pretty set, and most likely not planning on ever coming back. The Iraq War itself is still a very divisive issue."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13616,
+        "fields": {
+            "answer": 13615,
+            "candidate": 12543,
+            "answer_feedback": "This is the strategy that the pro-EU campaign was originally going to go with, and it is not the worst idea to use. But it’s very likely that the campaign is going to be incredibly intense and drawn out. This strategy may not be enough to fully counter the vitriol of the opposition."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13618,
+        "fields": {
+            "answer": 13617,
+            "candidate": 12543,
+            "answer_feedback": "Western European fears on immigration are always going to persist no matter what you do to counter it. At least by getting down in the mud, the mainstream parties’ apparatus can be fully utilised. Let’s hope this works…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13620,
+        "fields": {
+            "answer": 13619,
+            "candidate": 12543,
+            "answer_feedback": "It will be easier to fight the ground on the economy, than on immigration where fears are more volatile to play on. This line of reasoning may be effective, but only time will tell…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13638,
+        "fields": {
+            "answer": 13637,
+            "candidate": 12543,
+            "answer_feedback": "The local elections have been surprisingly lenient to your numbers in the councils. So in that sense, the portrayal of confidence is good to show."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13643,
+        "fields": {
+            "answer": 13642,
+            "candidate": 12543,
+            "answer_feedback": "Michael Howard can tout the results of “excellency” all he likes, but punching back against this is a very effective move. Even with this, the results are not fantastic for your premiership."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13649,
+        "fields": {
+            "answer": 13648,
+            "candidate": 12543,
+            "answer_feedback": "It made it official at least, the UK may not expand its role under a Blair administration. Europe will be an issue that you must gain ground on."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13653,
+        "fields": {
+            "answer": 13652,
+            "candidate": 12543,
+            "answer_feedback": "Putting your foot down here makes sense, you still have a continent-wide Constitution to pass after all. But UKIP will inevitably parade these results and galvanise their support base."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13659,
+        "fields": {
+            "answer": 13658,
+            "candidate": 12543,
+            "answer_feedback": "If this was a final nail in the coffin, the Dutch vote is a dagger. They vote against ratifying the Constitution by a margin of 28%. Whilst Geert Wilders is marching on interviews as if he was just gifted a Roman Triumph, Chirac has a yielded, despondent moue. This is a serious blow to you as well, due to your close ties to the campaign."
+        }
     }
 ]
 
@@ -9527,6 +10111,7 @@ campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png";
 campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png";
 campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
 campaignTrail_temp.running_mate_last_name = "Blair";
+
 
 vpTable = {
     "The Labour Party" : "Tony C. L. Blair",   
@@ -9600,6 +10185,15 @@ campaignTrail_temp.jet_data = [{
     },
     "endings_enabled": false,
     "ending_data": {
+        "1727017683034": {
+            "id": 1727017683034,
+            "variable": 0,
+            "operator": ">",
+            "value": 0,
+            "endingImage": "",
+            "endingText": "<h3>Put ending text here, you can and should use</h3><p>HTML tags</p>!",
+            "amount": "324"
+        }
     }
 }
 ]
