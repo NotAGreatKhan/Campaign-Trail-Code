@@ -1,0 +1,163 @@
+campaignTrail_temp.cyoa = true;
+
+function getQuestionNumberFromPk(pk) {
+    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
+}
+
+cyoAdventure = function(a) {
+ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+
+}
+
+campaignTrail_temp.questions_json = [
+    {
+        "model": "campaign_trail.question",
+        "pk": 12861,
+        "fields": {
+            "priority": 0,
+            "description": "Question",
+            "likelihood": 1
+        }
+    }
+]
+
+campaignTrail_temp.answers_json = [
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12862,
+        "fields": {
+            "question": 12861,
+            "description": "Answer"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12863,
+        "fields": {
+            "question": 12861,
+            "description": "Answer"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12864,
+        "fields": {
+            "question": 12861,
+            "description": "Answer"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12865,
+        "fields": {
+            "question": 12861,
+            "description": "Answer"
+        }
+    }
+]
+
+campaignTrail_temp.answer_feedback_json = [
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12246,
+        "fields": {
+            "answer": 12862,
+            "candidate": 212543,
+            "answer_feedback": "Advisor Feedback"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12936,
+        "fields": {
+            "answer": 12863,
+            "candidate": 212543,
+            "answer_feedback": "Advisor Feedback"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12938,
+        "fields": {
+            "answer": 12864,
+            "candidate": 212543,
+            "answer_feedback": "Advisor Feedback"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12944,
+        "fields": {
+            "answer": 12865,
+            "candidate": 212543,
+            "answer_feedback": "Advisor Feedback"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png";
+campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png";
+campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
+campaignTrail_temp.running_mate_last_name = "Starmerr";
+
+vpTable = {
+    "The Labour Party" : "Kier R. Starmer",   
+    "The Conservative Party" : "Kemi Badenoch",   
+    "The Liberal Democrats" : "Ed J. Davey",
+    "The Scotland National Party" : "John Swinney"
+}
+
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #c44558;
+  border-color: #94292e;
+}
+.inner_window_question h3 {
+background-color: #ffcfcf;
+}
+.overlay_window h3 {
+background-color: #ffcfcf;
+}`
+;
+document.head.appendChild(style_overwrite);
+
+campaignTrail_temp.jet_data = [{
+    "banner_enabled": true,
+    "banner_data": {
+        "canName": "<small>Prime Minister</small>",
+        "canImage": "https://imgur.com/RzlDlUU.png",
+        "runName": "Starmer",
+        "runImage": "https://imgur.com/VAnLvJ6.jpg"
+    },
+    "mapping_enabled": true,
+    "mapping_data": {
+        "mapSvg": "",
+        "x": "885",
+        "y": "863",
+        "dx": "-450",
+        "dy": "142",
+        "electionPk": "12"
+    },
+    "cyoa_enabled": true,
+    "cyoa_data": {},
+    "nicknames": {
+        "212543": "Labour Party",
+        "212565": "Conservative Party",
+        "212587": "Liberal Democrats",
+        "212609": "Scotland National Party",
+        "212631": "Green Party",
+        "212649": "UK Independence Party",
+        "212667": "Independents/Others",
+        "212685": "Democratic Unionist Party",
+        "212703": "Sinn Féin",
+        "212721": "Plaid Cymru",
+        "212739": "Ulster Unionist Party",
+        "212757": "SDLP",
+        "212775": "Speaker"
+    },
+    "endings_enabled": false,
+    "ending_data": {
+    }
+}
+]
