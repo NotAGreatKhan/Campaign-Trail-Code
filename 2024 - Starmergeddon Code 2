@@ -96,9 +96,9 @@ campaignTrail_temp.answer_feedback_json = [
 ]
 
 campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png";
-campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png";
+campaignTrail_temp.running_mate_image_url = "https://imgur.com/VAnLvJ6.png";
 campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
-campaignTrail_temp.running_mate_last_name = "Starmerr";
+campaignTrail_temp.running_mate_last_name = "Starmer";
 
 vpTable = {
     "The Labour Party" : "Kier R. Starmer",   
@@ -110,7 +110,7 @@ vpTable = {
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
-  background-color: #c44558;
+  background-color: #e4003b;
   border-color: #94292e;
 }
 .inner_window_question h3 {
