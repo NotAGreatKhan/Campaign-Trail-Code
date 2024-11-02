@@ -1669,14 +1669,6 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 13610,
-        "fields": {
-            "question": 393,
-            "description": "Not the worst case scenario, but we can’t just let this happen, can we? Let’s really win them back, on getting rid of Saddam Hussein, on reinforcing our international security. We can’t lose the argument now surely, we have the free world behind us."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
         "pk": 13615,
         "fields": {
             "question": 13614,
