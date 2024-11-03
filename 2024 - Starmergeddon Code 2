@@ -15,7 +15,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12861,
         "fields": {
             "priority": 0,
-            "description": "Question",
+            "description": "Now that the first Labour budget in 15 years has been successfully rolled out, the new leader of the Conservative Party has finally been crowned... Well, not exactly crowned. She only commanded at best a third of Tory MPs, and only narrowly won the membership vote against Robert Jenrick. At this news, McSweeney is already frothing at the mouth for an opportunity to shred her limb from limb. How will you go about dealing with the recently elected leader?",
             "likelihood": 1
         }
     }
@@ -27,7 +27,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12862,
         "fields": {
             "question": 12861,
-            "description": "Answer"
+            "description": "That's bloody brilliant. Let's properly utilise the character that she posesses. Really goad her into an attack, let her angry and patronising self run with it. We should be able to score good sound-bites for us."
         }
     },
     {
@@ -35,7 +35,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12863,
         "fields": {
             "question": 12861,
-            "description": "Answer"
+            "description": "Fantastic news. We can really weaponise her current predicament against her. I heard that James Cleverly has refused to join her shadow cabinet, was worried he may win for a moment. She's clearly isolated, alone without any cross-party support, and we won't let her forget it."
         }
     },
     {
@@ -43,7 +43,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12864,
         "fields": {
             "question": 12861,
-            "description": "Answer"
+            "description": "Oh thank God. Although we may not be able to bash Jenrick's whole ECHR nonsense, we can still bash her on her ludicrous positions. I'll point out the ridiculous culture-war stuff, and the Chancellor can challenge her to back the huge amount of investments we'll make in the Budget to public services."
         }
     },
     {
