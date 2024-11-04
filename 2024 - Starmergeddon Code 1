@@ -620,7 +620,7 @@ jet_data = {
     "backgroundImageUrl": "https://imgur.com/o4ypypv.jpg",
     "endingTextColor": "#000000",
     "customQuote": "",
-    "gameTitle": "The Starmergeddon"
+    "gameTitle": "Starmergeddon"
 }
 
 //#startcode
@@ -629,7 +629,7 @@ jet_data = {
 corrr = `
 <div style="font-size: 8px; font-family: monospace; color: white;">
     <h2 style="font-style: normal;">
-      <img src="https://imgur.com/WENrRuY.png" alt="The Starmergeddon" style="margin-top: 11px;">
+      <img src="https://imgur.com/0hA2FUi.jpg" alt="Starmergeddon" style="margin-top: 11px;">
     </h2>
   </div>
 `;
@@ -657,43 +657,50 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 e = campaignTrail_temp
 
-document.head.innerHTML += `<style>
-	h3 {
-		font-size:1.17em!important;
-	}
-
-	label {
-		font-size:1em!important;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
-	}
-body {display:flex!important;}
-
-#game_window{max-width:1000px;}
-	</style>`
-let contentBox = document.getElementsByClassName("content_box")[0];
-let contentSingle = document.getElementsByClassName("content_single")[0];
-
-let containerRef = document.getElementsByClassName("container")[0];
-
-function createBanner(url, sibling, isLeft) {
+ document.head.innerHTML += `
+  <link rel="stylesheet" href="https://kexanie.github.io/csswin10">
+  <style>
+  h3 {
+    font-size: 1.025em !important;
+    line-height: 17px;
+}
+label {
+    font-size: 0.9em !important; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+    line-height: 1.0; 
+}
+input {
+    font-size: 0.9em !important; 
+    line-height: 17px; 
+}
+  
+  #game_window{max-width:1000px;}
+  </style>`
+  let contentBox = document.getElementsByClassName("content_box")[0];
+  let contentSingle = document.getElementsByClassName("content_single")[0];
+  
+  let containerRef = document.getElementsByClassName("container")[0];
+  
+  function createBanner(url, sibling, isLeft) {
     let div = document.createElement("DIV");
     let img = document.createElement("IMG");
     div.style.position = "relative";
     div.style.margin = "auto";
     img.src = url;
     
-
+    
+  
     let x = document.createElement("DIV");
     x.innerText = "_";
     x.style.position = "absolute";
     x.style.padding = "2px";
     x.style.fontSize = "2pt";
     x.style.cursor = "pointer";
-
+  
     div.appendChild(x);
-
+  
     div.appendChild(img);
-
+  
     if(isLeft) {
         sibling.parentNode.insertBefore(div, sibling);
     }
@@ -703,4 +710,4 @@ function createBanner(url, sibling, isLeft) {
     x.onclick = () => div.style.visibility = "hidden";
     x.onclick = () => img.style.visibility = "hidden";
     return img;
-}
+  }
