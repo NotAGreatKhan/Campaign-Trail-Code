@@ -361,4 +361,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 13714,
+    "fields": {
+        "priority": 0,
+        "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
+        "likelihood": 1
+      }
+    }
+  }
 }
