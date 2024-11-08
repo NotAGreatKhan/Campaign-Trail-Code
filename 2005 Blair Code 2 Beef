@@ -349,6 +349,50 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 13663,
+    "fields": {
+        "priority": 0,
+        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 13689,
+    "fields": {
+        "priority": 0,
+        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 13714,
+    "fields": {
+        "priority": 0,
+        "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 13729,
+    "fields": {
+        "priority": 0,
+        "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+  }
 }
 
 campaignTrail_temp.questions_json = [
@@ -1160,7 +1204,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12907,
         "fields": {
             "question": 12906,
-            "description": "I’ll strike an authoritative, yet responsive tone. We cannot afford to get bogged down on controversial issues, but we can’t let ourselves be defined on the narrative of this."
+            "description": "I’ll strike an authoritative, yet responsive tone. We cannot afford to get bogged down on controversial issues, but we can’t let ourselves be defined on the narrative of this. We have to take the narrative of Iraq back in our control."
         }
     },
     {
@@ -1168,7 +1212,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12908,
         "fields": {
             "question": 12906,
-            "description": "I’ll try a more conciliatory, even compassionate, tone for the interview. Especially in light of our declining goodwill as a party. Maybe it could provide a good counter to Paxman’s combative tone."
+            "description": "I’ll try a more conciliatory, even compassionate, tone for the interview. Especially in light of our declining goodwill as a party. Maybe it could provide a good counter to Paxman’s combative tone. The war is painful for a lot of people, and we should acknowledge that."
         }
     },
     {
@@ -1176,7 +1220,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12909,
         "fields": {
             "question": 12906,
-            "description": "Going into this, I’ll gun for a powerful, aggressive tone. Paxman won’t let it easy on me, we know that. So, we have to match his fire, so to speak."
+            "description": "Going into this, I’ll gun for a powerful, aggressive tone. Paxman won’t let it easy on me, we know that. So, we have to match his fire, so to speak. We have headed over the most successful government in modern times, and we must push that case."
         }
     },
     {
@@ -1729,6 +1773,126 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 13657,
             "description": "I just cannot sugarcoat this. This is bad, all of that effort, it was for – it was for nothing. Hopefully the Dutch are more receptive to it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13664,
+        "fields": {
+            "question": 13663,
+            "description": "Micheal Howard may have been around for a while in politics, but his time as Home Secretary under the Major government – a time of stagnation and chaos – should tell you all you need to know about his true competence if he were in power."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13670,
+        "fields": {
+            "question": 13663,
+            "description": "Although Ian Duncan Smith may no longer be leader, Howard has not exactly turned the party into a strong opposition. On every issue they have faltered to provide any meaningful alternative to the sound policy of this government."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13676,
+        "fields": {
+            "question": 13663,
+            "description": "The Leader of the Opposition has proudly used harmful rhetoric against the immigrant communities of our great nation. It is appalling for a general election campaign, not to mention, the myriad of ineffective social policies his party is proposing."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13684,
+        "fields": {
+            "question": 13663,
+            "description": "It is evident from previous events that unfolded in the Conservative party, that Howard does not have the full backing, and support, of his fellow members. If they cannot even keep their own house in order, how can they expect to lead the country?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13690,
+        "fields": {
+            "question": 13689,
+            "description": "It seems Charles Kennedy is opting to run a positive campaign this season. But I think we can do better. Let’s emphasise our positive and uplifting messaging more, and push the narrative that we are the government creating the best economy for young people."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13695,
+        "fields": {
+            "question": 13689,
+            "description": "Whilst we can’t match their positions on every issue, that would be lunacy, we could perhaps tack our economic policy more towards fiscal discipline and responsibility, compared to the ridiculous miserly attitude of the Tories."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13701,
+        "fields": {
+            "question": 13689,
+            "description": "I’d say that social policy is the way to go. Kennedy has put a significant amount of energy into this angle. If we push this angle, then perhaps we can wrest away some of his supporters."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13707,
+        "fields": {
+            "question": 13689,
+            "description": "If the Liberal Democrats are so adamant about social progress and tight fiscal discipline, then all that they will do is throw away this election to the Conservatives. We cannot afford to do away with all that we have done by letting them get back into power."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13715,
+        "fields": {
+            "question": 13714,
+            "description": "I struggle to ignore the fact that their policy just is not very serious. They’re just coasting off of a fictitious good feeling, and scoring points as an opposition party. Their methodology to police as just one example is simply comical."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13720,
+        "fields": {
+            "question": 13714,
+            "description": "Charles Kennedy may have a nice persona, but it is clear that he simply does not have the fortitude to serve as a leader in government. From being light on policy details, to his reticence displayed very clearly in their manifesto, it is just not a serious conduct for government."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13725,
+        "fields": {
+            "question": 13714,
+            "description": "With the attacks, It is best we do not go on the charge against them, I feel. Kennedy is probably going to benefit, with the whole positivity he is trying to pull with his campaign."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13730,
+        "fields": {
+            "question": 13729,
+            "description": "I’ll strike an authoritative, yet responsive tone. We cannot afford to get bogged down on controversial issues, but we can’t let ourselves be defined on the narrative of this. We have to take the narrative of Europe back in our control."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13735,
+        "fields": {
+            "question": 13729,
+            "description": "I’ll try a more conciliatory, even compassionate, tone for the interview. Especially in light of our declining goodwill as a party. Maybe it could provide a good counter to Paxman’s combative tone. Europe is a fearful prospect for a lot of people, and we should acknowledge that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13741,
+        "fields": {
+            "question": 13729,
+            "description": "Going into this, I’ll gun for a powerful, aggressive tone. Paxman won’t let it easy on me, we know that. So, we have to match his fire, so to speak. We have headed over the most successful government in modern times, and we must push that case."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13745,
+        "fields": {
+            "question": 13729,
+            "description": "You know what, I believe it is best if we do not attend this. My popularity is starting to slip somewhat, and we need to maintain our advantage in the polls."
         }
     }
 ]
@@ -7011,16 +7175,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 13612,
-        "fields": {
-            "answer": 13610,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": 0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 13622,
         "fields": {
             "answer": 13615,
@@ -7217,6 +7371,376 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13666,
+        "fields": {
+            "answer": 13664,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13672,
+        "fields": {
+            "answer": 13670,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13678,
+        "fields": {
+            "answer": 13676,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13679,
+        "fields": {
+            "answer": 13676,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13680,
+        "fields": {
+            "answer": 13676,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13686,
+        "fields": {
+            "answer": 13684,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13687,
+        "fields": {
+            "answer": 13684,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13688,
+        "fields": {
+            "answer": 13684,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13692,
+        "fields": {
+            "answer": 13690,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13693,
+        "fields": {
+            "answer": 13690,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13694,
+        "fields": {
+            "answer": 13690,
+            "candidate": 12631,
+            "affected_candidate": 12631,
+            "global_multiplier": 0.8
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13697,
+        "fields": {
+            "answer": 13695,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.35
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13698,
+        "fields": {
+            "answer": 13695,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13699,
+        "fields": {
+            "answer": 13695,
+            "candidate": 12631,
+            "affected_candidate": 12631,
+            "global_multiplier": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13703,
+        "fields": {
+            "answer": 13701,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13704,
+        "fields": {
+            "answer": 13701,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.04
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13705,
+        "fields": {
+            "answer": 13701,
+            "candidate": 12631,
+            "affected_candidate": 12631,
+            "global_multiplier": 0.6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13709,
+        "fields": {
+            "answer": 13707,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13710,
+        "fields": {
+            "answer": 13707,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.35
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13711,
+        "fields": {
+            "answer": 13707,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13712,
+        "fields": {
+            "answer": 13707,
+            "candidate": 12631,
+            "affected_candidate": 12631,
+            "global_multiplier": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13717,
+        "fields": {
+            "answer": 13715,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13718,
+        "fields": {
+            "answer": 13715,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13722,
+        "fields": {
+            "answer": 13720,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13723,
+        "fields": {
+            "answer": 13720,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13727,
+        "fields": {
+            "answer": 13725,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13728,
+        "fields": {
+            "answer": 13725,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13732,
+        "fields": {
+            "answer": 13730,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13733,
+        "fields": {
+            "answer": 13730,
+            "candidate": 12565,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13737,
+        "fields": {
+            "answer": 13735,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13738,
+        "fields": {
+            "answer": 13735,
+            "candidate": 12565,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13739,
+        "fields": {
+            "answer": 13735,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.0035
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13743,
+        "fields": {
+            "answer": 13741,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13744,
+        "fields": {
+            "answer": 13741,
+            "candidate": 12565,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.012
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13747,
+        "fields": {
+            "answer": 13745,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13748,
+        "fields": {
+            "answer": 13745,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13749,
+        "fields": {
+            "answer": 13745,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.025
         }
     }
 ]
@@ -8364,16 +8888,6 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
-        "pk": 13613,
-        "fields": {
-            "answer": 13610,
-            "issue": 30,
-            "issue_score": -0.55,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
         "pk": 13631,
         "fields": {
             "answer": 13615,
@@ -8407,7 +8921,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13634,
         "fields": {
             "answer": 13619,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.3,
             "issue_importance": 2
         }
@@ -8460,6 +8974,146 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 31,
             "issue_score": 0.03,
             "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13667,
+        "fields": {
+            "answer": 13664,
+            "issue": 27,
+            "issue_score": 0.125,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13668,
+        "fields": {
+            "answer": 13664,
+            "issue": 30,
+            "issue_score": 0.125,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13669,
+        "fields": {
+            "answer": 13664,
+            "issue": 28,
+            "issue_score": 0.125,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13673,
+        "fields": {
+            "answer": 13670,
+            "issue": 27,
+            "issue_score": 0.31,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13674,
+        "fields": {
+            "answer": 13670,
+            "issue": 28,
+            "issue_score": 0.31,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13675,
+        "fields": {
+            "answer": 13670,
+            "issue": 30,
+            "issue_score": 0.31,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13681,
+        "fields": {
+            "answer": 13676,
+            "issue": 27,
+            "issue_score": 0.55,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13682,
+        "fields": {
+            "answer": 13676,
+            "issue": 28,
+            "issue_score": 0.55,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13683,
+        "fields": {
+            "answer": 13676,
+            "issue": 29,
+            "issue_score": 0.8,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13700,
+        "fields": {
+            "answer": 13695,
+            "issue": 27,
+            "issue_score": -0.12,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13706,
+        "fields": {
+            "answer": 13701,
+            "issue": 28,
+            "issue_score": 0.35,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13713,
+        "fields": {
+            "answer": 13707,
+            "issue": 31,
+            "issue_score": 0.5,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13734,
+        "fields": {
+            "answer": 13730,
+            "issue": 31,
+            "issue_score": 0.6,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13740,
+        "fields": {
+            "answer": 13735,
+            "issue": 29,
+            "issue_score": 0.31,
+            "issue_importance": 1
         }
     }
 ]
@@ -9428,7 +10082,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12889,
             "candidate": 12543,
-            "answer_feedback": "Public opinion is rather split on this issue. The immigration focus has certainly turned heads, but when the majority of Brits are weary of immigration to some degree, your sparring seems to make little of a splash."
+            "answer_feedback": "Public opinion is rather split on this issue. This focus has certainly turned heads, but when the majority of Brits have become suspicious of immigration to some degree, both of your sparring seem to only really benefit Howard."
         }
     },
     {
@@ -10018,15 +10672,6 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 13611,
-        "fields": {
-            "answer": 13610,
-            "candidate": 12543,
-            "answer_feedback": "You don’t quite have the free world behind you – case-in-point France – but support for the war is still relatively high if waning noticeably. Those who have flocked to the Liberal Democrats in stark contrast are pretty set, and most likely not planning on ever coming back. The Iraq War itself is still a very divisive issue."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 13616,
         "fields": {
             "answer": 13615,
@@ -10095,6 +10740,141 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 13658,
             "candidate": 12543,
             "answer_feedback": "If this was a final nail in the coffin, the Dutch vote is a dagger. They vote against ratifying the Constitution by a margin of 28%. Whilst Geert Wilders is marching on interviews as if he was just gifted a Roman Triumph, Chirac has a yielded, despondent moue. This is a serious blow to you as well, due to your close ties to the campaign."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13665,
+        "fields": {
+            "answer": 13664,
+            "candidate": 12543,
+            "answer_feedback": "This is his biggest weakness as leader. People still remember the sleaze and hard times under John Major, and contrasting it with your more dynamic and youthful leadership is a great way to go about this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13671,
+        "fields": {
+            "answer": 13670,
+            "candidate": 12543,
+            "answer_feedback": "Whilst it’s true that Howard has not at all roared from behind in opinion polls, his discipline imbued into the party is a far cry from the chaos of the uncharismatic Duncan Smith. This attack doesn’t quite have the potency it would against the previous Opposition Leader."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13677,
+        "fields": {
+            "answer": 13676,
+            "candidate": 12543,
+            "answer_feedback": "Public opinion is rather split on this issue. This focus has certainly turned heads, but when the majority of Brits have become suspicious of immigration to some degree, both of your sparring seem to only really benefit Howard."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13685,
+        "fields": {
+            "answer": 13684,
+            "candidate": 12543,
+            "answer_feedback": "A biting attack, but one that does not have the desired venom. Clarke has consistently pledged to support Howard in a hypothetical cabinet. Although this may sway over a few dissatisfied centre-left Tories, rumours circulating in the media of your own disunity with Chancellor Brown makes this charge from you less credible."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13691,
+        "fields": {
+            "answer": 13690,
+            "candidate": 12543,
+            "answer_feedback": "Kennedy has opted for an uplifting tone, but it’s pretty difficult for you to match or surpass this, considering your declining popularity since the glory days of the 90s. But, this is a step in the right direction."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13696,
+        "fields": {
+            "answer": 13695,
+            "candidate": 12543,
+            "answer_feedback": "By tacking even further to the centre economically, you risk bleeding some left-wing voters feeling antsy about what they see as “closet Tory” policy. Hopefully the trade of LibDem voters can make up for it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13702,
+        "fields": {
+            "answer": 13701,
+            "candidate": 12543,
+            "answer_feedback": "This is probably the best way to go, all things considered. This should tap into them without losing that many core Labour voters."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13708,
+        "fields": {
+            "answer": 13707,
+            "candidate": 12543,
+            "answer_feedback": "With the Conservatives fighting vigorously against the concept of a more integrated Europe, some LibDem voters could be pried loose by this argument. Just don’t expect this argument to work spectacularly well in our political system though."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13716,
+        "fields": {
+            "answer": 13715,
+            "candidate": 12543,
+            "answer_feedback": "You do raise a flaw in their manifesto that is apparent to many. Just keep in mind that just as many, if not moreso, are drawn to Kennedy’s “laid-back” persona and natural charisma. Hopefully this can do us some good."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13721,
+        "fields": {
+            "answer": 13720,
+            "candidate": 12543,
+            "answer_feedback": "An unusually biting and personal attack from someone such as yourself. Whilst some voters may be concerned with Kennedy’s inability to answer questions on his tax policy after the birth of his son, this is not going to resonate with the wider electorate, and leaves a sour taste in their mouths."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13726,
+        "fields": {
+            "answer": 13725,
+            "candidate": 12543,
+            "answer_feedback": "The Liberal Democrats are already getting significant media coverage due to how well they are performing this time around. You can’t afford to get too comfortable and have your young constituency be sapped away. Students and socially liberal voters are still weary after the tuition fees debacle, and are drawn to Kennedy’s promise to abolish it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13731,
+        "fields": {
+            "answer": 13730,
+            "candidate": 12543,
+            "answer_feedback": "Overall, the interview went fairly well. Granted, there were some tense moments with Paxman, especially over your European policy. Meanwhile, Howard fumbles in his interview, providing a nice contrast between the two of you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13736,
+        "fields": {
+            "answer": 13735,
+            "candidate": 12543,
+            "answer_feedback": "The interview could be best summarised as two conflicting personas unfolding on screen. You appeared less distant in regards to Europe, but Paxman seemed to needle you on some points. At least it is better than Howard's performance."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13742,
+        "fields": {
+            "answer": 13741,
+            "candidate": 12543,
+            "answer_feedback": "[PAXMAN] “So what you’re saying is-” [BLAIR] “Now hold o-, hold on, that is absolutely not-” …This went on for about 5 minutes at a time. But, it is an improvement compared to how much Howard got bogged down."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13746,
+        "fields": {
+            "answer": 13745,
+            "candidate": 12543,
+            "answer_feedback": "This is a complete subversion of the “masochism strategy” we have developed. During Howard’s interview, he slams your decision as “Yet another cowardly ducking from a PM too afraid to face his own failures head on”."
         }
     }
 ]
