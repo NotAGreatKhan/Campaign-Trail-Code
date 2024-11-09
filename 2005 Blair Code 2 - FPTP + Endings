@@ -230,6 +230,9 @@ let singleObserver = new MutationObserver(handleMutations);
 singleObserver.observe(document.documentElement, { childList: true, subtree: true });
     
 
+campaignTrail_temp.multiple_endings=true
+endingPicker = (out, totv, aa, quickstats) => {
+
 distributeSeatsUK();
 
 function onGameWindowChangeCandidates() {
@@ -446,7 +449,7 @@ e.executable.push([0, (() => {e.image = e.image = ""})])
 // Second Slides
 
 }   
-   
+}  
 
 function getTooltips(str) {
     let matches = [];
