@@ -10955,7 +10955,7 @@ campaignTrail_temp.jet_data = [{
         "12757": "SDLP",
         "12775": "Speaker"
     },
-    "endings_enabled": false,
+    "endings_enabled": true,
     "ending_data": {
         "1727017683034": {
             "id": 1727017683034,
