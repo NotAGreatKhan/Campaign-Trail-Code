@@ -240,6 +240,75 @@ distributeSeatsUK();
 //aa = all final overall results data
 //quickstats = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
 
+function onGameWindowChangeCandidates() {
+    const resultsTableHolder = document.getElementById("overall_details_container");
+
+    if (!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
+        return;
+    }
+
+    resultsTableHolder.classList.add("done");
+
+    const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTable.children.length; i++) {
+        const row = resultsTable.children[i];
+        let name = row.firstChild.innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
+        }
+
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+        } else {
+            row.children[1].innerHTML = vpTable[name];
+        }
+    }
+
+    const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTableHistorical.children.length; i++) {
+        const row = resultsTableHistorical.children[i];
+        let name = row.childNodes[1].innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
+        }
+
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+        } else {
+            row.children[1].innerHTML = vpTableHistorical[name];
+        }
+    }
+
+    // Add CSS to increase row spacing
+    const styleElem = document.createElement('style');
+    styleElem.textContent = `
+        #overall_details_container table tr {
+            line-height: 1.5; /* Adjust line height as needed */
+        }
+    `;
+    document.head.appendChild(styleElem);
+}
+
+const gameWindowNode = document.getElementById("game_window");
+const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
+
+const candidateObserver = new MutationObserver(onGameWindowChangeCandidates);
+candidateObserver.observe(gameWindowNode, candidateWatcherConfig);
+
+function updateHistoricalData(newVpTable, newHexColors, newNames, newEvs, newPvs, newPvps) {
+    vpTableHistorical = newVpTable;
+    HistHexcolour = newHexColors;
+    HistName = newNames;
+    HistEV = newEvs;
+    HistPV = newPvs;
+    HistPVP = newPvps;
+}
+
+
 // constructs endings based on header and pages
 construct = (a = 1) => {
 	
@@ -321,14 +390,6 @@ construct = (a = 1) => {
     e.pages = ["<p>This is an error handler</p>"];
     e.page = 0;
 
-
-    endingPicker = (out, totv, aa, quickstats) => {
-        orderID = [aa[0].candidate, aa[1].candidate, aa[2].candidate, aa[3].candidate];
-    //out = "win", "loss", or "tie" for your candidate
-    //totv = total votes in entire election
-    //aa = all final overall results data
-    //quickstat = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
-    
     /*
     e.header = "<h3></h3>"
     e.pages = ["<p></p>",
@@ -338,6 +399,13 @@ construct = (a = 1) => {
     e.header = "";
     e.executable = []
     nct_stuff.themes[nct_stuff.selectedTheme].text_col = "black"
+
+    endingPicker = (out, totv, aa, quickstats) => {
+    orderID = [aa[0].candidate, aa[1].candidate, aa[2].candidate, aa[3].candidate];
+    //out = "win", "loss", or "tie" for your candidate
+    //totv = total votes in entire election
+    //aa = all final overall results data
+    //quickstat = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
 
 if (quickstats[0] >= 50 && quickstats[0]<324) {
 e.pages.push(`
@@ -410,8 +478,9 @@ e.executable.push([0, (() => {e.image = e.image = "https://i.imgur.com/M3IyivE.g
 }
 
 // Second Slides
-    
-}
+
+}   
+   
 
 function getTooltips(str) {
     let matches = [];
