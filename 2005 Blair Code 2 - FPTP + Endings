@@ -229,6 +229,7 @@ async function handleMutations(mutationsList, observer) {
 let singleObserver = new MutationObserver(handleMutations);
 singleObserver.observe(document.documentElement, { childList: true, subtree: true });
     
+
 distributeSeatsUK();
 
 function onGameWindowChangeCandidates() {
