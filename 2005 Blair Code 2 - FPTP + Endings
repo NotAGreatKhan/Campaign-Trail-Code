@@ -384,63 +384,63 @@ construct = (a = 1) => {
 
 
 if (quickstats[0] >= 50 && quickstats[0]<324) {
-e.pages.push[
+e.pages = [
 "<h3>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3><p>David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.</p><p>In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.</p><p>As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.</p><p>Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…</p><p>After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.</p><p>You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.</p><p>Into the abyss.</p>"
 ]
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/0bqHDaj.png"})])
 } 
 
 else if (aa[0].electoral_votes < 324 && aa[1].electoral_votes < 324 && aa[2].electoral_votes < 324 && aa[3].electoral_votes < 324 && aa[4].electoral_votes < 324 && aa[5].electoral_votes < 324 && aa[6].electoral_votes < 324 && aa[7].electoral_votes < 324 && aa[8].electoral_votes < 324 && aa[9].electoral_votes < 324 && aa[10].electoral_votes < 324 && aa[11].electoral_votes < 324 && aa[12].electoral_votes < 324 && aa[13].electoral_votes < 324) {
-e.pages.push[
+e.pages = [
 "<h3>As Big Ben strikes 10, we can predict a hung Parliament for Britain, this is certainly a let down for Labour.</h3><p>It seems as though you, and the nation, share the utter surprise evident in David Dimbleby’s voice. Nobody really anticipated this outcome, save for the Liberal Democrat hopefuls wishing to finally break into government. Whilst this is certainly disappointing for national security reforms you were hoping to make, there is an avenue for continued governance with a coalition via the Liberal Democrats if you are able to form such a government. Regardless of the outcome, it is clear the LibDems are significant winners tonight, and will make governance a multi-faceted task to perform.</p><p>Your mind wonders the many possibilities that could’ve unfolded, anything, just anything, better than this folly of a deadlock. What really went wrong? Was it the Iraq War? Was it the blasted attacks hurled at you? Whatever it was, it is likely you will resign as party leader within the next 1 to 2 years at the maximum.</p><p>Just when you thought you were past the thick of it, another roadblock has been lobbed at you. Coalition negotiations are going to be tough, but depending on the seat shares, there could be a viable way out for you. Strap in, Tony, because it’s going to be quite the few days ahead of you…</p>"
 ]
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/ZVxm7Y7.png"})])
 } 
 
 else if (quickstats[0] >= 324 && quickstats[0]<340) {     
-e.pages.push[
+e.pages = [
 "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.</p><p>With a majority secured, you may be able to pursue those national security reforms you have desired for so long now. With how slim your majority is in Parliament though, don’t count on it to go too smoothly. All it would take is a significant amount of whip suspensions, resignations and by-election defeats, to eradicate your majority all together. Suffice to say, Gordon Brown is definitely going to be crossing his fingers whenever you resign in the near future.</p><p>You fought with all you could, but in the end, only the most pitiful dividend was handed out. Best of luck, Prime Minister, you’re sure as hell going to need it.</p>"
 ]
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
 } 
 
 else if (quickstats[0] >= 340 && quickstats[0]<355) {     
-e.pages.push[
+e.pages = [
 "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a modest majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, you let out a small, and reserved, sigh of relief. You have retained your position as PM. Even in spite of this, you have bled a lot of support to the Liberal Democrats and Conservatives. A lackluster performance, by your standards. At least for now, you can rest easy knowing your majority can survive some resignations here and there.</p><p>With this majority secured, you may be able to pursue those national security reforms you have desired for so long now. Though with how controversial they’ll be, don’t bet all of your cards on it going smoothly with your modest majority. Gordon Brown will definitely be crossing his fingers whenever you resign.</p><p>You fought through the battle with all you could, but only a tepid endorsement of your agenda was given to you. Best of luck, Prime Minister, because you sure as hell are going to need it.</p>"
 ]
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
 } 
 
 else if (quickstats[0] >= 355 && quickstats[0]<370) {
-e.pages.push[
+e.pages = [
 "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, you let out perhaps the biggest sigh of relief of your premiership. Despite the significant bleeding of support, you have held on to your position as PM. Though for someone such as yourself, this isn’t exactly a spectacular performance.</p><p>Now that you have snatched a secure Parliament, you should have little trouble in pursuing those national security reforms you have desired for a while now. Take some caution though, you have still bled a lot of colleagues as a result of this election. Your Chancellor is still going to be crossing his fingers for this, that’s for sure.</p><p>You fought the battle with all you could, yet the lion’s share was handed out hesitantly and mildly. Best of luck for your remaining years, Prime Minister, you’ll have a tough last few years ahead of you.</p>"
 ]
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
 } 
 
 else if (quickstats[0] >= 370 && quickstats[0]<419) {    
-e.pages.push[
+e.pages = [
 "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3><p>As David Dimbleby’s voice rings out on the television screen, a resounding cheer erupts throughout the crowd gathered to witness the results. You’ve done it! Despite the festering pressures abroad, despite the growing controversy of your premiership, and despite the renewed strength of the Tories and Liberal Democrats, you persevered to carry three successive landslide victories for your party. Your colleagues will certainly be thanking you for aiding in their retaining of their seats.</p><p>With this commanding majority in Parliament, you should have little difficulty in passing those reforms on national security you have desired for so long. Whenever you do end up resigning, Gordon Brown will definitely be satisfied with the majority you have left for him. It seems that at least for now, New Labour will sustain itself for at least 5 years to come. Perhaps, even more.</p><p>You fought, you triumphed, and in the end, the lion’s share has handsomely fallen into your grasp. Whilst I will of course wish you the best of luck, it seems you can likely do anything with this victory. Good luck Tony!</p>"
 ]
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
 } 
 
 else if (quickstats[0] >= 419 && quickstats[0]<500) {    
-e.pages.push[
+e.pages = [
 "<h3>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide, surpassing their record in 1997!</h3><p>As David Dimbleby’s voice rings out on the television screen, the Labour Party HQ shudders and rumbles under the enthusiastic — almost riotous — jiving of the crowds. The amateur dancing of the members, unequivocally dispelling any jitter suspected throughout election night.</p><p>Initially, your scepticism at the exit poll gets the better of you. But then, the seats come in... Constituency after constituency, MP after MP; A sea of red washing over the map, engulfing the entirety of the country. The sky-blue wave of the Conservatives washed away, and scattered by the orange locusts of Liberal Democrats. The Blairite legacy having fully cemented itself in the national zeitgeist.</p><p>Succeeding in such a total, and dominating, command over the House of Commons, you should have little trouble passing those national security reforms you have desired to obtain in the new terror-stricken millenia. It goes without saying that Gordon Brown is going to thank you when he takes over your office in the next Parliament.</p><p>After all of these long years, your fight in the political battlefield has yielded a triumph greater than any leader before you.</p><p>John Smith would be proud — you’re sure he would. If only Kier Hardie were here too. To see what we have achieved.</p>"
 ]
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])    
 } 
 
 else if (quickstats[0] >= 500) {  
-e.pages.push[
+e.pages = [
 "<h3>A Conversation between Prime Minister Tony Blair, and Communications Director Alastair Campbell. March 17, 2003, the day before the anti-war vote.</h3><p>[CAMPBELL]: This isn’t looking good, Tony, the upcoming commons vote, it could be the biggest rebellion of MPs in our government’s history.</p><p>[BLAIR]: Even more than the one for the Higher Education Act?</p><p>[CAMPBELL]: Even more than that.</p><p>[BLAIR]: There has to be something we can do to stem the flow of this… I hate to say this, but we may need to use that <i>other</i> intelligence MI5 was able to collate.</p><p>[CAMPBELL]: You mean, Operation <i>BIGSHOT</i>?</p><p>[BLAIR]: I’m afraid so, Alastair.</p><p>[CAMPBELL]: Damnit, it shouldn’t have even come close to this. I’ll get Peter in here, and talk it with him, should get the job done.</p><p>[BLAIR]: Good, we have to win this thing. For us. For Labour.</p><p>-End of Transcription.</p>"
 ]
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/VfQvbGe.png"})])
 }
 
 else if ((campaignTrail_temp.player_answers[0] == 13508) && quickstats[0]<324 && aa[0].candidate == 12543) {  
-e.pages.push[
+e.pages = [
 "<h3>As Big Ben strikes 10, we can predict that the Conservatives have won this election, in a second and final death-blow to New Labour</h3>"
 ]
 e.executable.push([0, (() => {e.image = e.image = ""})])
