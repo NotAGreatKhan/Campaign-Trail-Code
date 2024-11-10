@@ -324,33 +324,34 @@ construct = (a = 1) => {
       }
       }
 
-     if (e.image == true)
-      setTimeout(()=>{
-        candImg = $(".person_image")[0]
-        if (candImg) {
-          candImg.remove()
-          $("#final_results_description")[0].style = `
-            text-align:left;
-            width: 72%;
-          height:71%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-          `
-         console.log("RESULTS UPDATED");
-        }
-      }, 10)
-    
-     else if (e.image)
-      setTimeout(()=>{
-        candImg = $(".person_image")[0];
-        if (candImg)
-          candImg.src = e.image;
-      }, 10)
-
-      return html;
+    if (e.image == true)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0]
+      if (candImg) {
+        candImg.remove()
+        $("#final_results_description")[0].style = `
+          text-align:left;
+          width: 72%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          color: #000000
+        `
       }
-      
+    }, 10)
+    else if (e.image)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0];
+      if (candImg) {
+        candImg.src = e.image;
+      }		
+    }, 10)
+
+    const resultsDescriptionElement = document.getElementById('final_results_description');
+    if (resultsDescriptionElement) {
+        resultsDescriptionElement.scrollTop = 0;
+    }
+
       endingConstructor = (a = 1) => {
       $("#final_results_description")[0].innerHTML = construct(a);
       }
