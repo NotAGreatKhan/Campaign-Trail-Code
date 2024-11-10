@@ -351,7 +351,8 @@ construct = (a = 1) => {
     if (resultsDescriptionElement) {
         resultsDescriptionElement.scrollTop = 0;
     }
-
+}
+      
       endingConstructor = (a = 1) => {
       $("#final_results_description")[0].innerHTML = construct(a);
       }
