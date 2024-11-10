@@ -340,11 +340,12 @@ construct = (a = 1) => {
          console.log("RESULTS UPDATED");
         }
       }, 10)
-      else if (e.image)
+    
+     else if (e.image)
       setTimeout(()=>{
         candImg = $(".person_image")[0];
-        if (candImg) {
-          candImg.src = e.image;	
+        if (candImg)
+          candImg.src = e.image;
       }, 10)
 
       return html;
