@@ -450,8 +450,9 @@ e.executable.push([0, (() => {e.image = e.image = ""})])
 
 
 
-return construct(0);
+
 }   
+return construct(0);
 }  
 
 function getTooltips(str) {
