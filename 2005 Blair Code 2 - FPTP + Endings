@@ -351,6 +351,8 @@ construct = (a = 1) => {
     if (resultsDescriptionElement) {
         resultsDescriptionElement.scrollTop = 0;
     }
+
+return html;
 }
       
       endingConstructor = (a = 1) => {
