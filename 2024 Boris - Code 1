@@ -159,7 +159,7 @@ campaignTrail_temp.credits = "Team BOJO"
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
-        "pk": 1001,
+        "pk": 201,
         "fields": {
             "first_name": "The Conservative",
             "last_name": "And Unionist Party",
@@ -167,7 +167,7 @@ campaignTrail_temp.candidate_json = [
             "party": "1834",
             "state": "365",
             "priority": 1,
-            "description": "<div style=overflow-y:scroll;height:200px;> <li><b>Name: Conservative and Unionist Party</b></li><li><B>Founded: 1834</b></li><li><B>Seats: 365\n<P>\nThe Conservative Party enters the new parliamentary term with vigor, having just secured a majority under Boris Johnson. Once the bastion of British tradition and cautious governance, the party now faces a new path; populism at all costs. Across the nation, people are chanting for the Conservatives to finally “Get Brexit Done!” Now they stand as elected representatives of the people’s will, expected to navigate an impossible bureaucracy in Brussels, maintain the Good Friday agreement, ensure a strong British economy, and finally withdraw from the EU. Not of course, discounting the rather forgotten fact that they are still expected to run the nation at the same time. \n<p>\nThe Conservative majority may seem strong yet it’s fragile. Their diverse coalition, of One Nation, Thatcherite’s, and traditional Conservatives are divided on what a Conservative government should look like; divided on whether Brexit should be carried out or how. The party wonders what a post-Brexit Britain would actually look like… \n\nA moderate government set on standing for social responsibility and bridging the divide between classes… A free market state where EU regulations can no longer restrict British enterprise… A traditional state rooted in old values of law and order, national sovereignty, and an end to cultural progression…\n<p>\nThe stage is now set for a new chapter in British politics - one in which Boris Johnson is now tasked with bringing together a cohort of conservatives to finally do the unthinkable and end the years of gridlock. To lift the country out of its current economic standstill. And to make Britain a respectable and fully independent nation on the world stage. Can such a disrespected and controversial figure truly manage these challenges?\n</div>",
+            "description": "<div style=overflow-y:scroll;height:290px;> <li><b>Name: Conservative and Unionist Party</b></li><li><B>Founded: 1834</b></li><li><B>Seats: 365\n<P>\nThe Conservative Party enters the new parliamentary term with vigor, having just secured a majority under Boris Johnson. Once the bastion of British tradition and cautious governance, the party now faces a new path; populism at all costs. Across the nation, people are chanting for the Conservatives to finally “Get Brexit Done!” Now they stand as elected representatives of the people’s will, expected to navigate an impossible bureaucracy in Brussels, maintain the Good Friday agreement, ensure a strong British economy, and finally withdraw from the EU. Not of course, discounting the rather forgotten fact that they are still expected to run the nation at the same time. \n<p>\nThe Conservative majority may seem strong yet it’s fragile. Their diverse coalition, of One Nation, Thatcherite’s, and traditional Conservatives are divided on what a Conservative government should look like; divided on whether Brexit should be carried out or how. The party wonders what a post-Brexit Britain would actually look like… \n\nA moderate government set on standing for social responsibility and bridging the divide between classes… A free market state where EU regulations can no longer restrict British enterprise… A traditional state rooted in old values of law and order, national sovereignty, and an end to cultural progression…\n<p>\nThe stage is now set for a new chapter in British politics - one in which Boris Johnson is now tasked with bringing together a cohort of conservatives to finally do the unthinkable and end the years of gridlock. To lift the country out of its current economic standstill. And to make Britain a respectable and fully independent nation on the world stage. Can such a disrespected and controversial figure truly manage these challenges?\n</div>",
             "color_hex": "#0aa7db",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -482,10 +482,10 @@ const infoContainer = document.createElement("div");
     const audio = document.getElementById("audio");
     if (audio.paused) {
       audio.play();
-      playPauseButton.src = "https://imgur.com/s84pnkp.png"; // Set the pause image
+      playPauseButton.src = "https://imgur.com/bYFaYbm.png"; // Set the pause image
     } else {
       audio.pause();
-      playPauseButton.src = "https://imgur.com/bYFaYbm.png"; // Set the play image
+      playPauseButton.src = "https://imgur.com/s84pnkp.png"; // Set the play image
     }
   });
 
