@@ -210,7 +210,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 109261,
         "fields": {
-            "candidate": 1001,
+            "candidate": 201,
             "running_mate": 1002
         }
     }
@@ -220,7 +220,7 @@ campaignTrail_temp.opponents_default_json = [
     {
         "election": 20,
         "candidates": [
-            1001
+            201
         ]
     }
 ]
@@ -229,7 +229,7 @@ campaignTrail_temp.opponents_weighted_json = [
     {
         "election": 20,
         "candidates": [
-            1001
+            201
         ]
     }
 ]
