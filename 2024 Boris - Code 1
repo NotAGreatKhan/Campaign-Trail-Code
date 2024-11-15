@@ -431,7 +431,7 @@ displayBox.appendChild(coverElement);
 
 const infoContainer = document.createElement("div");
   infoContainer.id = "info-container";
-  infoContainer.style.backgroundImage = "url('https://imgur.com/AxVh28b.png')";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/GJsGo3k.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
   infoContainer.style.color = "black"; // Set text color to black
 
@@ -460,7 +460,7 @@ const infoContainer = document.createElement("div");
 
   const prevButton = document.createElement("img");
   prevButton.id = "prevButton";
-  prevButton.src = "https://imgur.com/QyN8Ojs.png";
+  prevButton.src = "https://imgur.com/jcTGWRt.png";
   prevButton.alt = "Previous";
   controls.appendChild(prevButton);
 
@@ -472,7 +472,7 @@ const infoContainer = document.createElement("div");
 
   const nextButton = document.createElement("img");
   nextButton.id = "nextButton";
-  nextButton.src = "https://imgur.com/Ztr2WXV.png";
+  nextButton.src = "https://imgur.com/eQ3Zd6B.png";
   nextButton.alt = "Next";
   controls.appendChild(nextButton);
 
@@ -482,10 +482,10 @@ const infoContainer = document.createElement("div");
     const audio = document.getElementById("audio");
     if (audio.paused) {
       audio.play();
-      playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the pause image
+      playPauseButton.src = "https://imgur.com/s84pnkp.png"; // Set the pause image
     } else {
       audio.pause();
-      playPauseButton.src = "https://imgur.com/kRt7zCn.png"; // Set the play image
+      playPauseButton.src = "https://imgur.com/bYFaYbm.png"; // Set the play image
     }
   });
 
@@ -523,7 +523,7 @@ prevButton.addEventListener("click", function () {
 	volumeContainer.id = "volume-container";
 
 const volumeLabel = document.createElement("img");
-volumeLabel.src = "https://imgur.com/FHoumEj.png";
+volumeLabel.src = "https://imgur.com/5OeJsB6.png";
 volumeLabel.alt = "Volume";
 volumeContainer.appendChild(volumeLabel);
 
@@ -615,7 +615,7 @@ style.textContent = `
     display: flex;
     flex-direction: row;
 	height:191px;
-    background-Image: url("https://imgur.com/uDXpBKg.png");
+    background-Image: url("https://imgur.com/DqF4Qtn.png");
   }
 
   #display-box {
