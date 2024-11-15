@@ -10966,6 +10966,9 @@ campaignTrail_temp.jet_data = [{
     },
     "cyoa_enabled": true,
     "cyoa_data": {}
+    "nicknames": {
+        "201": "Conservative Party"
+    },
 }
 ]
 
