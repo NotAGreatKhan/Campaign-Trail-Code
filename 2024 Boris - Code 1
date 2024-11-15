@@ -1,0 +1,762 @@
+function removeCandidateSummary() {
+try {
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
+  }
+} catch {}
+}
+window.setInterval(removeCandidateSummary,200)
+
+function updateCandidateForm() {
+  formobserver.disconnect();
+  const heading = document.querySelector("#candidate_form form h3");
+
+  if (heading) {
+    heading.textContent = "Please select your party:";
+  }
+  formobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+var formobserver = new MutationObserver(updateCandidateForm);
+formobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeRunningMateSummary() {
+try {
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+} catch {}
+}
+window.setInterval(removeCandidateSummary,200)
+
+function updateRunningMateForm() {
+  runformobserver.disconnect();
+  const heading = document.querySelector("#running_mate_form form h3");
+
+  if (heading) {
+    heading.textContent = "Please select your party leader:";
+  }
+  runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+var runformobserver = new MutationObserver(updateRunningMateForm);
+runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeCandidateSummary() {
+   sumobserver.disconnect();
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
+
+function removeRunningMateSummary() {
+   sumobserver.disconnect();
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
+
+function updateHeader() {
+  var gameHeader = document.getElementsByClassName("game_header")[0];
+
+  if (gameHeader.getAttribute("id") !== "modifiedHeader") {
+    gameHeader.innerHTML = corrr;
+    gameHeader.style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+    gameHeader.setAttribute("id", "modifiedHeader");
+  }
+}
+window.setInterval(removeRunningMateSummary,10)
+  
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningmateSummary = document.querySelector("#runningmate_summary");
+    if (runningmateSummary && runningmateSummary.children[0].children[2].innerHTML != runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
+        runningmateSummary.children[0].children[2].innerHTML = runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
+    }
+});
+var headerobserver = new MutationObserver(updateHeader);
+headerobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+RecReading=true
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 45,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2016,
+            "display_year": "2024-Boris",
+            "summary": "<b>Following Theresa May’s resignation after disastrous attempts to pass Brexit legislation, Foreign Secretary Boris Johnson took over as Prime Minister with a promise to “Get Brexit Done.” He campaigned extensively on Brexit, leading a generation of working class families to defect from their traditional Labour roots and bring down the “Red Wall”.<p>After nearly a decade in power, many question whether the party responsible for dividing the country over Brexit will be able sustain another term in government. Nevertheless, Johnson’s substantial parliamentary majority in the recent election suggests strong public support, however, challenges remain.<p>Will Boris be able to “Get Brexit Done” while facing internal party divisions, political scandals, a global pandemic, and growing public skepticism towards the clown of Downing Street?",
+            "image_url": "https://ichef.bbci.co.uk/news/624/cpsprodpb/102AB/production/_109491266_0ecd89d2-e50b-4992-b975-58fa1c020423.jpg",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "123",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2016,
+        "is_premium": 0,
+        "display_year": "2024-Boris"
+    }
+]
+
+campaignTrail_temp.credits = "Team BOJO"
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1001,
+        "fields": {
+            "first_name": "The Conservative",
+            "last_name": "And Unionist Party",
+            "election": 20,
+            "party": "1834",
+            "state": "365",
+            "priority": 1,
+            "description": "<div style=overflow-y:scroll;height:200px;> <li><b>Name: Conservative and Unionist Party</b></li><li><B>Founded: 1834</b></li><li><B>Seats: 365\n<P>\nThe Conservative Party enters the new parliamentary term with vigor, having just secured a majority under Boris Johnson. Once the bastion of British tradition and cautious governance, the party now faces a new path; populism at all costs. Across the nation, people are chanting for the Conservatives to finally “Get Brexit Done!” Now they stand as elected representatives of the people’s will, expected to navigate an impossible bureaucracy in Brussels, maintain the Good Friday agreement, ensure a strong British economy, and finally withdraw from the EU. Not of course, discounting the rather forgotten fact that they are still expected to run the nation at the same time. \n<p>\nThe Conservative majority may seem strong yet it’s fragile. Their diverse coalition, of One Nation, Thatcherite’s, and traditional Conservatives are divided on what a Conservative government should look like; divided on whether Brexit should be carried out or how. The party wonders what a post-Brexit Britain would actually look like… \n\nA moderate government set on standing for social responsibility and bridging the divide between classes… A free market state where EU regulations can no longer restrict British enterprise… A traditional state rooted in old values of law and order, national sovereignty, and an end to cultural progression…\n<p>\nThe stage is now set for a new chapter in British politics - one in which Boris Johnson is now tasked with bringing together a cohort of conservatives to finally do the unthinkable and end the years of gridlock. To lift the country out of its current economic standstill. And to make Britain a respectable and fully independent nation on the world stage. Can such a disrespected and controversial figure truly manage these challenges?\n</div>",
+            "color_hex": "#0aa7db",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.ispreview.co.uk/wp-content/uploads/conservative_party_uk_2015.gif",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1002,
+        "fields": {
+            "first_name": "Boris",
+            "last_name": "Johnson",
+            "election": 20,
+            "party": "The Conservative And Unionist Party",
+            "state": "Uxbrige and South Ruslip",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Prime_Minister_Boris_Johnson_Portrait_%28cropped%29.jpg/800px-Prime_Minister_Boris_Johnson_Portrait_%28cropped%29.jpg",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<li><b>Name: Boris Johnson</b></li><li><B>Role: Prime Minister and Conservative Party Leader</b></li><li><B>Constituency: Uxbridge and South Ruislip\n<P>Alexander Boris de Pfeffel Johnson, commonly known as Boris Johnson. Eton student, eccentric Englishman, Oxford President, and considered by many, a “clown”. The New York-born British-American rose through a career in journalism and eventually became Mayor of London following a populist and energetic campaign. From there he emerged into the parliamentary scene, and in due time, became foreign secretary under Theresa May; it was this role which gave him the perfect position to replace her under a manifesto of doing what she was unable to… “Get Brexit Done!”\n<p>\nBoris’ controversial combative political style and unapologetic attitude has drawn both fervent support and fierce opposition. His frequent gaffes combined with his colourful personality has enabled this elite’s rhetoric to connect to traditionally Labour-supporting working class voters. However, the question remains, Is Boris’ personality and sly intelligence enough to offset his ability to cause chaos and controversy wherever he goes?",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 109261,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 1002
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#0aa7db",
+    "windowColor": "#0aa7db",
+    "containerColor": "#f2f2f2",
+    "innerWindowColor": "#efeff0",
+    "bannerImageUrl": "https://i0.wp.com/leedsstar.co.uk/wp-content/uploads/2019/12/Vote-Conservative.png?fit=1000%2C570&ssl=1",
+    "backgroundImageUrl": "https://cdn.britannica.com/25/99525-050-DCC15F00/Chamber-House-of-Commons-Houses-Parliament-London.jpg",
+    "endingTextColor": "#000000",
+    "customQuote": "\"Get Brexit Done\"",
+    "gameTitle": "THE TORY TRAIL"
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>THE TORY TRAIL</h2><font id="wittyquote" size="4" color="white"><em>"Get Brexit Done"</em></font>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#0aa7db";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#0aa7db";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#f2f2f2";
+
+document.getElementById("header").src = "https://i0.wp.com/leedsstar.co.uk/wp-content/uploads/2019/12/Vote-Conservative.png?fit=1000%2C570&ssl=1";
+
+document.body.background = "https://cdn.britannica.com/25/99525-050-DCC15F00/Chamber-House-of-Commons-Houses-Parliament-London.jpg";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#efeff0!important;}</style>";
+
+document.body.style.backgroundSize= "cover"
+
+//#endcode
+
+// Music Player
+RecReading=true
+
+// Select the node that will be observed for mutations
+const windowsAdvisorTargetNode = document.getElementById("game_window");
+
+// Options for the observer (which mutations to observe)
+const windowsAdvisorConfig = { attributes: true, childList: true, subtree: true };
+
+// Callback function to execute when mutations are observed
+const callback = (mutationList, observer) => {
+    visitWindow = document.getElementsByClassName("overlay_window")[0];
+
+    if(visitWindow == null || visitWindow.classList.contains("done")) {
+        return;
+    }
+    visitWindow.classList.add("done");
+    visitWindow.classList.add("window");
+    let titleBar = visitWindow.querySelector("h3");
+    titleBar.classList.add("title-bar");
+    titleBar.classList.add("title-bar-text")
+    titleBar.style.paddingLeft = "3px";
+};
+
+class Song {
+  constructor(title, artist, coverLink, audioLink) {
+    this.title = title;
+    this.artist = artist;
+    this.coverLink = coverLink;
+    this.audioLink = audioLink;
+  }
+  getTitle() {
+    return this.title;
+  }
+
+  getArtist() {
+    return this.artist;
+  }
+
+  getCoverLink() {
+    return this.coverLink;
+  }
+
+  getAudioLink() {
+    return this.audioLink;
+  }
+}
+
+class Playlist {
+  constructor() {
+    this.songs = [];
+    this.currentSongIndex = 0;
+  }
+
+  addSong(song) {
+    this.songs.push(song);
+  }
+
+  getCurrentSong() {
+    return this.songs[this.currentSongIndex];
+  }
+
+  playNext() {
+    this.currentSongIndex = (this.currentSongIndex + 1) % this.songs.length;
+  }
+
+  playPrevious() {
+    this.currentSongIndex = (this.currentSongIndex - 1 + this.songs.length) % this.songs.length;
+  }
+}
+window.Playlist=Playlist
+window.Song=Song
+
+function changePlaylist(newPlaylist) {
+  playlist = newPlaylist;
+  playlist.currentSongIndex = 0;
+  updateUI(playlist);
+  const audio = document.getElementById("audio");
+  audio.src = playlist.getCurrentSong().audioLink;
+  audio.play();
+}
+window.changePlaylist=changePlaylist
+
+function updateUI(playlist) {
+    const currentSong = playlist.getCurrentSong();
+    var player = document.getElementById("player");
+    player.querySelector("#cover").src = currentSong.getCoverLink();
+    player.querySelector("#title").textContent = currentSong.getTitle();
+    player.querySelector("#artist").textContent = currentSong.getArtist();
+}
+
+window.updateUI=updateUI
+
+
+function setupMusicPlayer() {
+  playlist = new Playlist();
+
+
+  const song1 = new Song(
+      "London Calling",
+      "The Clash",
+      "https://tse2.mm.bing.net/th?id=OIP.YnItbAedSOdBbd72Dg6rtwHaHa&pid=Api&P=0&h=180",
+      "https://audio.jukehost.co.uk/eT9iFWO30UCAlzCww3cMKq0DNhKolBVr"
+    );
+
+    const song2 = new Song(
+      "Stuck In The Middle With You",
+      "Stealers Wheel",
+      "https://i.scdn.co/image/ab67616d0000b273a5ce236c22035a02cf87d4de",
+      "https://audio.jukehost.co.uk/LTXuDotdtIga72J4SixO8aYRxBFvofc2"
+    );
+
+    const song3 = new Song(
+      "Blinding Lights",
+      "The Weeknd",
+      "https://i.redd.it/cwy6srzrj2o41.jpg",
+      "https://audio.jukehost.co.uk/d5nbSMjCx0MwbUgPHjZuxqULYkRgrwUB"
+    );
+
+    const song4 = new Song(
+      "Feel Good Inc.",
+      "Gorillaz",
+      "https://media.senscritique.com/media/000004802973/source_big/Demon_Days.jpg",
+      "https://audio.jukehost.co.uk/4Nd89zn65XoKzwdZMsHDHZnQ7oDnO8wU"
+    );
+    
+    const song5 = new Song(
+      "You Can't Always Get What You Want",
+      "Rolling Stones",
+      "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/74/d5/74/74d57427-0a8c-87d8-b335-a8a51e331bfc/source/1200x1200bb.jpg",
+      "https://audio.jukehost.co.uk/spZAsbCzyaudIt59CF72cZ2VKcYDPBmE"
+    );
+
+    const song6 = new Song(
+      "Vossi Bop",
+      "Stormzy",
+      "https://i.scdn.co/image/ab67616d0000b273a1e8b73748ee972a4c22be16",
+      "https://audio.jukehost.co.uk/6HWwqjqNsMxQNr6wEvy6BBFTt5iKATto"
+    );
+
+  playlist.addSong(song1);
+  playlist.addSong(song2);
+  playlist.addSong(song3);
+  playlist.addSong(song4);
+  playlist.addSong(song5);
+  playlist.addSong(song6);
+
+  const playerContainer = document.createElement("div");
+  playerContainer.id = "player";
+
+ const displayBox = document.createElement("div");
+displayBox.id = "display-box";
+
+const coverElement = document.createElement("img");
+coverElement.id = "cover";
+displayBox.appendChild(coverElement);
+
+const infoContainer = document.createElement("div");
+  infoContainer.id = "info-container";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/AxVh28b.png')";
+  infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
+  infoContainer.style.color = "black"; // Set text color to black
+
+  const songInfo = document.createElement("div");
+  songInfo.id = "song-info";
+
+  const titleElement = document.createElement("h3");
+  titleElement.id = "title";
+  titleElement.style.fontWeight = 'normal'; // Make it normal as per previous request
+  songInfo.appendChild(titleElement);
+
+  const artistElement = document.createElement("p");
+  artistElement.id = "artist";
+  songInfo.appendChild(artistElement);
+
+  infoContainer.appendChild(songInfo);
+  displayBox.appendChild(infoContainer);
+
+  playerContainer.appendChild(displayBox);
+
+  const controlsContainer = document.createElement("div");
+  controlsContainer.id = "controls-container";
+
+  const controls = document.createElement("div");
+  controls.id = "controls";
+
+  const prevButton = document.createElement("img");
+  prevButton.id = "prevButton";
+  prevButton.src = "https://imgur.com/QyN8Ojs.png";
+  prevButton.alt = "Previous";
+  controls.appendChild(prevButton);
+
+  const playPauseButton = document.createElement("img");
+  playPauseButton.id = "playPauseButton";
+  playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the default play image
+  playPauseButton.alt = "Play/Pause";
+  controls.appendChild(playPauseButton);
+
+  const nextButton = document.createElement("img");
+  nextButton.id = "nextButton";
+  nextButton.src = "https://imgur.com/Ztr2WXV.png";
+  nextButton.alt = "Next";
+  controls.appendChild(nextButton);
+
+  controlsContainer.appendChild(controls);
+
+  playPauseButton.addEventListener("click", function () {
+    const audio = document.getElementById("audio");
+    if (audio.paused) {
+      audio.play();
+      playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the pause image
+    } else {
+      audio.pause();
+      playPauseButton.src = "https://imgur.com/kRt7zCn.png"; // Set the play image
+    }
+  });
+
+nextButton.addEventListener("click", function () {
+  playlist.playNext();
+  updateUI(playlist);
+  const audio = document.getElementById("audio");
+  audio.src = playlist.getCurrentSong().audioLink;
+  audio.play();
+});
+
+prevButton.addEventListener("click", function () {
+  playlist.playPrevious();
+  updateUI(playlist);
+  const audio = document.getElementById("audio");
+  audio.src = playlist.getCurrentSong().audioLink;
+  audio.play();
+});
+
+  const progressBarContainer = document.createElement("div");
+  progressBarContainer.id = "progress-bar-container";
+
+  const progressBar = document.createElement("progress");
+  progressBar.type = "range";
+  progressBar.id = "progress-bar";
+  progressBar.value = "0";
+  progressBar.max = "100";
+
+
+  progressBarContainer.appendChild(progressBar);
+  controlsContainer.appendChild(progressBarContainer);
+  playerContainer.appendChild(controlsContainer);
+
+ const volumeContainer = document.createElement("div");
+	volumeContainer.id = "volume-container";
+
+const volumeLabel = document.createElement("img");
+volumeLabel.src = "https://imgur.com/FHoumEj.png";
+volumeLabel.alt = "Volume";
+volumeContainer.appendChild(volumeLabel);
+
+	const volumeSliderContainer = document.createElement("div");
+	volumeSliderContainer.classList.add("is-vertical");
+	volumeSliderContainer.style.marginLeft = "23%";
+	volumeSliderContainer.style.height = "126px";
+
+	const volumeSlider = document.createElement("input");
+	volumeSlider.type = "range";
+	volumeSlider.id = "volumeSlider";
+	volumeSlider.min = 0;
+	volumeSlider.max = 9;
+	volumeSlider.step = 1;
+	volumeSlider.value = 1; // Initial volume
+
+	volumeSliderContainer.appendChild(volumeSlider);
+
+	const volumeDisplay = document.createElement("span");
+	volumeDisplay.id = "volume-display";
+	volumeDisplay.style.fontWeight = 'bold'; 
+	volumeDisplay.style.display = 'none';
+	volumeDisplay.textContent = "1";
+
+	volumeContainer.appendChild(volumeSliderContainer);
+	volumeContainer.appendChild(volumeDisplay);
+
+	playerContainer.appendChild(volumeContainer);
+
+  gameWindow_player.insertAdjacentElement("afterend", playerContainer);
+
+
+  function updateProgressBar() {
+    const audio = document.getElementById("audio");
+    const progress = (audio.currentTime / audio.duration) * 100;
+    try{progressBar.value = progress}
+	catch{}
+  }
+
+ 
+  progressBar.addEventListener("input", function () {
+    const audio = document.getElementById("audio");
+    const seekTime = (progressBar.value / 100) * audio.duration;
+    audio.currentTime = seekTime;
+  });
+
+  const audio = document.createElement("audio");
+  audio.id = "audio";
+  audio.src = playlist.getCurrentSong().audioLink;
+  audio.volume = 1/9;
+
+  audio.addEventListener("timeupdate", updateProgressBar);
+  audio.addEventListener("ended", function () {
+	  // Play the next song when the current song ends
+	  playlist.playNext();
+	  updateUI(playlist);
+	  audio.src = playlist.getCurrentSong().audioLink;
+	  audio.play();
+	});
+
+    let currentVolume = 1; // Initial volume
+
+	volumeSlider.addEventListener("input", function () {
+	  currentVolume = parseInt(volumeSlider.value, 10);
+	  updateVolumeDisplay();
+	  updateAudioVolume();
+	});
+
+	function updateVolumeDisplay() {
+	  volumeDisplay.textContent = currentVolume;
+	}
+
+   function updateAudioVolume() {
+    const audio = document.getElementById("audio");
+    audio.volume = currentVolume / 9; // Set volume between 0 and 1
+  }
+
+  document.body.appendChild(audio);
+  audio.play();
+
+  // Update the UI when the page loads
+  updateUI(playlist);
+}
+
+const style = document.createElement("style");
+style.textContent = `
+#player {
+    border: 3px solid #C9C9C9; /* Add your desired border style */
+    display: flex;
+    flex-direction: row;
+	height:191px;
+    background-Image: url("https://imgur.com/uDXpBKg.png");
+  }
+
+  #display-box {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  #cover {
+    width: 176px;
+	height:176px;
+  }
+
+  #info-container {
+    display: flex;
+    flex-direction: row;
+    height:178px;
+	width:127px;
+	margin-top: 3px;
+  }
+
+  #song-info {
+    width: 100%;
+	padding:5px;
+  }
+
+  #controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width:100%;
+	padding-top:15px;
+
+  }
+  .is-vertical #volumeSlider {
+  width: 125px;
+}
+
+  #controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }
+
+  #progress-bar-container {
+    width: 100%;
+  }
+
+  #progress-bar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-Top: 20px;
+  }
+  
+`;
+
+document.head.appendChild(style);
+
+const gameWindow_player = document.getElementById("game_window");
+//use this function directly or put it in an event listener to start the music on the press of a certain button
+setupMusicPlayer();
+
+// Tooltips
+function addDynamicCSS() {
+    var css = `
+
+        label {
+          cursor:default;
+        }
+  
+        .inner_window_question h3 .mytooltip{
+            background-color: #f58a8a;
+        }
+
+        .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background-color: #ffbdbd;
+        }
+
+        .mytooltip .mytooltiptext {
+            width: 240px;
+            background-color: #ffbdbd;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 99;
+            bottom: 20%;
+            left: 20%;
+            margin-left: -90px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid black;
+            pointer-events: none;
+            font-size: 13px !important;
+            line-height: 1.5em !important;
+            font-weight: normal !important;
+            font-style: normal !important;
+        }
+
+        .mytooltip .mytooltiptext img {
+            max-width: 240px;
+            height: auto;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+    `;
+
+    var styleElem = document.createElement('style');
+    styleElem.type = 'text/css';
+    
+    styleElem.appendChild(document.createTextNode(css));
+    
+    document.head.appendChild(styleElem);
+}
+
+
+addDynamicCSS();
+
+tooltipList = [
+	// World Leaders
+	{searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png> President George Walker Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
+        {searchString: "Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
+        {searchString: "President Jacques Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
+        {searchString: "President Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
+
+        // Government Members
+	{searchString: "Gordon", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
+	{searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
+
+        // Characters
+        {searchString: "The Queen", explanationText: "<img src=https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/queen-elizabeth-ii-watches-from-the-balcony-of-buckingham-news-photo-1662662018.jpg> Lizzie."},
+        {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a symbol of American pride."},
+        {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
+];
