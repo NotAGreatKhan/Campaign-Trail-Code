@@ -369,7 +369,6 @@ window.updateUI=updateUI
 function setupMusicPlayer() {
   playlist = new Playlist();
 
-
   const song1 = new Song(
       "London Calling",
       "The Clash",
@@ -431,7 +430,7 @@ displayBox.appendChild(coverElement);
 
 const infoContainer = document.createElement("div");
   infoContainer.id = "info-container";
-  infoContainer.style.backgroundImage = "url('https://imgur.com/GJsGo3k.png')";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/GJsGo3k.jpg')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
   infoContainer.style.color = "black"; // Set text color to black
 
@@ -466,7 +465,7 @@ const infoContainer = document.createElement("div");
 
   const playPauseButton = document.createElement("img");
   playPauseButton.id = "playPauseButton";
-  playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the default play image
+  playPauseButton.src = "https://imgur.com/bYFaYbm.png"; // Set the default play image
   playPauseButton.alt = "Play/Pause";
   controls.appendChild(playPauseButton);
 
@@ -615,7 +614,7 @@ style.textContent = `
     display: flex;
     flex-direction: row;
 	height:191px;
-    background-Image: url("https://imgur.com/DqF4Qtn.png");
+    background-Image: url("https://imgur.com/uDXpBKg.png");
   }
 
   #display-box {
@@ -680,6 +679,7 @@ document.head.appendChild(style);
 const gameWindow_player = document.getElementById("game_window");
 //use this function directly or put it in an event listener to start the music on the press of a certain button
 setupMusicPlayer();
+
 
 // Tooltips
 function addDynamicCSS() {
