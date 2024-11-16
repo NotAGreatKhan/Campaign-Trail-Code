@@ -10958,8 +10958,8 @@ campaignTrail_temp.running_mate_last_name = "Johnson";
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
-  background-color: #c44558;
-  border-color: #94292e;
+  background-color: #0aa7db;
+  border-color: #005cb3;
 }
 document.head.appendChild(style_overwrite);
 
