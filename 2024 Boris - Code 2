@@ -10955,6 +10955,23 @@ campaignTrail_temp.candidate_last_name = "PM";
 campaignTrail_temp.running_mate_last_name = "Johnson";
 
 
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #c44558;
+  border-color: #94292e;
+}
+document.head.appendChild(style_overwrite);
+
+const style = document.createElement('style');
+style.textContent = `
+#map_container {
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-image: url("https://imgur.com/ujq3rKv.png");
+}
+`;
+document.head.append(style);
 
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
