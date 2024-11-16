@@ -458,12 +458,12 @@ return construct(0);
 
 function getTooltips(str) {
     let matches = [];
-
+    
     tooltipList.forEach((tooltip, index) => {
         // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
-       let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
-
-
+        let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
+    
+    
         let match;
         while ((match = regex.exec(str)) !== null) {
             matches.push({
@@ -473,10 +473,10 @@ function getTooltips(str) {
             });
         }
     });
-
+    
     // Sort by starting position; if two start at the same position, longer match comes first
     matches.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start));
-
+    
     // Filter out overlaps
     for (let i = 0; i < matches.length - 1; ) {
         if (matches[i + 1].start < matches[i].end) {
@@ -485,25 +485,25 @@ function getTooltips(str) {
             i++; // Move to next match
         }
     }
-
+    
     return matches;
 }
 function applyTooltips(str) {
     const matches = getTooltips(str);
     let result = '';
     let lastIndex = 0;
-
+    
     matches.forEach(match => {
         const tooltip = tooltipList[match.tooltipIndex];
         result += str.slice(lastIndex, match.start);
         result += `<span class='mytooltip'>${tooltip.searchString}<span class='mytooltiptext'>${tooltip.explanationText}</span></span>`;
         lastIndex = match.end;
     });
-
+    
     result += str.slice(lastIndex); // Add the remainder of the original string
     return result;
 }
-
+    
 function applyTooltipsToObject(obj) {
     for (let key in obj) {
         if (typeof obj[key] === 'string') {
@@ -513,7 +513,7 @@ function applyTooltipsToObject(obj) {
         }
     }
 }
-
+    
 applyTooltipsToObject(campaignTrail_temp.questions_json);
 applyTooltipsToObject(campaignTrail_temp.answers_json);
-applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);   
