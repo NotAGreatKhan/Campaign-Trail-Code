@@ -11141,6 +11141,12 @@ style_overwrite.innerHTML =
   background-color: #0aa7db;
   border-color: #005cb3;
 }
+.inner_window_question h3 {
+background-color: #a3c8f0;
+}
+.overlay_window h3 {
+background-color: #a3c8f0;
+}`
 ;
 document.head.appendChild(style_overwrite);
 
@@ -11154,9 +11160,6 @@ campaignTrail_temp.jet_data = [{
         "canImage": "http://assets8.lbc.co.uk/2016/29/conservatives-logo---lbc-1468834487-editorial-short-form-1.jpg"
     },
     "cyoa_enabled": true,
-    "cyoa_data": {},
-    "nicknames": {
-        "201": "Conservative and Unionist Party",
-    }
+    "cyoa_data": {}
 }
 ]
