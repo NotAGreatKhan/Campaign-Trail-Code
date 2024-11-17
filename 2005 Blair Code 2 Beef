@@ -415,6 +415,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+if(ans == 12797){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 13794,
+    "fields": {
+        "priority": 0,
+        "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
+        "likelihood": 1
+      }
+    }
+  }
 }
 
 campaignTrail_temp.questions_json = [
@@ -675,7 +686,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12926,
         "fields": {
             "priority": 0,
-            "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. What will be your way to counter these charges?",
+            "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
             "likelihood": 1
         }
     },
@@ -703,6 +714,231 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "[May 4, 2005] This campaign. This campaign has leached out every fibre of your being, and ardently extracting every electric current of your conscience. Finally though, election day is tomorrow. Where would you like to concentrate the last stops of your stumping before your eyes set upon that voluminous red screen at the Labour Party Headquarters?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13391,
+        "fields": {
+            "priority": 0,
+            "description": "[July 9, 2003] You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13410,
+        "fields": {
+            "priority": 0,
+            "description": "[January 28, 2004] The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13417,
+        "fields": {
+            "priority": 0,
+            "description": "[March 18, 2003] Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13427,
+        "fields": {
+            "priority": 0,
+            "description": "[May 4, 2005] From the day that you came into office, you pledged to the British people that you would not get in the mud and slander your opponents. This campaign though, you have — in the eyes of the public — thrown that right out of the window and into the political fire. With the unusually personal vitriol of this year’s election season being lobbed around by both sides, the Liberal Democrats have seen unprecedented rises in the polls, as your personal favourability sags alongside the foreboding polarisation. What will you do to ensure this doesn’t mean your defeat – calamity even more so– tomorrow evening?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13443,
+        "fields": {
+            "priority": 0,
+            "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13458,
+        "fields": {
+            "priority": 0,
+            "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13473,
+        "fields": {
+            "priority": 0,
+            "description": "[January 27, 2004] Before 1998, going to university was completely free, with education being seen as a fundamental right. That year, your government then introduced up-front fees for students every year they studied. With these payments no longer being enough, your government is now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Although it is feasible to pass this legislation, it is nevertheless deeply controversial and could risk failing the vote on the second reading. How will you ensure that it passes?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13494,
+        "fields": {
+            "priority": 0,
+            "description": "[January, 2004] The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13499,
+        "fields": {
+            "priority": 0,
+            "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13500,
+        "fields": {
+            "priority": 0,
+            "description": "[February, 2005] The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13501,
+        "fields": {
+            "priority": 0,
+            "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13553,
+        "fields": {
+            "priority": 0,
+            "description": "You furrow your brow as your eyes glaze and bore into the reports on polling for the upcoming deliberations on a grand initiative. The great European project. Over the next following years, the elite and fellow centrist political class of the continent, will make the case for a piece of legislation to be ratified known as the European Constitution. If all constituent members vote in favour via a series of referendums, then a legally codified, free-trade union of the continent is all but assured.<p></p>Before you though stand two significant obstacles that could sink this: the French, and the Dutch. You only have the influence to target one of them. So, Tony, which one will it be?\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13560,
+        "fields": {
+            "priority": 0,
+            "description": "[March 18, 2003] Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13596,
+        "fields": {
+            "priority": 0,
+            "description": "Continuing with the subject of the Liberal Democrats, your adamant support of the United States’ geopolitical thrust towards Baghdad has led to some core Labour rank-and-file defecting into the arms of Charles Kennedy’s party. One positive silver lining is that the electoral exodus is not as large as was originally suspected, likely as a result of your reluctance to deploy troops as part of the invasion. How will you approach this development?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13614,
+        "fields": {
+            "priority": 0,
+            "description": "[July, 2003] As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13621,
+        "fields": {
+            "priority": 0,
+            "description": "[June 11, 2004] Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. Overall, you lose 298 councillors and 3 councils, while the Conservatives make a net gain of 8 councils and 167 councillors. The Liberal Democrats do hold you to the line in Newcastle and Leeds though. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13647,
+        "fields": {
+            "priority": 0,
+            "description": "[June 14, 2004] Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13657,
+        "fields": {
+            "priority": 0,
+            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.\n",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13663,
+        "fields": {
+            "priority": 0,
+            "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13689,
+        "fields": {
+            "priority": 0,
+            "description": "[April, 2005] Much to the chagrin of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13714,
+        "fields": {
+            "priority": 0,
+            "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13729,
+        "fields": {
+            "priority": 0,
+            "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13750,
+        "fields": {
+            "priority": 0,
+            "description": "[April 22, 2005] The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13776,
+        "fields": {
+            "priority": 0,
+            "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13794,
+        "fields": {
+            "priority": 0,
+            "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
             "likelihood": 1
         }
     }
@@ -1979,6 +2215,38 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 13776,
             "description": "I have countlessly debated the two party leaders in Parliament. I see no reason to do this, not to mention the voters that I speak with on many occasions."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13795,
+        "fields": {
+            "question": 13794,
+            "description": "I personally have little care for these attempts at personal abuse. On the other hand, their, frankly, extreme policies on education would undo the monumental progress we have made for the students of this country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13802,
+        "fields": {
+            "question": 13794,
+            "description": "There is no lure I feel towards these personalised attacks, let us not forget the hidden agenda on the NHS they are trying to distract us from, the opposition cannot be trusted with the Health Service."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13807,
+        "fields": {
+            "question": 13794,
+            "description": "If Mr Howard wishes to attack me personally, I struggle to imagine how that holds up to his mud-slinging on our nation's immigrants. Their campaign has been negative, negative, and negative, because he has done nothing but provided weakness in opposing our government."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13814,
+        "fields": {
+            "question": 13794,
+            "description": "Let the Tories keep up their personal attacks on me, I will keep setting out the policy choices that matter to the British people. We will not allow this mud-slinging to sink the whole campaign down, and we know that they have given up on trying to beat us on the issues."
         }
     }
 ]
@@ -5014,8 +5282,8 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13030,
         "fields": {
             "answer": 12813,
-            "candidate": 12587,
-            "affected_candidate": 12543,
+            "candidate": 12543,
+            "affected_candidate": 12587,
             "global_multiplier": -0.05
         }
     },
@@ -6506,7 +6774,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12929,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.01
+            "global_multiplier": -0.015
         }
     },
     {
@@ -6524,8 +6792,8 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13372,
         "fields": {
             "answer": 12929,
-            "candidate": 12587,
-            "affected_candidate": 12543,
+            "candidate": 12543,
+            "affected_candidate": 12587,
             "global_multiplier": 0.008
         }
     },
@@ -6536,7 +6804,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12930,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.08
+            "global_multiplier": -0.05
         }
     },
     {
@@ -7074,8 +7342,8 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13528,
         "fields": {
             "answer": 12808,
-            "candidate": 12587,
-            "affected_candidate": 12543,
+            "candidate": 12543,
+            "affected_candidate": 12587,
             "global_multiplier": -0.1
         }
     },
@@ -7094,8 +7362,8 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13540,
         "fields": {
             "answer": 12798,
-            "candidate": 12543,
-            "affected_candidate": 12587,
+            "candidate": 12587,
+            "affected_candidate": 12543,
             "global_multiplier": -0.05
         }
     },
@@ -7996,7 +8264,97 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3493,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": -0.5
+            "global_multiplier": -0.4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13797,
+        "fields": {
+            "answer": 13795,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13798,
+        "fields": {
+            "answer": 13795,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13804,
+        "fields": {
+            "answer": 13802,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13805,
+        "fields": {
+            "answer": 13802,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13809,
+        "fields": {
+            "answer": 13807,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.012
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13810,
+        "fields": {
+            "answer": 13807,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13811,
+        "fields": {
+            "answer": 13807,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13816,
+        "fields": {
+            "answer": 13814,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13817,
+        "fields": {
+            "answer": 13814,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0125
         }
     }
 ]
@@ -9451,6 +9809,86 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0.15,
             "issue_importance": 2
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13799,
+        "fields": {
+            "answer": 13795,
+            "issue": 27,
+            "issue_score": 0.15,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13800,
+        "fields": {
+            "answer": 13795,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13801,
+        "fields": {
+            "answer": 13795,
+            "issue": 30,
+            "issue_score": -0.69,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13806,
+        "fields": {
+            "answer": 13802,
+            "issue": 28,
+            "issue_score": 0.4,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13812,
+        "fields": {
+            "answer": 13807,
+            "issue": 29,
+            "issue_score": 0.3,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13813,
+        "fields": {
+            "answer": 13807,
+            "issue": 30,
+            "issue_score": -0.5,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13818,
+        "fields": {
+            "answer": 13814,
+            "issue": 27,
+            "issue_score": 0.25,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13819,
+        "fields": {
+            "answer": 13814,
+            "issue": 30,
+            "issue_score": -0.7,
+            "issue_importance": 1
+        }
     }
 ]
 
@@ -10652,7 +11090,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12927,
             "candidate": 12543,
-            "answer_feedback": "Tackling their stances and highlighting the distinct lack of civility is a useful parry. It doesn’t fully account for their claim on the stealth taxes though, or the war."
+            "answer_feedback": "Tackling their stances and highlighting the distinct lack of civility is a useful parry. It doesn’t fully account for their claim on the stealth taxes though, or the war. With education, your party is not as strong on this issue as is ideal, so tread carefully with that."
         }
     },
     {
@@ -11284,6 +11722,42 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "The electorate is disappointed. But it hopefully shouldn’t impact you too horrendously, well apart from feeding Howard’s narrative of you being a “ducking PM”. Although, it would be worth the risk to prove yourself in the ring, no?"
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13796,
+        "fields": {
+            "answer": 13795,
+            "candidate": 12543,
+            "answer_feedback": "Tackling their stances and highlighting the distinct lack of civility is a useful parry. It doesn’t fully account for their claim on the stealth taxes though. With education, your party is not as strong on this issue as is ideal, so tread carefully with that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13803,
+        "fields": {
+            "answer": 13802,
+            "candidate": 12543,
+            "answer_feedback": "Ah the NHS, always a staunch defender of it, your party is. Labour has been consistently more trusted on healthcare than the Conservatives have ever been, it also shores up the justification for your stealth taxes."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13808,
+        "fields": {
+            "answer": 13807,
+            "candidate": 12543,
+            "answer_feedback": "Getting in the mud-slinging yourself is probably not ideal here. Howard’s attacks do actually hold some weight, and your favourability ratings aren’t exactly sky-high anymore. It does feel nice, you must admit, to punch back at those who try to tear you down."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13815,
+        "fields": {
+            "answer": 13814,
+            "candidate": 12543,
+            "answer_feedback": "But why do they matter to the British people, or, more precisely, why are they better for them?"
+        }
     }
 ]
 
@@ -11379,3 +11853,522 @@ campaignTrail_temp.jet_data = [{
 ]
 
 // For UK Mod
+distributeSeatsUK = () => {
+    //Only let this function run once per game.
+    e.distributedseats;
+    if (e.distributedseats === 1) {return;}
+    e.distributedseats = 1;
+
+    // Helper functions
+    function get_state_threshold(state) {
+        // input: state id of current state
+        // output: float between 0.0 and 1.0, determining the minimum
+        // percent to pass the states' threshold
+        //if (state == 475) {return 0.1}
+        //if (state == 460) {return 0}
+
+        // Conservative thresholds
+        if (state == 12506 && c == 12565) {return 0.25} // Scotland
+        if (state == 12446 && c == 12565) {return 0.275} // North East England
+        if (state == 12452 && c == 12565) {return 0.35} // North West England 
+        // Lib Dem thresholds
+        if (state == 12482 && c == 12587) {return 0.325} // London
+        if (state == 12488 && c == 12587) {return 0.35} // South East 
+        if (state == 12500 && c == 12587) {return 0.375} // Wales
+        if (state == 12446 && c == 12587) {return 0.38} // North East England
+        if (state == 12452 && c == 12587) {return 0.25} // North West England
+        if (state == 12458 && c == 12587) {return 0.33} // Yorkshire
+        if (state == 12476 && c == 12587) {return 0.3} // East of England
+        if (state == 12464 && c == 12587) {return 0.35} // East Midlands
+        if (state == 12506 && c == 12587) {return 0.3} // Scotland
+        // Thresholds
+        if (state == 12446) {return 0.099} // North East England
+        if (state == 12452) {return 0.1} // North West England
+        if (state == 12458) {return 0.11} // Yorkshire
+        if (state == 12464) {return 0.11} // East Midlands
+        if (state == 12470) {return 0.11} // West Midlands
+        if (state == 12476) {return 0.11} // East of England
+        if (state == 12482) {return 0.12} // London
+        if (state == 12488) {return 0.12} // South East
+        if (state == 12494) {return 0.12} // South West
+        if (state == 12500) {return 0.11} // Wales
+        if (state == 12506) {return 0.09} // Scotland
+        if (state == 12512) {return 0.05} // Northern Ireland
+        return 0;
+    }
+
+    function get_guarenteed_seats(state, c) {
+        // input: state id and candidate id
+        // output: int, number of seats c is guarenteed in state
+        //if (state == 466 && c == 80) {return 2}
+        //if (state == 460 && c == 80) {return 20}
+        // Conservatives
+        if (state == 12506 && c == 12565) {return 1} // Scotland
+        if (state == 12446 && c == 12565) {return 1} // North East England
+        if (state == 12452 && c == 12565) {return 8} // North West England        
+        // Independent/Others
+        if (state == 12500 && c == 12667) {return 1} // Wales        
+        // Lib Dems elsewhere
+        if (state == 12464 && c == 12587) {return 1} // East Midlands
+        if (state == 12482 && c == 12587) {return 8} // London
+        if (state == 12500 && c == 12587) {return 3} // Wales
+        if (state == 12446 && c == 12587) {return 1} // North East England
+        if (state == 12452 && c == 12587) {return 5} // North West England
+        if (state == 12458 && c == 12587) {return 2} // Yorkshire
+        if (state == 12476 && c == 12587) {return 2} // East of England
+        if (state == 12506 && c == 12587) {return 10} // Scotland        
+        // Northern Ireland
+        if (state == 12512 && c == 12685) {return 9}
+        if (state == 12512 && c == 12703) {return 5}
+        if (state == 12512 && c == 12757) {return 3}
+        if (state == 12512 && c == 12739) {return 1}
+        // Lib Dems in South of England
+        if (state == 12494 && c == 12587) {return 3} // South West
+        if (state == 12488 && c == 12587) {return 5} // South East
+        // Speaker in Scotland
+        if (state == 12506 && c == 12775) {return 1}
+        return 0;
+    }
+
+    // zero out national seat counts
+    for(var ci = 0; ci < e.final_overall_results.length; ci++) {
+        e.final_overall_results[ci].electoral_votes = 0;
+    }
+
+    //loop over each state's results
+    for(var i = 0; i < e.final_state_results.length; i++) {
+        var state = e.final_state_results[i].state;
+        
+        // Store the index of the state in the final_state_results array.
+        var fsrIndex = e.final_state_results.map(f=>f.state).indexOf(state);
+        
+        // Store a read only copy of the state's results (for convenience)
+        var stateData = e.final_state_results[fsrIndex];
+
+        // Get the state's total popular votes and seats.
+        var tot_state_votes = e.states_json[e.states_json.map(f=>f.pk).indexOf(state)].fields.popular_votes;
+        var seats_left = e.states_json[e.states_json.map(f=>f.pk).indexOf(state)].fields.electoral_votes;
+        
+        // Begin tracking how many votes are actually competitive.
+        var competitivevotes = 0;
+
+        // First loop over each party in state
+        for(var j = 0; j < stateData.result.length; j++) {
+            var c = stateData.result[j].candidate;
+
+            // Zero out seats in that state
+            e.final_state_results[fsrIndex].result[j].electoral_votes = 0;
+
+            // Count the candidate's votes if and only if they pass the state threshold
+            var cur_c_votes = stateData.result[j].votes * 1.0;
+            var cur_c_to_totvotes = cur_c_votes / tot_state_votes
+            if (cur_c_to_totvotes >= get_state_threshold(state)) {
+                competitivevotes += cur_c_votes
+            }
+
+            // Add guarenteed seats to minor parties (greens?)
+            var guarenteed_seats = get_guarenteed_seats(state, c)
+            if (guarenteed_seats > 0) {
+                seats_left -= guarenteed_seats
+
+                // Give the party those seats in that state.
+                e.final_state_results[fsrIndex].result[j].electoral_votes += guarenteed_seats;
+
+                // Then add the seats to the national total.
+                e.final_overall_results[e.final_overall_results.map(f=>f.candidate).indexOf(c)].electoral_votes += guarenteed_seats;
+            
+            }
+
+        }
+
+        // By default, this is * 1.0. 
+
+        var votes_per_seat = (competitivevotes * 1.6) / seats_left
+
+        // Second loop: Actually add seats
+        for(var j = 0; j < stateData.result.length; j++) {
+            // Calculate what percent of the seats should be won.
+            var c = stateData.result[j].candidate;
+            var cur_c_votes = stateData.result[j].votes;
+            var seats = Math.floor(cur_c_votes * 1.0 / votes_per_seat)
+
+            // Calculate your percent of votes.
+            var cur_c_votes = stateData.result[j].votes * 1.0;
+            var cur_c_to_totvotes = cur_c_votes / tot_state_votes
+
+            // Add seats if there are any to add and you meet the threshold
+            if (seats > 0 && cur_c_to_totvotes >= get_state_threshold(state)) {
+                seats_left -= seats;
+
+                e.final_state_results[fsrIndex].result[j].electoral_votes += seats;
+                e.final_overall_results[e.final_overall_results.map(f=>f.candidate).indexOf(c)].electoral_votes += seats;
+            }
+        }
+
+        // Give any remaining seats to first place. simulate FPTP biasing towards first
+        if (seats_left > 0) {
+            var c = stateData.result[0].candidate;
+            e.final_state_results[fsrIndex].result[0].electoral_votes += seats_left;
+            e.final_overall_results[e.final_overall_results.map(f=>f.candidate).indexOf(c)].electoral_votes += seats_left;
+        }
+    }
+
+}
+
+let observerRunning = false;
+let changeChartRunning = false;
+let mcaHeightRunning = false;
+let processedNodes = new Set();
+
+async function handleMutations(mutationsList, observer) {
+    if (observerRunning) return;
+    observerRunning = true;
+
+    // stop observing
+    observer.disconnect();
+
+    // addScrollbar
+    const overallResult = document.getElementById('overall_result');
+    if (overallResult && !processedNodes.has(overallResult)) {
+        overallResult.style.overflow = 'auto';
+        const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
+        const handleClick = () => {
+            overallResult.style.overflow = 'auto';
+        };
+        buttons.forEach(button => button.addEventListener('click', handleClick));
+        processedNodes.add(overallResult);
+    }
+
+    // changechart
+    if (!changeChartRunning) {
+        changeChartRunning = true;
+        const elementIDs = ["overall_vote_statistics", "state_result_data_summary", "overall_details_container"];
+        for(let id of elementIDs) {
+            let element = document.getElementById(id);
+            if (element && !processedNodes.has(element)) {
+                let overallthing = element.innerHTML;
+                overallthing = overallthing.replace("Electoral Votes","Allocated Seats");
+                overallthing = overallthing.replace("Candidate","Party List");
+                overallthing = overallthing.replace("Running Mate","Party Leader");
+                element.innerHTML = overallthing;
+                processedNodes.add(element);
+            }
+        }
+        changeChartRunning = false;
+    }
+ // mcaHeight
+    if (!mcaHeightRunning) {
+        mcaHeightRunning = true;
+        let results_container = document.getElementById("results_container");
+        let chart = document.getElementById("myChart");
+        if (results_container && !processedNodes.has(results_container)) {
+            if (!chart){
+                results_container.style.height = "98%";
+                results_container.style.overflow = "scroll";
+            } else {
+                let mca = document.getElementById("main_content_area");
+                if (mca) {
+                    mca.style.height = "80%";
+                }
+            }
+            processedNodes.add(results_container);
+        }
+        mcaHeightRunning = false;
+    }
+
+    // Resume observing
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+    observerRunning = false;
+}
+
+let singleObserver = new MutationObserver(handleMutations);
+singleObserver.observe(document.documentElement, { childList: true, subtree: true });
+    
+
+campaignTrail_temp.multiple_endings=true
+endingPicker = (out, totv, aa, quickstats) => {
+
+distributeSeatsUK();
+
+function onGameWindowChangeCandidates() {
+    const resultsTableHolder = document.getElementById("overall_details_container");
+
+    if (!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
+        return;
+    }
+
+    resultsTableHolder.classList.add("done");
+
+    const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTable.children.length; i++) {
+        const row = resultsTable.children[i];
+        let name = row.firstChild.innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
+        }
+
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+        } else {
+            row.children[1].innerHTML = vpTable[name];
+        }
+    }
+
+    const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTableHistorical.children.length; i++) {
+        const row = resultsTableHistorical.children[i];
+        let name = row.childNodes[1].innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
+        }
+
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+        } else {
+            row.children[1].innerHTML = vpTableHistorical[name];
+        }
+    }
+
+    // Add CSS to increase row spacing
+    const styleElem = document.createElement('style');
+    styleElem.textContent = `
+        #overall_details_container table tr {
+            line-height: 1.5; /* Adjust line height as needed */
+        }
+    `;
+    document.head.appendChild(styleElem);
+}
+
+const gameWindowNode = document.getElementById("game_window");
+const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
+
+const candidateObserver = new MutationObserver(onGameWindowChangeCandidates);
+candidateObserver.observe(gameWindowNode, candidateWatcherConfig);
+
+function updateHistoricalData(newVpTable, newHexColors, newNames, newEvs, newPvs, newPvps) {
+    vpTableHistorical = newVpTable;
+    HistHexcolour = newHexColors;
+    HistName = newNames;
+    HistEV = newEvs;
+    HistPV = newPvs;
+    HistPVP = newPvps;
+}
+
+
+construct = (a = 1) => {
+      
+    e.page = e.page + a < e.pages.length ? e.page + a : 0
+    let html = e.header;
+    html += e.pages[e.page] + "<br>";
+    if (e.page > 0) {
+    
+    html += `<button onclick='endingConstructor(a = -1)'>Back</button>`
+    }
+    if (e.page < e.pages.length - 1) {
+    
+    html += `<button onclick='endingConstructor(a = 1)'>Next</button>`
+    }
+    for (i in e.executable) {
+      if (e.executable[i][0] == e.page) {
+          e.executable[i][1]();
+        
+      }
+      }
+
+    if (e.image == true)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0]
+      if (candImg) {
+        candImg.remove()
+        $("#final_results_description")[0].style = `
+          text-align:left;
+          width: 72%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          color: #000000
+        `
+      }
+    }, 10)
+    else if (e.image)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0];
+      if (candImg) {
+        candImg.src = e.image;
+      }		
+    }, 10)
+
+    const resultsDescriptionElement = document.getElementById('final_results_description');
+    if (resultsDescriptionElement) {
+        resultsDescriptionElement.scrollTop = 0;
+    }
+
+return html;
+}
+      
+      endingConstructor = (a = 1) => {
+      $("#final_results_description")[0].innerHTML = construct(a);
+      }
+      
+      
+      e.multiple_endings = true;
+      
+      e.header = "<h1>Error</h1>";
+      e.pages = ["<p>This is an error handler. Contact u/No-Reading</p>"];
+      e.page = 0;
+      
+      endingPicker = (out, totv, aa, quickstats) => {
+
+      
+      e.pages = []
+      e.header = "";
+      e.executable = []
+
+// First Slides
+if (quickstats[0]<324 && aa[0].candidate == 12565) {
+e.pages = [
+"<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3><p>David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.</p><p>In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.</p><p>As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.</p><p>Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…</p><p>After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.</p><p>You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.</p><p>Into the abyss.</p>"
+]
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/0bqHDaj.png"})])
+} 
+
+else if (aa[0].electoral_votes < 324 && aa[1].electoral_votes < 324 && aa[2].electoral_votes < 324 && aa[3].electoral_votes < 324 && aa[4].electoral_votes < 324 && aa[5].electoral_votes < 324 && aa[6].electoral_votes < 324 && aa[7].electoral_votes < 324 && aa[8].electoral_votes < 324 && aa[9].electoral_votes < 324 && aa[10].electoral_votes < 324 && aa[11].electoral_votes < 324 && aa[12].electoral_votes < 324 && aa[13].electoral_votes < 324) {
+e.pages = [
+"<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, this is certainly a let down for Labour.</h3><p>It seems as though you, and the nation, share the utter surprise evident in David Dimbleby’s voice. Nobody really anticipated this outcome, save for the Liberal Democrat hopefuls wishing to finally break into government. Whilst this is certainly disappointing for national security reforms you were hoping to make, there is an avenue for continued governance with a coalition via the Liberal Democrats if you are able to form such a government. Regardless of the outcome, it is clear the LibDems are significant winners tonight, and will make governance a multi-faceted task to perform.</p><p>Your mind wonders the many possibilities that could’ve unfolded, anything, just anything, better than this folly of a deadlock. What really went wrong? Was it the Iraq War? Was it the blasted attacks hurled at you? Whatever it was, it is likely you will resign as party leader within the next 1 to 2 years at the maximum.</p><p>Just when you thought you were past the thick of it, another roadblock has been lobbed at you. Coalition negotiations are going to be tough, but depending on the seat shares, there could be a viable way out for you. Strap in, Tony, because it’s going to be quite the few days ahead of you…</p>"
+]
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/ZVxm7Y7.png"})])
+} 
+
+else if (quickstats[0] >= 324 && quickstats[0]<340) {     
+e.pages = [
+"<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.</p><p>With a majority secured, you may be able to pursue those national security reforms you have desired for so long now. With how slim your majority is in Parliament though, don’t count on it to go too smoothly. All it would take is a significant amount of whip suspensions, resignations and by-election defeats, to eradicate your majority all together. Suffice to say, Gordon Brown is definitely going to be crossing his fingers whenever you resign in the near future.</p><p>You fought with all you could, but in the end, only the most pitiful dividend was handed out. Best of luck, Prime Minister, you’re sure as hell going to need it.</p>"
+]
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+} 
+
+else if (quickstats[0] >= 340 && quickstats[0]<355) {     
+e.pages = [
+"<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a modest majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, you let out a small, and reserved, sigh of relief. You have retained your position as PM. Even in spite of this, you have bled a lot of support to the Liberal Democrats and Conservatives. A lackluster performance, by your standards. At least for now, you can rest easy knowing your majority can survive some resignations here and there.</p><p>With this majority secured, you may be able to pursue those national security reforms you have desired for so long now. Though with how controversial they’ll be, don’t bet all of your cards on it going smoothly with your modest majority. Gordon Brown will definitely be crossing his fingers whenever you resign.</p><p>You fought through the battle with all you could, but only a tepid endorsement of your agenda was given to you. Best of luck, Prime Minister, because you sure as hell are going to need it.</p>"
+]
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+} 
+
+else if (quickstats[0] >= 355 && quickstats[0]<370) {
+e.pages = [
+"<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3><p>As David Dimbleby’s voice rings out on the television screen, you let out perhaps the biggest sigh of relief of your premiership. Despite the significant bleeding of support, you have held on to your position as PM. Though for someone such as yourself, this isn’t exactly a spectacular performance.</p><p>Now that you have snatched a secure Parliament, you should have little trouble in pursuing those national security reforms you have desired for a while now. Take some caution though, you have still bled a lot of colleagues as a result of this election. Your Chancellor is still going to be crossing his fingers for this, that’s for sure.</p><p>You fought the battle with all you could, yet the lion’s share was handed out hesitantly and mildly. Best of luck for your remaining years, Prime Minister, you’ll have a tough last few years ahead of you.</p>"
+]
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+} 
+
+else if (quickstats[0] >= 370 && quickstats[0]<419) {    
+e.pages = [
+"<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3><p>As David Dimbleby’s voice rings out on the television screen, a resounding cheer erupts throughout the crowd gathered to witness the results. You’ve done it! Despite the festering pressures abroad, despite the growing controversy of your premiership, and despite the renewed strength of the Tories and Liberal Democrats, you persevered to carry three successive landslide victories for your party. Your colleagues will certainly be thanking you for aiding in their retaining of their seats.</p><p>With this commanding majority in Parliament, you should have little difficulty in passing those reforms on national security you have desired for so long. Whenever you do end up resigning, Gordon Brown will definitely be satisfied with the majority you have left for him. It seems that at least for now, New Labour will sustain itself for at least 5 years to come. Perhaps, even more.</p><p>You fought, you triumphed, and in the end, the lion’s share has handsomely fallen into your grasp. Whilst I will of course wish you the best of luck, it seems you can likely do anything with this victory. Good luck Tony!</p>"
+]
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+} 
+
+else if (quickstats[0] >= 419 && quickstats[0]<500) {    
+e.pages = [
+"<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide, surpassing their record in 1997!</h3><p>As David Dimbleby’s voice rings out on the television screen, the Labour Party HQ shudders and rumbles under the enthusiastic — almost riotous — jiving of the crowds. The amateur dancing of the members, unequivocally dispelling any jitter suspected throughout election night.</p><p>Initially, your scepticism at the exit poll gets the better of you. But then, the seats come in... Constituency after constituency, MP after MP; A sea of red washing over the map, engulfing the entirety of the country. The sky-blue wave of the Conservatives washed away, and scattered by the orange locusts of Liberal Democrats. The Blairite legacy having fully cemented itself in the national zeitgeist.</p><p>Succeeding in such a total, and dominating, command over the House of Commons, you should have little trouble passing those national security reforms you have desired to obtain in the new terror-stricken millenia. It goes without saying that Gordon Brown is going to thank you when he takes over your office in the next Parliament.</p><p>After all of these long years, your fight in the political battlefield has yielded a triumph greater than any leader before you.</p><p>John Smith would be proud — you’re sure he would. If only Kier Hardie were here too. To see what we have achieved.</p>"
+]
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])    
+} 
+
+else if (quickstats[0] >= 500) {  
+e.pages = [
+"<h3 style='text-align: center;'>A Conversation between Prime Minister Tony Blair, and Communications Director Alastair Campbell. March 17, 2003, the day before the anti-war vote.</h3><p>[CAMPBELL]: This isn’t looking good, Tony, the upcoming commons vote, it could be the biggest rebellion of MPs in our government’s history.</p><p>[BLAIR]: Even more than the one for the Higher Education Act?</p><p>[CAMPBELL]: Even more than that.</p><p>[BLAIR]: There has to be something we can do to stem the flow of this… I hate to say this, but we may need to use that <i>other</i> intelligence MI5 was able to collate.</p><p>[CAMPBELL]: You mean, Operation <i>BIGSHOT</i>?</p><p>[BLAIR]: I’m afraid so, Alastair.</p><p>[CAMPBELL]: Damnit, it shouldn’t have even come close to this. I’ll get Peter in here, and talk it with him, should get the job done.</p><p>[BLAIR]: Good, we have to win this thing. For us. For Labour.</p><p>-End of Transcription.</p>"
+]
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/VfQvbGe.png"})])
+}
+
+else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0]<324 && aa[0].candidate == 12565) {  
+e.pages = [
+"<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, in a second and final death-blow to New Labour</h3>"
+]
+e.executable.push([0, (() => {e.image = e.image = ""})])
+}
+
+// Second Slides
+else if (campaignTrail_temp.player_answers.includes(12814) && campaignTrail_temp.player_answers.includes(12819)) {
+e.pages = [
+"<h3 style='text-align: center;'>A MONSTER OF DELUSION</h3><p><b>For two hours, Blair dissembled and denied in the face of Chilcot’s devastating verdict. Then, with sickening egomania, he declared: I can’t say sorry for Iraq… I’d do it again.</b></p><p>Tony Blair made an astonishing defence of the invasion of Iraq yesterday despite being torn apart by the Chilcot inquiry. After seven years of waiting, the report savaged the former prime minister for his conduct at every stage of the process that dragged Britain into the catastrophic war. Sir John Chilcot lambasted Mr Blair for his handling of 'flawed' intelligence, for failing to plan for the aftermath and for secret promises given to George Bush committing to the invasion eight months before MPs voted.</p><p>He even raised the prospect the war could be illegal – with relatives of some of the 170 dead British troops threatening to haul Mr Blair before the courts. Sir John said the UK intervention in Iraq 'went badly wrong, with consequences to this day'. But, in an extraordinary two-hour press conference, a defiant Mr Blair shrugged off the verdict of history and said he would 'take the same decision' to invade again.</p>"
+]
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
+}
+
+else if (campaignTrail_temp.player_answers.includes(12814) && campaignTrail_temp.player_answers.includes(12820)) {
+e.pages = [
+"<h3 style='text-align: center;'>A DEMON OF DECEPTION</h3><p><b>For two hours, Blair dissembled and denied in the face of Chilcot’s devastating verdict. Then, with sickening egomania, he declared: I can’t say sorry for Iraq… I’d aid it again.</b></p><p>Tony Blair made an astonishing defence of the enabling of the invasion of Iraq yesterday despite being torn apart by the Chilcot inquiry. After seven years of waiting, the report savaged the former prime minister for his conduct at every stage of the process that gave President Bush free reign to carry out the catastrophic war. Sir John Chilcot lambasted Mr Blair for his handling of 'flawed' intelligence, for failing to plan for the aftermath and for potential hints given to George Bush committing to the invasion eight months before MPs voted.</p><p>He even raised the prospect the war could be illegal – with relatives of the martyr Dr David Kelly threatening to haul Mr Blair before the courts. Sir John said the UK intelligence provided for Iraq 'was badly wrong, with consequences to this day'. But, in an extraordinary hour-long press conference, a defiant Mr Blair shrugged off the verdict of history and said he would 'take the same decision to back America' again.</p>"
+]
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
+}
+
+return construct(0);
+}   
+}  
+
+function getTooltips(str) {
+    let matches = [];
+    
+    tooltipList.forEach((tooltip, index) => {
+        // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
+        let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
+    
+    
+        let match;
+        while ((match = regex.exec(str)) !== null) {
+            matches.push({
+                start: match.index + (match[0].startsWith('“') ? 1 : 0), // Adjust for potential starting “
+                end: match.index + match[0].length - (match[0].endsWith('”') ? 1 : 0) - (match[2] ? 1 : 0), 
+                tooltipIndex: index
+            });
+        }
+    });
+    
+    // Sort by starting position; if two start at the same position, longer match comes first
+    matches.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start));
+    
+    // Filter out overlaps
+    for (let i = 0; i < matches.length - 1; ) {
+        if (matches[i + 1].start < matches[i].end) {
+            matches.splice(i + 1, 1); // Remove the next match since it overlaps
+        } else {
+            i++; // Move to next match
+        }
+    }
+    
+    return matches;
+}
+function applyTooltips(str) {
+    const matches = getTooltips(str);
+    let result = '';
+    let lastIndex = 0;
+    
+    matches.forEach(match => {
+        const tooltip = tooltipList[match.tooltipIndex];
+        result += str.slice(lastIndex, match.start);
+        result += `<span class='mytooltip'>${tooltip.searchString}<span class='mytooltiptext'>${tooltip.explanationText}</span></span>`;
+        lastIndex = match.end;
+    });
+    
+    result += str.slice(lastIndex); // Add the remainder of the original string
+    return result;
+}
+    
+function applyTooltipsToObject(obj) {
+    for (let key in obj) {
+        if (typeof obj[key] === 'string') {
+            obj[key] = applyTooltips(obj[key]);
+        } else if (typeof obj[key] === 'object') {
+            applyTooltipsToObject(obj[key]); // Recursive call
+        }
+    }
+}
+    
+applyTooltipsToObject(campaignTrail_temp.questions_json);
+applyTooltipsToObject(campaignTrail_temp.answers_json);
+applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);   
