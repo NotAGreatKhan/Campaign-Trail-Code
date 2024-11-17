@@ -11145,6 +11145,16 @@ style_overwrite.innerHTML =
 ;
 document.head.appendChild(style_overwrite);
 
+const style = document.createElement('style');
+style.textContent = `
+#map_container {
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-image: url("https://imgur.com/Ns9E1az.png");
+}
+`;
+document.head.append(style);
+
 
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
