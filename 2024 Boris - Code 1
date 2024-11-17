@@ -429,9 +429,9 @@ function setupMusicPlayer() {
   
   const infoContainer = document.createElement("div");
   infoContainer.id = "info-container";
-  infoContainer.style.backgroundImage = "url('https://i.imgur.com/BB1ejv6.png')";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/GJsGo3k.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
-  infoContainer.style.color = "white"; // Set text color to white
+  infoContainer.style.color = "black"; // Set text color to white
   
   const songInfo = document.createElement("div");
   songInfo.id = "song-info";
@@ -458,19 +458,19 @@ function setupMusicPlayer() {
   
   const prevButton = document.createElement("img");
   prevButton.id = "prevButton";
-  prevButton.src = "https://i.imgur.com/imIqTEA.png";
+  prevButton.src = "https://imgur.com/jcTGWRt.png";
   prevButton.alt = "Previous";
   controls.appendChild(prevButton);
   
   const playPauseButton = document.createElement("img");
   playPauseButton.id = "playPauseButton";
-  playPauseButton.src = "https://i.imgur.com/oQbfTxw.png"; // Set the default play image
+  playPauseButton.src = "https://imgur.com/bYFaYbm.png"; // Set the default play image
   playPauseButton.alt = "Play/Pause";
   controls.appendChild(playPauseButton);
   
   const nextButton = document.createElement("img");
   nextButton.id = "nextButton";
-  nextButton.src = "https://i.imgur.com/7TtaN04.png";
+  nextButton.src = "https://imgur.com/eQ3Zd6B.png";
   nextButton.alt = "Next";
   controls.appendChild(nextButton);
   
@@ -480,10 +480,10 @@ function setupMusicPlayer() {
     const audio = document.getElementById("audio");
     if (audio.paused) {
       audio.play();
-      playPauseButton.src = "https://i.imgur.com/oQbfTxw.png"; // Set the pause image
+      playPauseButton.src = "https://imgur.com/bYFaYbm.png"; // Set the pause image
     } else {
       audio.pause();
-      playPauseButton.src = "https://i.imgur.com/ttdoyfG.png"; // Set the play image
+      playPauseButton.src = "https://imgur.com/s84pnkp.png"; // Set the play image
     }
   });
   
@@ -521,7 +521,7 @@ function setupMusicPlayer() {
     volumeContainer.id = "volume-container";
   
   const volumeLabel = document.createElement("img");
-  volumeLabel.src = "https://i.imgur.com/0BJYsXt.png";
+  volumeLabel.src = "https://imgur.com/5OeJsB6.png";
   volumeLabel.alt = "Volume";
   volumeContainer.appendChild(volumeLabel);
   
@@ -613,7 +613,7 @@ function setupMusicPlayer() {
       display: flex;
       flex-direction: row;
     height:191px;
-      background-Image: url("https://i.imgur.com/Ok791w6.png");
+      background-Image: url("https://imgur.com/DqF4Qtn.png");
     }
   
     #display-box {
