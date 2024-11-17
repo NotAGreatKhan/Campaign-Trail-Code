@@ -132,7 +132,7 @@ campaignTrail_temp.election_json = [
         "model": "campaign_trail.election",
         "pk": 20,
         "fields": {
-            "year": 2016,
+            "year": 2024,
             "display_year": "2024-Boris",
             "summary": "Following Theresa May’s resignation after disastrous attempts to pass Brexit legislation, Foreign Secretary Boris Johnson took over as Prime Minister with a promise to “Get Brexit Done.” He campaigned extensively on Brexit, leading a generation of working class families to defect from their traditional Labour roots and bring down the “Red Wall”.<p>After nearly a decade in power, many question whether the party responsible for dividing the country over Brexit will be able sustain another term in government. Nevertheless, Johnson’s substantial parliamentary majority in the recent election suggests strong public support, however, challenges remain.<p>Will Boris be able to “Get Brexit Done” while facing internal party divisions, political scandals, a global pandemic, and growing public skepticism towards the clown of Downing Street?",
             "image_url": "https://ichef.bbci.co.uk/news/624/cpsprodpb/102AB/production/_109491266_0ecd89d2-e50b-4992-b975-58fa1c020423.jpg",
@@ -148,7 +148,7 @@ campaignTrail_temp.election_json = [
 campaignTrail_temp.temp_election_list = [
     {
         "id": 20,
-        "year": 2016,
+        "year": 2024,
         "is_premium": 0,
         "display_year": "2024-Boris"
     }
