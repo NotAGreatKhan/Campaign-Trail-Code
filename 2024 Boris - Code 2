@@ -15,7 +15,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1042,
         "fields": {
             "priority": 1,
-            "description": "We Did it! Seismic victory! Smashed the Red Wall to smithereens. We have a wonderful deal to push, oven ready they say. Great plans to "level up" Britain. Some whisper in the party that we should throw the Remainers a bone. It doesn't matter. With this thumping mandate. we can do whatever we desire.  The Queen has called us to form a new government.Now all eyes look to Downing Street,What will Boris do now?",
+            "description": "We did it! Seismic victory! Smashed the Red Wall to smithereens. We have a wonderful deal to push, oven ready they say. Great plans to \"level up\" Britain. Some whisper in the party that we should throw the Remainers a bone. It doesn't matter. With this thumping mandate. we can do whatever we desire.  The Queen has called us to form a new government. Now all eyes look to Downing Street, \"What will Boris do now?\" ",
             "likelihood": 1
         }
     },
@@ -232,6 +232,186 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": -1,
             "description": "Where will you spend the final day of your campaign?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20681,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20682,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20683,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20684,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20685,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20686,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20687,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20688,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20689,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20690,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20691,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20692,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20693,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20694,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20695,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20696,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20697,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20698,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20699,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20700,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
             "likelihood": 1
         }
     }
@@ -10949,104 +11129,22 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-campaignTrail_temp.candidate_image_url = "https://tse3.mm.bing.net/th?id=OIP.QGd61OJqHEl-2Plud-9pUAHaHa&pid=Api&P=0&h=180";
-campaignTrail_temp.running_mate_image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Boris_Johnson_official_portrait.jpg/480px-Boris_Johnson_official_portrait.jpg?20191030174955";
-campaignTrail_temp.candidate_last_name = "PM";
+campaignTrail_temp.candidate_image_url = "http://assets8.lbc.co.uk/2016/29/conservatives-logo---lbc-1468834487-editorial-short-form-1.jpg";
+campaignTrail_temp.running_mate_image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/426px-Boris_Johnson_official_portrait_%28cropped%29.jpg";
+campaignTrail_temp.candidate_last_name = "Conservatives";
 campaignTrail_temp.running_mate_last_name = "Johnson";
 
 
-const style_overwrite = document.createElement("style");
-style_overwrite.innerHTML = 
-`#campaign_sign {
-  background-color: #0aa7db;
-  border-color: #005cb3;
-}
-document.head.appendChild(style_overwrite);
-
-const style = document.createElement('style');
-style.textContent = `
-#map_container {
-    background-repeat: no-repeat;
-	background-size: cover;
-    background-image: url("https://imgur.com/ujq3rKv.png");
-}
-`;
-document.head.append(style);
 
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
     "banner_data": {
-        "canName": "PM",
+        "canName": "Conservatives",
         "runName": "Johnson",
-        "canImage": "https://tse3.mm.bing.net/th?id=OIP.QGd61OJqHEl-2Plud-9pUAHaHa&pid=Api&P=0&h=180",
-        "runImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Boris_Johnson_official_portrait.jpg/480px-Boris_Johnson_official_portrait.jpg?20191030174955"
+        "runImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/426px-Boris_Johnson_official_portrait_%28cropped%29.jpg",
+        "canImage": "http://assets8.lbc.co.uk/2016/29/conservatives-logo---lbc-1468834487-editorial-short-form-1.jpg"
     },
     "cyoa_enabled": true,
     "cyoa_data": {}
-    "nicknames": {
-        "201": "Conservative Party"
-    }
 }
 ]
-
-function getTooltips(str) {
-    let matches = [];
-    
-    tooltipList.forEach((tooltip, index) => {
-        // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
-        let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
-    
-    
-        let match;
-        while ((match = regex.exec(str)) !== null) {
-            matches.push({
-                start: match.index + (match[0].startsWith('“') ? 1 : 0), // Adjust for potential starting “
-                end: match.index + match[0].length - (match[0].endsWith('”') ? 1 : 0) - (match[2] ? 1 : 0), 
-                tooltipIndex: index
-            });
-        }
-    });
-    
-    // Sort by starting position; if two start at the same position, longer match comes first
-    matches.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start));
-    
-    // Filter out overlaps
-    for (let i = 0; i < matches.length - 1; ) {
-        if (matches[i + 1].start < matches[i].end) {
-            matches.splice(i + 1, 1); // Remove the next match since it overlaps
-        } else {
-            i++; // Move to next match
-        }
-    }
-    
-    return matches;
-}
-function applyTooltips(str) {
-    const matches = getTooltips(str);
-    let result = '';
-    let lastIndex = 0;
-    
-    matches.forEach(match => {
-        const tooltip = tooltipList[match.tooltipIndex];
-        result += str.slice(lastIndex, match.start);
-        result += `<span class='mytooltip'>${tooltip.searchString}<span class='mytooltiptext'>${tooltip.explanationText}</span></span>`;
-        lastIndex = match.end;
-    });
-    
-    result += str.slice(lastIndex); // Add the remainder of the original string
-    return result;
-}
-    
-function applyTooltipsToObject(obj) {
-    for (let key in obj) {
-        if (typeof obj[key] === 'string') {
-            obj[key] = applyTooltips(obj[key]);
-        } else if (typeof obj[key] === 'object') {
-            applyTooltipsToObject(obj[key]); // Recursive call
-        }
-    }
-}
-    
-applyTooltipsToObject(campaignTrail_temp.questions_json);
-applyTooltipsToObject(campaignTrail_temp.answers_json);
-applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
