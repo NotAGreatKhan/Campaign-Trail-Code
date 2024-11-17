@@ -423,7 +423,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5139,
         "fields": {
             "question": 1042,
-            "description": "The people who bet against Britain are going to lose their shirts because we are going to Get Brexit Done! No ifs or buts. We have a new deal, a better deal, and I have every confidence that in 99 days’ time we will have cracked it. The time has come to act!"
+            "description": "We're going to hit our rolodex and solidify our campaign organization and fundraising. I'm going to hit the trail for Democrats in the 2014 midterms. We will be well-prepared to outspend Jeb Bush and we will unite the party before the primaries."
         }
     },
     {
@@ -431,7 +431,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5140,
         "fields": {
             "question": 1042,
-            "description": "We may have a great majority, but let’s not forget that half the country are Remainers, including in this party, and we’d do well not to tear the party and country apart before we’ve even begun in Parliament. We will push ahead with Brexit - full steam! But let’s make it clear: we’re aiming for a deal so robust, so resoundingly British, that it’ll have both Remainers and Leavers ready to cheer. This is the United Kingdom, after all, and we’re going to keep it united!"
+            "description": "I will travel and make a number of paid speeches to support the Clinton Foundation's global outreach. I will write a book about some of the difficult choices I made as Secretary of State. This will flex my loyalty to Obama and my foreign policy credentials."
         }
     },
     {
@@ -439,7 +439,15 @@ campaignTrail_temp.answers_json = [
         "pk": 5141,
         "fields": {
             "question": 1042,
-            "description": "It's time for Britain to "Level up," which is why we're investing billions into a brighter Britain! With Brexit nearly behind us and promises made, we need to lift up those communities forgotten by the government. Every corner of this great nation will see investment and improvement which will change this country for the better."
+            "description": "I will write a book about the challenges facing America, and on my fight for healthcare access, fair pay, the environment, and the economy. From the time that I was First Lady of Arkansas until now, I have always fought to give every American a fair shake."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 5142,
+        "fields": {
+            "question": 1042,
+            "description": "It's hard to visit certain places in the heat of a campaign. I will do a tour of the U.S. where I visit all 50 states and highlight the people we're fighting for with Obama's policies, and whom we'll keep fighting for when I'm President."
         }
     },
     {
@@ -10486,7 +10494,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5139,
             "candidate": 201,
-            "answer_feedback": "This is what you were elected on, getting Brexit Done! It's bold to promise such a speedy resolution, but if you can pull it off then people will cheer you as if you were the next Churchill. Besides, most people don't care what the deal looks like, as long as this whole charade is over."
+            "answer_feedback": "It turns out that you will be running against Trump, likely with a significant fundraising advantage."
         }
     },
     {
@@ -10495,7 +10503,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5140,
             "candidate": 201,
-            "answer_feedback": "People are fed up with Brexit. It's all they see on the news. The Scots are going to try leave whether you spend another year arguing in Brussels or not. Uniting this country is pointless Boris, we just need to push ahead and do what you promised; Get Brexit Done."
+            "answer_feedback": "You are setting yourself up be a mainstream, establishment Democratic candidate. It seemed to work for Obama the last two times."
         }
     },
     {
@@ -10504,7 +10512,16 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5141,
             "candidate": 201,
-            "answer_feedback": "Investing in communities which vote for us is always a winning formula. but we need to be careful that we're not getting ahead of ourselves. The people and, more importantly, the media are desperate to know our Brexit plans."
+            "answer_feedback": "Analysts and voters detect more of a populist note in your latest political persona."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2623,
+        "fields": {
+            "answer": 5142,
+            "candidate": 201,
+            "answer_feedback": "Some wonder if it's just a cynical political ploy, but you get your face on the local news in a lot of places across the country."
         }
     },
     {
@@ -11117,21 +11134,6 @@ campaignTrail_temp.running_mate_image_url = "https://upload.wikimedia.org/wikipe
 campaignTrail_temp.candidate_last_name = "Conservatives";
 campaignTrail_temp.running_mate_last_name = "Johnson";
 
-
-const style_overwrite = document.createElement("style");
-style_overwrite.innerHTML = 
-`#campaign_sign {
-  background-color: #0aa7db;
-  border-color: #005cb3;
-}
-.inner_window_question h3 {
-background-color: #bbd5f2;
-}
-.overlay_window h3 {
-background-color: #bbd5f2;
-}`
-;
-document.head.appendChild(style_overwrite);
 
 
 campaignTrail_temp.jet_data = [{
