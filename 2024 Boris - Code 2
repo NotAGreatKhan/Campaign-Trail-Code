@@ -11135,6 +11135,21 @@ campaignTrail_temp.candidate_last_name = "Conservatives";
 campaignTrail_temp.running_mate_last_name = "Johnson";
 
 
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #0aa7db;
+  border-color: #005cb3;
+}
+.inner_window_question h3 {
+background-color: #bbd5f2;
+}
+.overlay_window h3 {
+background-color: #bbd5f2;
+}`
+;
+document.head.appendChild(style_overwrite);
+
 
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
