@@ -11141,12 +11141,7 @@ style_overwrite.innerHTML =
   background-color: #0aa7db;
   border-color: #005cb3;
 }
-.inner_window_question h3 {
-background-color: #bbd5f2;
-}
-.overlay_window h3 {
-background-color: #bbd5f2;
-}`
+`
 ;
 document.head.appendChild(style_overwrite);
 
