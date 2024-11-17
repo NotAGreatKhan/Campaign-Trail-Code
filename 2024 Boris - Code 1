@@ -614,7 +614,7 @@ style.textContent = `
     display: flex;
     flex-direction: row;
 	height:191px;
-    background-Image: url("https://imgur.com/uDXpBKg.png");
+    background-Image: url("https://imgur.com/DqF4Qtn.png");
   }
 
   #display-box {
