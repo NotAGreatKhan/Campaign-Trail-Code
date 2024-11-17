@@ -429,7 +429,7 @@ function setupMusicPlayer() {
   
   const infoContainer = document.createElement("div");
   infoContainer.id = "info-container";
-  infoContainer.style.backgroundImage = "url('https://imgur.com/GJsGo3k.png')";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/OaI7oBj.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
   infoContainer.style.color = "black"; // Set text color to white
   
