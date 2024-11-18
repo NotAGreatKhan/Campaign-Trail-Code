@@ -1,0 +1,19 @@
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #0aa7db;
+  border-color: #005cb3;
+}
+`
+;
+document.head.appendChild(style_overwrite);
+
+const style = document.createElement('style');
+style.textContent = `
+#map_container {
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-image: url("https://imgur.com/Ns9E1az.png");
+}
+`;
+document.head.append(style);
