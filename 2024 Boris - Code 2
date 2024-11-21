@@ -19,7 +19,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1042,
         "fields": {
             "priority": 1,
-            "description": "We did it! Seismic victory! Smashed the Red Wall to smithereens. We have a wonderful deal to push, oven ready they say. Great plans to \"level up\" Britain. Some whisper in the party that we should throw the Remainers a bone. It doesn't matter. With this thumping mandate. we can do whatever we desire. The Queen has called us to form a new government. Now all eyes look to Downing Street, \"What will Boris do now?\" ",
+            "description": "We did it! Seismic victory! Smashed the Red Wall to smithereens. We have a wonderful deal to push, oven ready they say. Great plans to \"level up\" Britain. Some whisper in the party that we should throw the Remainers a bone. It doesn't matter. With this thumping mandate, we can do whatever we desire. The Queen has called us to form a new government. Now all eyes look to Downing Street, \"What will Boris do now?\" ",
             "likelihood": 1
         }
     },
