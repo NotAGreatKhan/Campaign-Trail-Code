@@ -467,7 +467,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 20959,
+        "pk": 20923,
         "fields": {
             "first_name": "The",
             "last_name": "Alliance",
@@ -490,7 +490,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 20923,
+        "pk": 20959,
         "fields": {
             "first_name": "The",
             "last_name": "Traditional Unionist Voice",
