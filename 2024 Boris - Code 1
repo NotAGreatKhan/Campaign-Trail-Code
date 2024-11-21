@@ -209,7 +209,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "The",
             "last_name": "Labour Party",
-            "election": 12,
+            "election": 20,
             "party": "Labour",
             "state": "--",
             "priority": 2,
@@ -232,7 +232,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "The ",
             "last_name": "Liberal Democrats",
-            "election": 12,
+            "election": 20,
             "party": "Liberal Democrat",
             "state": "--",
             "priority": 1,
@@ -255,7 +255,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "The",
             "last_name": "Scotland National Party",
-            "election": 12,
+            "election": 20,
             "party": "SNP",
             "state": "--",
             "priority": 1,
@@ -278,7 +278,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "The",
             "last_name": "Green Party",
-            "election": 12,
+            "election": 20,
             "party": "Greens",
             "state": "--",
             "priority": 1,
@@ -301,7 +301,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "",
             "last_name": "Reform UK",
-            "election": 12,
+            "election": 20,
             "party": "UKIP",
             "state": "--",
             "priority": 1,
@@ -324,7 +324,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "",
             "last_name": "Independent/Others",
-            "election": 12,
+            "election": 20,
             "party": "Ind/Oth",
             "state": "--",
             "priority": 1,
@@ -347,7 +347,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "The",
             "last_name": "Democratic Unionist Party",
-            "election": 12,
+            "election": 20,
             "party": "DUP",
             "state": "--",
             "priority": 1,
@@ -370,7 +370,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "",
             "last_name": "Sinn Féin",
-            "election": 12,
+            "election": 20,
             "party": "Sinn Féin",
             "state": "--",
             "priority": 1,
@@ -393,7 +393,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "",
             "last_name": "Plaid Cymru",
-            "election": 12,
+            "election": 20,
             "party": "Plaid Cymru",
             "state": "--",
             "priority": 1,
@@ -416,7 +416,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "The",
             "last_name": "Ulster Unionist Party",
-            "election": 12,
+            "election": 20,
             "party": "UUP",
             "state": "--",
             "priority": 1,
@@ -439,7 +439,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "",
             "last_name": "SDLP",
-            "election": 12,
+            "election": 20,
             "party": "SDLP",
             "state": "--",
             "priority": 1,
@@ -462,7 +462,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "The",
             "last_name": "Traditional Unionist Voice",
-            "election": 12,
+            "election": 20,
             "party": "TUV",
             "state": "--",
             "priority": 1,
@@ -485,7 +485,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "The",
             "last_name": "Speaker",
-            "election": 12,
+            "election": 20,
             "party": "N/A",
             "state": "--",
             "priority": 1,
