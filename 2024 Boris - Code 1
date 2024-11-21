@@ -157,7 +157,7 @@ campaignTrail_temp.temp_election_list = [
 campaignTrail_temp.credits = "<button onclick='credits()'>Team BOJO</button>"
 
 credits = function() {
-  credits = ["[Lead Development]", "u/Drobot2505", "", "[Writing Help:]", "u/human v3-working", "", "[Coding Help:]", "u/No-Reading9991", "", "[And Extra Thanks...]", "...To u/idlebrowsers-helping for the great choices of music!", "...And u/Own-Staff-2403-coming for great contributions to the questions-and-responses ideas!"]
+  credits = ["[Lead Development]", "u/Drobot2505", "", "[Writing Help:]", "u/human v3 working", "", "[Coding Help:]", "u/No-Reading9991", "", "[And Extra Thanks...]", "...To u/idlebrowsers-helping for the great choices of music!", "...And u/Own-Staff-2403-coming for great contributions to the questions-and-responses ideas!"]
   text = "[CREDITS]:\n\n"
   for (i in credits) {
       text += credits[i] + "\n"
