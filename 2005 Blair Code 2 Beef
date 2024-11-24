@@ -12217,7 +12217,7 @@ return html;
       
       e.multiple_endings = true;
       
-      e.header = "<h1>Error</h1>";
+      e.header = "<h3>Error</h3>";
       e.pages = ["<p>This is an error handler. Contact u/No-Reading</p>"];
       e.page = 0;
       
