@@ -408,6 +408,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 30000,
+        "fields": {
+            "first_name": "Caroline P.",
+            "last_name": "Lucas",
+            "election": 12,
+            "party": "Greens",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#71d82c",
+            "secondary_color_hex": "#71d82c",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 12649,
         "fields": {
             "first_name": "The",
@@ -427,6 +450,29 @@ campaignTrail_temp.candidate_json = [
             "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 30001,
+        "fields": {
+            "first_name": "Roger M.",
+            "last_name": "Knapman",
+            "election": 12,
+            "party": "UKIP",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#a433e1",
+            "secondary_color_hex": "#a433e1",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
         }
     },
     {
@@ -454,6 +500,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 30002,
+        "fields": {
+            "first_name": "Various",
+            "last_name": "Others",
+            "election": 12,
+            "party": "Ind/Oth",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#b0b0b0",
+            "secondary_color_hex": "#b0b0b0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 12685,
         "fields": {
             "first_name": "The",
@@ -473,6 +542,29 @@ campaignTrail_temp.candidate_json = [
             "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 30003,
+        "fields": {
+            "first_name": "Ian R. K.",
+            "last_name": "Paisley",
+            "election": 12,
+            "party": "DUP",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#c37c18",
+            "secondary_color_hex": "#c37c18",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
         }
     },
     {
@@ -500,6 +592,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 30004,
+        "fields": {
+            "first_name": "Gerry",
+            "last_name": "Adams",
+            "election": 12,
+            "party": "Sinn Féin",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#a8ea90",
+            "secondary_color_hex": "#a8ea90",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 12721,
         "fields": {
             "first_name": "",
@@ -519,6 +634,29 @@ campaignTrail_temp.candidate_json = [
             "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 30005,
+        "fields": {
+            "first_name": "Ieuan W.",
+            "last_name": "Jones",
+            "election": 12,
+            "party": "Plaid Cymru",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#3a741b",
+            "secondary_color_hex": "#3a741b",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
         }
     },
     {
@@ -546,6 +684,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 30006,
+        "fields": {
+            "first_name": "W. David",
+            "last_name": "Trimble",
+            "election": 12,
+            "party": "UUP",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#89e1a4",
+            "secondary_color_hex": "#89e1a4",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 12757,
         "fields": {
             "first_name": "",
@@ -569,6 +730,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 30007,
+        "fields": {
+            "first_name": "Mark",
+            "last_name": "Durkan",
+            "election": 12,
+            "party": "SDLP",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#01ad73",
+            "secondary_color_hex": "#01ad73",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 12775,
         "fields": {
             "first_name": "The",
@@ -588,6 +772,29 @@ campaignTrail_temp.candidate_json = [
             "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 30008,
+        "fields": {
+            "first_name": "Michael J.",
+            "last_name": "Martin",
+            "election": 12,
+            "party": "N/A",
+            "state": "--",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#dedede",
+            "secondary_color_hex": "#dedede",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Put description here</p>",
+            "candidate_score": 1,
+            "running_mate": true
         }
     }
 ]
