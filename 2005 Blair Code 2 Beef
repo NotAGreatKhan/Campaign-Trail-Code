@@ -11782,15 +11782,15 @@ vpTable = {
     "The Labour Party" : "Tony C. L. Blair",   
     "The Conservative Party" : "Michael Howard",   
     "The Liberal Democrats" : "Charles P. Kennedy",
-    "The Scotland National Party" : "Alex E. A. Salmond"
-    "The Green Party" : "Caroline P. Lucas"
-    "The UK Independence Party" : "Roger M. Knapman"
-    "Independent/Others" : "Various Others"
-    "The Democratic Unionist Party" : "Ian R. K. Paisley"
-    "Sinn Féin" : "Gerry Adams"
-    "Plaid Cymru" : "Ieuan W. Jones"
-    "The Ulster Unionist Party" : "W. David Trimble"
-    "SDLP" : "Mark Durkan"
+    "The Scotland National Party" : "Alex E. A. Salmond",
+    "The Green Party" : "Caroline P. Lucas",
+    "The UK Independence Party" : "Roger M. Knapman",
+    "Independent/Others" : "Various Others",
+    "The Democratic Unionist Party" : "Ian R. K. Paisley",
+    "Sinn Féin" : "Gerry Adams",
+    "Plaid Cymru" : "Ieuan W. Jones",
+    "The Ulster Unionist Party" : "W. David Trimble",
+    "SDLP" : "Mark Durkan",
     "The Speaker" : "Michael J. Martin"
 }
 
