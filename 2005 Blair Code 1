@@ -815,6 +815,78 @@ campaignTrail_temp.running_mate_json = [
             "candidate": 12565,
             "running_mate": 125
         }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159968,
+        "fields": {
+            "candidate": 12631,
+            "running_mate": 30000
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159969,
+        "fields": {
+            "candidate": 12649,
+            "running_mate": 30001
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159970,
+        "fields": {
+            "candidate": 12667,
+            "running_mate": 30002
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159971,
+        "fields": {
+            "candidate": 12685,
+            "running_mate": 30003
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159972,
+        "fields": {
+            "candidate": 12703,
+            "running_mate": 30004
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159973,
+        "fields": {
+            "candidate": 12721,
+            "running_mate": 30005
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159974,
+        "fields": {
+            "candidate": 12739,
+            "running_mate": 30006
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159975,
+        "fields": {
+            "candidate": 12757,
+            "running_mate": 30007
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 159976,
+        "fields": {
+            "candidate": 12775,
+            "running_mate": 30008
+        }
     }
 ]
 
