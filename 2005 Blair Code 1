@@ -138,11 +138,6 @@ document.styleSheets[0].insertRule(".inner_window_w_desc{ margin:1em 0 0 0.5em !
 document.styleSheets[0].insertRule(".inner_window_question{ margin:1em 0 .7em 0.5em !important;padding-top: 0.3em !important;}", 0);
 document.styleSheets[0].insertRule("#main_content_area { height:82% !important;}", 0);
 
-campaignTrail_temp.show_premium = true;
-campaignTrail_temp.premier_ab_test_version = -1;
-
-let style = document.createElement('style');style.innerHTML = `#overall_result {overflow: auto;}`;document.head.appendChild(style);
-
 
 campaignTrail_temp.election_json = [
      {
