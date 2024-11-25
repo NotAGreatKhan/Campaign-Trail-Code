@@ -408,7 +408,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30000,
+        "pk": 127,
         "fields": {
             "first_name": "Caroline P.",
             "last_name": "Lucas",
@@ -454,7 +454,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30001,
+        "pk": 128,
         "fields": {
             "first_name": "Roger M.",
             "last_name": "Knapman",
@@ -500,7 +500,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30002,
+        "pk": 129,
         "fields": {
             "first_name": "Various",
             "last_name": "Others",
@@ -546,7 +546,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30003,
+        "pk": 130,
         "fields": {
             "first_name": "Ian R. K.",
             "last_name": "Paisley",
@@ -592,7 +592,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30004,
+        "pk": 131,
         "fields": {
             "first_name": "Gerry",
             "last_name": "Adams",
@@ -638,7 +638,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30005,
+        "pk": 132,
         "fields": {
             "first_name": "Ieuan W.",
             "last_name": "Jones",
@@ -684,7 +684,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30006,
+        "pk": 133,
         "fields": {
             "first_name": "W. David",
             "last_name": "Trimble",
@@ -730,7 +730,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30007,
+        "pk": 134,
         "fields": {
             "first_name": "Mark",
             "last_name": "Durkan",
@@ -776,7 +776,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 30008,
+        "pk": 135,
         "fields": {
             "first_name": "Michael J.",
             "last_name": "Martin",
@@ -821,7 +821,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159968,
         "fields": {
             "candidate": 12631,
-            "running_mate": 30000
+            "running_mate": 127
         }
     },
     {
@@ -829,7 +829,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159969,
         "fields": {
             "candidate": 12649,
-            "running_mate": 30001
+            "running_mate": 128
         }
     },
     {
@@ -837,7 +837,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159970,
         "fields": {
             "candidate": 12667,
-            "running_mate": 30002
+            "running_mate": 129
         }
     },
     {
@@ -845,7 +845,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159971,
         "fields": {
             "candidate": 12685,
-            "running_mate": 30003
+            "running_mate": 130
         }
     },
     {
@@ -853,7 +853,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159972,
         "fields": {
             "candidate": 12703,
-            "running_mate": 30004
+            "running_mate": 131
         }
     },
     {
@@ -861,7 +861,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159973,
         "fields": {
             "candidate": 12721,
-            "running_mate": 30005
+            "running_mate": 132
         }
     },
     {
@@ -869,7 +869,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159974,
         "fields": {
             "candidate": 12739,
-            "running_mate": 30006
+            "running_mate": 133
         }
     },
     {
@@ -877,7 +877,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159975,
         "fields": {
             "candidate": 12757,
-            "running_mate": 30007
+            "running_mate": 134
         }
     },
     {
@@ -885,7 +885,7 @@ campaignTrail_temp.running_mate_json = [
         "pk": 159976,
         "fields": {
             "candidate": 12775,
-            "running_mate": 30008
+            "running_mate": 135
         }
     }
 ]
