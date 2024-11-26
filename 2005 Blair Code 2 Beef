@@ -79,7 +79,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 13508){
         campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.running_mate_last_name = "Brown"
+        campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
         vpTable["The Labour Party"] = "J. Gordon Brown";
@@ -91,7 +91,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
             "likelihood": 1
           }
-        } 
+        }
     }
     if(ans == 13508){
         campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
