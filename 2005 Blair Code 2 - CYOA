@@ -85,7 +85,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 13508){
         campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
-    }    
+    }
     if(ans == 12542){
       Resign += 1;
     }
