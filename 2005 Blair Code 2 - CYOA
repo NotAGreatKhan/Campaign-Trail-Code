@@ -49,7 +49,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         document.body.background = "https://imgur.com/r1yqD5R.png"    
     }
     if(ans == 13508){
-    document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
+        document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
     }
     if(ans == 12862){
         campaignTrail_temp.candidate_last_name = "Labour";
