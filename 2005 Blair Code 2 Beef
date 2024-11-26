@@ -82,7 +82,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.running_mate_last_name = "Brown"
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
-        campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
         vpTable["The Labour Party"] = "J. Gordon Brown";
         campaignTrail_temp.questions_json[31] = {
         "model": "campaign_trail.question",
@@ -92,11 +91,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
             "likelihood": 1
           }
-        }    
+        } 
     }
     if(ans == 13508){
-      campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
-    }
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
+    }    
     if(ans == 12542){
       Resign += 1;
     }
@@ -170,7 +169,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
- 
+    if(Resign >= 7){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 13501,
+    "fields": {
+        "priority": 0,
+        "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+        "likelihood": 1
+      }
+    }
+  }
+    
 // Other CYOA Stuff  
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[6] = {
@@ -416,13 +426,37 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-if(ans == 12797){
+    if(ans == 12797){
     campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13794,
     "fields": {
         "priority": 0,
         "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
+        "likelihood": 1
+      }
+    }
+  }
+    // Fail EU Constitution
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[30] = {
+    "model": "campaign_trail.question",
+    "pk": 13820,
+    "fields": {
+        "priority": 0,
+        "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
+        "likelihood": 1
+      }
+    }
+  }
+    // Pass EU Constitution
+    if(ans == 12797 && ans == ){
+    campaignTrail_temp.questions_json[30] = {
+    "model": "campaign_trail.question",
+    "pk": 13839,
+    "fields": {
+        "priority": 0,
+        "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
         "likelihood": 1
       }
     }
@@ -2023,6 +2057,70 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 13794,
             "description": "Let the Tories keep up their personal attacks on me, I will keep setting out the policy choices that matter to the British people. We will not allow this mud-slinging to sink the whole campaign down, and we know that they have given up on trying to beat us on the issues."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13821,
+        "fields": {
+            "question": 13820,
+            "description": "Over the course of our time in government, we have worked to end the boom-and-bust cycles of the Tory governments. Now we have the strongest economy of Europe. Our NHS revitalised, and child-poverty down by a third."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13826,
+        "fields": {
+            "question": 13820,
+            "description": "The social progress that we have championed is greater than perhaps any government before us. On human rights, on the rights of homosexuals and the LGBT community, and the prosperous society we have fostered together."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13830,
+        "fields": {
+            "question": 13820,
+            "description": "We have championed the cause of a closer Europe which has served to define our foreign policy since the Second World War. Thanks to the decisions that we have taken, our position is safer and more secure than ever before, and we stand shoulder to shoulder with our American partners."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13834,
+        "fields": {
+            "question": 13820,
+            "description": "Over the course of this campaign, the Conservatives have tried to drag this campaign into the mud. But their attempts to vilify the immigrants of this country will not be tolerated. Our government will continue to bring prosperity, the Tories are still the same nasty party they always were."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13840,
+        "fields": {
+            "question": 13839,
+            "description": "Over the course of our time in government, we have worked to end the boom-and-bust cycles of the Tory governments. Now we have the strongest economy of Europe. Our NHS revitalised, and child-poverty down by a third."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13845,
+        "fields": {
+            "question": 13839,
+            "description": "The social progress that we have championed is greater than perhaps any government before us. On human rights, on the rights of homosexuals and the LGBT community, and the prosperous society we have fostered together."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13849,
+        "fields": {
+            "question": 13839,
+            "description": "We have championed the cause of a closer Europe which has served to define our foreign policy since the Second World War. Thanks to the decisions that we have taken, our position is safer and more secure than ever before, and we stand shoulder to shoulder with our American partners."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13853,
+        "fields": {
+            "question": 13839,
+            "description": "Over the course of this campaign, the Conservatives have tried to drag this campaign into the mud. But their attempts to vilify the immigrants of this country will not be tolerated. Our government will continue to bring prosperity, the Tories are still the same nasty party they always were."
         }
     }
 ]
@@ -5510,7 +5608,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 13118,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.008
+            "global_multiplier": 0.008
         }
     },
     {
@@ -7070,7 +7168,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 13503,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -1.05
+            "global_multiplier": -0.105
         }
     },
     {
@@ -8131,6 +8229,86 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12565,
             "affected_candidate": 12565,
             "global_multiplier": 0.0125
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13823,
+        "fields": {
+            "answer": 13821,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13828,
+        "fields": {
+            "answer": 13826,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13832,
+        "fields": {
+            "answer": 13830,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13836,
+        "fields": {
+            "answer": 13834,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13842,
+        "fields": {
+            "answer": 13840,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13847,
+        "fields": {
+            "answer": 13845,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13851,
+        "fields": {
+            "answer": 13849,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13855,
+        "fields": {
+            "answer": 13853,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
         }
     }
 ]
@@ -10064,6 +10242,138 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 12543,
             "state_multiplier": 0.008
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13824,
+        "fields": {
+            "answer": 13821,
+            "state": 12446,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13825,
+        "fields": {
+            "answer": 13821,
+            "state": 12452,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13829,
+        "fields": {
+            "answer": 13826,
+            "state": 12482,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13833,
+        "fields": {
+            "answer": 13830,
+            "state": 12506,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13837,
+        "fields": {
+            "answer": 13834,
+            "state": 12488,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13838,
+        "fields": {
+            "answer": 13834,
+            "state": 12494,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13843,
+        "fields": {
+            "answer": 13840,
+            "state": 12446,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13844,
+        "fields": {
+            "answer": 13840,
+            "state": 12452,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13848,
+        "fields": {
+            "answer": 13845,
+            "state": 12482,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13852,
+        "fields": {
+            "answer": 13849,
+            "state": 12506,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13856,
+        "fields": {
+            "answer": 13853,
+            "state": 12488,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 13857,
+        "fields": {
+            "answer": 13853,
+            "state": 12494,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.006
+        }
     }
 ]
 
@@ -11534,6 +11844,78 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "But why do they matter to the British people, or, more precisely, why are they better for them?"
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13822,
+        "fields": {
+            "answer": 13821,
+            "candidate": 12543,
+            "answer_feedback": "One thing has remained constant throughout not just this term, but your entire premiership: the strong economy. At the end of the day, people vote with their wallets first."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13827,
+        "fields": {
+            "answer": 13826,
+            "candidate": 12543,
+            "answer_feedback": "The extent of which your government has championed social changes to Britain is undoubtedly significant. If you wish to gain socially liberal voters, this is a good way to go around this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13831,
+        "fields": {
+            "answer": 13830,
+            "candidate": 12543,
+            "answer_feedback": "When your government has been slogged by No-vote after No-vote in your mission to forge a closer Europe, this message falls flat in the eyes of a public who see the EU Constitution as a failed vanity project."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13835,
+        "fields": {
+            "answer": 13834,
+            "candidate": 12543,
+            "answer_feedback": "Taking the attack to the Tories is never a bad move, but it may be better to close out with a more positive message to drive turnout at the finish line."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13841,
+        "fields": {
+            "answer": 13840,
+            "candidate": 12543,
+            "answer_feedback": "One thing has remained constant throughout not just this term, but your entire premiership: the strong economy. At the end of the day, people vote with their wallets first."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13846,
+        "fields": {
+            "answer": 13845,
+            "candidate": 12543,
+            "answer_feedback": "The extent of which your government has championed social changes to Britain is undoubtedly significant. If you wish to gain socially liberal voters, this is a good way to go around this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13850,
+        "fields": {
+            "answer": 13849,
+            "candidate": 12543,
+            "answer_feedback": "With your crusade against the malignant forces of populism and Euroscepticism, providing one of the most dynamic shifts in European policy, this is an achievement that you can actually press in the final stretch. Let’s hope it’s enough."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13854,
+        "fields": {
+            "answer": 13853,
+            "candidate": 12543,
+            "answer_feedback": "Taking the attack to the Tories is never a bad move, but it may be better to close out with a more positive message to drive turnout at the finish line."
+        }
     }
 ]
 
@@ -12013,7 +12395,7 @@ return html;
       
       e.multiple_endings = true;
       
-      e.header = "<h3>Error</h3>";
+      e.header = "<h1>Error</h1>";
       e.pages = ["<p>This is an error handler. Contact u/No-Reading</p>"];
       e.page = 0;
       
