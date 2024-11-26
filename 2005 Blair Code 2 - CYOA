@@ -159,17 +159,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign >= 7){
-    campaignTrail_temp.questions_json[31] = {
-    "model": "campaign_trail.question",
-    "pk": 13501,
-    "fields": {
-        "priority": 0,
-        "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
-        "likelihood": 1
-      }
-    }
-  }
     
 // Other CYOA Stuff  
     if(ans == 12813 || ans == 12815){
