@@ -910,7 +910,7 @@ vpTableHistorical = {
 
 HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f"];
 HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party"];
-HistAllocatedSeats=["355","198","62","6"];
+HistEV=["355","198","62","6"];
 HistPV=["9,552,376","8,785,942","5,985,704","412,267"];
 HistPVP=["35.2%","32.4%","22.0%","1.5%"];
 
