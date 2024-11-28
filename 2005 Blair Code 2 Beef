@@ -12279,7 +12279,7 @@ function onGameWindowChangeCandidates() {
         }
 
         if (i == 0) {
-            row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
         } else {
             row.children[1].innerHTML = vpTable[name];
         }
@@ -12296,7 +12296,7 @@ function onGameWindowChangeCandidates() {
         }
 
         if (i == 0) {
-            row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate</span>`;
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
         } else {
             row.children[1].innerHTML = vpTableHistorical[name];
         }
