@@ -78,11 +78,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
     }
     if(ans == 13508){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
-        campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
+        campaignTrail_temp.running_mate_last_name = 'Brown'
+        campaignTrail_temp.running_mate_state_id = 140  
+        campaignTrail_temp.candidate_image_url = 'https://imgur.com/0VBvUlO.png';
+        campaignTrail_temp.candidate_last_name = 'Labour';   
         vpTable["The Labour Party"] = "J. Gordon Brown";
+
         campaignTrail_temp.questions_json[31] = {
         "model": "campaign_trail.question",
         "pk": 13501,
