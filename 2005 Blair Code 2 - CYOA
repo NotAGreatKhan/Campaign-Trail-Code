@@ -429,7 +429,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     // Pass EU Constitution
-    if(ans == 12797 && ans == ){
+    if(ans == 12797){
     campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13839,
