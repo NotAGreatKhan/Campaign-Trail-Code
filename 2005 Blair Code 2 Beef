@@ -12300,7 +12300,7 @@ function onGameWindowChangeCandidates() {
         } else {
             row.children[1].innerHTML = vpTableHistorical[name];
         }
-        if (i == 1) {
+        if (i == 0) {
             row.children[2].innerHTML = `<span style="font-weight:bold">Allocated Seats</span>`;
         } else {
             row.children[2].innerHTML = HistEV[name];
