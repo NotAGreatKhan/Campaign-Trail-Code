@@ -12302,21 +12302,6 @@ function onGameWindowChangeCandidates() {
         }
     }
 
-    for (let i = 0; i < resultsTableHistorical.children.length; i++) {
-        const row = resultsTableHistorical.children[i];        
-        let elvotes = row.childNodes[2].innerText;
-        row.insertCell(2);
-        if (elvotes) {
-            elvotes = elvotes.replaceAll("-", "").trim();
-        }
-
-        if (i == 0) {
-            row.children[2].innerHTML = `<span style="font-weight:bold">Allocated Seats</span>`;
-        } else {
-            row.children[2].innerHTML = HistEV[elvotes];
-        } 
-    }
-
     // Add CSS to increase row spacing
     const styleElem = document.createElement('style');
     styleElem.textContent = `
