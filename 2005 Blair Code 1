@@ -908,6 +908,13 @@ vpTableHistorical = {
     "The Scotland National Party" : "Alex E. A. Salmond"
 }
 
+HistEV = {
+    "The Labour Party" : "355",
+    "The Conservative Party" : "198",
+    "The Liberal Democrats" : "62",
+    "The Scotland National Party" : "6"
+}
+
 HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f"];
 HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party"];
 HistEV=["355","198","62","6"];
