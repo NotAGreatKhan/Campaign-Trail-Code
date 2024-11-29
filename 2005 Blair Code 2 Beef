@@ -12289,14 +12289,25 @@ function onGameWindowChangeCandidates() {
 
     for (let i = 0; i < resultsTableHistorical.children.length; i++) {
         const row = resultsTableHistorical.children[i];
+        let parties = row.childNodes[0].innerText;        
         let name = row.childNodes[1].innerText;
         let elvotes = row.childNodes[2].innerText;
-        let parties = row.childNodes[0].innerText;
         row.insertCell(1);
+        if (parties) {
+            parties = parties.replaceAll("-", "").trim();
+        }
         if (name) {
             name = name.replaceAll("-", "").trim();
         }
+        if (elvotes) {
+            elvotes = elvotes.replaceAll("-", "").trim();
+        }
 
+        if (i == 0) {
+            row.children[0].innerHTML = `<span style="font-weight:bold">Party List</span>`;
+        } else {
+            row.children[0].innerHTML = HistNames[parties];
+        }        
         if (i == 0) {
             row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
         } else {
@@ -12306,11 +12317,6 @@ function onGameWindowChangeCandidates() {
             row.children[2].innerHTML = `<span style="font-weight:bold">Allocated Seats</span>`;
         } else {
             row.children[2].innerHTML = HistEV[elvotes];
-        }
-        if (i == 0) {
-            row.children[0].innerHTML = `<span style="font-weight:bold">Party List</span>`;
-        } else {
-            row.children[0].innerHTML = HistNames[parties];
         }
     }
 
