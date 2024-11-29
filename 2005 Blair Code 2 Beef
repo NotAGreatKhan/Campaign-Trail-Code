@@ -12283,11 +12283,6 @@ function onGameWindowChangeCandidates() {
         } else {
             row.children[1].innerHTML = vpTable[name];
         }
-        if (i == 0) {
-            row.children[2].innerHTML = `<span style="font-weight:bold">Allocated Seats</span>`;
-        } else {
-            row.children[2].innerHTML = HistEV[name];
-        }
     }
 
     const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
@@ -12309,6 +12304,11 @@ function onGameWindowChangeCandidates() {
             row.children[2].innerHTML = `<span style="font-weight:bold">Allocated Seats</span>`;
         } else {
             row.children[2].innerHTML = HistEV[name];
+        }
+        if (i == 0) {
+            row.children[0].innerHTML = `<span style="font-weight:bold">Party List</span>`;
+        } else {
+            row.children[0].innerHTML = HistNames[name];
         }
     }
 
