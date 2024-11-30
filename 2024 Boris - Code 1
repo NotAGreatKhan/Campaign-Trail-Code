@@ -757,7 +757,7 @@ function setupMusicPlayer() {
     
     const song5 = new Song(
       "You Can't Always Get What You Want",
-      "Rolling Stones",
+      "The Rolling Stones",
       "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/74/d5/74/74d57427-0a8c-87d8-b335-a8a51e331bfc/source/1200x1200bb.jpg",
       "https://audio.jukehost.co.uk/spZAsbCzyaudIt59CF72cZ2VKcYDPBmE"
     );
