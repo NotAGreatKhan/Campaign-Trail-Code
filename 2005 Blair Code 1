@@ -1237,6 +1237,100 @@ function changeOpponentSelectionDescription() {
     });
 }
 
+function addCoalitionDifficultyDropdown() {
+        var difficultyDiv = document.getElementById("difficulty_level");
+        if (difficultyDiv && !document.getElementById("coalitionDifficultyDropdown")) {
+            var difficulties = ["Guaranteed", "Very Easy", "Easy", "Normal", "Hard", "Impossible"];
+            var difficultyValues = [1000000, 5, 1.5, 1, 0.75, 0.2];
+            var dropdown = document.createElement("select");
+            dropdown.id = "coalitionDifficultyDropdown";
+
+            for (var i = 0; i < difficulties.length; i++) {
+                var opt = document.createElement("option");
+                opt.text = difficulties[i];
+                if (difficulties[i] === "Normal") {
+                    opt.selected = true;
+                }
+                opt.value = difficultyValues[i];
+                dropdown.options.add(opt);
+            }
+
+            var form = document.createElement("form");
+            form.name = "coalition_difficulty_level_selection";
+            var header = document.createElement("h3");
+            header.textContent = "Select coalition difficulty:";
+            form.appendChild(header);
+            form.appendChild(dropdown);
+            difficultyDiv.appendChild(form);
+
+            var visitsForm = document.createElement("form");
+            visitsForm.name = "state_visits_selection";
+            var visitsHeader = document.createElement("h3");
+            visitsHeader.textContent = "Change Election Night";
+            visitsForm.appendChild(visitsHeader);
+            var visitsCheckbox = document.createElement("input");
+            visitsCheckbox.type = "checkbox";
+            visitsCheckbox.id = "stateVisitsCheckbox";
+            visitsCheckbox.checked = true;
+            visitsForm.appendChild(visitsCheckbox);
+            difficultyDiv.appendChild(visitsForm);
+
+            visitsCheckbox.addEventListener("change", function() {
+                e.electionNight = this.checked;
+            });
+
+            var AdvisorForm = document.createElement("form");
+            AdvisorForm.name = "realistic_polls_selection";
+            var AdvisorHeader = document.createElement("h3");
+            AdvisorHeader.textContent = "Advisor Mode";
+            AdvisorForm.appendChild(AdvisorHeader);
+            var AdvisorCheckbox = document.createElement("input");
+            AdvisorCheckbox.type = "checkbox";
+            AdvisorCheckbox.id = "AdvisorCheckbox";
+            AdvisorCheckbox.checked = e.realisticPolls;
+            AdvisorForm.appendChild(AdvisorCheckbox);
+            difficultyDiv.appendChild(AdvisorForm);
+
+            AdvisorCheckbox.addEventListener("change", function() {
+                e.staff_mode = this.checked;
+            });
+
+
+             // Add tooltip checkbox here
+            var tooltipForm = document.createElement("form");
+            tooltipForm.name = "tooltip_selection";
+            var tooltipHeader = document.createElement("h3");
+            tooltipHeader.textContent = "Enable tooltips";
+            tooltipForm.appendChild(tooltipHeader);
+            var tooltipCheckbox = document.createElement("input");
+            tooltipCheckbox.type = "checkbox";
+            tooltipCheckbox.id = "tooltipCheckbox";
+            tooltipCheckbox.checked = true;
+            tooltipForm.appendChild(tooltipCheckbox);
+            difficultyDiv.appendChild(tooltipForm);
+
+            tooltipCheckbox.addEventListener("change", function() {
+                e.displayTooltips = this.checked;
+            });
+
+
+            var difficultyForm = document.querySelector('form[name="difficulty_level_selection"]');
+            var difficultyHeader = difficultyForm.querySelector('h3');
+            difficultyHeader.textContent = "Select campaign difficulty:";
+
+            var forms = document.querySelectorAll("#difficulty_level form");
+            for (var i = 0; i < forms.length; i++) {
+              forms[i].style.display = "inline-block";
+              forms[i].style.paddingLeft = "10px"; // adjust the value as needed
+              forms[i].style.paddingRight = "10px"; // adjust the value as needed
+            }
+
+            dropdown.addEventListener("change", function() {
+                campaignTrail_temp.coalitionDifficulty = this.value;
+            });
+        }
+    }
+
  function walkAndReplace(node, wordsToFind) {
         if (node.nodeType === Node.TEXT_NODE) {
             // Ignore nodes that are already wrapped with our span
