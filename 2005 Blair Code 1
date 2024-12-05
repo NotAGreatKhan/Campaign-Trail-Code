@@ -1164,6 +1164,80 @@ tooltipList = [
 ];
 
 
+// Difficulty Window
+function modifyAllocationForm() {
+
+        const form = document.querySelector('form[name="game_type_selection"]');
+            if(form){
+            const select = form.querySelector('select[name="game_type_id"]');
+
+            // change option value
+            const option = select.querySelector('option[value="1"]');
+            option.textContent = 'First Past The Post';
+
+
+            var optionToRemove = document.querySelector('option[value="2"]');
+            if (optionToRemove) {
+              optionToRemove.style.display = 'none';
+            }
+
+            // change h3 text
+            const h3 = form.querySelector('h3');
+            h3.textContent = 'How would you like the seats to be allocated';
+            }
+   }
+
+function changeOpponentSelectionDescription() {
+    const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+
+    if (!opponentSelectionDescription) return;
+
+    // Check if the divs already exist, and if they do, stop the function
+    if (document.getElementById("div1") || document.getElementById("div2")) return;
+
+    // Clear the original content
+    opponentSelectionDescription.innerHTML = '';
+
+    // Define the texts and button labels
+    const text1 = `<p><strong>Use the First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a system created by u/AeronauticBlueberry is used on regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p>`;
+
+    const text2 = `<p><strong>The First Past The Post System</strong></p><p>The system utilised in <i>2005: Forward Not Back</i> was graciosuly provided to me by u/ItsAstronomics, and created by u/AeronauticBlueberry originally for <i>2024 UK</i>. I decided to ultimately go with this instead of simulating every individual constituency because of the massive amount of time saved, even in spite of the finnicky technicalities regarding thresholds and seat multipliers. If it is possible, I may add the individual constituencies later down the line, but for now I hope this current system is satisfactory.</p>`
+
+    const btnText1 = 'More about TCT FPTP';
+    const btnText2 = 'The Electoral System';
+
+    // Create the first div with the first text and the toggle button
+    const div1 = document.createElement('div');
+    div1.id = "div1";
+    div1.innerHTML = `<p>${text1}</p><button id="toggleBtn">${btnText1}</button>`;
+
+    // Create the second div with the second text, initially hidden
+    const div2 = document.createElement('div');
+    div2.id = "div2";
+    div2.style.display = 'none';
+    div2.innerHTML = `<p>${text2}</p><button id="toggleBtn2">${btnText2}</button>`;
+
+    // Append both divs to the original element
+    opponentSelectionDescription.appendChild(div1);
+    opponentSelectionDescription.appendChild(div2);
+
+    // Get the buttons
+    const button1 = document.getElementById("toggleBtn");
+    const button2 = document.getElementById("toggleBtn2");
+
+    // Add event listeners to the buttons to toggle visibility of the divs
+    button1.addEventListener("click", function() {
+        div1.style.display = 'none';
+        div2.style.display = 'block';
+    });
+
+    button2.addEventListener("click", function() {
+        div2.style.display = 'none';
+        div1.style.display = 'block';
+    });
+}
+
+
 // Music Player
 RecReading=true
 
