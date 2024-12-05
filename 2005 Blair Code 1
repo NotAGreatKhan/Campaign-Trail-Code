@@ -1240,7 +1240,7 @@ function changeOpponentSelectionDescription() {
  function walkAndReplace(node, wordsToFind) {
         if (node.nodeType === Node.TEXT_NODE) {
             // Ignore nodes that are already wrapped with our span
-            if (node.parentNode.nodeName.toLowerCase() === "span" && node.parentNode.style.color === 'white') {
+            if (node.parentNode.nodeName.toLowerCase() === "span" && node.parentNode.style.color === 'black') {
                 return;
             }
 
