@@ -1165,206 +1165,50 @@ tooltipList = [
 
 
 // Difficulty Window
-function modifyAllocationForm() {
-
-        const form = document.querySelector('form[name="game_type_selection"]');
-            if(form){
-            const select = form.querySelector('select[name="game_type_id"]');
-
-            // change option value
-            const option = select.querySelector('option[value="1"]');
-            option.textContent = 'First Past The Post';
-
-
-            var optionToRemove = document.querySelector('option[value="2"]');
-            if (optionToRemove) {
-              optionToRemove.style.display = 'none';
-            }
-
-            // change h3 text
-            const h3 = form.querySelector('h3');
-            h3.textContent = 'How would you like the seats to be allocated';
-            }
-   }
-
 function changeOpponentSelectionDescription() {
-    const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+  selectionObserver.disconnect();
 
-    if (!opponentSelectionDescription) return;
-
-    // Check if the divs already exist, and if they do, stop the function
-    if (document.getElementById("div1") || document.getElementById("div2")) return;
-
-    // Clear the original content
-    opponentSelectionDescription.innerHTML = '';
-
-    // Define the texts and button labels
-    const text1 = `<p><strong>Use the First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a system created by u/AeronauticBlueberry is used on regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p>`;
-
-    const text2 = `<p><strong>The First Past The Post System</strong></p><p>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by u/ItsAstronomics, and created by u/AeronauticBlueberry originally for <i>2024 UK</i>. I decided to ultimately go with this instead of simulating every individual constituency because of the massive amount of time saved, even in spite of the finicky technicalities regarding thresholds and seat multipliers. If it is possible, I may add the individual constituencies later down the line, but for now I hope this current system is satisfactory.</p>`
-
-    const btnText1 = 'More about TCT FPTP';
-    const btnText2 = 'The Electoral System';
-
-    // Create the first div with the first text and the toggle button
-    const div1 = document.createElement('div');
-    div1.id = "div1";
-    div1.innerHTML = `<p>${text1}</p><button id="toggleBtn">${btnText1}</button>`;
-
-    // Create the second div with the second text, initially hidden
-    const div2 = document.createElement('div');
-    div2.id = "div2";
-    div2.style.display = 'none';
-    div2.innerHTML = `<p>${text2}</p><button id="toggleBtn2">${btnText2}</button>`;
-
-    // Append both divs to the original element
-    opponentSelectionDescription.appendChild(div1);
-    opponentSelectionDescription.appendChild(div2);
-
-    // Get the buttons
-    const button1 = document.getElementById("toggleBtn");
-    const button2 = document.getElementById("toggleBtn2");
-
-    // Add event listeners to the buttons to toggle visibility of the divs
-    button1.addEventListener("click", function() {
-        div1.style.display = 'none';
-        div2.style.display = 'block';
-    });
-
-    button2.addEventListener("click", function() {
-        div2.style.display = 'none';
-        div1.style.display = 'block';
-    });
+  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+  
+  if (opponentSelectionDescription) {
+    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a system created by u/AeronauticBlueberry is used on regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p><p>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by u/ItsAstronomics, and created by u/AeronauticBlueberry originally for <i>2024 UK</i>. I decided to ultimately go with this instead of simulating every individual constituency because of the massive amount of time saved, even in spite of the finicky technicalities regarding thresholds and seat multipliers. If it is possible, I may add the individual constituencies later down the line, but for now I hope this current system is satisfactory.</p>`;
+  }
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!selectionObserver){
+  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
 }
 
-function addCoalitionDifficultyDropdown() {
-        var difficultyDiv = document.getElementById("difficulty_level");
-        if (difficultyDiv && !document.getElementById("coalitionDifficultyDropdown")) {
-            var difficulties = ["Guaranteed", "Very Easy", "Easy", "Normal", "Hard", "Impossible"];
-            var difficultyValues = [1000000, 5, 1.5, 1, 0.75, 0.2];
-            var dropdown = document.createElement("select");
-            dropdown.id = "coalitionDifficultyDropdown";
+function modifyForm(){
+  modifiedFormobserver.disconnect();
 
-            for (var i = 0; i < difficulties.length; i++) {
-                var opt = document.createElement("option");
-                opt.text = difficulties[i];
-                if (difficulties[i] === "Normal") {
-                    opt.selected = true;
-                }
-                opt.value = difficultyValues[i];
-                dropdown.options.add(opt);
-            }
+  const form = document.querySelector('form[name="game_type_selection"]');
 
-            var form = document.createElement("form");
-            form.name = "coalition_difficulty_level_selection";
-            var header = document.createElement("h3");
-            header.textContent = "Select coalition difficulty:";
-            form.appendChild(header);
-            form.appendChild(dropdown);
-            difficultyDiv.appendChild(form);
+  if (form) {
+    const select = form.querySelector('select[name="game_type_id"]');
+    const h3 = form.querySelector('h3');
+    const option = select.querySelector('option[value="1"]');
 
-            var visitsForm = document.createElement("form");
-            visitsForm.name = "state_visits_selection";
-            var visitsHeader = document.createElement("h3");
-            visitsHeader.textContent = "Change Election Night";
-            visitsForm.appendChild(visitsHeader);
-            var visitsCheckbox = document.createElement("input");
-            visitsCheckbox.type = "checkbox";
-            visitsCheckbox.id = "stateVisitsCheckbox";
-            visitsCheckbox.checked = true;
-            visitsForm.appendChild(visitsCheckbox);
-            difficultyDiv.appendChild(visitsForm);
-
-            visitsCheckbox.addEventListener("change", function() {
-                e.electionNight = this.checked;
-            });
-
-            var AdvisorForm = document.createElement("form");
-            AdvisorForm.name = "realistic_polls_selection";
-            var AdvisorHeader = document.createElement("h3");
-            AdvisorHeader.textContent = "Advisor Mode";
-            AdvisorForm.appendChild(AdvisorHeader);
-            var AdvisorCheckbox = document.createElement("input");
-            AdvisorCheckbox.type = "checkbox";
-            AdvisorCheckbox.id = "AdvisorCheckbox";
-            AdvisorCheckbox.checked = e.realisticPolls;
-            AdvisorForm.appendChild(AdvisorCheckbox);
-            difficultyDiv.appendChild(AdvisorForm);
-
-            AdvisorCheckbox.addEventListener("change", function() {
-                e.staff_mode = this.checked;
-            });
-
-
-             // Add tooltip checkbox here
-            var tooltipForm = document.createElement("form");
-            tooltipForm.name = "tooltip_selection";
-            var tooltipHeader = document.createElement("h3");
-            tooltipHeader.textContent = "Enable tooltips";
-            tooltipForm.appendChild(tooltipHeader);
-            var tooltipCheckbox = document.createElement("input");
-            tooltipCheckbox.type = "checkbox";
-            tooltipCheckbox.id = "tooltipCheckbox";
-            tooltipCheckbox.checked = true;
-            tooltipForm.appendChild(tooltipCheckbox);
-            difficultyDiv.appendChild(tooltipForm);
-
-            tooltipCheckbox.addEventListener("change", function() {
-                e.displayTooltips = this.checked;
-            });
-
-
-            var difficultyForm = document.querySelector('form[name="difficulty_level_selection"]');
-            var difficultyHeader = difficultyForm.querySelector('h3');
-            difficultyHeader.textContent = "Select campaign difficulty:";
-
-            var forms = document.querySelectorAll("#difficulty_level form");
-            for (var i = 0; i < forms.length; i++) {
-              forms[i].style.display = "inline-block";
-              forms[i].style.paddingLeft = "10px"; // adjust the value as needed
-              forms[i].style.paddingRight = "10px"; // adjust the value as needed
-            }
-
-            dropdown.addEventListener("change", function() {
-                campaignTrail_temp.coalitionDifficulty = this.value;
-            });
-        }
+    if (option && option.textContent !== 'Default (D\'Hondt Proportional)') {
+      option.textContent = 'Default: First Past The Post';
     }
-
- function walkAndReplace(node, wordsToFind) {
-        if (node.nodeType === Node.TEXT_NODE) {
-            // Ignore nodes that are already wrapped with our span
-            if (node.parentNode.nodeName.toLowerCase() === "span" && node.parentNode.style.color === 'black') {
-                return;
-            }
-
-            let matched = false;
-            let newNodeValue = node.nodeValue;
-
-            for(let word of wordsToFind) {
-                let searchRegEx = new RegExp(word, 'g');
-                if (searchRegEx.test(newNodeValue)) {
-                    matched = true;
-                    newNodeValue = newNodeValue.replace(searchRegEx, `<span style="color: white;">${word}</span>`);
-                }
-            }
-
-            if (matched) {
-                let div = document.createElement('div');
-                div.innerHTML = newNodeValue;
-                let parent = node.parentNode;
-                while (div.firstChild) {
-                    parent.insertBefore(div.firstChild, node);
-                }
-                parent.removeChild(node);
-            }
-
-        } else {
-            for(let i = 0; i < node.childNodes.length; i++) {
-                walkAndReplace(node.childNodes[i], wordsToFind);
-            }
-        }
+    if (select && select.querySelector('option[value="2"]')) {
+      const queryTwo = select.querySelector('option[value="2"]');
+      if (queryTwo) {
+        queryTwo.remove();
+      }
     }
+    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
+      h3.textContent = 'How would you like the seats to be allocated?';
+    }
+  }
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!modifiedFormobserver){
+  var modifiedFormobserver = new MutationObserver(modifyForm);
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
 
 
 // Music Player
