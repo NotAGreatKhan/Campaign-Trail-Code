@@ -1190,7 +1190,7 @@ function modifyForm(){
     const h3 = form.querySelector('h3');
     const option = select.querySelector('option[value="1"]');
 
-    if (option && option.textContent !== 'Default (D\'Hondt Proportional)') {
+    if (option && option.textContent !== 'Default: First Past The Post') {
       option.textContent = 'Default: First Past The Post';
     }
     if (select && select.querySelector('option[value="2"]')) {
