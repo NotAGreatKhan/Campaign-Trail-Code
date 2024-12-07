@@ -231,6 +231,7 @@ function onGameWindowChangeCandidates() {
     `;
     document.head.appendChild(styleElem);
 }
+}
 
 const gameWindowNode = document.getElementById("game_window");
 const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
