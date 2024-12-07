@@ -177,6 +177,21 @@ credits = function() {
   alert(text)
 }
 
+
+vpTableHistorical = {
+    "The Labour Party" : "Kier R. Starmer",
+    "The Conservative and Unionist Party" : "Rishi Sunak",
+    "The Liberal Democrats" : "Ed J. Davey",
+    "The Scotland National Party" : "John R. Swinney"
+}
+
+HistHexcolour=["#e5003b","#0aa7db","#ffb752","#fff81f"];
+HistName=["The Labour Party","The Conservative and Unionist Party","The Liberal Democrats","The Scotland National Party"];
+HistEV=["411","121","72","9"];
+HistPV=["9,708,716","6,828,925","3,519,143","724,758"];
+HistPVP=["33.7%","23.7%","12.2%","2.5%"];
+
+
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
