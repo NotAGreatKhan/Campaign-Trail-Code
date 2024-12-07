@@ -11,7 +11,7 @@ function changechart(){
 
 vpTable = {
     "The Labour Party" : "Kier R. Starmer",   
-    "The Conservative and Unionist Party" : "Rishi Sunak",   
+    "The Conservative And Unionist Party" : "Rishi Sunak",   
     "The Liberal Democrats" : "Ed J. Davey",
     "The Scotland National Party" : "John R. Swinney",
     "The Green Party" : "Carla Denyer & Adrian Ramsay",
@@ -20,6 +20,7 @@ vpTable = {
     "The Democratic Unionist Party" : "Gavin J. Robinson",
     "Sinn Féin" : "Mary L. McDonald",
     "Plaid Cymru" : "Rhun ap Iorwerth",
+    "The Alliance" : "Naomi R. Long",
     "The Ulster Unionist Party" : "Douglas R. Beattie",
     "SDLP" : "Colum Eastwood",
     "The Traditional Unionist Voice" : "James H. Allister",
