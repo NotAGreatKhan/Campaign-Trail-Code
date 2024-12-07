@@ -1,3 +1,32 @@
+function changechart(){
+    if (document.getElementById("state_info")!=null) {
+    overallthing=document.getElementById("state_info").innerHTML;
+    overallthing.toString()
+    overallthing=overallthing.replace("STATE SUMMARY","REGION SUMMARY")
+    document.getElementById("state_info").innerHTML=overallthing
+    }
+    }
+    window.setInterval(changechart,200)
+
+
+vpTable = {
+    "The Labour Party" : "Kier R. Starmer",   
+    "The Conservative and Unionist Party" : "Rishi Sunak",   
+    "The Liberal Democrats" : "Ed J. Davey",
+    "The Scotland National Party" : "John R. Swinney",
+    "The Green Party" : "Carla Denyer & Adrian Ramsay",
+    "Reform UK" : "Nigel Farage",
+    "Independent/Others" : "Various Others",
+    "The Democratic Unionist Party" : "Gavin J. Robinson",
+    "Sinn Féin" : "Mary L. McDonald",
+    "Plaid Cymru" : "Rhun ap Iorwerth",
+    "The Ulster Unionist Party" : "Douglas R. Beattie",
+    "SDLP" : "Colum Eastwood",
+    "The Traditional Unionist Voice" : "James H. Allister"
+    "The Speaker" : "Lindsay H. Hoyle"
+}
+
+
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
