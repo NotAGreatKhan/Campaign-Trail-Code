@@ -475,7 +475,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5147,
         "fields": {
             "question": 1044,
-            "description": "This is the day we take a giant stride forward. No more dithering, no more delays. Brexit is finally happening. Let us discard the old labels of leave and remain. are. This is a moment to unite again. To forge an ambitious future. We’re going to pass this thing, no question."
+            "description": "This is the day we take a giant stride forward. No more dithering, no more delays. Brexit is finally happening. Let us discard the old labels of leave and remainer. This is a moment to unite again. To forge an ambitious future. We’re going to pass this thing, no question."
         }
     },
     {
@@ -1084,6 +1084,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 1077,
             "description": "I made my selection based on who is most qualified to serve as President, should the situation ever arise. Tim Kaine has served as a Governor and a Senator over the couse of many years, and he is a reliably progressive Democrat."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21061,
+        "fields": {
+            "question": 20700,
+            "description": "put description here"
         }
     }
 ]
@@ -6748,6 +6756,35 @@ campaignTrail_temp.candidate_last_name = "Conservatives";
 campaignTrail_temp.running_mate_last_name = "Johnson";
 
 
+function changechart(){
+    if (document.getElementById("state_info")!=null) {
+    overallthing=document.getElementById("state_info").innerHTML;
+    overallthing.toString()
+    overallthing=overallthing.replace("STATE SUMMARY","REGION SUMMARY")
+    document.getElementById("state_info").innerHTML=overallthing
+    }
+    }
+    window.setInterval(changechart,200)
+
+
+vpTable = {
+    "The Labour Party" : "Kier R. Starmer",   
+    "The Conservative and Unionist Party" : "Rishi Sunak",   
+    "The Liberal Democrats" : "Ed J. Davey",
+    "The Scotland National Party" : "John R. Swinney",
+    "The Green Party" : "Carla Denyer & Adrian Ramsay",
+    "Reform UK" : "Nigel Farage",
+    "Independent/Others" : "Various Others",
+    "The Democratic Unionist Party" : "Gavin J. Robinson",
+    "Sinn Féin" : "Mary L. McDonald",
+    "Plaid Cymru" : "Rhun ap Iorwerth",
+    "The Ulster Unionist Party" : "Douglas R. Beattie",
+    "SDLP" : "Colum Eastwood",
+    "The Traditional Unionist Voice" : "James H. Allister"
+    "The Speaker" : "Lindsay H. Hoyle"
+}
+
+
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
@@ -6983,6 +7020,81 @@ async function handleMutations(mutationsList, observer) {
 
 let singleObserver = new MutationObserver(handleMutations);
 singleObserver.observe(document.documentElement, { childList: true, subtree: true });
+
+
+campaignTrail_temp.multiple_endings=true
+endingPicker = (out, totv, aa, quickstats) => {
+
+distributeSeatsUK();
+
+function onGameWindowChangeCandidates() {
+    const resultsTableHolder = document.getElementById("overall_details_container");
+
+    if (!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
+        return;
+    }
+
+    resultsTableHolder.classList.add("done");
+
+    const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTable.children.length; i++) {
+        const row = resultsTable.children[i];
+        let name = row.firstChild.innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
+        }
+
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
+        } else {
+            row.children[1].innerHTML = vpTable[name];
+        }
+    }
+
+    const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTableHistorical.children.length; i++) {
+        const row = resultsTableHistorical.children[i];        
+        let name = row.childNodes[1].innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
+        }
+       
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
+        } else {
+            row.children[1].innerHTML = vpTableHistorical[name];
+        }
+    }
+
+    // Add CSS to increase row spacing
+    const styleElem = document.createElement('style');
+    styleElem.textContent = `
+        #overall_details_container table tr {
+            line-height: 1.5; /* Adjust line height as needed */
+        }
+    `;
+    document.head.appendChild(styleElem);
+}
+
+const gameWindowNode = document.getElementById("game_window");
+const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
+
+const candidateObserver = new MutationObserver(onGameWindowChangeCandidates);
+candidateObserver.observe(gameWindowNode, candidateWatcherConfig);
+
+function updateHistoricalData(newVpTable, newHexColors, newNames, newEvs, newPvs, newPvps) {
+    vpTableHistorical = newVpTable;
+    HistHexcolour = newHexColors;
+    HistName = newNames;
+    HistEV = newEvs;
+    HistPV = newPvs;
+    HistPVP = newPvps;
+}
+
 
 
 function getTooltips(str) {
