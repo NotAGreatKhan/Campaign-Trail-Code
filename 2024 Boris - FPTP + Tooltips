@@ -231,7 +231,6 @@ function onGameWindowChangeCandidates() {
     `;
     document.head.appendChild(styleElem);
 }
-}
 
 const gameWindowNode = document.getElementById("game_window");
 const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
@@ -248,6 +247,77 @@ function updateHistoricalData(newVpTable, newHexColors, newNames, newEvs, newPvs
     HistPVP = newPvps;
 }
 
+
+construct = (a = 1) => {
+      
+    e.page = e.page + a < e.pages.length ? e.page + a : 0
+    let html = e.header;
+    html += e.pages[e.page] + "<br>";
+    if (e.page > 0) {
+    
+    html += `<button onclick='endingConstructor(a = -1)'>Back</button>`
+    }
+    if (e.page < e.pages.length - 1) {
+    
+    html += `<button onclick='endingConstructor(a = 1)'>Next</button>`
+    }
+    for (i in e.executable) {
+      if (e.executable[i][0] == e.page) {
+          e.executable[i][1]();
+        
+      }
+      }
+
+    if (e.image == true)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0]
+      if (candImg) {
+        candImg.remove()
+        $("#final_results_description")[0].style = `
+          text-align:left;
+          width: 72%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          color: #000000
+        `
+      }
+    }, 10)
+    else if (e.image)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0];
+      if (candImg) {
+        candImg.src = e.image;
+      }		
+    }, 10)
+
+    const resultsDescriptionElement = document.getElementById('final_results_description');
+    if (resultsDescriptionElement) {
+        resultsDescriptionElement.scrollTop = 0;
+    }
+
+return html;
+}
+
+ endingConstructor = (a = 1) => {
+      $("#final_results_description")[0].innerHTML = construct(a);
+      }
+      
+      
+      e.multiple_endings = true;
+      
+      e.header = "<h1>Error</h1>";
+      e.pages = ["<p>This is an error handler. Contact u/No-Reading</p>"];
+      e.page = 0;
+      
+      endingPicker = (out, totv, aa, quickstats) => {
+
+      
+      e.pages = []
+      e.header = "";
+      e.executable = []
+}
+}
 
 
 function getTooltips(str) {
