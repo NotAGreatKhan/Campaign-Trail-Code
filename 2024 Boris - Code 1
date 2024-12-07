@@ -146,7 +146,7 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 2024,
             "display_year": "2024-Boris",
-            "summary": "<p>Following Theresa May’s resignation after disastrous attempts to pass Brexit legislation, Foreign Secretary Boris Johnson took over as Prime Minister with a promise to “Get Brexit Done.” He campaigned extensively on Brexit, leading a generation of working class families to defect from their traditional Labour roots and bring down the “Red Wall”.</p><p>After nearly a decade in power, many question whether the party responsible for dividing the country over Brexit will be able sustain another term in government. Nevertheless, Johnson’s substantial parliamentary majority in the recent election suggests strong public support, however, challenges remain.</p><p>Will Boris be able to “Get Brexit Done” while facing internal party divisions, political scandals, a global pandemic, and growing public skepticism towards the clown of Downing Street?</p>",
+            "summary": "Following Theresa May’s resignation after disastrous attempts to pass Brexit legislation, Foreign Secretary Boris Johnson took over as Prime Minister with a promise to “Get Brexit Done”. He campaigned extensively on Brexit, leading a generation of working class families to defect from their traditional Labour roots and bring down the “Red Wall”.<br><br>After nearly a decade in power, many question whether the party responsible for dividing the country over Brexit will be able sustain another term in government. Nevertheless, Johnson’s substantial parliamentary majority in the recent election suggests strong public support, however, challenges remain.<br><br>Will Boris be able to “Get Brexit Done” while facing internal party divisions, political scandals, a global pandemic, and growing public skepticism towards the clown of Downing Street?",
             "image_url": "https://ichef.bbci.co.uk/news/624/cpsprodpb/102AB/production/_109491266_0ecd89d2-e50b-4992-b975-58fa1c020423.jpg",
             "winning_electoral_vote_number": 326,
             "advisor_url": "https://imgur.com/NtlmIrr.jpg",
@@ -1157,8 +1157,8 @@ function modifyForm(){
     const h3 = form.querySelector('h3');
     const option = select.querySelector('option[value="1"]');
 
-    if (option && option.textContent !== 'Default: (First Past The Post)') {
-      option.textContent = 'Default: (First Past The Post)';
+    if (option && option.textContent !== 'Default (First Past The Post)') {
+      option.textContent = 'Default (First Past The Post)';
     }
     if (select && select.querySelector('option[value="2"]')) {
       const queryTwo = select.querySelector('option[value="2"]');
