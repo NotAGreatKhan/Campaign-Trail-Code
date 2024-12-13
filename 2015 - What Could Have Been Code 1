@@ -1,0 +1,618 @@
+function removeCandidateSummary() {
+try {
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
+  }
+} catch {}
+}
+window.setInterval(removeCandidateSummary,200)
+
+function updateCandidateForm() {
+  formobserver.disconnect();
+  const heading = document.querySelector("#candidate_form form h3");
+
+  if (heading) {
+    heading.textContent = "Please select your party:";
+  }
+  formobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+var formobserver = new MutationObserver(updateCandidateForm);
+formobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeRunningMateSummary() {
+try {
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+} catch {}
+}
+window.setInterval(removeCandidateSummary,200)
+
+function updateRunningMateForm() {
+  runformobserver.disconnect();
+  const heading = document.querySelector("#running_mate_form form h3");
+
+  if (heading) {
+    heading.textContent = "Please select your party leader:";
+  }
+  runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+var runformobserver = new MutationObserver(updateRunningMateForm);
+runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeCandidateSummary() {
+   sumobserver.disconnect();
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
+
+function removeRunningMateSummary() {
+   sumobserver.disconnect();
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
+
+function updateHeader() {
+  var gameHeader = document.getElementsByClassName("game_header")[0];
+
+  if (gameHeader.getAttribute("id") !== "modifiedHeader") {
+    gameHeader.innerHTML = corrr;
+    gameHeader.style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+    gameHeader.setAttribute("id", "modifiedHeader");
+  }
+}
+window.setInterval(removeRunningMateSummary,10)
+  
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningmateSummary = document.querySelector("#runningmate_summary");
+    if (runningmateSummary && runningmateSummary.children[0].children[2].innerHTML != runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
+        runningmateSummary.children[0].children[2].innerHTML = runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
+    }
+});
+var headerobserver = new MutationObserver(updateHeader);
+headerobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+RecReading=true
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2016,
+            "summary": "Britain is not the island it was at the dawn of the new millennium. The overarching consensus of centrism faced the gruelling slaughter in the Middle East, the reshaping of the world under the mildew of paranoia and terror. And when the greed of unchecked men behind the curtain finally unearthed havoc across the pond, and the Western world, financial calamity struck its dagger into the heart of the British people. Yet against all of the challenges of the 2000's, incumbent Prime Minister Gordon Brown limped his way to clinch a pyrrhic victory in the 2010 general election. Beating back the Tory wave at the shore.<br><br>The preacher's son is aged, battered, beaten — but not out of the fight. In his last battle to retain the great office of state he has clawed towards all of his political life, he must lead a disillusioned nation through the fallout of the economic crash, reforge his agenda in the iron crucible of social democracy, and wield that sword against the festering beasts of populism. For Labour. For Britain.",
+            "image_url": "https://imgur.com/tIScPq7.jpg",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "",
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">Articles</h4>FiveThirtyEight - <a href=\"http://projects.fivethirtyeight.com/2016-swing-the-election/\" target=\"_blank\"> What Would It Take To Turn Blue States Red?</a></br><a href=\"http://thehill.com/blogs/ballot-box/presidential-races/274317-anti-trump-forces-point-to-losing-match-ups-with-clinton\">Anti-Trump forces seize on grim polls for Clinton match-up</a></br><a href=\"http://www.slate.com/blogs/the_slatest/2016/02/24/donald_trump_could_beat_hillary_clinton_in_the_general.html\">Think Hillary Clinton Will Crush Donald Trump in the General Election? Don’t Be So Sure.</a></br><a href=\"http://www.slate.com/blogs/the_slatest/2016/03/01/hillary_clinton_plots_her_general_election_trump_strategy.html\">How Team Clinton Is Planning to Defeat Trump</a></br><a href=\"http://www.vox.com/2016/2/10/10961324/donald-trump-win-november\">Here's Donald Trump's Best Strategy for Winning the White House</a><h4>Books</h4>\nHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1476751471/amhius20-20\" target=\"_blank\">Hard Choices</a></br>\nHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0743222253/amhius20-20\" target=\"_blank\">Living History</a></br>\nDonald Trump - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1501137964/amhius20-20\" target=\"_blank\">Crippled America: How to Make America Great Again</a></br>\nDonald Trump - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0399594493/amhius20-20\" target=\"_blank\">The Art of the Deal</a></br>\nGary Johnson - <a href=\"http://www.amazon.com/exec/obidos/ASIN/B008PXW0C0/amhius20-20\" target=\"_blank\">Seven Principles of Good Government</a>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "2015"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 200,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Labour Party",
+            "election": 20,
+            "party": "Labour",
+            "state": "--",
+            "priority": 1,
+            "description": "<li><b>Name: The Labour Party</b></li><li><b>Role: Her Majesty's Most Loyal Government</b></li><li><b>Ideology: New Labour</b></li>Thirteen years. For thirteen years, the <b>Labour Party</b> has acted as the ultimate arbiter of the country's future in the trials by fire that the world, and all of its machinations, could pummel at its governance. Whilst Tony Blair smiled in front of the camera and articulated his optimistic ideals, It was Chancellor Brown that enacted the economic policy that steered the nation out of the fiscal cataclysm that ruptured the rest of the world. All of it though, came at a cost. What was once a blossoming friendship arm-in-arm, devolved into an all-consuming, steaming pandemonium in the cabinet that produced endless press speculation and hit-pieces in the media.<br><br>As the longest-serving chancellor in history puts his hands at the helm of the party, it now stands at a crossroads peering into the next decade. Will the Prime Minister act merely as a continuation of the public-private partnership under Blair? Or, will he captain the great ship back towards its Social Democratic – even socialist – roots? It is time now, for this party to take its place as the true, unfettered political institution of governance. To fight back the pernicious tide of populism and turmoil. To take their <b>rightful place</b> in the halls of Downing Street.",
+            "color_hex": "#bb3a3a",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 1,
+            "image_url": "https://imgur.com/zdsWj2Z.jpg",
+            "electoral_victory_message": "<h3>You win!</h3>",
+            "electoral_loss_message": "<h3>You lost!</h3>",
+            "no_electoral_majority_message": "<h3>Everyone wins?</h3>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 204,
+        "fields": {
+            "first_name": "J. Gordon",
+            "last_name": "Brown",
+            "election": 20,
+            "party": "Labour",
+            "state": "--",
+            "priority": 5,
+            "description": "'",
+            "color_hex": "#be5050",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://imgur.com/ViiDckw.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<li><b>Name: J. Gordon Brown</b></li><li><b>Role: Prime Minister of the United Kingdom</b></li><li><b>Constituency: Kirkcaldy and Cowdenbeath</b></li><b>James Gordon Brown</b>. The son of a preacher. A man whose greatest feats of public conduct can only be observed when his gravely voice bellows and preaches to the choir. Conducting his sermons on the virtues of the political thought of Social Democracy. On the shambolic sleaze and moral bankruptcy of the Tories. He embodies the faithful soul of Labour, the diminishing kindle of hope that the <i>progressive</i> centre is the only legitimate path forward for the safeguarding of the sea-fronted realm.<br><br>But even with this, it is obvious to anybody that his time is running thin.  As more of his hairs grey out, so does the attitude of the public to the leadership of New Labour. After enduring the denial of his true place in Downing Street for over a decade, the looming possibility of his 2008 bailout being the sole achievement of his government aches his soul. It is his last crusade. His final conquest against the foes to economic stability and social dynamism. If he feels at risk of losing this battle, he may have to surrender the ideological dreams of which he holds so dear. Whatever it takes. <b>To achieve what could have been</b>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50000,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Conservative Party",
+            "election": 20,
+            "party": "Conservative",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50001,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Liberal Democrats",
+            "election": 20,
+            "party": "Liberal Democrat",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ffc342",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50002,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Scotland National Party",
+            "election": 20,
+            "party": "SNP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ffe852",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50003,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Green Party",
+            "election": 20,
+            "party": "Green",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#7ddf53",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50004,
+        "fields": {
+            "first_name": "The",
+            "last_name": "UK Independence Party",
+            "election": 20,
+            "party": "UKIP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ae00ff",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50005,
+        "fields": {
+            "first_name": "",
+            "last_name": "Plaid Cymru",
+            "election": 20,
+            "party": "Plaid Cymru",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#358d3b",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50006,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Democratic Unionist Party",
+            "election": 20,
+            "party": "DUP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#e58552",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50007,
+        "fields": {
+            "first_name": "",
+            "last_name": "Sinn Féin",
+            "election": 20,
+            "party": "Sinn Féin",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#7aa474",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50008,
+        "fields": {
+            "first_name": "The",
+            "last_name": "SDLP",
+            "election": 20,
+            "party": "SDLP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#a5ff9e",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50009,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Ulster Unionist Party",
+            "election": 20,
+            "party": "UUP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#9fe2f9",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50010,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Independent Unionist Party",
+            "election": 20,
+            "party": "IUP",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ccf7ff",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50011,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Speaker",
+            "election": 20,
+            "party": "N/A",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#ededed",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 150,
+        "fields": {
+            "candidate": 200,
+            "running_mate": 204
+        }
+    }
+]
+
+campaignTrail_temp.credits = "u/No-Reading9991"
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 40,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            200,
+            50000,
+            50001,
+            50002,
+            50003,
+            50004,
+            50005,
+            50006,
+            50007,
+            50008,
+            50009,
+            50010,
+            50011
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            200,
+            50000,
+            50001,
+            50002,
+            50003,
+            50004,
+            50005,
+            50006,
+            50007,
+            50008,
+            50009,
+            50010,
+            50011
+        ]
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2016,
+        "is_premium": 0,
+        "display_year": "2015"
+    }
+]
+
+jet_data = {
+    "headerColor": "#a1364b",
+    "windowColor": "#4e504e",
+    "containerColor": "#000000",
+    "innerWindowColor": "#a06a74",
+    "bannerImageUrl": "https://imgur.com/cfUCoAB.png",
+    "backgroundImageUrl": "https://imgur.com/hPL1uOK.jpg",
+    "endingTextColor": "#000000",
+    "customQuote": "",
+    "gameTitle": "The Campaign Trail"
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>The Campaign Trail</h2>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#a1364b";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#4e504e";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#000000";
+
+document.getElementById("header").src = "https://imgur.com/cfUCoAB.png";
+
+document.body.background = "https://imgur.com/hPL1uOK.jpg";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#a06a74!important;}</style>";
+
+//#endcode
+
+// Difficulty Window
+function changeOpponentSelectionDescription() {
+  selectionObserver.disconnect();
+
+  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+  
+  if (opponentSelectionDescription) {
+    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p><p>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by <b>u/ItsAstronomics</b>, and created by <b>u/AeronauticBlueberry</b>.</p>`;
+  }
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!selectionObserver){
+  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+function modifyForm(){
+  modifiedFormobserver.disconnect();
+
+  const form = document.querySelector('form[name="game_type_selection"]');
+
+  if (form) {
+    const select = form.querySelector('select[name="game_type_id"]');
+    const h3 = form.querySelector('h3');
+    const option = select.querySelector('option[value="1"]');
+
+    if (option && option.textContent !== 'Default: First Past The Post') {
+      option.textContent = 'Default: First Past The Post';
+    }
+    if (select && select.querySelector('option[value="2"]')) {
+      const queryTwo = select.querySelector('option[value="2"]');
+      if (queryTwo) {
+        queryTwo.remove();
+      }
+    }
+    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
+      h3.textContent = 'How would you like the seats to be allocated?';
+    }
+  }
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!modifiedFormobserver){
+  var modifiedFormobserver = new MutationObserver(modifyForm);
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
