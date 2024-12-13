@@ -16,7 +16,7 @@ function updateCandidateForm() {
   const heading = document.querySelector("#candidate_form form h3");
 
   if (heading) {
-    heading.textContent = "Please select your party:";
+    heading.textContent = "Please confirm you are playing as the Labour Party:";
   }
   formobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
@@ -42,7 +42,7 @@ function updateRunningMateForm() {
   const heading = document.querySelector("#running_mate_form form h3");
 
   if (heading) {
-    heading.textContent = "Please select your party leader:";
+    heading.textContent = "And the Steady Hand of New Labour:";
   }
   runformobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
