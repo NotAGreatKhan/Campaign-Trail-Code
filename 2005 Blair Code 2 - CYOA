@@ -1,6 +1,7 @@
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
+var Cred = 1;
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
     if(ans == 12807){
@@ -85,6 +86,36 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 13508){
         campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
+    }
+    if(ans == 12793){
+      Cred += 1;
+    }
+    if(ans == 12802){
+      Cred += 1;
+    }
+    if(ans == 12814){
+      Cred += 1;
+    }
+    if(ans == 12815){
+      Cred += 1;
+    }
+    if(ans == 12827){
+      Cred += 1;
+    }
+    if(ans == 12834){
+      Cred -= 1;
+    }
+    if(ans == 12847){
+      Cred += 1;
+    }
+    if(ans == 13474){
+      Cred += 1;
+    }
+    if(ans == 13561){
+      Cred += 1;
+    }
+    if(ans == 13861){
+      Cred += 1;
     }
     if(ans == 12542){
       Resign += 1;
