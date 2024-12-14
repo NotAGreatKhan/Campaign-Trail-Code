@@ -397,36 +397,36 @@ else if (quickstats[0] >= 324 && quickstats[0]<340) {
 } 
 
 else if (quickstats[0] >= 340 && quickstats[0]<355) {     
-
+   add_slide(ending_image_dict["Modest_Majority"],slide_dict["Modest_Majority"], true, true);
 } 
 
 else if (quickstats[0] >= 355 && quickstats[0]<370) {
-
+   add_slide(ending_image_dict["Strong_Majority"],slide_dict["Strong_Majority"], true, true);
 } 
 
 else if (quickstats[0] >= 370 && quickstats[0]<400) {    
-
+   add_slide(ending_image_dict["Landslide_Likely"],slide_dict["Landslide_Likely"], true, true);
 } 
 
 else if (quickstats[0] >= 400 && quickstats[0]<500) {    
-
+   add_slide(ending_image_dict["Landslide!"],slide_dict["Landslide!"], true, true);
 } 
 
 else if (quickstats[0] >= 500) {  
-
+   add_slide(ending_image_dict["BIGSHOT_Win"],slide_dict["BIGSHOT_Win"], true, true);
 }
 
 else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
-
+   add_slide(ending_image_dict["Brown_Loss"],slide_dict["Brown_Loss"], true, true);
 }
 
 // Second Slides
 else if (campaignTrail_temp.player_answers.includes(12814) && campaignTrail_temp.player_answers.includes(12819)) {
-
+   add_slide(ending_image_dict["MONSTER"],slide_dict["MONSTER"], false, false);
 }
 
 else if (campaignTrail_temp.player_answers.includes(12814) && campaignTrail_temp.player_answers.includes(12820)) {
-
+   add_slide(ending_image_dict["DEMON"],slide_dict["DEMON"], false, false);
 }
 
 return construct(0);
