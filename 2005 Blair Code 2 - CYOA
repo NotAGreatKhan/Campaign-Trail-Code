@@ -295,6 +295,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    // France Path
     if(ans == 13554){
     campaignTrail_temp.questions_json[7] = {
     "model": "campaign_trail.question",
@@ -302,6 +303,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "[July, 2003] As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
+        "likelihood": 1
+      }
+    }
+  }
+    // Netherlands Path
+    if(ans == 13557){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 13866,
+    "fields": {
+        "priority": 0,
+        "description": "[July, 2003] With how many stuffy rooms and overhearing of Dutch phrases you have been put through, it’s tough to see how the Constitution could possibly fail with all of the mainstream parties supporting it. But back the “Yes” vote you must nonetheless. Once all of the heated chatter over how to convince the Dutch people subsides, they turn over to you for your input. Prime Minister Jan Peter Balkenende locks eyes with you. How will you sway and enlighten them, Tony?",
         "likelihood": 1
       }
     }
@@ -328,6 +341,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    // Failed France
     if(ans == 12797){
     campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
@@ -335,6 +349,42 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.",
+        "likelihood": 1
+      }
+    }
+  }
+    // Successful France
+    if(ans == 12797 && ans == 13619){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 13860,
+    "fields": {
+        "priority": 0,
+        "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Oui’ l'a emporté. C'est une grande victoire pour Chirac et Blair ”...<p></p>Your eyes light up at the glassy television screen. Eagerly calling up Alastair, you notify him of the good news. You know now is the time to write up a statement. The initiative is in your court.",
+        "likelihood": 1
+      }
+    }
+  }
+    // Failed Netherlands
+    if(ans == 13557){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 13888,
+    "fields": {
+        "priority": 0,
+        "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+        "likelihood": 1
+      }
+    }
+  }
+    // Successful Netherlands
+    if(ans == 13557 && ans == 13873){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 13894,
+    "fields": {
+        "priority": 0,
+        "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
         "likelihood": 1
       }
     }
@@ -429,7 +479,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     // Pass EU Constitution
-    if(ans == 12797){
+    if(ans == 12797 && ans == 13861){
     campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13839,
