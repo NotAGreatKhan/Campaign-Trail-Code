@@ -98,6 +98,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13508){
         campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
     }
+    if(ans == 12814 && ans == 12819){
+        Legacy_Slide = "MONSTER";
+    }
+    if(ans == 12814 && ans == 12820){
+        Legacy_Slide = "DEMON";
+    }
     if(ans == 12793){
       Cred += 1;
     }
@@ -12688,77 +12694,6 @@ singleObserver.observe(document.documentElement, { childList: true, subtree: tru
     
 
 campaignTrail_temp.multiple_endings=true
-endingPicker = (out, totv, aa, quickstats) => {
-
-distributeSeatsUK();
-
-function onGameWindowChangeCandidates() {
-    const resultsTableHolder = document.getElementById("overall_details_container");
-
-    if (!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
-        return;
-    }
-
-    resultsTableHolder.classList.add("done");
-
-    const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
-
-    for (let i = 0; i < resultsTable.children.length; i++) {
-        const row = resultsTable.children[i];
-        let name = row.firstChild.innerText;
-        row.insertCell(1);
-        if (name) {
-            name = name.replaceAll("-", "").trim();
-        }
-
-        if (i == 0) {
-            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
-        } else {
-            row.children[1].innerHTML = vpTable[name];
-        }
-    }
-
-    const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
-
-    for (let i = 0; i < resultsTableHistorical.children.length; i++) {
-        const row = resultsTableHistorical.children[i];
-        let name = row.childNodes[1].innerText;
-        row.insertCell(1);
-        if (name) {
-            name = name.replaceAll("-", "").trim();
-        }
-
-        if (i == 0) {
-            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
-        } else {
-            row.children[1].innerHTML = vpTableHistorical[name];
-        }
-    }
-
-    // Add CSS to increase row spacing
-    const styleElem = document.createElement('style');
-    styleElem.textContent = `
-        #overall_details_container table tr {
-            line-height: 1.5; /* Adjust line height as needed */
-        }
-    `;
-    document.head.appendChild(styleElem);
-}
-
-const gameWindowNode = document.getElementById("game_window");
-const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
-
-const candidateObserver = new MutationObserver(onGameWindowChangeCandidates);
-candidateObserver.observe(gameWindowNode, candidateWatcherConfig);
-
-function updateHistoricalData(newVpTable, newHexColors, newNames, newEvs, newPvs, newPvps) {
-    vpTableHistorical = newVpTable;
-    HistHexcolour = newHexColors;
-    HistName = newNames;
-    HistEV = newEvs;
-    HistPV = newPvs;
-    HistPVP = newPvps;
-}
 
 
 function setImage(url) {
@@ -12840,6 +12775,82 @@ ending_image_dict = {
 }
 
 
+endingPicker = (out, totv, aa, quickstats) => {
+
+distributeSeatsUK();
+
+function onGameWindowChangeCandidates() {
+    const resultsTableHolder = document.getElementById("overall_details_container");
+
+    if (!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
+        return;
+    }
+
+    resultsTableHolder.classList.add("done");
+
+    const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTable.children.length; i++) {
+        const row = resultsTable.children[i];
+        let name = row.firstChild.innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
+        }
+
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
+        } else {
+            row.children[1].innerHTML = vpTable[name];
+        }
+    }
+
+    const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTableHistorical.children.length; i++) {
+        const row = resultsTableHistorical.children[i];
+        let name = row.childNodes[1].innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
+        }
+
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
+        } else {
+            row.children[1].innerHTML = vpTableHistorical[name];
+        }
+    }
+
+    // Add CSS to increase row spacing
+    const styleElem = document.createElement('style');
+    styleElem.textContent = `
+        #overall_details_container table tr {
+            line-height: 1.5; /* Adjust line height as needed */
+        }
+    `;
+    document.head.appendChild(styleElem);
+ }
+
+const gameWindowNode = document.getElementById("game_window");
+const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
+
+const candidateObserver = new MutationObserver(onGameWindowChangeCandidates);
+candidateObserver.observe(gameWindowNode, candidateWatcherConfig);
+
+function updateHistoricalData(newVpTable, newHexColors, newNames, newEvs, newPvs, newPvps) {
+    vpTableHistorical = newVpTable;
+    HistHexcolour = newHexColors;
+    HistName = newNames;
+    HistEV = newEvs;
+    HistPV = newPvs;
+    HistPVP = newPvps;
+}
+
+
+
+
+
 // First Slides
 if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
    add_slide(ending_image_dict["Loss"],slide_dict["Loss"], true, true);
@@ -12878,15 +12889,16 @@ else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0] >= 3
 }
 
 // Second Slides
-else if (campaignTrail_temp.player_answers.includes(12814) && campaignTrail_temp.player_answers.includes(12819)) {
+if (Legacy_Slide == "MONSTER") {
    add_slide(ending_image_dict["MONSTER"],slide_dict["MONSTER"], false, false);
 }
 
-else if (campaignTrail_temp.player_answers.includes(12814) && campaignTrail_temp.player_answers.includes(12820)) {
+else if (Legacy_Slide == "DEMON") {
    add_slide(ending_image_dict["DEMON"],slide_dict["DEMON"], false, false);
 }
 
-return construct(0);
+setImage(slides[0][0]);
+return slides[0][1];
 }   
   
 
@@ -12950,4 +12962,4 @@ function applyTooltipsToObject(obj) {
     
 applyTooltipsToObject(campaignTrail_temp.questions_json);
 applyTooltipsToObject(campaignTrail_temp.answers_json);
-applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);   
+applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
