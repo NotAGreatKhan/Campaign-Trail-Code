@@ -87,6 +87,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13508){
         campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
     }
+    if(ans == 12814 && ans == 12819){
+        Legacy_Slide = "MONSTER";
+    }
+    if(ans == 12814 && ans == 12820){
+        Legacy_Slide = "DEMON";
+    }
     if(ans == 12793){
       Cred += 1;
     }
