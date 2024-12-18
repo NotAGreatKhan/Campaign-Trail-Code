@@ -19,6 +19,321 @@ campaignTrail_temp.questions_json = [
         "pk": 13904,
         "fields": {
             "priority": 0,
+            "description": "It is early September, 2001. You, Iain Duncan Smith, have just completed your campaign for the leadership of the Conservative Party called as a consequence of the lashing inflicted by the now-resigned William Hague. The votes are being tallied, the winner will be declared. But your anticipation is ripped away. Ripped away by the voice intoning on the television screen...<p></p>Destruction. Fire. And death. The World Trade Centre, a symbol of American prominence, is engulfed in it. The hope of the 90's has been gorily ripped out, and in its place an unfeeling mass paranoia. Shaken to your core, you prepare your statements as you come back to your political senses...",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13907,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13908,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13909,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13910,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13911,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13912,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13913,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13914,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13915,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13916,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13917,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13918,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13919,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13920,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13921,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13922,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13923,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13924,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13925,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13926,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13927,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13928,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13929,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13930,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13931,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13932,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13933,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13934,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13935,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13936,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13937,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13938,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13939,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13940,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13941,
+        "fields": {
+            "priority": 0,
             "description": "put description here",
             "likelihood": 1
         }
@@ -31,7 +346,23 @@ campaignTrail_temp.answers_json = [
         "pk": 13905,
         "fields": {
             "question": 13904,
-            "description": "put description here"
+            "description": "The Prime Minister has done a good job responding to the initial devastation of the attack, but he must do more. The American people need a strong ally they can count on, and I don't think Mr Blair will do enough to reaffirm this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13945,
+        "fields": {
+            "question": 13904,
+            "description": "To be quite honest, I doubt there is an awful lot I can do with the awful attacks that unfolded. I’ll simply emphasise our support for the people of New York, and America. We will always stand with them."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13950,
+        "fields": {
+            "question": 13904,
+            "description": "What we all just witnessed was absolutely horrible. A sick perversion of Islam in its worst form. But we must take care in how we proceed forward in the following months – even years. We cannot become consumed by fear and terror."
         }
     }
 ]
@@ -2971,9 +3302,121 @@ campaignTrail_temp.candidate_state_multiplier_json = [
     }
 ]
 
-campaignTrail_temp.answer_score_global_json = []
+campaignTrail_temp.answer_score_global_json = [
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13942,
+        "fields": {
+            "answer": 13905,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.8
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13943,
+        "fields": {
+            "answer": 13905,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13947,
+        "fields": {
+            "answer": 13945,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.9
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13948,
+        "fields": {
+            "answer": 13945,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13949,
+        "fields": {
+            "answer": 13945,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13954,
+        "fields": {
+            "answer": 13950,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.9
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13955,
+        "fields": {
+            "answer": 13950,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13956,
+        "fields": {
+            "answer": 13950,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.015
+        }
+    }
+]
 
-campaignTrail_temp.answer_score_issue_json = []
+campaignTrail_temp.answer_score_issue_json = [
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13944,
+        "fields": {
+            "answer": 13905,
+            "issue": 30,
+            "issue_score": -0.55,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13952,
+        "fields": {
+            "answer": 13945,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13953,
+        "fields": {
+            "answer": 13950,
+            "issue": "27",
+            "issue_score": 0.71,
+            "issue_importance": 1
+        }
+    }
+]
 
 campaignTrail_temp.answer_score_state_json = []
 
@@ -2984,7 +3427,25 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13905,
             "candidate": 12565,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "In a press conference in the proceeding days, Tony Blair quickly makes his close and unequivocal allegiance with the United States known, surprising even many Tories in your ranks, nullifying your attack. With everyone rallying around the flag, Blair sees an unprecedented rise in enthusiasm as the world is consumed in the threat of terror."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13946,
+        "fields": {
+            "answer": 13945,
+            "candidate": 12565,
+            "answer_feedback": "Blair’s popularity soars to heights inconceivable just a few months before. At the recalling of Parliament into session, a solemn unity washes over the MPs, with yourself presenting a quiet and conciliatory message to your colleagues. The people are rallying around the flag, but the world is treading into uncharted waters. Anything may unfold…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13951,
+        "fields": {
+            "answer": 13950,
+            "candidate": 12543,
+            "answer_feedback": "This sort of message is anathema, and recoils most of the public, along with the parliamentary Conservatives within your ranks. You come across yet another issue as out of touch immediately after a traumatising event. This will further exacerbate Tony Blair’s skyrocket in the polls, the people are scared, paranoid, and he offers strength when needed most."
         }
     }
 ]
@@ -3074,57 +3535,8 @@ campaignTrail_temp.jet_data = [{
     "cyoa_enabled": true,
     "cyoa_data": {},
     "nicknames": {
-        "12565": "Conservative Party",
         "12543": "Labour Party",
-        "12587": "Liberal Democrats",
-        "12609": "Scotland National Party",
-        "12631": "Green Party",
-        "12649": "UK Independence Party",
-        "12667": "Independents/Others",
-        "12685": "Democratic Unionist Party",
-        "12703": "Sinn Féin",
-        "12721": "Plaid Cymru",
-        "12739": "Ulster Unionist Party",
-        "12757": "SDLP",
-        "12775": "Speaker"
-    },
-    "endings_enabled": false,
-    "ending_data": {
-        "1727017683034": {
-            "id": 1727017683034,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "",
-            "endingText": "<h3>Put ending text here, you can and should use</h3><p>HTML tags</p>!",
-            "amount": "324"
-        }
-    }
-}
-
-
-campaignTrail_temp.jet_data = [{
-    "banner_enabled": true,
-    "banner_data": {
-        "canName": "Conservatives",
-        "canImage": "https://imgur.com/dZO9w4T.jpg",
-        "runName": "Duncan Smith",
-        "runImage": "https://imgur.com/45BzG5y.jpg"
-    },
-    "mapping_enabled": true,
-    "mapping_data": {
-        "mapSvg": "",
-        "x": "885",
-        "y": "863",
-        "dx": "-450",
-        "dy": "142",
-        "electionPk": "12"
-    },
-    "cyoa_enabled": true,
-    "cyoa_data": {},
-    "nicknames": {
         "12565": "Conservative Party",
-        "12543": "Labour Party",
         "12587": "Liberal Democrats",
         "12609": "Scotland National Party",
         "12631": "Green Party",
