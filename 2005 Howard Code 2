@@ -3025,6 +3025,9 @@ vpTable = {
 
 document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
 
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#445da2";
+
+
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
