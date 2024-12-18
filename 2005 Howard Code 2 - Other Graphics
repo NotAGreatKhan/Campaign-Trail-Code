@@ -26,7 +26,7 @@ vpTable = {
 }
 
 
-document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
+document.getElementById("header").src = "https://imgur.com/PpBHLAi.jpg";
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#445da2";
 
@@ -38,10 +38,10 @@ style_overwrite.innerHTML =
   border-color: #243460;
 }
 .inner_window_question h3 {
-background-color: #c7d9ff;
+background-color: #e2ebfd;
 }
 .overlay_window h3 {
-background-color: #c7d9ff;
+background-color: #e2ebfd;
 }`
 ;
 document.head.appendChild(style_overwrite);
