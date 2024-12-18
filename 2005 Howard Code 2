@@ -3101,11 +3101,6 @@ campaignTrail_temp.jet_data = [{
         }
     }
 }
-]
-");
-}
-`;
-document.head.append(style);
 
 
 campaignTrail_temp.jet_data = [{
