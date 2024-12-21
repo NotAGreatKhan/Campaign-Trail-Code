@@ -117,7 +117,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13861){
       Cred += 1;
     }
-    if(ans == 12542){
+    if(ans == 13900){
       Resign += 1;
     }
     if(ans == 12798){
