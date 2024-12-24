@@ -580,7 +580,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12797 && Cred < 4){
     campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
-    "pk": 13987,
+    "pk": 14005,
     "fields": {
         "priority": 0,
         "description": "[April 27, 2005] The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. How are you going to fight back against these blasphemous charges?",
