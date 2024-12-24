@@ -225,7 +225,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12825){
+    if(ans == 12825 || ans == 12797){
     campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
     "pk": 13473,
