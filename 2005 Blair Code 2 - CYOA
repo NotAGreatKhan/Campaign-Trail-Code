@@ -521,4 +521,60 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    // Kenneth Clarke
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 13919,
+    "fields": {
+        "priority": 0,
+        "description": "The fall of Iain Duncan Smith has given way for the Europhilic wing of the party to finally, and once again, reassert itself. If only after a fierce and haste contest. Across Kenneth Clarke’s campaign for Number 10, he lambasts your failures to push forth with the European agenda. The public’s sentiment is in favour of him. Polls released on his integrity show he holds a marginal, yet very real, lead over you. You need to bring his numbers down to Earth. The question is, how?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 13945,
+    "fields": {
+        "priority": 0,
+        "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 13970,
+    "fields": {
+        "priority": 0,
+        "description": "The political centre of the country has rarely been more hotly contested in the marginal seats of Britain, than in this campaign. With your initiative to forge a new future with Europe from the beginning – and its subsequent backfiring – your main opponent has taken every opportunity to expose your diplomatic struggles across the pond and to the continent across the channel. His message is resonating with much of Middle Britain. You need to get them back.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 13987,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 13987,
+    "fields": {
+        "priority": 0,
+        "description": "[April 27, 2005] The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. How are you going to fight back against these blasphemous charges?",
+        "likelihood": 1
+      }
+    }
+  }
 }
