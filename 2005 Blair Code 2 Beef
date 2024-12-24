@@ -532,6 +532,62 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    // Kenneth Clarke
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 13919,
+    "fields": {
+        "priority": 0,
+        "description": "The fall of Iain Duncan Smith has given way for the Europhilic wing of the party to finally, and once again, reassert itself. If only after a fierce and haste contest. Across Kenneth Clarke’s campaign for Number 10, he lambasts your failures to push forth with the European agenda. The public’s sentiment is in favour of him. Polls released on his integrity show he holds a marginal, yet very real, lead over you. You need to bring his numbers down to Earth. The question is, how?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 13945,
+    "fields": {
+        "priority": 0,
+        "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 13970,
+    "fields": {
+        "priority": 0,
+        "description": "The political centre of the country has rarely been more hotly contested in the marginal seats of Britain, than in this campaign. With your initiative to forge a new future with Europe from the beginning – and its subsequent backfiring – your main opponent has taken every opportunity to expose your diplomatic struggles across the pond and to the continent across the channel. His message is resonating with much of Middle Britain. You need to get them back.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 13987,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && Cred < 4){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 13987,
+    "fields": {
+        "priority": 0,
+        "description": "[April 27, 2005] The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. How are you going to fight back against these blasphemous charges?",
+        "likelihood": 1
+      }
+    }
+  }
 }
 
 
@@ -821,285 +877,6 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "[May 4, 2005] This campaign. This campaign has leached out every fibre of your being, and ardently extracting every electric current of your conscience. Finally though, election day is tomorrow. Where would you like to concentrate the last stops of your stumping before your eyes set upon that voluminous red screen at the Labour Party Headquarters?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13391,
-        "fields": {
-            "priority": 0,
-            "description": "[July 9, 2003] You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13410,
-        "fields": {
-            "priority": 0,
-            "description": "[January 28, 2004] The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13417,
-        "fields": {
-            "priority": 0,
-            "description": "[March 18, 2003] Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13427,
-        "fields": {
-            "priority": 0,
-            "description": "[May 4, 2005] From the day that you came into office, you pledged to the British people that you would not get in the mud and slander your opponents. This campaign though, you have — in the eyes of the public — thrown that right out of the window and into the political fire. With the unusually personal vitriol of this year’s election season being lobbed around by both sides, the Liberal Democrats have seen unprecedented rises in the polls, as your personal favourability sags alongside the foreboding polarisation. What will you do to ensure this doesn’t mean your defeat – calamity even more so– tomorrow evening?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13443,
-        "fields": {
-            "priority": 0,
-            "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13458,
-        "fields": {
-            "priority": 0,
-            "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13473,
-        "fields": {
-            "priority": 0,
-            "description": "[January 27, 2004] Before 1998, going to university was completely free, with education being seen as a fundamental right. That year, your government then introduced up-front fees for students every year they studied. With these payments no longer being enough, your government is now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Although it is feasible to pass this legislation, it is nevertheless deeply controversial and could risk failing the vote on the second reading. How will you ensure that it passes?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13494,
-        "fields": {
-            "priority": 0,
-            "description": "[January, 2004] The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13499,
-        "fields": {
-            "priority": 0,
-            "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13500,
-        "fields": {
-            "priority": 0,
-            "description": "[February, 2005] The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13501,
-        "fields": {
-            "priority": 0,
-            "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13553,
-        "fields": {
-            "priority": 0,
-            "description": "You furrow your brow as your eyes glaze and bore into the reports on polling for the upcoming deliberations on a grand initiative. The great European project. Over the next following years, the elite and fellow centrist political class of the continent, will make the case for a piece of legislation to be ratified known as the European Constitution. If all constituent members vote in favour via a series of referendums, then a legally codified, free-trade union of the continent is all but assured.<p></p>Before you though stand two significant obstacles that could sink this: the French, and the Dutch. You only have the influence to target one of them. So, Tony, which one will it be?\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13560,
-        "fields": {
-            "priority": 0,
-            "description": "[March 18, 2003] Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13596,
-        "fields": {
-            "priority": 0,
-            "description": "Continuing with the subject of the Liberal Democrats, your adamant support of the United States’ geopolitical thrust towards Baghdad has led to some core Labour rank-and-file defecting into the arms of Charles Kennedy’s party. One positive silver lining is that the electoral exodus is not as large as was originally suspected, likely as a result of your reluctance to deploy troops as part of the invasion. How will you approach this development?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13614,
-        "fields": {
-            "priority": 0,
-            "description": "[July, 2003] As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13621,
-        "fields": {
-            "priority": 0,
-            "description": "[June 11, 2004] Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. Overall, you lose 298 councillors and 3 councils, while the Conservatives make a net gain of 8 councils and 167 councillors. The Liberal Democrats do hold you to the line in Newcastle and Leeds though. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13647,
-        "fields": {
-            "priority": 0,
-            "description": "[June 14, 2004] Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13657,
-        "fields": {
-            "priority": 0,
-            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13663,
-        "fields": {
-            "priority": 0,
-            "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13689,
-        "fields": {
-            "priority": 0,
-            "description": "[April, 2005] Much to the chagrin of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13714,
-        "fields": {
-            "priority": 0,
-            "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13729,
-        "fields": {
-            "priority": 0,
-            "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13750,
-        "fields": {
-            "priority": 0,
-            "description": "[April 22, 2005] The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13776,
-        "fields": {
-            "priority": 0,
-            "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13794,
-        "fields": {
-            "priority": 0,
-            "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13820,
-        "fields": {
-            "priority": 0,
-            "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13839,
-        "fields": {
-            "priority": 0,
-            "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13860,
-        "fields": {
-            "priority": 0,
-            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Oui’ l'a emporté. C'est une grande victoire pour Chirac et Blair ”...<p></p>Your eyes light up at the glassy television screen. Eagerly calling up Alastair, you notify him of the good news. You know now is the time to write up a statement. The initiative is in your court.\n",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13866,
-        "fields": {
-            "priority": 0,
-            "description": "[July, 2003] With how many stuffy rooms and overhearing of Dutch phrases you have been put through, it’s tough to see how the Constitution could possibly fail with all of the mainstream parties supporting it. But back the “Yes” vote you must nonetheless. Once all of the heated chatter over how to convince the Dutch people subsides, they turn over to you for your input. Prime Minister Jan Peter Balkenende locks eyes with you. How will you sway and enlighten them, Tony?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13888,
-        "fields": {
-            "priority": 0,
-            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13894,
-        "fields": {
-            "priority": 0,
-            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
             "likelihood": 1
         }
     }
@@ -2536,6 +2313,150 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 13410,
             "description": "We cannot allow this to consume the debate. The Tories are deliberately using this to mask their incompetence on everyday issues. They are so out of touch, that they think a war 3,000 miles away will impact Brits more than the deficit a Tory rule will cause."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13920,
+        "fields": {
+            "question": 13919,
+            "description": "Mr Clarke is not a nasty Tory, but he is not exactly a completely clean one. We need to dredge up his active role in BAT. His lobbying tactics, his deliberate worsening of public health, all of it. He is not fit for office. We can’t hold back on this, let it all loose."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13926,
+        "fields": {
+            "question": 13919,
+            "description": "Tie him to the last time the Conservatives were in government. His support of John Major and his policies, his insistence on it during his time as Chancellor. He is still a byproduct of those hard times, and we won’t let the public forget it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13932,
+        "fields": {
+            "question": 13919,
+            "description": "His sympathetic views to Europe are certainly commendable on their own, but I really do wonder how that would fly with the rest of his party membership. There is a small wound in the party’s coalition, we need to rip it wide open. If he still wishes to be so outspoken with his views, let him reap the consequences."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13940,
+        "fields": {
+            "question": 13919,
+            "description": "The British people seem to be quite fond of Gordon. Let’s bring him out more prominently in advertising, campaign stumping, and the like. He has been – regardless of what’s been going on behind closed doors – a great Chancellor. It would be good to acknowledge that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13946,
+        "fields": {
+            "question": 13945,
+            "description": "I’ll strike an authoritative, yet responsive tone. We cannot afford to get bogged down on controversial issues, but we can’t let ourselves be defined on the narrative of this. We have to take the narrative of our European agenda back in our control."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13951,
+        "fields": {
+            "question": 13945,
+            "description": "I’ll try a more conciliatory, even compassionate, tone for the interview. Especially in light of our declining goodwill as a party. Maybe it could provide a good counter to Paxman’s combative tone. Our decisions seem to hurt for a lot of people, and we should acknowledge that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13957,
+        "fields": {
+            "question": 13945,
+            "description": "Going into this, I’ll gun for a powerful, aggressive tone. Paxman won’t let it easy on me, we know that. So, we have to match his fire, so to speak. We have headed over the most successful government in modern times, and we must push that case."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13961,
+        "fields": {
+            "question": 13945,
+            "description": "You know what, I believe it is best if we do not attend this. My popularity is starting to slip somewhat, and we need to maintain our advantage in the polls."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13971,
+        "fields": {
+            "question": 13970,
+            "description": "Now I’m fully aware that this isn’t exactly the most clean cut way of campaigning, but we need to divide and conquer here. It’s obvious to anyone with good sense that he has not brought his party with him. Don’t let up with this, keep putting pressure on him to fully go on one side or the other."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13972,
+        "fields": {
+            "question": 13970,
+            "description": "The Leader of the Opposition behaves as if America wants to suddenly go to war with us over a conflict that is thousands of miles away. But we have not abandoned them, far from it. Instead, we have strengthened relationships with our friends across the continent. I’m rather surprised he isn’t welcoming this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13988,
+        "fields": {
+            "question": 13987,
+            "description": "Let’s do it. I’d also, however, like to have Charles Kennedy on the stage with us tonight. We need to regain ground with our decisions on tuition fees, and stunt the Liberal Democrat’s surge in polling."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13992,
+        "fields": {
+            "question": 13987,
+            "description": "I would be up for the idea, yes. However, I shall agree to a debate only with the involvement of Clarke. Kennedy has no shot at becoming Prime Minister, so it feels rather redundant to include him. I’ll make sure to call him out on his recent… involvements with corporations. Mr Clarke: What can you say about your involvement with BAT?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13996,
+        "fields": {
+            "question": 13987,
+            "description": "I would be up for the idea, yes. However, I shall agree to a debate only with the involvement of Clarke. Kennedy has no shot at becoming Prime Minister, so it feels rather redundant to include him. And we need to drag down his image. I’ll throw all of his history at him. His time as chancellor, the Poll Tax, all of it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14000,
+        "fields": {
+            "question": 13987,
+            "description": "I have countlessly debated the two party leaders in Parliament. I see no reason to do this, not to mention the voters that I speak with on many occasions."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14006,
+        "fields": {
+            "question": 14005,
+            "description": "I personally have little care for these attempts at personal abuse. On the other hand, their, frankly, extreme policies on education would undo the monumental progress we have made for the students of this country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14013,
+        "fields": {
+            "question": 14005,
+            "description": "There is no lure I feel towards these personalised attacks, let us not forget the hidden agenda on the NHS they are trying to distract us from, the opposition cannot be trusted with the Health Service."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14018,
+        "fields": {
+            "question": 14005,
+            "description": "If Mr Ken Clarke wishes to attack me personally, I struggle to imagine how that holds up to his mud-slinging on our nation's renewed standing in the world. Their campaign has been negative, negative, and negative, because he has done nothing but provided weakness in opposing our government."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14025,
+        "fields": {
+            "question": 14005,
+            "description": "Let the Tories keep up their personal attacks on me, I will keep setting out the policy choices that matter to the British people. We will not allow this mud-slinging to sink the whole campaign down, and we know that they have given up on trying to beat us on the issues."
         }
     }
 ]
@@ -5553,7 +5474,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12807,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.25
+            "global_multiplier": -0.05
         }
     },
     {
@@ -5563,7 +5484,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12808,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.375
+            "global_multiplier": -0.175
         }
     },
     {
@@ -5793,7 +5714,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12834,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.15
+            "global_multiplier": -0.05
         }
     },
     {
@@ -8523,7 +8444,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3493,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": -0.25
+            "global_multiplier": -0.3
         }
     },
     {
@@ -8924,6 +8845,446 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12565,
             "global_multiplier": -0.015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13922,
+        "fields": {
+            "answer": 13920,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.15
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13928,
+        "fields": {
+            "answer": 13926,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13934,
+        "fields": {
+            "answer": 13932,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13935,
+        "fields": {
+            "answer": 13932,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13936,
+        "fields": {
+            "answer": 13932,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13942,
+        "fields": {
+            "answer": 13940,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13943,
+        "fields": {
+            "answer": 13940,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13944,
+        "fields": {
+            "answer": 13940,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13948,
+        "fields": {
+            "answer": 13946,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13949,
+        "fields": {
+            "answer": 13946,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13953,
+        "fields": {
+            "answer": 13951,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13954,
+        "fields": {
+            "answer": 13951,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13955,
+        "fields": {
+            "answer": 13951,
+            "candidate": 12587,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13959,
+        "fields": {
+            "answer": 13957,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13960,
+        "fields": {
+            "answer": 13957,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13963,
+        "fields": {
+            "answer": 13961,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13964,
+        "fields": {
+            "answer": 13961,
+            "candidate": 12565,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13965,
+        "fields": {
+            "answer": 13961,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13975,
+        "fields": {
+            "answer": 13971,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13976,
+        "fields": {
+            "answer": 13971,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13977,
+        "fields": {
+            "answer": 13971,
+            "candidate": 12587,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13978,
+        "fields": {
+            "answer": 13971,
+            "candidate": 12565,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13983,
+        "fields": {
+            "answer": 13972,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13984,
+        "fields": {
+            "answer": 13972,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13985,
+        "fields": {
+            "answer": 13972,
+            "candidate": 12587,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13986,
+        "fields": {
+            "answer": 13972,
+            "candidate": 12565,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13990,
+        "fields": {
+            "answer": 13988,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13991,
+        "fields": {
+            "answer": 13988,
+            "candidate": 12587,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13994,
+        "fields": {
+            "answer": 13992,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13995,
+        "fields": {
+            "answer": 13992,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.035
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13998,
+        "fields": {
+            "answer": 13996,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13999,
+        "fields": {
+            "answer": 13996,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14002,
+        "fields": {
+            "answer": 14000,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14003,
+        "fields": {
+            "answer": 14000,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14004,
+        "fields": {
+            "answer": 13988,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14008,
+        "fields": {
+            "answer": 14006,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14009,
+        "fields": {
+            "answer": 14006,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14015,
+        "fields": {
+            "answer": 14013,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14016,
+        "fields": {
+            "answer": 14013,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14020,
+        "fields": {
+            "answer": 14018,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14021,
+        "fields": {
+            "answer": 14018,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14022,
+        "fields": {
+            "answer": 14018,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14027,
+        "fields": {
+            "answer": 14025,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14028,
+        "fields": {
+            "answer": 14025,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.025
         }
     }
 ]
@@ -10617,6 +10978,276 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 30,
             "issue_score": 0.65,
             "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13923,
+        "fields": {
+            "answer": 13920,
+            "issue": 27,
+            "issue_score": 0.65,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13924,
+        "fields": {
+            "answer": 13920,
+            "issue": 30,
+            "issue_score": 0.65,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13925,
+        "fields": {
+            "answer": 13920,
+            "issue": 28,
+            "issue_score": 0.65,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13929,
+        "fields": {
+            "answer": 13926,
+            "issue": 27,
+            "issue_score": 0.31,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13930,
+        "fields": {
+            "answer": 13926,
+            "issue": 28,
+            "issue_score": 0.31,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13931,
+        "fields": {
+            "answer": 13926,
+            "issue": 30,
+            "issue_score": 0.31,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13937,
+        "fields": {
+            "answer": 13932,
+            "issue": 27,
+            "issue_score": 0.55,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13938,
+        "fields": {
+            "answer": 13932,
+            "issue": 28,
+            "issue_score": 0.55,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13939,
+        "fields": {
+            "answer": 13932,
+            "issue": 29,
+            "issue_score": 0.55,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13950,
+        "fields": {
+            "answer": 13946,
+            "issue": 31,
+            "issue_score": 0.71,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13956,
+        "fields": {
+            "answer": 13951,
+            "issue": 28,
+            "issue_score": 0.31,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13966,
+        "fields": {
+            "answer": 13957,
+            "issue": "27",
+            "issue_score": 0.71,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13967,
+        "fields": {
+            "answer": 13957,
+            "issue": 28,
+            "issue_score": 0.71,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13968,
+        "fields": {
+            "answer": 13961,
+            "issue": "27",
+            "issue_score": 0.7,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13969,
+        "fields": {
+            "answer": 13961,
+            "issue": 28,
+            "issue_score": 0.7,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13979,
+        "fields": {
+            "answer": 13971,
+            "issue": "27",
+            "issue_score": 0.31,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13980,
+        "fields": {
+            "answer": 13971,
+            "issue": 28,
+            "issue_score": 0.31,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13981,
+        "fields": {
+            "answer": 13972,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 13982,
+        "fields": {
+            "answer": 13972,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14010,
+        "fields": {
+            "answer": 14006,
+            "issue": 27,
+            "issue_score": 0.15,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14011,
+        "fields": {
+            "answer": 14006,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14012,
+        "fields": {
+            "answer": 14006,
+            "issue": 31,
+            "issue_score": 0.6,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14017,
+        "fields": {
+            "answer": 14013,
+            "issue": 28,
+            "issue_score": 0.4,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14023,
+        "fields": {
+            "answer": 14018,
+            "issue": 29,
+            "issue_score": 0.3,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14024,
+        "fields": {
+            "answer": 14018,
+            "issue": 31,
+            "issue_score": 0.7,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14029,
+        "fields": {
+            "answer": 14025,
+            "issue": 27,
+            "issue_score": 0.25,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14030,
+        "fields": {
+            "answer": 14025,
+            "issue": 31,
+            "issue_score": 0.7,
+            "issue_importance": 2
         }
     }
 ]
@@ -12753,6 +13384,168 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 13904,
             "candidate": 12543,
             "answer_feedback": "An unexpected swing right out of the gate. So called “Stealth taxes” had been suspected for some time, but its pouncing has not gone over well. Tory Leader Ian Duncan Smith criticises the move as “cruelly strangling ordinary families”. The NHS funding requirement is being met, but was this really the best way to do it?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13921,
+        "fields": {
+            "answer": 13920,
+            "candidate": 12543,
+            "answer_feedback": "Editorials in <i>The Guardian</i> waste no time in recommending he should be “behind bars” for his role in British American Tobacco. Clarke evidently struggles to respond, giving little more than feign defences of the organisation and deflecting to your failure on the EU Constitution. His poll ratings do begin to bear a noticeable drag, though."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13927,
+        "fields": {
+            "answer": 13926,
+            "candidate": 12543,
+            "answer_feedback": "Clarke himself described Major as “Thatcherism with a human face”. At first these attacks seem to work, but his centre-right ideology and sympathies the people hold with him, means that these lines barely dent his narrative. This, all things considered, was not the ideal way to go."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13933,
+        "fields": {
+            "answer": 13932,
+            "candidate": 12543,
+            "answer_feedback": "You certainly are not wrong, in fact Clarke only won the membership vote very narrowly against a more Eurosceptic Howard due to his centrism. It does become clear though, that the party is not just going to entirely bolt from ship. His claims to “handle the issue with cooperation and tact”, are scrupulously holding them together at this moment."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13941,
+        "fields": {
+            "answer": 13940,
+            "candidate": 12543,
+            "answer_feedback": "Whilst on a campaign stop in the bus of its driver, Brown jokes about “not being given the keys to drive” despite being in the driver’s seat. It does irk you in your mind, but it is not as if you can just shelve him away. He’s done his job, you’ve been doing yours. You just can’t shake the feeling that he wouldn’t be a continuation of yourself in Number 10…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13947,
+        "fields": {
+            "answer": 13946,
+            "candidate": 12543,
+            "answer_feedback": "Overall, the interview went fairly well. Granted, there were some tense moments with Paxman, especially over your foreign policy. Meanwhile, Kenneth Clarke’s interview with Paxman was a bit more tense, especially over his differences in policy and past government jobs."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13952,
+        "fields": {
+            "answer": 13951,
+            "candidate": 12543,
+            "answer_feedback": "The interview could be best summarised as two conflicting personas unfolding on screen. You appeared less cold when confronted on policies, but Paxman seemed to really needle you on issue. All in all, broadly quite similar to how Clarke performed with Paxman two days later."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13958,
+        "fields": {
+            "answer": 13957,
+            "candidate": 12543,
+            "answer_feedback": "[PAXMAN] “So what you’re saying is-” [BLAIR] “Now hold o-, hold on, that is absolutely not-” …This went on for about 5 minutes at a time. Compared to how calm and collected Clarke seemed though, it did not present the best look for your capacity as a leader."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13962,
+        "fields": {
+            "answer": 13961,
+            "candidate": 12543,
+            "answer_feedback": "This is a complete subversion of the “masochism strategy” we have developed. During Clarke’s interview, he expresses his potent disappointment with your decision as “Another concerning case of a PM too scared and worried to face the consequences of his own failings head on”, his line makes a sizeable dent in your polling the succeeding days."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13973,
+        "fields": {
+            "answer": 13971,
+            "candidate": 12543,
+            "answer_feedback": "“My views on this subject are clear to anyone who has heard me talk about it ever since the 80’s. But I represent my party, and we will handle it with all sides in mind, while still maintaining a productive relationship with them [Europe]”. He’s not quite taking the bait, but more right-wing Tory members are now starting to really have second thoughts."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13974,
+        "fields": {
+            "answer": 13972,
+            "candidate": 12543,
+            "answer_feedback": "It’s certainly true that you haven’t cast the Bush administration completely under the bus, and the American government is still on manageable terms. In spite of this though, it plays right into Clarke’s hand to burnish his pro-American credentials, soothing over angsty members of his party with his thrusts of attacks that you “left America on the phone”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13989,
+        "fields": {
+            "answer": 13988,
+            "candidate": 12543,
+            "answer_feedback": "You held your ground well, all things considered. In fact, so did Kennedy and Clarke. The three of you trade blows, but no definite winner is decided. Pundits from Marr, to Dimbleby, declare it a virtual draw. But by platforming Kennedy alongside you on national TV, you have by default given him a boost."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13993,
+        "fields": {
+            "answer": 13992,
+            "candidate": 12543,
+            "answer_feedback": "Fair point, it’s not as if Kennedy will be able to massively capitalise if you don’t include him. At the bright lights of the ITV stage, you repeatedly ask him to defend himself on his Tobacco management. Yet he keeps insisting that he didn’t violate any rules, and deflects to your “deceptions to the public”. Despite that, he looked off."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13997,
+        "fields": {
+            "answer": 13996,
+            "candidate": 12543,
+            "answer_feedback": "Fair point, it’s not as if Kennedy will be able to massively capitalise if you don’t include him. Underneath the breaching lights of the ITV stage, you and Clarke trade blows, but none of yours seem to land on him. Attack after attack, he responds with your own apparent “failures” on domestic and foreign policy. He got the upper hand on you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14001,
+        "fields": {
+            "answer": 14000,
+            "candidate": 12543,
+            "answer_feedback": "The electorate is disappointed. But it hopefully shouldn’t impact you too horrendously, well apart from feeding Clarke’s narrative of you being a “hiding PM”. Although, it would be worth the risk to prove yourself in the ring, no?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14007,
+        "fields": {
+            "answer": 14006,
+            "candidate": 12543,
+            "answer_feedback": "Tackling their stances and highlighting the distinct lack of civility is a useful parry. It doesn’t fully account for their claim on the stealth taxes though, or the EU Constitution. With education, your party is not as strong on this issue as is ideal, so tread carefully with that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14014,
+        "fields": {
+            "answer": 14013,
+            "candidate": 12543,
+            "answer_feedback": "Ah the NHS, always a staunch defender of it, your party is. Labour has been consistently more trusted on healthcare than the Conservatives have ever been, it also shores up the justification for your stealth taxes. Just keep in mind though that against the more ideological centrist Clarke, this attack won’t quite have the same potency it otherwise might have."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14019,
+        "fields": {
+            "answer": 14018,
+            "candidate": 12543,
+            "answer_feedback": "Getting in the mud-slinging yourself is probably not ideal here. Clarke’s attacks do actually hold some weight, and your favourability ratings aren’t exactly sky-high anymore. Don’t just cat-fight your way out and hope for the best. Especially since your opponent has for the most part stayed out of the gutter."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14026,
+        "fields": {
+            "answer": 14025,
+            "candidate": 12543,
+            "answer_feedback": "But why do they matter to the British people, or – more precisely – why are they better for them? Dismissing your opponent in this manner appears out of touch, especially in light of his relatively out-of-the-gutter campaign."
         }
     }
 ]
