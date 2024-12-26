@@ -13895,6 +13895,7 @@ singleObserver.observe(document.documentElement, { childList: true, subtree: tru
     
 
 campaignTrail_temp.multiple_endings=true
+endingPicker = (out, totv, aa, quickstats) => {
 
 distributeSeatsUK();
 
@@ -14037,8 +14038,6 @@ construct = (a = 1) => {
     e.header = "<h1>Error</h1>";
     e.pages = ["<p>This is an error handler, contact u/No-Reading9991</p>"];
     e.page = 0;
-
-endingPicker = (out, totv, aa, quickstats) => {
 
     e.pages = []
     e.header = "";
