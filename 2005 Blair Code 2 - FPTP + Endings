@@ -373,11 +373,6 @@ construct = (a = 1) => {
     e.header = "<h1>Error</h1>";
     e.pages = ["<p>This is an error handler, contact u/No-Reading9991</p>"];
     e.page = 0;
-
-    e.pages = []
-    e.header = "";
-    e.executable = []
-    
   
 endingPicker = (out, totv, aa, quickstats) => {
 
