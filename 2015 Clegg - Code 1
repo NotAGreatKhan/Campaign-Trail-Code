@@ -536,7 +536,7 @@ e.candidate_json = [
             "candidate_score": 1,
             "running_mate": false
         }
-    },
+    }
 ]
 
 e.running_mate_json = [
