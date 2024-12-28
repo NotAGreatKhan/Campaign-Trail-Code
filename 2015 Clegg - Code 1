@@ -177,7 +177,7 @@ e.candidate_json = [
              "party": "Liberal Democrats",
              "state": "East Midlands",
              "priority": 1,
-             "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Nick Clegg</b></li><li><b>Party: Liberal Democrat</b></li><li><b>Constituency: Sheffield Hallam — East Midlands</b></li>Nick Clegg is a man of many skills, former member of the European Parliament, before being elected to Parliament in 2005, then elected leader of the Liberal Democrats 2 years later. His vision for his party, was to transcend politics, not left or right, but governing for all. The Public Expenses Scandal gave him his moment to set himself apart from his colleagues, and he did.<br><br>Cleggmania swept the nation, “I agree with Nick” were the words in both Gordon Brown’s and David Cameron’s mouths in debates. He seemed unstoppable, this coalition is the first time since the 20th century a liberal party has been in government in Britain. If this fails, he’s failed not just himself but his entire movement.<br><br><b>He. Cannot. Fail.</b></div>",
+             "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Nick Clegg</b></li><li><b>Party: Liberal Democrat</b></li><li><b>Constituency: Sheffield Hallam — East Midlands</b></li><p>Nick Clegg is a man of many skills, a former member of the European Parliament, before being elected to Parliament in 2005, then elected leader of the Liberal Democrats 2 years later. His vision for his party, was to transcend politics, not left or right, but governing for all. The Public Expenses Scandal gave him his moment to set himself apart from his colleagues, and he did.</p><p>Cleggmania swept the nation, “I agree with Nick” were the words in both Gordon Brown’s and David Cameron’s mouths in debates. He seemed unstoppable, this coalition is the first time since the 20th century a liberal party has been in government in Britain. If this fails, he’s failed not just himself but his entire movement.</p><p><b>He. Cannot. Fail.</b></p></div>",
              "color_hex": "#faa61a",
              "secondary_color_hex": null,
              "is_active": 1,
@@ -209,7 +209,7 @@ e.candidate_json = [
             "electoral_victory_message": "<h3>REAL PATRIOT DUMMY EXAMPLE SWEEPS</h3>",
             "electoral_loss_message": "<h3>Fake News?</h3>",
             "no_electoral_majority_message": "<h3>DUMMY EXAMPLE RETURNS TO HELL</h3>",
-            "description_as_running_mate": "<li><b>Name: Liberal Democrats</b></li><li><b>Role: Coalition Partner in Government</b></li><li><b>Ideology: Liberalist Centrism</b></li>The often forgotten third force in British politics. Whilst the Lib Dems have had their moments of glory since their creation in the 1980s, most famously due to their opposition to the Iraq War in the 2000s — with the 2005 election being their most successful — they’re often forgotten. This is the party Nick Clegg leads and it's the secondary party in the coalition.<br><br>They pledged to abolish tuition fees, rip up the electoral system and abolish the House of Lords, they were elected with the promise to deliver change. And if change doesn’t come, there will be consequences.",
+            "description_as_running_mate": "<li><b>Name: Liberal Democrats</b></li><li><b>Role: Coalition Partner in Government</b></li><li><b>Ideology: Liberalist Centrism</b></li><p>The often forgotten third force in British politics. Whilst the Lib Dems have had their moments of glory since their creation in the 1980s, most famously due to their opposition to the Iraq War in the 2000s — with the 2005 election being their most successful — they’re often forgotten. This is the party Nick Clegg leads and it's the secondary party in the coalition.</p><p>They pledged to abolish tuition fees, rip up the electoral system and abolish the House of Lords, they were elected with the promise to deliver change. And if change doesn’t come, there will be consequences</p>.",
             "candidate_score": 1,
             "running_mate": true,
             "scrollable": false,
@@ -627,3 +627,50 @@ $(".container")[0].style.backgroundColor = "#925d02";
 document.getElementById("header").src = "https://i.imgur.com/t2pdZDO.png";
 
 document.body.background = "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2010/4/19/1271694806936/Nick-Clegg-Obama-poster-001.jpg?width=445&dpr=1&s=none&crop=none";
+
+
+// Difficulty Window
+function changeOpponentSelectionDescription() {
+  selectionObserver.disconnect();
+
+  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+  
+  if (opponentSelectionDescription) {
+    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 650 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</p><p>For your entire party's history, this outdated system has nothing but a mountain-high roadblock to achieving power. Until now. If you can play your cards right, 2010 may just be the last election in which the real voice of the people was strangled. Maybe now, they can finally breathe free.</p><p>The code utilised in <i>Clegg</i> was created by <b>u/AeronauticBlueberry</b>.</p>`;
+  }
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!selectionObserver){
+  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+function modifyForm(){
+  modifiedFormobserver.disconnect();
+
+  const form = document.querySelector('form[name="game_type_selection"]');
+
+  if (form) {
+    const select = form.querySelector('select[name="game_type_id"]');
+    const h3 = form.querySelector('h3');
+    const option = select.querySelector('option[value="1"]');
+
+    if (option && option.textContent !== 'Default (First Past The Post)') {
+      option.textContent = 'Default (First Past The Post)';
+    }
+    if (select && select.querySelector('option[value="2"]')) {
+      const queryTwo = select.querySelector('option[value="2"]');
+      if (queryTwo) {
+        queryTwo.remove();
+      }
+    }
+    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
+      h3.textContent = 'How would you like the seats to be allocated?';
+    }
+  }
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!modifiedFormobserver){
+  var modifiedFormobserver = new MutationObserver(modifyForm);
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
