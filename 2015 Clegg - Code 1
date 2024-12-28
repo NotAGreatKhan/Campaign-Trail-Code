@@ -279,7 +279,7 @@ e.candidate_json = [
             "electoral_victory_message": "<h3>This guy wins!</h3>",
             "electoral_loss_message": "<h3>This guy loses!</h3>",
             "no_electoral_majority_message": "<h3>We all win?</h3>",
-            "description_as_running_mate": nul,
+            "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
         }
