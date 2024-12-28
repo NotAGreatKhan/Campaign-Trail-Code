@@ -16,7 +16,7 @@ function updateCandidateForm() {
   const heading = document.querySelector("#candidate_form form h3");
 
   if (heading) {
-    heading.textContent = "Please select your party:";
+    heading.textContent = "Please select your party leader:";
   }
   formobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
@@ -42,7 +42,7 @@ function updateRunningMateForm() {
   const heading = document.querySelector("#running_mate_form form h3");
 
   if (heading) {
-    heading.textContent = "Please select your party leader:";
+    heading.textContent = "Please select your party:";
   }
   runformobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
@@ -106,13 +106,24 @@ RecReading=true
 e = campaignTrail_temp;
 
 
+const introTitle = document.querySelector("#inner_window_1 h3");
+  if (introTitle) {
+	introTitle.textContent = "Do you have what it takes to win a General Election?";
+  }
+
+document.getElementById("inner_window_1").children[1].innerHTML = `<li>Select a year and a party to find out.</li><li>You will answer questions about your platform and positions, and also about your campaign strategy.</li><li>The answers will affect your popularity for better or worse, both nationally and in individual regions.</li><li>Walk the fine line between appealing to your base and winning a majority of the votes.</li>`;
+document.styleSheets[0].insertRule(".inner_window_w_desc{ margin:1em 0 0 0.5em !important;padding-top: 0.5em !important;}", 0);
+document.styleSheets[0].insertRule(".inner_window_question{ margin:1em 0 .7em 0.5em !important;padding-top: 0.3em !important;}", 0);
+document.styleSheets[0].insertRule("#main_content_area { height:82% !important;}", 0);
+
+
 e.election_json = [
      {
         "model": "campaign_trail.election",
         "pk": 20,
         "fields": {
             "year": 2016,
-            "summary": "<div style='overflow-y:scroll;height:200px;'>He was the face of change, the voice of the disheartened, the man to change politics forever, <br>Nick Clegg was going to make his mark on history before compromise decided to shoot him the foot, following a hung parliament after 13 years of New Labour, Clegg was kingmaker and chose to put the crown on Cameron’s head, and people hated him for it. <br><br>Everything he built for the centre is seeming to crumble around him, yet it's not the end of the world yet, he’s got 5 years to make the most out of this arrangement and prove there’s a third viable option in Britain, there’s plenty he wants to do, electoral reform, tuition fees, he’s got an agenda to complete. <br><br>He just needs to hope he can do it.<br></div>",
+            "summary": "<div style='overflow-y:scroll;height:200px;'><p>He was the face of change, the voice of the disheartened, the man to change politics forever.<br><br>Nick Clegg was going to make his mark on history before compromise decided to shoot him in the foot. Following a hung parliament after 13 years of New Labour, Clegg was kingmaker and chose to put the crown on Cameron’s head, and people hated him for it.<br><br>Everything he built for the centre is seeming to crumble around him, but it's not the end of the world yet, he’s got 5 years to make the most out of this arrangement and prove there’s a third viable option in Britain. There’s plenty he wants to do, electoral reform, tuition fees, he’s got an agenda to complete.<br><br>He just needs to hope he can do it.</p></div>",
             "image_url": "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2010/9/18/1284845027573/The-Liberal-Democrats-Par-001.jpg?width=300&quality=85&auto=format&fit=max&s=100fcdef291ca39a46abb26a1edecca6","winning_electoral_vote_number":270,"advisor_url":"data:image/jpeg;base64,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",
             "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>","has_visits":0,"no_electoral_majority_image":"../static/images/2012-no-majority.jpg"
         }
@@ -156,17 +167,17 @@ e.global_parameter_json = [
 ]
 
 e.candidate_json = [
-     {
-         "model": "campaign_trail.candidate",
-         "pk": 1001,
-         "fields": {
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1001,
+        "fields": {
              "first_name": "Nick",
              "last_name": "Clegg",
              "election": 20,
              "party": "Liberal Democrats",
              "state": "East Midlands",
              "priority": 1,
-             "description": "<div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'><div style='overflow-y:scroll;height:200px;'>Nick Clegg is a man of many skills, former member of the European Parliament before being elected to Parliament in 2005 then elected leader of the Liberal Democrats 2 years later, his vision for his party, transcend politics, not left or right, but governing for all, the Public Expenses Scandal gave him his moment to set himself apart from his colleagues and he did. <br><br>Cleggmania swept the nation, “I agree with Nick” were the words in both Gordon Brown and David Cameron’s mouths in debates, he seemed unstoppable, this coalition is the first time since the 20th century a liberal party has been in government in Britain, if this fails, he’s failed not just himself but his entire movement. He. Cannot. Fail.<br></div></div></div></div></div></div></div></div></div></div></div></div>",
+             "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Nick Clegg</b></li><li><b>Party: Liberal Democrat</b></li><li><b>Constituency: Sheffield Hallam</b></li><p>Nick Clegg is a man of many skills, former member of the European Parliament before being elected to Parliament in 2005 then elected leader of the Liberal Democrats 2 years later, his vision for his party, transcend politics, not left or right, but governing for all, the Public Expenses Scandal gave him his moment to set himself apart from his colleagues and he did.<br><br>Cleggmania swept the nation, “I agree with Nick” were the words in both Gordon Brown and David Cameron’s mouths in debates, he seemed unstoppable, this coalition is the first time since the 20th century a liberal party has been in government in Britain, if this fails, he’s failed not just himself but his entire movement. He. Cannot. Fail.</p></div>",
              "color_hex": "#faa61a",
              "secondary_color_hex": null,
              "is_active": 1,
@@ -179,8 +190,8 @@ e.candidate_json = [
              "running_mate": false,
              "scrollable": true
         }
-     },
-     {
+    },
+    {
         "model":"campaign_trail.candidate",
         "pk":1002,
         "fields": {
@@ -190,7 +201,7 @@ e.candidate_json = [
             "party": "Liberal Democrat",
             "state": "--",
             "priority": 1,
-            "description": "The often forgotten third force in British politics, whilst the Lib Dems have had their moments of glory since their creation in the 1980s, most famously due to their opposition to the Iraq War in the 2000s, with the 2005 election being their most successful, they’re often forgotten. This is the party Nick Clegg leads and it's the secondary party in the coalition.<br><br>They pledged to abolish tuition fees, rip up the electoral system and abolish the house of lords, they were elected with the promise to deliver change, and if change doesn’t come, there will be consequences.<br>",
+            "description": "",
             "color_hex": "#faa61a",
             "secondary_color_hex": null,
             "is_active": 0,
@@ -198,13 +209,81 @@ e.candidate_json = [
             "electoral_victory_message": "<h3>REAL PATRIOT DUMMY EXAMPLE SWEEPS</h3>",
             "electoral_loss_message": "<h3>Fake News?</h3>",
             "no_electoral_majority_message": "<h3>DUMMY EXAMPLE RETURNS TO HELL</h3>",
-            "description_as_running_mate": "The often forgotten third force in British politics, whilst the Lib Dems have had their moments of glory since their creation in the 1980s, most famously due to their opposition to the Iraq War in the 2000s, with the 2005 election being their most successful, they’re often forgotten. This is the party Nick Clegg leads and it's the secondary party in the coalition.<br><br>They pledged to abolish tuition fees, rip up the electoral system and abolish the house of lords, they were elected with the promise to deliver change, and if change doesn’t come, there will be consequences.<br>",
+            "description_as_running_mate": "The often forgotten third force in British politics, whilst the Lib Dems have had their moments of glory since their creation in the 1980s, most famously due to their opposition to the Iraq War in the 2000s, with the 2005 election being their most successful, they’re often forgotten. This is the party Nick Clegg leads and it's the secondary party in the coalition.<br><br>They pledged to abolish tuition fees, rip up the electoral system and abolish the house of lords, they were elected with the promise to deliver change, and if change doesn’t come, there will be consequences.",
             "candidate_score": 1,
             "running_mate": true,
             "scrollable": false,
-            "partner": "0"
         }
-     }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1003,
+        "fields": {
+            "first_name": "David",
+            "last_name": "Cameron",
+            "election": 20,
+            "party": "Conservative",
+            "state": "--",
+            "priority": 2,
+            "description": "<div style='overflow-y:scroll;height:290px;'></div>",
+            "color_hex": "#e84545",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://imgur.com/Q6b6Pga.jpg",
+            "electoral_victory_message": "<h3>This guy wins!</h3>",
+            "electoral_loss_message": "<h3>This guy loses!</h3>",
+            "no_electoral_majority_message": "<h3>We all win?</h3>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1004,
+        "fields": {
+            "first_name": "Ed",
+            "last_name": "Miliband",
+            "election": 20,
+            "party": "Labour",
+            "state": "--",
+            "priority": 2,
+            "description": "<div style='overflow-y:scroll;height:290px;'></div>",
+            "color_hex": "#e84545",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://imgur.com/Q6b6Pga.jpg",
+            "electoral_victory_message": "<h3>This guy wins!</h3>",
+            "electoral_loss_message": "<h3>This guy loses!</h3>",
+            "no_electoral_majority_message": "<h3>We all win?</h3>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1004,
+        "fields": {
+            "first_name": "David",
+            "last_name": "Cameron",
+            "election": 20,
+            "party": "Conservative",
+            "state": "--",
+            "priority": 2,
+            "description": "<div style='overflow-y:scroll;height:290px;'></div>",
+            "color_hex": "#e84545",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://imgur.com/Q6b6Pga.jpg",
+            "electoral_victory_message": "<h3>This guy wins!</h3>",
+            "electoral_loss_message": "<h3>This guy loses!</h3>",
+            "no_electoral_majority_message": "<h3>We all win?</h3>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
 ]
 
 e.running_mate_json = [
