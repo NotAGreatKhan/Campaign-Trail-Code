@@ -169,7 +169,7 @@ e.global_parameter_json = [
 e.candidate_json = [
     {
         "model": "campaign_trail.candidate",
-        "pk": 1001,
+        "pk": 20791,
         "fields": {
              "first_name": "Nick",
              "last_name": "Clegg",
@@ -217,7 +217,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1004,
+        "pk": 20809,
         "fields": {
             "first_name": "David",
             "last_name": "Cameron",
@@ -240,7 +240,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1005,
+        "pk": 20827,
         "fields": {
             "first_name": "Ed",
             "last_name": "Miliband",
@@ -263,7 +263,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1006,
+        "pk": 20845,
         "fields": {
             "first_name": "Nicola",
             "last_name": "Sturgeon",
@@ -286,7 +286,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1007,
+        "pk": 20863,
         "fields": {
             "first_name": "Nigel",
             "last_name": "Farage",
@@ -309,7 +309,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1008,
+        "pk": 20881,
         "fields": {
             "first_name": "Natalie",
             "last_name": "Bennett",
@@ -332,7 +332,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1009,
+        "pk": 20899,
         "fields": {
             "first_name": "Leanne",
             "last_name": "Wood",
@@ -355,7 +355,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1010,
+        "pk": 20917,
         "fields": {
             "first_name": "Gerry",
             "last_name": "Adams",
@@ -378,7 +378,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1011,
+        "pk": 20935,
         "fields": {
             "first_name": "Peter",
             "last_name": "Robinson",
@@ -401,7 +401,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1012,
+        "pk": 20953,
         "fields": {
             "first_name": "Mike",
             "last_name": "Nesbitt",
@@ -424,7 +424,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1013,
+        "pk": 20971,
         "fields": {
             "first_name": "Alasdair",
             "last_name": "McDonnell",
@@ -447,7 +447,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1014,
+        "pk": 20989,
         "fields": {
             "first_name": "David",
             "last_name": "Ford",
@@ -470,7 +470,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1015,
+        "pk": 21007,
         "fields": {
             "first_name": "Jim",
             "last_name": "Allister",
@@ -493,7 +493,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1016,
+        "pk": 21025,
         "fields": {
             "first_name": "John",
             "last_name": "Bercow",
@@ -516,7 +516,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 1017,
+        "pk": 21043,
         "fields": {
             "first_name": "",
             "last_name": "Independent/Others",
@@ -544,7 +544,7 @@ e.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 2001,
         "fields": {
-            "candidate": 1001,
+            "candidate": 20791,
             "running_mate": 1002
         }
      }
@@ -569,46 +569,46 @@ HistPVP=["36.9%","30.4%","7.9%","4.7%"];
 
 campaignTrail_temp.opponents_default_json = [
     {
-        "election": 12,
+        "election": 20,
         "candidates": [
-            1001,
-            1004,
-            1005,
-            1006,
-            1007,
-            1008,
-            1009,
-            1010,
-            1011,
-            1012,
-            1013,
-            1014,
-            1015,
-            1016,
-            1017
+            20791,
+            20809,
+            20827,
+            20845,
+            20863,
+            20881,
+            20899,
+            20917,
+            20935,
+            20953,
+            20971,
+            20989,
+            21007,
+            21025,
+            21043
         ]
     }
 ]
 
 campaignTrail_temp.opponents_weighted_json = [
     {
-        "election": 12,
+        "election": 20,
         "candidates": [
-            1001,
-            1004,
-            1005,
-            1006,
-            1007,
-            1008,
-            1009,
-            1010,
-            1011,
-            1012,
-            1013,
-            1014,
-            1015,
-            1016,
-            1017
+            20791,
+            20809,
+            20827,
+            20845,
+            20863,
+            20881,
+            20899,
+            20917,
+            20935,
+            20953,
+            20971,
+            20989,
+            21007,
+            21025,
+            21043        
         ]
     }
 ]
