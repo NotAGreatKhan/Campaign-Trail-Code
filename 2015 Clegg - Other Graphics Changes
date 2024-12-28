@@ -10,29 +10,28 @@ function changechart(){
 
 
 vpTable = {
-    "The Labour Party" : "Kier R. Starmer",   
-    "The Conservative And Unionist Party" : "Rishi Sunak",   
-    "The Liberal Democrats" : "Ed J. Davey",
-    "The Scotland National Party" : "John R. Swinney",
+    "Ed Miliband" : "Labour Party",   
+    "David Cameron" : "Conservative Party",   
+    "Nick Clegg" : "Liberal Democrats",
+    "The Scotland National Party" : "Nicola Sturgeon",
     "The Green Party" : "Carla Denyer & Adrian Ramsay",
     "Reform UK" : "Nigel P. Farage",
     "Independent/Others" : "Various Others",
-    "The Democratic Unionist Party" : "Gavin J. Robinson",
+    "The Democratic Unionist Party" : "Peter D. Robinson",
     "Sinn Féin" : "Mary L. McDonald",
     "Plaid Cymru" : "Rhun ap Iorwerth",
     "The Alliance" : "Naomi R. Long",
     "The Ulster Unionist Party" : "Douglas R. Beattie",
     "SDLP" : "Colum Eastwood",
-    "The Traditional Unionist Voice" : "James H. Allister",
-    "The Speaker" : "Lindsay H. Hoyle"
+    "The Speaker" : "John S. Bercow"
 }
 
 
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
-  background-color: #0aa7db;
-  border-color: #005cb3;
+  background-color: #faa61a;
+  border-color: #925d02;
 }
 `
 ;
