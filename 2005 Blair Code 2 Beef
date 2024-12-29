@@ -85,7 +85,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
         vpTable["The Labour Party"] = "J. Gordon Brown";
-        campaignTrail_temp.questions_json[31] = {
+        campaignTrail_temp.questions_json[15] = {
         "model": "campaign_trail.question",
         "pk": 13501,
         "fields": {
@@ -96,7 +96,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         } 
     }
     if(ans == 13508){
-        campaignTrail_temp.question_number = getQuestionNumberFromPk(13160);
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 16;
     }
     if(ans == 12793){
       Cred += 1;
