@@ -6981,8 +6981,8 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-campaignTrail_temp.candidate_image_url = "http://assets8.lbc.co.uk/2016/29/conservatives-logo---lbc-1468834487-editorial-short-form-1.jpg";
-campaignTrail_temp.running_mate_image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/426px-Boris_Johnson_official_portrait_%28cropped%29.jpg";
+campaignTrail_temp.candidate_image_url = "https://imgur.com/6dM0aMg.jpg";
+campaignTrail_temp.running_mate_image_url = "https://imgur.com/8cKBwiD.jpg";
 campaignTrail_temp.candidate_last_name = "Clegg";
 campaignTrail_temp.running_mate_last_name = "LibDems";
 
@@ -7014,7 +7014,7 @@ style.textContent = `
 #map_container {
     background-repeat: no-repeat;
 	background-size: cover;
-    background-image: url("https://imgur.com/Ns9E1az.png");
+    background-image: url("https://imgur.com/s7Xkgf0.jpg");
 }
 `;
 document.head.append(style);
