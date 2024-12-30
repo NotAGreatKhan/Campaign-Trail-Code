@@ -9,24 +9,6 @@ function changechart(){
     window.setInterval(changechart,200)
 
 
-vpTable = {
-    "Ed Miliband" : "Labour Party",   
-    "David Cameron" : "Conservative Party",   
-    "Nick Clegg" : "Liberal Democrats",
-    "The Scotland National Party" : "Nicola Sturgeon",
-    "The Green Party" : "Carla Denyer & Adrian Ramsay",
-    "Reform UK" : "Nigel P. Farage",
-    "Independent/Others" : "Various Others",
-    "The Democratic Unionist Party" : "Peter D. Robinson",
-    "Sinn Féin" : "Mary L. McDonald",
-    "Plaid Cymru" : "Rhun ap Iorwerth",
-    "The Alliance" : "Naomi R. Long",
-    "The Ulster Unionist Party" : "Douglas R. Beattie",
-    "SDLP" : "Colum Eastwood",
-    "The Speaker" : "John S. Bercow"
-}
-
-
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
@@ -36,6 +18,7 @@ style_overwrite.innerHTML =
 `
 ;
 document.head.appendChild(style_overwrite);
+
 
 const style = document.createElement('style');
 style.textContent = `
