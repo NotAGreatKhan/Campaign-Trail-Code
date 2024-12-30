@@ -1,3 +1,5 @@
+e = campaignTrail_temp
+
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
