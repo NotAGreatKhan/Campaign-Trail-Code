@@ -2,6 +2,7 @@ var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
 var Cred = 1;
+var Brown = false;
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
     if(ans == 12807){
@@ -86,6 +87,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 13508){
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 16;
+      Brown = true;
     }
     if(ans == 12793){
       Cred += 1;
