@@ -169,7 +169,7 @@ e.global_parameter_json = [
 e.candidate_json = [
     {
         "model": "campaign_trail.candidate",
-        "pk": 200,
+        "pk": 201,
         "fields": {
              "first_name": "Nick",
              "last_name": "Clegg",
@@ -217,7 +217,7 @@ e.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 201,
+        "pk": 200,
         "fields": {
             "first_name": "David",
             "last_name": "Cameron",
@@ -544,7 +544,7 @@ e.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 2001,
         "fields": {
-            "candidate": 200,
+            "candidate": 201,
             "running_mate": 1002
         }
      }
