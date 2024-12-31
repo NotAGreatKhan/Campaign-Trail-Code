@@ -159,7 +159,7 @@ e.global_parameter_json = [
             "issue_stance_6_max": 0.71,
             "global_variance": 0.01,
             "state_variance": 0.005,
-            "question_count": 25,
+            "question_count": 30,
             "default_map_color_hex": "#C9C9C9",
             "no_state_map_color_hex": "#999999"
        }
@@ -613,7 +613,7 @@ campaignTrail_temp.opponents_weighted_json = [
     }
 ]
 
-
+// Infobox Graphics
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d4901c";
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#faa61a";
@@ -627,6 +627,8 @@ $(".container")[0].style.backgroundColor = "#925d02";
 document.getElementById("header").src = "https://i.imgur.com/t2pdZDO.png";
 
 document.body.background = "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2010/4/19/1271694806936/Nick-Clegg-Obama-poster-001.jpg?width=445&dpr=1&s=none&crop=none";
+
+corrr = '\n              <h2>The Campaign Trail</h2>\n            ';
 
 
 // Difficulty Window
