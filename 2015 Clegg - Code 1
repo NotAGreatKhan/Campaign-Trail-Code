@@ -242,8 +242,8 @@ e.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 202,
         "fields": {
-            "first_name": "Ed",
-            "last_name": "Miliband",
+            "first_name": "Gordon",
+            "last_name": "Brown",
             "election": 20,
             "party": "Labour",
             "state": "--",
@@ -265,8 +265,8 @@ e.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 203,
         "fields": {
-            "first_name": "Nicola",
-            "last_name": "Sturgeon",
+            "first_name": "Alex",
+            "last_name": "Salmond",
             "election": 20,
             "party": "Scotland National Party",
             "state": "--",
