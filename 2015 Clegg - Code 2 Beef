@@ -639,19 +639,19 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Europe",
             "description": "Ever since the financial crisis, the rise in immigration following the Arab Spring, and other woes striking Europe – Euroscepticism has been on the steady rise. Now, populists on both sides of the spectrum are putting forth the idea of withdrawing from Europe entirely. The question is: can you keep the mob at bay?",
-            "stance_1": "Open Markets",
+            "stance_1": "Strong Leave",
             "stance_desc_1": "",
-            "stance_2": "Open Markets",
+            "stance_2": "Leave",
             "stance_desc_2": "",
-            "stance_3": "Moderate",
+            "stance_3": "Narrow Leave",
             "stance_desc_3": "",
             "stance_4": "Moderate",
             "stance_desc_4": "",
-            "stance_5": "Moderate",
+            "stance_5": "Narrow Remain",
             "stance_desc_5": "",
-            "stance_6": "Protectionist",
+            "stance_6": "Remain",
             "stance_desc_6": "",
-            "stance_7": "Protectionist",
+            "stance_7": "Strong Remain",
             "stance_desc_7": "",
             "election": 20
         }
@@ -3685,9 +3685,9 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 21649,
         "fields": {
             "answer": 5139,
-            "candidate": 201,
-            "affected_candidate": 201,
-            "global_multiplier": -0.2
+            "candidate": 21251,
+            "affected_candidate": 21251,
+            "global_multiplier": -1
         }
     },
     {
@@ -3705,9 +3705,9 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 21651,
         "fields": {
             "answer": 5139,
-            "candidate": 21251,
+            "candidate": 202,
             "affected_candidate": 202,
-            "global_multiplier": 0.1
+            "global_multiplier": -0.1
         }
     }
 ]
