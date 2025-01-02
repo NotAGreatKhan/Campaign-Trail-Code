@@ -111,7 +111,7 @@ const introTitle = document.querySelector("#inner_window_1 h3");
 	introTitle.textContent = "Do you have what it takes to win a General Election?";
   }
 
-document.getElementById("inner_window_1").children[1].innerHTML = `<li>Select a year and a party to find out.</li><li>You will answer questions about your platform and positions, and also about your campaign strategy.</li><li>The answers will affect your popularity for better or worse, both nationally and in individual regions.</li><li>Walk the fine line between appealing to your base and winning a majority of the votes.</li>`;
+document.getElementById("inner_window_1").children[1].innerHTML = `<li>For the first time ever, the Liberal Democrats will reside on the Government benches in Parliament.</li><li>You, Mr Nick Clegg, will answer questions about your policy, platform and positions, and also about your campaign strategy.</li><li>The answers will affect your popularity for better or worse, nationally, in individual regions, and with your coalition patner: the Conservatives.</li><li>Walk the fine line between appealing to your base and maximising your share of the votes.</li><li>Will you keep the coalition government all the way until the election?</li><li>Or will powers external and domestic bring it all down?</li><li>Please enjoy, and good luck, in <i>Clegg</i>.`;
 document.styleSheets[0].insertRule(".inner_window_w_desc{ margin:1em 0 0 0.5em !important;padding-top: 0.5em !important;}", 0);
 document.styleSheets[0].insertRule(".inner_window_question{ margin:1em 0 .7em 0.5em !important;padding-top: 0.3em !important;}", 0);
 document.styleSheets[0].insertRule("#main_content_area { height:82% !important;}", 0);
