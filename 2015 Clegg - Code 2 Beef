@@ -3839,7 +3839,7 @@ distributeSeatsUK = () => {
         // Conservative thresholds
         if (state == 21518 && c == 200) {return 0.15} // Scotland
         if (state == 21308 && c == 200) {return 0.275} // North East England
-        if (state == 21329 && c == 200) {return 0.35} // North West England 
+        if (state == 21329 && c == 200) {return 0.2} // North West England 
         // Labour Thresholds
         if (state == 21308 && c == 202) {return 0.099} // North East England
         if (state == 21329 && c == 202) {return 0.1} // North West England
@@ -3861,8 +3861,18 @@ distributeSeatsUK = () => {
         // output: int, number of seats c is guarenteed in state
         //if (state == 466 && c == 80) {return 2}
         //if (state == 460 && c == 80) {return 20}
+        
+        if (state == 21371) {return 1} // East Midlands
+        if (state == 21434) {return 1} // London
+        if (state == 21497) {return 1} // Wales
+        if (state == 21308) {return 1} // North East England
+        if (state == 21329) {return 1} // North West England
+        if (state == 21350) {return 1} // Yorkshire
+        if (state == 21518) {return 1} // Scotland
         // Speaker in South East
         if (state == 21455 && c == 21194) {return 1}
+        // Greens
+        if (state == 21455 && c == 20738) {return 1}
         return 0;
     }
 
@@ -3919,7 +3929,7 @@ distributeSeatsUK = () => {
 
         // By default, this is * 1.0. 
 
-        var votes_per_seat = (competitivevotes * 0.5) / seats_left
+        var votes_per_seat = (competitivevotes * 1.4) / seats_left
 
         // Second loop: Actually add seats
         for(var j = 0; j < stateData.result.length; j++) {
@@ -3985,7 +3995,7 @@ async function handleMutations(mutationsList, observer) {
                 let overallthing = element.innerHTML;
                 overallthing = overallthing.replace("Electoral Votes","Allocated Seats");
                 overallthing = overallthing.replace("Candidate","Party List");
-                overallthing = overallthing.replace("Running Mate","Party Leader");
+                overallthing = overallthing.replace("Running Mate","Party");
                 element.innerHTML = overallthing;
                 processedNodes.add(element);
             }
@@ -4046,7 +4056,7 @@ function onGameWindowChangeCandidates() {
         }
 
         if (i == 0) {
-            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party</span>`;
         } else {
             row.children[1].innerHTML = vpTable[name];
         }
@@ -4063,7 +4073,7 @@ function onGameWindowChangeCandidates() {
         }
 
         if (i == 0) {
-            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party</span>`;
         } else {
             row.children[1].innerHTML = vpTableHistorical[name];
         }
