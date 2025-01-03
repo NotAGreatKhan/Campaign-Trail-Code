@@ -9,6 +9,27 @@ function changechart(){
     window.setInterval(changechart,200)
 
 
+vpTable = {
+    "Nick Clegg" : "Liberal Democrats",   
+    "Ed Miliband" : "Labour",   
+    "David Cameron" : "Conservatives",
+    "Nicola Sturgeon" : "Scotland National Party",
+    "Peter Robinson" : "Democratic Unionist Party",
+    "Gerry Adams" : "Sinn Féin",
+    "Independent/Others" : "Various Others",
+    "Nigel Farage" : "UK Independence Party",
+    "Natalie Bennett" : "Green Party",
+    "Leanne Wood" : "Plaid Cymru",
+    "Alasdair McDonnell" : "SDLP",
+    "David Ford" : "Alliance",
+    "Jim Allister" : "Traditional Unionist Voice",
+    "Mike Nesbitt" : "Ulster Unionist Party",
+    "John Bercow" : "N/A (Speaker)",
+    "Alex Salmond" : "Scotland National Party",
+    "Gordon Brown" : "Labour"
+}
+
+
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
