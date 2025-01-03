@@ -181,7 +181,7 @@ async function handleMutations(mutationsList, observer) {
             if (element && !processedNodes.has(element)) {
                 let overallthing = element.innerHTML;
                 overallthing = overallthing.replace("Electoral Votes","Allocated Seats");
-                overallthing = overallthing.replace("Candidate","Party List");
+                overallthing = overallthing.replace("Candidate","Party Leader");
                 overallthing = overallthing.replace("Running Mate","Party");
                 element.innerHTML = overallthing;
                 processedNodes.add(element);
@@ -360,7 +360,7 @@ construct = (a = 1) => {
     // ENDINGS -- this is slightly more reliable than the ending code method
     
     e.header = "<h1>Error</h1>";
-    e.pages = ["<p>This is an error handler, contact u/No-Reading9991</p>"];
+    e.pages = ["<p>This is an error handler, contact u/InformationEven1211, or u/No-Reading9991</p>"];
     e.page = 0;
 
     e.pages = []
