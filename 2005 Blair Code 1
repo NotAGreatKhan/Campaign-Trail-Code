@@ -150,7 +150,7 @@ campaignTrail_temp.election_json = [
             "winning_electoral_vote_number": 324,
             "advisor_url": "https://imgur.com/QjvmIad.png",
             "recommended_reading": "This election has no further reading yet.",
-            "has_visits": 1,
+            "has_visits": 0,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
             "creator": "u/No-Reading9991",
             "display_year": "2005 UK - Forward Not Back"
