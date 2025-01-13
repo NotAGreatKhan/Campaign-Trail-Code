@@ -422,7 +422,7 @@ e.pages.push(`<h3 style='text-align: center;'>A Conversation between Prime Minis
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/VfQvbGe.png"})])
 }
 
-else if (Brown == true && quickstats[1] >= 324) {  
+else if (Brown = true && quickstats[1] >= 324) {  
 e.pages.push(`<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, in a second and final death-blow to New Labour</h3>`)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/0bqHDaj.png"})])
 }
