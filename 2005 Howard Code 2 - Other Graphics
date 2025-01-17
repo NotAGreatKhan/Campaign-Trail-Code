@@ -31,6 +31,29 @@ document.getElementById("header").src = "https://imgur.com/PpBHLAi.jpg";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#445da2";
 
 
+// Tooltips
+function addDynamicCSS() {
+    var css = `
+
+        label {
+          cursor:default;
+        }
+  
+        .inner_window_question h3 .mytooltip {
+            background-color: #f58a8a;
+        }
+
+        .mytooltip {
+            background-color: #ffbdbd;
+        }
+
+        .mytooltip .mytooltiptext {
+            background-color: #ffbdbd;
+        }
+    `;
+}
+
+
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
