@@ -532,7 +532,7 @@ function addHeadquarterButton() {
 
     newButton.style.marginLeft = '1.5em';
 
-    newButton.innerHTML = 'Campaign Data';
+    newButton.innerHTML = 'Election Data';
 
     // Attach the click event listener
     newButton.addEventListener('click', openHeadquarter);
@@ -543,21 +543,28 @@ function addHeadquarterButton() {
 
 function openHeadquarter() {
 
-    /*
-    Leaving this in here: instead of having the functions in the text, if you want, you can have the text change based on the number from the function, like so. You'll need to create a secondary function to hold the text, and then call that function in the text. - Astro
-
-    if (policyForeign < -3) {
-        fpScore = 'isolationist.'
+    if (Cred < 1) {
+        fpScore = '<red><b>declining</b></red>.'
     }
-    if (policyForeign > -3 && policyForeign < 3) {
-    fpScore = 'balanced.'
+    if (Cred > 0 && Cred < 4) {
+        fpScore = '<yellow><b>lagging</b></yellow>.'
     }
-    if (policyForeign > 3) {
-         fpScore = 'hawkish.'
+    if (Cred > 3) {
+        fpScore = '<green><b>strong</b></green>.'
     }
 
-    */
-      
+
+    if (Resign < 3) {
+        fpScore = '<green><b>secure</b></green>.'
+    }
+    if (Resign > 3 && Resign < 7) {
+        fpScore = '<yellow><b>under pressure</b></yellow>.'
+    }
+    if (Resign > 6) {
+        fpScore = '<red><b>endangered</b></red>.'
+    }
+
+
     let questions = document.querySelector(".inner_window_question");
 
     questions.style.display = 'none';
@@ -573,7 +580,7 @@ function openHeadquarter() {
     hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
     hqDiv.style.color = 'white';
     hqDiv.style.backgroundColor = '#383838';
-    hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/1912/wilsonbg.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+    hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/1912/wilsonbg.png)'; // Set background image. ~959 x 327.
     hqDiv.style.border = '5px solid black';
     hqDiv.style.borderRadius = '10px';
     hqDiv.style.height = '56%';
@@ -630,20 +637,16 @@ function openHeadquarter() {
 
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
-    // This is the bulk of the content you can edit. You can add more text or images here.
-
-    // Create Bulk of the Text
-    // Duplicate this section to add more lines of text. Make sure to change the variable name "a" to something else. In this case, I changed it to "b".
     let a = document.createElement('p');
-    a.textContent = 'Your success rate in the lead up to the 1912 Democratic Convention is ' + primary + '.'; // This is the text that will be displayed. You can change this to whatever you want. ' + function + ' will display the number from the function.
+    a.textContent = 'Your credibility heading into the election is ' + Cred + '.';
     // a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
     a.style.color = 'black'; // Can be used to change the color of the text
     a.style.margin = '8px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement('p');
-    b.textContent = '' + bliss + ' opponents have been attacked during the course of the Democratic Primary.';
-    // b.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    b.textContent = 'Your standing as Prime Minister is ' + Resign + '.';
+    // b.style.flexGrow = '0.1';
     b.style.color = 'black';
     b.style.margin = '8px';
     hqDiv.appendChild(b);
