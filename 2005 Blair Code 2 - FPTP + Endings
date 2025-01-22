@@ -511,8 +511,6 @@ applyTooltipsToObject(campaignTrail_temp.answers_json);
 applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);   
 
 
-e=campaignTrail_temp
-
 function addHeadquarterButton() {
     // Check if the button already exists
     if (document.getElementById('headquarter_button')) {
