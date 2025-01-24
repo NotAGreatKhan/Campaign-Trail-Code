@@ -563,7 +563,7 @@ function openHeadquarter() {
     if (Resign > 6) {
         fpScore = '<red><b>endangered</b></red>.'
     }
-
+    */
 
     let questions = document.querySelector(".inner_window_question");
 
