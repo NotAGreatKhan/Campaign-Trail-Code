@@ -579,7 +579,7 @@ function openHeadquarter() {
     hqDiv.style.display = "flex"; // Set layout to flex to allow columns
     hqDiv.style.color = "white";
     hqDiv.style.backgroundColor = "#383838";
-    hqDiv.style.backgroundImage = "https://imgur.com/uwNc0AB.jpg"; 
+    hqDiv.style.backgroundImage = "url(https://imgur.com/uwNc0AB.jpg)"; 
     hqDiv.style.border = "5px solid black";
     hqDiv.style.borderRadius = "10px";
     hqDiv.style.height = "56%";
@@ -652,7 +652,7 @@ function openHeadquarter() {
 
     // Image
     let img = document.createElement("img");
-    img.src = "https://itsastronomical.com/assets/1912/wilsonbanner.png";
+    img.src = "https://imgur.com/mB2xqdL.jpg";
     img.style.height = "30%";
     img.style.marginLeft = "1em";
     img.style.flexGrow = "0.1";
