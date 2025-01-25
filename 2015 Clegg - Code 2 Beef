@@ -73,7 +73,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21652,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Now that the pesky work of coalition-building is done, we can get to work on some of the policies that the people elected us to handle. The first bill planned to be introduced is the Parliamentary Voting System and Constituencies Act. This would shrink the House from 650 members to 600 and would switch the voting system from the traditional ‘first past the post’ to an alternative system. How should we market this?",
             "likelihood": 1
         }
     },
@@ -82,7 +82,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21653,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Only 2 short months after the final agreement, you have the honour to become the first Liberal Democrat in history to answer Prime Minister’s Questions. And, seeing your nationwide popularity and your party's position in government, you may wish to make it memorable.",
             "likelihood": 1
         }
     },
@@ -91,7 +91,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21654,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "After your performance at PMQs, you have the latitude to announce another bill. As part of the coalition agreement, the Tories are obligated to support your pledge for a four-year fixed term Parliament. This should be a slam dunk, but now you’ve got to iron out the details. Plaid Cymru has introduced a motion to keep the timetable at four years and there’s some debate about the threshold of MPs needed to dissolve Parliament for early elections. How should we vote, Nick?",
             "likelihood": 1
         }
     },
@@ -100,7 +100,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21655,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Let’s turn to foreign affairs now. Throughout the Muslim world, riots have broken out over the human rights abuses that dictators use. With Libyan rebels making a move against Gaddafi, the rebels have appealed for help and found an unlikely source in French President Sarkozy, who is publicly calling for a no-fly zone. The final decision rests with the PM, but you still have an important voice in the room. What argument will you make?",
             "likelihood": 1
         }
     },
@@ -109,7 +109,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21656,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Back in domestic affairs, it’s time to propose the budget. The PM has been on record stating that austerity is coming to Britain. Chancellor Osborne and the Lib Dems’ own David Laws have been hard at work, and come up with a plan to staggeringly reduce the levels of money spent on things that would help the ordinary Briton. What input would you like to give?",
             "likelihood": 1
         }
     },
@@ -118,7 +118,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21657,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Now on to the big issue. Abolishing tuition fees was the driving force behind the success that you had Nick. But already, there are forces within the party quietly preparing an out for you if wrangling the Tories becomes too difficult. Recently, the former CEO of BP, Lord Browne released a study recommending that the cap on fees that universities can charge be removed. This has sparked a free-for-all within Parliament. What will our position be Nick?",
             "likelihood": 1
         }
     },
@@ -127,7 +127,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21658,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "A truly unnerving scandal has just emerged. The Prime Minister’s communications director, Andy Coulson, has just been removed from the PM’s corps of advisors over allegations that he was involved in the News of the World phone hacking scandal. While cynical, this could provide us with a chance to get a more liberal voice in the PM’s ear. What’s the play?",
             "likelihood": 1
         }
     },
@@ -136,7 +136,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21659,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Another day, another scandal. This time, Vince Cable made statements to undercover <i>Daily Telegraph</i> reporters and expressed his frustrations with the coalition, arguing that the Tories are moving too quickly and too fast. This, combined with his comments about the News Corp. media mergers, have seriously undermined the Tory confidence in his work. What will you say to reassure the Tories?",
             "likelihood": 1
         }
     },
@@ -145,7 +145,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21660,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "On to economics. Part of the LD manifesto indicates a promise towards a ‘people’s bank’ plan that would give ordinary Britons the chance to own stakes in banks. After the 08 recession, banks like RBS are majority-owned by the public. This has the potential to tank a very delicate game of Jenga. What’s the move, Nick?",
             "likelihood": 1
         }
     },
@@ -154,7 +154,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21661,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Another major tenant of the coalition, House of Lords Reform, obviously being in coalition with the Conservatives… complicates things but that doesn’t mean that this has to be a dead-on-arrival policy idea. You can market this in a multitude of ways, how are you going to play this?",
             "likelihood": 1
         }
     },
@@ -163,7 +163,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21662,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Another scandal has popped up, thankfully, not mentioning us. Home Secretary Theresa May has been accused of sending vans reading ‘Go home or face arrest’ to six London Boroughs that have disproportionate rates of immigrant populations. Needless to say, condemnations are flowing from across the spectrum, with only Nigel Farage openly defending the Home Secretary. We may have some influence here, Nick. What’s the play?",
             "likelihood": 1
         }
     },
@@ -172,7 +172,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21663,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "All the way back in 2012, Cameron and the SNP’s Alec Salmond agreed to hold a referendum on Scottish Independence. Now the time has come. The campaigns north of the border are heating up, with the SNP being at the forefront of the YES campaign, whilst Labour and the Conservatives have been campaigning hard for NO, even bringing your dear friend Gordon Brown out of retirement to advocate no, so how do you want to approach this Nick?",
             "likelihood": 1
         }
     },
@@ -181,7 +181,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21664,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Now, to the NHS. While healthcare is not as controversial as it is across the pond, Tories have been uncomfortable with the NHS going back to the Thatcher years. So, unsurprisingly, you made a deal to not touch the NHS outside of minor fixes. However, the Tories now seem determined to act, with the establishment of “listening exercises” which will undoubtedly lead to an introduced bill. What’s the play, Nick?",
             "likelihood": 1
         }
     },
@@ -190,7 +190,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21665,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Back to foreign affairs. Cameron has been touring the Middle East at the behest of companies like BAE and Vickers to work on arms deals. Many of these countries have a… Questionable record on human rights. Just last week the Committee on Arms Export Controls questioned recent arms sales to Saudis, and now the questions are intensifying. How do we respond?",
             "likelihood": 1
         }
     },
@@ -451,6 +451,310 @@ campaignTrail_temp.answers_json = [
             "question": 21648,
             "description": "Put out a harsh statement. We’ve had enough, hell, the country has had enough of 13 years of shambolic Labour governance. Does anyone really believe that two former members of the Cabinet that got us here can fix it?"
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21728,
+        "fields": {
+            "question": 21652,
+            "description": "Let’s take this to the people. That’s the only way this will have any legitimacy. There’s no real need to complicate this too much; just do a straight-up ‘yes or no’."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21730,
+        "fields": {
+            "question": 21652,
+            "description": "Let’s take this to the people. That’s the only way this will have any legitimacy. However, we should spell out what the changes will mean. Most people don’t know the difference between FPTP and AV. If we spell it out, we can convince people on the merits and flex some legislative muscle."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21732,
+        "fields": {
+            "question": 21653,
+            "description": "I will personally attack Jack Straw for his decision to illegally invade Iraq during his disastrous tenure as Secretary of State. While it may not seem as a major issue anymore, it is a great argument to keep Labour out of Downing Street in the long run."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21734,
+        "fields": {
+            "question": 21653,
+            "description": "We need to reaffirm our essential role in the coalition government. There is still some skepticism going on for whatever reason about our importance, and whether or not we can influence decision-making."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21736,
+        "fields": {
+            "question": 21654,
+            "description": "We can’t publicly break with the coalition. But we promised a four-year fixed term, and I intend to deliver. Tell the MPs that the whip is off and won’t punish anyone who votes for the PC motion. We’ll also set the percentage of MPs to 55%. That should give Cameron and his ilk pause before messing with us any further."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21738,
+        "fields": {
+            "question": 21654,
+            "description": "While I would like to keep our manifesto promise, we need the support of the Tories for other pressing matters, especially on tuition fees. Let’s push the term limit to five years, and on top, we’ll put the dissolve limit at 65%. We want this coalition to last, and this bill ensures that it will."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21740,
+        "fields": {
+            "question": 21655,
+            "description": "What’s happening in Libya is appalling. Now that the rebels are making a move, we need to support them. I’ll argue for full British support, regardless of what the UN does. If they won’t act, then us, the French, and the US can provide enough support to get Gaddafi out."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21742,
+        "fields": {
+            "question": 21655,
+            "description": "What’s happening in Libya is appalling, but we can’t make a move without some semblance of international support. Cameron should hint at a no-fly, and instruct Ambassador Grant to get support for a resolution at the UN condoning that idea. Bring the French on as a co-sponsor, and reach out to the US for support as well."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21744,
+        "fields": {
+            "question": 21655,
+            "description": "What’s happening in Libya is appalling, but we can’t get involved. The situation is just too hot for us to go in guns blazing. Let’s instead focus more on the diplomatic side. Whoever is going to be the next leader will need support and legitimacy. We can trade our endorsement for the implementation of a democratic system, rather than keep the cycle of violence going."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21746,
+        "fields": {
+            "question": 21656,
+            "description": "The previous government ran up some pretty unacceptable debts to the nation. In order to continue the prosperity, I would support a measure of austerity to help get that under control. However, instead of 6.2 billion pounds, we’ll push for 5 billion, and we will express our displeasure with the Bank of England taking over market regulation."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21748,
+        "fields": {
+            "question": 21656,
+            "description": "None. I’ll let David know that he and Danny should take the lead in advocating for Lib Dem priorities in the budget. Cameron and I already have a tense relationship; best to let Osborne work it out with David and Danny."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21750,
+        "fields": {
+            "question": 21656,
+            "description": "I understand the need for austerity to patch the deficit, but this first budget is outrageous. Let’s work to get the total cuts down to 3.5 billion and make sure that NHS and tuition fees are untouched. And what’s this report about Labour taking the brunt of the impact…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21752,
+        "fields": {
+            "question": 21657,
+            "description": "While we did campaign on this, it would be a very difficult slog to get this through Parliament. Plus we’re already on the outs with the Tories, and one jarring move could get them to call early elections. Whip our bench hard, and see if we can keep our side unified. Either way, we need to find a way to extricate ourselves, hopefully with our reputations intact."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21754,
+        "fields": {
+            "question": 21657,
+            "description": "We can’t outright support abolishment on the level. It just wouldn’t go. But a gradual plan might be able to get some more support in Parliament without angering the front bench. Quietly reach out to Miliband and Robertson. See if they would agree to support a gradual plan."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21756,
+        "fields": {
+            "question": 21657,
+            "description": "This is what we campaigned on, of course, it’s a go. I know our front bench is nervous, but we’ve built up enough credibility to have a go at passing a bill of this magnitude. Let’s make a big announcement up at the University of Leeds to build traction."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21758,
+        "fields": {
+            "question": 21658,
+            "description": "You’re right, now is exactly the time to push an LD into the PM’s corps of advisors. Let’s do so loudly; get Menzies on TV to demand more LD representation, it’ll be dignified from him."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21760,
+        "fields": {
+            "question": 21658,
+            "description": "Yes, but let’s be cautious. The relationship between us is rocky as is, and one more push could send us into free fall. Call 10 Downing Street and ask for a one-on-one. I’ve got plenty to ask about, and I can bring this up as well."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21762,
+        "fields": {
+            "question": 21658,
+            "description": "Cameron will never go for it. Even if he wanted to, Osborne and May will turn into Cole and Campbell and block any attempt at it. Let’s keep up the newspaper strategy and hope it bears better fruit."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21764,
+        "fields": {
+            "question": 21659,
+            "description": "Vince is staying. He’s a valued member of the government, and just because certain Tory media figures dislike him does not mean he isn’t effective. I’ll argue for him to stay put, whilst convincing Vince to be just a little more judicious about the words he uses to describe Murdoch."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21766,
+        "fields": {
+            "question": 21659,
+            "description": "While I do understand Tory frustration, they can’t just berate Cabinet members for expressing opinions. The press office will release an apology, and that’s the end of the matter."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21768,
+        "fields": {
+            "question": 21659,
+            "description": "Osborne does have a point. We’re not at all ready to face down a general election, and there’s still a lot more work that needs to be done. We’ll have Vince apologize, but only behind closed doors and with absolutely no media leaks."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21770,
+        "fields": {
+            "question": 21660,
+            "description": "This is a plan I’ve had my eye on for a while. But we can’t implement it at all. I’ve seen the independent assessment, and the costs are astronomical. Best to not mention it and focus on other ways of combating the recession such as housing costs and the like."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21772,
+        "fields": {
+            "question": 21660,
+            "description": "I recognize the symbolism this has, but we can’t do it. Let’s push for more regulation and quietly reach out to the Labour benches while selling it to the Tories. We can get a bipartisan agreement through, and I intend to do just that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21774,
+        "fields": {
+            "question": 21660,
+            "description": "We promised it, and we’re going to do it. This is more than just a symbol, it shows accountability for the losses. I’ve seen the independent assessment, and frankly, it won’t cost that much in the grand scheme, and we can get support from our base."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21776,
+        "fields": {
+            "question": 21661,
+            "description": "Obviously many Conservatives are going to have reservations about this but maybe we could attempt to reach out to One-Nation Conservatives to look at a phase-out strategy and stress the problems with the current set-up of the Lords such as politically motivated appointments."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21778,
+        "fields": {
+            "question": 21661,
+            "description": "Look, clearly we have a lot of issues surrounding this idea so how about we throw a curveball, let's get rid of Hereditary Peers and the Lords Spiritual and make the Lords a neutral chamber of experts appointed by commission."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21780,
+        "fields": {
+            "question": 21661,
+            "description": "Look, Cameron agreed to this as part of the coalition agreement, he’ll bear the brunt of the blame if this bill fails, the Lib Dems are committed to this coalition's agenda, can you say the same for the Conservatives?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21782,
+        "fields": {
+            "question": 21662,
+            "description": "That is truly awful. Put out the standard condemnation but don’t press any harder. Labour and the SNP will take care of that for us."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21784,
+        "fields": {
+            "question": 21662,
+            "description": "That is truly awful. Put out the standard condemnation, and let’s have someone go on a Sunday show to debate this topic. Not an all-out provocation, but let’s show our base we care."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21786,
+        "fields": {
+            "question": 21662,
+            "description": "That is truly awful. Put out the standard condemnation, and let’s flex some muscle. Set up a meeting between me and the Home Secretary about some trivial topic."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21788,
+        "fields": {
+            "question": 21663,
+            "description": "I want all hands on deck for this, get Kennedy and Alexander up to Scotland as soon as possible, the Liberal Democrats are going to be an essential part of this campaign and we’re going to make sure Scotland stays in the union."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21790,
+        "fields": {
+            "question": 21663,
+            "description": "This is obviously an important campaign but this is Cameron’s referendum so it’s up to him to sell the union to the Scottish people, obviously if Lib Dems want to campaign but let’s issue a statement saying “This referendum is greater than our party and Scottish Liberal Democrats are free to back either campaign”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21792,
+        "fields": {
+            "question": 21664,
+            "description": "This will not stand. Quietly reach out to Labour benches to make sure we can kill this if need be, but let’s get in a room with Secretary Lansley and see if we can moderate this. Our voters will crucify us if we don’t."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21794,
+        "fields": {
+            "question": 21664,
+            "description": "We’ve got to get in a room with Secretary Lansley and get him to postpone this bill. It’s too incendiary not just for us, but for the nation itself. We absolutely cannot introduce this. Do we want healthcare battles like America?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21796,
+        "fields": {
+            "question": 21664,
+            "description": "Let’s say nothing. Delay, delay, delay until the vote, and then we’ll doom the Tories. This wasn’t in the manifesto; we shouldn’t be on the hook to bail the Tories out of their own mess."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21798,
+        "fields": {
+            "question": 21665,
+            "description": "Look, we had nothing to do with this. Just issue a standard statement and try to placate the committee with advances made in Libya."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21800,
+        "fields": {
+            "question": 21665,
+            "description": "This is all on Cameron. We told him not to do this, and he went and did it anyway. Just stay silent and let the Tory spin doctors figure it out."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21802,
+        "fields": {
+            "question": 21665,
+            "description": "Put out a condemnation. It’s an abomination what Cameron is doing, and we have a moral obligation to speak out against such a disappointing move."
+        }
     }
 ]
 
@@ -655,19 +959,19 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Europe",
             "description": "Ever since the financial crisis, the rise in immigration following the Arab Spring, and other woes striking Europe – Euroscepticism has been on the steady rise. Now, populists on both sides of the spectrum are putting forth the idea of withdrawing from Europe entirely. The question is: can you keep the mob at bay?",
-            "stance_1": "Open Markets",
+            "stance_1": "Strong Leave",
             "stance_desc_1": 0,
-            "stance_2": "Open Markets",
+            "stance_2": "Leave",
             "stance_desc_2": 0,
-            "stance_3": "Moderate",
+            "stance_3": "Slight Leave",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Neutral",
             "stance_desc_4": 0,
-            "stance_5": "Moderate",
+            "stance_5": "Slight Remain",
             "stance_desc_5": 0,
-            "stance_6": "Protectionist",
+            "stance_6": "Remain",
             "stance_desc_6": 0,
-            "stance_7": "Protectionist",
+            "stance_7": "Strong Remain",
             "stance_desc_7": 0,
             "election": 20
         }
@@ -4042,6 +4346,348 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 201,
             "answer_feedback": "You sound like Cameron during the campaign, whilst there’s a certain amount of support you can gain from this. Don’t alienate Labour yet, you may need them in 5 years… Or sooner."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21729,
+        "fields": {
+            "answer": 21728,
+            "candidate": 201,
+            "answer_feedback": "This is simple... But you’re advocating for a voting system a lot of people don’t understand, you’re gambling a lot on people grasping it quickly, and there are plenty of simplistic ways to oppose it. You may have just shot yourself in the foot Nick."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21731,
+        "fields": {
+            "answer": 21730,
+            "candidate": 201,
+            "answer_feedback": "If the referendum passes, you’ll go down in history as the man who may have broken the 2-party system in Britain. Yet many think it won’t pass so you leave no part unexplained. Let’s hope the people are on your side."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21733,
+        "fields": {
+            "answer": 21732,
+            "candidate": 201,
+            "answer_feedback": "While this is your expected stance, you’re going against your own government line, which is currently emphasizing the need to continue the inquiry on the legal status of the war. Showing divisiness on a subject like this, especially when we still have soldiers in Afghanistan, isn’t the way to go."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21735,
+        "fields": {
+            "answer": 21734,
+            "candidate": 201,
+            "answer_feedback": "At your barbs with the opposition, Shadow Secretary of Justice Jack Straw points to a poll showing wide-spread cynicism about your significance in the government – in LibDem seats. But by-and-large, you deflect the attack effectively. You better show results in a few years down the road though, and put your money where your mouth is."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21737,
+        "fields": {
+            "answer": 21736,
+            "candidate": 201,
+            "answer_feedback": "This would’ve been a devious plan, but it does eventually leak to the Times. When Cameron finds out, you have a massive row. While the coalition is intact for now, be careful not to upset the apple-cart too much, or we could be looking at an early election, especially with Cameron’s approval ratings."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21739,
+        "fields": {
+            "answer": 21738,
+            "candidate": 201,
+            "answer_feedback": "The blowback is immediate. Labour MPs, led by their new leader Ed Miliband, are quick to criticize the term limits calling it overlong. You’ve stabilized relations with the front bench for now, but even some Tory backbenchers are calling the bill ‘profoundly cynical’."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21741,
+        "fields": {
+            "answer": 21740,
+            "candidate": 201,
+            "answer_feedback": "This is a radical declaration that only the right wing of the Tory party is advocating for. The look of betrayal in Kennedy’s face haunts you for weeks, Regardless, Cameron chooses to go to the UN, but does heed your advice for strong military support, especially to protect British interests."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21743,
+        "fields": {
+            "answer": 21742,
+            "candidate": 201,
+            "answer_feedback": "This is the most mainstream idea. There is plenty of support for a coalition of the willing on an international level to take out Gaddafi, and it makes it much easier to sell in the Commons for debate."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21745,
+        "fields": {
+            "answer": 21744,
+            "candidate": 201,
+            "answer_feedback": "This is not the most popular option. While the Lib Dems do have a history of opposing military intervention (Iraq springs to mind), this is not good for the coalition at all. The Tory ministers all support going to the UN, and while you do have a point about the democracy aspect, most want to get rid of Gaddafi and let the chips fall where they may."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21747,
+        "fields": {
+            "answer": 21746,
+            "candidate": 201,
+            "answer_feedback": "Osborne notes your displeasure with the BoE regulation and agrees to a longer timetable, but he gives an evasive answer on the number for austerity. You recognize that he’s probably getting orders from someone higher up the food chain. Because of this, you probably won’t be able to make any adjustments to the budget at all. Be prepared for some tough conversations with sitting MPs."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21749,
+        "fields": {
+            "answer": 21748,
+            "candidate": 201,
+            "answer_feedback": "David and Danny are able to ensure some minor concessions, but for the most part, the budget stays where it is. Not the worst strategy, especially considering the Tories are not very happy with the more moderating tendencies your party has."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21751,
+        "fields": {
+            "answer": 21750,
+            "candidate": 201,
+            "answer_feedback": "Negotiations are initially uneventful, but then the bombshell drops. An unnamed Lib Dem MP leaks the burden transfer plan to The Guardian. When this happens, a furious Osborne breaks off all communication with you and says the budget is staying where it is with no concessions. Dejected, you and Vince Cable start to get the campaign wheels turning. An election is coming soon, whether you want it or not."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21753,
+        "fields": {
+            "answer": 21752,
+            "candidate": 201,
+            "answer_feedback": "You should’ve known better Nick. It looked like you were going to escape, but once former leader Menzies Campbell said he would defy the whip, some 30 MPs voted against. Your reputation is in tatters, as university towns are swinging drastically against you. Good luck."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21755,
+        "fields": {
+            "answer": 21754,
+            "candidate": 201,
+            "answer_feedback": "Very interesting. While this doesn’t go as far as many of the uni voters wanted, it is enough to placate your MPs, and you’re able to get a bill that passes with some Tory support as well. While you do take a hit in university towns, they don’t see you as an enemy. Best of both worlds?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21757,
+        "fields": {
+            "answer": 21756,
+            "candidate": 201,
+            "answer_feedback": "Your seismic announcement sends shockwaves through the British political landscape. The SNP is well and truly behind you, with even a tentative majority of Labour MPs supporting you as well. But one place you won’t find refuge is the Tory benches. And they are furious. Cameron maintains the coalition for now, but Pride goes before the fall, Nick."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21759,
+        "fields": {
+            "answer": 21758,
+            "candidate": 201,
+            "answer_feedback": "Menzies flatly refuses. With him unwilling, there aren’t many figures who could pressure the PM into making a change. The Tories appoint one of their own, and your own backbenchers excoriate you for your opportunism and lack of tact."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21761,
+        "fields": {
+            "answer": 21760,
+            "candidate": 201,
+            "answer_feedback": "Smart strategy. You and the PM sit down for a two-hour conversation and near the end, you propose bringing an LD into the fold as comms director. While the PM doesn’t commit to it, he does agree to not bring in a member of the Eurosceptic wing. A nominal win?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21763,
+        "fields": {
+            "answer": 21762,
+            "candidate": 201,
+            "answer_feedback": "Very conservative of you Nick. While you are able to spend some time rallying voters and getting them excited about the progress you’re making, you feel hollow. Deep down you and your backbenchers know if you can’t flip the tide, it could be a harsh next election."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21765,
+        "fields": {
+            "answer": 21764,
+            "candidate": 201,
+            "answer_feedback": "You’re able to run an effective damage control by enlisting backbench Tory MPs to argue on Vince’s behalf. While you’ve quenched the flames for now, expect the next time an LD frontbencher runs his or her mouth to be much more difficult. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21767,
+        "fields": {
+            "answer": 21766,
+            "candidate": 201,
+            "answer_feedback": "Parts of the frontbench agree with this stance, and the PM is satisfied with your reasoning. However, the PM does remove the media oversight privilege from Vince, and he’s none too pleased. Neither are the LD MPs, and you’re excoriated yet again for your lack of backbone when it comes to standing up to the Tories."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21769,
+        "fields": {
+            "answer": 21768,
+            "candidate": 201,
+            "answer_feedback": "Oh Nick. You should’ve known better. Tory frontbenchers, eager to even score after the leaks, leak the meeting details with apology enclosed to friendly papers. When this gets out, you have a very uncomfortable PMQ session where Ed Miliband formally calls for elections to ‘end this farce of a Tory government’. You endure embarrassment from the Tories too."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21771,
+        "fields": {
+            "answer": 21770,
+            "candidate": 201,
+            "answer_feedback": "Thankfully, this promise was not very high on the list of things you promised. While you launch a renewed salvo on housing costs and affordability, only the high-profile economists in London speculate about the plan. And after '07-'08, who’s really going to listen to them anyway?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21773,
+        "fields": {
+            "answer": 21772,
+            "candidate": 201,
+            "answer_feedback": "Cunning, Nick. It’s all hands on deck, as you quietly chat up Whip McLoughlin, Danny meets with Miliband, and Moore goes to the SNP. Remarkably, none of this leaks and you’re able to get something passed. For the first (and possibly last) time as DPM, you feel as if you’ve accomplished something."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21775,
+        "fields": {
+            "answer": 21774,
+            "candidate": 201,
+            "answer_feedback": "The reaction is rather muted when you make this announcement. Even as leaks from 10 Downing Street decry the costs attached and Williams spars with Tories in the press, there’s just no real majority to get anything passed. Osborne indicates he’s willing to hear you out, but that’s the end of the matter."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21777,
+        "fields": {
+            "answer": 21776,
+            "candidate": 201,
+            "answer_feedback": "You go along to the next One-Nation Club Dinner, they welcome you, they listen and by the end, you’ve secured the votes of the bloc. This will barely push you over the line to get the bill passed, but you’ve earned the respect of a core part of the Tories so that has to count for something surely?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21779,
+        "fields": {
+            "answer": 21778,
+            "candidate": 201,
+            "answer_feedback": "Interesting strategy. This weirdly brings together people from many sections of the spectrum with Lib Dems, Labour, the SNP, even some Tories back this led by the MP for South Staffordshire Gavin Williamson. There’s some complaints from clergymen and veteran conservatives but the bill passes comfortably, nice thinking Nick."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21781,
+        "fields": {
+            "answer": 21780,
+            "candidate": 201,
+            "answer_feedback": "Except he doesn’t because passing Lords reform was part of <i>your agenda</i>. You’ve been played by Cameron again, who makes up a half-assed attempt to get his party on side but in the end it fails. You can whine on TV as much as you like, but you were played like a two-pound fiddle."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21783,
+        "fields": {
+            "answer": 21782,
+            "candidate": 201,
+            "answer_feedback": "This is the safest bet to preserve the coalition. But you’re ceding tremendous ground here to both Labour and the SNP in university towns, and quietly your own MPs whisper that you could’ve done more."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21785,
+        "fields": {
+            "answer": 21784,
+            "candidate": 201,
+            "answer_feedback": "You dispatch Kennedy to the BBC to debate Farage and Labour’s John Prescott and it goes over… Surprisingly well. Kennedy lets Prescott hammer Farage over the inhumane parts of the denial, whilst Kennedy portrays us as the common-sense alternative. Not a bad piece of work."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21787,
+        "fields": {
+            "answer": 21786,
+            "candidate": 201,
+            "answer_feedback": "You put out a stronger than expected denunciation, but May avoids the meeting. Despite the stated purpose being for infrastructure advancements for uni towns, May susses out the real purpose. No harm, no foul, but be wary of Labour potentially stealing your shine."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21789,
+        "fields": {
+            "answer": 21788,
+            "candidate": 201,
+            "answer_feedback": "Danny Alexander and Charles Kennedy stand side by side with Darling and Brown as if the last 4 years had never happened, but their presence certainly adds weight to this, maybe this is slightly cynical considering your vote share in Scotland but nevertheless it works, Scotland votes to remain in the union 55-45, the UK lives to fight another day."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21791,
+        "fields": {
+            "answer": 21790,
+            "candidate": 201,
+            "answer_feedback": "What… The hell… Have you done? Charles Kennedy and Danny Alexander still campaign but it becomes drowned out by the statement you’ve made. You’re a unionist party and you’re “indifferent” on the break up of the union? This upsets just about every person who isn’t Alec Salmond, Scotland votes to leave, 52-48. I hope you’re happy."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21793,
+        "fields": {
+            "answer": 21792,
+            "candidate": 201,
+            "answer_feedback": "You leave Menzies to deal with Labour while you chat up Lansley. He agrees to speak to Cameron about moderation, and is successful. Your numbers stay roughly the same, but Labour does throw some extra potshots your way after leaking Menzies’ discussions."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21795,
+        "fields": {
+            "answer": 21794,
+            "candidate": 201,
+            "answer_feedback": "This is too forceful of a tactic to use with Lansley. He plants his reputation on the bill and is successful in convincing the Tory base. It’s not successful with the House, and even though the proposal is voted down, you receive none of the credit."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21797,
+        "fields": {
+            "answer": 21796,
+            "candidate": 201,
+            "answer_feedback": "When asked by reporters, you demur, stating that the party will ‘make its own conclusions’. When its time for the vote, you take the whip off, essentially dooming the Tory proposal. Cameron is furious, and it takes an intervention from 1922 Committee Chair Graham Brady to keep the coalition intact. Tread lightly."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21799,
+        "fields": {
+            "answer": 21798,
+            "candidate": 201,
+            "answer_feedback": "You issue a standard statement denouncing the human rights abuses perpetrated by those countries which goes over smoothly. But Labour, led by Shadow Defense Secretary Jim Murphy blast the Libya part, even drawing on President Obama’s words that blamed Cameron for a failed state."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21801,
+        "fields": {
+            "answer": 21800,
+            "candidate": 201,
+            "answer_feedback": "Ah, the old silent treatment tactic. This time, it generally works out. No one was really clamouring for your opinion; plus, it gives you one less point of divergence with the coalition. Labour and the SNP put out statements, but most just regard it as business as usual."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21803,
+        "fields": {
+            "answer": 21802,
+            "candidate": 201,
+            "answer_feedback": "Kennedy and the isolationist wing love this response, as do the uni towns. But the more establishment wing of the party led by Menzies don’t, and you’re opening yourself up to intra-party fighting. You’ve displeased the Tories as well, and Cameron grimaces in Riyadh when he learns of your statement."
+        }
     }
 ]
 
@@ -4148,6 +4794,7 @@ campaignTrail_temp.jet_data = [{
     "cyoa_data": {}
 }
 ]
+
 
 // For UK Mod
 distributeSeatsUK = () => {
