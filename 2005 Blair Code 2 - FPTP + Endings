@@ -448,6 +448,84 @@ return construct(0);
 }     
 
 
+function getTooltips(str) {
+    let matches = [];
+    
+    tooltipList.forEach((tooltip, index) => {
+        // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
+        let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
+    
+    
+        let match;
+        while ((match = regex.exec(str)) !== null) {
+            matches.push({
+                start: match.index + (match[0].startsWith('“') ? 1 : 0), // Adjust for potential starting “
+                end: match.index + match[0].length - (match[0].endsWith('”') ? 1 : 0) - (match[2] ? 1 : 0), 
+                tooltipIndex: index
+            });
+        }
+    });
+    
+    // Sort by starting position; if two start at the same position, longer match comes first
+    matches.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start));
+    
+    // Filter out overlaps
+    for (let i = 0; i < matches.length - 1; ) {
+        if (matches[i + 1].start < matches[i].end) {
+            matches.splice(i + 1, 1); // Remove the next match since it overlaps
+        } else {
+            i++; // Move to next match
+        }
+    }
+    
+    return matches;
+}
+function applyTooltips(str) {
+    const matches = getTooltips(str);
+    let result = '';
+    let lastIndex = 0;
+    
+    matches.forEach(match => {
+        const tooltip = tooltipList[match.tooltipIndex];
+        result += str.slice(lastIndex, match.start);
+        result += `<span class='mytooltip'>${tooltip.searchString}<span class='mytooltiptext'>${tooltip.explanationText}</span></span>`;
+        lastIndex = match.end;
+    });
+    
+    result += str.slice(lastIndex); // Add the remainder of the original string
+    return result;
+}
+    
+function applyTooltipsToObject(obj) {
+    for (let key in obj) {
+        if (typeof obj[key] === 'string') {
+            obj[key] = applyTooltips(obj[key]);
+        } else if (typeof obj[key] === 'object') {
+            applyTooltipsToObject(obj[key]); // Recursive call
+        }
+    }
+}
+    
+applyTooltipsToObject(campaignTrail_temp.questions_json);
+applyTooltipsToObject(campaignTrail_temp.answers_json);
+applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+
+
+/*
+Welcome to Astro's Variable Headquarters
+This is a fairly simple function you can add to your mods. It will create a little menu in which the player can view the numbers laid out within the functions.
+This is a great way to give the player a little more information about your mod.
+
+Across this code, you will find a lot of aspects you can edit. I have left plenty of comments to help you understand what each part does.
+Don't be afraid to ask in #mod-help on the Discord for clarification or help with editing this code.
+
+To use this, place this code below your Code 2, and edit it as needed. You can duplicate the 'let a = document.createElement('p');' section to add more lines of text.
+
+Functions are referenced in text like so: ' + function + '. This will display the number from the function in the text.
+Credit to Nina, who made the original code that summoned the new screen (originally for the 1960Red/1952Blue advisor screen)
+Go ahead and use this code in your mods - just give me credit. I hope it helps you out!
+*/
+
 function addHeadquarterButton() {
     // Check if the button already exists
     if (document.getElementById("headquarter_button")) {
@@ -617,66 +695,3 @@ if (!element) {
 	controlElement.id = "controlElement";
 	document.body.appendChild(controlElement);
 }
-
-
-function getTooltips(str) {
-    let matches = [];
-    
-    tooltipList.forEach((tooltip, index) => {
-        // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
-        let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
-    
-    
-        let match;
-        while ((match = regex.exec(str)) !== null) {
-            matches.push({
-                start: match.index + (match[0].startsWith('“') ? 1 : 0), // Adjust for potential starting “
-                end: match.index + match[0].length - (match[0].endsWith('”') ? 1 : 0) - (match[2] ? 1 : 0), 
-                tooltipIndex: index
-            });
-        }
-    });
-    
-    // Sort by starting position; if two start at the same position, longer match comes first
-    matches.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start));
-    
-    // Filter out overlaps
-    for (let i = 0; i < matches.length - 1; ) {
-        if (matches[i + 1].start < matches[i].end) {
-            matches.splice(i + 1, 1); // Remove the next match since it overlaps
-        } else {
-            i++; // Move to next match
-        }
-    }
-    
-    return matches;
-}
-function applyTooltips(str) {
-    const matches = getTooltips(str);
-    let result = '';
-    let lastIndex = 0;
-    
-    matches.forEach(match => {
-        const tooltip = tooltipList[match.tooltipIndex];
-        result += str.slice(lastIndex, match.start);
-        result += `<span class='mytooltip'>${tooltip.searchString}<span class='mytooltiptext'>${tooltip.explanationText}</span></span>`;
-        lastIndex = match.end;
-    });
-    
-    result += str.slice(lastIndex); // Add the remainder of the original string
-    return result;
-}
-    
-function applyTooltipsToObject(obj) {
-    for (let key in obj) {
-        if (typeof obj[key] === 'string') {
-            obj[key] = applyTooltips(obj[key]);
-        } else if (typeof obj[key] === 'object') {
-            applyTooltipsToObject(obj[key]); // Recursive call
-        }
-    }
-}
-    
-applyTooltipsToObject(campaignTrail_temp.questions_json);
-applyTooltipsToObject(campaignTrail_temp.answers_json);
-applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
