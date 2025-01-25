@@ -479,7 +479,6 @@ function addHeadquarterButton() {
 function openHeadquarter() {
 
     /*
-    Leaving this in here: instead of having the functions in the text, if you want, you can have the text change based on the number from the function, like so. You'll need to create a secondary function to hold the text, and then call that function in the text. - Astro
     if (Cred < 1) {
         fpScore = "<red><b>declining</b></red>."
     }
@@ -509,7 +508,7 @@ function openHeadquarter() {
     if (hqButton) {
         hqButton.remove();
     }
-
+    
     // Create and set up the headquarters div
     let hqDiv = document.createElement("div");
     hqDiv.id = "headquarter";
@@ -542,13 +541,12 @@ function openHeadquarter() {
     }
     headerDiv.appendChild(backButton);
 
-    /* This is a header text that you can add if you want to. It is not necessary. - Astro
     let headerText = document.createElement("h3");
-    headerText.textContent = "Chief of Staff - Campaign Info";
+    headerText.textContent = "Communications Director – Alastair Campbell";
     headerText.style.textAlign = "center";  // Center the text
     headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
+    headerText.style.color = "black";
     headerDiv.appendChild(headerText);
-    */
 
     // Append headerDiv to the main hqDiv
     hqDiv.appendChild(headerDiv);
@@ -595,7 +593,6 @@ function openHeadquarter() {
     img.style.flexGrow = "0.1";
     img.style.border = "3px solid black";  // Add thin white border to the image
     hqDiv.appendChild(img);
-    
 }
 
 function handleMutations(mutationsList, observer) {
