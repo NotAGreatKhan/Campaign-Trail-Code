@@ -8,10 +8,141 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
+var Cred = 2;
+var ConRep = 2;
+var PolCap = 0;
+var Wins = 0;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
-
+    
+    if(ans == 21703){
+      Cred += 1;
+    }
+    if(ans == 21687){
+      Wins += 1;
+    }
+    if(ans == 21688){
+      Cred += 1;
+    }
+    if(ans == 21732){
+      Cred -= 1;
+    }
+    if(ans == 21736){
+      ConRep -= 1;
+    }
+    if(ans == 21740){
+      ConRep += 1;
+    }
+    if(ans == 21740){
+      Cred -= 1;
+    }
+    if(ans == 21742){
+      ConRep += 1;
+    }
+    if(ans == 21742){
+      Cred += 1;
+    }
+    if(ans == 21744){
+      ConRep -= 1;
+    }
+    if(ans == 21750){
+      ConRep -= 1;
+    }
+    if(ans == 21750){
+      Cred -= 1;
+    }    
+    if(ans == 21748){
+      Cred += 1;
+    }
+    if(ans == 21754){
+      Wins += 1;
+    }
+    if(ans == 21754){
+      Cred += 1;
+    }
+    if(ans == 21758){
+      Cred -= 1;
+    }
+    if(ans == 21760){
+      Cred += 1;
+    }
+    if(ans == 21764){
+      Cred += 1;
+    }    
+    if(ans == 21766){
+      ConRep -= 1;
+    }
+    if(ans == 21768){
+      ConRep -= 1;
+    }
+    if(ans == 21768){
+      Cred -= 1;
+    }
+    if(ans == 21772){
+      Wins += 1;
+    }
+    if(ans == 21772){
+      Cred += 1;
+    }
+    if(ans == 21776){
+      ConRep += 1;
+    }    
+    if(ans == 21778){
+      Cred += 1;
+    }    
+    if(ans == 21778){
+      Wins += 1;
+    }    
+    if(ans == 21780){
+      Cred -= 1;
+    }
+    if(ans == 21780){
+      ConRep -= 1;
+    }    
+    if(ans == 21782){
+      ConRep += 1;
+    }
+    if(ans == 21784){
+      Cred += 1;
+    }    
+    if(ans == 21784){
+      Wins += 1;
+    }
+    if(ans == 21788){
+      Cred += 1;
+    }    
+    if(ans == 21790){
+      Wins -= 1;
+    }
+    if(ans == 21790){
+      Cred -= 1;
+    }
+    if(ans == 21790){
+      ConRep -= 1;
+    }
+    if(ans == 21790){
+      Cred -= 1;
+    }
+    if(ans == 21792){
+      Cred += 1;
+    }    
+    if(ans == 21796){
+      ConRep -= 1;
+    }
+    if(ans == 21798){
+      Cred -= 1;
+    }    
+    if(ans == 21800){
+      Cred += 1;
+    }    
+    if(ans == 21802){
+      Cred -= 1;
+    }
+    if(ans == 21802){
+      ConRep -= 1;
+    }
 }
+
 
 campaignTrail_temp.questions_json = [
     {
