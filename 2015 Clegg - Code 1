@@ -760,4 +760,5 @@ tooltipList = [
         {searchString: "FPTP", explanationText: "The British Parliamentary electoral system, and the bane of our party's existence."},
         {searchString: "Prime Minister's Questions", explanationText: "A half-an-hour session of Parliament, which occurs every Wednesday at noon. It is the only time of the week where MPs can directly ask the Prime Minister questions. The Leader of the Opposition gets six, and the next largest opposition party's leader after that, gets two."},
         {searchString: "PMQs", explanationText: "A half-an-hour session of Parliament, which occurs every Wednesday at noon. It is the only time of the week where MPs can directly ask the Prime Minister questions. The Leader of the Opposition gets six, and the next largest opposition party's leader after that, gets two."},
+        {searchString: "NHS", explanationText: "The National Health Service, and the envy of the world."},
 ];
