@@ -3490,26 +3490,19 @@ nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#445da2";
 
 
 // Tooltips
-function addDynamicCSS() {
-    var css = `
+const style_overwrite = document.createElement('style');
 
-        label {
-          cursor:default;
-        }
-  
-        .inner_window_question h3 .mytooltip {
-            background-color: lightskyblue;
-        }
+style_overwrite.innerHTML = `
 
-        .mytooltip {
-            background-color: #d8dee8;
-        }
-
-        .mytooltip .mytooltiptext {
-            background-color: #d8dee8;
-        }
-    `;
-}
+.mytooltip{
+background-color: lightblue;
+   }
+.mytooltiptext{
+background-color: lightblue;
+   }
+`
+;
+document.head.appendChild(style_overwrite);
 
 
 const style_overwrite = document.createElement("style");
