@@ -158,7 +158,7 @@ campaignTrail_temp.temp_election_list = [
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
-        "pk": 212543,
+        "pk": 33427,
         "fields": {
             "first_name": "The",
             "last_name": "Labour Party",
@@ -204,7 +204,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212565,
+        "pk": 34083,
         "fields": {
             "first_name": "The",
             "last_name": "Conservative Party",
@@ -250,7 +250,7 @@ campaignTrail_temp.candidate_json = [
     },    
     {
         "model": "campaign_trail.candidate",
-        "pk": 212587,
+        "pk": 34739,
         "fields": {
             "first_name": "The ",
             "last_name": "Liberal Democrats",
@@ -296,7 +296,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212609,
+        "pk": 35395,
         "fields": {
             "first_name": "The",
             "last_name": "Scotland National Party",
@@ -319,7 +319,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212631,
+        "pk": 36051,
         "fields": {
             "first_name": "The",
             "last_name": "Green Party",
@@ -342,10 +342,10 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212649,
+        "pk": 36707,
         "fields": {
-            "first_name": "The",
-            "last_name": "UK Independence Party",
+            "first_name": "Party Of",
+            "last_name": "Reform UK",
             "election": 12,
             "party": "UKIP",
             "state": "--",
@@ -365,7 +365,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212667,
+        "pk": 37363,
         "fields": {
             "first_name": "",
             "last_name": "Independent/Others",
@@ -388,7 +388,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212685,
+        "pk": 38019,
         "fields": {
             "first_name": "The",
             "last_name": "Democratic Unionist Party",
@@ -411,7 +411,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212703,
+        "pk": 38675,
         "fields": {
             "first_name": "",
             "last_name": "Sinn Féin",
@@ -434,7 +434,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212721,
+        "pk": 39331,
         "fields": {
             "first_name": "",
             "last_name": "Plaid Cymru",
@@ -457,7 +457,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212739,
+        "pk": 39987,
         "fields": {
             "first_name": "The",
             "last_name": "Ulster Unionist Party",
@@ -480,7 +480,7 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212757,
+        "pk": 40643,
         "fields": {
             "first_name": "",
             "last_name": "SDLP",
@@ -503,10 +503,33 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 212775,
+        "pk": 41299,
         "fields": {
             "first_name": "The",
             "last_name": "Speaker",
+            "election": 12,
+            "party": "N/A",
+            "state": "--",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#dedede",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 41955,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Traditional Unionist Voice",
             "election": 12,
             "party": "N/A",
             "state": "--",
@@ -531,7 +554,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 159966,
         "fields": {
-            "candidate": 212543,
+            "candidate": 33427,
             "running_mate": 124
         }
     },
@@ -539,7 +562,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 159967,
         "fields": {
-            "candidate": 212565,
+            "candidate": 34083,
             "running_mate": 125
         }
     }
@@ -573,19 +596,20 @@ campaignTrail_temp.opponents_default_json = [
     {
         "election": 12,
         "candidates": [
-            212543,
-            212565,
-            212587,
-            212609,
-            212631,
-            212649,
-            212667,
-            212685,
-            212703,
-            212721,
-            212739,
-            212757,
-            212775
+            33427,
+            34083,
+            34739,
+            35395,
+            36051,
+            36707,
+            37363,
+            38019,
+            38675,
+            39331,
+            39987,
+            40643,
+            41299,
+            41955
         ]
     }
 ]
@@ -594,19 +618,20 @@ campaignTrail_temp.opponents_weighted_json = [
     {
         "election": 12,
         "candidates": [
-            212543,
-            212565,
-            212587,
-            212609,
-            212631,
-            212649,
-            212667,
-            212685,
-            212703,
-            212721,
-            212739,
-            212757,
-            212775
+            33427,
+            34083,
+            34739,
+            35395,
+            36051,
+            36707,
+            37363,
+            38019,
+            38675,
+            39331,
+            39987,
+            40643,
+            41299,
+            41955
         ]
     }
 ]
