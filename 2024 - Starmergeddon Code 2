@@ -124713,23 +124713,9 @@ campaignTrail_temp.jet_data = [{
         "39987": "UUP",
         "40643": "SDLP",
         "41299": "Speaker",
-        "41955": "TUV",
-        "212543": "Labour Party",
-        "212565": "Conservative Party",
-        "212587": "Liberal Democrats",
-        "212609": "Scotland National Party",
-        "212631": "Green Party",
-        "212649": "UK Independence Party",
-        "212667": "Independents/Others",
-        "212685": "Democratic Unionist Party",
-        "212703": "Sinn Féin",
-        "212721": "Plaid Cymru",
-        "212739": "Ulster Unionist Party",
-        "212757": "SDLP",
-        "212775": "Speaker"
+        "41955": "TUV"
     },
     "endings_enabled": false,
     "ending_data": {}
 }
 ]
-
