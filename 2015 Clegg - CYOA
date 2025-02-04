@@ -4,7 +4,16 @@ var PolCap = 0;
 var Wins = 0;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
-    
+    if (ans == 21687 || ans == 21706){
+    campaignTrail_temp.candidate_json[2]["fields"].first_name = "Mr"
+    campaignTrail_temp.candidate_json[2]["fields"].last_name = "Labour"
+    campaignTrail_temp.candidate_json[2].fields.color_hex = "#ea1f1f"
+    }
+    if (ans == 21688 || ans == 21709){
+    campaignTrail_temp.candidate_json[2]["fields"].first_name = "Ed"
+    campaignTrail_temp.candidate_json[2]["fields"].last_name = "Miliband"
+    campaignTrail_temp.candidate_json[2].fields.color_hex = "#ff0000"
+    }
     if(ans == 21703){
       Cred += 1;
     }
