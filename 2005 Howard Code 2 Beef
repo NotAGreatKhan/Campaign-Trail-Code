@@ -3310,7 +3310,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 13905,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": 0.8
+            "global_multiplier": 0.98
         }
     },
     {
@@ -3330,7 +3330,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 13945,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": 0.9
+            "global_multiplier": 0.95
         }
     },
     {
@@ -3411,7 +3411,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13953,
         "fields": {
             "answer": 13950,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.71,
             "issue_importance": 1
         }
@@ -3489,22 +3489,6 @@ document.getElementById("header").src = "https://imgur.com/PpBHLAi.jpg";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#445da2";
 
 
-// Tooltips
-const style_overwrite = document.createElement('style');
-
-style_overwrite.innerHTML = `
-
-.mytooltip{
-background-color: lightblue;
-   }
-.mytooltiptext{
-background-color: lightblue;
-   }
-`
-;
-document.head.appendChild(style_overwrite);
-
-
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
@@ -3580,7 +3564,7 @@ campaignTrail_temp.jet_data = [{
 }
 ]
 
-
+// For UK Mod
 function getTooltips(str) {
     let matches = [];
     
