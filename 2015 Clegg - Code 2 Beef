@@ -152,7 +152,6 @@ cyoAdventure = function (a) {
     }
 }
 
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -213,7 +212,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21652,
         "fields": {
             "priority": 0,
-            "description": "Now that the pesky work of coalition-building is done, we can get to work on some of the policies that the people elected us to handle. The first bill planned to be introduced is the Parliamentary Voting System and Constituencies Act. This would shrink the House from 650 members to 600 and would switch the voting system from the traditional ‘first past the post’ to an alternative system. How should we market this?",
+            "description": "Now that the pesky work of coalition-building is done, we can get to work on some of the policies that the people elected us to handle. The first bill planned to be introduced is the Parliamentary Voting System and Constituencies Act. This would shrink the House from 650 members to 600 and would switch the voting system from the traditional ‘First Past The Post’ to an alternative system. How should we market this?",
             "likelihood": 1
         }
     },
@@ -258,7 +257,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21657,
         "fields": {
             "priority": 0,
-            "description": "Now on to the big issue. Abolishing tuition fees was the driving force behind the success that you had Nick. But already, there are forces within the party quietly preparing an out for you if wrangling the Tories becomes too difficult. Recently, the former CEO of BP, Lord Browne released a study recommending that the cap on fees that universities can charge be removed. This has sparked a free-for-all within Parliament. What will our position be Nick?",
+            "description": "Now, you must reckon with your party's biggest vote winner with the emerging youth vote. Abolishing tuition fees was the driving force behind the success that you had Nick. But already, there are forces within the party quietly preparing an out for you if wrangling the Tories becomes too difficult. Recently, the former CEO of BP, Lord Browne released a study recommending that the cap on fees that universities can charge be removed. This has sparked a free-for-all within Parliament. What will our position be Nick?",
             "likelihood": 1
         }
     },
@@ -294,7 +293,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21661,
         "fields": {
             "priority": 0,
-            "description": "Another major tenant of the coalition, House of Lords Reform, obviously being in coalition with the Conservatives… complicates things but that doesn’t mean that this has to be a dead-on-arrival policy idea. You can market this in a multitude of ways, how are you going to play this?",
+            "description": "Another major tenant of the coalition, House of Lords Reform, obviously being in coalition with the Conservatives – well – complicates things. But, that doesn’t mean that this has to be a dead-on-arrival policy idea. You can market this in a multitude of ways, how are you going to play this?",
             "likelihood": 1
         }
     },
@@ -330,7 +329,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21665,
         "fields": {
             "priority": 0,
-            "description": "Back to foreign affairs. Cameron has been touring the Middle East at the behest of companies like BAE and Vickers to work on arms deals. Many of these countries have a… Questionable record on human rights. Just last week the Committee on Arms Export Controls questioned recent arms sales to Saudis, and now the questions are intensifying. How do we respond?",
+            "description": "Back to foreign affairs. Cameron has been touring the Middle East at the behest of companies like BAE and Vickers to work on arms deals. Many of these countries have a… Questionable record on human rights. Just last week, the Committee on Arms Export Controls questioned recent arms sales to Saudis, and now the questions are intensifying. How do we respond?",
             "likelihood": 1
         }
     },
@@ -339,7 +338,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21666,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "On to the next national saga. The right wing of the Tory party has been growing ever stronger in their pronouncements to drive the UK out of the EU. And now they’ve got some momentum. The latest polling from The Sun shows 51% of Britons wanting to leave. This has caused a massive internal flare-up in all parties except for yours Nick. The party will follow you.",
             "likelihood": 1
         }
     },
@@ -348,7 +347,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21667,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Climate change is increasingly coming to the fore through your own uni supporters. As such, Transport Secretary Philip Hammond is considering a proposal to electrify the Great Western line from London to Bristol. What’s the party position, Nick?",
             "likelihood": 1
         }
     },
@@ -357,7 +356,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21668,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "As a government was being formed, Tory leaders insisted that Britain wouldn’t follow other countries in losing the AAA bond status. Now, as a result of Tory austerity cuts, the bond rating is being lowered. As a coalition member, we’re obliged to respond. How so, Nick?",
             "likelihood": 1
         }
     },
@@ -366,7 +365,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21669,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "We obviously don’t want to panic you but we have some sources indicating that the Tories are going to put a referendum on EU membership in their 2015 manifesto, but say we treat these rumors as true, what would you want to do? ",
             "likelihood": 1
         }
     },
@@ -375,7 +374,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21670,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "It’s been multiple years since you were cheered into electoral power. But none of those feelings have stuck around with you, the old triumphalist mood of your party has faded. There have been virtually no legislative accomplishments to your name, save for a few symbolic moderations to austerity. There’s got to be something you can do, right?",
             "likelihood": 1
         }
     },
@@ -894,6 +893,110 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 21665,
             "description": "Put out a condemnation. It’s an abomination what Cameron is doing, and we have a moral obligation to speak out against such a disappointing move."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21804,
+        "fields": {
+            "question": 21666,
+            "description": "We don’t want to leave the EU. On that we’re firm. Let’s back-channel with Miliband and put out a statement of support for remaining in the EU. If the PM won’t step up, we will."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21805,
+        "fields": {
+            "question": 21666,
+            "description": "We don’t want to leave the EU, and we’re going to make our voices heard. Let’s plan a rally at King’s College in front of supporters where we make known our vision to stay in the EU."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21806,
+        "fields": {
+            "question": 21666,
+            "description": "We don’t want to leave the EU, but let’s take a different tactic. Reach out to Javid and other smaller cabinet ministers to put together a statement. Maybe we can blunt the momentum that way."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21810,
+        "fields": {
+            "question": 21667,
+            "description": "Of course, we support this. Environmental policy was a key plank for our supporters, and on top of that, electrification will get people where they need to go faster. It’s a double win."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21812,
+        "fields": {
+            "question": 21667,
+            "description": "We support this, but I’m a tad worried about the cost. It’s much more costly than I thought it was going to be. Let’s see if we can do another line that still services plenty of people without the additional cost."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21814,
+        "fields": {
+            "question": 21667,
+            "description": "Let’s switch focus instead. The whip is off, but we should focus more on bus and car electrification rather than trains. Trains won’t be a big factor in twenty years, and trust me, it’ll be worth it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21816,
+        "fields": {
+            "question": 21668,
+            "description": "Not our problem. They promised, they deal with it. We’ve never really agreed with Tory austerity cuts, and the party would crucify me if I said anything supporting them. Go with ‘no comment’."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21819,
+        "fields": {
+            "question": 21668,
+            "description": "Help them discreetly. Send Danny to do the morning shows with a ‘doesn’t matter’ defense. It’ll be a wink and nod to the base, while shoring up our reputation with the Tories."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21821,
+        "fields": {
+            "question": 21668,
+            "description": "Before we comment, let’s go to Osborne and see what the plan is. Obviously, austerity is not working. Let’s see if we can get a moderate rise in public spending. If not, have someone not directly affiliated with the Commons speak on their own opinion. Maybe someone from the Lords…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21823,
+        "fields": {
+            "question": 21669,
+            "description": "He may not be my best friend, but I know Osborne would never agree to this. Let's reach out to him and see if we can stop this policy at the source. If Cameron’s Number 2 isn’t behind him then there’s no way it’ll happen."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21824,
+        "fields": {
+            "question": 21669,
+            "description": "This sounds drastic, but maybe we could silently leak this to the Times or Observer and let the Conservatives take the fallout. Ee can look like a sensible alternative for pro-EU tories, while only standing to gain from this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21825,
+        "fields": {
+            "question": 21669,
+            "description": "We’ve worked together for a few years now, I’m sure this can be settled by a conversation. Arrange a meeting with Cameron, just the two of us. Maybe I’ll be the first in a long line of people dissauding him from doing this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21826,
+        "fields": {
+            "question": 21670,
+            "description": "This is little more than a mid-term blues period. We are the reason that the Conservatives can even govern with a majority at all. We’ll get things through, we just need more time."
         }
     }
 ]
@@ -2523,7 +2626,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21308,
-            "state_multiplier": 20
+            "state_multiplier": 22
         }
     },
     {
@@ -2532,7 +2635,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21308,
-            "state_multiplier": 22
+            "state_multiplier": 23
         }
     },
     {
@@ -2541,7 +2644,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21308,
-            "state_multiplier": 72
+            "state_multiplier": 62
         }
     },
     {
@@ -2559,7 +2662,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20681,
             "state": 21308,
-            "state_multiplier": 2
+            "state_multiplier": 4
         }
     },
     {
@@ -2658,7 +2761,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21329,
-            "state_multiplier": 30
+            "state_multiplier": 33
         }
     },
     {
@@ -2667,7 +2770,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21329,
-            "state_multiplier": 24
+            "state_multiplier": 25
         }
     },
     {
@@ -2676,7 +2779,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21329,
-            "state_multiplier": 75
+            "state_multiplier": 69
         }
     },
     {
@@ -2793,7 +2896,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21350,
-            "state_multiplier": 22
+            "state_multiplier": 27
         }
     },
     {
@@ -2802,7 +2905,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21350,
-            "state_multiplier": 19
+            "state_multiplier": 22
         }
     },
     {
@@ -2811,7 +2914,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21350,
-            "state_multiplier": 49
+            "state_multiplier": 43
         }
     },
     {
@@ -2829,7 +2932,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20681,
             "state": 21350,
-            "state_multiplier": 3
+            "state_multiplier": 4
         }
     },
     {
@@ -2919,7 +3022,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 21251,
             "state": 21350,
-            "state_multiplier": 3
+            "state_multiplier": 4
         }
     },
     {
@@ -2928,7 +3031,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21371,
-            "state_multiplier": 34
+            "state_multiplier": 43
         }
     },
     {
@@ -2937,7 +3040,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21371,
-            "state_multiplier": 20
+            "state_multiplier": 24
         }
     },
     {
@@ -2946,7 +3049,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21371,
-            "state_multiplier": 50
+            "state_multiplier": 48
         }
     },
     {
@@ -3063,7 +3166,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21392,
-            "state_multiplier": 26
+            "state_multiplier": 31
         }
     },
     {
@@ -3072,7 +3175,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21392,
-            "state_multiplier": 16
+            "state_multiplier": 17
         }
     },
     {
@@ -3081,7 +3184,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21392,
-            "state_multiplier": 41
+            "state_multiplier": 36
         }
     },
     {
@@ -3198,7 +3301,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21413,
-            "state_multiplier": 37
+            "state_multiplier": 40
         }
     },
     {
@@ -3207,7 +3310,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21413,
-            "state_multiplier": 22
+            "state_multiplier": 24
         }
     },
     {
@@ -3216,7 +3319,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21413,
-            "state_multiplier": 31
+            "state_multiplier": 27
         }
     },
     {
@@ -3234,7 +3337,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20681,
             "state": 21413,
-            "state_multiplier": 3
+            "state_multiplier": 4
         }
     },
     {
@@ -3333,7 +3436,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21434,
-            "state_multiplier": 24
+            "state_multiplier": 28
         }
     },
     {
@@ -3342,7 +3445,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21434,
-            "state_multiplier": 21
+            "state_multiplier": 19
         }
     },
     {
@@ -3351,7 +3454,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21434,
-            "state_multiplier": 55
+            "state_multiplier": 52
         }
     },
     {
@@ -3468,7 +3571,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21455,
-            "state_multiplier": 45
+            "state_multiplier": 48
         }
     },
     {
@@ -3477,7 +3580,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21455,
-            "state_multiplier": 29
+            "state_multiplier": 32
         }
     },
     {
@@ -3486,7 +3589,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21455,
-            "state_multiplier": 30
+            "state_multiplier": 28
         }
     },
     {
@@ -3603,7 +3706,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21476,
-            "state_multiplier": 33
+            "state_multiplier": 34
         }
     },
     {
@@ -3612,7 +3715,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21476,
-            "state_multiplier": 32
+            "state_multiplier": 35
         }
     },
     {
@@ -3621,7 +3724,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21476,
-            "state_multiplier": 26
+            "state_multiplier": 23
         }
     },
     {
@@ -3639,7 +3742,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20681,
             "state": 21476,
-            "state_multiplier": 3
+            "state_multiplier": 4
         }
     },
     {
@@ -3738,7 +3841,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21497,
-            "state_multiplier": 24
+            "state_multiplier": 30
         }
     },
     {
@@ -3747,7 +3850,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 21497,
-            "state_multiplier": 22
+            "state_multiplier": 23
         }
     },
     {
@@ -3756,7 +3859,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21497,
-            "state_multiplier": 70
+            "state_multiplier": 62
         }
     },
     {
@@ -3774,7 +3877,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20681,
             "state": 21497,
-            "state_multiplier": 1
+            "state_multiplier": 3
         }
     },
     {
@@ -3792,7 +3895,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20795,
             "state": 21497,
-            "state_multiplier": 10
+            "state_multiplier": 12
         }
     },
     {
@@ -3873,7 +3976,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 21518,
-            "state_multiplier": 12
+            "state_multiplier": 15
         }
     },
     {
@@ -3891,7 +3994,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 21518,
-            "state_multiplier": 65
+            "state_multiplier": 62
         }
     },
     {
@@ -3900,7 +4003,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 21518,
-            "state_multiplier": 40
+            "state_multiplier": 24
         }
     },
     {
@@ -4147,7 +4250,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5139,
             "candidate": 200,
             "affected_candidate": 202,
-            "global_multiplier": -0.6
+            "global_multiplier": -0.01
         }
     },
     {
@@ -4157,7 +4260,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5139,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.5
+            "global_multiplier": 0.01
         }
     },
     {
@@ -4167,7 +4270,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5139,
             "candidate": 21251,
             "affected_candidate": 202,
-            "global_multiplier": 0.1
+            "global_multiplier": 0.025
         }
     },
     {
@@ -4637,7 +4740,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 21760,
             "candidate": 201,
-            "answer_feedback": "Smart strategy. You and the PM sit down for a two-hour conversation and near the end, you propose bringing an LD into the fold as comms director. While the PM doesn’t commit to it, he does agree to not bring in a member of the Eurosceptic wing. A nominal win?"
+            "answer_feedback": "Smart strategy. You and the PM sit down for a two-hour conversation and near the end, you propose bringing an LD into the fold as comms director. While the PM doesn’t commit to it, he does agree to not bring in a member of the Eurosceptic wing. A nominal win, it seems, can be touted."
         }
     },
     {
@@ -4763,7 +4866,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 21788,
             "candidate": 201,
-            "answer_feedback": "Danny Alexander and Charles Kennedy stand side by side with Darling and Brown as if the last 4 years had never happened, but their presence certainly adds weight to this, maybe this is slightly cynical considering your vote share in Scotland but nevertheless it works, Scotland votes to remain in the union 55-45, the UK lives to fight another day."
+            "answer_feedback": "Danny Alexander and Charles Kennedy stand side by side with Darling and Brown as if the last 4 years had never happened, but their presence certainly adds weight to this, maybe this is slightly cynical considering your vote share in Scotland but nevertheless it works, Scotland votes to remain in the union 55-45. The UK lives to fight another day."
         }
     },
     {
@@ -4808,7 +4911,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 21798,
             "candidate": 201,
-            "answer_feedback": "You issue a standard statement denouncing the human rights abuses perpetrated by those countries which goes over smoothly. But Labour, led by Shadow Defense Secretary Jim Murphy blast the Libya part, even drawing on President Obama’s words that blamed Cameron for a failed state."
+            "answer_feedback": "You issue a standard statement denouncing the human rights abuses perpetrated by those countries which goes over smoothly. But Labour, led by Shadow Defense Secretary Jim Murphy blast the Libya part, even drawing on President Obama’s – which blamed Cameron for a failed state."
         }
     },
     {
@@ -4827,6 +4930,96 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 21802,
             "candidate": 201,
             "answer_feedback": "Kennedy and the isolationist wing love this response, as do the uni towns. But the more establishment wing of the party led by Menzies don’t, and you’re opening yourself up to intra-party fighting. You’ve displeased the Tories as well, and Cameron grimaces in Riyadh when he learns of your statement."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21807,
+        "fields": {
+            "answer": 21804,
+            "candidate": 201,
+            "answer_feedback": "With the Tories divided, Labour is your next best bet. Miliband quickly agrees and together the two front benches put out a statement that highlights the conflict within the Tory front bench. Not a bad sequence for you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21808,
+        "fields": {
+            "answer": 21805,
+            "candidate": 201,
+            "answer_feedback": "You’re able to get both Sky and the BBC to carry the rally live and you don’t disappoint. With a speaker list from Elton John to David Beckham, you’re able to whip the public into a Remain frenzy. Who knows, this may come in handy down the road…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21809,
+        "fields": {
+            "answer": 21806,
+            "candidate": 201,
+            "answer_feedback": "It was a nice thought, but Javid isn’t willing to compromise his standing in the party even though he agrees with you. You release a statement that gets coverage, but not nearly as much as the one released by Miliband."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21811,
+        "fields": {
+            "answer": 21810,
+            "candidate": 201,
+            "answer_feedback": "This is a no-brainer. Your base loves this proposal, and it flies through nicely with the middle to older demo that still rely on trains to commute to and from London every day. While you have to make minor concessions to the deficit hawks, this is a rare proposal that gets bipartisan support; Labour doesn’t even bother to run a whip."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21813,
+        "fields": {
+            "answer": 21812,
+            "candidate": 201,
+            "answer_feedback": "You bring up this proposal with Hammond and he privately agrees with you. Hammond is able to find a smaller line that still services many, but your uni base is perturbed. They want action, not tokenism. You visit more uni towns to compensate, but already you feel much less enthusiasm, which is a worrying sign."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21815,
+        "fields": {
+            "answer": 21814,
+            "candidate": 201,
+            "answer_feedback": "The train proposal passes easily, but you do have a point about modernisation. The Tories feel they’ve done enough about climate issues, however, and shut you down quick as can be. Maybe later you’ll bring it up."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21817,
+        "fields": {
+            "answer": 21816,
+            "candidate": 201,
+            "answer_feedback": "Your silence makes you look complicit in the failure. By toeing the line and letting the Tories set the narrative,you’ve been lumped in as the cause of the issue. Not the best look."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21820,
+        "fields": {
+            "answer": 21819,
+            "candidate": 201,
+            "answer_feedback": "Danny’s appearance on the Andrew Marr show is definitely a wink and nod to the base. But the Conservative base gets the memo too, and they’re none too pleased. Your phone is lit up all day with a barrage of calls from backbenchers. However, for once it does feel nice to have the party behind you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21822,
+        "fields": {
+            "answer": 21821,
+            "candidate": 201,
+            "answer_feedback": "You reach out to Osborne with limited success. He tells you that austerity is here to stay and needs more time. After that, you launch the next salvo. Baroness Susan Kramer gives a speech at the London College gashing the policy. Luckily, Labour took up most of the oxygen, but you must be more careful next time, Nick."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21827,
+        "fields": {
+            "answer": 21826,
+            "candidate": 201,
+            "answer_feedback": "Your predicted vote shares in the polls continue to sag beneath the waves. Students, young people, reformists of all stripes who once saw you as their hero are considering an electoral usurping in defections or abstentions. Meanwhile, only Cameron is the beneficiary. You can’t help but think if this was his plan all along…"
         }
     }
 ]
@@ -4934,7 +5127,6 @@ campaignTrail_temp.jet_data = [{
     "cyoa_data": {}
 }
 ]
-
 
 // For UK Mod
 distributeSeatsUK = () => {
