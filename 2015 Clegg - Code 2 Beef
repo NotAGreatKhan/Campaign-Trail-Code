@@ -157,7 +157,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1042,
         "fields": {
-            "priority": 1,
+            "priority": 0,
             "description": "The 2010 election has heralded a new shift in British politics. With Labour falling ignominiously out of power after 13 years, the New Labour pre-eminence has fallen to the blue wave of a fresh, modernising, brand of Toryism led by David Cameron. However, because neither party reached the illustrious threshold of 326, you’re the kingmaker, Nick. Having said on The Campaign Trail that you would negotiate with the largest party, how will you approach the Conservatives?",
             "likelihood": 1
         }
@@ -4248,7 +4248,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 21649,
         "fields": {
             "answer": 5139,
-            "candidate": 200,
+            "candidate": 202,
             "affected_candidate": 202,
             "global_multiplier": -0.1
         }
@@ -4260,7 +4260,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5139,
             "candidate": 200,
             "affected_candidate": 200,
-            "global_multiplier": 0.35
+            "global_multiplier": 0.5
         }
     },
     {
@@ -4270,7 +4270,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5139,
             "candidate": 21251,
             "affected_candidate": 202,
-            "global_multiplier": 0.025
+            "global_multiplier": 0.25
         }
     },
     {
