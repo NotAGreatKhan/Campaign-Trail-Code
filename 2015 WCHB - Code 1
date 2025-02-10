@@ -537,8 +537,8 @@ campaignTrail_temp.temp_election_list = [
 
 jet_data = {
     "headerColor": "#a1364b",
-    "windowColor": "#4e504e",
-    "containerColor": "#000000",
+    "windowColor": "#515170",
+    "containerColor": "#333333",
     "innerWindowColor": "#a06a74",
     "bannerImageUrl": "https://imgur.com/cfUCoAB.png",
     "backgroundImageUrl": "https://imgur.com/hPL1uOK.jpg",
@@ -555,13 +555,13 @@ corrr = '\n              <h2>The Campaign Trail</h2>\n            ';
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#a1364b";
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#4e504e";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#515170";
 
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
 
-$(".container")[0].style.backgroundColor = "#000000";
+$(".container")[0].style.backgroundColor = "#333333";
 
 document.getElementById("header").src = "https://imgur.com/cfUCoAB.jpg";
 
