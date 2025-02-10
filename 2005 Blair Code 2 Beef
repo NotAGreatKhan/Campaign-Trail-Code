@@ -12,9 +12,11 @@ function getQuestionNumberFromPk(pk) {
 e = campaignTrail_temp
 
 var Resign = 0;
+var RScore = 0;
 var Negative = 0;
 var OldLab = 0;
 var Cred = 2;
+var CScore = 2;
 var Brown = false;
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
