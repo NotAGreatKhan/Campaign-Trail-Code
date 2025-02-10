@@ -14350,16 +14350,3 @@ function handleMutations(mutationsList, observer) {
     observer.observe(document.documentElement, { childList: true, subtree: true });
     observerRunning = false;
 }
-
-
-let observerRunning = false;
-
-var element = document.getElementById('controlElement');
-if (!element) {
-	let singleObserver = new MutationObserver(handleMutations);
-	singleObserver.observe(document.documentElement, { childList: true, subtree: true });
-	var controlElement = document.createElement('div');
-	controlElement.style.display = 'none';
-	controlElement.id = 'controlElement';
-	document.body.appendChild(controlElement);
-}
