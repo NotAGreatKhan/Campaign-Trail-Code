@@ -6238,13 +6238,19 @@ e.answer_feedback_json = [
 ];
 
 
+campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png";
+campaignTrail_temp.running_mate_image_url = "https://imgur.com/OovFnFh.png";
+campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
+campaignTrail_temp.running_mate_last_name = "Brown";
+
+
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
     "banner_data": {
         "canName": "<small>Prime Minister</small>",
-        "canImage": "'",
+        "canImage": "https://imgur.com/RzlDlUU.png",
         "runName": "Brown",
-        "runImage": "'"
+        "runImage": "https://imgur.com/OovFnFh.png"
     },
     "mapping_enabled": true,
     "mapping_data": {
