@@ -176,7 +176,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Resignation Questions
     if(Resign >= 7){
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[17] = {
     "model": "campaign_trail.question",
     "pk": 13499,
     "fields": {
@@ -188,7 +188,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   } 
 
     if(Resign >= 7){
-    campaignTrail_temp.questions_json[14] = {
+    campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 13500,
     "fields": {
@@ -201,7 +201,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     
 // Other CYOA Stuff  
     if(ans == 12813 || ans == 12815){
-    campaignTrail_temp.questions_json[6] = {
+    campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
     "pk": 13417,
     "fields": {
@@ -212,7 +212,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12813 || ans == 12815){
-    campaignTrail_temp.questions_json[7] = {
+    campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
     "pk": 13391,
     "fields": {
@@ -245,7 +245,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12825){
-    campaignTrail_temp.questions_json[9] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13410,
     "fields": {
@@ -256,7 +256,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Negative >= 5){
-    campaignTrail_temp.questions_json[30] = {
+    campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
     "pk": 13427,
     "fields": {
@@ -278,7 +278,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12808 && OldLab < 3){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 13458,
     "fields": {
@@ -289,7 +289,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12819 || ans == 13418){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 12901,
     "fields": {
@@ -300,7 +300,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12820 || ans == 13420){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 13596,
     "fields": {
@@ -313,7 +313,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Europe Stuff
     if(ans == 12797){
-    campaignTrail_temp.questions_json[5] = {
+    campaignTrail_temp.questions_json[6] = {
     "model": "campaign_trail.question",
     "pk": 13553,
     "fields": {
@@ -324,7 +324,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[6] = {
+    campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
     "pk": 13560,
     "fields": {
@@ -336,7 +336,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // France Path
     if(ans == 13554){
-    campaignTrail_temp.questions_json[7] = {
+    campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
     "pk": 13614,
     "fields": {
@@ -348,7 +348,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // Netherlands Path
     if(ans == 13557){
-    campaignTrail_temp.questions_json[7] = {
+    campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
     "pk": 13866,
     "fields": {
@@ -359,7 +359,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[9] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 13621,
     "fields": {
@@ -370,7 +370,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[10] = {
+    campaignTrail_temp.questions_json[15] = {
     "model": "campaign_trail.question",
     "pk": 13647,
     "fields": {
@@ -382,7 +382,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // Failed France
     if(ans == 12797){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13657,
     "fields": {
@@ -394,7 +394,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // Successful France
     if(ans == 12797 && ans == 13619){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13860,
     "fields": {
@@ -406,7 +406,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // Failed Netherlands
     if(ans == 13557){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13888,
     "fields": {
@@ -418,7 +418,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // Successful Netherlands
     if(ans == 13557 && ans == 13873){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13894,
     "fields": {
@@ -429,7 +429,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 13663,
     "fields": {
@@ -440,7 +440,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[22] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 13689,
     "fields": {
@@ -451,7 +451,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 13714,
     "fields": {
@@ -462,7 +462,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13729,
     "fields": {
@@ -473,7 +473,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[26] = {
+    campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13750,
     "fields": {
@@ -484,7 +484,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 13776,
     "fields": {
@@ -495,7 +495,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 13794,
     "fields": {
@@ -507,7 +507,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // Fail EU Constitution
     if(ans == 12797){
-    campaignTrail_temp.questions_json[30] = {
+    campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
     "pk": 13820,
     "fields": {
@@ -519,7 +519,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // Pass EU Constitution
     if(ans == 12797 && ans == 13861){
-    campaignTrail_temp.questions_json[30] = {
+    campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
     "pk": 13839,
     "fields": {
@@ -531,7 +531,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     // Kenneth Clarke
     if(ans == 12797 && Cred < 4){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 13919,
     "fields": {
@@ -542,7 +542,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797 && Cred < 4){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13945,
     "fields": {
@@ -553,7 +553,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797 && Cred < 4){
-    campaignTrail_temp.questions_json[26] = {
+    campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13970,
     "fields": {
@@ -564,7 +564,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797 && Cred < 4){
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 13987,
     "fields": {
@@ -575,7 +575,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797 && Cred < 4){
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 14005,
     "fields": {
