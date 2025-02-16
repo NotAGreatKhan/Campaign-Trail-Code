@@ -192,13 +192,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // Question 12 - HEA 
-    if(ans == 12827){
+    if(ans == 13474){
       Cred += 1;
     }
-    if(ans == 12828){
+    if(ans == 13479){
       Cred -= 1;
     }
-    if(ans == 12830){
+    if(ans == 13489){
       Cred -= 1;
     }
 
