@@ -105,27 +105,127 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 16;
       Brown = true;
     }
+    
+    // CREDIBILITY
+    // Question 1 – 9/11
+    if(ans == 3493){
+      Cred += 1;
+    }
+
+    // Question 2 – Afghanistan
     if(ans == 12793){
       Cred += 1;
     }
+    if(ans == 13900){
+      Cred -= 1;
+    }
+
+    // Question 3 – Terror Bill
+    if(ans == 14032){
+      Cred += 1;
+    }
+    if(ans == 14033){
+      Cred += 1;
+    }
+
+    // Question 5 – 2002 Budget
     if(ans == 12802){
       Cred += 1;
+    }
+
+    // Question 7 – Making the case for war
+    if(ans == 12813){
+      Cred -= 1;
     }
     if(ans == 12814){
       Cred += 1;
     }
-    if(ans == 12815){
+
+    // Question 7 – Deciding which Euro country to support
+    if(ans == 13554){
       Cred += 1;
     }
+    
+    // Question 8 – Passing New Labour Legislation
+    if(ans == 14073){
+      Cred += 1;
+    }
+    if(ans == 14072){
+      Cred -= 1;
+    }
+    if(ans == 14072){
+      Cred += 1;
+    }
+
+    // Question 9 – Commenting on Iraq Invasion
+    if(ans == 13561){
+      Cred += 1;
+    }
+    
+    // Question 10 – Naming Dr Kelly
+    if(ans == 12824){
+      Cred -= 1;
+    }
+    if(ans == 12825){
+      Cred -= 1;
+    }
+
+    // Question 10 – Aiding French Yes Campaign
+    if(ans == 13619){
+      Cred += 1;
+    }
+
+    // Question 10 – Aiding Dutch Yes Campaign
+    if(ans == 13873){
+      Cred += 1;
+    }
+
+    // Question 12 - HEA (Hutton Inquiry)
     if(ans == 12827){
       Cred += 1;
     }
-    if(ans == 12834){
+    if(ans == 12828){
       Cred -= 1;
     }
+    if(ans == 12830){
+      Cred -= 1;
+    }
+
+    // Question 12 - HEA 
+    if(ans == 12827){
+      Cred += 1;
+    }
+    if(ans == 12828){
+      Cred -= 1;
+    }
+    if(ans == 12830){
+      Cred -= 1;
+    }
+
+    // Question 13 - Hutton Inquiry
+    if(ans == 12832){
+      Cred -= 1;
+    }
+    if(ans == 12833){
+      Cred -= 1;
+    }
+    if(ans == 12834){
+      Cred -= 2;
+    }
+
+    // Question 14 – HR Groups protesting
+    if(ans == 14052){
+      Cred += 1;
+    }
+
+    // Question 17 – Leigh Amendment
     if(ans == 12847){
       Cred += 1;
     }
+    if(ans == 12848){
+      Cred -= 1;
+    }
+
     if(ans == 13474){
       Cred += 1;
     }
@@ -135,6 +235,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13861){
       Cred += 1;
     }
+
+    // RESIGNATION
     if(ans == 13900){
       Resign += 1;
     }
@@ -156,6 +258,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12834){
       Resign += 1;
     }   
+
+    // NEGATIVE
     if(ans == 12849){
       Negative += 1;
     }
@@ -243,8 +347,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12825 || ans == 12797){
-    campaignTrail_temp.questions_json[8] = {
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 13473,
     "fields": {
