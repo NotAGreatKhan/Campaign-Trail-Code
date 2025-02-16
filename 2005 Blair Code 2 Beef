@@ -337,7 +337,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }   
     if(ans == 12813 || ans == 12815){
-    campaignTrail_temp.questions_json[9] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13494,
     "fields": {
@@ -14946,23 +14946,23 @@ function openHeadquarter() {
     var RScore = 0;
     var CScore = 2;
 
-    if (Cred < 1) {
+    if (Cred < 2) {
         CScore = "<font color='red;'><b>declining</b></font>"
     }
-    if (Cred > 0 && Cred < 4) {
-        CScore = "<font color='yellow;'><b>lagging</b></font>"
+    if (Cred >= 2 && Cred < 5) {
+        CScore = "<b>lagging</b>"
     }
-    if (Cred > 3) {
+    if (Cred >= 5) {
         CScore = "<font color='green;'><b>strong</b></font>"
     }
 
     if (Resign < 3) {
         RScore = "<font color='green;'><b>secure</b></font>"
     }
-    if (Resign > 2 && Resign < 7) {
-        RScore = "<font color='yellow;'><b>under pressure</b></font>"
+    if (Resign >= 3 && Resign < 7) {
+        RScore = "<b>under pressure</b>"
     }
-    if (Resign > 6) {
+    if (Resign >= 7) {
         RScore = "<font color='red;'><b>endangered</b></font>"
     }
 
