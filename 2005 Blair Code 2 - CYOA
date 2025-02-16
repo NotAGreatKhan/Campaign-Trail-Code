@@ -326,7 +326,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }   
     if(ans == 12813 || ans == 12815){
-    campaignTrail_temp.questions_json[9] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13494,
     "fields": {
