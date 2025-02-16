@@ -571,11 +571,11 @@ function openHeadquarter() {
     if (Resign < 3) {
         RScore = "<font color='green;'><b>secure</b></font>"
     }
-    if (Resign > 3 && Resign < 7) {
+    if (Resign > 2 && Resign < 7) {
         RScore = "<font color='yellow;'><b>under pressure</b></font>"
     }
     if (Resign > 6) {
-        RScore = "<font color=' red;'><b>endangered</b></font>"
+        RScore = "<font color='red;'><b>endangered</b></font>"
     }
 
     let questions = document.querySelector(".inner_window_question");
