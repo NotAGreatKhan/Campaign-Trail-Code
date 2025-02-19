@@ -104,6 +104,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 16;
       Brown = true;
     }
+    if(ans == 14123 || ans == 14129){
+        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        vpTable["The Conservative Party"] = "Kenneth H. Clarke";
+    }
 
     // CREDIBILITY
     // Question 1 – 9/11
@@ -458,7 +462,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // France Path
+
+// France Path
     if(ans == 13554){
     campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
@@ -470,7 +475,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Netherlands Path
+
+// Netherlands Path
     if(ans == 13557){
     campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
@@ -504,7 +510,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Failed France
+
+// Failed France
     if(ans == 12797){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -516,7 +523,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Successful France
+
+// Successful France
     if(ans == 12797 && ans == 13619){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -528,7 +536,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Failed Netherlands
+
+// Failed Netherlands
     if(ans == 13557){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -540,7 +549,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Successful Netherlands
+
+// Successful Netherlands
     if(ans == 13557 && ans == 13873){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -629,7 +639,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Fail EU Constitution
+
+// Fail EU Constitution
     if(ans == 12797){
     campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
@@ -641,7 +652,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Pass EU Constitution
+
+// Pass EU Constitution
     if(ans == 12797 && ans == 13861){
     campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
@@ -653,8 +665,20 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Kenneth Clarke
-    if(ans == 12797 && Cred < 4){
+
+// Kenneth Clarke
+    if(ans == 12797 && Cred < 3){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 14122,
+    "fields": {
+        "priority": 0,
+        "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 13919,
@@ -665,7 +689,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 4){
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13945,
@@ -676,7 +700,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 4){
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13970,
@@ -687,7 +711,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 4){
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 13987,
@@ -698,7 +722,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 4){
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 14005,
@@ -710,6 +734,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
 }
+
 
 campaignTrail_temp.questions_json = [
     {
@@ -1363,6 +1388,15 @@ campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
         "pk": 14100,
+        "fields": {
+            "priority": 0,
+            "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14122,
         "fields": {
             "priority": 0,
             "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
@@ -3049,6 +3083,22 @@ campaignTrail_temp.answers_json = [
         "pk": 14107,
         "fields": {
             "question": 14100,
+            "description": "I’m not going to take this opportunity too lightly. Let’s dot our i’s, and cross our t’s. Get some good attacks on our upcoming opponent, whoever they may be. Their party is still soul searching without a soul! Disunity hangs with them, and they are in no position to lead a government."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14123,
+        "fields": {
+            "question": 14122,
+            "description": "No point in fretting about it now. Let’s wait and see who our upcoming opponent will be at this election."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14129,
+        "fields": {
+            "question": 14122,
             "description": "I’m not going to take this opportunity too lightly. Let’s dot our i’s, and cross our t’s. Get some good attacks on our upcoming opponent, whoever they may be. Their party is still soul searching without a soul! Disunity hangs with them, and they are in no position to lead a government."
         }
     }
@@ -10127,7 +10177,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14107,
             "candidate": 12565,
             "affected_candidate": 12565,
-            "global_multiplier": 0.008
+            "global_multiplier": -0.004
         }
     },
     {
@@ -10137,7 +10187,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14107,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.004
+            "global_multiplier": 0.005
         }
     },
     {
@@ -10218,6 +10268,36 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14125,
+        "fields": {
+            "answer": 14123,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14131,
+        "fields": {
+            "answer": 14129,
+            "candidate": 12565,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14132,
+        "fields": {
+            "answer": 14129,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.005
         }
     }
 ]
@@ -12430,6 +12510,66 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14107,
             "issue": 29,
             "issue_score": 0.35,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14126,
+        "fields": {
+            "answer": 14123,
+            "issue": 27,
+            "issue_score": 0.4,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14127,
+        "fields": {
+            "answer": 14123,
+            "issue": 28,
+            "issue_score": 0.4,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14128,
+        "fields": {
+            "answer": 14123,
+            "issue": 30,
+            "issue_score": -0.5,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14133,
+        "fields": {
+            "answer": 14129,
+            "issue": 27,
+            "issue_score": 0.4,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14134,
+        "fields": {
+            "answer": 14129,
+            "issue": 28,
+            "issue_score": 0.4,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14135,
+        "fields": {
+            "answer": 14129,
+            "issue": 31,
+            "issue_score": 0,
             "issue_importance": 7
         }
     }
@@ -14847,6 +14987,24 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "The hours proceeding Smith's resignation is a whirlwind. David Davis bows out of the leadership election. But Kenneth Clarke – buoyed by your focus on Europe – runs and loses against former Home Secretary Michael Howard. As Clarke firmly loses, the divided contest has given a gold mine to your charge, and making them appear disunited."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14124,
+        "fields": {
+            "answer": 14123,
+            "candidate": 12543,
+            "answer_feedback": "As your lagging performance across the channel looms over the leadership contest, Kenneth Clarke takes the media by surprise and wins a razor-thin upset against former Home Secretary, Michael Howard. Clarke is a sage for many in the Tory party – and the country – but he's not invulnerable, make sure to effectively hit at the cracks in his armour."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14130,
+        "fields": {
+            "answer": 14129,
+            "candidate": 12543,
+            "answer_feedback": "As your lagging performance across the channel looms over the leadership contest, Kenneth Clarke takes the media by surprise and wins a razor-thin upset against former Home Secretary, Michael Howard. Clarke is a sage for many in the Tory party – and the country – but for most watching this unfold, this attack seems to stick."
+        }
     }
 ]
 
@@ -14854,6 +15012,57 @@ campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png";
 campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png";
 campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
 campaignTrail_temp.running_mate_last_name = "Blair";
+
+
+
+campaignTrail_temp.jet_data = [{
+    "banner_enabled": true,
+    "banner_data": {
+        "canName": "<small>Prime Minister</small>",
+        "canImage": "https://imgur.com/RzlDlUU.png",
+        "runName": "Blair",
+        "runImage": "https://imgur.com/QZ4aC8T.png"
+    },
+    "mapping_enabled": true,
+    "mapping_data": {
+        "mapSvg": "",
+        "x": "885",
+        "y": "863",
+        "dx": "-450",
+        "dy": "142",
+        "electionPk": "12"
+    },
+    "cyoa_enabled": true,
+    "cyoa_data": {},
+    "nicknames": {
+        "12543": "Labour Party",
+        "12565": "Conservative Party",
+        "12587": "Liberal Democrats",
+        "12609": "Scotland National Party",
+        "12631": "Green Party",
+        "12649": "UK Independence Party",
+        "12667": "Independents/Others",
+        "12685": "Democratic Unionist Party",
+        "12703": "Sinn Féin",
+        "12721": "Plaid Cymru",
+        "12739": "Ulster Unionist Party",
+        "12757": "SDLP",
+        "12775": "Speaker"
+    },
+    "endings_enabled": false,
+    "ending_data": {
+        "1727017683034": {
+            "id": 1727017683034,
+            "variable": 0,
+            "operator": ">",
+            "value": 0,
+            "endingImage": "",
+            "endingText": "<h3>Put ending text here, you can and should use</h3><p>HTML tags</p>!",
+            "amount": "324"
+        }
+    }
+}
+]
 
 
 function changechart(){
@@ -14911,55 +15120,6 @@ style.textContent = `
 `;
 document.head.append(style);
 
-
-campaignTrail_temp.jet_data = [{
-    "banner_enabled": true,
-    "banner_data": {
-        "canName": "<small>Prime Minister</small>",
-        "canImage": "https://imgur.com/RzlDlUU.png",
-        "runName": "Blair",
-        "runImage": "https://imgur.com/QZ4aC8T.png"
-    },
-    "mapping_enabled": true,
-    "mapping_data": {
-        "mapSvg": "",
-        "x": "885",
-        "y": "863",
-        "dx": "-450",
-        "dy": "142",
-        "electionPk": "12"
-    },
-    "cyoa_enabled": true,
-    "cyoa_data": {},
-    "nicknames": {
-        "12543": "Labour Party",
-        "12565": "Conservative Party",
-        "12587": "Liberal Democrats",
-        "12609": "Scotland National Party",
-        "12631": "Green Party",
-        "12649": "UK Independence Party",
-        "12667": "Independents/Others",
-        "12685": "Democratic Unionist Party",
-        "12703": "Sinn Féin",
-        "12721": "Plaid Cymru",
-        "12739": "Ulster Unionist Party",
-        "12757": "SDLP",
-        "12775": "Speaker"
-    },
-    "endings_enabled": false,
-    "ending_data": {
-        "1727017683034": {
-            "id": 1727017683034,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "",
-            "endingText": "<h3>Put ending text here, you can and should use</h3><p>HTML tags</p>!",
-            "amount": "324"
-        }
-    }
-}
-]
 
 // For UK Mod
 distributeSeatsUK = () => {
