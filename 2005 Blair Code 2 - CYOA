@@ -94,6 +94,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 16;
       Brown = true;
     }
+    if(ans == 14123 || ans == 14129){
+        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        vpTable["The Conservative Party"] = "Kenneth H. Clarke";
+    }
 
     // CREDIBILITY
     // Question 1 – 9/11
@@ -448,7 +452,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // France Path
+
+// France Path
     if(ans == 13554){
     campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
@@ -460,7 +465,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Netherlands Path
+
+// Netherlands Path
     if(ans == 13557){
     campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
@@ -494,7 +500,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Failed France
+
+// Failed France
     if(ans == 12797){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -506,7 +513,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Successful France
+
+// Successful France
     if(ans == 12797 && ans == 13619){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -518,7 +526,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Failed Netherlands
+
+// Failed Netherlands
     if(ans == 13557){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -530,7 +539,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Successful Netherlands
+
+// Successful Netherlands
     if(ans == 13557 && ans == 13873){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -619,7 +629,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Fail EU Constitution
+
+// Fail EU Constitution
     if(ans == 12797){
     campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
@@ -631,7 +642,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Pass EU Constitution
+
+// Pass EU Constitution
     if(ans == 12797 && ans == 13861){
     campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
@@ -643,8 +655,20 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    // Kenneth Clarke
-    if(ans == 12797 && Cred < 4){
+
+// Kenneth Clarke
+    if(ans == 12797 && Cred < 3){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 14122,
+    "fields": {
+        "priority": 0,
+        "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 13919,
@@ -655,7 +679,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 4){
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13945,
@@ -666,7 +690,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 4){
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13970,
@@ -677,7 +701,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 4){
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 13987,
@@ -688,7 +712,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 4){
+    if(ans == 14123 || ans == 14129){
     campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 14005,
