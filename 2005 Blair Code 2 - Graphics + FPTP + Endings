@@ -636,7 +636,7 @@ function openHeadquarter() {
         CScore = "<font color='#ad1313;'><b>declining</b></font>"
     }
     if (Cred >= 2 && Cred < 5) {
-        CScore = "<font color='#e69138;'><b>lagging</b></font>"
+        CScore = "<font color='#f2be1b;'><b>lagging</b></font>"
     }
     if (Cred >= 5) {
         CScore = "<font color='#7ba922;'><b>strong</b></font>"
@@ -646,7 +646,7 @@ function openHeadquarter() {
         RScore = "<font color='#7ba922;'><b>secure</b></font>"
     }
     if (Resign >= 3 && Resign < 7) {
-        RScore = "<font color='#e69138;'><b>under pressure</b></font>"
+        RScore = "<font color='#f2be1b;'><b>under pressure</b></font>"
     }
     if (Resign >= 7) {
         RScore = "<font color='#ad1313;'><b>endangered</b></font>"
