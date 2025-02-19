@@ -87,7 +87,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13508){
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
         vpTable["The Labour Party"] = "J. Gordon Brown";
         campaignTrail_temp.questions_json[15] = {
@@ -298,7 +298,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13499,
     "fields": {
         "priority": 0,
-        "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, <i>now</i>, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. As you go around your fellow cabinet members, their responses to you are strange in their unison and foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
+        "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
         "likelihood": 1
       }
     }
