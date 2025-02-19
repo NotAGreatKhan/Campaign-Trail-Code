@@ -52,3 +52,20 @@ style.textContent = `
 }
 `;
 document.head.append(style);
+
+
+function adjustFeedbackBox(width, height) {
+    let styles = `
+    .overlay_window {
+        height: ${height}%;
+        width: ${width}%;
+        top: ${(100-height)/2}%;
+        left: ${(100-width)/2}%;
+    }
+    `
+    var styleSheet = document.createElement("style")
+    styleSheet.textContent = styles
+    document.head.appendChild(styleSheet)
+}
+
+adjustFeedbackBox(57,69);
