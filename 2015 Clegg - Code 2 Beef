@@ -5871,21 +5871,21 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.textContent = "Your credibility heading into the election is ' + CScore + '.";
+    a.innerHTML = "Your credibility heading into the election is ' + CScore + '.";
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement("p");
-    b.textContent = "Your reputation with the Conservative government is ' + CRpScore + '.";
+    b.innerHTML = "Your reputation with the Conservative government is ' + CRpScore + '.";
     // b.style.flexGrow = "0.1";
     b.style.color = "black";
     b.style.margin = "8px";
     hqDiv.appendChild(b);
 
     let c = document.createElement("c");
-    c.textContent = "Our Victories with the country number as ' + Wins + '.";
+    c.innerHTML = "Our Victories with the country number as ' + Wins + '.";
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
