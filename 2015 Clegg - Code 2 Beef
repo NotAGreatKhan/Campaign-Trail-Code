@@ -5953,7 +5953,7 @@ function openHeadquarter() {
     hqDiv.style.display = "flex"; // Set layout to flex to allow columns
     hqDiv.style.color = "white";
     hqDiv.style.backgroundColor = "#383838";
-    hqDiv.style.backgroundImage = "url(https://imgur.com/ykzkKvF.jpg)"; 
+    hqDiv.style.backgroundImage = "url(https://imgur.com/swUf4Yu.jpg)"; 
     hqDiv.style.border = "5px solid black";
     hqDiv.style.borderRadius = "10px";
     hqDiv.style.height = "56%";
