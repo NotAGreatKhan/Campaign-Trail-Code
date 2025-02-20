@@ -335,6 +335,15 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
+        "pk": 21670,
+        "fields": {
+            "priority": 0,
+            "description": "It’s been multiple years since you were cheered into electoral power. But none of those feelings have stuck around with you, the old triumphalist mood of your party has faded. There have been virtually no legislative accomplishments to your name, save for a few symbolic moderations to austerity. There’s got to be something you can do, right?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
         "pk": 21665,
         "fields": {
             "priority": 0,
@@ -375,15 +384,6 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "We obviously don’t want to panic you but we have some sources indicating that the Tories are going to put a referendum on EU membership in their 2015 manifesto, but say we treat these rumors as true, what would you want to do? ",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 21670,
-        "fields": {
-            "priority": 0,
-            "description": "It’s been multiple years since you were cheered into electoral power. But none of those feelings have stuck around with you, the old triumphalist mood of your party has faded. There have been virtually no legislative accomplishments to your name, save for a few symbolic moderations to austerity. There’s got to be something you can do, right?",
             "likelihood": 1
         }
     },
@@ -5047,6 +5047,46 @@ campaignTrail_temp.candidate_last_name = "Clegg";
 campaignTrail_temp.running_mate_last_name = "LibDems";
 
 
+campaignTrail_temp.jet_data = [{
+    "nicknames": {
+        "200": "Cameron",
+        "201": "Clegg",
+        "202": "Miliband",
+        "203": "Sturgeon",
+        "20681": "Farage",
+        "20738": "Greens",
+        "20795": "Plaid Cymru",
+        "20852": "Sinn Féin",
+        "20909": "DUP",
+        "20966": "UUP",
+        "21023": "SDLP",
+        "21080": "Alliance",
+        "21137": "TUV",
+        "21194": "Speaker",
+        "21251": "Ind/Oth"
+    },
+    "mapping_enabled": true,
+    "mapping_data": {
+        "electionPk": "20",
+        "mapSvg": "",
+        "x": "885",
+        "y": "863",
+        "dx": "-450",
+        "dy": "142"
+    },
+    "banner_enabled": true,
+    "banner_data": {
+        "canName": "Clegg",
+        "runName": "LibDems",
+        "runImage": "https://imgur.com/8cKBwiD.jpg",
+        "canImage": "https://imgur.com/6dM0aMg.jpg"
+    },
+    "cyoa_enabled": true,
+    "cyoa_data": {}
+}
+]
+
+
 function changechart(){
     if (document.getElementById("state_info")!=null) {
     overallthing=document.getElementById("state_info").innerHTML;
@@ -5106,44 +5146,22 @@ style.textContent = `
 document.head.append(style);
 
 
-campaignTrail_temp.jet_data = [{
-    "nicknames": {
-        "200": "Cameron",
-        "201": "Clegg",
-        "202": "Miliband",
-        "203": "Sturgeon",
-        "20681": "Farage",
-        "20738": "Greens",
-        "20795": "Plaid Cymru",
-        "20852": "Sinn Féin",
-        "20909": "DUP",
-        "20966": "UUP",
-        "21023": "SDLP",
-        "21080": "Alliance",
-        "21137": "TUV",
-        "21194": "Speaker",
-        "21251": "Ind/Oth"
-    },
-    "mapping_enabled": true,
-    "mapping_data": {
-        "electionPk": "20",
-        "mapSvg": "",
-        "x": "885",
-        "y": "863",
-        "dx": "-450",
-        "dy": "142"
-    },
-    "banner_enabled": true,
-    "banner_data": {
-        "canName": "Clegg",
-        "runName": "LibDems",
-        "runImage": "https://imgur.com/8cKBwiD.jpg",
-        "canImage": "https://imgur.com/6dM0aMg.jpg"
-    },
-    "cyoa_enabled": true,
-    "cyoa_data": {}
+function adjustFeedbackBox(width, height) {
+    let styles = `
+    .overlay_window {
+        height: ${height}%;
+        width: ${width}%;
+        top: ${(100-height)/2}%;
+        left: ${(100-width)/2}%;
+    }
+    `
+    var styleSheet = document.createElement("style")
+    styleSheet.textContent = styles
+    document.head.appendChild(styleSheet)
 }
-]
+
+adjustFeedbackBox(57,69);
+
 
 // For UK Mod
 distributeSeatsUK = () => {
@@ -5299,7 +5317,6 @@ distributeSeatsUK = () => {
 	}
 
 }
-
 
 let observerRunning = false;
 let changeChartRunning = false;
@@ -5627,6 +5644,29 @@ function addHeadquarterButton() {
 
 function openHeadquarter() {
 
+    var CScore = 2;
+    var CRpScore = 2;
+
+    if (Cred < 3) {
+        CScore = "<font color='#ad1313;'><b>declining</b></font>"
+    }
+    if (Cred >= 3 && Cred < 6) {
+        CScore = "<font color='#d58627;'><b>lagging</b></font>"
+    }
+    if (Cred >= 6) {
+        CScore = "<font color='#7ba922;'><b>strong</b></font>"
+    }
+
+    if (ConRep < 3) {
+        CRpScore = "<font color='#ad1313;'><b>unworkable</b></font>"
+    }
+    if (ConRep >= 3 && ConRep < 7) {
+        CRpScore = "<font color='#d58627;'><b>shaky</b></font>"
+    }
+    if (ConRep >= 7) {
+        CRpScore = "<font color='#7ba922;'><b>harmonious</b></font>"
+    }
+
     let questions = document.querySelector(".inner_window_question");
 
     questions.style.display = "none";
@@ -5699,14 +5739,14 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.textContent = "Your credibility heading into the election is ' + Cred + '.";
+    a.textContent = "Your credibility heading into the election is ' + CScore + '.";
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement("p");
-    b.textContent = "Your reputation with the Conservative government is ' + ConRep + '.";
+    b.textContent = "Your reputation with the Conservative government is ' + CRpScore + '.";
     // b.style.flexGrow = "0.1";
     b.style.color = "black";
     b.style.margin = "8px";
