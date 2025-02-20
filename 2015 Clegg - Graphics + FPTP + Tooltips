@@ -555,6 +555,29 @@ function addHeadquarterButton() {
 
 function openHeadquarter() {
 
+    var CScore = 2;
+    var CRpScore = 2;
+
+    if (Cred < 3) {
+        CScore = "<font color='#ad1313;'><b>declining</b></font>"
+    }
+    if (Cred >= 3 && Cred < 6) {
+        CScore = "<font color='#d58627;'><b>lagging</b></font>"
+    }
+    if (Cred >= 6) {
+        CScore = "<font color='#7ba922;'><b>strong</b></font>"
+    }
+
+    if (ConRep < 3) {
+        CRpScore = "<font color='#ad1313;'><b>unworkable</b></font>"
+    }
+    if (ConRep >= 3 && ConRep < 7) {
+        CRpScore = "<font color='#d58627;'><b>shaky</b></font>"
+    }
+    if (ConRep >= 7) {
+        CRpScore = "<font color='#7ba922;'><b>harmonious</b></font>"
+    }
+
     let questions = document.querySelector(".inner_window_question");
 
     questions.style.display = "none";
@@ -627,14 +650,14 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.textContent = "Your credibility heading into the election is ' + Cred + '.";
+    a.textContent = "Your credibility heading into the election is ' + CScore + '.";
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement("p");
-    b.textContent = "Your reputation with the Conservative government is ' + ConRep + '.";
+    b.textContent = "Your reputation with the Conservative government is ' + CRpScore + '.";
     // b.style.flexGrow = "0.1";
     b.style.color = "black";
     b.style.margin = "8px";
