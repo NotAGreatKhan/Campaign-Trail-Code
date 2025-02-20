@@ -8,148 +8,9 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
-var Cred = 2;
-var ConRep = 2;
-var PolCap = 0;
-var Wins = 0;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
-    if (ans == 21687 || ans == 21706){
-    campaignTrail_temp.candidate_json[3]["fields"].first_name = "Mr"
-    campaignTrail_temp.candidate_json[3]["fields"].last_name = "Labour"
-    campaignTrail_temp.candidate_json[3].fields.color_hex = "#ea1f1f"
-    }
-    if (ans == 21688 || ans == 21709){
-    campaignTrail_temp.candidate_json[3]["fields"].first_name = "Ed"
-    campaignTrail_temp.candidate_json[3]["fields"].last_name = "Miliband"
-    campaignTrail_temp.candidate_json[3].fields.color_hex = "#ff0000"
-    }
-    if(ans == 21703){
-      Cred += 1;
-    }
-    if(ans == 21687){
-      Wins += 1;
-    }
-    if(ans == 21688){
-      Cred += 1;
-    }
-    if(ans == 21732){
-      Cred -= 1;
-    }
-    if(ans == 21736){
-      ConRep -= 1;
-    }
-    if(ans == 21740){
-      ConRep += 1;
-    }
-    if(ans == 21740){
-      Cred -= 1;
-    }
-    if(ans == 21742){
-      ConRep += 1;
-    }
-    if(ans == 21742){
-      Cred += 1;
-    }
-    if(ans == 21744){
-      ConRep -= 1;
-    }
-    if(ans == 21750){
-      ConRep -= 1;
-    }
-    if(ans == 21750){
-      Cred -= 1;
-    }    
-    if(ans == 21748){
-      Cred += 1;
-    }
-    if(ans == 21754){
-      Wins += 1;
-    }
-    if(ans == 21754){
-      Cred += 1;
-    }
-    if(ans == 21758){
-      Cred -= 1;
-    }
-    if(ans == 21760){
-      Cred += 1;
-    }
-    if(ans == 21764){
-      Cred += 1;
-    }    
-    if(ans == 21766){
-      ConRep -= 1;
-    }
-    if(ans == 21768){
-      ConRep -= 1;
-    }
-    if(ans == 21768){
-      Cred -= 1;
-    }
-    if(ans == 21772){
-      Wins += 1;
-    }
-    if(ans == 21772){
-      Cred += 1;
-    }
-    if(ans == 21776){
-      ConRep += 1;
-    }    
-    if(ans == 21778){
-      Cred += 1;
-    }    
-    if(ans == 21778){
-      Wins += 1;
-    }    
-    if(ans == 21780){
-      Cred -= 1;
-    }
-    if(ans == 21780){
-      ConRep -= 1;
-    }    
-    if(ans == 21782){
-      ConRep += 1;
-    }
-    if(ans == 21784){
-      Cred += 1;
-    }    
-    if(ans == 21784){
-      Wins += 1;
-    }
-    if(ans == 21788){
-      Cred += 1;
-    }    
-    if(ans == 21790){
-      Wins -= 1;
-    }
-    if(ans == 21790){
-      Cred -= 1;
-    }
-    if(ans == 21790){
-      ConRep -= 1;
-    }
-    if(ans == 21790){
-      Cred -= 1;
-    }
-    if(ans == 21792){
-      Cred += 1;
-    }    
-    if(ans == 21796){
-      ConRep -= 1;
-    }
-    if(ans == 21798){
-      Cred -= 1;
-    }    
-    if(ans == 21800){
-      Cred += 1;
-    }    
-    if(ans == 21802){
-      Cred -= 1;
-    }
-    if(ans == 21802){
-      ConRep -= 1;
-    }
+
 }
 
 campaignTrail_temp.questions_json = [
@@ -392,7 +253,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21672,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "There’s been some horrifying news out of Syria. Assad has used chemical weapons against his own people, crossing the red-lines set by President Obama. While Cameron tries to convince Obama to respond militarily, Tory MPs have launched a motion in the Commons granting British forces the right to strike back in accordance with the UN. Safe to say, this will be a controversial vote. How do we handle this, Nick?",
             "likelihood": 1
         }
     },
@@ -401,7 +262,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21673,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Well, it’s been an eventful 5 years to say the least but as per the terms of the FTPA, Parliament will be dissolved and an election will be held on the 7th of May. This is a historic milestone for the party; they haven’t been in power in quite some time. We’d like to stay there. Any last words before we go?",
             "likelihood": 1
         }
     },
@@ -410,7 +271,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21674,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Going into this election, you’ve made no shortage of enemies. Unfortunately, this means that we need to pick our battles. Plenty of groups are jockeying for our attention: which ones will we prioritize?",
             "likelihood": 1
         }
     },
@@ -419,7 +280,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21675,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "In this day and age, people want to hear their politicians give them a narrative to run with. This is part of the reason we did so well in 2010. We need to craft a narrative that showcases what we’ve done while distracting the public from our shallow CV. What story are we going to tell them?",
             "likelihood": 1
         }
     },
@@ -428,7 +289,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21676,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Now naturally as the junior party in government, the press are going to be speculating about whether, if the situation demands it, you’d be willing to enter into another coalition government, how are we going to deal with this?",
             "likelihood": 1
         }
     },
@@ -437,7 +298,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21677,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "An important milestone is coming up for the election campaign, the ITV debate, only this time you, Cameron and Miliband are going to be joined by UKIP, the Greens, the SNP and Plaid Cymru, what’s going to be your strategy for this?",
             "likelihood": 1
         }
     },
@@ -556,7 +417,7 @@ campaignTrail_temp.answers_json = [
         "pk": 21692,
         "fields": {
             "question": 21677,
-            "description": "put description here"
+            "description": "The debates were a massive boost for us in 2010, we need to focus on delivering our message and being optimistic instead of attacking the parties."
         }
     },
     {
@@ -1005,6 +866,142 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 21671,
             "description": "This issue has got me, Miliband, Farage and Lucas batting for the same team, dear God I hope this works."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21830,
+        "fields": {
+            "question": 21672,
+            "description": "Anti-interventionism is a cornerstone of our party, going against that principle is a line I’m not prepared to cross, coalition consequences be damned, we’re opposing this motion on a 3-line whip."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21832,
+        "fields": {
+            "question": 21672,
+            "description": "Look, this issue has the potential to rip our party in two, it may be selfish but I want to keep this vote as far away from party leadership as possible. We're going to free-vote this motion. Isn’t there an engagement in my constituency I need to be at?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21834,
+        "fields": {
+            "question": 21672,
+            "description": "The use of chemical weapons is horrific, by not taking action we’re complicit in the slaughter carried on in Syria, we’re following the Tories in approving this motion, 3-line whip, no excuses."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21836,
+        "fields": {
+            "question": 21672,
+            "description": "I understand that there are going to be some issues that my MPs will have with this, let’s see if we can hold a party meeting to reach a consensus on the motion."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21841,
+        "fields": {
+            "question": 21673,
+            "description": "“It is because of our resilience that we have been able to achieve incredible things. We are the only party standing up for the moderate majority in parliament, and our resilience will carry us far on the 7th”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21843,
+        "fields": {
+            "question": 21674,
+            "description": "Students: they’re the group that propelled us into government 5 years ago, we need to make sure we’re keeping their votes as well as grabbing the votes of new students. We were their party in 2010 and we need to keep it that way."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21845,
+        "fields": {
+            "question": 21674,
+            "description": "Business-people: Liberal Democrat intervention prevented the worst of austerity from impacting their prospects and with the Tories leaning into Euroscepticism, we can make our case as the party of the Single Market and Customs Union."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21847,
+        "fields": {
+            "question": 21674,
+            "description": "Rural voters: we have a lot of seats in the South-West that the Tories could be eyeing up so it’s imperative that we show our support for rural communities, whether that be pensioners, farmers or seaside villages, we need to be the party of the countryside."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21849,
+        "fields": {
+            "question": 21674,
+            "description": "Honestly, our coalition has expanded so much over the past few elections that giving preferential focus to one group would only disadvantage us, distribute the funds and let local Lib Dem branches craft their own strategies."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21851,
+        "fields": {
+            "question": 21675,
+            "description": "Stability: Thanks to our input, the UK staved off the worst of austerity and our input made sure that Britain would continue on the path to becoming a modern 21st century liberal society."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21852,
+        "fields": {
+            "question": 21675,
+            "description": "Reform: We’re the party of change, our platform is the most constitutionally radical out of all the parties, voting reform, lowering the voting age to 16 and federal Britain."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21853,
+        "fields": {
+            "question": 21675,
+            "description": "Liberty: the Liberal Democrats are the party that has your rights at the forefront of our platform, right to privacy, the legalisation of same-sex marriage and we will only continue that defence of your rights."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21857,
+        "fields": {
+            "question": 21676,
+            "description": "We need to keep our options open, no point in making things harder for ourselves, let’s say that we will work to form a stable government if needed, obviously ruling out the SNP."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21858,
+        "fields": {
+            "question": 21676,
+            "description": "Maybe we can send a signal to Labour here about future cooperation, say that we will work towards forming a government that aligns with the values of our party."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21859,
+        "fields": {
+            "question": 21676,
+            "description": "Look, we’re not going to feed these rumours, it’s distracting attention from the campaign, let’s just say that we’ll only be discussing the issue after the election."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21860,
+        "fields": {
+            "question": 21677,
+            "description": "Our main focus for this debate should be on smaller parties, UKIP could seriously damage the Conservative’s seat count so maybe by focusing on them we can make them more damaging for the Tories?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21861,
+        "fields": {
+            "question": 21677,
+            "description": "We’re going to be hounded on our record in the coalition so we need to go in ready to defend our decisions on every issue, assume that we’ll be the target."
         }
     }
 ]
@@ -4399,7 +4396,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21695,
         "fields": {
             "answer": 21681,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0.3,
             "issue_importance": 5
         }
@@ -4419,7 +4416,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21697,
         "fields": {
             "answer": 21682,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0,
             "issue_importance": 5
         }
@@ -4439,7 +4436,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21712,
         "fields": {
             "answer": 21685,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0,
             "issue_importance": 3
         }
@@ -4459,7 +4456,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21716,
         "fields": {
             "answer": 21700,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0.2,
             "issue_importance": 3
         }
@@ -4479,7 +4476,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21721,
         "fields": {
             "answer": 21686,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0,
             "issue_importance": 2
         }
@@ -5038,6 +5035,141 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 201,
             "answer_feedback": "When it’s all said and done, turnout sits at a miserable 42% and the public have voted 67/32 to keep FPTP, the two-party grip remains strong and you’ve just gambled away most of your political capital, disappointment doesn’t even begin to describe this result."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21831,
+        "fields": {
+            "answer": 21830,
+            "candidate": 201,
+            "answer_feedback": "Memories of the anti-Iraq protests flood through your mind and you cross into the no lobby. The motion is defeated with 30 Tory MPs joining your rebellion, Kennedy’s legacy is intact but you’ve made yourself an easy target. Enjoy running the media circuit explaining your decision for the next few weeks…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21833,
+        "fields": {
+            "answer": 21832,
+            "candidate": 201,
+            "answer_feedback": "In between speaking to campaign groups about a local fundraiser, 3 notifications reach your phone, the first, BBC News, the motion was defeated by a narrow margin of Tory and Lib Dem rebels. The second, 2 missed calls from Downing Street. You put your phone on silent for the rest of the day."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21835,
+        "fields": {
+            "answer": 21834,
+            "candidate": 201,
+            "answer_feedback": "14 Lib Dems rebel with 9 not voting, the motion is defeated. Privately, it seems as if you’ll take the blame for the failure, but at least no can say you didn’t try."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21837,
+        "fields": {
+            "answer": 21836,
+            "candidate": 201,
+            "answer_feedback": "After hours of deliberations, arguments and maybe screaming, a solution is reached. The party will vote for the motion, on the condition that British bases will not host US missiles, despite Tory dissent, the motion passes, and you come out of the day relatively unscathed, the same can’t be said for Cameron."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21838,
+        "fields": {
+            "answer": 21823,
+            "candidate": 201,
+            "answer_feedback": "You obtain a meeting with Osborne, but it’s all for naught. Osborne does privately agree that it’s going too far and too fast, but he can’t slow the inevitable conclusion. Hammond announces that there will be a referendum at some point in the near-future. You head back to headquarters to prepare for the coming referendum, and the coalitions that will be formed…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21839,
+        "fields": {
+            "answer": 21824,
+            "candidate": 201,
+            "answer_feedback": "All hell breaks loose. The Tories are emboldened to stick with the referendum, with Labour defending your choice. Either way, the coalition is blown to smithereens and we’re headed for an early election. Snap polling already shows a precipitous loss of support in non-university seats, threatening a solid majority of your seats. Buckle down, Nick, you’re in the muddy."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21840,
+        "fields": {
+            "answer": 21825,
+            "candidate": 201,
+            "answer_feedback": "You’re able to get Cameron in the room with you and the Lib Dem higher-ups, but in the end, it comes to nothing. Cameron expresses his frustration, but says if he doesn’t grant it, the right-wing of the Tories will revolt against him. Frustrated, you and the higher-ups prep for a referendum. Parties will be fuzzy, and you’ll have to get good at playing everyone off each other."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21842,
+        "fields": {
+            "answer": 21841,
+            "candidate": 201,
+            "answer_feedback": "You’re the first Liberal to occupy a significant role in government since Lloyd George nearly a century ago. Whether you’re in the same league as him is now up the voters. Godspeed Nick."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21844,
+        "fields": {
+            "answer": 21843,
+            "candidate": 201,
+            "answer_feedback": "Manchester, Cardiff, Sussex, in essence, a grand tour of the country’s intellectual elite. The more time you spend on campus, it seems your main competitor this time round is Natalie Bennett’s Greens, so it’s really a battle of whose can “out-change” each other."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21846,
+        "fields": {
+            "answer": 21845,
+            "candidate": 201,
+            "answer_feedback": "You make speeches at more business conferences than you can count, touting the benefits your party has provided to markets and industries. It’s almost a comfortable cycle you follow. Maybe if this election is that bad for you, the business world could be your next home…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21848,
+        "fields": {
+            "answer": 21847,
+            "candidate": 201,
+            "answer_feedback": "Recognising that you may be slightly out of your comfort zone with this, you let Tim Farron take the lead on this campaign. You focus mostly on donor events and fundraisers, but every day you miss the campaign trail. Ah to go back to the halcyon days of 2010…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21850,
+        "fields": {
+            "answer": 21849,
+            "candidate": 201,
+            "answer_feedback": "Farron in the southwest, Davey in the city, Alexander and Kennedy in Scotland, all the across the country, your MPs are getting your message out there, slightly conflicting in some cases but it’s out there nonetheless. There’s always the concern that you’re spreading yourself a little too thin, but as long as your MPs keep strongly supporting the campaign, you should be okay."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21854,
+        "fields": {
+            "answer": 21851,
+            "candidate": 201,
+            "answer_feedback": "This pitch works for the London high-society who are well-informed on the goings of the British government. But for the rest of the country, this pitch falls flat. They’ve seen the chaos, the turmoil, the fact that there will be a Brexit referendum and figure that taking a chance on a weaker Labour candidate will be better for their pocketbooks than a toothless Lib Dem. Resigned, you go to campaign at uni campuses to try and stave off an inevitable defeat."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21855,
+        "fields": {
+            "answer": 21852,
+            "candidate": 201,
+            "answer_feedback": "put feedback here, don't forget to change candidate"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21856,
+        "fields": {
+            "answer": 21853,
+            "candidate": 201,
+            "answer_feedback": "put feedback here, don't forget to change candidate"
+        }
     }
 ]
 
@@ -5045,6 +5177,7 @@ campaignTrail_temp.candidate_image_url = "https://imgur.com/6dM0aMg.jpg";
 campaignTrail_temp.running_mate_image_url = "https://imgur.com/8cKBwiD.jpg";
 campaignTrail_temp.candidate_last_name = "Clegg";
 campaignTrail_temp.running_mate_last_name = "LibDems";
+
 
 
 campaignTrail_temp.jet_data = [{
@@ -5085,7 +5218,6 @@ campaignTrail_temp.jet_data = [{
     "cyoa_data": {}
 }
 ]
-
 
 function changechart(){
     if (document.getElementById("state_info")!=null) {
