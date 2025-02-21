@@ -86,6 +86,64 @@ cyoAdventure = function (a) {
       Cred -= 1;
     }
 
+    // Question 18 – 'Go Home' Vans
+    if(ans == 21784){
+      Cred += 1;
+    }
+    if(ans == 21782){
+      Cred -= 1;
+    }
+
+    // Question 19 – Indy Ref
+    if(ans == 21788){
+      Cred += 1;
+    }
+    if(ans == 21790){
+      Cred -= 2;
+    }
+
+    // Question 20 – NHS Reform
+    if(ans == 21792){
+      Cred += 1;
+    }
+    if(ans == 21794){
+      Cred -= 1;
+    }
+
+    // Question 21 – If Your Reputation Is In Tatters
+    if(ans == 21826){
+      Cred -= 2;
+    }
+
+    // Question 22 – Questionable Arms Deals
+    if(ans == 21800){
+      Cred += 1;
+    }
+    if(ans == 21798){
+      Cred -= 1;
+    }
+
+    // Question 23 – EU Divisions
+    if(ans == 21804){
+      Cred += 1;
+    }
+    if(ans == 21806){
+      Cred -= 1;
+    }
+
+    // Question 24 – Climate Change
+    if(ans == 21810){
+      Cred += 1;
+    }
+    if(ans == 21812){
+      Cred -= 1;
+    }
+
+    // Question 25 – UK Losing AAA Bond Status
+    if(ans == 21824){
+      Cred -= 1;
+    }
+
     // CONSERVATIVE REPUTATION
     // Question 5 – Cameron Negotiations
     if(ans == 21706){
@@ -155,6 +213,47 @@ cyoAdventure = function (a) {
       ConRep += 1;
     }
 
+    // Question 19 – Indy Ref
+    if(ans == 21790){
+      ConRep -= 2;
+    }
+
+    // Question 20 – NHS Reform
+    if(ans == 21794){
+      ConRep -= 1;
+    }
+
+    // Question 22 – Questionable Arms Deals
+    if(ans == 21802){
+      ConRep -= 1;
+    }
+    if(ans == 21798){
+      ConRep -= 1;
+    }
+
+    // Question 23 – EU Divisions
+    if(ans == 21806){
+      ConRep -= 1;
+    }
+
+    // Question 24 – Climate Change
+    if(ans == 21814){
+      ConRep -= 1;
+    }
+
+    // Question 25 – UK Losing AAA Bond Status
+    if(ans == 21821){
+      ConRep -= 1;
+    }
+    if(ans == 21819){
+      ConRep -= 1;
+    }
+
+    // Question 26 – Planned EU Ref
+    if(ans == 21824){
+      ConRep -= 2;
+    }
+
     // WINS
     // Question 5 – Cameron Negotiations
     if(ans == 21687){
@@ -184,4 +283,21 @@ cyoAdventure = function (a) {
       Wins += 1;
     }
 
+    // Question 18 – 'Go Home' Vans
+    if(ans == 21784){
+      Wins += 1;
+    }
+
+    // Question 19 – Indy Ref
+    if(ans == 21788){
+      Wins += 1;
+    }
+    if(ans == 21790){
+      Wins -= 2;
+    }
+
+    // Question 23 – EU Divisions
+    if(ans == 21804){
+      Wins += 1;
+    }
 }
