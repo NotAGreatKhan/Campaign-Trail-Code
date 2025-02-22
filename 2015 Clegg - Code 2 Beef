@@ -24,131 +24,312 @@ cyoAdventure = function (a) {
     campaignTrail_temp.candidate_json[3]["fields"].last_name = "Miliband"
     campaignTrail_temp.candidate_json[3].fields.color_hex = "#ff0000"
     }
-    if(ans == 21703){
+    
+    // CREDIBILITY
+    // Question 4
+    if(ans == 21686){
       Cred += 1;
     }
-    if(ans == 21687){
-      Wins += 1;
-    }
+    
+    // Question 6 - Labour Leadership Contest
     if(ans == 21688){
       Cred += 1;
     }
-    if(ans == 21732){
-      Cred -= 1;
+
+    // Question 8 - First PMQs
+    if(ans == 21734){
+      Cred += 1;
     }
+
+    // Question 9 - Ironing Out FTP Act
     if(ans == 21736){
-      ConRep -= 1;
-    }
-    if(ans == 21740){
-      ConRep += 1;
-    }
-    if(ans == 21740){
       Cred -= 1;
     }
-    if(ans == 21742){
-      ConRep += 1;
-    }
+
+    // Question 10 - Libya
     if(ans == 21742){
       Cred += 1;
     }
-    if(ans == 21744){
-      ConRep -= 1;
-    }
-    if(ans == 21750){
-      ConRep -= 1;
-    }
-    if(ans == 21750){
-      Cred -= 1;
-    }    
+
+    // Question 11 - Osborne Budget
     if(ans == 21748){
       Cred += 1;
     }
-    if(ans == 21754){
-      Wins += 1;
+    if(ans == 21750){
+      Cred -= 1;
     }
+
+    // Question 12 - Tuition Fees
     if(ans == 21754){
+      Cred += 1;
+    }
+    if(ans == 21752){
+      Cred -= 1;
+    }
+
+    // Question 13 – Andy Coulson Sacked
+    if(ans == 21760){
       Cred += 1;
     }
     if(ans == 21758){
       Cred -= 1;
     }
-    if(ans == 21760){
-      Cred += 1;
-    }
+
+    // Question 14 – Vince Cable
     if(ans == 21764){
       Cred += 1;
-    }    
-    if(ans == 21766){
-      ConRep -= 1;
-    }
-    if(ans == 21768){
-      ConRep -= 1;
     }
     if(ans == 21768){
       Cred -= 1;
     }
-    if(ans == 21772){
-      Wins += 1;
-    }
+
+    // Question 15 – People's Bank
     if(ans == 21772){
       Cred += 1;
     }
-    if(ans == 21776){
-      ConRep += 1;
-    }    
+
+    // Question 17 – HoL Reform
     if(ans == 21778){
       Cred += 1;
-    }    
-    if(ans == 21778){
-      Wins += 1;
-    }    
+    }
     if(ans == 21780){
       Cred -= 1;
     }
-    if(ans == 21780){
-      ConRep -= 1;
-    }    
+
+    // Question 18 – 'Go Home' Vans
+    if(ans == 21784){
+      Cred += 1;
+    }
     if(ans == 21782){
-      ConRep += 1;
+      Cred -= 1;
     }
-    if(ans == 21784){
-      Cred += 1;
-    }    
-    if(ans == 21784){
-      Wins += 1;
-    }
+
+    // Question 19 – Indy Ref
     if(ans == 21788){
       Cred += 1;
-    }    
-    if(ans == 21790){
-      Wins -= 1;
     }
     if(ans == 21790){
-      Cred -= 1;
+      Cred -= 2;
     }
-    if(ans == 21790){
-      ConRep -= 1;
-    }
-    if(ans == 21790){
-      Cred -= 1;
-    }
+
+    // Question 20 – NHS Reform
     if(ans == 21792){
       Cred += 1;
-    }    
-    if(ans == 21796){
-      ConRep -= 1;
+    }
+    if(ans == 21794){
+      Cred -= 1;
+    }
+
+    // Question 21 – If Your Reputation Is In Tatters
+    if(ans == 21826){
+      Cred -= 2;
+    }
+
+    // Question 22 – Questionable Arms Deals
+    if(ans == 21800){
+      Cred += 1;
     }
     if(ans == 21798){
       Cred -= 1;
-    }    
-    if(ans == 21800){
+    }
+
+    // Question 23 – EU Divisions
+    if(ans == 21804){
       Cred += 1;
-    }    
-    if(ans == 21802){
+    }
+    if(ans == 21806){
       Cred -= 1;
     }
+
+    // Question 24 – Climate Change
+    if(ans == 21810){
+      Cred += 1;
+    }
+    if(ans == 21812){
+      Cred -= 1;
+    }
+
+    // Question 25 – UK Losing AAA Bond Status
+    if(ans == 21824){
+      Cred -= 1;
+    }
+
+    // Question 27 – Syria vote
+    if(ans == 21836){
+      Cred += 1;
+    }
+    if(ans == 21834){
+      Cred -= 1;
+    }
+
+    // CONSERVATIVE REPUTATION
+    // Question 5 – Cameron Negotiations
+    if(ans == 21706){
+      ConRep += 1;
+    }
+
+    // Question 8 - First PMQs
+    if(ans == 21734){
+      ConRep += 1;
+    }
+    if(ans == 21732){
+      ConRep -= 1;
+    }
+    
+    // Question 9 - Ironing Out FTP Act
+    if(ans == 21738){
+      ConRep += 1;
+    }
+    if(ans == 21736){
+      ConRep -= 1;
+    }
+
+    // Question 10 - Libya
+    if(ans == 21742){
+      ConRep += 1;
+    }
+    if(ans == 21744){
+      ConRep -= 1;
+    }
+
+    // Question 11 - Osborne Budget
+    if(ans == 21748){
+      ConRep += 1;
+    }
+    if(ans == 21750){
+      ConRep -= 1;
+    }
+
+    // Question 12 - Tuition Fees
+    if(ans == 21754){
+      ConRep += 1;
+    }
+    if(ans == 21752){
+      ConRep -= 1;
+    }
+
+    // Question 13 – Andy Coulson Sacked
+    if(ans == 21762){
+      ConRep += 1;
+    }
+    if(ans == 21760){
+      ConRep += 1;
+    }
+
+    // Question 14 – Vince Cable
+    if(ans == 21768){
+      ConRep -= 1;
+    }
+
+    // Question 15 – People's Bank
+    if(ans == 21774){
+      ConRep -= 1;
+    }
+
+    // Question 17 – HoL Reform
+    if(ans == 21776){
+      ConRep += 1;
+    }
+
+    // Question 19 – Indy Ref
+    if(ans == 21790){
+      ConRep -= 2;
+    }
+
+    // Question 20 – NHS Reform
+    if(ans == 21794){
+      ConRep -= 1;
+    }
+
+    // Question 22 – Questionable Arms Deals
     if(ans == 21802){
       ConRep -= 1;
+    }
+    if(ans == 21798){
+      ConRep -= 1;
+    }
+
+    // Question 23 – EU Divisions
+    if(ans == 21806){
+      ConRep -= 1;
+    }
+
+    // Question 24 – Climate Change
+    if(ans == 21814){
+      ConRep -= 1;
+    }
+
+    // Question 25 – UK Losing AAA Bond Status
+    if(ans == 21821){
+      ConRep -= 1;
+    }
+    if(ans == 21819){
+      ConRep -= 1;
+    }
+
+    // Question 26 – Planned EU Ref
+    if(ans == 21824){
+      ConRep -= 2;
+    }
+ 
+    // Question 27 – Syria vote
+    if(ans == 21834){
+      ConRep += 1;
+    }
+    if(ans == 21832){
+      ConRep -= 1;
+    }
+
+    // WINS
+    // Question 5 – Cameron Negotiations
+    if(ans == 21687){
+      Wins += 1;
+    }
+
+    // Question 12 - Tuition Fees
+    if(ans == 21754){
+      Wins += 1;
+    }
+
+    // Question 13 – Andy Coulson Sacked
+    if(ans == 21760){
+      Wins += 1;
+    }
+
+    // Question 15 – People's Bank
+    if(ans == 21772){
+      Wins += 1;
+    }
+
+    // Question 17 – HoL Reform
+    if(ans == 21778){
+      Wins += 1;
+    }
+    if(ans == 21776){
+      Wins += 1;
+    }
+
+    // Question 18 – 'Go Home' Vans
+    if(ans == 21784){
+      Wins += 1;
+    }
+
+    // Question 19 – Indy Ref
+    if(ans == 21788){
+      Wins += 1;
+    }
+    if(ans == 21790){
+      Wins -= 2;
+    }
+
+    // Question 23 – EU Divisions
+    if(ans == 21804){
+      Wins += 1;
+    }
+
+    // Question 27 – Syria vote
+    if(ans == 21836){
+      Wins += 1;
     }
 }
 
