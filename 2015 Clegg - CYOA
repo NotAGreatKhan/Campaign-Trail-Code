@@ -144,6 +144,14 @@ cyoAdventure = function (a) {
       Cred -= 1;
     }
 
+    // Question 27 – Syria vote
+    if(ans == 21836){
+      Cred += 1;
+    }
+    if(ans == 21834){
+      Cred -= 1;
+    }
+
     // CONSERVATIVE REPUTATION
     // Question 5 – Cameron Negotiations
     if(ans == 21706){
@@ -253,6 +261,14 @@ cyoAdventure = function (a) {
     if(ans == 21824){
       ConRep -= 2;
     }
+ 
+    // Question 27 – Syria vote
+    if(ans == 21834){
+      ConRep += 1;
+    }
+    if(ans == 21832){
+      ConRep -= 1;
+    }
 
     // WINS
     // Question 5 – Cameron Negotiations
@@ -298,6 +314,11 @@ cyoAdventure = function (a) {
 
     // Question 23 – EU Divisions
     if(ans == 21804){
+      Wins += 1;
+    }
+
+    // Question 27 – Syria vote
+    if(ans == 21836){
       Wins += 1;
     }
 }
