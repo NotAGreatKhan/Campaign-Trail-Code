@@ -488,7 +488,6 @@ function addCoalitions() {
  return (partyLeaders.find((p) => p.party === partyWithHighestSeats))
  }
      
- //Endings – Endings are determined based on if statements. They can be related to the number of seats won, popular vote percentage, popular vote raw number, if certain answers are chosen, etc.
  // constructs endings based on header and pages
  
  construct = (a = 1) => {
@@ -1141,6 +1140,103 @@ function getTooltips(str) {
     applyTooltipsToObject(campaignTrail_temp.questions_json);
     applyTooltipsToObject(campaignTrail_temp.answers_json);
     applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+
+
+let observerRunning = false;
+ let changeChartRunning = false;
+ let mcaHeightRunning = false;
+ let processedNodes = new Set();
+ 
+ async function handleMutations(mutationsList, observer) {
+     if (observerRunning) return;
+     observerRunning = true;
+ 
+     // stop observing
+     observer.disconnect();
+ 
+     // addScrollbar
+     const overallResult = document.getElementById('overall_result');
+     if (overallResult && !processedNodes.has(overallResult)) {
+         overallResult.style.overflow = 'auto';
+         const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
+         const handleClick = () => {
+             overallResult.style.overflow = 'auto';
+         };
+         buttons.forEach(button => button.addEventListener('click', handleClick));
+         processedNodes.add(overallResult);
+     }
+ 
+     // Code to change the results screen
+     if (!changeChartRunning) {
+         changeChartRunning = true;
+         const elementIDs = ["overall_vote_statistics", "state_result_data_summary", "overall_details_container"];
+         for(let id of elementIDs) {
+             let element = document.getElementById(id);
+             if (element && !processedNodes.has(element)) {
+                 let overallthing = element.innerHTML;
+                 overallthing = overallthing.replace("Electoral Votes","Seats Won");
+                 overallthing = overallthing.replace("Candidate","Leader - Party");
+                 element.innerHTML = overallthing;
+                 processedNodes.add(element);
+             }
+         }
+         changeChartRunning = false;
+     }
+  // Code to contain the seat’s results in its box. Adds a scrollbar if they don’t.
+     if (!mcaHeightRunning) {
+         mcaHeightRunning = true;
+         let results_container = document.getElementById("results_container");
+         let chart = document.getElementById("myChart");
+         if (results_container && !processedNodes.has(results_container)) {
+             if (!chart){
+                 results_container.style.height = "98%";
+                 results_container.style.overflow = "scroll";
+             } else {
+                 let mca = document.getElementById("main_content_area");
+                 if (mca) {
+                     mca.style.height = "80%";
+                 }
+             }
+             processedNodes.add(results_container);
+         }
+         mcaHeightRunning = false;
+     }
+ 
+ // Code to contain the seat’s issue scores and electorate. Adds a scrollbar if they don’t fit. Also changes “State Summary” to “Seat Summary”
+     if (!mcaHeightRunning) {	
+         mcaHeightRunning = true;
+         let seat_container = document.getElementById("state_result_container");
+ let chart = document.getElementById("myChart");
+         if (seat_container && !processedNodes.has(state_result_container)) { 
+             if (!chart){
+                 seat_container.style.height = "52%";
+                 seat_container.style.overflow = "scroll";
+             } else {
+                 let mca = document.getElementById("main_content_area");
+                 if (mca) {
+                     mca.style.height = "100%";
+ let element = document.getElementById("state_info");
+             if (element && !processedNodes.has(element)) {
+                 let seatsummary = element.innerHTML;
+                 seatsummary = seat_container.replace("STATE SUMMARY","Seat Summary");
+ element.innerHTML = seatsummary;
+ 
+ }
+ 
+                 }
+             }
+             processedNodes.add(state_result_container);
+         }
+         mcaHeightRunning = false;
+     }
+ 
+     // Resume observing
+     observer.observe(document.documentElement, { childList: true, subtree: true });
+     observerRunning = false;
+ }
+ 
+ let singleObserver = new MutationObserver(handleMutations);
+ singleObserver.observe(document.documentElement, { childList: true, subtree: true });
 
 
 function addHeadquarterButton() {
