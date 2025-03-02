@@ -1,7 +1,6 @@
 e = campaignTrail_temp
   
 document.head.innerHTML += `
-<link rel="stylesheet" href="https://kexanie.github.io/csswin10">
 <style>
 h3 {
     font-size: 1.025em !important;
@@ -16,6 +15,7 @@ input {
     font-size: 0.9em !important; 
     line-height: 17px; 
 }
+`
 
 
 function removeCandidateSummary() {
