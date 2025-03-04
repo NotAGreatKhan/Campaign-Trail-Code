@@ -234,6 +234,7 @@ distributeSeatsUK = () => {
 
 }
 
+
 let observerRunning = false;
 let changeChartRunning = false;
 let mcaHeightRunning = false;
@@ -311,52 +312,57 @@ distributeSeatsUK();
 
 
 function onGameWindowChangeCandidates() {
-        const resultsTableHolder = document.getElementById("overall_details_container");
+    const resultsTableHolder = document.getElementById("overall_details_container");
 
-        if(!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
-            return;
+    if (!resultsTableHolder || resultsTableHolder.classList.contains("done")) {
+        return;
+    }
+
+    resultsTableHolder.classList.add("done");
+
+    const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
+
+    for (let i = 0; i < resultsTable.children.length; i++) {
+        const row = resultsTable.children[i];
+        let name = row.firstChild.innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
         }
 
-        resultsTableHolder.classList.add("done");
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
+        } else {
+            row.children[1].innerHTML = vpTable[name];
+        }
+    }
 
-        const resultsTable = resultsTableHolder.childNodes[3].childNodes[3].children[0];
-        
-        for(let i = 0; i < resultsTable.children.length; i++) {
-            const row = resultsTable.children[i];
-            let name = row.firstChild.innerText;
-            row.insertCell(1);
-            if(name) {
-                name = name.replaceAll("-", "").trim();
-                console.log("name is:" + name)
-            }
+    const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
 
-            if(i == 0) {
-                row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate<span>`;
-            }
-            else {
-                row.children[1].innerHTML = vpTable[name];
-            }
+    for (let i = 0; i < resultsTableHistorical.children.length; i++) {
+        const row = resultsTableHistorical.children[i];
+        let name = row.childNodes[1].innerText;
+        row.insertCell(1);
+        if (name) {
+            name = name.replaceAll("-", "").trim();
         }
 
-        
-        const resultsTableHistorical = resultsTableHolder.childNodes[5].childNodes[3].children[0];
-        
-        for(let i = 0; i < resultsTableHistorical.children.length; i++) {
-            const row = resultsTableHistorical.children[i];
-            let name = row.childNodes[1].innerText;
-            row.insertCell(1);
-            if(name) {
-                name = name.replaceAll("-", "").trim();
-            }
-
-            if(i == 0) {
-                row.children[1].innerHTML = `<span style="font-weight:bold">Running Mate<span>`;
-            }
-            else {
-                row.children[1].innerHTML = vpTableHistorical[name];
-            }
+        if (i == 0) {
+            row.children[1].innerHTML = `<span style="font-weight:bold">Party Leader</span>`;
+        } else {
+            row.children[1].innerHTML = vpTableHistorical[name];
         }
-}
+    }
+
+    // Add CSS to increase row spacing
+    const styleElem = document.createElement('style');
+    styleElem.textContent = `
+        #overall_details_container table tr {
+            line-height: 1.5; /* Adjust line height as needed */
+        }
+    `;
+    document.head.appendChild(styleElem);
+ }
 
 const gameWindowNode = document.getElementById("game_window");
 const candidateWatcherConfig = { attributes: true, childList: true, subtree: true };
@@ -364,101 +370,90 @@ const candidateWatcherConfig = { attributes: true, childList: true, subtree: tru
 const candidateObserver = new MutationObserver(onGameWindowChangeCandidates);
 candidateObserver.observe(gameWindowNode, candidateWatcherConfig);
 
+function updateHistoricalData(newVpTable, newHexColors, newNames, newEvs, newPvs, newPvps) {
+    vpTableHistorical = newVpTable;
+    HistHexcolour = newHexColors;
+    HistName = newNames;
+    HistEV = newEvs;
+    HistPV = newPvs;
+    HistPVP = newPvps;
+}
 
-// constructs endings based on header and pages
+
 construct = (a = 1) => {
 	
-e.page = e.page + a < e.pages.length ? e.page + a : 0
-let html = e.header;
-html += e.pages[e.page] + "<br>";
-if (e.page > 0) {
-
-html += `<button onclick='endingConstructor(a = -1)'>Back</button>`
-}
-if (e.page < e.pages.length - 1) {
-
-html += `<button onclick='endingConstructor(a = 1)'>Next</button>`
-}
-
-for (i in e.executable) {
-if (e.executable[i][0] == e.page) {
-    e.executable[i][1]();
-	
-}
-}
-
-if (e.image == true)
-setTimeout(()=>{
-  candImg = $(".person_image")[0]
-  if (candImg) {
-    candImg.remove()
-	console.log("TRYING");
-    $("#final_results_description")[0].style = `
-      text-align:left;
-      width: 72%;
-	  height:71%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-	  overflow: auto;
-    `
-	 console.log("RESULTS UPDATED");
+    e.page = e.page + a < e.pages.length ? e.page + a : 0
+    let html = e.header;
+    html += e.pages[e.page] + "<br>";
+    if (e.page > 0) {
+    
+    html += `<button onclick='endingConstructor(a = -1)'>Back</button>`
+    }
+    if (e.page < e.pages.length - 1) {
+    
+    html += `<button onclick='endingConstructor(a = 1)'>Next</button>`
+    }
+    
+    for (i in e.executable) {
+    if (e.executable[i][0] == e.page) {
+        e.executable[i][1]();
+      
+    }
+    }
+    
+    if (e.image == true)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0]
+      if (candImg) {
+        candImg.remove()
+      console.log("TRYING");
+        $("#final_results_description")[0].style = `
+          text-align:left;
+          width: 72%;
+        height:71%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        overflow: auto;
+        `
+       console.log("RESULTS UPDATED");
+      }
+    }, 10)
+    else if (e.image)
+    setTimeout(()=>{
+      candImg = $(".person_image")[0];
+      if (candImg) {
+        candImg.src = e.image;
+      console.log("TRYING");
+        $("#final_results_description")[0].style = `
+          text-align:left;
+          width: 72%;
+        height:71%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        overflow: auto;
+        `
+       console.log("RESULTS UPDATED");
+      }		
+    }, 10)
+    
+    return html;
+    }
+    
+  endingConstructor = (a = 1) => {
+    $("#final_results_description")[0].innerHTML = construct(a);
   }
-}, 10)
-else if (e.image)
-setTimeout(()=>{
-  candImg = $(".person_image")[0];
-  if (candImg) {
-    candImg.src = e.image;
-	console.log("TRYING");
-    $("#final_results_description")[0].style = `
-      text-align:left;
-      width: 72%;
-	  height:71%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-	  overflow: auto;
-    `
-    // Make sure final results uses 7.css scrollbar
-    $("#final_results_description")[0].classList.add("has-scrollbar");
-	 console.log("RESULTS UPDATED");
-  }		
-}, 10)
+    
+    // ENDINGS -- this is slightly more reliable than the ending code method
+    
+    e.header = "<h3>Error</h3>";
+    e.pages = ["<p>This is an error handler, contact u/No-Reading9991</p>"];
+    e.page = 0;
 
-return html;
-}
-
-endingConstructor = (a = 1) => {
-$("#final_results_description")[0].innerHTML = construct(a);
-}
-
-// ENDINGS -- this is slightly more reliable than the ending code method
-
-e.multiple_endings = true;
-
-e.header = "<h1>error</h1>";
-e.pages = ["<p>This is an error handler</p>"];
-e.page = 0;
-
-endingPicker = (out, totv, aa, quickstats) => {
-//out = "win", "loss", or "tie" for your candidate
-//totv = total votes in entire election
-//aa = all final overall results data
-//quickstat = relevant data on candidate performance (format: your candidate's electoral vote count, your candidate's popular vote share, your candidate's raw vote total)
-orderID = [aa[0].candidate, aa[1].candidate, aa[2].candidate, aa[3].candidate];
-    var playerEV = quickstats[0];
-    var playerID = 0;
-
-/*
-e.header = "<h2></h2>"
-e.pages = ["<p></p>",
-        "<p></p>"]
-*/
-
-e.pages = []
-e.header = "";
-e.executable = []
+    e.pages = []
+    e.header = "";
+    e.executable = []
 
 // Final Endings
 
