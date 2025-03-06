@@ -1619,3 +1619,61 @@ document.head.appendChild(style);
 const gameWindow_player = document.getElementById("game_window");
 //use this function directly or put it in an event listener to start the music on the press of a certain button
 setupMusicPlayer();
+
+campaignTrail_temp.achievements = {
+    // Opponents
+    "A Loser Of The Night" : { 
+        "image" : "'",
+        "description" : "Defeat an Employment Secretary",
+        "cannotBeCheated" : true
+     },
+    "Back to the Backbenches" : { 
+        "image" : "'",
+        "description" : "Send a One-Nation Tory back to where he was banished to",
+        "cannotBeCheated" : true
+     },
+    "Another One Of Those Moments" : { 
+        "image" : "'",
+        "description" : "Wedge a man from his parliamentary career one last time",
+        "cannotBeCheated" : true
+     },
+
+    // Legacy Mechanics
+    "Partners In Crime, Deceptions, and Wins" : { 
+        "image" : "'",
+        "description" : "Defy the polls while spinning the case for war",
+        "cannotBeCheated" : true
+     },
+    "I Rebuke You, Lord!" : { 
+        "image" : "'",
+        "description" : "Get chastised by an inquiry, and win anyway",
+        "cannotBeCheated" : true
+     },
+    "An Ever Greater Union" : { 
+        "image" : "'",
+        "description" : "Become the catalyst for a new continent",
+        "cannotBeCheated" : true
+     },
+    "New New Labour" : { 
+        "image" : "'",
+        "description" : "Show your true colours",
+        "cannotBeCheated" : true
+     },
+    "A Familiar Kind Of Labour" : { 
+        "image" : "'",
+        "description" : "Let a deceased predecessor show you the light",
+        "cannotBeCheated" : true
+     },
+
+    // Party Machinations
+    "Expiring Early" : { 
+        "image" : "'",
+        "description" : "Confront the wrath of your party early",
+        "cannotBeCheated" : true
+     },
+    "Teflon Tony" : { 
+        "image" : "'",
+        "description" : "Claw back, despite it all",
+        "cannotBeCheated" : true
+     }
+}
