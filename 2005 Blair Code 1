@@ -1640,12 +1640,12 @@ campaignTrail_temp.achievements = {
 
     // Legacy Mechanics
     "Partners In Crime, Deceptions, and Wins" : { 
-        "image" : "'",
+        "image" : "https://imgur.com/Y3LxYsk.png",
         "description" : "Defy the polls while spinning the case for war",
         "cannotBeCheated" : true
      },
     "I Rebuke You, Lord!" : { 
-        "image" : "'",
+        "image" : "https://imgur.com/KJdt7ko.png",
         "description" : "Get chastised by an inquiry, and win anyway",
         "cannotBeCheated" : true
      },
@@ -1667,12 +1667,12 @@ campaignTrail_temp.achievements = {
 
     // Party Machinations
     "Expiring Early" : { 
-        "image" : "'",
+        "image" : "https://imgur.com/QMiPsnK.png",
         "description" : "Confront the wrath of your party early",
         "cannotBeCheated" : true
      },
     "Teflon Tony" : { 
-        "image" : "'",
+        "image" : "https://imgur.com/mJ1LexR.png",
         "description" : "Claw back, despite it all",
         "cannotBeCheated" : true
      }
