@@ -124682,7 +124682,7 @@ campaignTrail_temp.running_mate_last_name = "Starmer";
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
-  background-color: #c44558;
+  background-color: #e4003b;
   border-color: #94292e;
 }
 .inner_window_question h3 {
