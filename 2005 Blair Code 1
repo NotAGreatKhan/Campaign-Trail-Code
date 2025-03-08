@@ -1,12 +1,3 @@
-document.head.innerHTML += `
-<style>
-h3 {
-    font-size: 1.025em !important;
-    line-height: 17px;
-}
-`
-
-
 function removeCandidateSummary() {
 try {
   const candidateSummary = document.querySelector("#candidate_summary");
