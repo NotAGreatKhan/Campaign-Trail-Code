@@ -1650,7 +1650,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
      },
     "An Ever Greater Union" : { 
-        "image" : "'",
+        "image" : "https://imgur.com/m6GSVUl.png",
         "description" : "Become the catalyst for a new continent",
         "cannotBeCheated" : true
      },
