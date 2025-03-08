@@ -307,6 +307,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     
 // Other CYOA Stuff  
+    if(ans == 12808){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 14181,
+    "fields": {
+        "priority": 0,
+        "description": "The world outside our fair shores, thought to be gentle and peaceful, has been anything but that. Even still, you were elected to govern the United Kingdom – and by God – that is what you are going to do. Your mandate from 2001 still grants you a large majority in parliament, and you intend to use it. The only question is: What will you do with it?",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
@@ -340,6 +351,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   } 
+    if(ans == 12808){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 14208,
+    "fields": {
+        "priority": 0,
+        "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12808 && ans == 12824){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 14237,
+    "fields": {
+        "priority": 0,
+        "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
