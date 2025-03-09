@@ -1301,7 +1301,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14479,
         "fields": {
             "state": 14474,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1311,7 +1311,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14480,
         "fields": {
             "state": 14474,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1321,7 +1321,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14481,
         "fields": {
             "state": 14474,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1331,7 +1331,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14482,
         "fields": {
             "state": 14474,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1341,7 +1341,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14483,
         "fields": {
             "state": 14474,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1351,7 +1351,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14489,
         "fields": {
             "state": 14484,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1361,7 +1361,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14490,
         "fields": {
             "state": 14484,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1371,7 +1371,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14491,
         "fields": {
             "state": 14484,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1381,7 +1381,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14492,
         "fields": {
             "state": 14484,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1391,7 +1391,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14493,
         "fields": {
             "state": 14484,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1401,7 +1401,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14499,
         "fields": {
             "state": 14494,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1411,7 +1411,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14500,
         "fields": {
             "state": 14494,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1421,7 +1421,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14501,
         "fields": {
             "state": 14494,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1431,7 +1431,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14502,
         "fields": {
             "state": 14494,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1441,7 +1441,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14503,
         "fields": {
             "state": 14494,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1451,7 +1451,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14509,
         "fields": {
             "state": 14504,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1461,7 +1461,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14510,
         "fields": {
             "state": 14504,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1471,7 +1471,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14511,
         "fields": {
             "state": 14504,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1481,7 +1481,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14512,
         "fields": {
             "state": 14504,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1491,7 +1491,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14513,
         "fields": {
             "state": 14504,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1501,7 +1501,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14519,
         "fields": {
             "state": 14514,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1511,7 +1511,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14520,
         "fields": {
             "state": 14514,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1521,7 +1521,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14521,
         "fields": {
             "state": 14514,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1531,7 +1531,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14522,
         "fields": {
             "state": 14514,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1541,7 +1541,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14523,
         "fields": {
             "state": 14514,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1551,7 +1551,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14529,
         "fields": {
             "state": 14524,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1561,7 +1561,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14530,
         "fields": {
             "state": 14524,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1571,7 +1571,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14531,
         "fields": {
             "state": 14524,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1581,7 +1581,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14532,
         "fields": {
             "state": 14524,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1591,7 +1591,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14533,
         "fields": {
             "state": 14524,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1601,7 +1601,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14539,
         "fields": {
             "state": 14534,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1611,7 +1611,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14540,
         "fields": {
             "state": 14534,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1621,7 +1621,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14541,
         "fields": {
             "state": 14534,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1631,7 +1631,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14542,
         "fields": {
             "state": 14534,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1641,7 +1641,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14543,
         "fields": {
             "state": 14534,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1651,7 +1651,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14549,
         "fields": {
             "state": 14544,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1661,7 +1661,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14550,
         "fields": {
             "state": 14544,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1671,7 +1671,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14551,
         "fields": {
             "state": 14544,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1681,7 +1681,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14552,
         "fields": {
             "state": 14544,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1691,7 +1691,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14553,
         "fields": {
             "state": 14544,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1701,7 +1701,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14559,
         "fields": {
             "state": 14554,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1711,7 +1711,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14560,
         "fields": {
             "state": 14554,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1721,7 +1721,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14561,
         "fields": {
             "state": 14554,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1731,7 +1731,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14562,
         "fields": {
             "state": 14554,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1741,7 +1741,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14563,
         "fields": {
             "state": 14554,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1751,7 +1751,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14569,
         "fields": {
             "state": 14564,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1761,7 +1761,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14570,
         "fields": {
             "state": 14564,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1771,7 +1771,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14571,
         "fields": {
             "state": 14564,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1781,7 +1781,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14572,
         "fields": {
             "state": 14564,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1791,7 +1791,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14573,
         "fields": {
             "state": 14564,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1801,7 +1801,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14579,
         "fields": {
             "state": 14574,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1811,7 +1811,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14580,
         "fields": {
             "state": 14574,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1821,7 +1821,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14581,
         "fields": {
             "state": 14574,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1831,7 +1831,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14582,
         "fields": {
             "state": 14574,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1841,7 +1841,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14583,
         "fields": {
             "state": 14574,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1851,7 +1851,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14589,
         "fields": {
             "state": 14584,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1861,7 +1861,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14590,
         "fields": {
             "state": 14584,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1871,7 +1871,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14591,
         "fields": {
             "state": 14584,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1881,7 +1881,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14592,
         "fields": {
             "state": 14584,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1891,7 +1891,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14593,
         "fields": {
             "state": 14584,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1901,7 +1901,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14599,
         "fields": {
             "state": 14594,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1911,7 +1911,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14600,
         "fields": {
             "state": 14594,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1921,7 +1921,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14601,
         "fields": {
             "state": 14594,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1931,7 +1931,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14602,
         "fields": {
             "state": 14594,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1941,7 +1941,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14603,
         "fields": {
             "state": 14594,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1951,7 +1951,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14609,
         "fields": {
             "state": 14604,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1961,7 +1961,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14610,
         "fields": {
             "state": 14604,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1971,7 +1971,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14611,
         "fields": {
             "state": 14604,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1981,7 +1981,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14612,
         "fields": {
             "state": 14604,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -1991,7 +1991,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14613,
         "fields": {
             "state": 14604,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2001,7 +2001,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14619,
         "fields": {
             "state": 14614,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2011,7 +2011,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14620,
         "fields": {
             "state": 14614,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2021,7 +2021,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14621,
         "fields": {
             "state": 14614,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2031,7 +2031,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14622,
         "fields": {
             "state": 14614,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2041,7 +2041,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14623,
         "fields": {
             "state": 14614,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2051,7 +2051,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14629,
         "fields": {
             "state": 14624,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2061,7 +2061,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14630,
         "fields": {
             "state": 14624,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2071,7 +2071,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14631,
         "fields": {
             "state": 14624,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2081,7 +2081,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14632,
         "fields": {
             "state": 14624,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2091,7 +2091,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14633,
         "fields": {
             "state": 14624,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2101,7 +2101,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14639,
         "fields": {
             "state": 14634,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2111,7 +2111,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14640,
         "fields": {
             "state": 14634,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2121,7 +2121,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14641,
         "fields": {
             "state": 14634,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2131,7 +2131,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14642,
         "fields": {
             "state": 14634,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2141,7 +2141,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14643,
         "fields": {
             "state": 14634,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2151,7 +2151,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14649,
         "fields": {
             "state": 14644,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2161,7 +2161,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14650,
         "fields": {
             "state": 14644,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2171,7 +2171,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14651,
         "fields": {
             "state": 14644,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2181,7 +2181,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14652,
         "fields": {
             "state": 14644,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2191,7 +2191,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14653,
         "fields": {
             "state": 14644,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2201,7 +2201,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14659,
         "fields": {
             "state": 14654,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2211,7 +2211,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14660,
         "fields": {
             "state": 14654,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2221,7 +2221,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14661,
         "fields": {
             "state": 14654,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2231,7 +2231,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14662,
         "fields": {
             "state": 14654,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2241,7 +2241,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14663,
         "fields": {
             "state": 14654,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2251,7 +2251,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14669,
         "fields": {
             "state": 14664,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2261,7 +2261,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14670,
         "fields": {
             "state": 14664,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2271,7 +2271,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14671,
         "fields": {
             "state": 14664,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2281,7 +2281,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14672,
         "fields": {
             "state": 14664,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2291,7 +2291,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14673,
         "fields": {
             "state": 14664,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2301,7 +2301,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14679,
         "fields": {
             "state": 14674,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2311,7 +2311,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14680,
         "fields": {
             "state": 14674,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2321,7 +2321,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14681,
         "fields": {
             "state": 14674,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2331,7 +2331,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14682,
         "fields": {
             "state": 14674,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2341,7 +2341,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14683,
         "fields": {
             "state": 14674,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2351,7 +2351,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14689,
         "fields": {
             "state": 14684,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2361,7 +2361,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14690,
         "fields": {
             "state": 14684,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2371,7 +2371,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14691,
         "fields": {
             "state": 14684,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2381,7 +2381,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14692,
         "fields": {
             "state": 14684,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2391,7 +2391,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14693,
         "fields": {
             "state": 14684,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2401,7 +2401,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14699,
         "fields": {
             "state": 14694,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2411,7 +2411,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14700,
         "fields": {
             "state": 14694,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2421,7 +2421,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14701,
         "fields": {
             "state": 14694,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2431,7 +2431,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14702,
         "fields": {
             "state": 14694,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2441,7 +2441,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14703,
         "fields": {
             "state": 14694,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2451,7 +2451,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14709,
         "fields": {
             "state": 14704,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2461,7 +2461,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14710,
         "fields": {
             "state": 14704,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2471,7 +2471,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14711,
         "fields": {
             "state": 14704,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2481,7 +2481,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14712,
         "fields": {
             "state": 14704,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2491,7 +2491,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14713,
         "fields": {
             "state": 14704,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2501,7 +2501,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14719,
         "fields": {
             "state": 14714,
-            "issue": "47",
+            "issue": 47,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2511,7 +2511,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14720,
         "fields": {
             "state": 14714,
-            "issue": "48",
+            "issue": 48,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2521,7 +2521,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14721,
         "fields": {
             "state": 14714,
-            "issue": "49",
+            "issue": 49,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2531,7 +2531,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14722,
         "fields": {
             "state": 14714,
-            "issue": "50",
+            "issue": 50,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -2541,7 +2541,7 @@ campaignTrail_temp.state_issue_score_json = [
         "pk": 14723,
         "fields": {
             "state": 14714,
-            "issue": "51",
+            "issue": 51,
             "state_issue_score": 0,
             "weight": 1.5
         }
@@ -5690,13 +5690,12 @@ campaignTrail_temp.jet_data = [{
     "mapping_enabled": true,
     "mapping_data": {
         "mapSvg": "",
-        "x": "925",
-        "y": "925",
-        "dx": "-450",
-        "dy": "142",
+        "x": 925,
+        "y": 925,
+        "dx": 650,
+        "dy": -135,
         "electionPk": "20"
     }
 }
 ]
-
 
