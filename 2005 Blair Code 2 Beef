@@ -317,6 +317,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     
 // Other CYOA Stuff  
+    if(ans == 12808){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 14181,
+    "fields": {
+        "priority": 0,
+        "description": "The world outside our fair shores, thought to be gentle and peaceful, has been anything but that. Even still, you were elected to govern the United Kingdom – and by God – that is what you are going to do. Your mandate from 2001 still grants you a large majority in parliament, and you intend to use it. The only question is: What will you do with it?",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
@@ -350,6 +361,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   } 
+    if(ans == 12808){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 14208,
+    "fields": {
+        "priority": 0,
+        "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12808 && ans == 12824){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 14237,
+    "fields": {
+        "priority": 0,
+        "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -525,7 +558,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Successful France
-    if(ans == 12797 && ans == 13619){
+    if(ans == 12797 && ans == 13619 && Cred >= 5){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13860,
@@ -551,7 +584,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Successful Netherlands
-    if(ans == 13557 && ans == 13873){
+    if(ans == 13557 && ans == 13873 && Cred >= 5){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13894,
@@ -834,7 +867,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12821,
         "fields": {
             "priority": 0,
-            "description": "[July 7, 2003] It appears your commitment to going through with the exaggerated evidence is starting to bite you in the back. A whistleblower has been reaching out to journalist Andrew Gilligan of the BBC, claiming that the dossiers of evidence to propel a war in Iraq were “sexed up” to get public opinion on your government’s side. These media attacks could be damaging, and really drag down your approval ratings as Prime Minister. How will you move on this?",
+            "description": "[July 7, 2003] It appears your commitment to going through with the exaggerated evidence is starting to bite you in the back. A whistleblower has been reaching out to journalist Andrew Gilligan of the BBC, claiming that the dossiers of evidence to propel a war in Iraq were “sexed up” to get public opinion on your government’s side. These media attacks could be damaging, and chokingly drag down your approval ratings as Prime Minister. How will you move on this?",
             "likelihood": 1
         }
     },
@@ -1429,6 +1462,33 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "[April 6, 2005] Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Michael Portillo has just attacked your government's record, claiming you broke promises on taxes, europe, and social rights, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country...",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14181,
+        "fields": {
+            "priority": 0,
+            "description": "The world outside our fair shores, thought to be gentle and peaceful, has been anything but that. Even still, you were elected to govern the United Kingdom – and by God – that is what you are going to do. Your mandate from 2001 still grants you a large majority in parliament, and you intend to use it. The only question is: What will you do with it?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14208,
+        "fields": {
+            "priority": 0,
+            "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14237,
+        "fields": {
+            "priority": 0,
+            "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
             "likelihood": 1
         }
     }
@@ -3161,6 +3221,102 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14158,
             "description": "\"…What our dear opposition leader describes Is completely out of reality, like his entire program. What we have for now is economic stability, affordable housing, and sufficient living wages. And all of this in only 8 years of Labour rule. I could live with a worse record\"."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14182,
+        "fields": {
+            "question": 14181,
+            "description": "Our public utilities are amazing, they really are. We have to ensure that all people can gain access to those utilities. We’re not going to do anything major, but we are going to bring more aspects of the rail industry into public control. Let’s see to it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14189,
+        "fields": {
+            "question": 14181,
+            "description": "Section 28 and 2A, have marked an ugly blot on the equality, and character of Britain. It’s one of the many things I disagreed with about her. It truly is. So I think it’s time to finally get rid of it. It has been long enough. Get Armstrong on the case."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14195,
+        "fields": {
+            "question": 14181,
+            "description": "Strengths of workers in our society is something I want to focus on, more protections for them. And especially, the ensuring of incentives and tax credits to ensure that they have a fair shot bargaining with their employers. Let’s get something like that on the road."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14201,
+        "fields": {
+            "question": 14181,
+            "description": "When it comes to LGBTQ rights, it is simply not enough to go half way. We need to go all the way. I mean it. Get the word through to Armstrong that we want to enshrine the rights of same-sex couples in marriage."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14209,
+        "fields": {
+            "question": 14208,
+            "description": "On this issue, there is absolutely no time to waste. Get the party together, whip them in line, and ensure that this bill gets through and becomes law. No delays can be afforded. Frame it as keeping the stability of people’s bills intact."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14216,
+        "fields": {
+            "question": 14208,
+            "description": "We cannot afford to retreat on this issue. It is time now, to once and for all reject and move on from the regrettable aspects of Thatcher’s premiership. It is time now to embrace our roots as a party for the people of Britain."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14223,
+        "fields": {
+            "question": 14208,
+            "description": "I must confess, I am having second thoughts on the survivability of this bill. Hold the brakes a bit, and instead of creating full state ownership, we will instead create public shares as part of a proportionate nationalisation. That’s what we’ll send through."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14230,
+        "fields": {
+            "question": 14208,
+            "description": "It does hurt me to say this, but I’m sensing a political backlash to this that just wasn’t there with our other legislation, pull this back before it gets too far."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14238,
+        "fields": {
+            "question": 14237,
+            "description": "On this issue, there is absolutely no time to waste. Get the party together, whip them in line, and ensure that this bill gets through and becomes law. No delays can be afforded. Frame it as keeping the stability of people’s bills intact."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14245,
+        "fields": {
+            "question": 14237,
+            "description": "We cannot afford to retreat on this issue. It is time now, to once and for all reject and move on from the regrettable aspects of Thatcher’s premiership. It is time now to embrace our roots as a party for the people of Britain."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14252,
+        "fields": {
+            "question": 14237,
+            "description": "I must confess, I am having second thoughts on the survivability of this bill. Hold the brakes a bit, and instead of creating full state ownership, we will instead create public shares as part of a proportionate nationalisation. That’s what we’ll send through."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14259,
+        "fields": {
+            "question": 14237,
+            "description": "It does hurt me to say this, but I’m sensing a political backlash to this that just wasn’t there with our other legislation, pull this back before it gets too far."
         }
     }
 ]
@@ -6738,7 +6894,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12872,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": 0.015
+            "global_multiplier": 0.01
         }
     },
     {
@@ -6748,7 +6904,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12872,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.05
+            "global_multiplier": 0.01
         }
     },
     {
@@ -6758,7 +6914,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12873,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": 0.004
+            "global_multiplier": 0.003
         }
     },
     {
@@ -6768,7 +6924,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12873,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.05
+            "global_multiplier": 0.01
         }
     },
     {
@@ -6778,7 +6934,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12874,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.05
+            "global_multiplier": -0.015
         }
     },
     {
@@ -6788,7 +6944,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12874,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.07
+            "global_multiplier": 0.02
         }
     },
     {
@@ -6828,7 +6984,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12877,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.00105
+            "global_multiplier": 0.003
         }
     },
     {
@@ -6836,7 +6992,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13230,
         "fields": {
             "answer": 12878,
-            "candidate": 12565,
+            "candidate": 12543,
             "affected_candidate": 12565,
             "global_multiplier": 0.008
         }
@@ -6848,7 +7004,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12878,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.008
+            "global_multiplier": 0.003
         }
     },
     {
@@ -6858,7 +7014,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12879,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": 0.008
+            "global_multiplier": -0.005
         }
     },
     {
@@ -6868,7 +7024,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12879,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": 0.0075
+            "global_multiplier": 0.01
         }
     },
     {
@@ -7068,7 +7224,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12897,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.3
+            "global_multiplier": 0.1
         }
     },
     {
@@ -7138,7 +7294,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12898,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.35
+            "global_multiplier": 0.1
         }
     },
     {
@@ -7148,7 +7304,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12898,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.1
+            "global_multiplier": -0.06
         }
     },
     {
@@ -7178,7 +7334,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12899,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.3
+            "global_multiplier": 0.08
         }
     },
     {
@@ -7188,7 +7344,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12899,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.04
+            "global_multiplier": 0.004
         }
     },
     {
@@ -7208,7 +7364,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12900,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.075
+            "global_multiplier": -0.025
         }
     },
     {
@@ -7218,7 +7374,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12900,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.5
+            "global_multiplier": 0.15
         }
     },
     {
@@ -7248,7 +7404,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12902,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.1
+            "global_multiplier": 0.05
         }
     },
     {
@@ -7258,7 +7414,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12903,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.16
+            "global_multiplier": 0.04
         }
     },
     {
@@ -7268,7 +7424,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12904,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.15
+            "global_multiplier": 0.055
         }
     },
     {
@@ -7278,47 +7434,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12905,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.55
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13309,
-        "fields": {
-            "answer": 12905,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": 0.1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13310,
-        "fields": {
-            "answer": 12902,
-            "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": 0.2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13311,
-        "fields": {
-            "answer": 12903,
-            "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": 0.35
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13312,
-        "fields": {
-            "answer": 12904,
-            "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": 0.3
+            "global_multiplier": 0.07
         }
     },
     {
@@ -7327,8 +7443,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 12905,
             "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": 0.01
+            "affected_candidate": 12565,
+            "global_multiplier": -0.004
         }
     },
     {
@@ -10510,6 +10626,406 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12565,
             "global_multiplier": -0.005
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14184,
+        "fields": {
+            "answer": 14182,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14185,
+        "fields": {
+            "answer": 14182,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14186,
+        "fields": {
+            "answer": 14182,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14191,
+        "fields": {
+            "answer": 14189,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14192,
+        "fields": {
+            "answer": 14189,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14193,
+        "fields": {
+            "answer": 14189,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14197,
+        "fields": {
+            "answer": 14195,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14198,
+        "fields": {
+            "answer": 14195,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14199,
+        "fields": {
+            "answer": 14195,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14203,
+        "fields": {
+            "answer": 14201,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14204,
+        "fields": {
+            "answer": 14201,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14205,
+        "fields": {
+            "answer": 14201,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14213,
+        "fields": {
+            "answer": 14209,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14214,
+        "fields": {
+            "answer": 14209,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14215,
+        "fields": {
+            "answer": 14209,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14218,
+        "fields": {
+            "answer": 14216,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14219,
+        "fields": {
+            "answer": 14216,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14220,
+        "fields": {
+            "answer": 14216,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14225,
+        "fields": {
+            "answer": 14223,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14226,
+        "fields": {
+            "answer": 14223,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14227,
+        "fields": {
+            "answer": 14223,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14234,
+        "fields": {
+            "answer": 14230,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14235,
+        "fields": {
+            "answer": 14230,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14236,
+        "fields": {
+            "answer": 14230,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14240,
+        "fields": {
+            "answer": 14238,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14241,
+        "fields": {
+            "answer": 14238,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14242,
+        "fields": {
+            "answer": 14238,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14247,
+        "fields": {
+            "answer": 14245,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14248,
+        "fields": {
+            "answer": 14245,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14249,
+        "fields": {
+            "answer": 14245,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14254,
+        "fields": {
+            "answer": 14252,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14255,
+        "fields": {
+            "answer": 14252,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14256,
+        "fields": {
+            "answer": 14252,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14261,
+        "fields": {
+            "answer": 14259,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.035
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14262,
+        "fields": {
+            "answer": 14259,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14263,
+        "fields": {
+            "answer": 14259,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14273,
+        "fields": {
+            "answer": 12887,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14274,
+        "fields": {
+            "answer": 12887,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14276,
+        "fields": {
+            "answer": 12888,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14277,
+        "fields": {
+            "answer": 12890,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
     }
 ]
 
@@ -10931,7 +11447,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12879,
             "issue": 28,
             "issue_score": 0.4,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -10941,7 +11457,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12892,
             "issue": 27,
             "issue_score": 0.25,
-            "issue_importance": 1
+            "issue_importance": 2
         }
     },
     {
@@ -10951,7 +11467,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12893,
             "issue": 28,
             "issue_score": 0.25,
-            "issue_importance": 1
+            "issue_importance": 2
         }
     },
     {
@@ -10961,7 +11477,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12894,
             "issue": 27,
             "issue_score": 0.125,
-            "issue_importance": 1
+            "issue_importance": 2
         }
     },
     {
@@ -11001,7 +11517,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12902,
             "issue": 30,
             "issue_score": -0.7,
-            "issue_importance": 1
+            "issue_importance": 6
         }
     },
     {
@@ -11011,7 +11527,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12903,
             "issue": 30,
             "issue_score": -0.7,
-            "issue_importance": 1
+            "issue_importance": 6
         }
     },
     {
@@ -11021,7 +11537,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12904,
             "issue": 30,
             "issue_score": -0.7,
-            "issue_importance": 1
+            "issue_importance": 6
         }
     },
     {
@@ -11031,7 +11547,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12905,
             "issue": 30,
             "issue_score": -0.7,
-            "issue_importance": 1
+            "issue_importance": 6
         }
     },
     {
@@ -11461,7 +11977,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12878,
             "issue": 27,
             "issue_score": 0.66,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11521,7 +12037,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12887,
             "issue": 27,
             "issue_score": 0.125,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11531,7 +12047,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12887,
             "issue": 30,
             "issue_score": 0.125,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11541,7 +12057,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12887,
             "issue": 28,
             "issue_score": 0.125,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11551,7 +12067,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12888,
             "issue": 27,
             "issue_score": 0.31,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11561,7 +12077,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12888,
             "issue": 28,
             "issue_score": 0.31,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11571,7 +12087,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12888,
             "issue": 30,
             "issue_score": 0.31,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11581,7 +12097,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12889,
             "issue": 27,
             "issue_score": 0.55,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11591,7 +12107,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12889,
             "issue": 28,
             "issue_score": 0.55,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -11601,7 +12117,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12889,
             "issue": 29,
             "issue_score": 0.8,
-            "issue_importance": 2
+            "issue_importance": 3
         }
     },
     {
@@ -12041,7 +12557,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12892,
             "issue": 28,
             "issue_score": 0,
-            "issue_importance": 1
+            "issue_importance": 2
         }
     },
     {
@@ -12051,7 +12567,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12893,
             "issue": 27,
             "issue_score": 0,
-            "issue_importance": 1
+            "issue_importance": 2
         }
     },
     {
@@ -12902,6 +13418,326 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 30,
             "issue_score": -0.35,
             "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14187,
+        "fields": {
+            "answer": 14182,
+            "issue": 27,
+            "issue_score": 0.675,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14188,
+        "fields": {
+            "answer": 14182,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14194,
+        "fields": {
+            "answer": 14189,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14200,
+        "fields": {
+            "answer": 14195,
+            "issue": 27,
+            "issue_score": 0.71,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14206,
+        "fields": {
+            "answer": 14201,
+            "issue": 27,
+            "issue_score": 0.65,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14207,
+        "fields": {
+            "answer": 14201,
+            "issue": 28,
+            "issue_score": 0.3,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14211,
+        "fields": {
+            "answer": 14209,
+            "issue": "27",
+            "issue_score": 0.7,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14212,
+        "fields": {
+            "answer": 14209,
+            "issue": 28,
+            "issue_score": 0.7,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14221,
+        "fields": {
+            "answer": 14216,
+            "issue": "27",
+            "issue_score": 0.71,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14222,
+        "fields": {
+            "answer": 14216,
+            "issue": 28,
+            "issue_score": 0.71,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14228,
+        "fields": {
+            "answer": 14223,
+            "issue": "27",
+            "issue_score": 0.15,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14229,
+        "fields": {
+            "answer": 14223,
+            "issue": 28,
+            "issue_score": 0.15,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14232,
+        "fields": {
+            "answer": 14230,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14233,
+        "fields": {
+            "answer": 14230,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14243,
+        "fields": {
+            "answer": 14238,
+            "issue": "27",
+            "issue_score": 0.7,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14244,
+        "fields": {
+            "answer": 14238,
+            "issue": 28,
+            "issue_score": 0.7,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14250,
+        "fields": {
+            "answer": 14245,
+            "issue": "27",
+            "issue_score": 0.71,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14251,
+        "fields": {
+            "answer": 14245,
+            "issue": 28,
+            "issue_score": 0.71,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14257,
+        "fields": {
+            "answer": 14252,
+            "issue": "27",
+            "issue_score": 0.15,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14258,
+        "fields": {
+            "answer": 14252,
+            "issue": 28,
+            "issue_score": 0.15,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14264,
+        "fields": {
+            "answer": 14259,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14265,
+        "fields": {
+            "answer": 14259,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14266,
+        "fields": {
+            "answer": 12877,
+            "issue": "27",
+            "issue_score": 0.2,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14267,
+        "fields": {
+            "answer": 12884,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14268,
+        "fields": {
+            "answer": 12884,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14269,
+        "fields": {
+            "answer": 12885,
+            "issue": "27",
+            "issue_score": 0.25,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14270,
+        "fields": {
+            "answer": 12885,
+            "issue": 28,
+            "issue_score": 0.25,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14271,
+        "fields": {
+            "answer": 13235,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14272,
+        "fields": {
+            "answer": 13235,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14278,
+        "fields": {
+            "answer": 12890,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14279,
+        "fields": {
+            "answer": 12890,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14280,
+        "fields": {
+            "answer": 12890,
+            "issue": 29,
+            "issue_score": 0,
+            "issue_importance": 4
         }
     }
 ]
@@ -13885,7 +14721,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12872,
             "candidate": 12543,
-            "answer_feedback": "The heavy presence of Gordon Brown alongside you means you are able to press the economic argument effectively, and even passively, on the trail. Videos of the two of you getting ice cream in Strand Park, London being circulated, also aid in somewhat combatting the rumours that the two of you are not getting on."
+            "answer_feedback": "The heavy presence of Gordon Brown alongside you means you are able to press the economic argument effectively, and even passively, on the trail. Advertisements of you both working together – and videos of the two of you getting ice cream in Strand Park – London being circulated, also aid in somewhat combatting the rumours that the two of you are not getting on."
         }
     },
     {
@@ -13939,7 +14775,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12878,
             "candidate": 12543,
-            "answer_feedback": "Perhaps taking the attack to the Tories could do well with keeping voters on your side. Phrasing it as a way of keeping healthcare accessible does also help. The voters’ fears of new costly stealth taxes down the road will continue to persist though."
+            "answer_feedback": "Perhaps taking the attack to the Tories could do well with keeping voters on your side. Phrasing it as a way of keeping healthcare accessible does also help. The voters’ fears of new costly stealth taxes down the road will continue to persist though, even as private healthcare is seen as a pariah in with the public."
         }
     },
     {
@@ -15372,6 +16208,114 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "A sound defence of your record, but you have missed an opportunity to really twist the knife here. The standard of living you are presiding over is certainly advantageous to take credit on at least."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14183,
+        "fields": {
+            "answer": 14182,
+            "candidate": 12543,
+            "answer_feedback": "The Railway Public Ownership Bill, which would transfer some of the privileges of private ownership back into department control, is passed by a comfortable margin in the House. The opposition bemoan the rising costs of such a transfer, and the media express shock at your tack on the public-private relationship. The centre-left public are cautiously optimistic though for continued railway affordability."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14190,
+        "fields": {
+            "answer": 14189,
+            "candidate": 12543,
+            "answer_feedback": "The Local Government Act, which would end the ban Section 28 puts in place, is voted in favour by 368 to 76 votes. The implicit excoriation of LGBTQ students in schools will not end with this Act, but it is finally a monumental step in the right direction. You know that it won’t stop here. But that can’t be now, not yet, your political cynicism simply won’t buy it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14196,
+        "fields": {
+            "answer": 14195,
+            "candidate": 12543,
+            "answer_feedback": "The Employment Protection Bill faces fierce opposition from the Conservative benches, providing harsh attack lines for them. It takes wrangling by Armstrong for the moderate and centrist MPs, but at the second reading – and exacerbated debates – the bill passes and becomes law. Economic leftists are pleased, centrists though look with trepidation."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14202,
+        "fields": {
+            "answer": 14201,
+            "candidate": 12543,
+            "answer_feedback": "The Equal Marriage Bill, having been anticipated by the media and Parliament, is put through the wringer by the Conservative opposition. Your abnormal decision to whip the party on a moral issue leads to fierce and religiously worked-up debates both in and outside the Commons. The Bill gets through, but not after being bruised and abstained from, to near failure."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14210,
+        "fields": {
+            "answer": 14209,
+            "candidate": 12543,
+            "answer_feedback": "The Public Utilities Bill, riding high and daring for attacks from the Conservatives and <i>The Telegraph</i>, is still put through the wringer in the House by the opposition. Yet by a surprisingly comfortable margin, the bill passes and becomes another Act to add to the books. Right-wing outlets and sects of middle Britain decry the “end of the Third Way”, but you shake their critiques away, pleasing Prescott tremendously."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14217,
+        "fields": {
+            "answer": 14216,
+            "candidate": 12543,
+            "answer_feedback": "The Public Utilities Bill, having already received much negative attention from the Conservatives and <i>The Telegraph</i>, faces a renewed onslaught from their ranks. The far corners of the Labour backbenchers stand proud, but it is not enough for the legislation to ride to victory. Such a radical declaration is dragged through the mud, with the bill passing by a slim margin. Prescott, though is pleased"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14224,
+        "fields": {
+            "answer": 14223,
+            "candidate": 12543,
+            "answer_feedback": "The Public Utilities Bill, in this new watered down state, faces an unexpected backlash from a multitude of Labour backbenchers, including Benn and the scruffy Corbyn. The Conservative opposition keep their fangs in their mouths, but not without sharply attacking the legislation. After all of the carnage is said and done, the bill becomes law by a stable, yet uninspiring margin. You have perturbed Prescott, however."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14231,
+        "fields": {
+            "answer": 14230,
+            "candidate": 12543,
+            "answer_feedback": "The Public Utilities Bill, being written up and ready to go, is banished to the history annals. The left of your party is livid, believing you to have retreated from a real fight for the people. But the Conservatives send across their muted respect, having sensed an inner awakening of your ‘true self’. All this will do is damage your parliamentary authority."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14239,
+        "fields": {
+            "answer": 14238,
+            "candidate": 12543,
+            "answer_feedback": "The Public Utilities Bill, riding high and daring for attacks from the Conservatives and <i>The Telegraph</i>, is still put through the wringer in the House by the opposition. Yet by a surprisingly comfortable margin, the bill passes and becomes another Act to add to the books. Right-wing outlets and sects of middle Britain decry the “end of the Third Way”, but you shake their critiques away, pleasing Prescott tremendously."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14246,
+        "fields": {
+            "answer": 14245,
+            "candidate": 12543,
+            "answer_feedback": "The Public Utilities Bill, having already received much negative attention from the Conservatives and <i>The Telegraph</i>, faces a renewed onslaught from their ranks. The far corners of the Labour backbenchers stand proud, but it is not enough for the legislation to ride to victory. Such a radical declaration is dragged through the mud, with the bill passing by a slim margin. Prescott, though is pleased"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14253,
+        "fields": {
+            "answer": 14252,
+            "candidate": 12543,
+            "answer_feedback": "The Public Utilities Bill, in this new watered down state, faces an unexpected backlash from a multitude of Labour backbenchers, including Benn and the scruffy Corbyn. The Conservative opposition keep their fangs in their mouths, but not without sharply attacking the legislation. After all of the carnage is said and done, the bill becomes law by a stable, yet uninspiring margin. You have perturbed Prescott, however."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14260,
+        "fields": {
+            "answer": 14259,
+            "candidate": 12543,
+            "answer_feedback": "The Public Utilities Bill, being written up and ready to go, is banished to the history annals. The left of your party is livid, believing you to have retreated from a real fight for the people. But the Conservatives send across their muted respect, having sensed an inner awakening of your ‘true self’. With the Hutton Inquiry rapidly approaching, this will further bring down your parliamentary authority."
+        }
     }
 ]
 
@@ -16226,6 +17170,7 @@ function openHeadquarter() {
 
     var RScore = 0;
     var CScore = 2;
+    var OLScore = 0;
 
     if (Cred < 2) {
         CScore = "<font color='#ad1313;'><b>declining</b></font>"
@@ -16245,6 +17190,16 @@ function openHeadquarter() {
     }
     if (Resign >= 7) {
         RScore = "<font color='#ad1313;'><b>endangered</b></font>"
+    }
+
+    if (OldLab < 2) {
+        OLScore = "<font color='#ff8097;'><b>virtually non-existent</b></font>"
+    }
+    if (OldLab >= 2 && OldLab < 5) {
+        OLScore = "<font color='#de1237;'><b>showing signs of Prime Minister Wilson</b></font>"
+    }
+    if (OldLab >= 5) {
+        OLScore = "<font color='#99000f;'><b>embracing the old traditions of years past</b></font>"
     }
 
     let questions = document.querySelector(".inner_window_question");
@@ -16332,10 +17287,17 @@ function openHeadquarter() {
     b.style.margin = "8px";
     hqDiv.appendChild(b);
 
+    let c = document.createElement("p");
+    c.innerHTML = 'Your willingness to accept <b>Old</b> Labour, instead of <b>New</b>, is ' + OLScore + '.';
+    // c.style.flexGrow = "0.1";
+    c.style.color = "black";
+    c.style.margin = "8px";
+    hqDiv.appendChild(c);
+
     // Image
     let img = document.createElement("img");
     img.src = "https://imgur.com/mB2xqdL.jpg";
-    img.style.height = "60%";
+    img.style.height = "50%";
     img.style.marginLeft = "1em";
     img.style.flexGrow = "0.1";
     img.style.border = "3px solid black";  // Add thin white border to the image
