@@ -5692,8 +5692,8 @@ campaignTrail_temp.jet_data = [{
         "mapSvg": "",
         "x": 925,
         "y": 925,
-        "dx": 0,
-        "dy": 0
+        "dx": -450,
+        "dy": 142
     }
 }
 ]
