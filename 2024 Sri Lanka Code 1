@@ -1,0 +1,209 @@
+campaignTrail_temp.election_json = [
+{
+"model": "campaign_trail.election",
+"pk": 20,
+"fields": {
+"year": 2016,
+"display_year": "2024",
+"summary": "The 2024 Sri Lankan presidential election was a crucial political event held amidst the country's ongoing economic crisis and public dissatisfaction with traditional political parties. As the first major election since the 2022 economic collapse and mass protests that led to the resignation of President Gotabaya Rajapaksa, it was widely seen as a referendum on the country's leadership and future direction.<br><br>Several key candidates entered the race, each representing different political ideologies and visions for Sri Lanka. The election was shaped by urgent debates over economic recovery, anti-corruption measures, and governance reforms. Citizens were eager for a leader who could navigate the country out of economic instability, renegotiate international financial agreements, and restore public trust in government.",
+"image_url": "https://i.ytimg.com/vi/3U0a2xe4zhk/maxresdefault.jpg",
+"winning_electoral_vote_number": 270,
+"advisor_url": "123",
+"recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+"has_visits": 1,
+"no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+}
+}
+]
+
+campaignTrail_temp.temp_election_list = [
+{
+"id": 20,
+"year": 2016,
+"is_premium": 0,
+"display_year": "2024"
+}
+]
+
+campaignTrail_temp.credits = "Anuja Kothalawala"
+
+campaignTrail_temp.global_parameter_json = [
+{
+"model": "campaign_trail.global_parameter",
+"pk": 1,
+"fields": {
+"vote_variable": 1.125,
+"max_swing": 0.12,
+"start_point": 0.94,
+"candidate_issue_weight": 10,
+"running_mate_issue_weight": 3,
+"issue_stance_1_max": -0.71,
+"issue_stance_2_max": -0.3,
+"issue_stance_3_max": -0.125,
+"issue_stance_4_max": 0.125,
+"issue_stance_5_max": 0.3,
+"issue_stance_6_max": 0.71,
+"global_variance": 0.01,
+"state_variance": 0.005,
+"question_count": 25,
+"default_map_color_hex": "#C9C9C9",
+"no_state_map_color_hex": "#999999"
+}
+}
+]
+
+campaignTrail_temp.candidate_json = [
+{
+"model": "campaign_trail.candidate",
+"pk": 1001,
+"fields": {
+"first_name": "Anura K",
+"last_name": "Dissanayake",
+"election": 20,
+"party": "National People's Party (NPP)",
+"state": "Ratnapura",
+"priority": 1,
+"description": "<p>Anura Kumara Dissanayake is a Sri Lankan politician and leader of the National People's Power (NPP) coalition, backed by the Janatha Vimukthi Peramuna (JVP). Known for his anti-corruption stance and leftist policies, he has been a strong critic of traditional political elites. Throughout his career, he has advocated for economic reforms, social justice, and transparency in governance. His campaign in the 2024 presidential election focused on reviving the economy, reducing inequality, and ending political corruption, gaining significant support among frustrated voters seeking change.</p>",
+"color_hex": "#d53464",
+"secondary_color_hex": null,
+"is_active": 1,
+"image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRTWn9vszC2ZrpnG0D5xHqdHJHQ66FmUCLg&s",
+"electoral_victory_message": "Congratulations, you won the election!",
+"electoral_loss_message": "Unfortunately, the division was too much.",
+"no_electoral_majority_message": "2nd Counting will resume shortly, don't worry, everyone already knows who the winner is already.",
+"description_as_running_mate": null,
+"candidate_score": 1,
+"running_mate": false
+}
+},
+{
+"model": "campaign_trail.candidate",
+"pk": 1002,
+"fields": {
+"first_name": "Sajith",
+"last_name": "Premadasa",
+"election": 20,
+"party": "Samagi Jana Balawegaya",
+"state": "Colombo",
+"priority": 1,
+"description": "<p>Sajith Premadasa is a Sri Lankan politician and leader of the Samagi Jana Balawegaya (SJB). The son of former President Ranasinghe Premadasa, he has positioned himself as a centrist leader focused on economic revival, poverty alleviation, and social welfare. Throughout his career, he has emphasized housing development, education, and job creation as key priorities. In the 2024 presidential election, he campaigned on a pro-business, reformist agenda, appealing to both middle-class voters and those seeking an alternative to traditional political elites.</p>",
+"color_hex": "#1ba15c",
+"secondary_color_hex": null,
+"is_active": 1,
+"image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Sajith_Premadasa_%28portrait%29.png/800px-Sajith_Premadasa_%28portrait%29.png",
+"electoral_victory_message": "Congratulations! You have pulled off a very impressive, and hard-worked victory.",
+"electoral_loss_message": "As expected...",
+"no_electoral_majority_message": "No hope left.",
+"description_as_running_mate": "<p>This is a running mate description it only shows for running mates</p>",
+"candidate_score": 1,
+"running_mate": false
+}
+},
+{
+"model": "campaign_trail.candidate",
+"pk": 50000,
+"fields": {
+"first_name": "Namal",
+"last_name": "Rajapaksha",
+"election": 20,
+"party": "Sri Lanka Podujana Peramuna",
+"state": "Colombo",
+"priority": 1,
+"description": "<p>Namal Rajapaksa is a Sri Lankan politician from the Rajapaksa family and a member of the Sri Lanka Podujana Peramuna (SLPP). As the son of former President Mahinda Rajapaksa, he has been a prominent figure in Sri Lankan politics, previously serving as a Cabinet Minister and Member of Parliament. Known for his focus on youth empowerment, digital development, and sports, he has tried to modernize his political image despite criticism over his family's role in Sri Lanka’s economic crisis. While he did not run as a main candidate in the 2024 presidential election, he remained an influential figure in the SLPP and its future direction.<</p>",
+"color_hex": "#ff0000",
+"secondary_color_hex": null,
+"is_active": 1,
+"image_url": "data:image/jpeg;base64,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",
+"electoral_victory_message": "The whole world is stunned at your triumph..",
+"electoral_loss_message": "Too late, too few.",
+"no_electoral_majority_message": "Turn off the TV, it's worth while staying here.",
+"description_as_running_mate": null,
+"candidate_score": 1,
+"running_mate": false
+}
+},
+{
+"model": "campaign_trail.candidate",
+"pk": 50001,
+"fields": {
+"first_name": "Ranil",
+"last_name": "Wickramasinghe",
+"election": 20,
+"party": "United National Party (UNP)",
+"state": "Gampaha",
+"priority": 1,
+"description": "<p>Ranil Wickremesinghe is a veteran Sri Lankan politician and the leader of the United National Party (UNP). Having served multiple terms as Prime Minister and later as President, he is known for his pro-market economic policies, diplomatic approach, and experience in governance. Wickremesinghe played a key role in handling Sri Lanka’s economic crisis, securing IMF bailout deals and debt restructuring agreements. However, his close ties with the previous administration and controversial policy decisions made him a polarizing figure. In the 2024 presidential election, he campaigned on a platform of stability, economic recovery, and international cooperation, appealing to those who favored continuity and experience over radical change.</p>",
+"color_hex": "#c1d336",
+"secondary_color_hex": null,
+"is_active": 1,
+"image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/President_Dr_Muizzu_meets_Sri_Lankan_President_Ranil_Wickremesinghe_%28cropped%29.jpg/800px-President_Dr_Muizzu_meets_Sri_Lankan_President_Ranil_Wickremesinghe_%28cropped%29.jpg",
+"electoral_victory_message": "CONGRATULATIONS! YOU HAVE PULLED OFF THE IMPOSSIBLE!",
+"electoral_loss_message": "You couldn't rally up enough supporters.",
+"no_electoral_majority_message": "I wonder who's gonna win the 2nd counting of votes...",
+"description_as_running_mate": null,
+"candidate_score": 1,
+"running_mate": false
+}
+}
+]
+
+campaignTrail_temp.running_mate_json = []
+
+campaignTrail_temp.opponents_default_json = [
+{
+"election": 20,
+"candidates": [
+1001,
+1002,
+50000,
+50001
+]
+}
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+{
+"election": 20,
+"candidates": [
+1001,
+1002,
+50000,
+50001
+]
+}
+]
+
+jet_data = {
+"headerColor": "#700016",
+"windowColor": "#611515",
+"containerColor": "#1d1111",
+"innerWindowColor": "#e59e9e",
+"bannerImageUrl": "https://c.ndtvimg.com/2024-09/pps9btrg_ranil-wickremesinghe-reuters_625x300_20_September_24.jpeg",
+"backgroundImageUrl": "",
+"endingTextColor": "#000000",
+"customQuote": "Api Thamai Hodatama Kele!"
+}
+
+//#startcode
+
+
+corrr = '\n <h2>THE CAMPAIGN TRAIL</h2><font id="wittyquote" size="4" color="white"><em>Api Thamai Hodatama Kele!</em></font>\n ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#611515";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#1d1111";
+
+document.getElementById("header").src = "https://c.ndtvimg.com/2024-09/pps9btrg_ranil-wickremesinghe-reuters_625x300_20_September_24.jpeg";
+
+document.body.background = "";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#e59e9e!important;}</style>";
+
+//#endcode
