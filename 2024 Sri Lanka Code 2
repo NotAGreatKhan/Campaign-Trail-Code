@@ -5690,10 +5690,11 @@ campaignTrail_temp.jet_data = [{
     "mapping_enabled": true,
     "mapping_data": {
         "mapSvg": "",
-        "x": 925,
-        "y": 925,
-        "dx": -450,
-        "dy": 142
+        "x": "925",
+        "y": "925",
+        "dx": "-450",
+        "dy": "142",
+        "electionPk": "12"
     }
 }
 ]
