@@ -373,6 +373,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(ans == 12824 && Cred < 3){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 14281,
+    "fields": {
+        "priority": 0,
+        "description": "[January 28, 2004] The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
