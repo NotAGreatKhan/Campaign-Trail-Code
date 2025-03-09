@@ -55,7 +55,7 @@ campaignTrail_temp.global_parameter_json = [
 campaignTrail_temp.candidate_json = [
 {
 "model": "campaign_trail.candidate",
-"pk": 1001,
+"pk": 131,
 "fields": {
 "first_name": "Anura K",
 "last_name": "Dissanayake",
@@ -78,7 +78,7 @@ campaignTrail_temp.candidate_json = [
 },
 {
 "model": "campaign_trail.candidate",
-"pk": 1002,
+"pk": 132,
 "fields": {
 "first_name": "Sajith",
 "last_name": "Premadasa",
@@ -101,7 +101,7 @@ campaignTrail_temp.candidate_json = [
 },
 {
 "model": "campaign_trail.candidate",
-"pk": 50000,
+"pk": 133,
 "fields": {
 "first_name": "Namal",
 "last_name": "Rajapaksha",
@@ -124,7 +124,7 @@ campaignTrail_temp.candidate_json = [
 },
 {
 "model": "campaign_trail.candidate",
-"pk": 50001,
+"pk": 134,
 "fields": {
 "first_name": "Ranil",
 "last_name": "Wickramasinghe",
@@ -153,10 +153,10 @@ campaignTrail_temp.opponents_default_json = [
 {
 "election": 20,
 "candidates": [
-1001,
-1002,
-50000,
-50001
+131,
+132,
+133,
+134
 ]
 }
 ]
@@ -165,10 +165,10 @@ campaignTrail_temp.opponents_weighted_json = [
 {
 "election": 20,
 "candidates": [
-1001,
-1002,
-50000,
-50001
+131,
+132,
+133,
+134
 ]
 }
 ]
