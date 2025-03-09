@@ -1622,58 +1622,68 @@ setupMusicPlayer();
 
 campaignTrail_temp.achievements = {
     // Opponents
-    "A Loser Of The Night" : { 
+     "A Loser Of The Night" : { 
         "image" : "'",
         "description" : "Defeat an Employment Secretary",
         "cannotBeCheated" : true
      },
-    "Back to the Backbenches" : { 
+     "Back to the Backbenches" : { 
         "image" : "'",
         "description" : "Send a One-Nation Tory back to where he was banished to",
         "cannotBeCheated" : true
      },
-    "Another One Of Those Moments" : { 
+     "Another One Of Those Moments" : { 
         "image" : "'",
         "description" : "Wedge a man from his parliamentary career one last time",
         "cannotBeCheated" : true
      },
 
     // Legacy Mechanics
-    "Partners In Crime, Deceptions, and Wins" : { 
+     "Partners In Crime, Deceptions, and Wins" : { 
         "image" : "https://imgur.com/Y3LxYsk.png",
-        "description" : "Defy the polls while spinning the case for war",
+        "description" : "Defy the polls while spinning the case for a war",
         "cannotBeCheated" : true
      },
-    "I Rebuke You, Lord!" : { 
+     "I Rebuke You, Lord!" : { 
         "image" : "https://imgur.com/KJdt7ko.png",
         "description" : "Get chastised by an inquiry, and win anyway",
         "cannotBeCheated" : true
      },
-    "An Ever Greater Union" : { 
+     "An Ever Greater Union" : { 
         "image" : "https://imgur.com/m6GSVUl.png",
         "description" : "Become the catalyst for a new continent",
         "cannotBeCheated" : true
      },
-    "New New Labour" : { 
+     "New New Labour" : { 
         "image" : "'",
         "description" : "Show your true colours",
         "cannotBeCheated" : true
      },
-    "A Familiar Kind Of Labour" : { 
-        "image" : "'",
+     "A Familiar Kind Of Labour" : { 
+        "image" : "https://imgur.com/anDM60w.png",
         "description" : "Let a deceased predecessor show you the light",
         "cannotBeCheated" : true
      },
 
     // Party Machinations
-    "Expiring Early" : { 
+     "Expiring Early" : { 
         "image" : "https://imgur.com/QMiPsnK.png",
         "description" : "Confront the wrath of your party early",
         "cannotBeCheated" : true
      },
-    "Teflon Tony" : { 
+     "Teflon Tony" : { 
         "image" : "https://imgur.com/mJ1LexR.png",
         "description" : "Claw back, despite it all",
+        "cannotBeCheated" : true
+     },
+     "His Rightful Place" : { 
+        "image" : "https://imgur.com/2yCagcb.png",
+        "description" : "Embrace destiny early",
+        "cannotBeCheated" : true
+     },
+     "The End Of New Labour" : { 
+        "image" : "https://imgur.com/h09XeLu.png",
+        "description" : "Even after everything, fall short",
         "cannotBeCheated" : true
      }
 }
