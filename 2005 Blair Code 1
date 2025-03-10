@@ -1620,6 +1620,12 @@ const gameWindow_player = document.getElementById("game_window");
 //use this function directly or put it in an event listener to start the music on the press of a certain button
 setupMusicPlayer();
 
+
+e.ElectionPopup = "Election night has, at last, arrived. We shall now see the decision of the people – as the bell of Elizabeth Tower tolls. Best of luck to you, you'll certainly need it."
+e.WinPopup = ""
+e.LossPopup = ""
+
+
 campaignTrail_temp.achievements = {
     // Opponents
      "A Loser Of The Night" : { 
