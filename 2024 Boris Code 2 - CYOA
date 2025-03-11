@@ -1,0 +1,9 @@
+e = campaignTrail_temp
+
+var Cred = 2;
+var Wins = 2;
+var PartyTrust = 10;
+cyoAdventure = function (a) {
+    ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+
+}
