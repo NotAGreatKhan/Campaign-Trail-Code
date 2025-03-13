@@ -8,6 +8,11 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
+e = campaignTrail_temp
+
+var Cred = 2;
+var Wins = 0;
+var PartyTrust = 10;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
