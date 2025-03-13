@@ -620,7 +620,7 @@ function openHeadquarter() {
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
-    c.innerHTML = 'The trust of Conservative party in you is ' + PTScore + '.';
+    c.innerHTML = 'The trust of Conservative parliamentary party in you is ' + PTScore + '.';
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
