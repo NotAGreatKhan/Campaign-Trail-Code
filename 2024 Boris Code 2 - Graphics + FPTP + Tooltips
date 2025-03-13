@@ -628,7 +628,7 @@ function openHeadquarter() {
 
     // Image
     let img = document.createElement("img");
-    img.src = "https://imgur.com/yR6oYSQ.jpg";
+    img.src = "https://imgur.com/qmCvq9O.jpg";
     img.style.height = "50%";
     img.style.marginLeft = "1em";
     img.style.flexGrow = "0.1";
