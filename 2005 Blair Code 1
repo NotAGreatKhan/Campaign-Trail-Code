@@ -1634,12 +1634,12 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
      },
      "Back to the Backbenches" : { 
-        "image" : "'",
+        "image" : "https://imgur.com/xA1eISm.png",
         "description" : "Send a One-Nation Tory back to where he was banished to",
         "cannotBeCheated" : true
      },
      "Another One Of Those Moments" : { 
-        "image" : "'",
+        "image" : "https://imgur.com/pR48k6f.png",
         "description" : "Wedge a man from his parliamentary career one last time",
         "cannotBeCheated" : true
      },
