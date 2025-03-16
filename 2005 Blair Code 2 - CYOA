@@ -779,4 +779,83 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+
+// Michael Portillo
+    if(ans == 12797 && Cred < 3){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 14371,
+    "fields": {
+        "priority": 0,
+        "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 14294,
+    "fields": {
+        "priority": 0,
+        "description": "Iain Duncan Smith suffered the wrath of his parliamentary cohort, and was thrown out as your party machine continued to roll ahead. Their fatigue in the face of your increasingly stentorian liberalism, has caused them to rally around the yet-again-transformed Michael Portillo. As he fires his opening shots for the campaign, his attacks centre around your abandonment of “Middle Britain”, your neglect of the “power of enterprise and of the citizens to lift themselves up”. You’re bleeding centrist voters fast. But, he’s not invincible. Knock him down some pegs.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 14336,
+    "fields": {
+        "priority": 0,
+        "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 14296,
+    "fields": {
+        "priority": 0,
+        "description": "Hague, Smith, and Howard are not leaders of the Tories. The centre has now been left open for the taking, Portillo is now honing in on your supposed ballooning of the state in public utilities, contrasting it with a failure to move the country forward on the rights of same-sex couples. According to him, you’re no longer New Labour – you are nothing more than a standard tax-and-spend Labour politician. But you <i>are</i> New Labour, so prove him wrong.",
+        "likelihood": 1
+      }
+    }
+  }
+    if((ans == 14372 || ans == 14378) && Cred < 5 && OldLab < 3){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 14321,
+    "fields": {
+        "priority": 0,
+        "description": "Hague, Smith, and Howard are not leaders of the Tories. The centre has now been left open for the taking, Portillo is now honing in on your supposed ballooning of the state in public utilities, contrasting it with a failure to move the country forward on the rights of same-sex couples. According to him, you’re no longer New Labour – you are nothing more than a standard tax-and-spend Labour politician. But you <i>are</i> New Labour, so prove him wrong.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 14330,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 14331,
+    "fields": {
+        "priority": 0,
+        "description": "Portillo is not backing down, he’s now shifting his focused scope on your so-called “integrity issues”, he’s calling you out on your stealth tax rises, your turning on social progress and liberalism. He is throwing the kitchen sink. The final stages of the campaign are crucial. How will you keep these ludicrous attacks off of your back?",
+        "likelihood": 1
+      }
+    }
+  }
 }
