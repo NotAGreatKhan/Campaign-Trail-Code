@@ -99,6 +99,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Kenneth H. Clarke";
     }
+    if(ans == 14372 || ans == 14378){
+        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        vpTable["The Conservative Party"] = "Michael Portillo";
+    }
 
     // CREDIBILITY
     // Question 1 – 9/11
