@@ -259,7 +259,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12828){
       Resign += 1;
     }
-    if(ans == 12834){
+    if(ans == 14290){
       Resign += 1;
     }   
 
@@ -384,6 +384,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(ans == 12824 && Cred < 3){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 14281,
+    "fields": {
+        "priority": 0,
+        "description": "[January 28, 2004] The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
@@ -468,6 +479,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Continuing with the subject of the Liberal Democrats, your adamant support of the United States’ geopolitical thrust towards Baghdad has led to some core Labour rank-and-file defecting into the arms of Charles Kennedy’s party. One positive silver lining is that the electoral exodus is not as large as was originally suspected, likely as a result of your reluctance to deploy troops as part of the invasion. How will you approach this development?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14034){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 14385,
+    "fields": {
+        "priority": 0,
+        "description": "Since your shooting down of the Anti-terrorism Bill, soon after the black swan perched her wings over New York, Straw and Blunkett have been badgering you to push at least some legislation through on the matter. According to them and scattered issue polls, the public are becoming suspicious of your lack of action on the matter. What move will you make on the security of the country?",
         "likelihood": 1
       }
     }
@@ -778,8 +800,86 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-}
 
+// Michael Portillo
+    if(ans == 12797 && Cred < 3){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 14371,
+    "fields": {
+        "priority": 0,
+        "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 14294,
+    "fields": {
+        "priority": 0,
+        "description": "Iain Duncan Smith suffered the wrath of his parliamentary cohort, and was thrown out as your party machine continued to roll ahead. Their fatigue in the face of your increasingly stentorian liberalism, has caused them to rally around the yet-again-transformed Michael Portillo. As he fires his opening shots for the campaign, his attacks centre around your abandonment of “Middle Britain”, your neglect of the “power of enterprise and of the citizens to lift themselves up”. You’re bleeding centrist voters fast. But, he’s not invincible. Knock him down some pegs.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 14336,
+    "fields": {
+        "priority": 0,
+        "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 14296,
+    "fields": {
+        "priority": 0,
+        "description": "Hague, Smith, and Howard are not leaders of the Tories. The centre has now been left open for the taking, Portillo is now honing in on your supposed ballooning of the state in public utilities, contrasting it with a failure to move the country forward on the rights of same-sex couples. According to him, you’re no longer New Labour – you are nothing more than a standard tax-and-spend Labour politician. But you <i>are</i> New Labour, so prove him wrong.",
+        "likelihood": 1
+      }
+    }
+  }
+    if((ans == 14372 || ans == 14378) && Cred < 5 && OldLab < 3){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 14321,
+    "fields": {
+        "priority": 0,
+        "description": "Hague, Smith, and Howard are not leaders of the Tories. The centre has now been left open for the taking, Portillo is now honing in on your supposed ballooning of the state in public utilities, contrasting it with a failure to move the country forward on the rights of same-sex couples. According to him, you’re no longer New Labour – you are nothing more than a standard tax-and-spend Labour politician. But you <i>are</i> New Labour, so prove him wrong.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 14330,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14372 || ans == 14378){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 14331,
+    "fields": {
+        "priority": 0,
+        "description": "Portillo is not backing down, he’s now shifting his focused scope on your so-called “integrity issues”, he’s calling you out on your stealth tax rises, your turning on social progress and liberalism. He is throwing the kitchen sink. The final stages of the campaign are crucial. How will you keep these ludicrous attacks off of your back?",
+        "likelihood": 1
+      }
+    }
+  }
+}
 
 campaignTrail_temp.questions_json = [
     {
@@ -895,7 +995,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12831,
         "fields": {
             "priority": 0,
-            "description": "[January 28, 2004] The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence. Two days after he was set to appear before said committee, Dr. Kelly was tragically found dead in a forest near his home. In response, you commissioned an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+            "description": "[January 28, 2004] The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
             "likelihood": 1
         }
     },
@@ -1048,7 +1148,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12911,
         "fields": {
             "priority": 0,
-            "description": "[April 21, 2005] A topic that has gained momentum and importance in British politics is the issue of crime. The Conservatives have taken the attack to your government, thanks to recent reports from the British Crime Survey stating that violent crime had risen by 9% in the last 3 months of 2004 – despite the same report showing a 5% decrease in crime overall. As the incumbent party, how will you go about countering this attack?",
+            "description": "[April 21, 2005] A topic that has gained momentum and importance in our politics is the issue of crime. The Conservatives have taken the attack to your government, thanks to recent reports from the British Crime Survey stating that violent crime had risen by 9% in the last 3 months of 2004 – despite the same report showing a 5% decrease in crime overall. As the incumbent party, how will you go about countering this attack?",
             "likelihood": 1
         }
     },
@@ -1492,6 +1592,105 @@ campaignTrail_temp.questions_json = [
             "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
             "likelihood": 1
         }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14281,
+        "fields": {
+            "priority": 0,
+            "description": "[January 28, 2004] The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14294,
+        "fields": {
+            "priority": 0,
+            "description": "Iain Duncan Smith suffered the wrath of his parliamentary cohort, and was thrown out as your party machine continued to roll ahead. Their fatigue in the face of your increasingly stentorian liberalism, has caused them to rally around the yet-again-transformed Michael Portillo. As he fires his opening shots for the campaign, his attacks centre around your abandonment of “Middle Britain”, your neglect of the “power of enterprise and of the citizens to lift themselves up”. You’re bleeding centrist voters fast. But, he’s not invincible. Knock him down some pegs.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14296,
+        "fields": {
+            "priority": 0,
+            "description": "Hague, Smith, and Howard are not leaders of the Tories. The centre has now been left open for the taking, Portillo is now honing in on your supposed ballooning of the state in public utilities, contrasting it with a failure to move the country forward on the rights of same-sex couples. According to him, you’re no longer New Labour – you are nothing more than a standard tax-and-spend Labour politician. But you <i>are</i> New Labour, so prove him wrong.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14321,
+        "fields": {
+            "priority": 0,
+            "description": "Hague, Smith, and Howard are not leaders of the Tories. The centre has now been left open for the taking, Portillo is now honing in on your supposed ballooning of the state in public utilities, contrasting it with a failure to move the country forward on the rights of same-sex couples. According to him, you’re no longer New Labour – you are nothing more than a standard tax-and-spend Labour politician. But you <i>are</i> New Labour, so prove him wrong.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14330,
+        "fields": {
+            "priority": 0,
+            "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14331,
+        "fields": {
+            "priority": 0,
+            "description": "Portillo is not backing down, he’s now shifting his focused scope on your so-called “integrity issues”, he’s calling you out on your stealth tax rises, your turning on social progress and liberalism. He is throwing the kitchen sink. The final stages of the campaign are crucial. How will you keep these ludicrous attacks off of your back?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14336,
+        "fields": {
+            "priority": 0,
+            "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14337,
+        "fields": {
+            "priority": 0,
+            "description": "The walls around the Thatcherite consensus have come crashing down.<p></p>Sitting in your office, you longingly gaze out of the window that received the same stares as Wilson, Callaghan, and Attlee before you. When you first came into this job, you felt a conviction to shift to the centre like no other Labour leader before you. But, time changes people more than they realise, it appears. As Deputy Prime Minister John Prescott – and Chancellor Brown – sit opposite you, many ideas are swirling like a vortex in your mind. But there’s only one which you can get out first.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14364,
+        "fields": {
+            "priority": 0,
+            "description": "The realignment of British politics around Thatcher and her government has left a deep mark on public life, and your political conscience.<p></p>Many of your backbenchers holler at you in parliament, but that does not matter now, not to you. Before you, sits Foreign Secretary Jack Straw – Blunkett would be here too, but an affair got him kicked out from your cabinet. He speaks of the importance of securing our citizens, and protecting democracy at home, and abroad. His glare bores into you. What will you say to the man?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14371,
+        "fields": {
+            "priority": 0,
+            "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14385,
+        "fields": {
+            "priority": 0,
+            "description": "Since your shooting down of the Anti-terrorism Bill, soon after the black swan perched her wings over New York, Straw and Blunkett have been badgering you to push at least some legislation through on the matter. According to them and scattered issue polls, the public are becoming suspicious of your lack of action on the matter. What move will you make on the security of the country? ",
+            "likelihood": 1
+        }
     }
 ]
 
@@ -1659,22 +1858,6 @@ campaignTrail_temp.answers_json = [
     {
         "model": "campaign_trail.answer",
         "pk": 12832,
-        "fields": {
-            "question": 12831,
-            "description": "Let’s hope this report provides a judicious conclusion…"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 12833,
-        "fields": {
-            "question": 12831,
-            "description": "Let’s hope this report provides a judicious conclusion…"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 12834,
         "fields": {
             "question": 12831,
             "description": "Let’s hope this report provides a judicious conclusion…"
@@ -2533,7 +2716,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13619,
         "fields": {
             "question": 13614,
-            "description": "I’ll discuss the possibility with Chirac of going on the offensive, but on the economic angle. The opposition will no doubt try to argue that freer borders will result in job loss. This Constitution will make the continent more secure in the law, and more free to seek jobs than ever before, and we need to call them out on it. But make sure he connects with the French people, and doesn’t go off pontificating."
+            "description": "I’ll discuss the possibility with Chirac of going on the offensive, but on the economic angle. The opposition will no doubt try to argue that freer borders will result in job loss. This Constitution will make the continent more secure in the law, and more free to seek jobs. But make sure he connects with the French people, and doesn’t go off pontificating."
         }
     },
     {
@@ -2877,7 +3060,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13873,
         "fields": {
             "question": 13866,
-            "description": "The polls are looking good for us right now – I saw one putting us at 85% – but we can’t take that for granted. We’ve got to get real loud and passionate, like my campaign in ‘97, heh. But seriously, we have to be catchy with the people. You can’t let them forget our slogans, our arguments."
+            "description": "The polls are looking good for us right now – I saw one putting us at 85% – but we can’t take that for granted. We’ve got to get real loud and passionate. We have to be catchy with the people. You can’t let them forget our slogans, our arguments."
         }
     },
     {
@@ -3318,6 +3501,286 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14237,
             "description": "It does hurt me to say this, but I’m sensing a political backlash to this that just wasn’t there with our other legislation, pull this back before it gets too far."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14290,
+        "fields": {
+            "question": 14281,
+            "description": "Let’s hope this report provides a judicious conclusion…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14302,
+        "fields": {
+            "question": 14294,
+            "description": "I find it, you know I find it quite ironic that Mr Portillo claims to be this renewed Tory, yet it wasn’t all that long ago that he was a particularly proud Thatcherite, not too dissimilar from the views of Iain Duncan Smith. And, well, we all know how that went. He’s just not consistent."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14303,
+        "fields": {
+            "question": 14294,
+            "description": "Portillo, he is really anathema, to the right wing of the Conservative Party. On social issues he may as well be a Liberal Democrat or Labour. Anne Widicombe is notoriously opposed to him, I really doubt he could keep his party together."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14304,
+        "fields": {
+            "question": 14294,
+            "description": "In this increasingly dangerous world, we need to keep ourselves more secure than ever before. The fact that Mr Portillo has been so vehemently opposed to these measures to keep us safe, is not something that a Prime Minister should carry himself with."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14313,
+        "fields": {
+            "question": 14296,
+            "description": "Under this government, we have expanded upon our mission to provide every citizen with the means to succeed in life. Providing economic dynamism is part of our whole mission, people’s healthcare is secure, their energy bills are secure. And under this government, their future will be secure."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14314,
+        "fields": {
+            "question": 14296,
+            "description": "It’s not as if Mr Portillo is some safe alternative, he was an ardent Thatcherite before he had his ‘transformation’ lately. He is fickle, untrustworthy, and not serious about leading the country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14315,
+        "fields": {
+            "question": 14296,
+            "description": "Our decisions on combating crime, and tackling the inequality in our society has been a monumental success. Your children and fellow citizens are safer than when we last entered government. To turn back now would betray the good progress we have made."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14316,
+        "fields": {
+            "question": 14296,
+            "description": "The stability of your mortgage rates, your ability to afford groceries, is thanks to the steady hand of this government. The Chancellor’s excellent guidance of the economy has enabled this to occur, and if you elect us, this will continue far into the future. I cannot say the same with the Tories."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14322,
+        "fields": {
+            "question": 14321,
+            "description": "Under this government, we have expanded upon our mission to provide every citizen with the means to succeed in life. Providing economic dynamism is part of our whole mission, people’s healthcare is secure, their energy bills are secure. And under this government, their future will be secure."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14324,
+        "fields": {
+            "question": 14321,
+            "description": "It’s not as if Mr Portillo is some safe alternative, he was an ardent Thatcherite before he had his ‘transformation’ lately. He is fickle, untrustworthy, and not serious about leading the country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14326,
+        "fields": {
+            "question": 14321,
+            "description": "Our decisions on combating crime, and tackling the inequality in our society has been a monumental success. Your children and fellow citizens are safer than when we last entered government. To turn back now would betray the good progress we have made."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14328,
+        "fields": {
+            "question": 14321,
+            "description": "The stability of your mortgage rates, your ability to afford groceries, is thanks to the steady hand of this government. The Chancellor’s excellent guidance of the economy has enabled this to occur, and if you elect us, this will continue far into the future. I cannot say the same with the Tories."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14332,
+        "fields": {
+            "question": 14331,
+            "description": "I personally have little care for these attempts at personal abuse. On the other hand, their, frankly, extreme policies on education and social behaviour, would undo the monumental progress we have made for the students of this country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14333,
+        "fields": {
+            "question": 14331,
+            "description": "There is no lure I feel towards these personalised attacks, let us not forget the hidden agenda on the NHS they are trying to distract us from, the opposition cannot be trusted with the Health Service."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14334,
+        "fields": {
+            "question": 14331,
+            "description": "The thing with Mr Portillo, is that, he is not reliable when it comes to the future of our nation in Europe. If he were in charge, we would witness Britain be inexorably pulled out of the EU, compromising our leverage and economic influence on the continent."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14335,
+        "fields": {
+            "question": 14331,
+            "description": "What Portillo is consistently ignoring, is that our record in government is on every level, above those of the government he served under. They have no right to be so pias, when they themselves as a party have proven themselves unable to govern with true stability."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14338,
+        "fields": {
+            "question": 14337,
+            "description": "We have already taken strong measures for what is right, but it is not enough. Gordon, John, we need to commit to a complete reorganisation of the public utilities. We’re not holding back, the re-nationalisation of energy is going to be our target."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14339,
+        "fields": {
+            "question": 14337,
+            "description": "As I have said in the past multiple times before. Education, education, and education. Our schools need to provide all of the best opportunities for students, we need to pump up funding, and expand the capabilities of state schools, we cannot give private ones freeway either anymore."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14340,
+        "fields": {
+            "question": 14337,
+            "description": "Remember those funding and sleaze scandals back in the Major days? I wouldn’t think anybody has forgotten about those. Well, we haven’t. They finally need to start paying their fair share into our society. And that’s going to start now."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14348,
+        "fields": {
+            "question": 14330,
+            "description": "Let’s do it. I’d also, however, like to have Charles Kennedy on the stage with us tonight. We need to regain ground on the issue with Iraq, and stunt the Liberal Democrat’s surge in polling."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14349,
+        "fields": {
+            "question": 14330,
+            "description": "I would be up for the idea, yes. However, I shall agree to a debate only with the involvement of Portillo. Kennedy has no shot at becoming Prime Minister, so it feels rather redundant to include him. When it comes to my opponent, I would like to ask him, about his past statements on Thatcher, the SAS, I could go on really."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14350,
+        "fields": {
+            "question": 14330,
+            "description": "I would be up for the idea, yes. However, I shall agree to a debate only with the involvement of Portillo. Kennedy has no shot at becoming Prime Minister, so it feels rather redundant to include him. For my opponent, we need to redefine the narrative on our policy, and emphasise our competence."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14351,
+        "fields": {
+            "question": 14330,
+            "description": "I have countlessly debated the two party leaders in Parliament. I see no reason to do this, not to mention the voters that I speak with on many occasions."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14356,
+        "fields": {
+            "question": 14336,
+            "description": "I’ll strike an authoritative, yet responsive tone. We cannot afford to get bogged down on controversial issues, but we can’t let ourselves be defined on the narrative of this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14357,
+        "fields": {
+            "question": 14336,
+            "description": "I’ll try a more conciliatory, even compassionate, tone for the interview. Especially in light of our declining goodwill as a party. Maybe it could provide a good counter to Paxman’s combative tone."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14358,
+        "fields": {
+            "question": 14336,
+            "description": "Going into this, I’ll gun for a powerful, aggressive tone. Paxman won’t let it easy on me, we know that. So, we have to match his fire, so to speak."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14359,
+        "fields": {
+            "question": 14336,
+            "description": "You know what, I believe it is best if we do not attend this. My popularity is starting to slip somewhat, and we need to maintain our advantage in the polls."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14365,
+        "fields": {
+            "question": 14364,
+            "description": "put description here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14366,
+        "fields": {
+            "question": 14364,
+            "description": "put description here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14367,
+        "fields": {
+            "question": 14364,
+            "description": "put description here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14372,
+        "fields": {
+            "question": 14371,
+            "description": "No point in fretting about it now. Let’s wait and see who our upcoming opponent will be at this election."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14378,
+        "fields": {
+            "question": 14371,
+            "description": "I’m not going to take this opportunity too lightly. Let’s dot our i’s, and cross our t’s. Get some good attacks on our upcoming opponent, whoever they may be. Their party is still soul searching without a soul! Disunity hangs with them, and they are in no position to lead a government."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14386,
+        "fields": {
+            "question": 14385,
+            "description": "I’ll admit it, Straw and Blunkett are making a good case. We are not going to resend the original bill proposal, that would be ridiculous. But we will still push something forward expanding the parameters and controls the government will be able to exert. Terrorists will not be permitted to hurt our citizens."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14387,
+        "fields": {
+            "question": 14385,
+            "description": "This is a somewhat sensitive issue. I fully appreciate that. But there’s a good middle ground we can strike to get this thing through. Just put in some provisions allowing the government to keep suspected terrorists in our eye, and it’ll fly through."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14388,
+        "fields": {
+            "question": 14385,
+            "description": "I stand by what I did back in 2001. There are other ways we can increase the security of this country. More streamlined police funding, disincentivizing religious hatred, the whole sort. We’re standing firm on this."
         }
     }
 ]
@@ -6265,7 +6728,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3493,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": 1
+            "global_multiplier": 0.65
         }
     },
     {
@@ -6526,46 +6989,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12587,
             "global_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13075,
-        "fields": {
-            "answer": 12833,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": -0.03
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13077,
-        "fields": {
-            "answer": 12833,
-            "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13078,
-        "fields": {
-            "answer": 12834,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": -0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13080,
-        "fields": {
-            "answer": 12834,
-            "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": 0.07
         }
     },
     {
@@ -9205,7 +9628,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3493,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": -0.8
+            "global_multiplier": -0.475
         }
     },
     {
@@ -11026,6 +11449,56 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14292,
+        "fields": {
+            "answer": 14290,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14293,
+        "fields": {
+            "answer": 14290,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14374,
+        "fields": {
+            "answer": 14372,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14380,
+        "fields": {
+            "answer": 14378,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14381,
+        "fields": {
+            "answer": 14378,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.003
         }
     }
 ]
@@ -13486,7 +13959,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14211,
         "fields": {
             "answer": 14209,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.7,
             "issue_importance": 5
         }
@@ -13506,7 +13979,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14221,
         "fields": {
             "answer": 14216,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.71,
             "issue_importance": 5
         }
@@ -13526,7 +13999,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14228,
         "fields": {
             "answer": 14223,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.15,
             "issue_importance": 5
         }
@@ -13546,7 +14019,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14232,
         "fields": {
             "answer": 14230,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0,
             "issue_importance": 5
         }
@@ -13566,7 +14039,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14243,
         "fields": {
             "answer": 14238,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.7,
             "issue_importance": 5
         }
@@ -13586,7 +14059,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14250,
         "fields": {
             "answer": 14245,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.71,
             "issue_importance": 5
         }
@@ -13606,7 +14079,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14257,
         "fields": {
             "answer": 14252,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.15,
             "issue_importance": 5
         }
@@ -13626,7 +14099,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14264,
         "fields": {
             "answer": 14259,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0,
             "issue_importance": 5
         }
@@ -13646,7 +14119,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14266,
         "fields": {
             "answer": 12877,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.2,
             "issue_importance": 3
         }
@@ -13656,7 +14129,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14267,
         "fields": {
             "answer": 12884,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 3
         }
@@ -13676,7 +14149,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14269,
         "fields": {
             "answer": 12885,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.25,
             "issue_importance": 3
         }
@@ -13696,7 +14169,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14271,
         "fields": {
             "answer": 13235,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0,
             "issue_importance": 3
         }
@@ -13716,7 +14189,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14278,
         "fields": {
             "answer": 12890,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0,
             "issue_importance": 4
         }
@@ -13739,6 +14212,66 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 29,
             "issue_score": 0,
             "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14375,
+        "fields": {
+            "answer": 14372,
+            "issue": 27,
+            "issue_score": 0.66,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14376,
+        "fields": {
+            "answer": 14372,
+            "issue": 28,
+            "issue_score": 0.66,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14377,
+        "fields": {
+            "answer": 14372,
+            "issue": 30,
+            "issue_score": -0.15,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14382,
+        "fields": {
+            "answer": 14378,
+            "issue": 27,
+            "issue_score": 0.66,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14383,
+        "fields": {
+            "answer": 14378,
+            "issue": 28,
+            "issue_score": 0.66,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14384,
+        "fields": {
+            "answer": 14378,
+            "issue": 29,
+            "issue_score": 0.35,
+            "issue_importance": 7
         }
     }
 ]
@@ -14461,25 +14994,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12832,
             "candidate": 12543,
-            "answer_feedback": "The inquiry deems the government innocent of any attempt or malice to “sex up” the dossiers – and deems Dr Kelly’s death as “wholly exceptional”. Whilst you have staved off resignation, the public decisively sees the report as a whitewash, with government credibility continuing to dwindle. Not great."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 13070,
-        "fields": {
-            "answer": 12833,
-            "candidate": 12543,
-            "answer_feedback": "The inquiry deems the government innocent of any attempt or malice to “sex up” the dossiers – and deems Dr Kelly’s death as “wholly exceptional”. Whilst you have staved off resignation, the public decisively sees the report as a whitewash, with government credibility continuing to dwindle. Not great."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 13071,
-        "fields": {
-            "answer": 12834,
-            "candidate": 12543,
-            "answer_feedback": "The inquiry has exited the break room with a thud. Whilst the report never directly accused your government of malice with the dossiers, Lord Hutton does not exonerate you either. Dr Kelly’s death is deemed “wholly exceptional”. With the inquiry not being the total ‘whitewash’ suspected, the threat of resignation looms large…"
+            "answer_feedback": "The inquiry deems the government innocent of any attempt or malice to “sex up” the dossiers – and deems Dr Kelly’s death as “wholly exceptional”. Whilst you have staved off resignation, the public decisively sees the report as a whitewash, with government credibility continuing to dwindle. Your press office runs damage control, pressing the case that it still cleared the government of sny possible guilt."
         }
     },
     {
@@ -16317,6 +16832,321 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "The Public Utilities Bill, being written up and ready to go, is banished to the history annals. The left of your party is livid, believing you to have retreated from a real fight for the people. But the Conservatives send across their muted respect, having sensed an inner awakening of your ‘true self’. With the Hutton Inquiry rapidly approaching, this will further bring down your parliamentary authority."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14291,
+        "fields": {
+            "answer": 14290,
+            "candidate": 12543,
+            "answer_feedback": "The inquiry has exited the break room with a thud. Whilst the report never directly accused your government of malice with the dossiers, Lord Hutton does not exonerate you either. Dr Kelly’s death is deemed “wholly exceptional”. With the inquiry not being the total ‘whitewash’ suspected, the threat of resignation looms large. As more troops die in the sands of Iraq, many question if any of this was worth taking out Hussein…"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14305,
+        "fields": {
+            "answer": 14302,
+            "candidate": 12543,
+            "answer_feedback": "He has certainly had multiple transformations over the course of his political career. But with your pivot to a more traditional progressivism, and his vehement opposition to Smith in the 2001 leadership contest, these attack angles do not particularly stick with the people you need to court. “I may have evolved, but the Prime Minister has flip-flopped!” He touts. At least you’re making voters inquire into his values, for what it’s worth."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14306,
+        "fields": {
+            "answer": 14303,
+            "candidate": 12543,
+            "answer_feedback": "Revelations of him having ‘homosexual experiences’ in 2001, is what arguably botched his run for the leadership that year. Even now, many MPs of the old party have been feeling a bit reticent to stump with him at the helm this election. Although his social views are contentious, he still has his economic credentials to keep the dogs on the leash."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14307,
+        "fields": {
+            "answer": 14304,
+            "candidate": 12543,
+            "answer_feedback": "His opposition to the heightened state measures for security, may have been universal during the immediate horror of the Towers’ collapse, yet now find themselves mired in controversy. Civil Liberties groups find themselves in an odd choice between Portillo and Kennedy, certainly not going for you. However, many Conservative voters view him with qualm."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14317,
+        "fields": {
+            "answer": 14313,
+            "candidate": 12543,
+            "answer_feedback": "The ghost of Jim Callaghan seems to hang like an albatross around your political record. Although the numbers and the statistics look good, the policy metronomic switches, the tactical retreats, it all feeds right into Portillo’s narrative that you are losing touch with Middle Britain. The homosexually-experienced is able to pierce through your rhetoric, and you bleed all the more for it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14318,
+        "fields": {
+            "answer": 14314,
+            "candidate": 12543,
+            "answer_feedback": "This attack does well to scare the left of your voter base into line, and gives some right-wing Tory voters some second thought. With the median voter, and the other more hesitant parts of the electorate however, these lines don’t optimally stick the landing. Portillo’s charisma and calm-headedness is able to strategically deny and contain these charges, leaving the right-wing press eager to jump on the dog-pile."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14319,
+        "fields": {
+            "answer": 14315,
+            "candidate": 12543,
+            "answer_feedback": "The effects of your social agenda are more mixed in the eyes of the people. The overall outlooks look promising. But crime and immigration, a statistically prudent evidence of your good evidence, is beginning to show cracks in its armour. Meanwhile, the cauterised liberalism of your civil rights agenda appears merely a watered-down version of the idealism of the late 90’s, one which Portillo is energetic to exploit."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14320,
+        "fields": {
+            "answer": 14316,
+            "candidate": 12543,
+            "answer_feedback": "Ever since the end of the crisis with the ERM, your inheritance (and maintenance) of the Treasury’s good exchequer has been able to keep the public from buckling your numbers in the polls. Stressing this point is an effective reminder in the minds of the voters, but you have left some of Portillo’s attacks unaddressed."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14323,
+        "fields": {
+            "answer": 14322,
+            "candidate": 12543,
+            "answer_feedback": "It seems the spirit of John Smith and perhaps even Attlee, trudge closer and closer towards you. Even in spite of your jolting shakeup to the British political landscape, you have – at least to a justifiable extent – kept the middle of British society on your side. For what it’s worth, Portillo’s attacks seem to lose some of their luster."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14325,
+        "fields": {
+            "answer": 14324,
+            "candidate": 12543,
+            "answer_feedback": "This attack does well to scare the left of your voter base into line, and gives some right-wing Tory voters some second thought. With the median voter, and the other more hesitant parts of the electorate however, these lines don’t optimally stick the landing. Portillo’s charisma and calm-headedness is able to strategically deny and contain these charges, leaving the right-wing press eager to jump on the dog-pile."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14327,
+        "fields": {
+            "answer": 14326,
+            "candidate": 12543,
+            "answer_feedback": "The effects of your social agenda are more mixed in the eyes of the people. The overall outlooks look promising. But crime and immigration, a statistically prudent evidence of your good evidence, is beginning to show cracks in its armour. Meanwhile, the cauterised liberalism of your civil rights agenda appears merely a watered-down version of the idealism of the late 90’s, one which Portillo is energetic to exploit."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14329,
+        "fields": {
+            "answer": 14328,
+            "candidate": 12543,
+            "answer_feedback": "Ever since the end of the crisis with the ERM, your inheritance (and maintenance) of the Treasury’s good exchequer has been able to keep the public from buckling your numbers in the polls. Stressing this point is an effective reminder in the minds of the voters, but you have left some of Portillo’s attacks unaddressed."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14341,
+        "fields": {
+            "answer": 14338,
+            "candidate": 12543,
+            "answer_feedback": "Gordon from the get-go raises his concerns, about the fiscal feasibility of funding such a shift, and the potential pitfalls that would ensue. The majority of the media (save for <i>The Sun</i> and the <i>The Mail</i>) will be quick to say their quiet parts out loud. Fear-mongering about the bloated deficits and rising bills it will create, but you think differently. You <i>know</i> differently now."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14342,
+        "fields": {
+            "answer": 14339,
+            "candidate": 12543,
+            "answer_feedback": "The Minister of Education strikes again. Time will tell how the country sees your reforms, the opposition sure as hell is not going to make it easier. Parents sending their children to private schools will holler about it as well, however your convictions do little to care. You’re going to bring up the students of Britain – no matter what."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14343,
+        "fields": {
+            "answer": 14340,
+            "candidate": 12543,
+            "answer_feedback": "The right wing will shout about punishing the wealth creators, about taxing the innocent members of society. Prescott, and many of the citizens of working-class descent, shall hear the news with delight and vigour. To Middle Britain, New Labour seems to be concluding, but for you, it is only just starting. Gordon meanwhile, looks on with cautious optimism."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14344,
+        "fields": {
+            "answer": 14332,
+            "candidate": 12543,
+            "answer_feedback": "Tackling their stances head on in such a manner, is received as being in poor taste. It doesn’t fully account for their claim on the stealth taxes, or the EU Constitution. With education, your party is not as strong on this issue as is ideal, so tread carefully with that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14345,
+        "fields": {
+            "answer": 14333,
+            "candidate": 12543,
+            "answer_feedback": "Ah the NHS, always a staunch defender of it, your party is. Labour has been consistently more trusted on healthcare than the Conservatives have ever been, it also shores up the justification for your stealth taxes. Just keep in mind though that against the more ideologically compassionate Portillo, this attack won’t have the same potency it otherwise might have. In fact, it’s a tougher sell."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14346,
+        "fields": {
+            "answer": 14334,
+            "candidate": 12543,
+            "answer_feedback": "Portillo plainly denies that he wishes to pull Britain out of the EU, pointing to his manifesto pledge to oppose any attacks to British sovereignty. To a sizeable plurality of the population though – who are pro-remain – they are startled by the possibility of him leading Britain’s EU policy. This won’t mask your failures wholly, but it serves well to distract the media from it for the time being."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14347,
+        "fields": {
+            "answer": 14335,
+            "candidate": 12543,
+            "answer_feedback": "Portillo is not seen as the face of past economic hardship like Major or Howard are seen as. Yet by trying to tie him to the rest of his party, perhaps his favorability ratings can be dragged down closer to their level. He still does share some historical ideological alignment with that sect of the Tory party, and a sect that is not looked on too fondly by the centre-left and left."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14352,
+        "fields": {
+            "answer": 14348,
+            "candidate": 12543,
+            "answer_feedback": "Three podiums, three party leaders, and boy is it a sight to behold. The three of you don’t hesitate to immediately begin firing your volleys. Kennedy attempted to position himself as the optimistic alternative, whilst bashing Portillo on his conservatism. While you try to do the same, it is too a muted effect, only being compensated by your classic charisma. When all is said and done, the only slight loser is one Mr Portillo."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14353,
+        "fields": {
+            "answer": 14349,
+            "candidate": 12543,
+            "answer_feedback": "With Kennedy absent. You are left alone on the stage to tear him a new one, with each reminder of his past statements to old Tory conferences, he gets more and more agitated. He tries to hit back with similar arguments of his own, but with your notorious media savviness, you effectively hold your own. The media proclaims your soft victory soon after, with Portillo reeling from his lost momentum."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14354,
+        "fields": {
+            "answer": 14350,
+            "candidate": 12543,
+            "answer_feedback": "With Kennedy not being present, all eyes were only on the two major candidates. Initially, the initiative seemed to be in your hands, as you hammered to the audience the strong economy, and their safe pocketbooks. Portillo, though, seizes on the opportunity to shine a spotlight on your legislative misfortunes, to raucous cheers from half of the audience in attendance."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14355,
+        "fields": {
+            "answer": 14351,
+            "candidate": 12543,
+            "answer_feedback": "The electorate is disappointed. But it hopefully shouldn’t impact you too horrendously, well apart from feeding Portillo’s narrative of you being a “retreating PM”. Although, it would be worth the risk to prove yourself in the ring, no?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14360,
+        "fields": {
+            "answer": 14356,
+            "candidate": 12543,
+            "answer_feedback": "Overall, the interview went fairly well. Granted, there were some tense moments with Paxman, especially over your foreign policy. Meanwhile Michael Portillo finds some gridlock in his interview, providing a nice contrast between the two of you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14361,
+        "fields": {
+            "answer": 14357,
+            "candidate": 12543,
+            "answer_feedback": "The interview could be best summarised as two conflicting personas unfolding on screen. You appeared less cold in regards to the war, but Paxman seemed to needle you on some points. At least it is better than Portillo’s performance."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14362,
+        "fields": {
+            "answer": 14358,
+            "candidate": 12543,
+            "answer_feedback": "[PAXMAN] “So what you’re saying is-” [BLAIR] “Now hold o-, hold on, that is absolutely not-” …This went on for about 5 minutes at a time. It is roughly similar to how well Portillo fared with the stern man."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14363,
+        "fields": {
+            "answer": 14359,
+            "candidate": 12543,
+            "answer_feedback": "This is a complete subversion of the “masochism strategy” we have developed. During Portillo’s interview, he slams your decision as “Another addition to the pile of cowardly acts that the PM has committed with the people of his country”. His passionate charisma is received positively with the electorate, much to your chagrin."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14368,
+        "fields": {
+            "answer": 14365,
+            "candidate": 12543,
+            "answer_feedback": "put feedback here, don't forget to change candidate"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14369,
+        "fields": {
+            "answer": 14366,
+            "candidate": 12543,
+            "answer_feedback": "put feedback here, don't forget to change candidate"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14370,
+        "fields": {
+            "answer": 14367,
+            "candidate": 12543,
+            "answer_feedback": "put feedback here, don't forget to change candidate"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14373,
+        "fields": {
+            "answer": 14372,
+            "candidate": 12543,
+            "answer_feedback": "The hours proceeding Smith's resignation is a whirlwind. David Davis – and Clarke – both bow out of the leadership election, fearing a loss to you over a divided party contest. The only two who fight it out are former Home Secretary Michael Howard, being barely dethroned by the renewed Michael Portillo – who is declared leader. His approval with the people is riding very high, so make sure you find ways to bring him down a peg."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14379,
+        "fields": {
+            "answer": 14378,
+            "candidate": 12543,
+            "answer_feedback": "The hours proceeding Smith's resignation is a whirlwind. David Davis – and Clarke – both bow out of the leadership election, fearing a loss to you over a divided party contest. The only two who fight it out are former Home Secretary Michael Howard, being barely dethroned by the renewed Michael Portillo – who is declared leader. His approval with the people is riding very high, but your point resonates with the media class. Don't let him creep up from behind, though."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14389,
+        "fields": {
+            "answer": 14386,
+            "candidate": 12543,
+            "answer_feedback": "Chief Whip Armstrong and the rest of your cabinet hawks get to work drafting and getting through the bill (though somewhat skimmed down from the version in 2001). On a mostly party-line vote – with a noticeable bleeding of Labour backbenchers – the Anti-terror and Security Bill passes the House. Some dissenting voices on the civil liberties and crime hawk groups cry foul, but the public’s desire for tough action has been marginally satiated."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14390,
+        "fields": {
+            "answer": 14387,
+            "candidate": 12543,
+            "answer_feedback": "In an attempt to satisfy everyone, you end up satisfying noone. Many MPs from your own backbenches rebel in spite of the whip being initiated, but the bill passes without too much sweat breaking. The reaction from public advocacy groups and the media on the other hand, is less ‘civil’. Those who stubbornly defend civil liberties say it has gone too far, while hawks say it has not gone far enough."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14391,
+        "fields": {
+            "answer": 14388,
+            "candidate": 12543,
+            "answer_feedback": "Well suffice it to say, those civil liberties advocacy groups are beginning to turn their heads towards your government. This position is assuredly out of step with the main electorate, but by standing firm on your decision, you manage to effectively save face without losing a truly unnerving percentage of support."
+        }
     }
 ]
 
@@ -16375,7 +17205,6 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
-
 
 function changechart(){
     if (document.getElementById("state_info")!=null) {
@@ -16862,13 +17691,33 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/0bqHDaj.png
 
 else if (aa[0].candidate == 12543) {
 e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, this is certainly a let down for Labour.</h3>
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, with Labour as the largest party.</h3>
 <p>
 David Dimbleby’s voice rings out across the Party headquarters. An awkward state of apoplexia besets the Party faithful who are not already hanging their heads in dispiritedness and confusion. The same thing is on everyone’s mind:
 <br><br>
 What happens now?
 <br><br>
-At the farthest boundaries of your conscience, you desperately hoped for the seat count to defy the exit poll. Even if you knew that wouldn’t be the case. You clinged on to the hope, desperately praying for that number to reach the magic total of 324. But it never reached orbit, never recreated the John Major upset of 1992. Constituency after constituency, colleague after colleague, stemming the tide – but not stopping the wave – of the blue sea on the map. With branching tentacles of orange to strangle the Labour titan.<br><br>Your mind declines to a spiralling cascade of possibilities that never were, and decisions that were never taken. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart quite beat with middle Britain this time around? What made him falter to such a weak opposition? And, how did he let the Liberal Democrats sneak up behind him? Those are the headlines that will be etched into the papers in the following days — heck, even hours. What happens next is anyone’s guess. If you were not too bloodthirsty on the trail, you could negotiate with the Liberal Democrats and cobble together some semblance of a coalition government for the next few years… at best. Don’t keep your prying eyes off of the Conservatives though, they’ll take any opportunity they can to snatch any potential mandate off of your hands, and straight into their fiendish fangs. Let your finger off of the pulse for even a second, and you may be as good as unemployed.
+At the farthest boundaries of your conscience, you desperately hoped for the seat count to defy the exit poll. Even if you knew that wouldn’t be the case. You clinged on to the hope, desperately praying for that number to reach the elusive total of 324. But it never reached orbit, never even recreated the John Major upset of 1992. Constituency after constituency, colleague after colleague, stemming the tide – but not stopping the wave – of the blue sea on the map. With branching tentacles of orange to strangle the Labour titan.
+<br><br>
+Your mind declines to a spiralling cascade of possibilities that never were, and decisions that were never taken. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart quite beat with middle Britain this time around? What made him falter to such a weak opposition? And, how did he let the Liberal Democrats sneak up behind him? Those are the headlines that will be etched into the papers in the following days — hell, even hours. Your neck feels as if it’s being hung by a coarse noose of electoral purgatory. You run through all of the possible scenarios of a future Labour government. A Labour-LibDem coalition is out of the question, Charles Kennedy’s soaring yet earthly charm included opposing your actions in the bomb-stricken deserts of the Arabian peninsula. A Labour-SNP coalition, it wouldn’t work either. Your commitment to a strong union (as devolved in power as you’ve made it) would never intertwine with their callous, vigorous desire for independence from our fair Kingdom.
+<br><br>
+That leaves only a potential agreement with a Northern Irish group spurred on by your decisions in the region. Or, the most likely, and most pernicious outcome. A minority government. Where no doubt there will be endless theatre and haggling over bills, issues, and whatever trivial ‘scandals’ people shall use to belittle your waning days in No. 10. And, if the other parties decide to band together in unison against you, that battle will only be unwinnable – save for a miracle.
+<br><br>
+It is not long before you recline yourself to the backroom, the flashing lights replaced by a frigid, unfeeling, subdued darkness. It isn’t long, however, before a nasal tune rings from your mobile phone. Jolted to your senses, you hastily unfold it, the tactile button is pressed, and a familiar voice you hear on the other end.
+<br><br>
+“Hey Tony, this has properly cocked up, hasn’t it.” His voice sounds defeated.
+<br><br>
+“No, this, this hasn’t been good,” you pause to collect your myriad of thoughts, “Our options are a lot more, well – a lot more limited.”
+<br><br>
+“Yeah, the SNP is out of the question, and the LibDems won’t be keen either, we haven’t got a lot on the table.”
+<br><br>
+You can nigh feel Alastair Campbell rubbing his eyes under his thickset eyebrows.
+<br><br>
+“By the way, Alastair, I hope you’ve been feeling alright. That whole thing whilst you were in government, it was a lot and-”
+<br><br>
+“It’s alright, Tony. I’m doin’ okay. Perhaps later we can talk about where this will go… God.” The ex-journalist replies.
+<br><br>
+You both exchange your memorised closing platitudes, and with a sigh, close your phone and withdraw it back within your pocket – pondering some upcoming grueling negotiations you may imminently be embroiled in. The room feels even darker.
 <br><br>
 In spite of every bludgeoning you endured, every decision you agonised on, the transformative “Third Way” agenda you set out, the British people could not quite decide themselves. Best of luck to you, Prime Minister.
 <br><br>
@@ -17011,7 +17860,7 @@ if ((e.player_answers.includes(12814)) && (e.player_answers.includes(12819))) {
 e.pages.push(`
 <h3 style='text-align: center;'>A MONSTER OF DELUSION, <i>Daily Mail</i></h3>
 <p>
-<b>For two hours, Blair dissembled and denied in lol the face of Chilcot’s devastating verdict. Then, with sickening egomania, he declared: I can’t say sorry for Iraq… I’d do it again.</b>
+<b>For two hours, Blair dissembled and denied in the face of Chilcot’s devastating verdict. Then, with sickening egomania, he declared: I can’t say sorry for Iraq… I’d do it again.</b>
 <br><br>
 Tony Blair made an astonishing defence of the invasion of Iraq yesterday despite being torn apart by the Chilcot inquiry. After seven years of waiting, the report savaged the former prime minister for his conduct at every stage of the process that dragged Britain into the catastrophic war. Sir John Chilcot lambasted Mr Blair for his handling of 'flawed' intelligence, for failing to plan for the aftermath and for secret promises given to George Bush committing to the invasion eight months before MPs voted.
 <br><br>
