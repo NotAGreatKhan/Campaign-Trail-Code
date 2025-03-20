@@ -473,6 +473,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(ans == 14034){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 14385,
+    "fields": {
+        "priority": 0,
+        "description": "Since your shooting down of the Anti-terrorism Bill, soon after the black swan perched her wings over New York, Straw and Blunkett have been badgering you to push at least some legislation through on the matter. According to them and scattered issue polls, the public are becoming suspicious of your lack of action on the matter. What move will you make on the security of the country?",
+        "likelihood": 1
+      }
+    }
+  }
 
 // Europe Stuff
     if(ans == 12797){
