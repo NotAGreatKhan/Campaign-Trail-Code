@@ -695,6 +695,7 @@ New Labour has been in government for over a decade. In that time, Britain has s
 <button>Continue</button>
 </p>
 `)
+e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/pG6ZWzH.jpg"
 corrr = '\n              <h2>NEW CAMPAIGN TRAIL</h2><font id="wittyquote" size="4" color="white"><em>"Not flash, just Gordon."</em></font>\n            ';
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#cc0000";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#824b4b";
@@ -706,7 +707,7 @@ document.getElementById("header").src = bannerlist[Math.floor((Math.random() * b
 document.body.background = "https://www.thesun.co.uk/wp-content/uploads/2020/10/NINTCHDBPICT000004699065-1.jpg"; 
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#cc0000!important;}</style>";
-e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/pG6ZWzH.jpg"})])
+})])
 }
 
 return construct(0);
