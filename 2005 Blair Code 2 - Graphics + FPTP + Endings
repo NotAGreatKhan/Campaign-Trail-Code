@@ -478,7 +478,7 @@ You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifull
 Into the abyss.
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/0bqHDaj.png"})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/wuC82w8.gif"})])
 } 
 
 else if (aa[0].candidate == 12543) {
@@ -516,7 +516,7 @@ In spite of every bludgeoning you endured, every decision you agonised on, the t
 You sure as hell are going to need it.
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/ZVxm7Y7.png"})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif"})])
 } 
 
 else if (quickstats[0] >= 324 && quickstats[0]<340) {     
@@ -530,7 +530,7 @@ With a majority secured, you may be able to pursue those national security refor
 You fought with all you could, but in the end, only the most pitiful dividend was handed out. Best of luck, Prime Minister, you’re sure as hell going to need it.
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
 } 
 
 else if (quickstats[0] >= 340 && quickstats[0]<355) {     
@@ -544,7 +544,7 @@ With this majority secured, you may be able to pursue those national security re
 You fought through the battle with all you could, but only a tepid endorsement of your agenda was given to you. Best of luck, Prime Minister, because you sure as hell are going to need it.
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
 } 
 
 else if (quickstats[0] >= 355 && quickstats[0]<370) {
@@ -558,7 +558,7 @@ Now that you have snatched a secure Parliament, you should have little trouble i
 You fought the battle with all you could, yet the lion’s share was handed out hesitantly and mildly. Best of luck for your remaining years, Prime Minister, you’ll have a tough last few years ahead of you.
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
 } 
 
 else if (quickstats[0] >= 370 && quickstats[0]<400) {    
@@ -572,7 +572,7 @@ With this commanding majority in Parliament, you should have little difficulty i
 You fought, you triumphed, and in the end, the lion’s share has handsomely fallen into your grasp. Whilst I will of course wish you the best of luck, it seems you can likely do anything with this victory. Good luck Tony!
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
 } 
 
 else if (quickstats[0] >= 400 && quickstats[0]<500) {    
@@ -590,7 +590,20 @@ After all of these long years, your fight in the political battlefield has yield
 John Smith would be proud — you’re sure he would. If only Kier Hardie were here too. To see what we have achieved.
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/2Vtwwm7.jpg"})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
+if (songChange != 1) {
+    songChange = 1
+    const Tcogb = new Playlist();
+      const TcogbSong = new Song(
+        "Things Can Only Get Better",
+        "D:Ream",
+        "https://imgur.com/Dl09alM.jpg",
+        "https://audio.jukehost.co.uk/u0jbBbFnEpQMSpabzRNL7pMduHHgGbRx"
+      );
+      Tcogb.addSong(TcogbSong);
+    changePlaylist(Tcogb);
+    }
+    refreshSurrogates();
 } 
 
 else if (quickstats[0] >= 500) {  
@@ -616,7 +629,7 @@ e.pages.push(`
 -End of Transcription.
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/VfQvbGe.png"})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MzNIbIL.gif"})])
 }
 
 else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
@@ -689,7 +702,6 @@ e.pages.push(`
 New Labour has been in government for over a decade. In that time, Britain has seen the Iraq War, Tony Blair's resignation, and now the worst recession in 70 years.
 <br><br>
 <li>Gordon Brown must steer the economy safely through difficult times, while deciding how closely to stick to Tony Blair's mixed legacy.</li>
-<br><br>
 <li>David Cameron must modernise the "nasty" Conservative Party to lead it back into government after 13 years in Opposition.</li>
 <br><br>
 <button>Continue</button>
