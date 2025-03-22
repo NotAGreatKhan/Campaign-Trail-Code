@@ -86,13 +86,40 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "pk": 13501,
         "fields": {
             "priority": 0,
-            "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
             "likelihood": 1
           }
-        } 
+        }
+        campaignTrail_temp.questions_json[20] = {
+        "model": "campaign_trail.question",
+        "pk": 14399,
+        "fields": {
+            "priority": 0,
+            "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
+            "likelihood": 1
+          }
+        }
+        campaignTrail_temp.questions_json[21] = {
+        "model": "campaign_trail.question",
+        "pk": 14400,
+        "fields": {
+            "priority": 0,
+            "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
+            "likelihood": 1
+          }
+        }
+        campaignTrail_temp.questions_json[22] = {
+        "model": "campaign_trail.question",
+        "pk": 14401,
+        "fields": {
+            "priority": 0,
+            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "likelihood": 1
+          }
+        }
     }
     if(ans == 13508){
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 20;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 23;
       Brown = true;
     }
     if(ans == 14123 || ans == 14129){
