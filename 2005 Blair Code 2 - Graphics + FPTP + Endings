@@ -543,7 +543,6 @@ if (songChange != 1) {
       Dd.addSong(DdSong);
     changePlaylist(Dd);
     }
-    refreshSurrogates();
 } 
 
 else if (quickstats[0] >= 340 && quickstats[0]<355) {     
@@ -616,7 +615,6 @@ if (songChange != 1) {
       Tcogb.addSong(TcogbSong);
     changePlaylist(Tcogb);
     }
-    refreshSurrogates();
 } 
 
 else if (quickstats[0] >= 500) {  
