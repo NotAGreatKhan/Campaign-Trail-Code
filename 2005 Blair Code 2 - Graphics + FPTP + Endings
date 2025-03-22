@@ -531,6 +531,19 @@ You fought with all you could, but in the end, only the most pitiful dividend wa
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
+if (songChange != 1) {
+    songChange = 1
+    const Dd = new Playlist();
+      const DdSong = new Song(
+        "Dead Disco",
+        "Metric",
+        "https://imgur.com/A3wgknr.jpg",
+        "https://audio.jukehost.co.uk/aEjjVoFDb62ocRQiWMcUKsdVQZ3TlN7h"
+      );
+      Dd.addSong(DdSong);
+    changePlaylist(Dd);
+    }
+    refreshSurrogates();
 } 
 
 else if (quickstats[0] >= 340 && quickstats[0]<355) {     
