@@ -96,18 +96,49 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "pk": 13501,
         "fields": {
             "priority": 0,
-            "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
             "likelihood": 1
           }
-        } 
+        }
+        campaignTrail_temp.questions_json[20] = {
+        "model": "campaign_trail.question",
+        "pk": 14399,
+        "fields": {
+            "priority": 0,
+            "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
+            "likelihood": 1
+          }
+        }
+        campaignTrail_temp.questions_json[21] = {
+        "model": "campaign_trail.question",
+        "pk": 14400,
+        "fields": {
+            "priority": 0,
+            "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
+            "likelihood": 1
+          }
+        }
+        campaignTrail_temp.questions_json[22] = {
+        "model": "campaign_trail.question",
+        "pk": 14401,
+        "fields": {
+            "priority": 0,
+            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "likelihood": 1
+          }
+        }
     }
     if(ans == 13508){
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 20;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 23;
       Brown = true;
     }
     if(ans == 14123 || ans == 14129){
         campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Kenneth H. Clarke";
+    }
+    if(ans == 14372 || ans == 14378){
+        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        vpTable["The Conservative Party"] = "Michael Portillo";
     }
 
     // CREDIBILITY
@@ -881,6 +912,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 }
 
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1301,7 +1333,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13501,
         "fields": {
             "priority": 0,
-            "description": "Well, that was ugly. But that is in the past now, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
             "likelihood": 1
         }
     },
@@ -1689,6 +1721,33 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Since your shooting down of the Anti-terrorism Bill, soon after the black swan perched her wings over New York, Straw and Blunkett have been badgering you to push at least some legislation through on the matter. According to them and scattered issue polls, the public are becoming suspicious of your lack of action on the matter. What move will you make on the security of the country? ",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14399,
+        "fields": {
+            "priority": 0,
+            "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14400,
+        "fields": {
+            "priority": 0,
+            "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14401,
+        "fields": {
+            "priority": 0,
+            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
             "likelihood": 1
         }
     }
@@ -2604,23 +2663,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13511,
         "fields": {
             "question": 13501,
-            "description": "Our first priority should always be the economy. Because by maintaining a strong economy, the lives of the whole of Britain shall stay prosperous, and you then have the opportunity to invest in the future. Emphasise our economic record heavily."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 13516,
-        "fields": {
-            "question": 13501,
-            "description": "Now that Tony is no longer leading the party, we can tactfully shift our position on, and away from, Iraq. The war itself has garnered great unpopularity since the military operation, so we need to be tactful in how we approach this. We’ll avoid bringing it up, but when asked, we’ll support the withdrawal of troops once order is restored — instead of the full nation building."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 13521,
-        "fields": {
-            "question": 13501,
-            "description": "Let’s really lay it thick into the Tories – just like my old days in the ‘90s – we’ll hit them on their last record in government, their frankly ludicrous policies. The whole nine yards. Let’s finish this campaign."
+            "description": "“Hello? ...Yes, it’s me, Tony.”"
         }
     },
     {
@@ -3781,6 +3824,110 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14385,
             "description": "I stand by what I did back in 2001. There are other ways we can increase the security of this country. More streamlined police funding, disincentivizing religious hatred, the whole sort. We’re standing firm on this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14392,
+        "fields": {
+            "question": 12801,
+            "description": "...The Wealth Tax, which will only apply to the top 5% of earners. We need to ensure that those with the broadest shoulders in society can contribute to lifting up the poor of society. This will accomplish just that, and will provide the sufficient income needed for the NHS."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14402,
+        "fields": {
+            "question": 14399,
+            "description": "On this day, I remember words that have stayed with me since my childhood, and which matter a great deal to me today. My school motto: I will try my utmost. This is my promise, to all of the people of Britain. And now, let the work of change begin."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14403,
+        "fields": {
+            "question": 14399,
+            "description": "Standing here now, I am reminded of all of the things that make our whole country great. As I have travelled around the country, and as I have listened and I have learned from the British people, and as Prime MInister I will continue to learn and listen from the British people. I will reach out beyond narrow party interests."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14404,
+        "fields": {
+            "question": 14399,
+            "description": "I grew up in the town that I now represent in parliament, and went to the local school. I wouldn’t be standing here, without the opportunities I received there. I want the best of chances for everyone, that is my mission. If we can reach the potential of all of our people, then I am absolutely sure that Britain can be the global success story of the century."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14405,
+        "fields": {
+            "question": 14399,
+            "description": "I have been granted the great privilege, and opportunity, to serve my country. And at all times, I will be strong in purpose, steadfast in war, resolute in action, in the service of what matters to the British people. Meeting the concerns and aspirations of our whole country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14429,
+        "fields": {
+            "question": 14400,
+            "description": "Now that Tony is no longer leading the party, we can tactfully shift our position on, and away from, Iraq. The war itself has garnered great unpopularity since the military operation, so we need to be tactful in how we approach this. We’ll avoid bringing it up, but when asked, we’ll support the withdrawal of troops once order is restored — instead of the full nation building."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14430,
+        "fields": {
+            "question": 14400,
+            "description": "I will merely reiterate the position I have held since the passing of the Resolution. That we must continue our involvement in Iraq, not only for the security of the region, but for the emancipation and liberation of the Iraqi people. We must hold the line in this regard."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14431,
+        "fields": {
+            "question": 14400,
+            "description": "We will see to it that our troops stationed in Iraq, will now begin a gradual process of leaving the country. Saddam Hussein has been eliminated from power, and any traces of destructive capabilities have been neutralised."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14432,
+        "fields": {
+            "question": 14400,
+            "description": "We went into Iraq with the explicit goal of removing the state-terrorism perpetuated by Saddam Hussein’s government, and removing Hussein himself. That goal has now been achieved, meaning the troops should come home now, with immediate effect."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14452,
+        "fields": {
+            "question": 14401,
+            "description": "put description here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14453,
+        "fields": {
+            "question": 14401,
+            "description": "put description here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14454,
+        "fields": {
+            "question": 14401,
+            "description": "put description here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14455,
+        "fields": {
+            "question": 14401,
+            "description": "put description here"
         }
     }
 ]
@@ -8703,26 +8850,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 13518,
-        "fields": {
-            "answer": 13516,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": 0.002
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13523,
-        "fields": {
-            "answer": 13521,
-            "candidate": 12543,
-            "affected_candidate": 12565,
-            "global_multiplier": -0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 13528,
         "fields": {
             "answer": 12808,
@@ -11500,6 +11627,246 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12543,
             "global_multiplier": 0.003
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14395,
+        "fields": {
+            "answer": 14392,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14396,
+        "fields": {
+            "answer": 14392,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14397,
+        "fields": {
+            "answer": 14392,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14410,
+        "fields": {
+            "answer": 14402,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14411,
+        "fields": {
+            "answer": 14403,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.018
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14412,
+        "fields": {
+            "answer": 14404,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14413,
+        "fields": {
+            "answer": 14404,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14414,
+        "fields": {
+            "answer": 14405,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14415,
+        "fields": {
+            "answer": 14405,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14416,
+        "fields": {
+            "answer": 14402,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14417,
+        "fields": {
+            "answer": 14403,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14418,
+        "fields": {
+            "answer": 14404,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14438,
+        "fields": {
+            "answer": 14429,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14439,
+        "fields": {
+            "answer": 14429,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14440,
+        "fields": {
+            "answer": 14429,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14441,
+        "fields": {
+            "answer": 14430,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.035
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14442,
+        "fields": {
+            "answer": 14430,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14443,
+        "fields": {
+            "answer": 14430,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14444,
+        "fields": {
+            "answer": 14431,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14445,
+        "fields": {
+            "answer": 14431,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14446,
+        "fields": {
+            "answer": 14431,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14449,
+        "fields": {
+            "answer": 14432,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.011
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14450,
+        "fields": {
+            "answer": 14432,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14451,
+        "fields": {
+            "answer": 14432,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
     }
 ]
 
@@ -11561,7 +11928,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12802,
             "issue": 27,
             "issue_score": 0.31,
-            "issue_importance": 2
+            "issue_importance": 4
         }
     },
     {
@@ -11571,7 +11938,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12803,
             "issue": 27,
             "issue_score": 0.7,
-            "issue_importance": 2
+            "issue_importance": 4
         }
     },
     {
@@ -12391,7 +12758,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 13511,
             "issue": 27,
             "issue_score": 0.5,
-            "issue_importance": 4
+            "issue_importance": 7
         }
     },
     {
@@ -12401,47 +12768,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 13511,
             "issue": 28,
             "issue_score": 0.5,
-            "issue_importance": 4
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 13519,
-        "fields": {
-            "answer": 13516,
-            "issue": 27,
-            "issue_score": 0.5,
-            "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 13520,
-        "fields": {
-            "answer": 13516,
-            "issue": 30,
-            "issue_score": -0.11,
-            "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 13524,
-        "fields": {
-            "answer": 13521,
-            "issue": 27,
-            "issue_score": 0.5,
-            "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 13525,
-        "fields": {
-            "answer": 13521,
-            "issue": 29,
-            "issue_score": 0.45,
-            "issue_importance": 3
+            "issue_importance": 7
         }
     },
     {
@@ -13151,7 +13478,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 13904,
             "issue": 27,
             "issue_score": 0.4,
-            "issue_importance": 2
+            "issue_importance": 4
         }
     },
     {
@@ -14272,6 +14599,146 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 29,
             "issue_score": 0.35,
             "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14393,
+        "fields": {
+            "answer": 14392,
+            "issue": "27",
+            "issue_score": 0.8,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14398,
+        "fields": {
+            "answer": 13511,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14420,
+        "fields": {
+            "answer": 14403,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14421,
+        "fields": {
+            "answer": 14403,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14422,
+        "fields": {
+            "answer": 14403,
+            "issue": 29,
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14423,
+        "fields": {
+            "answer": 14404,
+            "issue": "27",
+            "issue_score": 0.66,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14424,
+        "fields": {
+            "answer": 14404,
+            "issue": 28,
+            "issue_score": 0.66,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14425,
+        "fields": {
+            "answer": 14404,
+            "issue": 29,
+            "issue_score": 0.66,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14426,
+        "fields": {
+            "answer": 14405,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14427,
+        "fields": {
+            "answer": 14405,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14428,
+        "fields": {
+            "answer": 14405,
+            "issue": 30,
+            "issue_score": 0.55,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14437,
+        "fields": {
+            "answer": 14429,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14447,
+        "fields": {
+            "answer": 14431,
+            "issue": 30,
+            "issue_score": 0.4,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14448,
+        "fields": {
+            "answer": 14432,
+            "issue": 30,
+            "issue_score": 0.71,
+            "issue_importance": 5
         }
     }
 ]
@@ -15831,25 +16298,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13511,
             "candidate": 12543,
-            "answer_feedback": "As the economy continues to chug along, and as your record as Chancellor shines to the average voter, this angle is always going to be your strongest turf. Hopefully you can pull a victory after the resignation. To save New Labour."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 13517,
-        "fields": {
-            "answer": 13516,
-            "candidate": 12543,
-            "answer_feedback": "Whilst a good idea on paper, the occupation has gone on for over 2 years. This is an issue that will just haunt you if you’re elected, especially as you yourself supported the war. At least you were Chancellor until now, instead of say, Foreign Secretary. It also helps you against the Conservatives, who fully support the war."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 13522,
-        "fields": {
-            "answer": 13521,
-            "candidate": 12543,
-            "answer_feedback": "A true Gordon Brown forté. You don’t quite have the same energy as you did then, but they are decently effective at pressuring the still-reeling Opposition."
+            "answer_feedback": "The two of you talk for a deceptively small several hours. Reminiscing on bad press stories, all of the domestic scares, and the challenges that you together overcame. It is inconceivable to miss his regret and bitterness over the manner in which he was made to be shown the door. But, he leaves some words, “Look, Gordon. I know we haven’t been exactly two peas in a pod these past few years. But, I know that you are an immensely capable man. I chose you for a reason. Don’t forget it”. After a deep sigh, he says goodbye. Mr Brown, welcome to No. 10."
         }
     },
     {
@@ -17147,6 +17596,87 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "Well suffice it to say, those civil liberties advocacy groups are beginning to turn their heads towards your government. This position is assuredly out of step with the main electorate, but by standing firm on your decision, you manage to effectively save face without losing a truly unnerving percentage of support."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14394,
+        "fields": {
+            "answer": 14392,
+            "candidate": 12543,
+            "answer_feedback": "The left-leaning base of Labour cheer on this decision, though not many others cheer along with them. Right-wing publications, and sects of the Middle of Britain, become critical of any new tax hikes in the future. Some even cry about the \"tax on wealth creators\" you are ruthlessly pursuing. But, if you wanted to raise the necessary funds without taxing the entire country, this was the way to go."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14406,
+        "fields": {
+            "answer": 14402,
+            "candidate": 12543,
+            "answer_feedback": "A simple, straight-forward speech which strikes at the beating heart of your ethic and philosophy. Some in the chattering media cycle are quick to point out a lack of a distinct governing ideology presented, and that is something you will need to resolve in short notice. In the wake of everything troubling the cabinet, the viewers do not pay special mind to this. This once, they’re willing to accept some speeches that are light on the substance."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14407,
+        "fields": {
+            "answer": 14403,
+            "candidate": 12543,
+            "answer_feedback": "Your not-so-subtle appeal to the bipartisan good nature of politics does not go unnoticed. <i>The Guardian</i> and <i>The Daily Mirror</i> applaud your message, but your speech is received with speculation outside of home base. Will you continue Blair’s legacy? Will you reach a consensus with the Conservatives? Will you extend an olive branch to the people alienated by Blair’s decisions? Those questions now, are up to you to answer."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14408,
+        "fields": {
+            "answer": 14404,
+            "candidate": 12543,
+            "answer_feedback": "To those paying attention, they detect a subtle sensation of social liberalism, and economic justice aimed for the lower classes. The Labour rank-and-file cheer on your words, but the centre and right stand by with great apprehension. Yet, this is your government now. It will be your vision for you to carve out, no matter what the sceptics cry."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14409,
+        "fields": {
+            "answer": 14405,
+            "candidate": 12543,
+            "answer_feedback": "Iraq is a word that haunts the zeitgeist of Britain’s political culture, evoking emotions seldom seen with most other topics in the country today. The papers’ headlines fervently speculate on the course of the war, including the cabinet's own debating around what to do next with the military quicksand. You have tapped into the people’s optimism for a new direction, don’t let them down."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14433,
+        "fields": {
+            "answer": 14429,
+            "candidate": 12543,
+            "answer_feedback": "Whilst a good idea on paper, the occupation has gone on for over 2 years. This is an issue that will haunt you if you’re elected. At least you were Chancellor until now, instead of say, Foreign Secretary. It also helps you against the Conservatives, who fully support the war. For supporters defecting to the Liberal Democrats on the other hand, this will not be enough."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14434,
+        "fields": {
+            "answer": 14430,
+            "candidate": 12543,
+            "answer_feedback": "This has been your position since British boots have tread through the ruins of Baghdad. For once, the Conservatives and the right of the country find a common view with you. But after Dr Kelly, the September dossiers, and the many inquiries deemed a white-wash, the public at-large view your newfound vigour with intense disdain. For what it’s worth, the Bush administration calls to give you gratitude for your continued support."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14435,
+        "fields": {
+            "answer": 14431,
+            "candidate": 12543,
+            "answer_feedback": "This is already a material shift from both you, and your predecessor’s position on the war. The minority of hawks in the voting crowd are disappointed. Yet the rest of the country, their trust in your government withered away after the inquiries surrounding Dr Kelly, look on with cautious optimism for Britain’s foreign policy."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14436,
+        "fields": {
+            "answer": 14432,
+            "candidate": 12543,
+            "answer_feedback": "Pacifists and base voters considering Kennedy’s LibDems look on your decision with delight, finally seeing to ending the tragic saga around Dr Kelly. President Bush, and the slim minority of hawks in the electorate, are otherwise clearly wrangled by this move. Although you have aligned yourself on the balance with the majority opinion, the Conservatives don’t hesitate to attack your sudden about-face on this matter of foreign policy."
+        }
     }
 ]
 
@@ -17205,6 +17735,7 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
 
 function changechart(){
     if (document.getElementById("state_info")!=null) {
@@ -17410,7 +17941,7 @@ distributeSeatsUK = () => {
 
         // By default, this is * 1.0. 
 
-        var votes_per_seat = (competitivevotes * 1.7) / seats_left
+        var votes_per_seat = (competitivevotes * 1.66667) / seats_left
 
         // Second loop: Actually add seats
         for(var j = 0; j < stateData.result.length; j++) {
