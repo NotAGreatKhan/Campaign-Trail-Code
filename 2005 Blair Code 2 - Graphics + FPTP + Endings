@@ -459,7 +459,7 @@ construct = (a = 1) => {
 
 
 // Howard First Slides
-if (quickstats[1] >= 324 && aa[1].candidate == 12565) {
+if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
 <p>
@@ -595,7 +595,7 @@ You sure as hell are going to need it.
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif"})])
 }
 
-else if (quickstats[0] >= 324 && quickstats[0]<340) {     
+else if (quickstats[0] >= 324) {     
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3>
 <p>
@@ -622,7 +622,7 @@ if (used != true) {
     }
 } 
 
-else if (quickstats[0] >= 340 && quickstats[0]<355) {     
+else if (quickstats[0] >= 340) {     
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a modest majority in Parliament.</h3>
 <p>
@@ -636,7 +636,7 @@ You fought through the battle with all you could, but only a tepid endorsement o
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
 } 
 
-else if (quickstats[0] >= 355 && quickstats[0]<370) {
+else if (quickstats[0] >= 355) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3>
 <p>
@@ -650,7 +650,7 @@ You fought the battle with all you could, yet the lion’s share was handed out 
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
 } 
 
-else if (quickstats[0] >= 370 && quickstats[0]<400) {    
+else if (quickstats[0] >= 370) {    
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3>
 <p>
@@ -664,7 +664,7 @@ You fought, you triumphed, and in the end, the lion’s share has handsomely fal
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
 } 
 
-else if (quickstats[0] >= 400 && quickstats[0]<500) {    
+else if (quickstats[0] >= 400) {    
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide!</h3>
 <p>
@@ -730,7 +730,7 @@ e.executable.push([0, (() => {e.image = e.image = ""})])
 
 
 // Clarke First Slides
-if (quickstats[1] >= 324 && aa[1].candidate == 12565) {
+else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
 <p>
@@ -754,7 +754,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Q7TbQgY.gif
 
 
 // Portillo First Slides
-if (quickstats[1] >= 324 && aa[1].candidate == 12565) {
+else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
 <p>
@@ -778,7 +778,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/4GqeqR0.gif
 
 
 // Second Slides
-if (Brown = true && quickstats[1] >= 324) {     
+if (quickstats[0] >= 324) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Blair defeated on terror bill, <i>The Guardian</i></h3>
 <p>
