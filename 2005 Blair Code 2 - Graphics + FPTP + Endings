@@ -723,7 +723,28 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MzNIbIL.gif
 
 else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
 e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, in a second and final death-blow to New Labour</h3>
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
+<p>
+David Dimbleby’s voice reverberated throughout the Party headquarters, the solemn rejection pounding at the hearts of all of the members of the Party faithful put into mourning. Not just the mourning of the governing party, but of New Labour itself. The beating heart of “economic dynamism” and “social justice” has just been sold for a transplant. The crowd bitterly awaited Gordon's concession speech on the metal stage.
+<br><br>
+But the reverberations were not just felt in the halls of Labour, where the political mob swayed and lurched as the seats’ trickled. It was absorbed also by the disgraced ex-Prime Minister, in his home far away from the carnage on the glassy screens.
+<br><br>
+Tony had tried in vain to find any shred of comfort over the night. The only warmth radiating in the psychological prison was his wife Cherie, clasping his hand as she felt the sullen sagging drawn across Tony’s face. His fingers massaged his cheek, all the while Paxman and Marr lament at the cataclysmic slaughterhouse where many Labour MPs now await the electoral knife. Every time a red splotch on the map switched to ‘CON GAIN’, he felt another icy dagger. The Labour titan had fallen, subsumed by a grand discordance of sea-blue tentacles and plagues of orange, strangling it to the ground. In a world that never was, he would be standing atop that stage. Chest puffed. Smiling wide. Entrancing the audiences of friend and foe, enthralled by the sweet sensation of victory that could have been his – that <i>should</i> have been his.
+<br><br>
+As his mind wandered the spiritual wabash, he pondered back to all of those vain weights to the campaign. Every mistake he made, every decision that spurred on those damn protests, every attack that he let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him get thrown out by his own bloody party, of all things? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you – and Gordon in those waning days – toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that god<i>damn</i> war.
+<br><br>
+He pictured the looks on Mandleson’s and Alastair’s faces, their grimacing and teeth gnawing, having watched the election unfold after all they went through. All of the arguing, the backlash, the endless controversy. For this…
+<br><br>
+But that’s just politics — he deceived himself — it’s just part of the job. But it came to that for him.
+<br><br>
+It did merely months ago.
+<br><br>
+After an ostensible eternity of agony watching the results, he stood up – bidding Cherie for a minute of solitude – and reached into his pocket for his mobile phone. He flipped it open, clicking its mechanically resonant buttons – his unusually clammy hands notwithstanding.
+<br><br>
+He had an ancient, and bittersweet, friend he needed to call. One last time…
+<br><br>
+…“Hey, is it– Gordon! Hi. Look, I want to talk to you about this. About– about all of this.”…
+</p>
 `)
 e.executable.push([0, (() => {e.image = e.image = ""})])
 }
