@@ -721,6 +721,7 @@ e.pages.push(`
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MzNIbIL.gif"})])
 }
 
+// Brown First Slides
 else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
@@ -746,7 +747,7 @@ He had an ancient, and bittersweet, friend he needed to call. One last time…
 …“Hey, is it– Gordon! Hi. Look, I want to talk to you about this. About– about all of this.”…
 </p>
 `)
-e.executable.push([0, (() => {e.image = e.image = ""})])
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MxyGsWe.gif"})])
 }
 
 
