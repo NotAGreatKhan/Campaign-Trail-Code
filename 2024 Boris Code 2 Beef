@@ -18,6 +18,7 @@ cyoAdventure = function (a) {
 
 }
 
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -51,7 +52,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1045,
         "fields": {
             "priority": 3,
-            "description": "put description here",
+            "description": "The time has come to deliver on our promises and transform Britain for the better! One of the cornerstone pledges of this government is the <i>Levelling Up</i> scheme, a bold initiative to invest in communities across the nation. What will be the forefront of the scheme, Boris?",
             "likelihood": 1
         }
     },
@@ -60,7 +61,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1046,
         "fields": {
             "priority": 4,
-            "description": "put description here",
+            "description": "It's finally happened. We’ve received alarming reports—a deadly new virus from China has entered the UK. It's mainly a threat to the elderly, but it’s a major issue nonetheless. If we don’t act now, it could spiral out of control.",
             "likelihood": 1
         }
     },
@@ -69,7 +70,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1051,
         "fields": {
             "priority": 5,
-            "description": "put description here",
+            "description": "Cummings Barnard Castle",
             "likelihood": 1
         }
     },
@@ -504,7 +505,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5151,
         "fields": {
             "question": 1045,
-            "description": "We need to do more for America. I have a plan to make college and health care affordable for every American, paid for by the 1%. The Republicans want to cut taxes for America's wealthiest citizens, so they can keep buying elections and asking Washington for bailouts and subsidies."
+            "description": "First and foremost, we will prioritize the NHS. We promised 40 new hospitals, and we intend to deliver. The NHS has been crying out for support, and this government will ensure it gets the help it needs to thrive."
         }
     },
     {
@@ -512,7 +513,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5152,
         "fields": {
             "question": 1045,
-            "description": "We have a wonderful, diverse, and strong party in the Democratic Party. When I'm President, we're going to raise the minimum wage. We're going to further improve Obamacare. We're going to create millions of high paying, green jobs. And we're going to make college more affordable for the next generation!"
+            "description": "We’ll focus on HS2, a monumental infrastructure project that will connect and empower communities. A project of this scale will not only boost connectivity but also showcase Britain’s ambition and capability."
         }
     },
     {
@@ -520,7 +521,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5153,
         "fields": {
             "question": 1045,
-            "description": "There is only one choice in this election. Donald Trump is so unqualified, and vastly offensive to our ideals, that his election could be an existential disaster for the nation. I am the safe, responsible alternative who will take our country forward."
+            "description": "Small businesses are the backbone of our economy! And this government will provide them with the support and investment they deserve. By boosting small businesses, we’ll invigorate the economy and create opportunities for hardworking Britons."
         }
     },
     {
@@ -528,7 +529,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5154,
         "fields": {
             "question": 1045,
-            "description": "I have the experience to grow our economy, strengthen our military, create millions of new, high-paying jobs, and much more. I will be a President for all Americans when I am in office."
+            "description": "We’ll tackle the roads. Improving everyday infrastructure will save the average Brit money and time, making their daily lives easier and plus they'll be much less likely to complain about potholes. It’s practical, it’s impactful, and it’s what the people deserve."
         }
     },
     {
@@ -536,7 +537,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5155,
         "fields": {
             "question": 1046,
-            "description": "Tim Kaine has fought for American workers and families for his entire career. He is amply qualified and ready to step in for our agenda at a moment's notice."
+            "description": "Blast! We must act swiftly, decisively, and with the full force of British ingenuity. A mass lockdown—yes, it’s drastic, but it’s the only way to get ahead of this virus. Stringent rules on gatherings, masks, the works, while our brilliant scientists crack on with a vaccine. We’ll beat this thing together!"
         }
     },
     {
@@ -544,7 +545,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5156,
         "fields": {
             "question": 1046,
-            "description": "Tim Kaine has served his home state of Virginia with great energy and effectiveness as a Governor and Senator. He is a hard working and honest person who can appeal to Americans across the ideological spectrum."
+            "description": "Now, let’s not be hasty. A national lockdown would be a hammer blow to our businesses, and we simply can’t afford that. Instead, we’ll introduce sensible guidelines—masks, social distancing, all that jazz—while keeping the economy ticking along. Balance, my friends, balance!"
         }
     },
     {
@@ -552,7 +553,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5157,
         "fields": {
             "question": 1046,
-            "description": "When I'm thinking about a running-mate, I'm thinking about the person who will make the best President if, God forbid, they must step into that role. Tim Kaine has outstanding experience and judgment and I'm proud to make him my running mate."
+            "description": "Look, let’s not overreact. This virus, nasty as it is, mainly affects the elderly. And while we care deeply for our seniors, we can’t let this derail the economy. Let the bodies pile high if they have to."
         }
     },
     {
@@ -1098,6 +1099,14 @@ campaignTrail_temp.answers_json = [
             "question": 20700,
             "description": "put description here"
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21098,
+        "fields": {
+            "question": 1046,
+            "description": "Right then, here’s the plan: we’ll go all-in on mask mandates—no ifs, no buts. But a full lockdown? Not on my watch. Meanwhile, we’ll throw everything we’ve got at the vaccine effort. Britain will lead the charge, as we always do!"
+        }
     }
 ]
 
@@ -1324,21 +1333,21 @@ campaignTrail_temp.issues_json = [
         "pk": 102,
         "fields": {
             "name": "Foreign Policy",
-            "description": "",
+            "description": 0,
             "stance_1": "Aggressive",
-            "stance_desc_1": "",
+            "stance_desc_1": 0,
             "stance_2": "Aggressive",
-            "stance_desc_2": "",
+            "stance_desc_2": 0,
             "stance_3": "Moderate",
-            "stance_desc_3": "",
+            "stance_desc_3": 0,
             "stance_4": "Moderate",
-            "stance_desc_4": "",
+            "stance_desc_4": 0,
             "stance_5": "Moderate",
-            "stance_desc_5": "",
+            "stance_desc_5": 0,
             "stance_6": "Non-Interventionist",
-            "stance_desc_6": "",
+            "stance_desc_6": 0,
             "stance_7": "Non-Interventionist",
-            "stance_desc_7": "",
+            "stance_desc_7": 0,
             "election": 20
         }
     },
@@ -1347,21 +1356,21 @@ campaignTrail_temp.issues_json = [
         "pk": 103,
         "fields": {
             "name": "Social Issues",
-            "description": "",
+            "description": 0,
             "stance_1": "Very Conservative",
-            "stance_desc_1": "",
+            "stance_desc_1": 0,
             "stance_2": "Conservative",
-            "stance_desc_2": "",
+            "stance_desc_2": 0,
             "stance_3": "Leans Conservative",
-            "stance_desc_3": "",
+            "stance_desc_3": 0,
             "stance_4": "Moderate",
-            "stance_desc_4": "",
+            "stance_desc_4": 0,
             "stance_5": "Leans Liberal",
-            "stance_desc_5": "",
+            "stance_desc_5": 0,
             "stance_6": "Liberal",
-            "stance_desc_6": "",
+            "stance_desc_6": 0,
             "stance_7": "Very Liberal",
-            "stance_desc_7": "",
+            "stance_desc_7": 0,
             "election": 20
         }
     },
@@ -1370,21 +1379,21 @@ campaignTrail_temp.issues_json = [
         "pk": 104,
         "fields": {
             "name": "Immigration",
-            "description": "",
+            "description": 0,
             "stance_1": "Very Conservative",
-            "stance_desc_1": "",
+            "stance_desc_1": 0,
             "stance_2": "Conservative",
-            "stance_desc_2": "",
+            "stance_desc_2": 0,
             "stance_3": "Leans Conservative",
-            "stance_desc_3": "",
+            "stance_desc_3": 0,
             "stance_4": "Moderate",
-            "stance_desc_4": "",
+            "stance_desc_4": 0,
             "stance_5": "Leans Liberal",
-            "stance_desc_5": "",
+            "stance_desc_5": 0,
             "stance_6": "Liberal",
-            "stance_desc_6": "",
+            "stance_desc_6": 0,
             "stance_7": "Very Liberal",
-            "stance_desc_7": "",
+            "stance_desc_7": 0,
             "election": 20
         }
     }
@@ -4345,16 +4354,6 @@ campaignTrail_temp.candidate_state_multiplier_json = [
 campaignTrail_temp.answer_score_global_json = [
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 3086,
-        "fields": {
-            "answer": 5153,
-            "candidate": 201,
-            "affected_candidate": 200,
-            "global_multiplier": -0.003
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 3087,
         "fields": {
             "answer": 5176,
@@ -4550,7 +4549,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5151,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": 0.008
+            "global_multiplier": 0.003
         }
     },
     {
@@ -4560,7 +4559,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5153,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": -0.004
+            "global_multiplier": 0.008
         }
     },
     {
@@ -4570,7 +4569,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5154,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": -0.01
+            "global_multiplier": 0.01
         }
     },
     {
@@ -4979,18 +4978,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 5151,
             "candidate": 201,
-            "affected_candidate": 203,
-            "global_multiplier": -0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3292,
-        "fields": {
-            "answer": 5151,
-            "candidate": 201,
-            "affected_candidate": 202,
-            "global_multiplier": -0.033
+            "affected_candidate": 200,
+            "global_multiplier": -0.003
         }
     },
     {
@@ -5340,7 +5329,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5140,
             "candidate": 201,
             "affected_candidate": 202,
-            "global_multiplier": -0.004
+            "global_multiplier": -0.005
         }
     },
     {
@@ -5348,7 +5337,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 21072,
         "fields": {
             "answer": 5140,
-            "candidate": 203,
+            "candidate": 201,
             "affected_candidate": 203,
             "global_multiplier": 0.01
         }
@@ -5358,7 +5347,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 21073,
         "fields": {
             "answer": 5141,
-            "candidate": 203,
+            "candidate": 201,
             "affected_candidate": 203,
             "global_multiplier": -0.008
         }
@@ -5368,9 +5357,9 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 21074,
         "fields": {
             "answer": 5141,
-            "candidate": 200,
+            "candidate": 201,
             "affected_candidate": 200,
-            "global_multiplier": 0.004
+            "global_multiplier": 0.005
         }
     },
     {
@@ -5400,7 +5389,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5148,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": -0.01
+            "global_multiplier": -0.025
         }
     },
     {
@@ -5408,9 +5397,9 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 21079,
         "fields": {
             "answer": 5148,
-            "candidate": 203,
+            "candidate": 201,
             "affected_candidate": 203,
-            "global_multiplier": 0.008
+            "global_multiplier": 0.01
         }
     },
     {
@@ -5428,7 +5417,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 21082,
         "fields": {
             "answer": 5149,
-            "candidate": 200,
+            "candidate": 201,
             "affected_candidate": 200,
             "global_multiplier": 0.01
         }
@@ -5450,7 +5439,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5144,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": 0.004
+            "global_multiplier": 0.005
         }
     },
     {
@@ -5460,7 +5449,77 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5145,
             "candidate": 201,
             "affected_candidate": 201,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21090,
+        "fields": {
+            "answer": 5143,
+            "candidate": 201,
+            "affected_candidate": 200,
             "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21091,
+        "fields": {
+            "answer": 5144,
+            "candidate": 201,
+            "affected_candidate": 200,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21095,
+        "fields": {
+            "answer": 5152,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21101,
+        "fields": {
+            "answer": 5155,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21102,
+        "fields": {
+            "answer": 5156,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21104,
+        "fields": {
+            "answer": 5157,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21105,
+        "fields": {
+            "answer": 21098,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.004
         }
     }
 ]
@@ -5471,9 +5530,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2645,
         "fields": {
             "answer": 5151,
-            "issue": 100,
+            "issue": 101,
             "issue_score": 0.55,
-            "issue_importance": 5
+            "issue_importance": 4
         }
     },
     {
@@ -5481,39 +5540,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2646,
         "fields": {
             "answer": 5151,
-            "issue": 101,
-            "issue_score": 0.55,
-            "issue_importance": 5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2647,
-        "fields": {
-            "answer": 5151,
-            "issue": 102,
-            "issue_score": 0.55,
-            "issue_importance": 5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2648,
-        "fields": {
-            "answer": 5151,
             "issue": 103,
             "issue_score": 0.55,
-            "issue_importance": 5
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2649,
-        "fields": {
-            "answer": 5151,
-            "issue": 104,
-            "issue_score": 0.55,
-            "issue_importance": 5
+            "issue_importance": 2
         }
     },
     {
@@ -5521,49 +5550,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2650,
         "fields": {
             "answer": 5153,
-            "issue": 100,
-            "issue_score": 0.1,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2651,
-        "fields": {
-            "answer": 5154,
-            "issue": 100,
-            "issue_score": 0.25,
-            "issue_importance": 4
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2652,
-        "fields": {
-            "answer": 5154,
             "issue": 101,
-            "issue_score": -0.25,
-            "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2653,
-        "fields": {
-            "answer": 5154,
-            "issue": 102,
-            "issue_score": 0,
-            "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2654,
-        "fields": {
-            "answer": 5154,
-            "issue": 103,
-            "issue_score": 0.4,
-            "issue_importance": 3
+            "issue_score": 0.1,
+            "issue_importance": 4
         }
     },
     {
@@ -5571,9 +5560,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2655,
         "fields": {
             "answer": 5154,
-            "issue": 104,
+            "issue": 101,
             "issue_score": 0.4,
-            "issue_importance": 3
+            "issue_importance": 4
         }
     },
     {
@@ -5868,42 +5857,12 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
-        "pk": 2835,
-        "fields": {
-            "answer": 5155,
-            "issue": 100,
-            "issue_score": 0.4,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2836,
-        "fields": {
-            "answer": 5155,
-            "issue": 101,
-            "issue_score": -0.3,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2837,
-        "fields": {
-            "answer": 5155,
-            "issue": 102,
-            "issue_score": 0.1,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
         "pk": 2838,
         "fields": {
             "answer": 5155,
-            "issue": 103,
-            "issue_score": 0.55,
-            "issue_importance": 2
+            "issue": 101,
+            "issue_score": 0.6,
+            "issue_importance": 4
         }
     },
     {
@@ -5912,38 +5871,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 5155,
             "issue": 104,
-            "issue_score": 0.55,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2840,
-        "fields": {
-            "answer": 5156,
-            "issue": 100,
-            "issue_score": 0.35,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2841,
-        "fields": {
-            "answer": 5156,
-            "issue": 101,
-            "issue_score": -0.3,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2842,
-        "fields": {
-            "answer": 5156,
-            "issue": 102,
-            "issue_score": 0,
-            "issue_importance": 2
+            "issue_score": 0.5,
+            "issue_importance": 4
         }
     },
     {
@@ -5951,9 +5880,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2843,
         "fields": {
             "answer": 5156,
-            "issue": 103,
-            "issue_score": 0.55,
-            "issue_importance": 2
+            "issue": 101,
+            "issue_score": 0.5,
+            "issue_importance": 4
         }
     },
     {
@@ -5961,39 +5890,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2844,
         "fields": {
             "answer": 5156,
-            "issue": 104,
-            "issue_score": 0.55,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2845,
-        "fields": {
-            "answer": 5157,
-            "issue": 100,
-            "issue_score": 0.35,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2846,
-        "fields": {
-            "answer": 5157,
-            "issue": 101,
-            "issue_score": -0.3,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2847,
-        "fields": {
-            "answer": 5157,
-            "issue": 102,
-            "issue_score": -0.125,
-            "issue_importance": 2
+            "issue": 103,
+            "issue_score": 0.5,
+            "issue_importance": 4
         }
     },
     {
@@ -6001,9 +5900,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2848,
         "fields": {
             "answer": 5157,
-            "issue": 103,
-            "issue_score": 0.55,
-            "issue_importance": 2
+            "issue": 101,
+            "issue_score": -0.25,
+            "issue_importance": 4
         }
     },
     {
@@ -6011,9 +5910,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2849,
         "fields": {
             "answer": 5157,
-            "issue": 104,
+            "issue": 103,
             "issue_score": 0.55,
-            "issue_importance": 2
+            "issue_importance": 4
         }
     },
     {
@@ -6321,9 +6220,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21063,
         "fields": {
             "answer": 5140,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0.25,
-            "issue_importance": 2
+            "issue_importance": 4
         }
     },
     {
@@ -6331,9 +6230,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21065,
         "fields": {
             "answer": 5139,
-            "issue": "100",
+            "issue": 100,
             "issue_score": -0.4,
-            "issue_importance": 2
+            "issue_importance": 4
         }
     },
     {
@@ -6341,9 +6240,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21066,
         "fields": {
             "answer": 5141,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0,
-            "issue_importance": 2
+            "issue_importance": 4
         }
     },
     {
@@ -6353,7 +6252,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 5141,
             "issue": 101,
             "issue_score": 0.15,
-            "issue_importance": 1
+            "issue_importance": 4
         }
     },
     {
@@ -6361,9 +6260,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21076,
         "fields": {
             "answer": 5147,
-            "issue": "100",
+            "issue": 100,
             "issue_score": -0.3,
-            "issue_importance": 1
+            "issue_importance": 4
         }
     },
     {
@@ -6371,9 +6270,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21080,
         "fields": {
             "answer": 5148,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0,
-            "issue_importance": 1
+            "issue_importance": 4
         }
     },
     {
@@ -6381,9 +6280,89 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21083,
         "fields": {
             "answer": 5149,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0.2,
-            "issue_importance": 1
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21088,
+        "fields": {
+            "answer": 5149,
+            "issue": 103,
+            "issue_score": 0.45,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21089,
+        "fields": {
+            "answer": 5149,
+            "issue": 101,
+            "issue_score": 0.45,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21093,
+        "fields": {
+            "answer": 5154,
+            "issue": 103,
+            "issue_score": 0.5,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21094,
+        "fields": {
+            "answer": 5153,
+            "issue": 103,
+            "issue_score": 0.1,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21096,
+        "fields": {
+            "answer": 5152,
+            "issue": 101,
+            "issue_score": 0.2,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21097,
+        "fields": {
+            "answer": 5152,
+            "issue": 103,
+            "issue_score": 0.2,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21099,
+        "fields": {
+            "answer": 21098,
+            "issue": 101,
+            "issue_score": 0.25,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21100,
+        "fields": {
+            "answer": 21098,
+            "issue": 103,
+            "issue_score": 4,
+            "issue_importance": 0.55
         }
     }
 ]
@@ -6424,7 +6403,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5143,
             "candidate": 201,
-            "answer_feedback": "This is a mess. Our cabinet is in chaos while the newcomers adjust. The civil service is stuck between a group of people utterly loyal and another who absolutely despise us now. Even the Daily Mail is struggling to make this look good for us. At least we’ve got their attention."
+            "answer_feedback": "This is a mess. Our cabinet is in chaos while the newcomers adjust. The civil service is stuck between a group of people utterly loyal and another who absolutely despise us now. Even the <i>Daily Mail</i> is struggling to make this look good for us. At least we’ve got their attention."
         }
     },
     {
@@ -6478,7 +6457,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5151,
             "candidate": 201,
-            "answer_feedback": "Pundits talk a lot about the surprisingly pugnacious and populist tone of your acceptance speech."
+            "answer_feedback": "The results are mixed. As progress unfolds, it becomes clear that the promise of 40 new hospitals might have been a touch ambitious. The definition of a \"new hospital\" begins to shift—transforming into upgrades and improvements for those long-neglected by previous Conservative governments. The media will mention this of course, but who cares what the left leaning wokerati media think…"
         }
     },
     {
@@ -6487,7 +6466,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5152,
             "candidate": 201,
-            "answer_feedback": "Pundits detect the standard, Democratic talking points in your speech that will appeal to a wide variety of potential supporters."
+            "answer_feedback": "This could've gone better. The HS2 project hits the skids—cost overruns, delays, and whispers of wasted money begin to swirl. \"It’ll be fine,\" you quip, brushing off the critics. \"You can’t make an omelette without cracking a few eggs.\" After all, who’s really keeping score up north?"
         }
     },
     {
@@ -6496,7 +6475,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5153,
             "candidate": 201,
-            "answer_feedback": "Pundits talk a lot about you eschewed ideology to take the attack to Trump."
+            "answer_feedback": "Conservatives erupt in applause as you champion the cause of small businesses, declaring them the backbone of Britain. In the backrooms, whispers swirl—some suggest this move might just be the lifeline the economy needs, especially if that virus from Wuhan dares to make its way to our shores..."
         }
     },
     {
@@ -6505,7 +6484,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5154,
             "candidate": 201,
-            "answer_feedback": "Pundits conclude that your speech was somewhat moderate, unifying, and surprisingly non-controversial. Some just thought it was boring."
+            "answer_feedback": "Good idea Boris! The crowd cheers as you, hardhat atop your head bid \"Hasta La Vista baby\" to potholes, helping the construction crew seal one up before heading back to London."
         }
     },
     {
@@ -6514,7 +6493,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5155,
             "candidate": 201,
-            "answer_feedback": "Tim Kaine is very popular within the party establishment, but less well known in the general public."
+            "answer_feedback": "You sit behind your desk, the Union Jack proudly draped behind you, as you address the nation with conviction: “You must stay at home.” The people, by and large, rally behind you—stoic, resilient, ready to do their bit. Of course, there are always a few dissenters, those who cry out about freedom and liberties. But frankly, if they want to flout the rules and get themselves sick, well, that’s their funeral. Britain will press on, united and determined, as it always does."
         }
     },
     {
@@ -6523,7 +6502,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5156,
             "candidate": 201,
-            "answer_feedback": "Tim Kaine is very popular within the party establishment, but less well known in the general public."
+            "answer_feedback": "Many have drawn comparisons between your approach and Sweden’s, and while some in the media are quick to brand it a \"half measure,\" I say nonsense! The reality is clear: yes, deaths spiked tragically during the first wave, but as the subsequent waves rolled in, the numbers will begin to decline..."
         }
     },
     {
@@ -6532,7 +6511,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5157,
             "candidate": 201,
-            "answer_feedback": "Tim Kaine is very popular within the party establishment, but less well known in the general public."
+            "answer_feedback": "This is a disaster. A recording of your words—taken completely out of context, of course—has leaked and is now plastered across every front page and news bulletin. Outside Downing Street, protesters gather, waving signs that read, “Hey hey BBJ, how many nans did you kill today?” It’s absurd, utterly absurd. The media frenzy is relentless, but surely, this will blow over. It has to…"
         }
     },
     {
@@ -7002,6 +6981,15 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 201,
             "answer_feedback": "Some of your supporters are upset that you aren't taking a stronger stand on admitting Syrian refugees."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21103,
+        "fields": {
+            "answer": 21098,
+            "candidate": 201,
+            "answer_feedback": "In the words of a wise man: 'No half measures!' We’ve taken bold, decisive action, yet the wokerati—predictably—begin their chorus of criticism, branding the measures as ineffective."
+        }
     }
 ]
 
@@ -7009,6 +6997,47 @@ campaignTrail_temp.candidate_image_url = "http://assets8.lbc.co.uk/2016/29/conse
 campaignTrail_temp.running_mate_image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/426px-Boris_Johnson_official_portrait_%28cropped%29.jpg";
 campaignTrail_temp.candidate_last_name = "Conservatives";
 campaignTrail_temp.running_mate_last_name = "Johnson";
+
+
+
+campaignTrail_temp.jet_data = [{
+    "banner_enabled": true,
+    "banner_data": {
+        "canName": "Conservatives",
+        "runName": "Johnson",
+        "runImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/426px-Boris_Johnson_official_portrait_%28cropped%29.jpg",
+        "canImage": "http://assets8.lbc.co.uk/2016/29/conservatives-logo---lbc-1468834487-editorial-short-form-1.jpg"
+    },
+    "cyoa_enabled": true,
+    "cyoa_data": {},
+    "mapping_enabled": true,
+    "mapping_data": {
+        "mapSvg": "",
+        "electionPk": "20",
+        "x": "885",
+        "y": "863",
+        "dx": "-450",
+        "dy": "142"
+    },
+    "nicknames": {
+        "200": "Labour",
+        "201": "Conservatives",
+        "202": "Liberal Democrats",
+        "203": "Reform UK",
+        "20815": "Green Party",
+        "20833": "Scotland National Party",
+        "20851": "Speaker",
+        "20869": "Sinn Féin",
+        "20887": "DUP",
+        "20905": "SDLP",
+        "20923": "Alliance",
+        "20941": "UUP",
+        "20959": "TUV",
+        "20977": "Ind/Others",
+        "20995": "Plaid Cymru"
+    }
+}
+]
 
 
 function changechart(){
@@ -7078,45 +7107,6 @@ function adjustFeedbackBox(width, height) {
 
 adjustFeedbackBox(57,69);
 
-
-campaignTrail_temp.jet_data = [{
-    "banner_enabled": true,
-    "banner_data": {
-        "canName": "Conservatives",
-        "runName": "Johnson",
-        "runImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/426px-Boris_Johnson_official_portrait_%28cropped%29.jpg",
-        "canImage": "http://assets8.lbc.co.uk/2016/29/conservatives-logo---lbc-1468834487-editorial-short-form-1.jpg"
-    },
-    "cyoa_enabled": true,
-    "cyoa_data": {},
-    "mapping_enabled": true,
-    "mapping_data": {
-        "mapSvg": "",
-        "electionPk": "20",
-        "x": "885",
-        "y": "863",
-        "dx": "-450",
-        "dy": "142"
-    },
-    "nicknames": {
-        "200": "Labour",
-        "201": "Conservatives",
-        "202": "Liberal Democrats",
-        "203": "Reform UK",
-        "20815": "Green Party",
-        "20833": "Scotland National Party",
-        "20851": "Speaker",
-        "20869": "Sinn Féin",
-        "20887": "DUP",
-        "20905": "SDLP",
-        "20923": "Alliance",
-        "20941": "UUP",
-        "20959": "TUV",
-        "20977": "Ind/Others",
-        "20995": "Plaid Cymru"
-    }
-}
-]
 
 // For UK Mod
 distributeSeatsUK = () => {
@@ -7501,7 +7491,7 @@ function getTooltips(str) {
     
     applyTooltipsToObject(campaignTrail_temp.questions_json);
     applyTooltipsToObject(campaignTrail_temp.answers_json);
-    applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+    applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);  
 
 
 function addHeadquarterButton() {
@@ -7672,7 +7662,7 @@ function openHeadquarter() {
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
-    c.innerHTML = 'The trust of the Conservative parliamentary party in you is ' + PTScore + '.';
+    c.innerHTML = 'The trust of Conservative parliamentary party in you is ' + PTScore + '.';
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
