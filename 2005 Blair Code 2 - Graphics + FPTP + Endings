@@ -750,6 +750,16 @@ He had an ancient, and bittersweet, friend he needed to call. One last time…
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MxyGsWe.gif"})])
 }
 
+else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0] >= 324) {  
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
+<p>
+David Dimbleby’s voice reverberated throughout the Party headquarters.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
+}
+
 
 // Clarke First Slides
 else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
