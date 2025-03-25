@@ -1645,7 +1645,7 @@ campaignTrail_temp.achievements = {
      },
 
     // Legacy Mechanics
-     "Partners In Crime, Deceptions, and Wins" : { 
+     "Partners In Crime – and Wins" : { 
         "image" : "https://imgur.com/Y3LxYsk.png",
         "description" : "Defy the polls while spinning the case for a war",
         "cannotBeCheated" : true
