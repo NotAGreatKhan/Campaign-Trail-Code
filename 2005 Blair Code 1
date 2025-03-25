@@ -1661,7 +1661,7 @@ campaignTrail_temp.achievements = {
         "cannotBeCheated" : true
      },
      "New New Labour" : { 
-        "image" : "'",
+        "image" : "https://imgur.com/TcVWosw.jpg",
         "description" : "Show your true colours",
         "cannotBeCheated" : true
      },
