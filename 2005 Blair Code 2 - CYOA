@@ -230,10 +230,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12832){
       Cred -= 1;
     }
-    if(ans == 12833){
-      Cred -= 1;
-    }
-    if(ans == 12834){
+    if(ans == 14290){
       Cred -= 2;
     }
 
@@ -337,7 +334,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     
-// Other CYOA Stuff  
+// Other CYOA Stuff
+    if(Cred >= 4){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 14456,
+    "fields": {
+        "priority": 0,
+        "description": "The world outside our fair shores, thought to be gentle and peaceful, has been anything but that. Even still, you were elected to govern the United Kingdom – and by God – that is what you are going to do. Your mandate from 2001 still grants you a large majority in parliament, and you intend to use it. The only question is: What will you do with it?",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12808){
     campaignTrail_temp.questions_json[7] = {
     "model": "campaign_trail.question",
