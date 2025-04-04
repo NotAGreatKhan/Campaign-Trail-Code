@@ -321,4 +321,10 @@ cyoAdventure = function (a) {
     if(ans == 21836){
       Wins += 1;
     }
+
+    if(Wins >= 6){
+    campaignTrail_temp.questions_json[29] = tunnel(21898);
+  }
+
+
 }
