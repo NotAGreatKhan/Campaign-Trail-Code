@@ -1002,6 +1002,30 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 e = campaignTrail_temp
 
+
+document.head.innerHTML += `<style>
+    .game_header {
+        background: linear-gradient(to bottom, #828387, #A0A1A5, #D9DBE0);
+        height: 75px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    .game_header h2 {
+        font-size: 32px;
+        font-weight: bold;
+        font-family: Tahoma, Arial, sans-serif;
+        
+        background: linear-gradient(to bottom, #ffffff, #d0e4f7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #ffffff; /* Set text to visible color */
+
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+</style>`
+
+
 const startScreenUpdater = setInterval(function() {
       const goBackButton = document.getElementById("candidate_id_back");
       const candidateButton = document.getElementById("candidate_id_button");
