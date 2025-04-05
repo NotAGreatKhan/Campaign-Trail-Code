@@ -17,50 +17,26 @@ cyoAdventure = function (a) {
     
     // CREDIBILITY
     // Question 4
-    if(ans == 21686){
-      Cred += 1;
-    }
-    
-    // Question 6 - Labour Leadership Contest
-    if(ans == 21688){
-      Cred += 1;
-    }
-
-    // Question 8 - First PMQs
-    if(ans == 21734){
-      Cred += 1;
-    }
-
-    // Question 9 - Ironing Out FTP Act
-    if(ans == 21736){
+    if(ans == 21703){
       Cred -= 1;
     }
-
+    
     // Question 10 - Libya
     if(ans == 21742){
       Cred += 1;
     }
 
     // Question 11 - Osborne Budget
-    if(ans == 21748){
-      Cred += 1;
-    }
     if(ans == 21750){
       Cred -= 1;
     }
 
     // Question 12 - Tuition Fees
-    if(ans == 21754){
-      Cred += 1;
-    }
     if(ans == 21752){
       Cred -= 1;
     }
 
     // Question 13 – Andy Coulson Sacked
-    if(ans == 21760){
-      Cred += 1;
-    }
     if(ans == 21758){
       Cred -= 1;
     }
@@ -79,35 +55,18 @@ cyoAdventure = function (a) {
     }
 
     // Question 17 – HoL Reform
-    if(ans == 21778){
-      Cred += 1;
-    }
     if(ans == 21780){
       Cred -= 1;
     }
 
-    // Question 18 – 'Go Home' Vans
-    if(ans == 21784){
-      Cred += 1;
-    }
-    if(ans == 21782){
-      Cred -= 1;
-    }
-
     // Question 19 – Indy Ref
-    if(ans == 21788){
-      Cred += 1;
-    }
     if(ans == 21790){
-      Cred -= 2;
+      Cred -= 1;
     }
 
     // Question 20 – NHS Reform
     if(ans == 21792){
       Cred += 1;
-    }
-    if(ans == 21794){
-      Cred -= 1;
     }
 
     // Question 21 – If Your Reputation Is In Tatters
@@ -118,38 +77,6 @@ cyoAdventure = function (a) {
     // Question 22 – Questionable Arms Deals
     if(ans == 21800){
       Cred += 1;
-    }
-    if(ans == 21798){
-      Cred -= 1;
-    }
-
-    // Question 23 – EU Divisions
-    if(ans == 21804){
-      Cred += 1;
-    }
-    if(ans == 21806){
-      Cred -= 1;
-    }
-
-    // Question 24 – Climate Change
-    if(ans == 21810){
-      Cred += 1;
-    }
-    if(ans == 21812){
-      Cred -= 1;
-    }
-
-    // Question 25 – UK Losing AAA Bond Status
-    if(ans == 21824){
-      Cred -= 1;
-    }
-
-    // Question 27 – Syria vote
-    if(ans == 21836){
-      Cred += 1;
-    }
-    if(ans == 21834){
-      Cred -= 1;
     }
 
     // CONSERVATIVE REPUTATION
@@ -314,6 +241,11 @@ cyoAdventure = function (a) {
 
     // Question 23 – EU Divisions
     if(ans == 21804){
+      Wins += 1;
+    }
+
+    // Question 24 – Climate Change
+    if(ans == 21810){
       Wins += 1;
     }
 
