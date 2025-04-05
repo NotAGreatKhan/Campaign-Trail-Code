@@ -89,24 +89,15 @@ cyoAdventure = function (a) {
     if(ans == 21734){
       ConRep += 1;
     }
-    if(ans == 21732){
-      ConRep -= 1;
-    }
     
     // Question 9 - Ironing Out FTP Act
     if(ans == 21738){
       ConRep += 1;
     }
-    if(ans == 21736){
-      ConRep -= 1;
-    }
 
     // Question 10 - Libya
     if(ans == 21742){
       ConRep += 1;
-    }
-    if(ans == 21744){
-      ConRep -= 1;
     }
 
     // Question 11 - Osborne Budget
