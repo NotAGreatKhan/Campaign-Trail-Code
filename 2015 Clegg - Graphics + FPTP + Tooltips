@@ -1316,23 +1316,59 @@ function openHeadquarter() {
     var CScore = 2;
     var CRpScore = 2;
 
-    if (Cred < 3) {
-        CScore = "<font color='#ad1313;'><b>declining</b></font>"
+    if (Cred == -7) {
+        CScore = "<font color='#ad1313;'><b>utterly destroyed</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
     }
-    if (Cred >= 3 && Cred < 6) {
-        CScore = "<font color='#d58627;'><b>lagging</b></font>"
+    if (Cred == -6) {
+        CScore = "<font color='#ad1313;'><b>in tatters and rags</b></font> (<font color='#ad1313;'><b>-6</b></font>)"
     }
-    if (Cred >= 6) {
-        CScore = "<font color='#7ba922;'><b>strong</b></font>"
+    if (Cred == -5) {
+        CScore = "<font color='#ad1313;'><b>in collapse</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (Cred == -4) {
+        CScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>-4</b></font>)"
+    }
+    if (Cred == -3) {
+        CScore = "<font color='#ad1313;'><b>non-existent</b></font> (<font color='#ad1313;'><b>-3</b></font>)"
+    }
+    if (Cred == -2) {
+        CScore = "<font color='#d58627;'><b>concerning</b></font> (<font color='#d58627;'><b>-2</b></font>)"
+    }
+    if (Cred == -1) {
+        CScore = "<font color='#d58627;'><b>questionable</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (Cred == 0) {
+        CScore = "<font color='#d58627;'><b>lagging</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
+    if (Cred == 1) {
+        CScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (Cred == 2) {
+        CScore = "<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (Cred == 3) {
+        CScore = "<font color='#7ba922;'><b>narrowly stable</b></font> (<font color='#7ba922;'><b>3</b></font>)"
+    }
+    if (Cred == 4) {
+        CScore = "<font color='#7ba922;'><b>holding steady</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (Cred == 5) {
+        CScore = "<font color='#7ba922;'><b>improving</b></font> (<font color='#7ba922;'><b>5</b></font>)"
+    }
+    if (Cred == 6) {
+        CScore = "<font color='#7ba922;'><b>rocketing</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (Cred == 7) {
+        CScore = "<font color='#7ba922;'><b>soaring</b></font> (<font color='#7ba922;'><b>7</b></font>)"
     }
 
-    if (ConRep < 3) {
+    if (ConRep == -16) {
         CRpScore = "<font color='#ad1313;'><b>unworkable</b></font>"
     }
     if (ConRep >= 3 && ConRep < 7) {
         CRpScore = "<font color='#d58627;'><b>shaky</b></font>"
     }
-    if (ConRep >= 7) {
+    if (ConRep == 11) {
         CRpScore = "<font color='#7ba922;'><b>harmonious</b></font>"
     }
 
