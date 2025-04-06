@@ -522,6 +522,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(ans == 12803 || ans == 13904){
+    campaignTrail_temp.questions_json[33] = {
+    "model": "campaign_trail.question",
+    "pk": 14569,
+    "fields": {
+        "priority": 0,
+        "description": "[April 28, 2005] During the BBC Question Time, you knew from the moment you sat in the leather chair that something was off. The members in the audience, universally cognisant of their wallets, were out for you as your face felt hotter under the studio lights. Finally, one daring man speaks up “what new stealth taxes you plan to implement next?”. Hearty laughs ring out across the room, with yourself feigning and joining in. How will you shut this tiring line down?",
+        "likelihood": 1
+      }
+    }
+  }
+
 
 // Europe Stuff
     if(ans == 12797){
