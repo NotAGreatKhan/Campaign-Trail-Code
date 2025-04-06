@@ -830,7 +830,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Michael Portillo
-    if(ans == 12797 && Cred < 3){
+    if(ans == 12808 && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
     campaignTrail_temp.questions_json[10] = {
     "model": "campaign_trail.question",
     "pk": 14371,
