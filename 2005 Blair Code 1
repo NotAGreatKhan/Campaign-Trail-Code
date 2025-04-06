@@ -1004,7 +1004,7 @@ document.head.innerHTML += `<style>
         background: linear-gradient(to bottom, #d03e54, #df8191);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
-    .election_summary {
+    .election_description_window {
         height: 250px;
     }
 </style>`
