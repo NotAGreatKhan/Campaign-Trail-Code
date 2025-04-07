@@ -6,4 +6,18 @@ var PartyTrust = 10;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
+
+// General CYOA Stuff
+    // Lord Brownlow Donos
+    if(Cred >= 5){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 21142,
+    "fields": {
+        "priority": 0,
+        "description": "Well dammit Boris, it seems your personal inclinations and habits have gotten the better of you. Donor Lord Brownlow’s money sent to you has been picked up by the media, It's become quite a headache,  The media won’t let go and the story is becoming a thorn in our backside. You need to get them off of your bloody apartment taste and steer the conversation to the work we’ve been doing.",
+        "likelihood": 1
+      }
+    }
+  }
 }
