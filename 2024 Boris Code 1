@@ -674,14 +674,11 @@ document.head.innerHTML += `<style>
         background: linear-gradient(to bottom, #79cfec, #79cfec);
         height: 75px; 
         box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
-        -webkit-text-fill-color: #d9dbe0;
+        -webkit-text-fill-color: #d7dbe5;
     }
     .game_header h2 {     
         background: linear-gradient(to bottom, #0aa7db, #79cfec);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    }
-    .election_description_window {
-        height: 250px;
     }
 </style>`
 
