@@ -1,5 +1,6 @@
 e = campaignTrail_temp
 
+var Wins = 0;
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
@@ -156,12 +157,21 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12802){
       Cred += 1;
     }
+    if(ans == 14392){
+      Cred += 1;
+    }
 
     // Question 7 – Making the case for war
     if(ans == 12813){
       Cred -= 1;
     }
     if(ans == 12814){
+      Cred += 1;
+    }
+    if(ans == 14579){
+      Cred -= 1;
+    }
+    if(ans == 14584){
       Cred += 1;
     }
 
@@ -225,6 +235,29 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13489){
       Cred -= 1;
     }
+
+    // Question 12 - PUB (Hutton Inquiry)
+    if(ans == 14238){
+      Cred += 1;
+    }
+    if(ans == 14259){
+      Cred -= 1;
+    }
+    if(ans == 14252){
+      Cred -= 1;
+    }
+
+    // Question 12 - PUB 
+    if(ans == 14209){
+      Cred += 1;
+    }
+    if(ans == 14230){
+      Cred -= 1;
+    }
+    if(ans == 14223){
+      Cred -= 1;
+    }
+
 
     // Question 13 - Hutton Inquiry
     if(ans == 12832){
@@ -309,6 +342,49 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       OldLab += 1;
     }
 
+    // WINS
+    // Question 2 – Afghanistan
+    if(ans == 12793){
+      Wins += 1;
+    }
+
+    // Question 3 – Terror Bill
+    if(ans == 14032){
+      Wins += 1;
+    }
+    
+    // Question 7 – Making the case for war
+    if(ans == 12814){
+      Wins += 1;
+    }
+    if(ans == 14584){
+      Wins += 1;
+    }
+
+    // Question 12 - HEA (Hutton Inquiry)
+    if(ans == 12827){
+      Wins += 1;
+    }
+    // Question 12 - HEA 
+    if(ans == 13474){
+      Wins += 1;
+    }
+
+    // Question 12 - PUB (Hutton Inquiry)
+    if(ans == 14238){
+      Wins += 1;
+    }
+    // Question 12 - PUB 
+    if(ans == 14209){
+      Wins += 1;
+    }
+
+    // Question 17 - Leigh Amendment to CPA 
+    if(ans == 12847){
+      Wins += 1;
+    }
+
+
 // Resignation Questions
     if(Resign >= 7){
     campaignTrail_temp.questions_json[17] = {
@@ -335,6 +411,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     
 // Other CYOA Stuff
+    if(ans == 12542 || ans == 13900){
+    campaignTrail_temp.questions_json[6] = {
+    "model": "campaign_trail.question",
+    "pk": 14456,
+    "fields": {
+        "priority": 0,
+        "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+        "likelihood": 1
+      }
+    }
+  }
     if(Cred >= 4){
     campaignTrail_temp.questions_json[7] = {
     "model": "campaign_trail.question",
