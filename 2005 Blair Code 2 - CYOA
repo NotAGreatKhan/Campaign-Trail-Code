@@ -621,7 +621,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Successful France
-    if(ans == 12797 && ans == 13619 && Cred >= 5){
+    if((ans == 12797 && ans == 13619) && Cred >= 5){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13860,
@@ -647,7 +647,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Successful Netherlands
-    if(ans == 13557 && ans == 13873 && Cred >= 5){
+    if((ans == 13557 && ans == 13873) && Cred >= 5){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13894,
