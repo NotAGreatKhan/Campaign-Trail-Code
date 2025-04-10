@@ -620,7 +620,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-
+    if(ans == 14290){
+    campaignTrail_temp.questions_json[33] = {
+    "model": "campaign_trail.question",
+    "pk": 14595,
+    "fields": {
+        "priority": 0,
+        "description": "[April 28, 2005] During the BBC Question Time, nobody could go a nanosecond without whispering on the war abroad. What of the soldiers who died for nothing? What <i>really</i> happened to Dr Kelly? Is a war criminal leading the Labour Party? The studio lights are white-hot, your hands are writhing and clammy to the touch of your trousers. It all culminates in a young man – fist clenched – declaring “when you presented your evidence to the House of Commons, you said it was authoritative and full-evidenced. That is a lie, you lied to this country and that's why we can't support you at the following election”. The cheering is a tremor throughout the studio hall, and you for one will not let it careen your polling.",
+        "likelihood": 1
+      }
+    }
+  }
 
 // Europe Stuff
     if(ans == 12797){
