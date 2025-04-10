@@ -1007,6 +1007,10 @@ document.head.innerHTML += `<style>
     .election_description_window {
         height: 250px;
     }
+    .inner_inner_window h3 {
+      background-color: #ffcfcf;
+      background: linear-gradient(to bottom, #ffcfcf, #eadcde);
+    }
 </style>`
 
 
