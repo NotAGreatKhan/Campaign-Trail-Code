@@ -31,43 +31,61 @@ document.getElementById("header").src = "https://imgur.com/PpBHLAi.jpg";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#445da2";
 
 
-// Tooltips
-function addDynamicCSS() {
-    var css = `
-
-        label {
-          cursor:default;
-        }
-  
-        .inner_window_question h3 .mytooltip {
-            background-color: lightskyblue;
-        }
-
-        .mytooltip {
-            background-color: #d8dee8;
-        }
-
-        .mytooltip .mytooltiptext {
-            background-color: #d8dee8;
-        }
-    `;
-}
-
-
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
-`#campaign_sign {
-  background-color: #445da2;
-  border-color: #243460;
+`
+.game_header {
+background: linear-gradient(to bottom, #8199df, #8199df);
+height: 75px; 
+box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
 }
+
+.game_header h2 {     
+background: linear-gradient(to bottom, #445da2, #8199df);
+text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.election_description_window {
+height: 250px;
+}
+
+.inner_inner_window h3 {
+background-color: #e2ebfd;
+background: linear-gradient(to bottom, #e2ebfd, #dce1ea);
+}
+
+#campaign_sign {
+background-color: #445da2;
+border-color: #243460;
+}
+
 .inner_window_question h3 {
 background-color: #e2ebfd;
 }
+
 .overlay_window h3 {
 background-color: #e2ebfd;
-}`
+}
+
+label {
+cursor:default;
+} 
+
+.inner_window_question h3 .mytooltip {
+background-color: lightskyblue;
+}
+
+.mytooltip {   
+background-color: #d8dee8;
+}
+
+.mytooltip .mytooltiptext {
+background-color: #d8dee8;
+}
+`
 ;
 document.head.appendChild(style_overwrite);
+
 
 const style = document.createElement('style');
 style.textContent = `
