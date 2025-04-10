@@ -72,7 +72,7 @@ cursor:default;
 } 
 
 .inner_window_question h3 .mytooltip {
-background-color: lightskyblue;
+background-color: #8199df;
 }
 
 .mytooltip {   
