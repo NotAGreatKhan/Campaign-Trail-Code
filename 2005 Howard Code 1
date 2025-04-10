@@ -120,7 +120,7 @@ campaignTrail_temp.global_parameter_json = [
             "issue_stance_6_max": 0.71,
             "global_variance": 0.01,
             "state_variance": 0.005,
-            "question_count": 32,
+            "question_count": 36,
             "default_map_color_hex": "#C9C9C9",
             "no_state_map_color_hex": "#999999"
         }
@@ -145,12 +145,12 @@ campaignTrail_temp.election_json = [
         "pk": 12,
         "fields": {
             "year": 2005,
-            "summary": "<div style='overflow-y:scroll;height:200px;'>In the election of 2001, Prime Minister Blair won the “Quiet Landslide” against the weak former Opposition Leader William Hague, his once gleaming popularity with the British people having waned since the halcyon optimism of the late 1990s.<br><br>However now, with the blissful peace of the previous decade shattered and burned in the ashes of the World Trade Centre, Blair’s remaining goodwill may be permanently tarnished as his agenda shifts for the new century. Peace is an ever-fading dream as the Bush Administration prepares for an invasion of Iraq - yet Blair seems all too keen to rally behind the Texan ‘Decider’. Along with this, a certain character by the name of a Dr. David Kelly may play a part in sullying greatly the Government’s already shaky position.<br><br>Heading into the general election, the economy continues to pull itself along under the Chancellery of Gordon Brown. The Conservative Party, now likely to be steered and disciplined by establishment MP Michael Howard, is pressuring the Prime Minister hard on the issues of the day. In order for Blair to achieve victory: he must successfully navigate the tenuous crises engulfing his premiership, and defend from multiple flanks by the renewed Liberal Democrats and steady Conservatives sniffing Labour-red blood bleeding from the soon to be sacrifices to a global “War On Terror”. Although the economy remains a stable argument to press on, that rail of Britain may not stay aligned for long if not properly welded.</div>\n",
-            "image_url": "https://imgur.com/AIMbCMh.png",
+            "summary": "<div style='overflow-y:scroll;height:200px;'>The 2001 election has given forth yet another lashing to the Conservatives, as Blair secured a ”Quiet Landslide” for his government. The gleaming popularity having waned since that ecstatic night in 1997. But even then, it was thought that nothing could be deemed impossible.<br><br>However now, with the blissful peace of the previous decade shattered and burned in the ashes of the World Trade Centre, Blair’s goodwill will be strenuously tested as his agenda shifts for the new century. The Bush Administration prepares for an invasion of Iraq – but the legacy of Britain's role in that war will rest first, and foremost on Blair's own shoulders. And with Chancellor Brown, the fine-tuned economy's smooth chugging needs to maintain its very confidence.<br><br>The Conservative Party must find its way out of the wilderness, if it hopes to ever get back in power. Blair must also defend from multiple flanks by the renewed Liberal Democrats and the Conservatives sniffing Labour-red blood. If he fails, Blair's progressive centre may be strangled as quickly as it was birthed – as the natural party of governance reasserts itself.</div>\n",
+            "image_url": "https://imgur.com/t35sV5w.jpg",
             "winning_electoral_vote_number": 324,
             "advisor_url": "https://imgur.com/u6zV6LD.jpg",
             "recommended_reading": "This election has no further reading yet.",
-            "has_visits": 1,
+            "has_visits": 0,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
             "creator": "u/No-Reading9991",
             "display_year": "2005 UK - Forward Not Back"
@@ -232,7 +232,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Labour",
             "state": "--",
             "priority": 2,
-            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Labour Party</b></li><li><b>Role: Her Majesty's Most Loyal Government</b></li><li><b>Ideology: Social Democratic – New Labour</b></li><p><b>The Labour Party</b> was founded in the early 1920s by a group of middle-class intellectuals, trade union leaders and socialists to stand as an organisation that truly stood for the working man of Britain. By 1930, it had surpassed the Liberal Party as the second largest party in the nation, standing usually in official opposition to the Conservatives.</p>\n\n<p>Whilst Labour had achieved some success in Government, such as with Clement Attlee’s Government’s NHS, they had found little success in regards to staying in power against the unified sky-blue tide of the Tories. Wether it be the Labour-SDP split under Micheal Foot, the stiff disposition of Neil Kinnock, or the economic stagnation under Harold Wilson, Labour had found great difficulty in cementing a long-term rule. But that would begin to change in the 1990s…</p>\n\n<p>Following the ascension of the charismatic Tony Blair to leadership in 1994, the party would be completely re-aligned by a significant tack to the centre; symbolised by the removal of Clause 4 from the Party Constitution, no longer tying the party to the ultimate aim of true socialism. The ensuing landslide victories in 1997 and 2001, had vindicated Labour’s overall shift to the centre. Presently however, new challenges continue to hound the Government, both abroad, and at home.</p>\n\n<p>The future of the decade and the “Party Of The People” are now at stake, with the Prime Minister dragging a burden greater than anyone could’ve possibly predicted.</p></div>",
+            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Labour Party</b></li><li><b>Role: Her Majesty's Most Loyal Government</b></li><li><b>Ideology: Social Democratic – New Labour</b></li><p> </p><b>The Labour Party</b> was founded in the early 1920s by a group of middle-class intellectuals, trade union leaders and socialists to stand as an organisation that truly stood for the working man of Britain. By 1930, it had surpassed the Liberal Party as the second largest party in the nation, standing usually in official opposition to the Conservatives.<br><br>Whilst Labour had achieved some success in Government, such as with Clement Attlee’s Government’s NHS, they had found little success in regards to staying in power against the unified sky-blue tide of the Tories. Wether it be the Labour-SDP split under Micheal Foot, the stiff disposition of Neil Kinnock, or the economic stagnation under Harold Wilson, Labour had found great difficulty in cementing a long-term rule. But that would begin to change in the 1990s…<br><br>Following the ascension of the charismatic Tony Blair to leadership in 1994, the party would be completely re-aligned by a significant tack to the centre; symbolised by the removal of Clause 4 from the Party Constitution, no longer tying the party to the ultimate aim of true socialism. The ensuing landslide victories in 1997 and 2001, had vindicated Labour’s overall shift to the centre. Yet presently, new challenges continue to hound the Government, both abroad, and at home.<br><br>The future of the decade and the “Party Of The People” are now at stake, with the Prime Minister dragging a burden greater than anyone could’ve possibly predicted.</div>",
             "color_hex": "#e84545",
             "secondary_color_hex": "#FFA0A0",
             "is_active": 1,
@@ -278,7 +278,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Conservative",
             "state": "--",
             "priority": 2,
-            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Conservative Party</b></li><li><b>Role: Her Majesty's Most Loyal Opposition</b></li><li><b>Ideology: Classical Conservatism</b></li><p><b>The Conservative and Unionist Party</b> is the oldest still-active party in Britain, evolving from the old Tory party that had predominantly overseen the rise of the modern British state. Until the 1990s, it was deemed a simple political fact – a law of nature – that they were 'the natural party of governance'. After the fall of Margaret Thatcher, and the stagnation proceeding Black Wednesday, Prime Minister John Major was routed and swept aside under the red tide of the New Labour revolution. Their ability to have any influence on policy snatched away from their grip. The landslide defeats of '97 and '01 have suppressed the Conservatives to electoral weakness.</p>\n\n<p>Despite all of this however, they are far from out of the fight. As the new millennium dawns on the world, the War on Terror will consume the Blair government's agenda, and could provide ample opportunity to rip open festering Labour wounds. It is very much possible that regardless of the previous loss, it could be very much turned around.</p>\n\n<p>But they need the right man to wield the great sword of the party.</p>\n\n<p>The leader immediately following the defeated William Hague is Ian Duncan Smith, a man so charismatically inept that his implosion is all but assured. If his successor can effectively take the attack to the Prime Minister, and renew the drive of the Tories, it is possible – feasible even – that they can snuff out the Labour domination just as hastily as it was brought into the halls of Downing Street. Take them back.</p>\n\n<p>To their natural holders.</p></div>",
+            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Conservative Party</b></li><li><b>Role: Her Majesty's Most Loyal Opposition</b></li><li><b>Ideology: Classical Conservatism</b></li><p> </p><b>The Conservative and Unionist Party</b> is the oldest still-active party in Britain, evolving from the old Tory party that had predominantly overseen the rise of the modern British state. Until the 1990s, it was deemed a simple political fact – a law of nature – that they were 'the natural party of governance'. After the fall of Margaret Thatcher, and the stagnation proceeding Black Wednesday, Prime Minister John Major was routed and swept aside under the red tide of the New Labour revolution. Their ability to have any influence on policy snatched away from their grip. The landslide defeats of '97 and '01 have suppressed the Conservatives to electoral weakness.<br><br>Despite all of this however, they are far from out of the fight. As the new millennium dawns on the world, the War on Terror will consume the Blair government's agenda, and could provide ample opportunity to rip open festering Labour wounds. It is very much possible that regardless of the previous loss, it could be very much turned around.<br><br>But they need the right man to wield the great sword of the party.<br><br>The leader immediately following the defeated William Hague is Ian Duncan Smith, a man so charismatically inept that his implosion is all but assured. If his successor can effectively take the attack to the Prime Minister, and renew the drive of the Tories, it is possible – feasible even – that they can snuff out the Labour domination just as hastily as it was brought into the halls of Downing Street. Take them back.<br><br>To their natural holders.</div>",
             "color_hex": "#4848a8",
             "secondary_color_hex": "#4848a8",
             "is_active": 1,
@@ -305,11 +305,11 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#4848a8",
             "secondary_color_hex": "#4848a8",
             "is_active": 0,
-            "image_url": "https://imgur.com/e8oE6I9.png",
+            "image_url": "https://imgur.com/90oomiV.png",
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Michael Howard</b></li><li><b>Role: Her Majesty's Leader of the Opposition</b></li><li><b>Constituency: Folkestone and Hythe</b></li><p></p><i>”This is a great party - the longest standing, most successful party in the history of democracy. There has been no other party that has done so much, or achieved so much, as ours. We are its trustees.”</i>\n\n<p><b>Michael Howard</b> is a long time establishmentarian and parliamentarian who has served in the now-shamed John Major government, having held the position as Home Secretary. He has been generally conducting himself as a classical-moderate Tory, before surviving the New Labour landslide. But that is in the dusty pages of the history books, a new challenge now faces him.</p>\n\n<p>The leader of the Conservative party scarpering from the lashing of the 2001 election is the MP for Chingford and Woodford, Ian Duncan Smith. A man so uncharismatic and inept, that he only commanded a third of Tory MPs at best during the 2001 leadership election. Whenever his leadership unravels at the seams, and rips apart – and that is a matter of <i>when</i> not if – Howard must ensure that he seizes the leadership hastily and smoothly. But that is only the first hurdle of the long track to Number 10.</p>\n\n<p>After becoming the head of that slithering sky-blue snake, Howard will have to steer the party back into an opposition that can actually fight – and win – on the same plain as Blair's Labour Party. To accomplish this, he will have to effectively press the weaknesses of the Labour government, and define himself on the issues of the day that can authentically capture the mass public mood. If he can accomplish that however, it is very much possible that the germinating New Labour rose can be quarterised before it has any opportunity to truly plunge its roots.</p></div>",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Michael Howard</b></li><li><b>Role: Her Majesty's Leader of the Opposition</b></li><li><b>Constituency: Folkestone and Hythe</b></li><p> </p><i>”This is a great party - the longest standing, most successful party in the history of democracy. There has been no other party that has done so much, or achieved so much, as ours. We are its trustees.”</i></p><b>Michael Howard</b> is a long time establishmentarian and parliamentarian who has served in the now-shamed John Major government, having held the position as Home Secretary. He has been generally conducting himself as a classical-moderate Tory, before surviving the New Labour landslide. But that is in the dusty pages of the history books, a new challenge now faces him.<br><br>The leader of the Conservative party scarpering from the lashing of the 2001 election is the MP for Chingford and Woodford, Ian Duncan Smith. A man so uncharismatic and inept, that he only commanded a third of Tory MPs at best during the 2001 leadership election. Whenever his leadership unravels at the seams, and rips apart – and that is a matter of <i>when</i> not if – Howard must ensure that he seizes the leadership hastily and smoothly. But that is only the first hurdle of the long track to Number 10.<br><br>After becoming the head of that slithering sky-blue snake, Howard will have to steer the party back into an opposition that can actually fight – and win – on the same plain as Blair's Labour Party. To accomplish this, he will have to effectively press the weaknesses of the Labour government, and define himself on the issues of the day that can authentically capture the mass public mood. If he can accomplish that however, it is very much possible that the germinating New Labour rose can be caurterised before it has any opportunity to truly plunge its roots.</div>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -979,28 +979,39 @@ jet_data = {
 
 corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
 
-
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
-
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
-
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-
 $(".container")[0].style.backgroundColor = "#ababab";
-
 document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
-
 document.body.background = "https://imgur.com/erWHhIe.png";
-
 document.body.style.backgroundSize = "cover"
-
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
 
 //#endcode
 
 e = campaignTrail_temp
+
+
+document.head.innerHTML += `<style>
+    .game_header {
+        background: linear-gradient(to bottom, #df8191, #df8191);
+        height: 75px; 
+        box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    .game_header h2 {     
+        background: linear-gradient(to bottom, #d03e54, #df8191);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    .election_description_window {
+        height: 250px;
+    }
+    .inner_inner_window h3 {
+      background-color: #ffcfcf;
+      background: linear-gradient(to bottom, #ffcfcf, #eadcde);
+    }
+</style>`
 
 
 	document.head.innerHTML += `<link
@@ -1593,3 +1604,77 @@ document.head.appendChild(style);
 const gameWindow_player = document.getElementById("game_window");
 //use this function directly or put it in an event listener to start the music on the press of a certain button
 setupMusicPlayer();
+
+
+e.ElectionPopup = "Election night has, at last, arrived. We shall now see the decision of the people – as the bell of Elizabeth Tower tolls. Best of luck to you, you'll certainly need it."
+e.WinPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have determined your end. Click 'OK' to view the choice of the nation, and may life provide a more just conclusion than poltics already has."
+e.LossPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have enshrined upon you your hard-fought victory. Click 'OK' to view the choice of the nation, and may the collosuem of public life continue to provide you bountiful success."
+
+
+campaignTrail_temp.achievements = {
+    // Opponents
+     "A Loser Of The Night" : { 
+        "image" : "https://imgur.com/hB7tcCc.png",
+        "description" : "Defeat an Employment Secretary",
+        "cannotBeCheated" : true
+     },
+     "Back to the Backbenches" : { 
+        "image" : "https://imgur.com/xA1eISm.png",
+        "description" : "Send a One-Nation Tory back to where he was banished to",
+        "cannotBeCheated" : true
+     },
+     "Another One Of Those Moments" : { 
+        "image" : "https://imgur.com/pR48k6f.png",
+        "description" : "Wedge a man from his parliamentary career one last time",
+        "cannotBeCheated" : true
+     },
+
+    // Legacy Mechanics
+     "Partners In Crime – and Wins" : { 
+        "image" : "https://imgur.com/Y3LxYsk.png",
+        "description" : "Defy the polls while spinning the case for a war",
+        "cannotBeCheated" : true
+     },
+     "I Rebuke You, Lord!" : { 
+        "image" : "https://imgur.com/KJdt7ko.png",
+        "description" : "Get chastised by an inquiry, and win anyway",
+        "cannotBeCheated" : true
+     },
+     "An Ever Greater Union" : { 
+        "image" : "https://imgur.com/m6GSVUl.png",
+        "description" : "Become the catalyst for a new continent",
+        "cannotBeCheated" : true
+     },
+     "New New Labour" : { 
+        "image" : "https://imgur.com/TcVWosw.jpg",
+        "description" : "Show your true colours",
+        "cannotBeCheated" : true
+     },
+     "A Familiar Kind Of Labour" : { 
+        "image" : "https://imgur.com/anDM60w.png",
+        "description" : "Let a deceased predecessor show you the light",
+        "cannotBeCheated" : true
+     },
+
+    // Party Machinations
+     "Expiring Early" : { 
+        "image" : "https://imgur.com/QMiPsnK.png",
+        "description" : "Confront the wrath of your party early",
+        "cannotBeCheated" : true
+     },
+     "Teflon Tony" : { 
+        "image" : "https://imgur.com/mJ1LexR.png",
+        "description" : "Claw back, despite it all",
+        "cannotBeCheated" : true
+     },
+     "His Rightful Place" : { 
+        "image" : "https://imgur.com/2yCagcb.png",
+        "description" : "Embrace destiny early",
+        "cannotBeCheated" : true
+     },
+     "The End Of New Labour" : { 
+        "image" : "https://imgur.com/h09XeLu.png",
+        "description" : "Even after everything, fall short",
+        "cannotBeCheated" : true
+     }
+}
