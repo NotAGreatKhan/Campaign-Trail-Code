@@ -10,6 +10,7 @@ function getQuestionNumberFromPk(pk) {
 
 e = campaignTrail_temp
 
+var Wins = 0;
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
@@ -119,6 +120,34 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
         campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
+        "pk": 14601,
+        "fields": {
+            "priority": 0,
+            "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+            "likelihood": 1
+          }
+        }
+        if(ans == 14430)
+        campaignTrail_temp.questions_json[22] = {
+        "model": "campaign_trail.question",
+        "pk": 14623,
+        "fields": {
+            "priority": 0,
+            "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+            "likelihood": 1
+          }
+        }
+        campaignTrail_temp.questions_json[23] = {
+        "model": "campaign_trail.question",
+        "pk": 14645,
+        "fields": {
+            "priority": 0,
+            "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
+            "likelihood": 1
+          }
+        }
+        campaignTrail_temp.questions_json[24] = {
+        "model": "campaign_trail.question",
         "pk": 14401,
         "fields": {
             "priority": 0,
@@ -128,7 +157,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
     }
     if(ans == 13508){
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 23;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 25;
       Brown = true;
     }
     if(ans == 14123 || ans == 14129){
@@ -166,12 +195,21 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12802){
       Cred += 1;
     }
+    if(ans == 14392){
+      Cred += 1;
+    }
 
     // Question 7 – Making the case for war
     if(ans == 12813){
       Cred -= 1;
     }
     if(ans == 12814){
+      Cred += 1;
+    }
+    if(ans == 14579){
+      Cred -= 1;
+    }
+    if(ans == 14584){
       Cred += 1;
     }
 
@@ -235,6 +273,29 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13489){
       Cred -= 1;
     }
+
+    // Question 12 - PUB (Hutton Inquiry)
+    if(ans == 14238){
+      Cred += 1;
+    }
+    if(ans == 14259){
+      Cred -= 1;
+    }
+    if(ans == 14252){
+      Cred -= 1;
+    }
+
+    // Question 12 - PUB 
+    if(ans == 14209){
+      Cred += 1;
+    }
+    if(ans == 14230){
+      Cred -= 1;
+    }
+    if(ans == 14223){
+      Cred -= 1;
+    }
+
 
     // Question 13 - Hutton Inquiry
     if(ans == 12832){
@@ -319,6 +380,49 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       OldLab += 1;
     }
 
+    // WINS
+    // Question 2 – Afghanistan
+    if(ans == 12793){
+      Wins += 1;
+    }
+
+    // Question 3 – Terror Bill
+    if(ans == 14032){
+      Wins += 1;
+    }
+    
+    // Question 7 – Making the case for war
+    if(ans == 12814){
+      Wins += 1;
+    }
+    if(ans == 14584){
+      Wins += 1;
+    }
+
+    // Question 12 - HEA (Hutton Inquiry)
+    if(ans == 12827){
+      Wins += 1;
+    }
+    // Question 12 - HEA 
+    if(ans == 13474){
+      Wins += 1;
+    }
+
+    // Question 12 - PUB (Hutton Inquiry)
+    if(ans == 14238){
+      Wins += 1;
+    }
+    // Question 12 - PUB 
+    if(ans == 14209){
+      Wins += 1;
+    }
+
+    // Question 17 - Leigh Amendment to CPA 
+    if(ans == 12847){
+      Wins += 1;
+    }
+
+
 // Resignation Questions
     if(Resign >= 7){
     campaignTrail_temp.questions_json[17] = {
@@ -345,6 +449,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     
 // Other CYOA Stuff
+    if(ans == 12542 || ans == 13900){
+    campaignTrail_temp.questions_json[6] = {
+    "model": "campaign_trail.question",
+    "pk": 14456,
+    "fields": {
+        "priority": 0,
+        "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+        "likelihood": 1
+      }
+    }
+  }
     if(Cred >= 4){
     campaignTrail_temp.questions_json[7] = {
     "model": "campaign_trail.question",
@@ -543,7 +658,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-
+    if(ans == 14290){
+    campaignTrail_temp.questions_json[33] = {
+    "model": "campaign_trail.question",
+    "pk": 14595,
+    "fields": {
+        "priority": 0,
+        "description": "[April 28, 2005] During the BBC Question Time, nobody could go a nanosecond without whispering on the war abroad. What of the soldiers who died for nothing? What <i>really</i> happened to Dr Kelly? Is a war criminal leading the Labour Party? The studio lights are white-hot, your hands are writhing and clammy to the touch of your trousers. It all culminates in a young man – fist clenched – declaring “when you presented your evidence to the House of Commons, you said it was authoritative and full-evidenced. That is a lie, you lied to this country and that's why we can't support you at the following election”. The cheering is a tremor throughout the studio hall, and you for one will not let it careen your polling.",
+        "likelihood": 1
+      }
+    }
+  }
 
 // Europe Stuff
     if(ans == 12797){
@@ -631,7 +756,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Successful France
-    if(ans == 12797 && ans == 13619 && Cred >= 5){
+    if((ans == 12797 && ans == 13619) && Cred >= 5){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13860,
@@ -657,7 +782,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Successful Netherlands
-    if(ans == 13557 && ans == 13873 && Cred >= 5){
+    if((ans == 13557 && ans == 13873) && Cred >= 5){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13894,
@@ -931,7 +1056,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 }
 
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -992,7 +1116,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12811,
         "fields": {
             "priority": 0,
-            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first Iraq UN Resolution (after painful negotiations with permanent council members France and Russia), but both British and American intelligence already suspect that WMDs are still present in the dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
             "likelihood": 1
         }
     },
@@ -1785,6 +1909,51 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "[April 28, 2005] During the BBC Question Time, you knew from the moment you sat in the leather chair that something was off. The members in the audience, universally cognisant of their wallets, were out for you as your face felt hotter under the studio lights. Finally, one daring man speaks up “what new stealth taxes you plan to implement next?”. Hearty laughs ring out across the room, with yourself feigning and joining in. How will you shut this tiring line down?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14578,
+        "fields": {
+            "priority": 0,
+            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14595,
+        "fields": {
+            "priority": 0,
+            "description": "[April 28, 2005] During the BBC Question Time, nobody could go a nanosecond without whispering on the war abroad. What of the soldiers who died for nothing? What <i>really</i> happened to Dr Kelly? Is a war criminal leading the Labour Party? The studio lights are white-hot, your hands are writhing and clammy to the touch of your trousers. It all culminates in a young man – fist clenched – declaring “when you presented your evidence to the House of Commons, you said it was authoritative and full-evidenced. That is a lie, you lied to this country and that's why we can't support you at the following election”. The cheering is a tremor throughout the studio hall, and you for one will not let it careen your polling.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14601,
+        "fields": {
+            "priority": 0,
+            "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14623,
+        "fields": {
+            "priority": 0,
+            "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14645,
+        "fields": {
+            "priority": 0,
+            "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
             "likelihood": 1
         }
     }
@@ -4005,6 +4174,126 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14569,
             "description": "“The reason we raised those taxes, was in order to fund the Health Service. To the standard that the people of Britain need and deserve. That is what it is about, maintaining the public services the Conservatives left in decay”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14579,
+        "fields": {
+            "question": 14578,
+            "description": "Jeremy Greenstock is doing excellent work at the security council, but we need that second resolution from the UN, or else we can kiss any international support goodbye. I’ll speak to President Bush more, and request Greenstock to stick it out and just try to get the support of all of the permanent members."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14584,
+        "fields": {
+            "question": 14578,
+            "description": "MI5 and MI6 are doing great with gathering intelligence, but we require more. Perhaps they could find more on the extent of the WMDs. Nuclear supply, speed of attack, anything! This is a threat to the whole of the West’s interests, and they need to appreciate that."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14590,
+        "fields": {
+            "question": 14578,
+            "description": "We need to rally support for the war in any way we can. Inviting VP Cheney over, stumping around making our case, answering questions from voters; we have to strengthen our argument on this and improve our image. Hussein must be removed."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14596,
+        "fields": {
+            "question": 14595,
+            "description": "“We have had 4 inquiries, all of which have pointed to the same thing, that I acted in good faith in regards to the intelligence. You can read the judgements of the joint intelligence committee on Saddam Hussein, and weapons of mass destruction. All I would ask, is before you make that accusation, read those findings, and tell me there was no evidence before”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14602,
+        "fields": {
+            "question": 14601,
+            "description": "When I agreed to join Tony’s government, I did so promising to myself that we would see it through. And now, we will continue to do so. No matter what some in the media may say, I wholeheartedly view Tony fondly, and will continue his legacy."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14608,
+        "fields": {
+            "question": 14601,
+            "description": "I made sure that the economy we together were building would remain strong. But I need to be frank with you, I am of the mind that his government and his leadership was fundamentally flawed. I will represent a new direction from now on."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14613,
+        "fields": {
+            "question": 14601,
+            "description": "Whatever your position on Iraq, the undeniable truth is that public trust in the government has been fundamentally eroded. With Iraq, I will bring about the work of change. But, our work on the economy is something I plan to keep strong and stable."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14619,
+        "fields": {
+            "question": 14601,
+            "description": "My chief concern during Tony’s time in office was, executing faithfully, my office as Chancellor of the Exchequer. Beyond that, I do not have much comment to provide on, heh, Tony Blair’s time as Prime Minister."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14624,
+        "fields": {
+            "question": 14623,
+            "description": "When I agreed to join Tony’s government, I did so promising to myself that we would see it through. And now, we will continue to do so. No matter what some in the media may say, I wholeheartedly view Tony fondly, and will continue his legacy."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14630,
+        "fields": {
+            "question": 14623,
+            "description": "I made sure that the economy we together were building would remain strong. But I need to be frank with you, I am of the mind that his government and his leadership was fundamentally flawed. I will represent a new direction from now on."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14635,
+        "fields": {
+            "question": 14623,
+            "description": "Whatever your position on Iraq, the undeniable truth is that public trust in the government has been fundamentally eroded. With Iraq, I will bring about the work of change. But, our work on the economy is something I plan to keep strong and stable."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14641,
+        "fields": {
+            "question": 14623,
+            "description": "My chief concern during Tony’s time in office was, executing faithfully, my office as Chancellor of the Exchequer. Beyond that, I do not have much comment to provide on, heh, Tony Blair’s time as Prime Minister."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14646,
+        "fields": {
+            "question": 14645,
+            "description": "Michael Howard represents the typical Tory politicians that governed during the disastrous tenure of the last Major government. He is one of them, and will not have the credibility to lead this country in the stable manner we have."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14647,
+        "fields": {
+            "question": 14645,
+            "description": "Mr Howard may boast about record and competence, but his time in government was the epitome of stagnation and unemployment. Both of which rose dramatically under him. He presided over inflation, the ERM blowout, his record is not worthy for the office."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14648,
+        "fields": {
+            "question": 14645,
+            "description": "The ferocity and intensity of Mr Howard’s attacks on our nation’s immigrants should be of concern to all who have been through this campaign. The utter vilification of them, coupled with his draconian policies, should be wholeheartedly rejected this May."
         }
     }
 ]
@@ -12544,6 +12833,296 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12543,
             "global_multiplier": -0.006
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14581,
+        "fields": {
+            "answer": 14579,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14582,
+        "fields": {
+            "answer": 14579,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14586,
+        "fields": {
+            "answer": 14584,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14587,
+        "fields": {
+            "answer": 14584,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14588,
+        "fields": {
+            "answer": 14584,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14593,
+        "fields": {
+            "answer": 14590,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14598,
+        "fields": {
+            "answer": 14596,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14600,
+        "fields": {
+            "answer": 14596,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14604,
+        "fields": {
+            "answer": 14602,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14605,
+        "fields": {
+            "answer": 14602,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14610,
+        "fields": {
+            "answer": 14608,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14615,
+        "fields": {
+            "answer": 14613,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14618,
+        "fields": {
+            "answer": 14613,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14621,
+        "fields": {
+            "answer": 14619,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14626,
+        "fields": {
+            "answer": 14624,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14627,
+        "fields": {
+            "answer": 14624,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14632,
+        "fields": {
+            "answer": 14630,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14637,
+        "fields": {
+            "answer": 14635,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14638,
+        "fields": {
+            "answer": 14635,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14643,
+        "fields": {
+            "answer": 14641,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14652,
+        "fields": {
+            "answer": 14646,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.0125
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14653,
+        "fields": {
+            "answer": 14646,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14654,
+        "fields": {
+            "answer": 14646,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14655,
+        "fields": {
+            "answer": 14647,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14656,
+        "fields": {
+            "answer": 14647,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14657,
+        "fields": {
+            "answer": 14647,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14658,
+        "fields": {
+            "answer": 14648,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14659,
+        "fields": {
+            "answer": 14648,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14660,
+        "fields": {
+            "answer": 14648,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
     }
 ]
 
@@ -15827,6 +16406,196 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0.5,
             "issue_importance": 2
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14577,
+        "fields": {
+            "answer": 14570,
+            "issue": "27",
+            "issue_score": 1,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14583,
+        "fields": {
+            "answer": 14579,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14589,
+        "fields": {
+            "answer": 14584,
+            "issue": 30,
+            "issue_score": -0.55,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14594,
+        "fields": {
+            "answer": 14590,
+            "issue": 30,
+            "issue_score": -0.7,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14599,
+        "fields": {
+            "answer": 14596,
+            "issue": 30,
+            "issue_score": -0.8,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14606,
+        "fields": {
+            "answer": 14602,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14607,
+        "fields": {
+            "answer": 14602,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14611,
+        "fields": {
+            "answer": 14608,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14612,
+        "fields": {
+            "answer": 14608,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14616,
+        "fields": {
+            "answer": 14613,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14617,
+        "fields": {
+            "answer": 14613,
+            "issue": 30,
+            "issue_score": 0.6,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14622,
+        "fields": {
+            "answer": 14619,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14628,
+        "fields": {
+            "answer": 14624,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14629,
+        "fields": {
+            "answer": 14624,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14633,
+        "fields": {
+            "answer": 14630,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14634,
+        "fields": {
+            "answer": 14630,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14639,
+        "fields": {
+            "answer": 14635,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14640,
+        "fields": {
+            "answer": 14635,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14644,
+        "fields": {
+            "answer": 14641,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
     }
 ]
 
@@ -18852,6 +19621,141 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 14570,
             "candidate": 12543,
             "answer_feedback": "The man you responded to gives a reserved frown as the microphone swings across to the next person to inquire on your performance. Even though you know you are ultimately on the right side of history, icy glares still emanate from a precipitous proportion of the audience. in <i>their</i> eyes, all you did was unfairly hit their finances."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14580,
+        "fields": {
+            "answer": 14579,
+            "candidate": 12543,
+            "answer_feedback": "Sat opposite you in Washington D.C., Bush and Cheney listen politely, but wave away any notion of building up a more firm case. The ‘decider’ is already committed to razing Iraq into flames. Compounded with Greenstock throwing in the towel with France's veto of a second resolution, you feel the walls closing in – but you have to stick it through – you convince yourself."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14585,
+        "fields": {
+            "answer": 14584,
+            "candidate": 12543,
+            "answer_feedback": "Rather soon, government intelligence comes back with imagery of nuclear supply coming in from Africa, the claim is formed that Hussein could launch his WMDs in “45 minutes”. It’s… dubious, to put it bluntly. But you’re going to stick to your decision – you convince yourself – it will be alright, they’ll find assured evidence when the rockets flare."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14591,
+        "fields": {
+            "answer": 14590,
+            "candidate": 12543,
+            "answer_feedback": "Cheney seems hesitant after the debacle in Afghanistan, if ultimately acquiescing. The war drums thunder louder and louder. Invasion seems more and more certain as the fear-mongering grips the land across the pond. Not everyone is still on board with it, but the momentum is building, and it may be enough for you to achieve what you believe you must..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14597,
+        "fields": {
+            "answer": 14596,
+            "candidate": 12543,
+            "answer_feedback": "The young man who questioned you nevertheless is applauded raucously. When David Dimbleby needles you on Hutton's back-handed damnation, even your slippery charm begins to wane. The first thing that troubles your conscience are the orange vultures circling in vulnerable Labour seats, with the Tory leeches creeping up from behind. The bleeding will continue, no matter what you do. All you <i>can</i> do, is stall it as much as is humanly possible."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14603,
+        "fields": {
+            "answer": 14602,
+            "candidate": 12543,
+            "answer_feedback": "It is politically natural for you to defend your former boss. In this environment though – one which has become hostile to Blair on the matter of integrity – such an unabashed praise of him is utterly anathema to the Labour base teetering on rebelling by voting Liberal Democrat. In the end, all you end up accomplishing is remaining in the same stagnant position you were in before. When you need to be closing the gap in the polls, and the relit speculation by the media on your relationship with Tony doesn’t help either."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14609,
+        "fields": {
+            "answer": 14608,
+            "candidate": 12543,
+            "answer_feedback": "You may have dove a metre too far, Gordon. Whilst the public is now eternally distrustful of Tony Blair, completely separating yourself from his government comes across as unnecessary and preening towards the antsy base of voters – ones looking like they’ll jump ship. It further dampens your seriousness as the media class questions why you even served as Chancellor since 2001 at all."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14614,
+        "fields": {
+            "answer": 14613,
+            "candidate": 12543,
+            "answer_feedback": "This is the right synthesis to hit. Combined with your shift in regards to the Iraq War, you have effectively nullified Charles Kennedy’s chief electoral boon. Thanks to the stable economy, the difference in closeness between your residencies, and your approval ratings, could not be any greater. Back in his home, meanwhile, Tony feels stung by your rejection of his vision."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14620,
+        "fields": {
+            "answer": 14619,
+            "candidate": 12543,
+            "answer_feedback": "All of the blathering on about Iraq this, Iraq that, it makes your voice box wish it had collapsed in on itself. It all makes you want to curse him for giving you the poison chalice of his premiership. It is only a mere few days that any reprieve from the inquiring press corps is obliterated when you read the narrative the miserly fools are defining about your “subordination” to Blair’s “deceit”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14625,
+        "fields": {
+            "answer": 14624,
+            "candidate": 12543,
+            "answer_feedback": "It is politically natural for you to defend your former boss. In this environment though – one which has become hostile to Blair on the matter of integrity – such an unabashed praise of him is utterly anathema to the Labour base teetering on rebelling by voting Liberal Democrat. In the end, all you end up accomplishing is remaining in the same stagnant position you were in before. When you need to be closing the gap in the polls, and the relit speculation by the media on your relationship with Tony doesn’t help either."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14631,
+        "fields": {
+            "answer": 14630,
+            "candidate": 12543,
+            "answer_feedback": "You may have dove a metre too far, Gordon. Whilst the public is now eternally distrustful of Tony Blair, completely separating yourself from his government comes across as unnecessary and preening towards the antsy base of voters – ones looking like they’ll jump ship. It further dampens your seriousness as the media class questions why you even served as Chancellor since 2001 at all."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14636,
+        "fields": {
+            "answer": 14635,
+            "candidate": 12543,
+            "answer_feedback": "The steady growth of the economy has fed into the story of your “Iron Chancellor” persona. Not that it matters now. Since your statement to essentially maintain the deteriorating situation in Iraq, your criticism of Blair comes across as “utterly dishonest” according to Kennedy."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14642,
+        "fields": {
+            "answer": 14641,
+            "candidate": 12543,
+            "answer_feedback": "All of the blathering on about Iraq this, Iraq that, it makes your voice box wish it had collapsed in on itself. It all makes you want to curse him for giving you the poison chalice of his premiership. It is only a mere few days that any reprieve from the inquiring press corps is obliterated when you read the narrative the miserly fools are defining about your “subordination” to Blair’s “deceit”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14649,
+        "fields": {
+            "answer": 14646,
+            "candidate": 12543,
+            "answer_feedback": "The advertisements and cartoons would practically draw themselves. Even now, Howard has not been able to shake off his “thing of the night” attributed to the man by Anne Widdicombe. The stern-faced and heavy-browed Gordon Brown, versus the nasal and professorial Howard. Trust in your leadership has remained high ever since the end of the fuel crisis, it is prudent to use it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14650,
+        "fields": {
+            "answer": 14647,
+            "candidate": 12543,
+            "answer_feedback": "A general allusion to the suffering of the pound sterling – and peoples’ wallets – is a powerful reminder of what they overwhelmingly rejected. But after the turmoil and chaos that symbolised this half of the decade, the optimism that helped sweep your old Prime Minister to power is a shadow of its former self."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14651,
+        "fields": {
+            "answer": 14648,
+            "candidate": 12543,
+            "answer_feedback": "Howard’s rhetoric has definitely been divisive in the public discourse. On one side are those who finally feel vindicated, and on the other those who believe he is stoking the flames of hatred. The only real effect is the rank-and-file on both major parties being riled up further and further, whilst the LibDems can play the ‘positivity’ card. Those leeches…"
         }
     }
 ]
