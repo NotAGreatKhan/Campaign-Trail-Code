@@ -363,14 +363,55 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12917){
       Negative += 1;
     }
-    if(ans == 12849){
+
+    // OLD LABOUR
+    // Question 5 – 2002 Budget
+    if(ans == 12803){
       OldLab += 1;
     }
+    if(ans == 14392){
+      OldLab += 1;
+    }
+
+    // Question 6 – New Direction?
     if(ans == 12808){
       OldLab += 1;
     }
-    if(ans == 12803){
+
+    // Question 7 – New Labour Legislation Session
+    if(ans == 14464){
       OldLab += 1;
+    }
+    if(ans == 14470){
+      OldLab += 1;
+    }
+
+    // Question 12 – PUB 
+    if(ans == 14209){
+      OldLab += 2;
+    }
+    if(ans == 14216){
+      OldLab += 1;
+    }
+    if(ans == 14223){
+      OldLab += 1;
+    }
+    if(ans == 14230){
+      OldLab -= 1;
+    }
+
+    // Question 12 – PUB (Hutton Inquiry)
+    if(ans == 14238){
+      OldLab += 2;
+    }
+    if(ans == 14245){
+      OldLab += 1;
+    }
+    if(ans == 14252){
+      OldLab += 1;
+    }
+    if(ans == 14259){
+      OldLab -= 1;
     }
 
     // WINS
