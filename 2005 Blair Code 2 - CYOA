@@ -328,6 +328,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12814){
       Resign += 1;
     }
+    if(ans == 14584){
+      Resign += 1;
+    } 
     if(ans == 12819){
       Resign += 1;
     }
