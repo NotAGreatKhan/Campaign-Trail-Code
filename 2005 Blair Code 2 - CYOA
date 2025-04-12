@@ -110,6 +110,34 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
         campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
+        "pk": 14601,
+        "fields": {
+            "priority": 0,
+            "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+            "likelihood": 1
+          }
+        }
+        if(ans == 14430)
+        campaignTrail_temp.questions_json[22] = {
+        "model": "campaign_trail.question",
+        "pk": 14623,
+        "fields": {
+            "priority": 0,
+            "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+            "likelihood": 1
+          }
+        }
+        campaignTrail_temp.questions_json[23] = {
+        "model": "campaign_trail.question",
+        "pk": 14645,
+        "fields": {
+            "priority": 0,
+            "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
+            "likelihood": 1
+          }
+        }
+        campaignTrail_temp.questions_json[24] = {
+        "model": "campaign_trail.question",
         "pk": 14401,
         "fields": {
             "priority": 0,
@@ -119,7 +147,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
     }
     if(ans == 13508){
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 23;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 25;
       Brown = true;
     }
     if(ans == 14123 || ans == 14129){
