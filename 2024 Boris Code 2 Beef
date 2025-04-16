@@ -7207,7 +7207,7 @@ campaignTrail_temp.answer_feedback_json = [
 ]
 
 campaignTrail_temp.candidate_image_url = "http://assets8.lbc.co.uk/2016/29/conservatives-logo---lbc-1468834487-editorial-short-form-1.jpg";
-campaignTrail_temp.running_mate_image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/426px-Boris_Johnson_official_portrait_%28cropped%29.jpg";
+campaignTrail_temp.running_mate_image_url = "https://imgur.com/QohszGq.jpg";
 campaignTrail_temp.candidate_last_name = "Conservatives";
 campaignTrail_temp.running_mate_last_name = "Johnson";
 
