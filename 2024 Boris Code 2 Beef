@@ -16,6 +16,79 @@ var PartyTrust = 10;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
+    // WINS
+    // Question 1 – Victory Speech
+    if(ans == 5139){
+      Wins += 1;
+    }
+
+    // Question 2 – Brexit Bill
+    if(ans == 5147){
+      Wins += 1;
+    }
+
+    // Question 4 – New Projects
+    if(ans == 5154){
+      Wins += 1;
+    }
+    if(ans == 5153){
+      Wins += 1;
+    }
+
+    // Question 5 – First COVID Reaction
+    if(ans == 5155){
+      Wins += 1;
+    }
+
+    // Question 7 – COVID Scheme
+    if(ans == 5185){
+      Wins += 1;
+    }
+    if(ans == 21106){
+      Wins += 1;
+    }
+
+    // Question 8 – Second COVID Reaction
+    if(ans == 5173){
+      Wins += 1;
+    }
+
+    // CREDIBILITY
+    // Question 2
+    if(ans == 5149){
+      Cred -= 1;
+    }
+
+    // Question 3 – Cabinet Shakeup
+    if(ans == 5145){
+      Cred += 1;
+    }
+    if(ans == 5143){
+      Cred -= 1;
+    }
+
+    // Question 5 – First COVID Reaction
+    if(ans == 5157){
+      Cred -= 1;
+    }
+
+    // Question 6 – Barnard Castle
+    if(ans == 5172){
+      Cred += 1;
+    }
+    if(ans == 5171){
+      Cred -= 1;
+    }
+
+    // Question 9 – Kick Out Dom?
+    if(ans == 5263){
+      Cred += 1;
+    }
+
+    // Question 10 – Lockdown Parties?
+    if(ans == 5220){
+      Cred -= 2;
+    }
 
 // General CYOA Stuff
     // Lord Brownlow Donos
@@ -30,8 +103,31 @@ cyoAdventure = function (a) {
       }
     }
   }
+    // Hartlepool By-Election Wallop
+    if(Wins >= 5){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 21158,
+    "fields": {
+        "priority": 0,
+        "description": "It is time for a mini referendum on our government. After that groper Mike Hill was booted out, a by-election has been scheduled for Hartlepool. This is more than a local election, it’s a litmus test. Hartlepool is a key battleground, and the result will be seen as a verdict on our leadership. Now, we just have to sit and wait for the result to trickle in.",
+        "likelihood": 1
+      }
+    }
+  }
+    // Hartlepool By-Election Disappointment
+    if(Wins <= 3){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 21163,
+    "fields": {
+        "priority": 0,
+        "description": "It is time for a mini referendum on our government. After that groper Mike Hill was booted out, a by-election has been scheduled for Hartlepool. This is more than a local election, it’s a litmus test. Hartlepool is a key battleground, and the result will be seen as a verdict on our leadership. Now, we just have to sit and wait for the result to trickle in.",
+        "likelihood": 1
+      }
+    }
+  }
 }
-
 
 campaignTrail_temp.questions_json = [
     {
@@ -147,7 +243,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1053,
         "fields": {
             "priority": 7,
-            "description": "put description here",
+            "description": "It is time for a mini referendum on our government. After that groper Mike Hill was booted out, a by-election has been scheduled for Hartlepool. This is more than a local election, it’s a litmus test. Hartlepool is a key battleground, and the result will be seen as a verdict on our leadership. Now, we just have to sit and wait for the result to trickle in.",
             "likelihood": 1
         }
     },
@@ -156,7 +252,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1060,
         "fields": {
             "priority": 7,
-            "description": "put description here",
+            "description": "Maybe the air contains a whiff of another shakeup. Raab hasn’t exactly been presiding over prawns and cocktails with Afghanistan. He could be replaced with someone more… ideologically pure. Others too, are becoming a nuisance. Does your heart feel stony today, Boris?",
             "likelihood": 1
         }
     },
@@ -165,7 +261,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1068,
         "fields": {
             "priority": 7,
-            "description": "put description here",
+            "description": "Another one of our mates is under bloody fire again. This time, it’s Paterson. Some cooked-up details about bribery payments. What will we do?",
             "likelihood": 1
         }
     },
@@ -447,6 +543,24 @@ campaignTrail_temp.questions_json = [
             "description": "Well dammit Boris, it seems your personal inclinations and habits have gotten the better of you. Donor Lord Brownlow’s money sent to you has been picked up by the media, It's become quite a headache,  The media won’t let go and the story is becoming a thorn in our backside. You need to get them off of your bloody apartment taste and steer the conversation to the work we’ve been doing.",
             "likelihood": 1
         }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 21158,
+        "fields": {
+            "priority": 7,
+            "description": "It is time for a mini referendum on our government. After that groper Mike Hill was booted out, a by-election has been scheduled for Hartlepool. This is more than a local election, it’s a litmus test. Hartlepool is a key battleground, and the result will be seen as a verdict on our leadership. Now, we just have to sit and wait for the result to trickle in.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 21163,
+        "fields": {
+            "priority": 7,
+            "description": "It is time for a mini referendum on our government. After that groper Mike Hill was booted out, a by-election has been scheduled for Hartlepool. This is more than a local election, it’s a litmus test. Hartlepool is a key battleground, and the result will be seen as a verdict on our leadership. Now, we just have to sit and wait for the result to trickle in.",
+            "likelihood": 1
+        }
     }
 ]
 
@@ -632,31 +746,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5176,
         "fields": {
             "question": 1053,
-            "description": "Donald Trump is dangerously divisive and completely unqualified to serve as President. His constantly inflammatory rhetoric towards women, Muslims, Hispanics, and others is Exhibit A, and I plan to call this out repeatedly as I campaign."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5177,
-        "fields": {
-            "question": 1053,
-            "description": "Donald Trump's actions and comments about women are reprehensible. It would be asburd of us not to bring that up as we campaign, along with other important issues."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5178,
-        "fields": {
-            "question": 1053,
-            "description": "This campaign is about our fight for hard working American families, regardless of their background. I'm not going to fall into the trap of making this election about Trump's behavior, instead of his disastrous policies."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5179,
-        "fields": {
-            "question": 1053,
-            "description": "This campaign is about my experience and ability to serve as President. We're going to focus primarily on those qualifications as I campaign. The fact that I'm a woman speaks for itself."
+            "description": "Right then, we watch, we wait, and we see what unfolds. Hartlepool is a big moment, no doubt about it—a chance to show that the people back us to get the job done. Fingers crossed."
         }
     },
     {
@@ -728,7 +818,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5200,
         "fields": {
             "question": 1060,
-            "description": "I think it's obvious that we plan to spend a lot of time campaigning with Bernie Sanders, and that we're making a real effort to incorporate his message into our campaign."
+            "description": "We’re getting rid of Williamson and Jenrick, but we’re keeping Raab on. No ifs and no buts."
         }
     },
     {
@@ -736,7 +826,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5201,
         "fields": {
             "question": 1060,
-            "description": "I want us to do a high-profile appearance with Bernie in Michigan, once the campaign gets going. We don't agree on every issue, but I want to embrace his economic message and show people that our party is unified."
+            "description": "Get rid of Williamson, Jenrick, and Raab. Bring in Truss instead. She’s immensely capable and intelligent—she’ll do a crack-up job."
         }
     },
     {
@@ -744,15 +834,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5202,
         "fields": {
             "question": 1060,
-            "description": "Bernie Sanders has offered to campaign extensively on our behalf, and of course we want to have him on the trail. I'm willing to make a few small promises to make that happen."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5203,
-        "fields": {
-            "question": 1060,
-            "description": "I'd love to have Bernie Sanders out there campaigning for us, but the things he is asking for are simply unrealistic. I'm not going to sit here and bargain away my platform when I'm the one who won the nomination."
+            "description": "No, no, no—we’re not doing any of that kerfuffle. Keep the cabinet as is and chug along."
         }
     },
     {
@@ -864,7 +946,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5231,
         "fields": {
             "question": 1068,
-            "description": "This deal was one of Barack Obama's real achievements during his time in office that we will uphold and enforce. I fully support it."
+            "description": "This is just going to become more trouble than it’s worth. Cut him loose."
         }
     },
     {
@@ -872,7 +954,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5232,
         "fields": {
             "question": 1068,
-            "description": "Like many people, I had some concerns with specific provisions in this deal. But overall, it is a worthwhile step in the right direction."
+            "description": "We can’t lose one of our lads. Stick it through, change the committee through a vote, keep up the fight."
         }
     },
     {
@@ -880,15 +962,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5233,
         "fields": {
             "question": 1068,
-            "description": "This is definitely something that my team will approach with fresh eyes when I am President, but I can't say more than that right now."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 5234,
-        "fields": {
-            "question": 1068,
-            "description": "Donald Trump says he will tear this deal up, should he somehow win this election. That is dangerous and ill-conceived, and really shows how unfit he is to guide America's foreign policy."
+            "description": "Just issue a standard defence and wait this out. It’ll all blow over."
         }
     },
     {
@@ -1145,6 +1219,22 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 21142,
             "description": "This is yet another absurd attempt by the left, Tofu eating Wokerati, to sling mud at this government, and I won’t stand for it! We’re delivering on our promises, getting the country back on track, and I refuse to let this nonsense distract us from the real work at hand."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21159,
+        "fields": {
+            "question": 21158,
+            "description": "Right then, we watch, we wait, and we see what unfolds. Hartlepool is a big moment, no doubt about it—a chance to show that the people back us to get the job done. Fingers crossed."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21164,
+        "fields": {
+            "question": 21163,
+            "description": "Right then, we watch, we wait, and we see what unfolds. Hartlepool is a big moment, no doubt about it—a chance to show that the people back us to get the job done. Fingers crossed."
         }
     }
 ]
@@ -2792,7 +2882,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20815,
             "state": 20731,
-            "state_multiplier": 3
+            "state_multiplier": 2
         }
     },
     {
@@ -2972,7 +3062,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20833,
             "state": 20779,
-            "state_multiplier": 42
+            "state_multiplier": 47
         }
     },
     {
@@ -3305,7 +3395,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20887,
             "state": 20785,
-            "state_multiplier": 32
+            "state_multiplier": 31
         }
     },
     {
@@ -3521,7 +3611,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20923,
             "state": 20785,
-            "state_multiplier": 18
+            "state_multiplier": 17
         }
     },
     {
@@ -3746,7 +3836,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20977,
             "state": 20719,
-            "state_multiplier": 1
+            "state_multiplier": 2
         }
     },
     {
@@ -3764,7 +3854,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20977,
             "state": 20731,
-            "state_multiplier": 2
+            "state_multiplier": 1
         }
     },
     {
@@ -3836,7 +3926,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20977,
             "state": 20779,
-            "state_multiplier": 1
+            "state_multiplier": 0.1
         }
     },
     {
@@ -3845,7 +3935,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20977,
             "state": 20785,
-            "state_multiplier": 4
+            "state_multiplier": 0.3
         }
     },
     {
@@ -3935,7 +4025,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 20995,
             "state": 20773,
-            "state_multiplier": 8
+            "state_multiplier": 9
         }
     },
     {
@@ -3962,7 +4052,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 20719,
-            "state_multiplier": 21
+            "state_multiplier": 16
         }
     },
     {
@@ -3971,7 +4061,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 20725,
-            "state_multiplier": 7
+            "state_multiplier": 6
         }
     },
     {
@@ -3980,7 +4070,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 20731,
-            "state_multiplier": 10
+            "state_multiplier": 11
         }
     },
     {
@@ -3989,7 +4079,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 20737,
-            "state_multiplier": 4
+            "state_multiplier": 3
         }
     },
     {
@@ -4016,7 +4106,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 20755,
-            "state_multiplier": 3
+            "state_multiplier": 2
         }
     },
     {
@@ -4043,7 +4133,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 20773,
-            "state_multiplier": 12
+            "state_multiplier": 9
         }
     },
     {
@@ -4052,7 +4142,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 203,
             "state": 20779,
-            "state_multiplier": 1
+            "state_multiplier": 0.1
         }
     },
     {
@@ -4070,7 +4160,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20719,
-            "state_multiplier": 13
+            "state_multiplier": 11
         }
     },
     {
@@ -4079,7 +4169,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20725,
-            "state_multiplier": 12
+            "state_multiplier": 11
         }
     },
     {
@@ -4097,7 +4187,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20737,
-            "state_multiplier": 13
+            "state_multiplier": 11
         }
     },
     {
@@ -4106,7 +4196,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20743,
-            "state_multiplier": 14
+            "state_multiplier": 11
         }
     },
     {
@@ -4115,7 +4205,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20749,
-            "state_multiplier": 22
+            "state_multiplier": 20
         }
     },
     {
@@ -4133,7 +4223,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20761,
-            "state_multiplier": 32
+            "state_multiplier": 29
         }
     },
     {
@@ -4142,7 +4232,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20767,
-            "state_multiplier": 32
+            "state_multiplier": 27
         }
     },
     {
@@ -4151,7 +4241,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20773,
-            "state_multiplier": 12
+            "state_multiplier": 10
         }
     },
     {
@@ -4160,7 +4250,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 202,
             "state": 20779,
-            "state_multiplier": 17
+            "state_multiplier": 15
         }
     },
     {
@@ -4178,7 +4268,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20719,
-            "state_multiplier": 42
+            "state_multiplier": 45
         }
     },
     {
@@ -4196,7 +4286,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20731,
-            "state_multiplier": 32
+            "state_multiplier": 34
         }
     },
     {
@@ -4205,7 +4295,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20737,
-            "state_multiplier": 30
+            "state_multiplier": 31
         }
     },
     {
@@ -4223,7 +4313,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20749,
-            "state_multiplier": 22
+            "state_multiplier": 23
         }
     },
     {
@@ -4232,7 +4322,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20755,
-            "state_multiplier": 45
+            "state_multiplier": 51
         }
     },
     {
@@ -4241,7 +4331,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20761,
-            "state_multiplier": 20
+            "state_multiplier": 22
         }
     },
     {
@@ -4250,7 +4340,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20767,
-            "state_multiplier": 19
+            "state_multiplier": 21
         }
     },
     {
@@ -4259,7 +4349,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20773,
-            "state_multiplier": 37
+            "state_multiplier": 40
         }
     },
     {
@@ -4268,7 +4358,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 200,
             "state": 20779,
-            "state_multiplier": 18
+            "state_multiplier": 20
         }
     },
     {
@@ -4286,7 +4376,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20719,
-            "state_multiplier": 41
+            "state_multiplier": 48
         }
     },
     {
@@ -4304,7 +4394,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20731,
-            "state_multiplier": 43
+            "state_multiplier": 45
         }
     },
     {
@@ -4313,7 +4403,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20737,
-            "state_multiplier": 55
+            "state_multiplier": 59
         }
     },
     {
@@ -4322,7 +4412,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20743,
-            "state_multiplier": 56
+            "state_multiplier": 58
         }
     },
     {
@@ -4331,7 +4421,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20749,
-            "state_multiplier": 60
+            "state_multiplier": 62
         }
     },
     {
@@ -4340,7 +4430,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20755,
-            "state_multiplier": 35
+            "state_multiplier": 36
         }
     },
     {
@@ -4349,7 +4439,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20761,
-            "state_multiplier": 57
+            "state_multiplier": 60
         }
     },
     {
@@ -4358,7 +4448,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20767,
-            "state_multiplier": 52
+            "state_multiplier": 54
         }
     },
     {
@@ -4367,7 +4457,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20773,
-            "state_multiplier": 38
+            "state_multiplier": 39
         }
     },
     {
@@ -4376,7 +4466,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 201,
             "state": 20779,
-            "state_multiplier": 30
+            "state_multiplier": 28
         }
     },
     {
@@ -4398,37 +4488,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5176,
             "candidate": 201,
             "affected_candidate": 200,
-            "global_multiplier": -0.0025
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3088,
-        "fields": {
-            "answer": 5177,
-            "candidate": 201,
-            "affected_candidate": 200,
-            "global_multiplier": -0.001
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3089,
-        "fields": {
-            "answer": 5178,
-            "candidate": 201,
-            "affected_candidate": 200,
-            "global_multiplier": 0.001
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3090,
-        "fields": {
-            "answer": 5179,
-            "candidate": 201,
-            "affected_candidate": 200,
-            "global_multiplier": 0.001
+            "global_multiplier": -0.003
         }
     },
     {
@@ -4648,7 +4708,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5176,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": -0.001
+            "global_multiplier": 0.005
         }
     },
     {
@@ -4688,7 +4748,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5200,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": 0.006
+            "global_multiplier": -0.002
         }
     },
     {
@@ -4698,17 +4758,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5201,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": 0.003
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3154,
-        "fields": {
-            "answer": 5203,
-            "candidate": 201,
-            "affected_candidate": 201,
-            "global_multiplier": -0.006
+            "global_multiplier": 0.0065
         }
     },
     {
@@ -4817,8 +4867,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 5200,
             "candidate": 201,
-            "affected_candidate": 202,
-            "global_multiplier": 0.02
+            "affected_candidate": 200,
+            "global_multiplier": 0.003
         }
     },
     {
@@ -4903,32 +4953,12 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 3210,
-        "fields": {
-            "answer": 5200,
-            "candidate": 201,
-            "affected_candidate": 203,
-            "global_multiplier": -0.02
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 3211,
         "fields": {
             "answer": 5201,
             "candidate": 201,
-            "affected_candidate": 203,
-            "global_multiplier": -0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 3212,
-        "fields": {
-            "answer": 5203,
-            "candidate": 201,
-            "affected_candidate": 203,
-            "global_multiplier": 0.1032
+            "affected_candidate": 200,
+            "global_multiplier": 0.003
         }
     },
     {
@@ -5098,7 +5128,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 5233,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": -0.004
+            "global_multiplier": -0.01
         }
     },
     {
@@ -5660,6 +5690,106 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 201,
             "global_multiplier": -0.01
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21161,
+        "fields": {
+            "answer": 21159,
+            "candidate": 201,
+            "affected_candidate": 200,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21162,
+        "fields": {
+            "answer": 21159,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21166,
+        "fields": {
+            "answer": 21164,
+            "candidate": 201,
+            "affected_candidate": 200,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21167,
+        "fields": {
+            "answer": 21164,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21169,
+        "fields": {
+            "answer": 5202,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21172,
+        "fields": {
+            "answer": 5201,
+            "candidate": 201,
+            "affected_candidate": 203,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21178,
+        "fields": {
+            "answer": 5232,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21179,
+        "fields": {
+            "answer": 5232,
+            "candidate": 201,
+            "affected_candidate": 200,
+            "global_multiplier": 0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21180,
+        "fields": {
+            "answer": 5232,
+            "candidate": 201,
+            "affected_candidate": 202,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 21182,
+        "fields": {
+            "answer": 5231,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.004
+        }
     }
 ]
 
@@ -5756,46 +5886,6 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
-        "pk": 2664,
-        "fields": {
-            "answer": 5178,
-            "issue": 100,
-            "issue_score": 0.45,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2665,
-        "fields": {
-            "answer": 5178,
-            "issue": 101,
-            "issue_score": 0.3,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2666,
-        "fields": {
-            "answer": 5179,
-            "issue": 100,
-            "issue_score": 0.333,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2667,
-        "fields": {
-            "answer": 5179,
-            "issue": 102,
-            "issue_score": 0.25,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
         "pk": 2671,
         "fields": {
             "answer": 5189,
@@ -5822,106 +5912,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 101,
             "issue_score": -0.4,
             "issue_importance": 4
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2679,
-        "fields": {
-            "answer": 5200,
-            "issue": 100,
-            "issue_score": 0.65,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2680,
-        "fields": {
-            "answer": 5200,
-            "issue": 101,
-            "issue_score": 0.65,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2681,
-        "fields": {
-            "answer": 5200,
-            "issue": 102,
-            "issue_score": 0.65,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2682,
-        "fields": {
-            "answer": 5200,
-            "issue": 103,
-            "issue_score": 0.65,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2683,
-        "fields": {
-            "answer": 5200,
-            "issue": 104,
-            "issue_score": 0.65,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2684,
-        "fields": {
-            "answer": 5201,
-            "issue": 100,
-            "issue_score": 0.5,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2685,
-        "fields": {
-            "answer": 5201,
-            "issue": 101,
-            "issue_score": 0.5,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2686,
-        "fields": {
-            "answer": 5203,
-            "issue": 100,
-            "issue_score": 0.1,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2687,
-        "fields": {
-            "answer": 5203,
-            "issue": 101,
-            "issue_score": -0.2,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 2688,
-        "fields": {
-            "answer": 5203,
-            "issue": 102,
-            "issue_score": 0,
-            "issue_importance": 2
         }
     },
     {
@@ -6139,9 +6129,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2887,
         "fields": {
             "answer": 5231,
-            "issue": 102,
-            "issue_score": 0.5,
-            "issue_importance": 1
+            "issue": 100,
+            "issue_score": -1,
+            "issue_importance": 2
         }
     },
     {
@@ -6149,9 +6139,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2888,
         "fields": {
             "answer": 5232,
-            "issue": 102,
-            "issue_score": 0.2,
-            "issue_importance": 1
+            "issue": 100,
+            "issue_score": -1,
+            "issue_importance": 4
         }
     },
     {
@@ -6159,9 +6149,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 2889,
         "fields": {
             "answer": 5233,
-            "issue": 102,
-            "issue_score": -0.3,
-            "issue_importance": 3
+            "issue": 100,
+            "issue_score": -1,
+            "issue_importance": 4
         }
     },
     {
@@ -6523,6 +6513,66 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": -1,
             "issue_importance": 7
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21170,
+        "fields": {
+            "answer": 5202,
+            "issue": "100",
+            "issue_score": 0.4,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21171,
+        "fields": {
+            "answer": 5202,
+            "issue": 101,
+            "issue_score": 0.4,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21173,
+        "fields": {
+            "answer": 5200,
+            "issue": "100",
+            "issue_score": 0.3,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21174,
+        "fields": {
+            "answer": 5200,
+            "issue": 101,
+            "issue_score": 0.3,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21177,
+        "fields": {
+            "answer": 5233,
+            "issue": 104,
+            "issue_score": -1,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 21181,
+        "fields": {
+            "answer": 5232,
+            "issue": 104,
+            "issue_score": -1,
+            "issue_importance": 4
+        }
     }
 ]
 
@@ -6733,34 +6783,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5176,
             "candidate": 201,
-            "answer_feedback": "It's fine to bring the attack to Trump. Just make sure to mention what you have to offer as well."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2658,
-        "fields": {
-            "answer": 5177,
-            "candidate": 201,
-            "answer_feedback": "Your best bet is to focus both on Trump's behavior, along with other economic and social issues that Americans and Democrats find important."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2659,
-        "fields": {
-            "answer": 5178,
-            "candidate": 201,
-            "answer_feedback": "You should definitely be discussing pocketbook issues on the trail, but don't forget how unpopular Trump is as well."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2660,
-        "fields": {
-            "answer": 5179,
-            "candidate": 201,
-            "answer_feedback": "You should definitely be discussing your qualifications on the trail, but don't forget how unpopular Trump is as well."
+            "answer_feedback": "A massive win. Mortimer crushes Williams, Starmer clings on, but his confidence is shattered. Momentum builds. The Red Wall crumbles. Tory HQ dares to whisper of legacy."
         }
     },
     {
@@ -6832,7 +6855,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5200,
             "candidate": 201,
-            "answer_feedback": "There are pros and cons to embracing Bernie so closely."
+            "answer_feedback": "Williamson was a walking disaster with a penchant for tarantulas and tangents, Jenrick hardly lit up the room, and Raab—well, Kabul was… not ideal. But you stand firm. Some say you missed your moment for momentum. Others admire your loyalty, however costly."
         }
     },
     {
@@ -6841,16 +6864,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5201,
             "candidate": 201,
-            "answer_feedback": "Who knows if it means anything nationally, but a raucous crowd turned out to support the two of you."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 2680,
-        "fields": {
-            "answer": 5203,
-            "candidate": 201,
-            "answer_feedback": "The reluctance of Bernie to endorse you after a couple of personal meetings fuels rampant speculation about the causes."
+            "answer_feedback": "The reshuffle sends a small thrill through Westminster. Red meat for the base, headlines for the press. Truss arrives with her trademark gusto, complete with Union Jack in the background. Critics murmur that Raab was the real price, Kabul still fresh in their minds, but you? You simply nod and get on with the business of government."
         }
     },
     {
@@ -7102,7 +7116,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5233,
             "candidate": 201,
-            "answer_feedback": "Behind the scenes, Obama is not too pleased with your lukewarm stance. One way or another, rumors of a rift leak into the political press."
+            "answer_feedback": "Except it doesn’t. The longer you wait, the worse it gets. The headlines pile up, the pressure mounts, and eventually, Paterson calls it a day. Your government, meanwhile, takes yet another bruising—death by a thousand leaks."
         }
     },
     {
@@ -7203,6 +7217,51 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 201,
             "answer_feedback": "The faithful lap it up—red meat and righteous fury. But the centre winces, and the opposition turns up the volume. You’ve become the headline, Boris, and not in the way you'd like."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21160,
+        "fields": {
+            "answer": 21159,
+            "candidate": 201,
+            "answer_feedback": "A landslide. Mortimer romps home, Williams is flattened. Labour implodes. And best of all! Starmer resigns. You strut across the airwaves, Thatcher-esque in tone. “A new dawn,” your team whispers. You just might believe it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21165,
+        "fields": {
+            "answer": 21164,
+            "candidate": 201,
+            "answer_feedback": "A victory—but not a triumph. Mortimer wins, yes, but the margins disappoint. Labour licks its wounds but refuses to fold. Starmer survives, emboldened slightly. The tide hasn’t turned just yet."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21168,
+        "fields": {
+            "answer": 5202,
+            "candidate": 201,
+            "answer_feedback": "The reshuffle that never was. The window opens, then closes with a thud. Some call it steadfastness, others missed opportunity. Williamson survives to gaffe another day, and the winter looms without the boost of a new face or a change in mood."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21175,
+        "fields": {
+            "answer": 5231,
+            "candidate": 201,
+            "answer_feedback": "A clean break. Painful, yes, but it keeps the rot from spreading. The press does its usual dance, but at least the circus is short-lived. You survive the week, though the air around you feels just a little more combustible."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21176,
+        "fields": {
+            "answer": 5232,
+            "candidate": 20815,
+            "answer_feedback": "It’s a spectacular mess. Rees-Mogg is wheeled out to tinker with the machinery of Parliament, trying to swap out the referees mid-match. The backlash is ferocious. The Opposition smells blood, the media runs riot, and in the end, Paterson resigns anyway—leaving you looking like you fought a grubby battle only to lose twice."
+        }
     }
 ]
 
@@ -7218,7 +7277,7 @@ campaignTrail_temp.jet_data = [{
     "banner_data": {
         "canName": "Conservatives",
         "runName": "Johnson",
-        "runImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/426px-Boris_Johnson_official_portrait_%28cropped%29.jpg",
+        "runImage": "https://imgur.com/QohszGq.jpg",
         "canImage": "http://assets8.lbc.co.uk/2016/29/conservatives-logo---lbc-1468834487-editorial-short-form-1.jpg"
     },
     "cyoa_enabled": true,
@@ -7248,7 +7307,9 @@ campaignTrail_temp.jet_data = [{
         "20959": "TUV",
         "20977": "Ind/Others",
         "20995": "Plaid Cymru"
-    }
+    },
+    "endings_enabled": false,
+    "ending_data": {}
 }
 ]
 
