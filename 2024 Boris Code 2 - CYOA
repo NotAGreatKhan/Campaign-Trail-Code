@@ -6,6 +6,79 @@ var PartyTrust = 10;
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
 
+    // WINS
+    // Question 1 – Victory Speech
+    if(ans == 5139){
+      Wins += 1;
+    }
+
+    // Question 2 – Brexit Bill
+    if(ans == 5147){
+      Wins += 1;
+    }
+
+    // Question 4 – New Projects
+    if(ans == 5154){
+      Wins += 1;
+    }
+    if(ans == 5153){
+      Wins += 1;
+    }
+
+    // Question 5 – First COVID Reaction
+    if(ans == 5155){
+      Wins += 1;
+    }
+
+    // Question 7 – COVID Scheme
+    if(ans == 5185){
+      Wins += 1;
+    }
+    if(ans == 21106){
+      Wins += 1;
+    }
+
+    // Question 8 – Second COVID Reaction
+    if(ans == 5173){
+      Wins += 1;
+    }
+
+    // CREDIBILITY
+    // Question 2
+    if(ans == 5149){
+      Cred -= 1;
+    }
+
+    // Question 3 – Cabinet Shakeup
+    if(ans == 5145){
+      Cred += 1;
+    }
+    if(ans == 5143){
+      Cred -= 1;
+    }
+
+    // Question 5 – First COVID Reaction
+    if(ans == 5157){
+      Cred -= 1;
+    }
+
+    // Question 6 – Barnard Castle
+    if(ans == 5172){
+      Cred += 1;
+    }
+    if(ans == 5171){
+      Cred -= 1;
+    }
+
+    // Question 9 – Kick Out Dom?
+    if(ans == 5263){
+      Cred += 1;
+    }
+
+    // Question 10 – Kick Out Dom?
+    if(ans == 5220){
+      Cred -= 2;
+    }
 
 // General CYOA Stuff
     // Lord Brownlow Donos
@@ -16,6 +89,30 @@ cyoAdventure = function (a) {
     "fields": {
         "priority": 0,
         "description": "Well dammit Boris, it seems your personal inclinations and habits have gotten the better of you. Donor Lord Brownlow’s money sent to you has been picked up by the media, It's become quite a headache,  The media won’t let go and the story is becoming a thorn in our backside. You need to get them off of your bloody apartment taste and steer the conversation to the work we’ve been doing.",
+        "likelihood": 1
+      }
+    }
+  }
+    // Hartlepool By-Election Wallop
+    if(Wins >= 5){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 21158,
+    "fields": {
+        "priority": 0,
+        "description": "It is time for a mini referendum on our government. After that groper Mike Hill was booted out, a by-election has been scheduled for Hartlepool. This is more than a local election, it’s a litmus test. Hartlepool is a key battleground, and the result will be seen as a verdict on our leadership. Now, we just have to sit and wait for the result to trickle in.",
+        "likelihood": 1
+      }
+    }
+  }
+    // Hartlepool By-Election Disappointment
+    if(Wins <= 3){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 21163,
+    "fields": {
+        "priority": 0,
+        "description": "It is time for a mini referendum on our government. After that groper Mike Hill was booted out, a by-election has been scheduled for Hartlepool. This is more than a local election, it’s a litmus test. Hartlepool is a key battleground, and the result will be seen as a verdict on our leadership. Now, we just have to sit and wait for the result to trickle in.",
         "likelihood": 1
       }
     }
