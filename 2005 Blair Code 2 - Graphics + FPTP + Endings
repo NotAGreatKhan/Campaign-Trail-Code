@@ -662,7 +662,9 @@ You fought, you triumphed, and in the end, the lion’s share has handsomely fal
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
+
 corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
+
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
@@ -672,6 +674,16 @@ document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
 document.body.background = "https://imgur.com/erWHhIe.png";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+
+.game_header {
+    background: linear-gradient(to bottom, #df8191, #df8191);
+    height: 75px; 
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.game_header h2 {     
+    background: linear-gradient(to bottom, #d03e54, #df8191);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
 } 
 
 else if (quickstats[0] >= 400) {    
