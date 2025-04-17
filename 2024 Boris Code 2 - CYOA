@@ -75,7 +75,7 @@ cyoAdventure = function (a) {
       Cred += 1;
     }
 
-    // Question 10 – Kick Out Dom?
+    // Question 10 – Lockdown Parties?
     if(ans == 5220){
       Cred -= 2;
     }
