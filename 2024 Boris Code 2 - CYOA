@@ -43,6 +43,21 @@ cyoAdventure = function (a) {
       Wins += 1;
     }
 
+    // Question 11 – Third COVID Reaction
+    if(ans == 5198){
+      Wins -= 1;
+    }
+
+    // Question 12 – Brownlow Decor Scandal
+    if(ans == 21148){
+      Wins += 1;
+    }
+
+    // Question 14 – The Raab Debacle
+    if(ans == 5201){
+      Wins += 1;
+    }
+
     // CREDIBILITY
     // Question 2
     if(ans == 5149){
@@ -78,6 +93,27 @@ cyoAdventure = function (a) {
     // Question 10 – Lockdown Parties?
     if(ans == 5220){
       Cred -= 2;
+    }
+
+    // Question 11 – Third COVID Reaction
+    if(ans == 5197){
+      Cred -= 1;
+    }
+
+    // Question 12 – Brownlow Decor Scandal
+    if(ans == 5190){
+      Cred -= 1;
+    }
+    if(ans == 5191 || ans == 21153){
+      Cred -= 1;
+    }
+
+    // Question 15 – Brownlow Decor Scandal
+    if(ans == 5233){
+      Cred -= 1;
+    }
+    if(ans == 5232){
+      Cred -= 1;
     }
 
 // General CYOA Stuff
