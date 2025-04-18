@@ -16,6 +16,7 @@ var Negative = 0;
 var OldLab = 0;
 var Cred = 2;
 var Brown = false;
+var EUCnstn = 0;
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
     if(ans == 12807){
@@ -151,7 +152,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "pk": 14401,
         "fields": {
             "priority": 0,
-            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
             "likelihood": 1
           }
         }
@@ -340,7 +341,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 14584){
       Resign += 1;
-    }
+    } 
     if(ans == 12819){
       Resign += 1;
     }
@@ -373,7 +374,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12917){
       Negative += 1;
     }
-    
+
     // OLD LABOUR
     // Question 5 – 2002 Budget
     if(ans == 12803){
@@ -464,6 +465,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // Question 17 - Leigh Amendment to CPA 
     if(ans == 12847){
       Wins += 1;
+    }
+
+    // EU CONSTITUTION
+    if(ans == 13861){
+      EUCnstn += 1;
     }
 
 
@@ -737,6 +743,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(EUCnstn == 1){
+    campaignTrail_temp.questions_json[34] = {
+    "model": "campaign_trail.question",
+    "pk": 14679,
+    "fields": {
+        "priority": 0,
+        "description": "You're sitting alone in your office in No. 10. The gentle rustling of papers and the clicking of pens does little to break the deafening silence, but within your mind, a great tectonic eventuality troubles you.<p></p>When John Major joined the ERM – to near universal acclamation – the Pound Sterling's troubles forced an unmagnanimous crash out of the mechanism. When Thatcher pedalled her Euroskepticism, it fueled the rise of a populist faction yet to bear its greatest dream: a withdrawal from Europe outright. Everytime the grand project truly got under way, it stalled, backtracked, became little more than wasted potential. But not anymore. Within your hand rests the opportunity to bring the continent together in a new order. The only question, is how.",
+        "likelihood": 1
+      }
+    }
+  }
 
 // France Path
     if(ans == 13554){
@@ -763,6 +780,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+
+// Local + European Elections
     if(ans == 12797){
     campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
@@ -800,7 +819,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Successful France
-    if((ans == 12797 && ans == 13619) && Cred >= 5){
+    if((ans == 12797 && ans == 13619) && (Cred >= 8)){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13860,
@@ -826,7 +845,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Successful Netherlands
-    if((ans == 13557 && ans == 13873) && Cred >= 5){
+    if((ans == 13557 && ans == 13873) && (Cred >= 8)){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13894,
@@ -837,6 +856,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+
+// Battered Michael Howard
     if(ans == 12797){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
@@ -1100,6 +1121,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 }
 
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1268,7 +1290,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12856,
         "fields": {
             "priority": 0,
-            "description": "[April 6, 2005] Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Michael Howard has just attacked your government's record, claiming you broke promises on taxes, immigration and university top-up fees, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country...",
+            "description": "[April 6, 2005] Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. the Tory leader has just railed against your government's record, claiming you broke promises on taxes, immigration and university top-up fees, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country.",
             "likelihood": 1
         }
     },
@@ -1934,7 +1956,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14401,
         "fields": {
             "priority": 0,
-            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
             "likelihood": 1
         }
     },
@@ -1998,6 +2020,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14679,
+        "fields": {
+            "priority": 0,
+            "description": "You're sitting alone in your office in No. 10. The gentle rustling of papers and the clicking of pens does little to break the deafening silence, but within your mind, a great tectonic eventuality troubles you.<p></p>When John Major joined the ERM – to near universal acclamation – the Pound Sterling's troubles forced an unmagnanimous crash out of the mechanism. When Thatcher pedalled her Euroskepticism, it fueled the rise of a populist faction yet to bear its greatest dream: a withdrawal from Europe outright. Everytime the grand project truly got under way, it stalled, backtracked, became little more than wasted potential. But not anymore. Within your hand rests the opportunity to bring the continent together in a new order. The only question, is how.",
             "likelihood": 1
         }
     }
@@ -4153,7 +4184,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14452,
         "fields": {
             "question": 14401,
-            "description": "put description here"
+            "description": "The old Labour base must never be rejected, even as we have expanded our coalition since our reformation of the party. I’ll make a speech at a Trade Union Congress, show them I mean business."
         }
     },
     {
@@ -4161,7 +4192,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14453,
         "fields": {
             "question": 14401,
-            "description": "put description here"
+            "description": "The fundamental values of this party are perfectly embodied by the group Citizens UK. They will be part of the future, and it is a future we must move towards. I’ll book a speech there, really energise the youth."
         }
     },
     {
@@ -4169,7 +4200,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14454,
         "fields": {
             "question": 14401,
-            "description": "put description here"
+            "description": "I need to meet the epicentre of British society, the people who are on the fence about supporting Labour this time around. The centre will not die, if anything it has only begun."
         }
     },
     {
@@ -4177,7 +4208,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14455,
         "fields": {
             "question": 14401,
-            "description": "put description here"
+            "description": "Civil liberties and the rights of ordinary citizens must be front and centre, both in economic and social policy. I want to speak to these groups earnestly, it’s the least we could do."
         }
     },
     {
@@ -4338,6 +4369,22 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14645,
             "description": "The ferocity and intensity of Mr Howard’s attacks on our nation’s immigrants should be of concern to all who have been through this campaign. The utter vilification of them, coupled with his draconian policies, should be wholeheartedly rejected this May."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14680,
+        "fields": {
+            "question": 14679,
+            "description": "The principal focus must be on securing the European Constitution's ratification. The Dutch are still feeling sour on it, and one bad referendum may sink it if we are not careful. I'm not one to be careless, with what is at risk."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14681,
+        "fields": {
+            "question": 14679,
+            "description": "There is only one natural, and logical, conclusion that this path can and must reach. The eventual joining of Britain to the Euro. It is something we must see to, starting from the next Parliamentary term. We have the chance to make strides never thought before. We need to think bigger, bolder, and more radical."
         }
     }
 ]
@@ -13167,6 +13214,116 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12587,
             "global_multiplier": -0.004
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14665,
+        "fields": {
+            "answer": 14452,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14666,
+        "fields": {
+            "answer": 14453,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14667,
+        "fields": {
+            "answer": 14454,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14668,
+        "fields": {
+            "answer": 14455,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14670,
+        "fields": {
+            "answer": 14453,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": ""
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14671,
+        "fields": {
+            "answer": 14454,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14678,
+        "fields": {
+            "answer": 14455,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14682,
+        "fields": {
+            "answer": 14680,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14683,
+        "fields": {
+            "answer": 14681,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14686,
+        "fields": {
+            "answer": 14680,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14687,
+        "fields": {
+            "answer": 14681,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.02
+        }
     }
 ]
 
@@ -16640,6 +16797,96 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0,
             "issue_importance": 3
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14669,
+        "fields": {
+            "answer": 14452,
+            "issue": "27",
+            "issue_score": 0.7,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14672,
+        "fields": {
+            "answer": 14453,
+            "issue": 28,
+            "issue_score": 0.3,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14673,
+        "fields": {
+            "answer": 14453,
+            "issue": 30,
+            "issue_score": 0.2,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14674,
+        "fields": {
+            "answer": 14454,
+            "issue": "27",
+            "issue_score": 0.1,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14675,
+        "fields": {
+            "answer": 14454,
+            "issue": 28,
+            "issue_score": 0.1,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14676,
+        "fields": {
+            "answer": 14455,
+            "issue": 28,
+            "issue_score": 0.3,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14677,
+        "fields": {
+            "answer": 14455,
+            "issue": 30,
+            "issue_score": 0.2,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14688,
+        "fields": {
+            "answer": 14680,
+            "issue": 31,
+            "issue_score": 0.6,
+            "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14690,
+        "fields": {
+            "answer": 14681,
+            "issue": 31,
+            "issue_score": 1,
+            "issue_importance": 6
+        }
     }
 ]
 
@@ -19801,6 +20048,60 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "Howard’s rhetoric has definitely been divisive in the public discourse. On one side are those who finally feel vindicated, and on the other those who believe he is stoking the flames of hatred. The only real effect is the rank-and-file on both major parties being riled up further and further, whilst the LibDems can play the ‘positivity’ card. Those leeches…"
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14661,
+        "fields": {
+            "answer": 14452,
+            "candidate": 12543,
+            "answer_feedback": "Your voice bellows. The working men and women gathered finally see a light at the end of a tunnel. Your sermons enthrall the choir as you preach the values of economic progressivism. A few dissenters wish it was Tony there, but the mood is overwhelming at the hall. They want you – no – they <i>need</i> you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14662,
+        "fields": {
+            "answer": 14453,
+            "candidate": 12543,
+            "answer_feedback": "The attendees – they cheer and applaud with a vibrancy you have seldom seen often. Some of them are star-struck, and others firmly nod along. But they all share a common dream, to turn the page on the instability and chaos that has dogged them – and Britain – all these years. The drive within you is briefly interrupted by a heckler, making you feel a foreboding inverse déja vu. As if this is all happening many years too early."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14663,
+        "fields": {
+            "answer": 14454,
+            "candidate": 12543,
+            "answer_feedback": "The room of attendees is eerily silent for a precious moment too long. But then, your speech ends. The voice box in your throat finally rests. And the audience rises to applaud – proclaiming a new beginning as their noise echoes within the hall. The work is not finished – it is never truly finished."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14664,
+        "fields": {
+            "answer": 14455,
+            "candidate": 12543,
+            "answer_feedback": "Standing in front of the audience sent shivers through your soul. But then, you found your groove, tapped into your voice. By the end of the speech, the crowd assembled called your name. The fight will go on, the torch flame will burn bright even if its previous holder could not see it through. You will win it, for Labour, for <i>Britain</i>."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14684,
+        "fields": {
+            "answer": 14680,
+            "candidate": 12543,
+            "answer_feedback": "Gordon struggles to cage his fears. The animals on the right salivate for red meat as they claw at the EU assembly walls. The country is tacitly waiting.<p></p>But it will all be worth it, if – of course – it means your legacy is forever secured."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14685,
+        "fields": {
+            "answer": 14681,
+            "candidate": 12543,
+            "answer_feedback": "Gordon actively protests this move in private. The lurching, snarling beasts on the right salivate for red meat as they scratch and screech at the EU ‘elites’. The country is tacitly waiting.<p></p>But it will all be worth it, if – of course – it means your legacy is forever secured."
+        }
     }
 ]
 
@@ -20319,52 +20620,53 @@ construct = (a = 1) => {
     e.executable = []
 
 // Final Endings
+
 // Clarke First Slides
-else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
-e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
-<p>
-David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
-<br><br>
-In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
-<br><br>
-As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
-<br><br>
-Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
-<br><br>
-After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
-<br><br>
-You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
-<br><br>
-Into the abyss.
-</p>
-`)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Q7TbQgY.gif"})])
-}
+// if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
+// e.pages.push(`
+// <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
+// <p>
+// David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
+// <br><br>
+// In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
+// <br><br>
+// As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
+// <br><br>
+// Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
+// <br><br>
+// After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
+// <br><br>
+// You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
+// <br><br>
+// Into the abyss.
+// </p>
+// `)
+// e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Q7TbQgY.gif"})])
+// }
 
 
 // Portillo First Slides
-else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
-e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
-<p>
-David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
-<br><br>
-In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
-<br><br>
-As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
-<br><br>
-Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
-<br><br>
-After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
-<br><br>
-You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
-<br><br>
-Into the abyss.
-</p>
-`)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/4GqeqR0.gif"})])
-}
+// else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
+// e.pages.push(`
+// <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
+// <p>
+// David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
+// <br><br>
+// In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
+// <br><br>
+// As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
+// <br><br>
+// Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
+// <br><br>
+// After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
+// <br><br>
+// You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
+// <br><br>
+// Into the abyss.
+// </p>
+// `)
+// e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/4GqeqR0.gif"})])
+// }
 
 // Howard First Slides
 if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
@@ -20513,17 +20815,6 @@ document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
 document.body.background = "https://imgur.com/r1yqD5R.png";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
-
-.game_header {
-    background: linear-gradient(to bottom, #df8191, #df8191);
-    height: 75px; 
-    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
-}
-.game_header h2 {     
-    background: linear-gradient(to bottom, #d03e54, #df8191);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
 if (used != true) {
       const playlist = new Playlist();
         const song = new Song(
@@ -20659,16 +20950,6 @@ document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
 document.body.background = "https://imgur.com/r1yqD5R.png";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
-
-.game_header {
-    background: linear-gradient(to bottom, #df8191, #df8191);
-    height: 75px; 
-    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
-}
-.game_header h2 {     
-    background: linear-gradient(to bottom, #d03e54, #df8191);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
 } 
 
 else if (quickstats[0] >= 400) {    
