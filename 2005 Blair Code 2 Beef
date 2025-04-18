@@ -20319,7 +20319,52 @@ construct = (a = 1) => {
     e.executable = []
 
 // Final Endings
+// Clarke First Slides
+else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
+<p>
+David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
+<br><br>
+In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
+<br><br>
+As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
+<br><br>
+Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
+<br><br>
+After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
+<br><br>
+You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
+<br><br>
+Into the abyss.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Q7TbQgY.gif"})])
+}
 
+
+// Portillo First Slides
+else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
+<p>
+David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
+<br><br>
+In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
+<br><br>
+As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
+<br><br>
+Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
+<br><br>
+After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
+<br><br>
+You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
+<br><br>
+Into the abyss.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/4GqeqR0.gif"})])
+}
 
 // Howard First Slides
 if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
@@ -20342,80 +20387,6 @@ Into the abyss.
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/wuC82w8.gif"})])
-} 
-
-else if (aa[0].candidate == 12543) {
-e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, with Labour as the largest party.</h3>
-<p>
-David Dimbleby’s voice rings out across the Party headquarters. An awkward state of apoplexia besets the Party faithful who are not already hanging their heads in dispiritedness and confusion. The same thing is on everyone’s mind:
-<br><br>
-What happens now?
-<br><br>
-At the farthest boundaries of your conscience, you desperately hoped for the seat count to defy the exit poll. Even if you knew that wouldn’t be the case. You clinged on to the hope, desperately praying for that number to reach the elusive total of 324. But it never reached orbit, never even recreated the John Major upset of 1992. Constituency after constituency, colleague after colleague, stemming the tide – but not stopping the wave – of the blue sea on the map. With branching tentacles of orange to strangle the Labour titan.
-<br><br>
-Your mind declines to a spiralling cascade of possibilities that never were, and decisions that were never taken. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart quite beat with middle Britain this time around? What made him falter to such a weak opposition? And, how did he let the Liberal Democrats sneak up behind him? Those are the headlines that will be etched into the papers in the following days — hell, even hours. Your neck feels as if it’s being hung by a coarse noose of electoral purgatory. You run through all of the possible scenarios of a future Labour government. A Labour-LibDem coalition is out of the question, Charles Kennedy’s soaring yet earthly charm included opposing your actions in the bomb-stricken deserts of the Arabian peninsula. A Labour-SNP coalition, it wouldn’t work either. Your commitment to a strong union (as devolved in power as you’ve made it) would never intertwine with their callous, vigorous desire for independence from our fair Kingdom.
-<br><br>
-That leaves only a potential agreement with a Northern Irish group spurred on by your decisions in the region. Or, the most likely, and most pernicious outcome. A minority government. Where no doubt there will be endless theatre and haggling over bills, issues, and whatever trivial ‘scandals’ people shall use to belittle your waning days in No. 10. And, if the other parties decide to band together in unison against you, that battle will only be unwinnable – save for a miracle.
-<br><br>
-It is not long before you recline yourself to the backroom, the flashing lights replaced by a frigid, unfeeling, subdued darkness. It isn’t long, however, before a nasal tune rings from your mobile phone. Jolted to your senses, you hastily unfold it, the tactile button is pressed, and a familiar voice you hear on the other end.
-<br><br>
-“Hey Tony, this has properly cocked up, hasn’t it.” His voice sounds defeated.
-<br><br>
-“No, this, this hasn’t been good,” you pause to collect your myriad of thoughts, “Our options are a lot more, well – a lot more limited.”
-<br><br>
-“Yeah, the SNP is out of the question, and the LibDems won’t be keen either, we haven’t got a lot on the table.”
-<br><br>
-You can nigh feel Alastair Campbell rubbing his eyes under his thickset eyebrows.
-<br><br>
-“By the way, Alastair, I hope you’ve been feeling alright. That whole thing whilst you were in government, it was a lot and-”
-<br><br>
-“It’s alright, Tony. I’m doin’ okay. Perhaps later we can talk about where this will go… God.” The ex-journalist replies.
-<br><br>
-You both exchange your memorised closing platitudes, and with a sigh, close your phone and withdraw it back within your pocket – pondering some upcoming grueling negotiations you may imminently be embroiled in. The room feels even darker.
-<br><br>
-In spite of every bludgeoning you endured, every decision you agonised on, the transformative “Third Way” agenda you set out, the British people could not quite decide themselves. Best of luck to you, Prime Minister.
-<br><br>
-You sure as hell are going to need it.
-</p>
-`)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif"})])
-
-corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-$(".container")[0].style.backgroundColor = "#ababab";
-document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
-document.body.background = "https://imgur.com/r1yqD5R.png";
-document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
-
-.game_header {
-    background: linear-gradient(to bottom, #df8191, #df8191);
-    height: 75px; 
-    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
-}
-.game_header h2 {     
-    background: linear-gradient(to bottom, #d03e54, #df8191);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-if (used != true) {
-      const playlist = new Playlist();
-        const song = new Song(
-        "Dead Disco",
-        "Metric",
-        "https://imgur.com/A3wgknr.jpg",
-        "https://audio.jukehost.co.uk/aEjjVoFDb62ocRQiWMcUKsdVQZ3TlN7h"
-      );
-      playlist.addSong(song);
-      changePlaylist(playlist);
-
-    used = true;
-    }
 } 
 
 else if (aa[0].candidate == 12565) {
@@ -20494,6 +20465,121 @@ You sure as hell are going to need it.
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif"})])
 }
 
+else if (aa[0].candidate == 12543) {
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, with Labour as the largest party.</h3>
+<p>
+David Dimbleby’s voice rings out across the Party headquarters. An awkward state of apoplexia besets the Party faithful who are not already hanging their heads in dispiritedness and confusion. The same thing is on everyone’s mind:
+<br><br>
+What happens now?
+<br><br>
+At the farthest boundaries of your conscience, you desperately hoped for the seat count to defy the exit poll. Even if you knew that wouldn’t be the case. You clinged on to the hope, desperately praying for that number to reach the elusive total of 324. But it never reached orbit, never even recreated the John Major upset of 1992. Constituency after constituency, colleague after colleague, stemming the tide – but not stopping the wave – of the blue sea on the map. With branching tentacles of orange to strangle the Labour titan.
+<br><br>
+Your mind declines to a spiralling cascade of possibilities that never were, and decisions that were never taken. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart quite beat with middle Britain this time around? What made him falter to such a weak opposition? And, how did he let the Liberal Democrats sneak up behind him? Those are the headlines that will be etched into the papers in the following days — hell, even hours. Your neck feels as if it’s being hung by a coarse noose of electoral purgatory. You run through all of the possible scenarios of a future Labour government. A Labour-LibDem coalition is out of the question, Charles Kennedy’s soaring yet earthly charm included opposing your actions in the bomb-stricken deserts of the Arabian peninsula. A Labour-SNP coalition, it wouldn’t work either. Your commitment to a strong union (as devolved in power as you’ve made it) would never intertwine with their callous, vigorous desire for independence from our fair Kingdom.
+<br><br>
+That leaves only a potential agreement with a Northern Irish group spurred on by your decisions in the region. Or, the most likely, and most pernicious outcome. A minority government. Where no doubt there will be endless theatre and haggling over bills, issues, and whatever trivial ‘scandals’ people shall use to belittle your waning days in No. 10. And, if the other parties decide to band together in unison against you, that battle will only be unwinnable – save for a miracle.
+<br><br>
+It is not long before you recline yourself to the backroom, the flashing lights replaced by a frigid, unfeeling, subdued darkness. It isn’t long, however, before a nasal tune rings from your mobile phone. Jolted to your senses, you hastily unfold it, the tactile button is pressed, and a familiar voice you hear on the other end.
+<br><br>
+“Hey Tony, this has properly cocked up, hasn’t it.” His voice sounds defeated.
+<br><br>
+“No, this, this hasn’t been good,” you pause to collect your myriad of thoughts, “Our options are a lot more, well – a lot more limited.”
+<br><br>
+“Yeah, the SNP is out of the question, and the LibDems won’t be keen either, we haven’t got a lot on the table.”
+<br><br>
+You can nigh feel Alastair Campbell rubbing his eyes under his thickset eyebrows.
+<br><br>
+“By the way, Alastair, I hope you’ve been feeling alright. That whole thing whilst you were in government, it was a lot and-”
+<br><br>
+“It’s alright, Tony. I’m doin’ okay. Perhaps later we can talk about where this will go… God.” The ex-journalist replies.
+<br><br>
+You both exchange your memorised closing platitudes, and with a sigh, close your phone and withdraw it back within your pocket – pondering some upcoming grueling negotiations you may imminently be embroiled in. The room feels even darker.
+<br><br>
+In spite of every bludgeoning you endured, every decision you agonised on, the transformative “Third Way” agenda you set out, the British people could not quite decide themselves. Best of luck to you, Prime Minister.
+<br><br>
+You sure as hell are going to need it.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif"})])
+
+corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+$(".container")[0].style.backgroundColor = "#ababab";
+document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
+document.body.background = "https://imgur.com/r1yqD5R.png";
+document.body.style.backgroundSize = "cover"
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+
+.game_header {
+    background: linear-gradient(to bottom, #df8191, #df8191);
+    height: 75px; 
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.game_header h2 {     
+    background: linear-gradient(to bottom, #d03e54, #df8191);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+if (used != true) {
+      const playlist = new Playlist();
+        const song = new Song(
+        "Dead Disco",
+        "Metric",
+        "https://imgur.com/A3wgknr.jpg",
+        "https://audio.jukehost.co.uk/aEjjVoFDb62ocRQiWMcUKsdVQZ3TlN7h"
+      );
+      playlist.addSong(song);
+      changePlaylist(playlist);
+
+    used = true;
+    }
+} 
+
+
+// Brown First Slides
+else if (e.player_answers.includes(13511) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
+<p>
+David Dimbleby’s voice reverberated throughout the Party headquarters, the solemn rejection pounding at the hearts of all of the members of the Party faithful put into mourning. Not just the mourning of the governing party, but of New Labour itself. The beating heart of “economic dynamism” and “social justice” has just been sold for a transplant. The crowd bitterly awaited Gordon's concession speech on the metal stage.
+<br><br>
+But the reverberations were not just felt in the halls of Labour, where the political mob swayed and lurched as the seats’ trickled. It was absorbed also by the disgraced ex-Prime Minister, in his home far away from the carnage on the glassy screens.
+<br><br>
+Tony had tried in vain to find any shred of comfort over the night. The only warmth radiating in the psychological prison was his wife Cherie, clasping his hand as she felt the sullen sagging drawn across Tony’s face. His fingers massaged his cheek, all the while Paxman and Marr lament at the cataclysmic slaughterhouse where many Labour MPs now await the electoral knife. Every time a red splotch on the map switched to ‘CON GAIN’, he felt another icy dagger. The Labour titan had fallen, subsumed by a grand discordance of sea-blue tentacles and plagues of orange, strangling it to the ground. In a world that never was, he would be standing atop that stage. Chest puffed. Smiling wide. Entrancing the audiences of friend and foe, enthralled by the sweet sensation of victory that could have been his – that <i>should</i> have been his.
+<br><br>
+As his mind wandered the spiritual wabash, he pondered back to all of those vain weights to the campaign. Every mistake he made, every decision that spurred on those damn protests, every attack that he let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him get thrown out by his own bloody party, of all things? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you – and Gordon in those waning days – toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that god<i>damn</i> war.
+<br><br>
+He pictured the looks on Mandleson’s and Alastair’s faces, their grimacing and teeth gnawing, having watched the election unfold after all they went through. All of the arguing, the backlash, the endless controversy. For this…
+<br><br>
+But that’s just politics — he deceived himself — it’s just part of the job. But it came to that for him.
+<br><br>
+It did merely months ago.
+<br><br>
+After an ostensible eternity of agony watching the results, he stood up – bidding Cherie for a minute of solitude – and reached into his pocket for his mobile phone. He flipped it open, clicking its mechanically resonant buttons – his unusually clammy hands notwithstanding.
+<br><br>
+He had an ancient, and bittersweet, friend he needed to call. One last time…
+<br><br>
+…“Hey, is it– Gordon! Hi. Look, I want to talk to you about this. About– about all of this.”…
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MxyGsWe.gif"})])
+}
+
+else if (e.player_answers.includes(13511) && quickstats[0] >= 324) {  
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party have won this election in a comeback for the ages.</h3>
+<p>
+David Dimbleby’s voice reverberated throughout the Party headquarters.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
+}
+
+
 else if (quickstats[0] >= 324) {     
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3>
@@ -20561,16 +20647,28 @@ You fought, you triumphed, and in the end, the lion’s share has handsomely fal
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
+
 corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
+
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
 $(".container")[0].style.backgroundColor = "#ababab";
-document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
-document.body.background = "https://imgur.com/erWHhIe.png";
+document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
+document.body.background = "https://imgur.com/r1yqD5R.png";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+
+.game_header {
+    background: linear-gradient(to bottom, #df8191, #df8191);
+    height: 75px; 
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.game_header h2 {     
+    background: linear-gradient(to bottom, #d03e54, #df8191);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
 } 
 
 else if (quickstats[0] >= 400) {    
@@ -20628,93 +20726,6 @@ e.pages.push(`
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MzNIbIL.gif"})])
-}
-
-// Brown First Slides
-else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
-e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
-<p>
-David Dimbleby’s voice reverberated throughout the Party headquarters, the solemn rejection pounding at the hearts of all of the members of the Party faithful put into mourning. Not just the mourning of the governing party, but of New Labour itself. The beating heart of “economic dynamism” and “social justice” has just been sold for a transplant. The crowd bitterly awaited Gordon's concession speech on the metal stage.
-<br><br>
-But the reverberations were not just felt in the halls of Labour, where the political mob swayed and lurched as the seats’ trickled. It was absorbed also by the disgraced ex-Prime Minister, in his home far away from the carnage on the glassy screens.
-<br><br>
-Tony had tried in vain to find any shred of comfort over the night. The only warmth radiating in the psychological prison was his wife Cherie, clasping his hand as she felt the sullen sagging drawn across Tony’s face. His fingers massaged his cheek, all the while Paxman and Marr lament at the cataclysmic slaughterhouse where many Labour MPs now await the electoral knife. Every time a red splotch on the map switched to ‘CON GAIN’, he felt another icy dagger. The Labour titan had fallen, subsumed by a grand discordance of sea-blue tentacles and plagues of orange, strangling it to the ground. In a world that never was, he would be standing atop that stage. Chest puffed. Smiling wide. Entrancing the audiences of friend and foe, enthralled by the sweet sensation of victory that could have been his – that <i>should</i> have been his.
-<br><br>
-As his mind wandered the spiritual wabash, he pondered back to all of those vain weights to the campaign. Every mistake he made, every decision that spurred on those damn protests, every attack that he let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him get thrown out by his own bloody party, of all things? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you – and Gordon in those waning days – toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that god<i>damn</i> war.
-<br><br>
-He pictured the looks on Mandleson’s and Alastair’s faces, their grimacing and teeth gnawing, having watched the election unfold after all they went through. All of the arguing, the backlash, the endless controversy. For this…
-<br><br>
-But that’s just politics — he deceived himself — it’s just part of the job. But it came to that for him.
-<br><br>
-It did merely months ago.
-<br><br>
-After an ostensible eternity of agony watching the results, he stood up – bidding Cherie for a minute of solitude – and reached into his pocket for his mobile phone. He flipped it open, clicking its mechanically resonant buttons – his unusually clammy hands notwithstanding.
-<br><br>
-He had an ancient, and bittersweet, friend he needed to call. One last time…
-<br><br>
-…“Hey, is it– Gordon! Hi. Look, I want to talk to you about this. About– about all of this.”…
-</p>
-`)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MxyGsWe.gif"})])
-}
-
-else if (campaignTrail_temp.player_answers.includes(13508) && quickstats[0] >= 324) {  
-e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
-<p>
-David Dimbleby’s voice reverberated throughout the Party headquarters.
-</p>
-`)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
-}
-
-
-// Clarke First Slides
-else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
-e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
-<p>
-David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
-<br><br>
-In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
-<br><br>
-As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
-<br><br>
-Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
-<br><br>
-After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
-<br><br>
-You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
-<br><br>
-Into the abyss.
-</p>
-`)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Q7TbQgY.gif"})])
-}
-
-
-// Portillo First Slides
-else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
-e.pages.push(`
-<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
-<p>
-David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
-<br><br>
-In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
-<br><br>
-As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
-<br><br>
-Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
-<br><br>
-After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
-<br><br>
-You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
-<br><br>
-Into the abyss.
-</p>
-`)
-e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/4GqeqR0.gif"})])
 }
 
 
@@ -20786,7 +20797,9 @@ New Labour has been in government for over a decade. In that time, Britain has s
 </p>
 `)
 e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+
 corrr = '\n              <h2>NEW CAMPAIGN TRAIL</h2><font id="wittyquote" size="4" color="white"><em>"Not flash, just Gordon."</em></font>\n            ';
+
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#cc0000";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#824b4b";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
@@ -20915,14 +20928,68 @@ function openHeadquarter() {
     var CScore = 2;
     var OLScore = 0;
 
-    if (Cred < 2) {
-        CScore = "<font color='#ad1313;'><b>declining</b></font>"
+    if (Cred == -5) {
+        CScore = "<font color='#ad1313;'><b>catastrophic</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
     }
-    if (Cred >= 2 && Cred < 5) {
-        CScore = "<font color='#d58627;'><b>lagging</b></font>"
+    if (Cred == -4) {
+        CScore = "<font color='#ad1313;'><b>horror incarnate</b></font> (<font color='#ad1313;'><b>-4</b></font>)"
     }
-    if (Cred >= 5) {
-        CScore = "<font color='#7ba922;'><b>strong</b></font>"
+    if (Cred == -3) {
+        CScore = "<font color='#ad1313;'><b>a trainwreck</b></font> (<font color='#ad1313;'><b>-3</b></font>)"
+    }
+    if (Cred == -2) {
+        CScore = "<font color='#ad1313;'><b>in shambles</b></font> (<font color='#ad1313;'><b>-2</b></font>)"
+    }
+    if (Cred == -1) {
+        CScore = "<font color='#ad1313;'><b>in the gutter</b></font> (<font color='#ad1313;'><b>-1</b></font>)"
+    }
+    if (Cred == 0) {
+        CScore = "<font color='#ad1313;'><b>falling sharply</b></font> (<font color='#ad1313;'><b>0</b></font>)"
+    }
+    if (Cred == 1) {
+        CScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>1</b></font>)"
+    }
+    if (Cred == 2) {
+        CScore = "<font color='#d58627;'><b>deteriorating</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    } 
+    if (Cred == 3) {
+        CScore = "<font color='#d58627;'><b>recoverable</b></font> (<font color='#d58627;'><b>3</b></font>)"
+    }
+    if (Cred == 4) {
+        CScore = "<font color='#d58627;'><b>noticeable</b></font> (<font color='#d58627;'><b>4</b></font>)"
+    }
+    if (Cred == 5) {
+        CScore = "<font color='#d58627;'><b>on the right track</b></font> (<font color='#d58627;'><b>5</b></font>)"
+    }
+    if (Cred == 6) {
+        CScore = "<font color='#d58627;'><b>on the right track</b></font> (<font color='#d58627;'><b>6</b></font>)"
+    }
+    if (Cred == 7) {
+        CScore = "<font color='#7ba922;'><b>respectable</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+    if (Cred == 8) {
+        CScore = "<font color='#7ba922;'><b>respectable</b></font> (<font color='#7ba922;'><b>8</b></font>)"
+    }
+    if (Cred == 9) {
+        CScore = "<font color='#7ba922;'><b>strong</b></font> (<font color='#7ba922;'><b>9</b></font>)"
+    }
+    if (Cred == 10) {
+        CScore = "<font color='#7ba922;'><b>strong</b></font> (<font color='#7ba922;'><b>10</b></font>)"
+    }
+    if (Cred == 11) {
+        CScore = "<font color='#7ba922;'><b>undeniable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
+    }
+    if (Cred == 12) {
+        CScore = "<font color='#7ba922;'><b>undeniable</b></font> (<font color='#7ba922;'><b>12</b></font>)"
+    }
+    if (Cred == 13) {
+        CScore = "<font color='#7ba922;'><b>indomitable</b></font> (<font color='#7ba922;'><b>13</b></font>)"
+    } 
+    if (Cred == 14) {
+        CScore = "<font color='#7ba922;'><b>indomitable</b></font> (<font color='#7ba922;'><b>14</b></font>)"
+    }
+    if (Cred == 15) {
+        CScore = "<font color='#7ba922;'><b>in the heavens</b></font> (<font color='#7ba922;'><b>15</b></font>)"
     }
 
     if (Resign == 0) {
