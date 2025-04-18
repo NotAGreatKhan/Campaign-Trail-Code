@@ -631,8 +631,37 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+
+if ([12872,12873,12874].includes(ans)){
+let pop_vote = e.current_results[0];
+let playerPolling = pop_vote.find(polling => polling.pk===20000);
+console.log(playerPolling)
+    if(playerPolling.pvp >= 0.375 || Resign == 0){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14691,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+     }
+    }
+    if((playerPolling.pvp >= 0.375 || Resign == 0) && (ans == 12873 || ans == 12874)){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14698,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+     }
+    }
+    }
+    
     if(Negative >= 5){
-    campaignTrail_temp.questions_json[34] = {
+    campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 13427,
     "fields": {
@@ -2029,6 +2058,24 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "You're sitting alone in your office in No. 10. The gentle rustling of papers and the clicking of pens does little to break the deafening silence, but within your mind, a great tectonic eventuality troubles you.<p></p>When John Major joined the ERM – to near universal acclamation – the Pound Sterling's troubles forced an unmagnanimous crash out of the mechanism. When Thatcher pedalled her Euroskepticism, it fueled the rise of a populist faction yet to bear its greatest dream: a withdrawal from Europe outright. Everytime the grand project truly got under way, it stalled, backtracked, became little more than wasted potential. But not anymore. Within your hand rests the opportunity to bring the continent together in a new order. The only question, is how.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14691,
+        "fields": {
+            "priority": 0,
+            "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14698,
+        "fields": {
+            "priority": 0,
+            "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
             "likelihood": 1
         }
     }
@@ -4385,6 +4432,38 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14679,
             "description": "There is only one natural, and logical, conclusion that this path can and must reach. The eventual joining of Britain to the Euro. It is something we must see to, starting from the next Parliamentary term. We have the chance to make strides never thought before. We need to think bigger, bolder, and more radical."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14692,
+        "fields": {
+            "question": 14691,
+            "description": "Let's get Gordon on the trail with us, really flex the muscle of this party. This legacy we are building is only just beginning."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14693,
+        "fields": {
+            "question": 14691,
+            "description": "We need to show the people that Labour is the true party of governance. We'll do a large rally, larger than anyone will expect. Show to the people watching what this government has done for the whole of Britain."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14699,
+        "fields": {
+            "question": 14698,
+            "description": "Let's get Gordon on the trail with us, really flex the muscle of this party. This legacy we are building is only just beginning."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14702,
+        "fields": {
+            "question": 14698,
+            "description": "We need to show the people that Labour is the true party of governance. We'll do a large rally, larger than anyone will expect. Show to the people watching what this government has done for the whole of Britain."
         }
     }
 ]
@@ -11332,7 +11411,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12864,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": 0.95
+            "global_multiplier": 0.095
         }
     },
     {
@@ -13323,6 +13402,46 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12649,
             "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14696,
+        "fields": {
+            "answer": 14693,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14697,
+        "fields": {
+            "answer": 14692,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14701,
+        "fields": {
+            "answer": 14699,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14704,
+        "fields": {
+            "answer": 14702,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
         }
     }
 ]
@@ -20102,6 +20221,42 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "Gordon actively protests this move in private. The lurching, snarling beasts on the right salivate for red meat as they scratch and screech at the EU ‘elites’. The country is tacitly waiting.<p></p>But it will all be worth it, if – of course – it means your legacy is forever secured."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14694,
+        "fields": {
+            "answer": 14692,
+            "candidate": 12543,
+            "answer_feedback": "Gordon on one side, and John Prescott at the other. All of the scheming forces of the cabinet dispelled, their dormant – fictitious – plotters all within your view. A grand fine-tuned machine, one which churns the Conservatives into a well of wasted funds and plastering. You are certain of the destiny awaiting you, and of the legacy that you have already forged. It is not enough, there will always be more to achieve."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14695,
+        "fields": {
+            "answer": 14693,
+            "candidate": 12543,
+            "answer_feedback": "The arena is packed, brimming with the fidelity and stomping energy of the sea of supporters. Not merely some assortment of sycophantic Labour members, but a coalition of citizens. United in their belief for a dynamic and stable Britain. United in their belief in you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14700,
+        "fields": {
+            "answer": 14699,
+            "candidate": 12543,
+            "answer_feedback": "John Prescott's Northern bellow pierces through the crowd, doing well to extoll the victories and virtue of this government. But whenever your eyes drift and dart towards Gordon Brown's still sagging muscles weighing down his face, it all causes an uncomfortable truth to effervesce. You were never in this truly together with him, not anymore – with the promise of power perniciously delayed to him."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14703,
+        "fields": {
+            "answer": 14702,
+            "candidate": 12543,
+            "answer_feedback": "The arena is packed, brimming with the fidelity and stomping energy of the sea of supporters. Not merely some assortment of sycophantic Labour members, but a coalition of citizens. United in their belief for a dynamic and stable Britain. United in their belief in you."
+        }
     }
 ]
 
@@ -20820,6 +20975,7 @@ if (used != true) {
 // `)
 // e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Q7TbQgY.gif"})])
 // }
+
 
 // Portillo First Slides
 // else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
