@@ -6,6 +6,7 @@ var Negative = 0;
 var OldLab = 0;
 var Cred = 2;
 var Brown = false;
+var EUCnstn = 0;
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
     if(ans == 12807){
@@ -141,7 +142,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "pk": 14401,
         "fields": {
             "priority": 0,
-            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
             "likelihood": 1
           }
         }
@@ -456,6 +457,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Wins += 1;
     }
 
+    // EU CONSTITUTION
+    if(ans == 13861){
+      EUCnstn += 1;
+    }
+
 
 // Resignation Questions
     if(Resign >= 7){
@@ -723,6 +729,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "[March 18, 2003] Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(EUCnstn == 1){
+    campaignTrail_temp.questions_json[34] = {
+    "model": "campaign_trail.question",
+    "pk": 14679,
+    "fields": {
+        "priority": 0,
+        "description": "You're sitting alone in your office in No. 10. The gentle rustling of papers and the clicking of pens does little to break the deafening silence, but within your mind, a great tectonic eventuality troubles you.<p></p>When John Major joined the ERM – to near universal acclamation – the Pound Sterling's troubles forced an unmagnanimous crash out of the mechanism. When Thatcher pedalled her Euroskepticism, it fueled the rise of a populist faction yet to bear its greatest dream: a withdrawal from Europe outright. Everytime the grand project truly got under way, it stalled, backtracked, became little more than wasted potential. But not anymore. Within your hand rests the opportunity to bring the continent together in a new order. The only question, is how.",
         "likelihood": 1
       }
     }
