@@ -650,17 +650,6 @@ document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
 document.body.background = "https://imgur.com/r1yqD5R.png";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
-
-.game_header {
-    background: linear-gradient(to bottom, #df8191, #df8191);
-    height: 75px; 
-    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
-}
-.game_header h2 {     
-    background: linear-gradient(to bottom, #d03e54, #df8191);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
 if (used != true) {
       const playlist = new Playlist();
         const song = new Song(
@@ -796,16 +785,6 @@ document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
 document.body.background = "https://imgur.com/r1yqD5R.png";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
-
-.game_header {
-    background: linear-gradient(to bottom, #df8191, #df8191);
-    height: 75px; 
-    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
-}
-.game_header h2 {     
-    background: linear-gradient(to bottom, #d03e54, #df8191);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
 } 
 
 else if (quickstats[0] >= 400) {    
