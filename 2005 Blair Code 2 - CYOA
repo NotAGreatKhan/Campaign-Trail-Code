@@ -621,8 +621,37 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+
+if ([12872,12873,12874].includes(ans)){
+let pop_vote = e.current_results[0];
+let playerPolling = pop_vote.find(polling => polling.pk===20000);
+console.log(playerPolling)
+    if(playerPolling.pvp >= 0.375 || Resign == 0){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14691,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+     }
+    }
+    if((playerPolling.pvp >= 0.375 || Resign == 0) && (ans == 12873 || ans == 12874)){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14698,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+     }
+    }
+    }
+    
     if(Negative >= 5){
-    campaignTrail_temp.questions_json[34] = {
+    campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 13427,
     "fields": {
