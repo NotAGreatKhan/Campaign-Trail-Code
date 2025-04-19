@@ -120,7 +120,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
                           <li>Role: Her Majesty's Prime Minister</li>
                           <li>Constituency: Dunfermline East</li>
                       </ul>
-                      <b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest poltitcal rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the gates of legends.
+                      <b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the gates of legends.
               </div>
               </div>
               <p> <button class="person_button" id="running_mate_id_button">Continue</button> </p>
@@ -151,7 +151,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
                           <li>Role: Her Majesty's Prime Minister</li>
                           <li>Constituency: Dunfermline East</li>
                       </ul>
-                      <b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest poltitcal rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the gates of legends.
+                      <b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the gates of legends.
                   </div>
               `
 
