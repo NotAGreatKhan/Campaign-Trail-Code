@@ -81,14 +81,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
               "model": "campaign_trail.running_mate",
               "pk": 1,
               "fields": {
-                  "candidate": BlairPK,
-                  "running_mate": BrownPK
+                  "candidate": 12543,
+                  "running_mate": 136
               }
           }]`);
             window.setTimeout(e.candidateSwitcher, 20)
             e.VpText = "Please select your party leader:"
-
-        <b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the gates of legends.
          
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
