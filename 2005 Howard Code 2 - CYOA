@@ -1,0 +1,10 @@
+e = campaignTrail_temp
+
+var Wins = 0;
+var PartyL = 0;
+var Reptn = 0;
+var RightWing = 2;
+cyoAdventure = function(a) {
+ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+  
+}
