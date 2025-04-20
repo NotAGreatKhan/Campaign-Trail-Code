@@ -270,6 +270,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 136,
+        "fields": {
+            "first_name": "J. Gordon",
+            "last_name": "Brown",
+            "election": 12,
+            "party": "Labour",
+            "state": "Dumferline East",
+            "priority": 9,
+            "description": "'",
+            "color_hex": "#e74040",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://imgur.com/NlFar5m.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<li><b>Name: J. Gordon Brown</b></li><li><b>Role: Her Majesty's New Prime Minister</b></li><li><b>Constituency: Dumferline East</b></li><p> </p>   <b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the pearly gates of legends.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 12565,
         "fields": {
             "first_name": "The",
@@ -810,6 +833,14 @@ campaignTrail_temp.running_mate_json = [
     },
     {
         "model": "campaign_trail.running_mate",
+        "pk": 159977,
+        "fields": {
+            "candidate": 12543,
+            "running_mate": 136
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
         "pk": 159967,
         "fields": {
             "candidate": 12565,
@@ -1027,7 +1058,7 @@ const startScreenUpdater = setInterval(function() {
               initContinue.click();
           }
           
-          else if(r == 125 || r == 126 && !(runningMateButton)) {
+          else if((r == 125 || r == 126 || r == 136) && !(runningMateButton)) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
