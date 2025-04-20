@@ -87,6 +87,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": 12543,
+                  "running_mate": 136
+              }
+          }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
+         
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
@@ -480,7 +491,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13499,
     "fields": {
         "priority": 0,
-        "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
+        "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
         "likelihood": 1
       }
     }
@@ -492,7 +503,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13500,
     "fields": {
         "priority": 0,
-        "description": "[February, 2005] The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
+        "description": "The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
         "likelihood": 1
       }
     }
@@ -538,7 +549,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13417,
     "fields": {
         "priority": 0,
-        "description": "[March 18, 2003] Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
+        "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
         "likelihood": 1
       }
     }
@@ -549,7 +560,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13391,
     "fields": {
         "priority": 0,
-        "description": "[July 9, 2003] You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
+        "description": "You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
         "likelihood": 1
       }
     }
@@ -560,7 +571,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14100,
     "fields": {
         "priority": 0,
-        "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
         "likelihood": 1
       }
     }
@@ -571,7 +582,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14208,
     "fields": {
         "priority": 0,
-        "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
         "likelihood": 1
       }
     }
@@ -582,7 +593,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14237,
     "fields": {
         "priority": 0,
-        "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
         "likelihood": 1
       }
     }
@@ -593,7 +604,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14281,
     "fields": {
         "priority": 0,
-        "description": "[January 28, 2004] The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
         "likelihood": 1
       }
     }
@@ -604,7 +615,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13494,
     "fields": {
         "priority": 0,
-        "description": "[January, 2004] The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
+        "description": "The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
         "likelihood": 1
       }
     }
@@ -615,7 +626,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13473,
     "fields": {
         "priority": 0,
-        "description": "[January 27, 2004] Before 1998, going to university was completely free, with education being seen as a fundamental right. That year, your government then introduced up-front fees for students every year they studied. With these payments no longer being enough, your government is now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Although it is feasible to pass this legislation, it is nevertheless deeply controversial and could risk failing the vote on the second reading. How will you ensure that it passes?",
+        "description": "Before 1998, going to university was completely free, with education being seen as a fundamental right. That year, your government then introduced up-front fees for students every year they studied. With these payments no longer being enough, your government is now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Although it is feasible to pass this legislation, it is nevertheless deeply controversial and could risk failing the vote on the second reading. How will you ensure that it passes?",
         "likelihood": 1
       }
     }
@@ -626,7 +637,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13410,
     "fields": {
         "priority": 0,
-        "description": "[January 28, 2004] The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
+        "description": "The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
         "likelihood": 1
       }
     }
@@ -634,7 +645,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 if ([12872,12873,12874].includes(ans)){
 let pop_vote = e.current_results[0];
-let playerPolling = pop_vote.find(polling => polling.pk===20000);
+let playerPolling = pop_vote.find(polling => polling.pk===2000000);
 console.log(playerPolling)
     if(playerPolling.pvp >= 0.375 || Resign == 0){
     campaignTrail_temp.questions_json[23] = {
@@ -666,7 +677,7 @@ console.log(playerPolling)
     "pk": 13427,
     "fields": {
         "priority": 0,
-        "description": "[May 4, 2005] From the day that you came into office, you pledged to the British people that you would not get in the mud and slander your opponents. This campaign though, you have — in the eyes of the public — thrown that right out of the window and into the political fire. With the unusually personal vitriol of this year’s election season being lobbed around by both sides, the Liberal Democrats have seen unprecedented rises in the polls, as your personal favourability sags alongside the foreboding polarisation. What will you do to ensure this doesn’t mean your defeat – calamity even more so – tomorrow evening?",
+        "description": "From the day that you came into office, you pledged to the British people that you would not get in the mud and slander your opponents. This campaign though, you have — in the eyes of the public — thrown that right out of the window and into the political fire. With the unusually personal vitriol of this year’s election season being lobbed around by both sides, the Liberal Democrats have seen unprecedented rises in the polls, as your personal favourability sags alongside the foreboding polarisation. What will you do to ensure this doesn’t mean your defeat – calamity even more so – tomorrow evening?",
         "likelihood": 1
       }
     }
@@ -732,7 +743,7 @@ console.log(playerPolling)
     "pk": 14569,
     "fields": {
         "priority": 0,
-        "description": "[April 28, 2005] During the BBC Question Time, you knew from the moment you sat in the leather chair that something was off. The members in the audience, universally cognisant of their wallets, were out for you as your face felt hotter under the studio lights. Finally, one daring man speaks up “what new stealth taxes you plan to implement next?”. Hearty laughs ring out across the room, with yourself feigning and joining in. How will you shut this tiring line down?",
+        "description": "During the BBC Question Time, you knew from the moment you sat in the leather chair that something was off. The members in the audience, universally cognisant of their wallets, were out for you as your face felt hotter under the studio lights. Finally, one daring man speaks up “what new stealth taxes you plan to implement next?”. Hearty laughs ring out across the room, with yourself feigning and joining in. How will you shut this tiring line down?",
         "likelihood": 1
       }
     }
@@ -743,7 +754,7 @@ console.log(playerPolling)
     "pk": 14595,
     "fields": {
         "priority": 0,
-        "description": "[April 28, 2005] During the BBC Question Time, nobody could go a nanosecond without whispering on the war abroad. What of the soldiers who died for nothing? What <i>really</i> happened to Dr Kelly? Is a war criminal leading the Labour Party? The studio lights are white-hot, your hands are writhing and clammy to the touch of your trousers. It all culminates in a young man – fist clenched – declaring “when you presented your evidence to the House of Commons, you said it was authoritative and full-evidenced. That is a lie, you lied to this country and that's why we can't support you at the following election”. The cheering is a tremor throughout the studio hall, and you for one will not let it careen your polling.",
+        "description": "During the BBC Question Time, nobody could go a nanosecond without whispering on the war abroad. What of the soldiers who died for nothing? What <i>really</i> happened to Dr Kelly? Is a war criminal leading the Labour Party? The studio lights are white-hot, your hands are writhing and clammy to the touch of your trousers. It all culminates in a young man – fist clenched – declaring “when you presented your evidence to the House of Commons, you said it was authoritative and full-evidenced. That is a lie, you lied to this country and that's why we can't support you at the following election”. The cheering is a tremor throughout the studio hall, and you for one will not let it careen your polling.",
         "likelihood": 1
       }
     }
@@ -767,7 +778,7 @@ console.log(playerPolling)
     "pk": 13560,
     "fields": {
         "priority": 0,
-        "description": "[March 18, 2003] Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
+        "description": "Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
         "likelihood": 1
       }
     }
@@ -791,7 +802,7 @@ console.log(playerPolling)
     "pk": 13614,
     "fields": {
         "priority": 0,
-        "description": "[July, 2003] As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
+        "description": "As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
         "likelihood": 1
       }
     }
@@ -804,7 +815,7 @@ console.log(playerPolling)
     "pk": 13866,
     "fields": {
         "priority": 0,
-        "description": "[July, 2003] With how many stuffy rooms and overhearing of Dutch phrases you have been put through, it’s tough to see how the Constitution could possibly fail with all of the mainstream parties supporting it. But back the “Yes” vote you must nonetheless. Once all of the heated chatter over how to convince the Dutch people subsides, they turn over to you for your input. Prime Minister Jan Peter Balkenende locks eyes with you. How will you sway and enlighten them, Tony?",
+        "description": "With how many stuffy rooms and overhearing of Dutch phrases you have been put through, it’s tough to see how the Constitution could possibly fail with all of the mainstream parties supporting it. But back the “Yes” vote you must nonetheless. Once all of the heated chatter over how to convince the Dutch people subsides, they turn over to you for your input. Prime Minister Jan Peter Balkenende locks eyes with you. How will you sway and enlighten them, Tony?",
         "likelihood": 1
       }
     }
@@ -817,7 +828,7 @@ console.log(playerPolling)
     "pk": 13621,
     "fields": {
         "priority": 0,
-        "description": "[June 11, 2004] Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. Overall, you lose 298 councillors and 3 councils, while the Conservatives make a net gain of 8 councils and 167 councillors. The Liberal Democrats do hold you to the line in Newcastle and Leeds though. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+        "description": "Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. Overall, you lose 298 councillors and 3 councils, while the Conservatives make a net gain of 8 councils and 167 councillors. The Liberal Democrats do hold you to the line in Newcastle and Leeds though. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
         "likelihood": 1
       }
     }
@@ -828,7 +839,7 @@ console.log(playerPolling)
     "pk": 13647,
     "fields": {
         "priority": 0,
-        "description": "[June 14, 2004] Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
+        "description": "Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
         "likelihood": 1
       }
     }
@@ -841,20 +852,20 @@ console.log(playerPolling)
     "pk": 13657,
     "fields": {
         "priority": 0,
-        "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.",
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.",
         "likelihood": 1
       }
     }
   }
 
 // Successful France
-    if((ans == 12797 && ans == 13619) && (Cred >= 8)){
+    if(ans == 12797 && ans == 13619 && Cred >= 8){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13860,
     "fields": {
         "priority": 0,
-        "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Oui’ l'a emporté. C'est une grande victoire pour Chirac et Blair ”...<p></p>Your eyes light up at the glassy television screen. Eagerly calling up Alastair, you notify him of the good news. You know now is the time to write up a statement. The initiative is in your court.",
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Oui’ l'a emporté. C'est une grande victoire pour Chirac et Blair ”...<p></p>Your eyes light up at the glassy television screen. Eagerly calling up Alastair, you notify him of the good news. You know now is the time to write up a statement. The initiative is in your court.",
         "likelihood": 1
       }
     }
@@ -867,20 +878,20 @@ console.log(playerPolling)
     "pk": 13888,
     "fields": {
         "priority": 0,
-        "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
         "likelihood": 1
       }
     }
   }
 
 // Successful Netherlands
-    if((ans == 13557 && ans == 13873) && (Cred >= 8)){
+    if(ans == 13557 && ans == 13873 && Cred >= 8){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13894,
     "fields": {
         "priority": 0,
-        "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
         "likelihood": 1
       }
     }
@@ -926,7 +937,7 @@ console.log(playerPolling)
     "pk": 13729,
     "fields": {
         "priority": 0,
-        "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
         "likelihood": 1
       }
     }
@@ -937,7 +948,7 @@ console.log(playerPolling)
     "pk": 13750,
     "fields": {
         "priority": 0,
-        "description": "[April 22, 2005] The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
+        "description": "The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
         "likelihood": 1
       }
     }
@@ -959,7 +970,7 @@ console.log(playerPolling)
     "pk": 13794,
     "fields": {
         "priority": 0,
-        "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
+        "description": "As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
         "likelihood": 1
       }
     }
@@ -972,7 +983,7 @@ console.log(playerPolling)
     "pk": 13820,
     "fields": {
         "priority": 0,
-        "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
+        "description": "It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
         "likelihood": 1
       }
     }
@@ -985,7 +996,7 @@ console.log(playerPolling)
     "pk": 13839,
     "fields": {
         "priority": 0,
-        "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
+        "description": "It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
         "likelihood": 1
       }
     }
@@ -998,7 +1009,7 @@ console.log(playerPolling)
     "pk": 14122,
     "fields": {
         "priority": 0,
-        "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
         "likelihood": 1
       }
     }
@@ -1009,7 +1020,7 @@ console.log(playerPolling)
     "pk": 14145,
     "fields": {
         "priority": 0,
-        "description": "[April 6, 2005] Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Kenneth Clarke has just attacked your government's record, claiming you broke promises on taxes, europe and university top-up fees, saying repeatedly: “Why should anyone believe him again?”. You need to respond, for the sake of the country...",
+        "description": "Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Kenneth Clarke has just attacked your government's record, claiming you broke promises on taxes, europe and university top-up fees, saying repeatedly: “Why should anyone believe him again?”. You need to respond, for the sake of the country...",
         "likelihood": 1
       }
     }
@@ -1031,7 +1042,7 @@ console.log(playerPolling)
     "pk": 13945,
     "fields": {
         "priority": 0,
-        "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
         "likelihood": 1
       }
     }
@@ -1064,20 +1075,20 @@ console.log(playerPolling)
     "pk": 14005,
     "fields": {
         "priority": 0,
-        "description": "[April 27, 2005] The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. How are you going to fight back against these blasphemous charges?",
+        "description": "The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. He even dares to speak of dramatically higher borrowing than predicted. How are you going to fight back against these blasphemous charges?",
         "likelihood": 1
       }
     }
   }
 
 // Michael Portillo
-    if(ans == 12808 && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
+    if(ans == 12808 && Cred < 4 && ans == 14182 || ans == 14195 || ans == 14201){
     campaignTrail_temp.questions_json[10] = {
     "model": "campaign_trail.question",
     "pk": 14371,
     "fields": {
         "priority": 0,
-        "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
         "likelihood": 1
       }
     }
@@ -1099,7 +1110,7 @@ console.log(playerPolling)
     "pk": 14336,
     "fields": {
         "priority": 0,
-        "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
         "likelihood": 1
       }
     }
@@ -1115,7 +1126,7 @@ console.log(playerPolling)
       }
     }
   }
-    if((ans == 14372 || ans == 14378) && Cred < 5 && OldLab < 3){
+    if(ans == 14372 || ans == 14378 && Cred < 5 && OldLab < 3){
     campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 14321,
@@ -1150,7 +1161,6 @@ console.log(playerPolling)
   }
 }
 
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -1166,7 +1176,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12247,
         "fields": {
             "priority": 0,
-            "description": "[November, 2001] The fledgeling millennium has been permanently shattered, the pieces hastily reassembled around the burgeoning fear of terror. Along with plans for Iraq, the United States is now setting its sights on the Taliban fighters in Afghanistan. Regardless of your decision, you know that American soldiers shall pour into the country to ensure their prevention from rule. With all of that said, will you back America and send British forces into Afghanistan?",
+            "description": "The fledgeling millennium has been permanently shattered, the pieces hastily reassembled around the burgeoning fear of terror. Along with plans for Iraq, the United States is now setting its sights on the Taliban fighters in Afghanistan. Regardless of your decision, you know that American soldiers shall pour into the country to ensure their prevention from rule. With all of that said, will you back America and send British forces into Afghanistan?",
             "likelihood": 1
         }
     },
@@ -1175,7 +1185,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14031,
         "fields": {
             "priority": 0,
-            "description": "[November 19, 2001] A new paranoia and fear hangs like mildew over Britain. Buoyed by this heightened fear against potential new terrorist attacks, Foreign and Commonwealth Secretary Jack Straw, and Home Secretary David Blunkett have strongly argued for the passage of the Anti-terrorism, Crime and Security Bill. Among other stringent measures, it would give the government the power to detain any suspected terrorists without trials, freeze suspected terrorists’ funds, and create a new offence of incitement to religious hatred. WIth all of that laid out, will you give this Bill the green light?",
+            "description": "A new paranoia and fear hangs like mildew over Britain. Buoyed by this heightened fear against potential new terrorist attacks, Foreign and Commonwealth Secretary Jack Straw, and Home Secretary David Blunkett have strongly argued for the passage of the Anti-terrorism, Crime and Security Bill. Among other stringent measures, it would give the government the power to detain any suspected terrorists without trials, freeze suspected terrorists’ funds, and create a new offence of incitement to religious hatred. WIth all of that laid out, will you give this Bill the green light?",
             "likelihood": 1
         }
     },
@@ -1184,7 +1194,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12796,
         "fields": {
             "priority": 0,
-            "description": "[January 30, 2002] The horrific terrorist attacks on America have, rather incongruently, massively increased President Bush’s popularity — especially after his rousing State Of The Union address. Thus, his administration has a massive amount of political capital to pursue a so-called “War on Terror”, along with plans for a potential invasion of Iraq and the deposing of dictator Saddam Hussein. Already, Bush is approaching you requesting the intelligence agencies to collate evidence to justify such an operation. You feel a thumping sensation in your chest.",
+            "description": "The horrific terrorist attacks on America have, rather incongruently, massively increased President Bush’s popularity — especially after his rousing State Of The Union address. Thus, his administration has a massive amount of political capital to pursue a so-called “War on Terror”, along with plans for a potential invasion of Iraq and the deposing of dictator Saddam Hussein. Already, Bush is approaching you requesting the intelligence agencies to collate evidence to justify such an operation. You feel a thumping sensation in your chest.",
             "likelihood": 1
         }
     },
@@ -1193,7 +1203,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12801,
         "fields": {
             "priority": 0,
-            "description": "[April 17, 2002] Let’s shift perspectives, if only for a moment. You are Chancellor of the Exchequer, Gordon Brown. Today, you will unveil the 2002 Budget titled: “The strength to make long-term decisions: Investing in an enterprising, fairer Britain”. As a result of the recent funding hikes to the NHS in order to keep it up to the European standard, taxes will have to be raised in some capacity, in order to balance the books. The main tax you will raise will be…",
+            "description": "Let’s shift perspectives, if only for a moment. You are Chancellor of the Exchequer, Gordon Brown. Today, you will unveil the 2002 Budget titled: “The strength to make long-term decisions: Investing in an enterprising, fairer Britain”. As a result of the recent funding hikes to the NHS in order to keep it up to the European standard, taxes will have to be raised in some capacity, in order to balance the books. The main tax you will raise will be…",
             "likelihood": 1
         }
     },
@@ -1229,7 +1239,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12816,
         "fields": {
             "priority": 0,
-            "description": "[March 18, 2003] Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
+            "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
             "likelihood": 1
         }
     },
@@ -1238,7 +1248,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12821,
         "fields": {
             "priority": 0,
-            "description": "[July 7, 2003] It appears your commitment to going through with the exaggerated evidence is starting to bite you in the back. A whistleblower has been reaching out to journalist Andrew Gilligan of the BBC, claiming that the dossiers of evidence to propel a war in Iraq were “sexed up” to get public opinion on your government’s side. These media attacks could be damaging, and chokingly drag down your approval ratings as Prime Minister. How will you move on this?",
+            "description": "It appears your commitment to going through with the exaggerated evidence is starting to bite you in the back. A whistleblower has been reaching out to journalist Andrew Gilligan of the BBC, claiming that the dossiers of evidence to propel a war in Iraq were “sexed up” to get public opinion on your government’s side. These media attacks could be damaging, and chokingly drag down your approval ratings as Prime Minister. How will you move on this?",
             "likelihood": 1
         }
     },
@@ -1247,7 +1257,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14048,
         "fields": {
             "priority": 0,
-            "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
             "likelihood": 1
         }
     },
@@ -1256,7 +1266,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12826,
         "fields": {
             "priority": 0,
-            "description": "[January 27, 2004] Before 1998, going to university was completely free, with education being seen as a fundamental right. That year, your government then introduced up-front fees for students every year they studied. With these payments no longer being enough, your government is now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Although it is feasible to pass this legislation, it is nevertheless deeply controversial and could risk failing the vote on the second reading. How will you ensure that it passes?",
+            "description": "Before 1998, going to university was completely free, with education being seen as a fundamental right. That year, your government then introduced up-front fees for students every year they studied. With these payments no longer being enough, your government is now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Although it is feasible to pass this legislation, it is nevertheless deeply controversial and could risk failing the vote on the second reading. How will you ensure that it passes?",
             "likelihood": 1
         }
     },
@@ -1265,7 +1275,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12831,
         "fields": {
             "priority": 0,
-            "description": "[January 28, 2004] The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+            "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
             "likelihood": 1
         }
     },
@@ -1274,7 +1284,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14051,
         "fields": {
             "priority": 0,
-            "description": "[February 21, 2004] The war-time advantage you once enjoyed as Prime Minister is finally starting to fray. You are beginning to be pressured by British Human Rights groups and MPs due to the government's sweeping powers under the Anti-Terrorism Crime and Security Act, which have allowed the detention of fourteen foreign terrorist suspects in the UK at what has been described as \"Britain's Guantanamo Bay\". How will you react?",
+            "description": "The war-time advantage you once enjoyed as Prime Minister is finally starting to fray. You are beginning to be pressured by British Human Rights groups and MPs due to the government's sweeping powers under the Anti-Terrorism Crime and Security Act, which have allowed the detention of fourteen foreign terrorist suspects in the UK at what has been described as \"Britain's Guantanamo Bay\". How will you react?",
             "likelihood": 1
         }
     },
@@ -1283,7 +1293,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12836,
         "fields": {
             "priority": 0,
-            "description": "[June 11, 2004] Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in, and it’s a major blow for Labour. Overall, you lose 464 councillors and 8 councils, while the Conservatives make a net gain of 13 councils and 288 councillors, and are the clear winners. The Liberal Democrats even gain Newcastle and Leeds. This is a bad preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+            "description": "Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in, and it’s a major blow for Labour. Overall, you lose 464 councillors and 8 councils, while the Conservatives make a net gain of 13 councils and 288 councillors, and are the clear winners. The Liberal Democrats even gain Newcastle and Leeds. This is a bad preview for the general election, whenever you decide to call it. How do you react to this series of events?",
             "likelihood": 1
         }
     },
@@ -1292,7 +1302,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12841,
         "fields": {
             "priority": 0,
-            "description": "[June 14, 2004] Only 3 days after the local elections results, the European elections are yet again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman. This is a formal representation, a real manifestation, of the rise of Euroscepticism.",
+            "description": "Only 3 days after the local elections results, the European elections are yet again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman. This is a formal representation, a real manifestation, of the rise of Euroscepticism.",
             "likelihood": 1
         }
     },
@@ -1301,7 +1311,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12846,
         "fields": {
             "priority": 0,
-            "description": "[November 9, 2004] Social reform has been a major initiative of your premiership. Your government has pushed forward the monumental Civil Partnerships Act with a sound 426-49 vote in favour. However, a potential Tory wrench in the form of MP Edward Leigh is pushing an amendment to include siblings in the provisions. Whilst the proposal is already being ridiculed as the “wrecking amendment” by many but the most socially conservative MPs, it could undermine the reform you are trying to get through. Will you push, with effort, to shoot this amendment proposal down?",
+            "description": "Social reform has been a major initiative of your premiership. Your government has pushed forward the monumental Civil Partnerships Act with a sound 426-49 vote in favour. However, a potential Tory wrench in the form of MP Edward Leigh is pushing an amendment to include siblings in the provisions. Whilst the proposal is already being ridiculed as the “wrecking amendment” by many but the most socially conservative MPs, it could undermine the reform you are trying to get through. Will you push, with effort, to shoot this amendment proposal down?",
             "likelihood": 1
         }
     },
@@ -1310,7 +1320,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12851,
         "fields": {
             "priority": 0,
-            "description": "[April 2, 2005] As you were getting ready to announce the election, the phone rings in Downing street. For a few seconds, you stand in disbelief. Pope John Paul II, holding the Papacy for more than 28 years, has died aged 84. You have to delay the election. Still reckoning with the passing, you begin to write a statement…",
+            "description": "As you were getting ready to announce the election, the phone rings in Downing street. For a few seconds, you stand in disbelief. Pope John Paul II, holding the Papacy for more than 28 years, has died aged 84. You have to delay the election. Still reckoning with the passing, you begin to write a statement…",
             "likelihood": 1
         }
     },
@@ -1319,7 +1329,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12856,
         "fields": {
             "priority": 0,
-            "description": "[April 6, 2005] Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. the Tory leader has just railed against your government's record, claiming you broke promises on taxes, immigration and university top-up fees, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country.",
+            "description": "Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. the Tory leader has just railed against your government's record, claiming you broke promises on taxes, immigration and university top-up fees, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country.",
             "likelihood": 1
         }
     },
@@ -1328,7 +1338,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12861,
         "fields": {
             "priority": 0,
-            "description": "[April 6, 2005] With the grilling of Prime Minister’s Questions at last over, you now must announce the election outside the famous large black door of No. 10. All of the cameras and journalists are locked on your face, ready to broadcast your speech. What will you centre your speech around, given that this will be the first shot of the campaign?",
+            "description": "With the grilling of Prime Minister’s Questions at last over, you now must announce the election outside the famous large black door of No. 10. All of the cameras and journalists are locked on your face, ready to broadcast your speech. What will you centre your speech around, given that this will be the first shot of the campaign?",
             "likelihood": 1
         }
     },
@@ -1337,7 +1347,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12866,
         "fields": {
             "priority": 0,
-            "description": "[April 11, 2005] As Parliament is officially dissolved, it is time to announce your party manifesto for this year. With a sleuth of locations and regions available to you, what region would you like to visit to unveil the red booklet?",
+            "description": "As Parliament is officially dissolved, it is time to announce your party manifesto for this year. With a sleuth of locations and regions available to you, what region would you like to visit to unveil the red booklet?",
             "likelihood": 1
         }
     },
@@ -1346,7 +1356,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12871,
         "fields": {
             "priority": 0,
-            "description": "[April, 2005] For nearly 8 years now, the Blair-Brown Pact has manifested itself in the form of Chancellor of the Exchequer, Gordon Brown, containing an unprecedented influence over economic policy. Although no tensions have simmered over publicly between the two of you, rumours of them persist nonetheless. In light of this, would you like to have Brown on with you during the campaign trail?",
+            "description": "For nearly 8 years now, the Blair-Brown Pact has manifested itself in the form of Chancellor of the Exchequer, Gordon Brown, containing an unprecedented influence over economic policy. Although no tensions have simmered over publicly between the two of you, rumours of them persist nonetheless. In light of this, would you like to have Brown on with you during the campaign trail?",
             "likelihood": 1
         }
     },
@@ -1382,7 +1392,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12891,
         "fields": {
             "priority": 0,
-            "description": "[April, 2005] In Longbridge, the West Midlands, a dying gasp of the dwindling automobile industry has finally been choked out. Chinese-bought firm MG Rover is facing an imminent collapse, and is about to go under. Thousands of car manufacturing jobs are at risk. Action must be taken.",
+            "description": "In Longbridge, the West Midlands, a dying gasp of the dwindling automobile industry has finally been choked out. Chinese-bought firm MG Rover is facing an imminent collapse, and is about to go under. Thousands of car manufacturing jobs are at risk. Action must be taken.",
             "likelihood": 1
         }
     },
@@ -1391,7 +1401,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12896,
         "fields": {
             "priority": 0,
-            "description": "[April, 2005] Much to the vexation of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. Under the leadership of Charles Kennedy, their uptick could see them breach the 20%If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
+            "description": "Much to the vexation of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. Under the leadership of Charles Kennedy, their uptick could see them breach the 20%If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
             "likelihood": 1
         }
     },
@@ -1409,7 +1419,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12906,
         "fields": {
             "priority": 0,
-            "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+            "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
             "likelihood": 1
         }
     },
@@ -1418,7 +1428,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12911,
         "fields": {
             "priority": 0,
-            "description": "[April 21, 2005] A topic that has gained momentum and importance in our politics is the issue of crime. The Conservatives have taken the attack to your government, thanks to recent reports from the British Crime Survey stating that violent crime had risen by 9% in the last 3 months of 2004 – despite the same report showing a 5% decrease in crime overall. As the incumbent party, how will you go about countering this attack?",
+            "description": "A topic that has gained momentum and importance in our politics is the issue of crime. The Conservatives have taken the attack to your government, thanks to recent reports from the British Crime Survey stating that violent crime had risen by 9% in the last 3 months of 2004 – despite the same report showing a 5% decrease in crime overall. As the incumbent party, how will you go about countering this attack?",
             "likelihood": 1
         }
     },
@@ -1427,7 +1437,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12916,
         "fields": {
             "priority": 0,
-            "description": "[April 22, 2005] It seems a clear theme has emerged over the course of the Conservative campaign: Immigration. With one of their core messages being “It’s not racist to want to reduce immigration”, and Mr Howard harshly attacking your immigration policy, how will you respond to these allegations?",
+            "description": "It seems a clear theme has emerged over the course of the Conservative campaign: Immigration. With one of their core messages being “It’s not racist to want to reduce immigration”, and Mr Howard harshly attacking your immigration policy, how will you respond to these allegations?",
             "likelihood": 1
         }
     },
@@ -1445,7 +1455,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12926,
         "fields": {
             "priority": 0,
-            "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
+            "description": "As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
             "likelihood": 1
         }
     },
@@ -1454,7 +1464,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12997,
         "fields": {
             "priority": 0,
-            "description": "[April 28, 2005] During the BBC Question Time, an audience member complains that he can not book a GP appointment 3 days hence, and instead can only do it 48 hours in advance. Ensuing this, several other audience members agree with this inconvenience, stating that the doctors would only accept appointments with a maximum of 48 hours ahead of time, in order to “meet government targets”. In short, they are getting their GP appointments too quickly. What is your response to this apparent revelation to you?",
+            "description": "During the BBC Question Time, an audience member complains that he can not book a GP appointment 3 days hence, and instead can only do it 48 hours in advance. Ensuing this, several other audience members agree with this inconvenience, stating that the doctors would only accept appointments with a maximum of 48 hours ahead of time, in order to “meet government targets”. In short, they are getting their GP appointments too quickly. What is your response to this apparent revelation to you?",
             "likelihood": 1
         }
     },
@@ -1463,7 +1473,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13117,
         "fields": {
             "priority": 0,
-            "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
+            "description": "It’s nearly over, this election season. The starry eyes of devotees don't sparkle at you like they did in years past. Tony Blair, the embodiment of Cool Britannia, the reformist who revolutionised Labour – the people don't see it as you do anymore. Even still, it is finally time to hammer home your final message. What focus group shall you pander to, to convince the voters to vote for you this Spring?",
             "likelihood": 1
         }
     },
@@ -1472,7 +1482,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13160,
         "fields": {
             "priority": 0,
-            "description": "[May 4, 2005] This campaign. This campaign has leached out every fibre of your being, and ardently extracting every electric current of your conscience. Finally though, election day is tomorrow. Where would you like to concentrate the last stops of your stumping before your eyes set upon that voluminous red screen at the Labour Party Headquarters?",
+            "description": "This campaign. This campaign has leached out every fibre of your being, and ardently extracting every electric current of your conscience. Finally though, election day is tomorrow. Where would you like to concentrate the last stops of your stumping before your eyes set upon that voluminous red screen at the Labour Party Headquarters?",
             "likelihood": 1
         }
     },
@@ -1481,7 +1491,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13391,
         "fields": {
             "priority": 0,
-            "description": "[July 9, 2003] You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
+            "description": "You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
             "likelihood": 1
         }
     },
@@ -1490,7 +1500,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13410,
         "fields": {
             "priority": 0,
-            "description": "[January 28, 2004] The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
+            "description": "The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
             "likelihood": 1
         }
     },
@@ -1499,7 +1509,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13417,
         "fields": {
             "priority": 0,
-            "description": "[March 18, 2003] Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
+            "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
             "likelihood": 1
         }
     },
@@ -1508,7 +1518,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13427,
         "fields": {
             "priority": 0,
-            "description": "[May 4, 2005] From the day that you came into office, you pledged to the British people that you would not get in the mud and slander your opponents. This campaign though, you have — in the eyes of the public — thrown that right out of the window and into the political fire. With the unusually personal vitriol of this year’s election season being lobbed around by both sides, the Liberal Democrats have seen unprecedented rises in the polls, as your personal favourability sags alongside the foreboding polarisation. What will you do to ensure this doesn’t mean your defeat – calamity even more so– tomorrow evening?",
+            "description": "From the day that you came into office, you pledged to the British people that you would not get in the mud and slander your opponents. This campaign though, you have — in the eyes of the public — thrown that right out of the window and into the political fire. With the unusually personal vitriol of this year’s election season being lobbed around by both sides, the Liberal Democrats have seen unprecedented rises in the polls, as your personal favourability sags alongside the foreboding polarisation. What will you do to ensure this doesn’t mean your defeat – calamity even more so– tomorrow evening?",
             "likelihood": 1
         }
     },
@@ -1535,7 +1545,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13473,
         "fields": {
             "priority": 0,
-            "description": "[January 27, 2004] Before 1998, going to university was completely free, with education being seen as a fundamental right. That year, your government then introduced up-front fees for students every year they studied. With these payments no longer being enough, your government is now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Although it is feasible to pass this legislation, it is nevertheless deeply controversial and could risk failing the vote on the second reading. How will you ensure that it passes?",
+            "description": "Before 1998, going to university was completely free, with education being seen as a fundamental right. That year, your government then introduced up-front fees for students every year they studied. With these payments no longer being enough, your government is now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Although it is feasible to pass this legislation, it is nevertheless deeply controversial and could risk failing the vote on the second reading. How will you ensure that it passes?",
             "likelihood": 1
         }
     },
@@ -1544,7 +1554,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13494,
         "fields": {
             "priority": 0,
-            "description": "[January, 2004] The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
+            "description": "The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
             "likelihood": 1
         }
     },
@@ -1553,7 +1563,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13499,
         "fields": {
             "priority": 0,
-            "description": "[February, 2005] Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
+            "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
             "likelihood": 1
         }
     },
@@ -1589,7 +1599,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13560,
         "fields": {
             "priority": 0,
-            "description": "[March 18, 2003] Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
+            "description": "Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
             "likelihood": 1
         }
     },
@@ -1607,7 +1617,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13614,
         "fields": {
             "priority": 0,
-            "description": "[July, 2003] As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
+            "description": "As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
             "likelihood": 1
         }
     },
@@ -1616,7 +1626,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13621,
         "fields": {
             "priority": 0,
-            "description": "[June 11, 2004] Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. Overall, you lose 298 councillors and 3 councils, while the Conservatives make a net gain of 8 councils and 167 councillors. The Liberal Democrats do hold you to the line in Newcastle and Leeds though. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+            "description": "Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. Overall, you lose 298 councillors and 3 councils, while the Conservatives make a net gain of 8 councils and 167 councillors. The Liberal Democrats do hold you to the line in Newcastle and Leeds though. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
             "likelihood": 1
         }
     },
@@ -1625,7 +1635,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13647,
         "fields": {
             "priority": 0,
-            "description": "[June 14, 2004] Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
+            "description": "Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
             "likelihood": 1
         }
     },
@@ -1634,7 +1644,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13657,
         "fields": {
             "priority": 0,
-            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.\n",
+            "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.\n",
             "likelihood": 1
         }
     },
@@ -1652,7 +1662,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13689,
         "fields": {
             "priority": 0,
-            "description": "[April, 2005] Much to the chagrin of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
+            "description": "Much to the chagrin of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
             "likelihood": 1
         }
     },
@@ -1670,7 +1680,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13729,
         "fields": {
             "priority": 0,
-            "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+            "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
             "likelihood": 1
         }
     },
@@ -1679,7 +1689,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13750,
         "fields": {
             "priority": 0,
-            "description": "[April 22, 2005] The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
+            "description": "The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
             "likelihood": 1
         }
     },
@@ -1697,7 +1707,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13794,
         "fields": {
             "priority": 0,
-            "description": "[April 27, 2005] As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
+            "description": "As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
             "likelihood": 1
         }
     },
@@ -1706,7 +1716,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13820,
         "fields": {
             "priority": 0,
-            "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
+            "description": "It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
             "likelihood": 1
         }
     },
@@ -1715,7 +1725,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13839,
         "fields": {
             "priority": 0,
-            "description": "[May 4, 2005] It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
+            "description": "It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
             "likelihood": 1
         }
     },
@@ -1724,7 +1734,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13860,
         "fields": {
             "priority": 0,
-            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Oui’ l'a emporté. C'est une grande victoire pour Chirac et Blair ”...<p></p>Your eyes light up at the glassy television screen. Eagerly calling up Alastair, you notify him of the good news. You know now is the time to write up a statement. The initiative is in your court.\n",
+            "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Oui’ l'a emporté. C'est une grande victoire pour Chirac et Blair ”...<p></p>Your eyes light up at the glassy television screen. Eagerly calling up Alastair, you notify him of the good news. You know now is the time to write up a statement. The initiative is in your court.\n",
             "likelihood": 1
         }
     },
@@ -1733,7 +1743,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13866,
         "fields": {
             "priority": 0,
-            "description": "[July, 2003] With how many stuffy rooms and overhearing of Dutch phrases you have been put through, it’s tough to see how the Constitution could possibly fail with all of the mainstream parties supporting it. But back the “Yes” vote you must nonetheless. Once all of the heated chatter over how to convince the Dutch people subsides, they turn over to you for your input. Prime Minister Jan Peter Balkenende locks eyes with you. How will you sway and enlighten them, Tony?",
+            "description": "With how many stuffy rooms and overhearing of Dutch phrases you have been put through, it’s tough to see how the Constitution could possibly fail with all of the mainstream parties supporting it. But back the “Yes” vote you must nonetheless. Once all of the heated chatter over how to convince the Dutch people subsides, they turn over to you for your input. Prime Minister Jan Peter Balkenende locks eyes with you. How will you sway and enlighten them, Tony?",
             "likelihood": 1
         }
     },
@@ -1742,7 +1752,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13888,
         "fields": {
             "priority": 0,
-            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+            "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
             "likelihood": 1
         }
     },
@@ -1751,7 +1761,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13894,
         "fields": {
             "priority": 0,
-            "description": "[March 5, 2005] The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+            "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
             "likelihood": 1
         }
     },
@@ -1769,7 +1779,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13945,
         "fields": {
             "priority": 0,
-            "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+            "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
             "likelihood": 1
         }
     },
@@ -1796,7 +1806,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14005,
         "fields": {
             "priority": 0,
-            "description": "[April 27, 2005] The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. How are you going to fight back against these blasphemous charges?",
+            "description": "The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. He even dares to speak of dramatically higher borrowing than predicted. How are you going to fight back against these blasphemous charges?",
             "likelihood": 1
         }
     },
@@ -1805,7 +1815,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14100,
         "fields": {
             "priority": 0,
-            "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
             "likelihood": 1
         }
     },
@@ -1814,7 +1824,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14122,
         "fields": {
             "priority": 0,
-            "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
             "likelihood": 1
         }
     },
@@ -1823,7 +1833,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14145,
         "fields": {
             "priority": 0,
-            "description": "[April 6, 2005] Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Kenneth Clarke has just attacked your government's record, claiming you broke promises on taxes, europe and university top-up fees, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country...",
+            "description": "Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Kenneth Clarke has just attacked your government's record, claiming you broke promises on taxes, europe and university top-up fees, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country...",
             "likelihood": 1
         }
     },
@@ -1832,7 +1842,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14158,
         "fields": {
             "priority": 0,
-            "description": "[April 6, 2005] Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Michael Portillo has just attacked your government's record, claiming you broke promises on taxes, europe, and social rights, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country...",
+            "description": "Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Michael Portillo has just attacked your government's record, claiming you broke promises on taxes, europe, and social rights, saying repeatedly: \"Why should anyone believe him again?\". You need to respond, for the sake of the country...",
             "likelihood": 1
         }
     },
@@ -1850,7 +1860,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14208,
         "fields": {
             "priority": 0,
-            "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+            "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
             "likelihood": 1
         }
     },
@@ -1859,7 +1869,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14237,
         "fields": {
             "priority": 0,
-            "description": "[January 27, 2004] Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+            "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
             "likelihood": 1
         }
     },
@@ -1868,7 +1878,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14281,
         "fields": {
             "priority": 0,
-            "description": "[January 28, 2004] The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+            "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
             "likelihood": 1
         }
     },
@@ -1922,7 +1932,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14336,
         "fields": {
             "priority": 0,
-            "description": "[April 20, 2005] Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+            "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
             "likelihood": 1
         }
     },
@@ -1949,7 +1959,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14371,
         "fields": {
             "priority": 0,
-            "description": "[November 6, 2003] The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
             "likelihood": 1
         }
     },
@@ -2003,7 +2013,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14569,
         "fields": {
             "priority": 0,
-            "description": "[April 28, 2005] During the BBC Question Time, you knew from the moment you sat in the leather chair that something was off. The members in the audience, universally cognisant of their wallets, were out for you as your face felt hotter under the studio lights. Finally, one daring man speaks up “what new stealth taxes you plan to implement next?”. Hearty laughs ring out across the room, with yourself feigning and joining in. How will you shut this tiring line down?",
+            "description": "During the BBC Question Time, you knew from the moment you sat in the leather chair that something was off. The members in the audience, universally cognisant of their wallets, were out for you as your face felt hotter under the studio lights. Finally, one daring man speaks up “what new stealth taxes you plan to implement next?”. Hearty laughs ring out across the room, with yourself feigning and joining in. How will you shut this tiring line down?",
             "likelihood": 1
         }
     },
@@ -2021,7 +2031,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14595,
         "fields": {
             "priority": 0,
-            "description": "[April 28, 2005] During the BBC Question Time, nobody could go a nanosecond without whispering on the war abroad. What of the soldiers who died for nothing? What <i>really</i> happened to Dr Kelly? Is a war criminal leading the Labour Party? The studio lights are white-hot, your hands are writhing and clammy to the touch of your trousers. It all culminates in a young man – fist clenched – declaring “when you presented your evidence to the House of Commons, you said it was authoritative and full-evidenced. That is a lie, you lied to this country and that's why we can't support you at the following election”. The cheering is a tremor throughout the studio hall, and you for one will not let it careen your polling.",
+            "description": "During the BBC Question Time, nobody could go a nanosecond without whispering on the war abroad. What of the soldiers who died for nothing? What <i>really</i> happened to Dr Kelly? Is a war criminal leading the Labour Party? The studio lights are white-hot, your hands are writhing and clammy to the touch of your trousers. It all culminates in a young man – fist clenched – declaring “when you presented your evidence to the House of Commons, you said it was authoritative and full-evidenced. That is a lie, you lied to this country and that's why we can't support you at the following election”. The cheering is a tremor throughout the studio hall, and you for one will not let it careen your polling.",
             "likelihood": 1
         }
     },
@@ -2751,7 +2761,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13118,
         "fields": {
             "question": 13117,
-            "description": "Over the course of our time in government, we have worked to end the boom-and-bust cycles of the Tory governments. Now we have the strongest economy of Europe. Our NHS revitalised, and child-poverty down by a third."
+            "description": "Let's keep up the work with Gordon, really make sure to hammer home our message of economic stability. We have ended the boom-and-bust cycles of the past Tory governments. Speaking to Trade Union Congresses to keep them on side, the whole lot."
         }
     },
     {
@@ -2759,7 +2769,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13123,
         "fields": {
             "question": 13117,
-            "description": "The social progress that we have championed is greater than perhaps any government before us. On human rights, on the rights of homosexuals and the LGBT community, and the prosperous society we have fostered together."
+            "description": "The social progress that we have championed is greater than perhaps any government before us. On human rights, on the rights of homosexuals and the LGBT community. Let's meet with these groups, and ensure they know we have our backs. Youth turnout cannot slip."
         }
     },
     {
@@ -2767,7 +2777,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13127,
         "fields": {
             "question": 13117,
-            "description": "We have made great strides in increasing our security abroad among our international partners. The actions of dictators, and terrorists shall not, indeed shall never, be tolerated under our Labour government. Let the Tories dither on our national security."
+            "description": "The soldiers and the officers. We have made great strides in increasing our security abroad among our international partners. The actions of dictators, and terrorists shall not, indeed shall never, be tolerated under our Labour government."
         }
     },
     {
@@ -2775,7 +2785,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13131,
         "fields": {
             "question": 13117,
-            "description": "Over the course of this campaign, the Conservatives have tried to drag this campaign into the mud. But their attempts to vilify the immigrants of this country will not be tolerated. Our government will continue to bring prosperity, the Tories are still the same nasty party they always were."
+            "description": "Meet with the union leaders, and get them with Prescott if we must. After all we have done for working people, it would be unfortunate for them to ditch us for parties who so obviously do not represent their interest."
         }
     },
     {
@@ -3599,7 +3609,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14006,
         "fields": {
             "question": 14005,
-            "description": "I personally have little care for these attempts at personal abuse. On the other hand, their, frankly, extreme policies on education would undo the monumental progress we have made for the students of this country."
+            "description": "The charge Mr Clarke makes on money is utterly unscrupulous. If he wants to compare the last Labour and Conservative records, then I would be delighted to respond in turn. We have kept the economy secure for the future, I'd like to see him claim the same."
         }
     },
     {
@@ -3607,7 +3617,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14013,
         "fields": {
             "question": 14005,
-            "description": "There is no lure I feel towards these personalised attacks, let us not forget the hidden agenda on the NHS they are trying to distract us from, the opposition cannot be trusted with the Health Service."
+            "description": "Let us not forget that it was Clarke who introduced the internal market into the NHS, something that we had to abolish. The Tories have always had a hidden agenda with the Health Service, and it is one they cannot be trusted on."
         }
     },
     {
@@ -11041,7 +11051,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14006,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.01
+            "global_multiplier": 0.0075
         }
     },
     {
@@ -11051,7 +11061,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14006,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": 0.01
+            "global_multiplier": -0.0045
         }
     },
     {
@@ -11061,7 +11071,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14013,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.004
+            "global_multiplier": 0.0035
         }
     },
     {
@@ -11071,7 +11081,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14013,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": 0.01
+            "global_multiplier": 0.0055
         }
     },
     {
@@ -15294,7 +15304,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14006,
             "issue": 27,
             "issue_score": 0.15,
-            "issue_importance": 1
+            "issue_importance": 3
         }
     },
     {
@@ -15309,22 +15319,12 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
-        "pk": 14012,
-        "fields": {
-            "answer": 14006,
-            "issue": 31,
-            "issue_score": 0.6,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
         "pk": 14017,
         "fields": {
             "answer": 14013,
             "issue": 28,
-            "issue_score": 0.4,
-            "issue_importance": 1
+            "issue_score": 0.6,
+            "issue_importance": 3
         }
     },
     {
@@ -17092,7 +17092,7 @@ campaignTrail_temp.answer_score_state_json = [
         "pk": 13130,
         "fields": {
             "answer": 13127,
-            "state": 12506,
+            "state": 12476,
             "candidate": 12543,
             "affected_candidate": 12543,
             "state_multiplier": 0.009
@@ -17103,7 +17103,7 @@ campaignTrail_temp.answer_score_state_json = [
         "pk": 13134,
         "fields": {
             "answer": 13131,
-            "state": 12488,
+            "state": 12452,
             "candidate": 12543,
             "affected_candidate": 12543,
             "state_multiplier": 0.004
@@ -17114,7 +17114,7 @@ campaignTrail_temp.answer_score_state_json = [
         "pk": 13135,
         "fields": {
             "answer": 13131,
-            "state": 12494,
+            "state": 12446,
             "candidate": 12543,
             "affected_candidate": 12543,
             "state_multiplier": 0.006
@@ -17870,7 +17870,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13118,
             "candidate": 12543,
-            "answer_feedback": "One thing has remained constant throughout not just this term, but your entire premiership: the strong economy. At the end of the day, people vote with their wallets first."
+            "answer_feedback": "Knowing your position as PM, Brown bats out for you one last time before election night. One thing has remained constant throughout not just this term, but your entire premiership: the strong economy. At the end of the day, people vote with their wallets first."
         }
     },
     {
@@ -17879,7 +17879,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13123,
             "candidate": 12543,
-            "answer_feedback": "The extent of which your government has championed social changes to Britain is undoubtedly significant. If you wish to gain socially liberal voters, this is a good way to go around this."
+            "answer_feedback": "The students and young adults you shake hands emit a wonder you envy. The extent of which your government has championed social changes to Britain is undoubtedly significant. If you wish to gain socially liberal voters, this is a good way to go around this."
         }
     },
     {
@@ -17888,7 +17888,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13127,
             "candidate": 12543,
-            "answer_feedback": "The War on Terror is overall broadly supported. But Iraq, that war sucks the morsel out of your premiership little by little. It’s not widely hated, but popular opinion has swung more against the war since 2003. Hopefully the lost lives are worth it, perhaps…"
+            "answer_feedback": "The War on Terror is overall broadly supported. But Iraq, that war sucks the morsel out of your premiership little by little. Many feel resentment at you for praising the soldiers you send into war to die, it will never be enough for them – you scowl. The lost lives will be worth it, they will..."
         }
     },
     {
@@ -17897,7 +17897,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13131,
             "candidate": 12543,
-            "answer_feedback": "Taking the attack to the Tories is never a bad move, but it may be better to close out with a more positive message to drive turnout at the finish line."
+            "answer_feedback": "The big union bosses see no trouble with backing you to the hilt, if it means keeping their membership numbers from falling even more sharply under the Tories. The union workers perceive you with reticence, but they'll come around and see who has their best interests in mind. Won't they?"
         }
     },
     {
@@ -19283,7 +19283,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14006,
             "candidate": 12543,
-            "answer_feedback": "Tackling their stances and highlighting the distinct lack of civility is a useful parry. It doesn’t fully account for their claim on the stealth taxes though, or the EU Constitution. With education, your party is not as strong on this issue as is ideal, so tread carefully with that."
+            "answer_feedback": "Kenneth Clarke has the ability to boast of his record, and the onlookers see merit in his record while Chancellor. It won't matter to them ultimately. When they see Gordon Brown, they see a man who kept the economy – and their cheques – growing, and a man who kept you in office for this long. Keeping this in the media cycle for arguments is a wise move."
         }
     },
     {
@@ -19292,7 +19292,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14013,
             "candidate": 12543,
-            "answer_feedback": "Ah the NHS, always a staunch defender of it, your party is. Labour has been consistently more trusted on healthcare than the Conservatives have ever been, it also shores up the justification for your stealth taxes. Just keep in mind though that against the more ideological centrist Clarke, this attack won’t quite have the same potency it otherwise might have."
+            "answer_feedback": "The NHS has always been staunchly defended by your party. Labour has been consistently more trusted on healthcare than the Conservatives have ever been. Just keep in mind though that against the more ideological centrist Clarke, this attack won’t quite have the same potency it otherwise might have. At the very least, you've made him sweat some beads."
         }
     },
     {
@@ -20315,6 +20315,110 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
+
+var changeGameDisp = (hide) => {
+    disp = "";
+    if (hide) {
+      disp = "none";
+    }
+    Array.from(gameWindow.children).forEach(f=>{
+        if(!f.classList.contains("game_header") && (f.id != "main_content_area" || !$("#campaign_sign")[0])) 
+            f.style.display = disp
+    });
+};
+  
+
+// If you resign as Blair
+e.candidateSwitcher = () => {
+  let potential_running_mate_pks = e.running_mate_json.filter(f=>f.fields.candidate == e.candidate_id).map(f=>f.fields.running_mate);
+  let pot_run_mat = potential_running_mate_pks.map(f=>e.candidate_json.find(_f=>_f.pk===f));
+  let running_mate_options = ``;
+  pot_run_mat.forEach(f=> {
+      running_mate_options += `<option value="${f.pk}">${f.fields.first_name} ${f.fields.last_name}</option>\n`
+  });
+
+  let vp_html = `
+      <div id="running_mate_form">
+          <form name="running mate">
+              <p></p>
+              <h3>Please select your party leader:</h3> 
+              <select name="running_mate_id" id="running_mate_id">
+                  ${running_mate_options}
+              </select>
+              <p></p>
+          </form>
+      </div>
+      <div class="person_description_window" id="running_mate_description_window">
+          <div class="person_image" id="running_mate_image"> <img src="${pot_run_mat[0].fields.image_url}" width="210" height="250"> </div>
+          <div class="person_summary" id="running_mate_summary">
+              <ul>
+                  <li>Name: ${pot_run_mat[0].fields.first_name} ${pot_run_mat[0].fields.last_name}</li>
+                  <li>Role: ${pot_run_mat[0].fields.party}</li>
+                  <li>Constituency: ${pot_run_mat[0].fields.state}</li>
+              </ul>
+              ${pot_run_mat[0].fields.description_as_running_mate}
+          </div>
+      </div>
+      <p> <button class="person_button" id="running_mate_id_button">Continue</button> </p>
+  `
+
+  let vp_screen = document.createElement("div");
+  vp_screen.classList.add("inner_window_w_desc");
+  vp_screen.id = "inner_window_4";
+  vp_screen.innerHTML = vp_html;
+
+  changeGameDisp(true);
+
+  gameWindow.appendChild(vp_screen);
+
+  // now we make the stuff do stuff!
+
+  $("#running_mate_id").change((_e)=>{
+      _e.preventDefault()
+
+      let value = Number($("#running_mate_id").val());
+      let i = potential_running_mate_pks.findIndex(f=>f === value);
+
+      let screen_html = `
+          <div class="person_image" id="running_mate_image"> <img src="${pot_run_mat[i].fields.image_url}" width="210" height="250"> </div>
+          <div class="person_summary" id="running_mate_summary">
+              <ul>
+                  <li>Name: ${pot_run_mat[i].fields.first_name} ${pot_run_mat[i].fields.last_name}</li>
+                  <li>Role: ${pot_run_mat[i].fields.party}</li>
+                  <li>Constituency: ${pot_run_mat[i].fields.state}</li>
+              </ul>
+              ${pot_run_mat[i].fields.description_as_running_mate}
+          </div>
+      `
+
+      $("#running_mate_description_window").html(screen_html);
+
+  });
+
+  // VP selected!
+
+  $("#running_mate_id_button").click((_e)=>{
+      _e.preventDefault();
+
+      let value = Number($("#running_mate_id").val());
+      let i = potential_running_mate_pks.findIndex(f=>f === value);
+
+      e.running_mate_last_name = pot_run_mat[i].fields.last_name;
+      e.running_mate_image_url = pot_run_mat[i].fields.image_url;
+      e.selected_running_mate = pot_run_mat[i];
+
+      if ($("#campaign_sign")[0]) {
+          $("#campaign_sign").html(`<p>${e.candidate_last_name}</p><p>${e.running_mate_last_name}</p>`);
+          $("#running_mate_pic").attr("src", e.running_mate_image_url)
+      }
+
+      
+      $("#inner_window_4").remove();
+      changeGameDisp(false);
+  })
+  
+}
 
 
 function changechart(){
