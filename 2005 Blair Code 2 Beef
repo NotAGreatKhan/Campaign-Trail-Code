@@ -83,7 +83,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
     }
-    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865){
+    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
@@ -172,6 +172,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13508){
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 25;
       Brown = true;
+    }
+    if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){   
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
+        campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
     }
     if(ans == 14123 || ans == 14129){
         campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
