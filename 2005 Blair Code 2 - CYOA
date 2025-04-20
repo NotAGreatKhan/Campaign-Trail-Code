@@ -635,7 +635,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 if ([12872,12873,12874].includes(ans)){
 let pop_vote = e.current_results[0];
-let playerPolling = pop_vote.find(polling => polling.pk===20000);
+let playerPolling = pop_vote.find(polling => polling.pk===2000000);
 console.log(playerPolling)
     if(playerPolling.pvp >= 0.375 || Resign == 0){
     campaignTrail_temp.questions_json[23] = {
@@ -849,7 +849,7 @@ console.log(playerPolling)
   }
 
 // Successful France
-    if((ans == 12797 && ans == 13619) && (Cred >= 8)){
+    if(ans == 12797 && ans == 13619 && Cred >= 8){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13860,
@@ -875,7 +875,7 @@ console.log(playerPolling)
   }
 
 // Successful Netherlands
-    if((ans == 13557 && ans == 13873) && (Cred >= 8)){
+    if(ans == 13557 && ans == 13873 && Cred >= 8){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13894,
@@ -1072,7 +1072,7 @@ console.log(playerPolling)
   }
 
 // Michael Portillo
-    if(ans == 12808 && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
+    if(ans == 12808 && Cred < 4 && ans == 14182 || ans == 14195 || ans == 14201){
     campaignTrail_temp.questions_json[10] = {
     "model": "campaign_trail.question",
     "pk": 14371,
@@ -1116,7 +1116,7 @@ console.log(playerPolling)
       }
     }
   }
-    if((ans == 14372 || ans == 14378) && Cred < 5 && OldLab < 3){
+    if(ans == 14372 || ans == 14378 && Cred < 5 && OldLab < 3){
     campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 14321,
