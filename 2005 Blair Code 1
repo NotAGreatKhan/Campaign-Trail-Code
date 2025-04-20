@@ -282,11 +282,11 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#e74040",
             "secondary_color_hex": "#FFA0A0",
             "is_active": 0,
-            "image_url": "https://imgur.com/NlFar5m.png",
+            "image_url": "https://imgur.com/2HPGKlW.jpg",
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<li><b>Name: J. Gordon Brown</b></li><li><b>Role: Her Majesty's New Prime Minister</b></li><li><b>Constituency: Dumferline East</b></li><p> </p>   <b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the pearly gates of legends.",
+            "description_as_running_mate": "<li><b>Name: J. Gordon Brown</b></li><li><b>Role: Her Majesty's New Prime Minister</b></li><li><b>Constituency: Dumferline East</b></li><p> </p><b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the pearly gates of legends.",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -833,14 +833,6 @@ campaignTrail_temp.running_mate_json = [
     },
     {
         "model": "campaign_trail.running_mate",
-        "pk": 159977,
-        "fields": {
-            "candidate": 12543,
-            "running_mate": 136
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
         "pk": 159967,
         "fields": {
             "candidate": 12565,
@@ -1058,7 +1050,7 @@ const startScreenUpdater = setInterval(function() {
               initContinue.click();
           }
           
-          else if((r == 125 || r == 126 || r == 136) && !(runningMateButton)) {
+          else if(r == 125 && !(runningMateButton)) {
               if(runningMateButton) {
                   runningMateButton.remove();
               }
@@ -1665,8 +1657,8 @@ setupMusicPlayer();
 
 
 e.ElectionPopup = "Election night has, at last, arrived. We shall now see the decision of the people – as the bell of Elizabeth Tower tolls. Best of luck to you, you'll certainly need it."
-e.WinPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have determined your end. Click 'OK' to view the choice of the nation, and may life provide a more just conclusion than poltics already has."
-e.LossPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have enshrined upon you your hard-fought victory. Click 'OK' to view the choice of the nation, and may the collosuem of public life continue to provide you bountiful success."
+e.LossPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have determined your end. Click 'OK' to view the choice of the nation, and may life provide a more just conclusion than poltics already has."
+e.WinPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have enshrined upon you your hard-fought victory. Click 'OK' to view the choice of the nation, and may the collosuem of public life continue to provide you bountiful success."
 
 
 campaignTrail_temp.achievements = {
