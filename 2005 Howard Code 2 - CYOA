@@ -6,5 +6,30 @@ var Reptn = 0;
 var RightWing = 2;
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
-  
+    // Michael Howard becomes leader
+    if(ans == 20500){
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": 12565,
+                  "running_mate": 137
+              }
+        }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
+    }
+    // I. D. Smith stays on
+    if(ans == 20501){
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": 12565,
+                  "running_mate": 138
+              }
+        }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
+    }
 }
