@@ -143,7 +143,7 @@ height: 250px;
 
 .inner_inner_window h3 {
 background-color: #e2ebfd;
-background: linear-gradient(to bottom, #e2ebfd, #dce1ea);
+background: linear-gradient(to bottom, #e2ebfd, #f5f8ff);
 }
 
 #campaign_sign {
