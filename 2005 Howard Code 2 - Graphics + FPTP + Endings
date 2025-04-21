@@ -785,13 +785,6 @@ function openHeadquarter() {
     }
     headerDiv.appendChild(backButton);
 
-    let headerText = document.createElement("h3");
-    headerText.textContent = "Communications Director – Alastair Campbell";
-    headerText.style.textAlign = "center";  // Center the text
-    headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
-    headerText.style.color = "black";
-    headerDiv.appendChild(headerText);
-
     // Append headerDiv to the main hqDiv
     hqDiv.appendChild(headerDiv);
 
