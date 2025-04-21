@@ -270,6 +270,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 136,
+        "fields": {
+            "first_name": "J. Gordon",
+            "last_name": "Brown",
+            "election": 12,
+            "party": "Labour",
+            "state": "Dumferline East",
+            "priority": 9,
+            "description": "'",
+            "color_hex": "#e74040",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://imgur.com/2HPGKlW.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<li><b>Name: J. Gordon Brown</b></li><li><b>Role: Her Majesty's New Prime Minister</b></li><li><b>Constituency: Dumferline East</b></li><p> </p><b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the pearly gates of legends.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 12565,
         "fields": {
             "first_name": "The",
@@ -313,7 +336,53 @@ campaignTrail_temp.candidate_json = [
             "candidate_score": 1,
             "running_mate": true
         }
-    },    
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 137,
+        "fields": {
+            "first_name": "Michael",
+            "last_name": "Howard",
+            "election": 12,
+            "party": "Conservative",
+            "state": "Folkestone and Hythe",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#4848a8",
+            "secondary_color_hex": "#4848a8",
+            "is_active": 0,
+            "image_url": "https://imgur.com/90oomiV.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<li><b>Name: Michael Howard</b></li><li><b>Role: Her Majesty's New Leader of the Opposition</b></li><li><b>Constituency: Folkestone and Hythe</b></li><p> </p><b>Iain Duncan Smith</b><br><br>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 138,
+        "fields": {
+            "first_name": "Iain Duncan",
+            "last_name": "Smith",
+            "election": 12,
+            "party": "Conservative",
+            "state": "Chingford and Woodford Green",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#4848a8",
+            "secondary_color_hex": "#4848a8",
+            "is_active": 0,
+            "image_url": "https://imgur.com/90oomiV.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<li><b>Name: Iain Duncan Smith</b></li><li><b>Role: Her Majesty's Leader of the Opposition</b></li><li><b>Constituency: Chingford and Woodford Green</b></li><p> </p><b>Michael Howard</b><br><br>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
     {
         "model": "campaign_trail.candidate",
         "pk": 12587,
@@ -1014,20 +1083,20 @@ document.head.innerHTML += `<style>
 </style>`
 
 
-	document.head.innerHTML += `<link
-	  rel="stylesheet"
-	  href="https://unpkg.com/xp.css"
-	>`
+document.head.innerHTML += `<link
+	rel="stylesheet"
+	href="https://unpkg.com/xp.css"
+>`
 	
-	document.head.innerHTML += `<style>
-	h3 {
-		font-size:1.17em!important;
-	}
+document.head.innerHTML += `<style>
+h3 {
+	font-size:1.17em!important;
+}
 
-	label {
-		font-size:1em!important;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
-	}
+label {
+	font-size:1em!important;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
+}
 body {display:flex!important;}
 
 #game_window{max-width:1000px;}
@@ -1141,11 +1210,20 @@ tooltipList = [
         // Government Members
 	{searchString: "Gordon", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},
 	{searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. Given unprecedented powers as Chancellor to redefine monetary policy, such as an independent Bank of England."},	
+        {searchString: "John Prescott", explanationText: "<img src=https://imgur.com/ey5qBMg.jpg> The Deputy Prime Minister, and Environment and Transport Secretary. An egging-voter punching, straight-tongued Yorkshire man. Also the only bridge between you and Gordon Brown."},
+        {searchString: "Prescott", explanationText: "<img src=https://imgur.com/ey5qBMg.jpg> The Deputy Prime Minister, and Environment and Transport Secretary. An egging-voter punching, straight-tongued Yorkshire man. Also the only bridge between you and Gordon Brown."},
+        {searchString: "Hilary Armstrong", explanationText: "<img src=https://imgur.com/UObvacP.jpg> Hilary Armstrong, Chief Whip of the Labour Party. Your hatchetwoman for the backbenches."},
+        {searchString: "Armstrong", explanationText: "<img src=https://imgur.com/UObvacP.jpg> Hilary Armstrong, Chief Whip of the Labour Party. Your hatchetwoman for the backbenches."},
 
         // Characters
         {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
-        {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a symbol of American pride."},
-        {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
+        {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Bruce Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
+        {searchString: "Dr David Kelly", explanationText: "<img src=https://imgur.com/7ff7YJL.jpg> Biological weapons expert who formerly served the government. The embodiment of the backlash to the invasion."},
+        {searchString: "Osama Bin Laden", explanationText: "Leader of the Islamist terrorist group Al Qaida. A royal pain in the arse for our intelligence and militaries."},
+        {searchString: "Bin Laden", explanationText: "Leader of the Islamist terrorist group Al Qaida. A royal pain in the arse for our intelligence and militaries."},
+
+        // Others
+        {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a fallen symbol of American pride."},
 ];
 
 
@@ -1607,8 +1685,8 @@ setupMusicPlayer();
 
 
 e.ElectionPopup = "Election night has, at last, arrived. We shall now see the decision of the people – as the bell of Elizabeth Tower tolls. Best of luck to you, you'll certainly need it."
-e.WinPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have determined your end. Click 'OK' to view the choice of the nation, and may life provide a more just conclusion than poltics already has."
-e.LossPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have enshrined upon you your hard-fought victory. Click 'OK' to view the choice of the nation, and may the collosuem of public life continue to provide you bountiful success."
+e.LossPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have determined your end. Click 'OK' to view the choice of the nation, and may life provide a more just conclusion than poltics already has."
+e.WinPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have enshrined upon you your hard-fought victory. Click 'OK' to view the choice of the nation, and may the collosuem of public life continue to provide you bountiful success."
 
 
 campaignTrail_temp.achievements = {
