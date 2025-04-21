@@ -8,9 +8,40 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
-cyoAdventure = function (a) {
-    ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+e = campaignTrail_temp
 
+var Wins = 0;
+var PartyL = 0;
+var Reptn = 0;
+var RightWing = 2;
+cyoAdventure = function(a) {
+ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+    // Michael Howard becomes leader
+    if(ans == 20500){
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": 12565,
+                  "running_mate": 137
+              }
+        }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
+    }
+    // I. D. Smith stays on
+    if(ans == 20501){
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": 12565,
+                  "running_mate": 138
+              }
+        }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
+    }
 }
 
 campaignTrail_temp.questions_json = [
@@ -3453,7 +3484,99 @@ campaignTrail_temp.answer_feedback_json = [
 campaignTrail_temp.candidate_image_url = "https://imgur.com/dZO9w4T.jpg";
 campaignTrail_temp.running_mate_image_url = "https://imgur.com/45BzG5y.jpg";
 campaignTrail_temp.candidate_last_name = "Conservatives";
-campaignTrail_temp.running_mate_last_name = "Duncan Smith";
+campaignTrail_temp.running_mate_last_name = "Smith";
+
+
+// If you resign as Duncan Smith or stay on
+e.candidateSwitcher = () => {
+  let potential_running_mate_pks = e.running_mate_json.filter(f=>f.fields.candidate == e.candidate_id).map(f=>f.fields.running_mate);
+  let pot_run_mat = potential_running_mate_pks.map(f=>e.candidate_json.find(_f=>_f.pk===f));
+  let running_mate_options = ``;
+  pot_run_mat.forEach(f=> {
+      running_mate_options += `<option value="${f.pk}">${f.fields.first_name} ${f.fields.last_name}</option>\n`
+  });
+
+  let vp_html = `
+      <div id="running_mate_form">
+          <form name="running mate">
+              <p></p>
+              <h3>Please select your party leader:</h3> 
+              <select name="running_mate_id" id="running_mate_id">
+                  ${running_mate_options}
+              </select>
+              <p></p>
+          </form>
+      </div>
+      <div class="person_description_window" id="running_mate_description_window">
+          <div class="person_image" id="running_mate_image"> <img src="${pot_run_mat[0].fields.image_url}" width="210" height="250"> </div>
+          <div class="person_summary" id="running_mate_summary">
+              <ul>
+                  <li>Name: ${pot_run_mat[0].fields.first_name} ${pot_run_mat[0].fields.last_name}</li>
+                  <li>Role: ${pot_run_mat[0].fields.party}</li>
+                  <li>Constituency: ${pot_run_mat[0].fields.state}</li>
+              </ul>
+              ${pot_run_mat[0].fields.description_as_running_mate}
+          </div>
+      </div>
+      <p> <button class="person_button" id="running_mate_id_button">Continue</button> </p>
+  `
+
+  let vp_screen = document.createElement("div");
+  vp_screen.classList.add("inner_window_w_desc");
+  vp_screen.id = "inner_window_4";
+  vp_screen.innerHTML = vp_html;
+
+  changeGameDisp(true);
+
+  gameWindow.appendChild(vp_screen);
+
+  // now we make the stuff do stuff!
+
+  $("#running_mate_id").change((_e)=>{
+      _e.preventDefault()
+
+      let value = Number($("#running_mate_id").val());
+      let i = potential_running_mate_pks.findIndex(f=>f === value);
+
+      let screen_html = `
+          <div class="person_image" id="running_mate_image"> <img src="${pot_run_mat[i].fields.image_url}" width="210" height="250"> </div>
+          <div class="person_summary" id="running_mate_summary">
+              <ul>
+                  <li>Name: ${pot_run_mat[i].fields.first_name} ${pot_run_mat[i].fields.last_name}</li>
+                  <li>Role: ${pot_run_mat[i].fields.party}</li>
+                  <li>Constituency: ${pot_run_mat[i].fields.state}</li>
+              </ul>
+              ${pot_run_mat[i].fields.description_as_running_mate}
+          </div>
+      `
+
+      $("#running_mate_description_window").html(screen_html);
+
+  });
+
+  // VP selected!
+
+  $("#running_mate_id_button").click((_e)=>{
+      _e.preventDefault();
+
+      let value = Number($("#running_mate_id").val());
+      let i = potential_running_mate_pks.findIndex(f=>f === value);
+
+      e.running_mate_last_name = pot_run_mat[i].fields.last_name;
+      e.running_mate_image_url = pot_run_mat[i].fields.image_url;
+      e.selected_running_mate = pot_run_mat[i];
+
+      if ($("#campaign_sign")[0]) {
+          $("#campaign_sign").html(`<p>${e.candidate_last_name}</p><p>${e.running_mate_last_name}</p>`);
+          $("#running_mate_pic").attr("src", e.running_mate_image_url)
+      }
+
+      
+      $("#inner_window_4").remove();
+      changeGameDisp(false);
+  })
+  
+}
 
 
 function changechart(){
@@ -3509,7 +3632,7 @@ height: 250px;
 
 .inner_inner_window h3 {
 background-color: #e2ebfd;
-background: linear-gradient(to bottom, #e2ebfd, #dce1ea);
+background: linear-gradient(to bottom, #e2ebfd, #f5f8ff);
 }
 
 #campaign_sign {
@@ -3540,6 +3663,23 @@ background-color: #d8dee8;
 .mytooltip .mytooltiptext {
 background-color: #d8dee8;
 }
+
+tooltipList = [
+	// World Leaders
+	{searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png> President George Walker Bush of the United States. Not the brightest man at the desk, and he may have a larger impact here than what we realised."},
+        {searchString: "Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
+        {searchString: "President Jacques Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
+        {searchString: "President Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
+
+        // Government Members
+	{searchString: "Gordon", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. The most powerful chancellor in history. All the power to run the country into debt."},
+	{searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. The most powerful chancellor in history. All the power to run the country into debt."},	
+
+        // Characters
+        {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. A good soldier for Maggie Thatcher, and promoter of his strident conservative views."},
+        {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> A fallen symbol of New York, of financial trade and power. The lives lost cannot be for naught."},
+        {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Bruce Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
+];
 `
 ;
 document.head.appendChild(style_overwrite);
