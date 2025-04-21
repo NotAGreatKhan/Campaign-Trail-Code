@@ -1110,20 +1110,20 @@ const startScreenUpdater = setInterval(function() {
       }
 }, 1);
 
-	document.head.innerHTML += `<link
-	  rel="stylesheet"
-	  href="https://unpkg.com/xp.css"
-	>`
+document.head.innerHTML += `<link
+	rel="stylesheet"
+	href="https://unpkg.com/xp.css"
+>`
 	
-	document.head.innerHTML += `<style>
-	h3 {
-		font-size:1.17em!important;
-	}
+document.head.innerHTML += `<style>
+h3 {
+	font-size:1.17em!important;
+}
 
-	label {
-		font-size:1em!important;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
-	}
+label {
+	font-size:1em!important;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
+}
 body {display:flex!important;}
 
 #game_window{max-width:1000px;}
