@@ -1,3 +1,17 @@
+add_tooltips();
+if(highlighterToggle == 0){
+    add_highlight();
+}
+else {
+}
+
+function add_highlight() {
+    for (let n = 0; n<campaignTrail_temp.answers_json.length; n++) {
+        campaignTrail_temp.answers_json[n].fields.description = `<span onclick="classList.add('highlighted'); setTimeout(() => classList.remove('highlighted'), 4500);">`+campaignTrail_temp.answers_json[n].fields.description+`</span>`;
+    }
+}
+
+
 var changeGameDisp = (hide) => {
     disp = "";
     if (hide) {
