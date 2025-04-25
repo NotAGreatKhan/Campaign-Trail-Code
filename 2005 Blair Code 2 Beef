@@ -87,9 +87,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
-        campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
-        campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
         vpTable["The Labour Party"] = "J. Gordon Brown";
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
         campaignTrail_temp.questions_json[19] = {
@@ -119,19 +116,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "likelihood": 1
           }
         }
+        if(ans == 14430)
         campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
-        "pk": 14601,
+        "pk": 14623,
         "fields": {
             "priority": 0,
             "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
             "likelihood": 1
           }
         }
-        if(ans == 14430)
         campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
-        "pk": 14623,
+        "pk": 14601,
         "fields": {
             "priority": 0,
             "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
@@ -853,19 +850,6 @@ console.log(playerPolling)
     }
   }
 
-// Failed France
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[12] = {
-    "model": "campaign_trail.question",
-    "pk": 13657,
-    "fields": {
-        "priority": 0,
-        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.",
-        "likelihood": 1
-      }
-    }
-  }
-
 // Successful France
     if(ans == 12797 && ans == 13619 && Cred >= 8){
     campaignTrail_temp.questions_json[12] = {
@@ -879,14 +863,14 @@ console.log(playerPolling)
     }
   }
 
-// Failed Netherlands
-    if(ans == 13557){
+// Failed France
+    if(ans == 12797){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
-    "pk": 13888,
+    "pk": 13657,
     "fields": {
         "priority": 0,
-        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.",
         "likelihood": 1
       }
     }
@@ -897,6 +881,19 @@ console.log(playerPolling)
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 13894,
+    "fields": {
+        "priority": 0,
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Failed Netherlands
+    if(ans == 13557){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 13888,
     "fields": {
         "priority": 0,
         "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
@@ -1168,6 +1165,7 @@ console.log(playerPolling)
     }
   }
 }
+
 
 campaignTrail_temp.questions_json = [
     {
@@ -20888,7 +20886,7 @@ construct = (a = 1) => {
 
 // Final Endings
 
-// Brown First Slides
+// BROWN First Slides
 if (e.player_answers.includes(13511) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
@@ -20927,6 +20925,27 @@ David Dimbleby’s voice reverberated throughout the Party headquarters.
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
 }
 
+else if (e.player_answers.includes(13511) && aa[0].candidate == 12565) {  
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives are the largest party.</h3>
+<p>
+David Dimbleby’s voice reverberated throughout the Party headquarters.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
+}
+
+else if (e.player_answers.includes(13511) && aa[0].candidate == 12543) {  
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that Labour are the largest party.</h3>
+<p>
+David Dimbleby’s voice reverberated throughout the Party headquarters.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
+}
+
+// BLAIR First Ending Slides
 else if (quickstats[0] >= 500) {  
 e.pages.push(`
 <h3 style='text-align: center;'>A Conversation between Prime Minister Tony Blair, and Communications Director Alastair Campbell. March 17, 2003, the day before the anti-war vote.</h3>
