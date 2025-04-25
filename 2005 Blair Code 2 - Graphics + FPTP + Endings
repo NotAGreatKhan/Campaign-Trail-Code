@@ -561,7 +561,7 @@ construct = (a = 1) => {
 
 // Final Endings
 
-// Brown First Slides
+// BROWN First Slides
 if (e.player_answers.includes(13511) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
@@ -600,6 +600,27 @@ David Dimbleby’s voice reverberated throughout the Party headquarters.
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
 }
 
+else if (e.player_answers.includes(13511) && aa[0].candidate == 12565) {  
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives are the largest party.</h3>
+<p>
+David Dimbleby’s voice reverberated throughout the Party headquarters.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
+}
+
+else if (e.player_answers.includes(13511) && aa[0].candidate == 12543) {  
+e.pages.push(`
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that Labour are the largest party.</h3>
+<p>
+David Dimbleby’s voice reverberated throughout the Party headquarters.
+</p>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
+}
+
+// BLAIR First Ending Slides
 else if (quickstats[0] >= 500) {  
 e.pages.push(`
 <h3 style='text-align: center;'>A Conversation between Prime Minister Tony Blair, and Communications Director Alastair Campbell. March 17, 2003, the day before the anti-war vote.</h3>
