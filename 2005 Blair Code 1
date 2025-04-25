@@ -1241,11 +1241,16 @@ tooltipList = [
         {searchString: "Prescott", explanationText: "<img src=https://imgur.com/ey5qBMg.jpg> The Deputy Prime Minister, and Environment and Transport Secretary. An egging-voter punching, straight-tongued Yorkshire man. Also the only bridge between you and Gordon Brown."},
         {searchString: "Hilary Armstrong", explanationText: "<img src=https://imgur.com/UObvacP.jpg> Hilary Armstrong, Chief Whip of the Labour Party. Your hatchetwoman for the backbenches."},
         {searchString: "Armstrong", explanationText: "<img src=https://imgur.com/UObvacP.jpg> Hilary Armstrong, Chief Whip of the Labour Party. Your hatchetwoman for the backbenches."},
+        {searchString: "Jack Straw", explanationText: "<img src=https://imgur.com/uOElu71.jpg> Jack Straw, Foreign and Commonwealth Secretary. A security hawk in all forms and names."},
+        {searchString: "Straw", explanationText: "<img src=https://imgur.com/uOElu71.jpg> Foreign and Commonwealth Secretary Jack Straw. A security hawk in all forms and names."},
+        {searchString: "David Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Would still be the Home Secretary for the election, if it weren't for his affair with married magazine publisher Kimberly Quinn."},
+        {searchString: "Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Would still be the Home Secretary for the election, if it weren't for his affair with married magazine publisher Kimberly Quinn."},
 
         // Characters
         {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
         {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Bruce Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
         {searchString: "Dr David Kelly", explanationText: "<img src=https://imgur.com/7ff7YJL.jpg> Biological weapons expert who formerly served the government. The embodiment of the backlash to the invasion."},
+        {searchString: "Dr Kelly", explanationText: "<img src=https://imgur.com/7ff7YJL.jpg> Biological weapons expert who formerly served the government. The embodiment of the backlash to the invasion."},
         {searchString: "Osama Bin Laden", explanationText: "Leader of the Islamist terrorist group Al Qaida. A royal pain in the arse for our intelligence and militaries."},
         {searchString: "Bin Laden", explanationText: "Leader of the Islamist terrorist group Al Qaida. A royal pain in the arse for our intelligence and militaries."},
 
