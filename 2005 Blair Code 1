@@ -1064,12 +1064,16 @@ e = campaignTrail_temp
 
 
 document.head.innerHTML += `<link
-	rel="stylesheet"
-	href="https://unpkg.com/xp.css"
->`
-
-
-document.head.innerHTML += `<style>
+     rel="stylesheet"
+     href="https://unpkg.com/xp.css"
+    >`
+    document.head.innerHTML += `<style>
+    #announcement {
+      display: none;
+    }
+    .campaign_trail_start_emphasis {
+      background-color: #F8F8F8;
+    }
     .game_header {
         background: linear-gradient(to bottom, #df8191, #df8191);
         height: 75px; 
@@ -1079,25 +1083,64 @@ document.head.innerHTML += `<style>
         background: linear-gradient(to bottom, #d03e54, #df8191);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
-    .election_description_window {
-        height: 250px;
-    }
     .inner_inner_window h3 {
       background-color: #ffcfcf;
       background: linear-gradient(to bottom, #ffcfcf, #eadcde);
     }
-    document.head.innerHTML += `<style>
+    #inner_window_2 {
+      background-image: url('https://i.imgur.com/sW7B3ay.png'); 
+      background-repeat: repeat; 
+      height: 494px; 
+      color: #FFFFFF;
+    }
+    #inner_window_3 {
+      background-image: url('https://i.imgur.com/sW7B3ay.png'); 
+      background-repeat: repeat; 
+      height: 494px;
+    }
+    #overall_details_container.done h4 {
+        font-size: 14px !important;
+    }
+    #inner_window_3 h3 {
+      color: #FFFFFF;
+    }
+    #inner_window_4 {
+      background-image: url('https://i.imgur.com/sW7B3ay.png'); 
+      background-repeat: repeat; 
+      height: 494px;
+    }
+    #inner_window_4 h3 {
+      color: #FFFFFF;
+    }
+    
+    #closeButton {
+            background: none;
+            border: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        /* Override xp.css focus and hover styles */
+        #closeButton:focus,
+        #closeButton:active,
+        #closeButton:hover {
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+
     h3 {
-	font-size:1.17em!important;
+      font-size:1.17em!important;
     }
-
+  
     label {
-	font-size:1em!important;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
+      font-size:1em!important;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
     }
-    body {display:flex!important;}
-
-    #game_window{max-width:1000px;}
+  body {display:flex!important;}
+  
+  #game_window{max-width:1000px;}
 </style>`
 
 
