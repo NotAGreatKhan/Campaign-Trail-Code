@@ -1097,7 +1097,8 @@ document.head.innerHTML += `<link
     }
     #overall_details_container.done h4 {
         font-size: 14px !important;
-    
+    }
+
     #closeButton {
             background: none;
             border: none;
