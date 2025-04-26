@@ -1088,30 +1088,15 @@ document.head.innerHTML += `<link
       background: linear-gradient(to bottom, #ffcfcf, #eadcde);
     }
     #inner_window_2 {
-      background-image: url('https://i.imgur.com/sW7B3ay.png'); 
       background-repeat: repeat; 
       height: 494px; 
-      color: #FFFFFF;
     }
-    #inner_window_3 {
-      background-image: url('https://i.imgur.com/sW7B3ay.png'); 
+    #inner_window_3 { 
       background-repeat: repeat; 
       height: 494px;
     }
     #overall_details_container.done h4 {
         font-size: 14px !important;
-    }
-    #inner_window_3 h3 {
-      color: #FFFFFF;
-    }
-    #inner_window_4 {
-      background-image: url('https://i.imgur.com/sW7B3ay.png'); 
-      background-repeat: repeat; 
-      height: 494px;
-    }
-    #inner_window_4 h3 {
-      color: #FFFFFF;
-    }
     
     #closeButton {
             background: none;
