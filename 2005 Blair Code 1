@@ -137,7 +137,7 @@ document.getElementById("inner_window_1").children[1].innerHTML = `<li>Britain e
 document.styleSheets[0].insertRule(".inner_window_w_desc{ margin:1em 0 0 0.5em !important;padding-top: 0.5em !important;}", 0);
 document.styleSheets[0].insertRule(".inner_window_question{ margin:1em 0 .7em 0.5em !important;padding-top: 0.3em !important;}", 0);
 document.styleSheets[0].insertRule("#main_content_area { height:82% !important;}", 0);
-
+document.getElementById("game_start").innerHTML = `<strong>Take the reigns.</strong>`;
 
 campaignTrail_temp.election_json = [
      {
