@@ -1279,6 +1279,7 @@ tooltipList = [
         // Characters
         {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
         {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Bruce Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
+        {searchString: "Rumsfeld", explanationText: "<img src=https://imgur.com/NOqxEUY.jpg> American Secretary of Defence, Donald Henry Rumsfeld. One of Bush's chief war-hawks."},
         {searchString: "Dr David Kelly", explanationText: "<img src=https://imgur.com/7ff7YJL.jpg> Biological weapons expert who formerly served the government. The embodiment of the backlash to the invasion."},
         {searchString: "Dr Kelly", explanationText: "<img src=https://imgur.com/7ff7YJL.jpg> Biological weapons expert who formerly served the government. The embodiment of the backlash to the invasion."},
         {searchString: "Osama Bin Laden", explanationText: "Leader of the Islamist terrorist group Al Qaida. A royal pain in the arse for our intelligence and militaries."},
@@ -1286,6 +1287,8 @@ tooltipList = [
 
         // Others
         {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a fallen symbol of American pride."},
+        {searchString: "Afghanistan", explanationText: "<img src=https://imgur.com/gx7shqJ.jpg> South Asian country surounded on all sides, and mountains crawling with a militia hellbent on oppression."},
+        {searchString: "Taliban", explanationText: "<img src=https://imgur.com/twdih2b.jpg> Radical Islamist group seeking total control of Afghanistan. A nightmare for the strongest military in the world."},
 ];
 
 
