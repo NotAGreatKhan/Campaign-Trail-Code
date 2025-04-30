@@ -646,36 +646,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  }
-
-if ([12872,12873,12874].includes(ans)){
-let pop_vote = e.current_results[0];
-let playerPolling = pop_vote.find(polling => polling.pk===2000000);
-console.log(playerPolling)
-    if(playerPolling.pvp >= 0.375 || Resign == 0){
-    campaignTrail_temp.questions_json[23] = {
-    "model": "campaign_trail.question",
-    "pk": 14691,
-    "fields": {
-        "priority": 0,
-        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
-        "likelihood": 1
-      }
-     }
-    }
-    if((playerPolling.pvp >= 0.375 || Resign == 0) && (ans == 12873 || ans == 12874)){
-    campaignTrail_temp.questions_json[23] = {
-    "model": "campaign_trail.question",
-    "pk": 14698,
-    "fields": {
-        "priority": 0,
-        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
-        "likelihood": 1
-      }
-     }
-    }
-    }
-    
+  }  
     if(Negative >= 5){
     campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
@@ -1166,14 +1137,13 @@ console.log(playerPolling)
   }
 }
 
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
         "pk": 393,
         "fields": {
             "priority": 0,
-            "description": "You are in a hotel room, sitting in the city of Brighton. At the precipice of the English channel, separating Britain from seemingly another world on the other side. Whilst preparing to make a speech to the local Trade Union Congress, an aide hurriedly rushes in to interrupt with an urgent message:<p></p>“Come through, you’ve got to see what’s happening on the television”.<p></p>What your eyes meet on the screen is nothing short of horror. The World Trade Centre, a symbol of American strength and vitality, is billowing in smoke and flames, as another hijacked plane imminently crashes into the South Tower. Nearly 3,000 lives are lost in the attack, and with it, the blissful optimism of the 1990’s has fallen with them. 3 days later, the House of Commons is recalled into session, and you are about to conclude an address that will serve a part to forge the tone of the next 4 years in office…",
+            "description": "You are in a hotel room, sitting in the city of Brighton. At the precipice of the English channel, separating Britain from seemingly another world on the other side. As the Trade Union Congress awaits you, an aide hurriedly rushes in to interrupt with an urgent message:<p></p>“Come through, you’ve got to see what’s happening on the television.”<p></p>Your hands clutch your sleeves. The voice intoning the catastrophe on screen could never wholly capture <i>it</i>. Citizens falling out of windows; fire and smoke billowing like a strangling snake; honourable men, women and children lost in the carnage.<p></p>Parliament is recalled into session, and your voice reverberates in the House of Commons. Now – and maybe – forever.",
             "likelihood": 1
         }
     },
@@ -1182,7 +1152,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12247,
         "fields": {
             "priority": 0,
-            "description": "The fledgeling millennium has been permanently shattered, the pieces hastily reassembled around the burgeoning fear of terror. Along with plans for Iraq, the United States is now setting its sights on the Taliban fighters in Afghanistan. Regardless of your decision, you know that American soldiers shall pour into the country to ensure their prevention from rule. With all of that said, will you back America and send British forces into Afghanistan?",
+            "description": "The fledgeling millennium has been permanently shattered, the pieces hastily reassembled around the burgeoning fear of terror. The United States of America, traumatised yet determinedly enraged, trains its crosshairs on the Taliban fighters in Afghanistan. Rumsfeld grips the phone, awaiting your response to sending support yourself. Will you back them up?",
             "likelihood": 1
         }
     },
@@ -1191,7 +1161,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14031,
         "fields": {
             "priority": 0,
-            "description": "A new paranoia and fear hangs like mildew over Britain. Buoyed by this heightened fear against potential new terrorist attacks, Foreign and Commonwealth Secretary Jack Straw, and Home Secretary David Blunkett have strongly argued for the passage of the Anti-terrorism, Crime and Security Bill. Among other stringent measures, it would give the government the power to detain any suspected terrorists without trials, freeze suspected terrorists’ funds, and create a new offence of incitement to religious hatred. WIth all of that laid out, will you give this Bill the green light?",
+            "description": "A new paranoia and fear hangs like mildew over Britain. Buoyed by the heightened fear against potential new terrorist attacks. Jack Straw and David Blunkett are in unison lobbying you to pass the Anti-Terrorism, Crime and Security Bill. A puff from your chest swells as you sense the opportunity to capitalise on an unprecedented political capital. The steely eyes of the foreign policy hawks gaze upon you, awaiting whether or not you'll give this thing the green light. The question is: will parliament, and the people?",
             "likelihood": 1
         }
     },
@@ -1200,7 +1170,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12796,
         "fields": {
             "priority": 0,
-            "description": "The horrific terrorist attacks on America have, rather incongruently, massively increased President Bush’s popularity — especially after his rousing State Of The Union address. Thus, his administration has a massive amount of political capital to pursue a so-called “War on Terror”, along with plans for a potential invasion of Iraq and the deposing of dictator Saddam Hussein. Already, Bush is approaching you requesting the intelligence agencies to collate evidence to justify such an operation. You feel a thumping sensation in your chest.",
+            "description": "The horrific terrorist attacks on America have, rather incongruently, massively increased President Bush’s popularity — especially after his rousing State Of The Union address. His administration has lined up a series of countries on a terrorism hit-list. Article V of NATO is invoked by the White House, as fighter jets scream above the Atlantic. From Cuba to North Korea, they settle on the easiest fish to fry: Iraq. If you want to get involved in kicking out Saddam Hussein for good, you better decide now.",
             "likelihood": 1
         }
     },
@@ -17597,7 +17567,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 3493,
             "candidate": 12543,
-            "answer_feedback": "In the aftermath of the attacks, both Bush’s and your approval ratings soar to heights previously unimaginable as apparent brothers-in-arms rally around the flag. The geopolitical ramifications — you believe — shall be felt worldwide, as will the grief of many people. A new, global war will soon be waged, and one you feel an obligation to uphold…"
+            "answer_feedback": "The flags are waved high atop the masts. The leather boots of the soldiers march in patriotic rhythm, and the skies are touched by yours – and Bush's – rocketing approval ratings. The War On Terror has just begun. A war which shall rock the seas of Africa, and the streets of Baghdad. The screams still pierce from the television.<p></p>Watching Bush's speech from the galleries of Congress, <i>something within your soul stirs.</i>"
         }
     },
     {
@@ -17624,7 +17594,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12797,
             "candidate": 12543,
-            "answer_feedback": "Bush is saddened by this, but ultimately understands. With this decision though, the agenda for this century that you have set out, has been significantly shifted. Hopefully this tack towards the anti-war camp can make up for this flip in government priority."
+            "answer_feedback": "Bush is saddened by this, but ultimately understands. His administration will have to do without the extensive intelligence of your octopus of MI6. With this decision though, the agenda for this century that you have set out, has been turned on its head. No turning back from this."
         }
     },
     {
@@ -17633,7 +17603,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12798,
             "candidate": 12543,
-            "answer_feedback": "The Bush administration is glad that you’re willing to help with this thankless task. Soon, the government compiles together some scraps of evidence that could perhaps justify a hearing, but even you know it’s not truly enough. Not yet."
+            "answer_feedback": "Bush gives his trademark Texan grin: “I knew I could count on ya, pal.” The monstrous volume of the CIA and MI6 claw for any scrapes of evidence they could find, but it's not enough. Not unless you <i>make it</i> enough. A pit knots itself within your stomach, it writhes at the thought of what could come next. You strut on regardless. After all, you and Bush are both deciders; that is how you will govern – how you <i>must</i> govern."
         }
     },
     {
@@ -19325,7 +19295,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14032,
             "candidate": 12543,
-            "answer_feedback": "The bill passes by a crushing margin of 458 to 5 votes, but as Andrew Marr says later that day: “The government has won the vote very easily but it has not necessarily won the argument”. The legislation will face significant opposition from Tories and Lib Dems criticising the attack on civil liberties, and the lack of proper time given to debate said bill."
+            "answer_feedback": "The bill passes by a crushing margin of 458 to 5 votes, but as Andrew Marr says later that day: “The government has won the vote very easily but it has not necessarily won the argument”. The legislation will face significant opposition from Tories and Lib Dems lambasting the attack on civil liberties, and the lack of proper time given to debate said bill. But for now, their voices are drowned out by a petrifying silence."
         }
     },
     {
@@ -19334,7 +19304,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14033,
             "candidate": 12543,
-            "answer_feedback": "After a passionate debate in the House, the bill comfortably passes by a margin of 364 to 67. It was brave of you to put the bill out there right in the line of fire, but receive fire it does nonetheless. In spite of the foreboding backdrop of the September 11th attacks, MPs such as Brian Sedgmore decry it as “a ragbag of the most coercive measures”."
+            "answer_feedback": "Passions flair and fists clench in the House. The bill comfortably passes by a margin of 364 to 67. It was brave of you to put the bill out there right in the line of fire, but receive broadsides it does nonetheless. In spite of the foreboding backdrop of the September 11th attacks, MPs such as Brian Sedgmore decry it as “a ragbag of the most coercive measures.” The dissenters shall wail, and the still-reeling public shall sleep for a scarcely few more nights."
         }
     },
     {
@@ -19343,7 +19313,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14034,
             "candidate": 12543,
-            "answer_feedback": "Straw and Blunkett are certainly wrangled by this move, and it definitely weakens the narrative that you are strong and firmly anti-terror. If there was any time to pass strong national security legislation, it’s certainly now. At least for the time being though, you have kept the issue of civil liberties and human rights at bay…"
+            "answer_feedback": "Straw and Blunkett are wrangled by your move, and it definitely weakens the narrative that you are strong and firmly anti-terror. If there was any time to pass strong national security legislation, it was certainly now. At least for the time being though, you have kept the issue of civil liberties and human rights at bay."
         }
     },
     {
