@@ -21276,8 +21276,8 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg
 }
 
 else if (e.player_answers.includes(14034)) {
-<h3 style='text-align: center,'> </h3>
 e.pages.push(`
+<h3 style='text-align: center,'>Behind the scenes on the Minister of Education</h3>
 <p>
 "Tony, the election's in the bag, but the chatter's already started about your focus on education. Everyone’s calling you the 'Minister of Education' now. So, what's the grand plan? How are we really going to transform the system?"
 <br><br>
