@@ -20884,7 +20884,8 @@ construct = (a = 1) => {
     e.header = "";
     e.executable = []
 
-// Final Endings
+// Endings
+
 
 // BROWN First Slides
 if (e.player_answers.includes(13511) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
@@ -20945,7 +20946,7 @@ David Dimbleby’s voice reverberated throughout the Party headquarters.
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif"})])
 }
 
-// BLAIR First Ending Slides
+// BLAIR First Slides
 else if (quickstats[0] >= 500) {  
 e.pages.push(`
 <h3 style='text-align: center;'>A Conversation between Prime Minister Tony Blair, and Communications Director Alastair Campbell. March 17, 2003, the day before the anti-war vote.</h3>
@@ -20976,7 +20977,7 @@ else if (quickstats[0] >= 400) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide!</h3>
 <p>
-As David Dimbleby’s voice rings out on the television screen, the Labour Party HQ shudders and rumbles under the enthusiastic — almost riotous — jiving of the crowds. The amateur dancing of the members, unequivocally dispelling any jitter suspected throughout election night.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. The Labour Party HQ shudders and rumbles under the enthusiastic — almost riotous — jiving of the crowds. The amateur dancing of the members, unequivocally dispelling any jitter suspected throughout election night.
 <br><br>
 Initially, your scepticism at the exit poll gets the better of you. But then, the seats come in... Constituency after constituency, MP after MP; A sea of red washing over the map, engulfing the entirety of the country. The sky-blue wave of the Conservatives washed away, and scattered by the orange locusts of Liberal Democrats. The Blairite legacy having fully cemented itself in the national zeitgeist.
 <br><br>
@@ -21007,7 +21008,7 @@ else if (quickstats[0] >= 370) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3>
 <p>
-As David Dimbleby’s voice rings out on the television screen, a resounding cheer erupts throughout the crowd gathered to witness the results. You’ve done it! Despite the festering pressures abroad, despite the growing controversy of your premiership, and despite the renewed strength of the Tories and Liberal Democrats, you persevered to carry three successive landslide victories for your party. Your colleagues will certainly be thanking you for aiding in their retaining of their seats. 
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. A resounding cheer erupts throughout the crowd gathered to witness the results. You’ve done it! Despite the festering pressures abroad, despite the growing controversy of your premiership, and despite the renewed strength of the Tories and Liberal Democrats, you persevered to carry three successive landslide victories for your party. Your colleagues will certainly be thanking you for aiding in their retaining of their seats. 
 <br><br>
 With this commanding majority in Parliament, you should have little difficulty in passing those reforms on national security you have desired for so long. Whenever you do end up resigning, Gordon Brown will definitely be satisfied with the majority you have left for him. It seems that at least for now, New Labour will sustain itself for at least 5 years to come. Perhaps, even more.
 <br><br>
@@ -21015,25 +21016,13 @@ You fought, you triumphed, and in the end, the lion’s share has handsomely fal
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
-
-corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-$(".container")[0].style.backgroundColor = "#ababab";
-document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
-document.body.background = "https://imgur.com/r1yqD5R.png";
-document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
 }
 
 else if (quickstats[0] >= 355) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3>
 <p>
-As David Dimbleby’s voice rings out on the television screen, you let out perhaps the biggest sigh of relief of your premiership. Despite the significant bleeding of support, you have held on to your position as PM. Though for someone such as yourself, this isn’t exactly a spectacular performance.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. You let out perhaps the biggest sigh of relief of your premiership. Despite the significant bleeding of support, you have held on to your position as PM. Though for someone such as yourself, this isn’t exactly a spectacular performance.
 <br><br>
 Now that you have snatched a secure Parliament, you should have little trouble in pursuing those national security reforms you have desired for a while now. Take some caution though, you have still bled a lot of colleagues as a result of this election. Your Chancellor is still going to be crossing his fingers for this, that’s for sure.
 <br><br>
@@ -21047,11 +21036,23 @@ else if (quickstats[0] >= 340) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a modest majority in Parliament.</h3>
 <p>
-As David Dimbleby’s voice rings out on the television screen, you let out a small, and reserved, sigh of relief. You have retained your position as PM. Even in spite of this, you have bled a lot of support to the Liberal Democrats and Conservatives. A lackluster performance, by your standards. At least for now, you can rest easy knowing your majority can survive some resignations here and there.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. All that the Party faithful feel is the bitter disappointment they endured the noir night for. No riveting trepidation of clinging on to power. No comeback story of defying the odds with a strong majority. There will never be a story of perpetual electoral dominance with your name. Not after this.
 <br><br>
-With this majority secured, you may be able to pursue those national security reforms you have desired for so long now. Though with how controversial they’ll be, don’t bet all of your cards on it going smoothly with your modest majority. Gordon Brown will definitely be crossing his fingers whenever you resign.
+Your mind takes a promenade through the mindscape, stretching and voluminous, across every other electoral outcome. A way – any way – that your legacy in parliamentary politics could have amounted to any more than a splutter and a whimper. The consuming projections of the results trickled in like a stream, only this one was coated in acid. The Tory-blue wave had been countered, even as the firewall had leaks in its dam. Colleague after colleague, seat after seat, changing from scarlet red to the searing blue: ‘CON GAIN’. The sprawling metropolis of red frayed apart by an unthinking sea of blue.
 <br><br>
-You fought through the battle with all you could, but only a tepid endorsement of your agenda was given to you. Best of luck, Prime Minister, because you sure as hell are going to need it.
+A pit in your stomach lurches at the consideration of what this night means. The cracks in the indomitable armour that gaped open just wide enough, for a sickly oedema to fester in the crevices of the party machine. You futilely pontificate over every marginal error and malfeasance that haunted your campaign. The press stories about the Chancellery. The slime trail creeping behind your footsteps. Perhaps, after all of the carnage, you were too mauled to ever dream of coming out of it clean.
+<br><br>
+Naturally, your conscience darts to the upcoming parliament, and what it means for the agenda and capital you’ll have to pass it. None of your own calculations are flattering: raucous rebels shouting from behind down your neck, cabinet ministers double, then triple-scanning their legislation before commending it to the House. The typical archaic arguments used by governments with reduced majorities will be disconcerting to spin-doctor through. Neither a mandate large enough to legitimise you, nor a margin narrow enough to fearmonger the few remaining of the faithful base to rally around you. The innovation in schools, enabling them to spread their wings with their own reforms for the betterment of society, looks increasingly trepidating with the old Labour crowd. The security measures? Good luck to Straw trying to market that to the civil liberties’ libel. The latitude of your government is now stretched thin.
+<br><br>
+You picture the looks on Mandleson’s and Alastair’s faces, their grimacing and teeth gnawing watching the election unfold after all they went through. All of the arguing, the backlash, the endless controversy. For this…
+<br><br>
+But that’s just politics — you tell yourself — it’s simply part of the job. Not that it has ever come to that for you… yet.
+<br><br>
+The backdoor out of politics is being shoved closer and closer to your face. Gordon gripping the hinges right behind it, though he’s not looking forward to what he will inherit from you. It’s a precarious position from 2001 – let alone ‘97 – but it’ll be him sitting where you sit in cabinet meetings soon. Not you. That is perfectly satisfactory for him – for the time being.
+<br><br>
+In spite of every bludgeoning you endured, every decision you agonised on, the transformative “Third Way” agenda you set out, Britain was stuck between a Conservative rock and the hard place of your Cheshire smile. Best of luck to you, Prime Minister.
+<br><br>
+You’ll undeniably need all the luck you can get.
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
@@ -21061,7 +21062,7 @@ else if (quickstats[0] >= 324) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3>
 <p>
-As David Dimbleby’s voice rings out on the television screen, trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. Trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.
 <br><br>
 With a majority secured, you may be able to pursue those national security reforms you have desired for so long now. With how slim your majority is in Parliament though, don’t count on it to go too smoothly. All it would take is a significant amount of whip suspensions, resignations and by-election defeats, to eradicate your majority all together. Suffice to say, Gordon Brown is definitely going to be crossing his fingers whenever you resign in the near future.
 <br><br>
@@ -21083,6 +21084,7 @@ if (used != true) {
     used = true;
     }
 }
+
 
 // Clarke First Slides
 // else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
@@ -21266,18 +21268,6 @@ You sure as hell are going to need it.
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif"})])
-
-corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-$(".container")[0].style.backgroundColor = "#ababab";
-document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
-document.body.background = "https://imgur.com/r1yqD5R.png";
-document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
 if (used != true) {
       const playlist = new Playlist();
         const song = new Song(
@@ -21297,8 +21287,10 @@ if (used != true) {
 // Second Slides
 if (quickstats[0] >= 324) {     
 e.pages.push(`
-<h3 style='text-align: center;'>Blair defeated on terror bill, <i>The Guardian</i></h3>
+<h3 style='text-align: center;'>Blair defeated on terror bill</h3>
 <p>
+<img src = https://imgur.com/s8s5QFb.png>
+<br><br>
 By <b>Matthew Tempest</b>, political correspondent
 <br><br>
 Tony Blair's government tonight suffered its first ever defeat since coming to power, as MPs voted down proposals to allow police to hold terrorist suspects for 90 days without charge. Despite last-minute appeals from the prime minister, and the return from overseas visits of both Gordon Brown and Jack Straw in order to vote, the government was defeated on the issue by 322 votes to 291, a larger than expected margin of 31. A few minutes later, MPs voted for a rebel Labour amendment increasing the detention period to 28 days. That was passed by 323 votes to 290. But the defeat on 90 days is a personal blow for Mr Blair, who strongly backed the police's demand for a three-month period. According to parliament's division list, 49 Labour MPs rebelled against the government. Mr Blair left the chamber shaking his head.
@@ -21313,12 +21305,41 @@ In heated exchanges between the prime minister and opposition leaders at questio
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg"})])
 }
 
+else if (e.player_answers.includes(14034)) {
+<h3 style='text-align: center,'> </h3>
+e.pages.push(`
+<p>
+"Tony, the election's in the bag, but the chatter's already started about your focus on education. Everyone’s calling you the 'Minister of Education' now. So, what's the grand plan? How are we really going to transform the system?"
+<br><br>
+"Ah, the 'Minister of Education' bit, eh? Well, it sounds good, doesn’t it? But let’s be honest here—I haven’t exactly got it all figured out."
+<br><br>
+"Wait, what do you mean? We’ve been selling this whole education reform package to the public, scrapping the Higher Education Act and all that. People are expecting real change."
+<br><br>
+"I know, I know. But, the truth is, we’ve been so focused on winning this bloody election that we haven’t really pinned down the details. The Higher Education Act—abolishing it sounds bold on paper, but what’s the real alternative? More funding? Less? Can’t just throw money at the problem and hope it goes away."
+<br><br>
+"So, we don’t actually have a plan? What about all this talk of raising standards in schools? 
+<br><br>
+"Look, I want to make a difference, I really do. But the fact is, education’s a mess, and it’s not going to be fixed overnight. We can’t just throw out grand ideas without a solid foundation. I’ve got a legacy to think about. The last thing I need is to go down as the Prime Minister who promised the world and delivered a paper plane."
+<br><br>
+"Tony, this could blow up in our faces. If you’re going to be the 'Minister of Education', you’ve got to have something concrete to show for it."
+<br><br>
+"I hear you. We’ll need to get the best minds on this, but let’s not kid ourselves—this is going to be one hell of a balancing act. For now, we’ll talk a good game, keep people hopeful, and buy ourselves some time. The real work starts now, but it’s going to take more than a catchy nickname to pull this off."
+<br><br>
+"Right, so we’ll keep pushing the narrative, but we need to get serious about the details, fast."
+<br><br>
+"Exactly. We’ll make it look like we’ve got a plan while we figure out what that plan actually is. Welcome to politics, mate."
+</p>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg"})])
+}
 
 // Fourth Slides
-if ((e.player_answers.includes(12814)) && (e.player_answers.includes(12819))) {
+if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
-<h3 style='text-align: center;'>A MONSTER OF DELUSION, <i>Daily Mail</i></h3>
+<h3 style='text-align: center;'>A MONSTER OF DELUSION –– <font color='#be2f42;'>CHILCOT SPECIAL EDITION</font></h3>
 <p>
+<img src = https://imgur.com/hPzZXy8.png>
+<br><br>
 <b>For two hours, Blair dissembled and denied in the face of Chilcot’s devastating verdict. Then, with sickening egomania, he declared: I can’t say sorry for Iraq… I’d do it again.</b>
 <br><br>
 Tony Blair made an astonishing defence of the invasion of Iraq yesterday despite being torn apart by the Chilcot inquiry. After seven years of waiting, the report savaged the former prime minister for his conduct at every stage of the process that dragged Britain into the catastrophic war. Sir John Chilcot lambasted Mr Blair for his handling of 'flawed' intelligence, for failing to plan for the aftermath and for secret promises given to George Bush committing to the invasion eight months before MPs voted.
@@ -21329,10 +21350,12 @@ He even raised the prospect the war could be illegal – with relatives of some 
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
 
-else if ((e.player_answers.includes(12814)) && (e.player_answers.includes(12820))) {
+else if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
 e.pages.push(`
-<h3 style='text-align: center;'>A DEMON OF DECEPTION, <i>Daily Mail</i></h3>
+<h3 style='text-align: center;'>A DEMON OF DECEPTION –– <font color='#be2f42;'>CHILCOT SPECIAL EDITION</font></h3>
 <p>
+<img src = https://imgur.com/hPzZXy8.png>
+<br><br>
 <b>For two hours, Blair dissembled and denied in the face of Chilcot’s devastating verdict. Then, with sickening egomania, he declared: I can’t say sorry for Iraq… I’d aid it again.</b>
 <br><br>
 Tony Blair made an astonishing defence of the enabling of the invasion of Iraq yesterday despite being torn apart by the Chilcot inquiry. After seven years of waiting, the report savaged the former prime minister for his conduct at every stage of the process that gave President Bush free reign to carry out the catastrophic war. Sir John Chilcot lambasted Mr Blair for his handling of 'flawed' intelligence, for failing to plan for the aftermath and for potential hints given to George Bush committing to the invasion eight months before MPs voted.
@@ -21359,22 +21382,137 @@ New Labour has been in government for over a decade. In that time, Britain has s
 <li>David Cameron must modernise the "nasty" Conservative Party to lead it back into government after 13 years in Opposition.</li>
 <br><br>
 <button>Continue</button>
+<br><br>
+This scenario was made by <button>Various people</button>.
 </p>
 `)
 e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+}
 
-corrr = '\n              <h2>NEW CAMPAIGN TRAIL</h2><font id="wittyquote" size="4" color="white"><em>"Not flash, just Gordon."</em></font>\n            ';
+else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12543) {     
+e.pages.push(`
+<h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<p>
+<select name="2005" id="2005"><option value="0">2005</option></select>
+<br><br>
+<img src = https://imgur.com/z9KRAk2.png>
+<br><br>
+Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
+<br><br>
+<li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
+<li>Kenneth Clarke, emerging from a bitter leadership struggle, must effectively attack Blair – keeping his right wing on-side.</li>
+<br><br>
+<button>Continue</button>
+<br><br>
+This scenario was made by Sir Daniel Bryan MBE.
+</p>
+`)
+e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+}
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#cc0000";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#824b4b";
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-$(".container")[0].style.backgroundColor = "#333399";
-bannerlist=["https://i.imgur.com/8sxmeSt.png"];
-document.getElementById("header").src = bannerlist[Math.floor((Math.random() * bannerlist.length))];
-document.body.background = "https://www.thesun.co.uk/wp-content/uploads/2020/10/NINTCHDBPICT000004699065-1.jpg"; 
-document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#cc0000!important;}</style>";
+else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12565) {     
+e.pages.push(`
+<h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<p>
+<select name="2005" id="2005"><option value="0">2005</option></select>
+<br><br>
+<img src = https://imgur.com/BpmRe6y.png>
+<br><br>
+Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
+<br><br>
+<li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
+<li>Kenneth Clarke, emerging from a bitter leadership struggle, must effectively attack Blair – keeping his right wing on-side.</li>
+<br><br>
+<button>Continue</button>
+<br><br>
+This scenario was made by Sir Daniel Bryan MBE.
+</p>
+`)
+e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+}
+
+else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12543) {     
+e.pages.push(`
+<h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<p>
+<select name="2005" id="2005"><option value="0">2005</option></select>
+<br><br>
+<img src = https://imgur.com/6WEgSOX.png>
+<br><br>
+Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
+<br><br>
+<li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
+<li>Michael Portillo, having waged an upset leadership win, must rip open Blair’s flip-flop, and keep his right wing on-side.</li>
+<br><br>
+<button>Continue</button>
+<br><br>
+This scenario was made by Sir Daniel Bryan MBE.
+</p>
+`)
+e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+}
+
+else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12565) {     
+e.pages.push(`
+<h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<p>
+<select name="2005" id="2005"><option value="0">2005</option></select>
+<br><br>
+<img src = https://imgur.com/Tx0qRcH.png>
+<br><br>
+Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
+<br><br>
+<li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
+<li>Michael Portillo, having waged an upset leadership win, must rip open Blair’s flip-flop, and keep his right wing on-side.</li>
+<br><br>
+<button>Continue</button>
+<br><br>
+This scenario was made by Sir Daniel Bryan MBE.
+</p>
+`)
+e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+}
+
+else if (aa[0].candidate == 12543) {     
+e.pages.push(`
+<h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<p>
+<select name="2005" id="2005"><option value="0">2005</option></select>
+<br><br>
+<img src = https://imgur.com/Sb2rzJ4.png>
+<br><br>
+Heading into the 2005 election, the campaign is being fought in the backdrop of the controversial Iraq War. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
+<br><br>
+<li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
+<li>Michael Howard, elected unopposed after Iain Duncan Smith’s fall, must strategically position himself to clinch victory.</li>
+<br><br>
+<button>Continue</button>
+<br><br>
+This scenario was made by Sir Daniel Bryan MBE.
+</p>
+`)
+e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+}
+
+else if (aa[0].candidate == 12565) {     
+e.pages.push(`
+<h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<p>
+<select name="2005" id="2005"><option value="0">2005</option></select>
+<br><br>
+<img src = https://imgur.com/q2nEzkL.png>
+<br><br>
+Heading into the 2005 election, the campaign is being fought in the backdrop of the controversial Iraq War. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
+<br><br>
+<li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
+<li>Michael Howard, elected unopposed after Iain Duncan Smith’s fall, must strategically position himself to clinch victory.</li>
+<br><br>
+<button>Continue</button>
+<br><br>
+This scenario was made by Sir Daniel Bryan MBE.
+</p>
+`)
+e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
 
 return construct(0);
@@ -21443,21 +21581,6 @@ applyTooltipsToObject(campaignTrail_temp.questions_json);
 applyTooltipsToObject(campaignTrail_temp.answers_json);
 applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
-
-/*
-Welcome to Astro's Variable Headquarters
-This is a fairly simple function you can add to your mods. It will create a little menu in which the player can view the numbers laid out within the functions.
-This is a great way to give the player a little more information about your mod.
-
-Across this code, you will find a lot of aspects you can edit. I have left plenty of comments to help you understand what each part does.
-Don't be afraid to ask in #mod-help on the Discord for clarification or help with editing this code.
-
-To use this, place this code below your Code 2, and edit it as needed. You can duplicate the 'let a = document.createElement('p');' section to add more lines of text.
-
-Functions are referenced in text like so: ' + function + '. This will display the number from the function in the text.
-Credit to Nina, who made the original code that summoned the new screen (originally for the 1960Red/1952Blue advisor screen)
-Go ahead and use this code in your mods - just give me credit. I hope it helps you out!
-*/
 
 function addHeadquarterButton() {
     // Check if the button already exists
