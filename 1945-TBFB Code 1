@@ -201,7 +201,7 @@ campaignTrail_temp.temp_election_list = [
     }
 ]
 
-campaignTrail_temp.credits = "Team 45"
+campaignTrail_temp.credits = "<button onclick='credits()'>Team ’45</button>"
 
 campaignTrail_temp.candidate_json = [
     {
