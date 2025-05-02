@@ -186,6 +186,7 @@ campaignTrail_temp.election_json = [
             "advisor_url": "123",
             "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
             "has_visits": 1,
+            "creator": "Many People",
             "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
         }
     }
@@ -207,8 +208,8 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 1001,
         "fields": {
-            "first_name": "The Labour ",
-            "last_name": "Party",
+            "first_name": "The",
+            "last_name": "Labour Party",
             "election": 20,
             "party": "The Labour Party",
             "state": "National",
@@ -231,7 +232,7 @@ campaignTrail_temp.candidate_json = [
         "pk": 1002,
         "fields": {
             "first_name": "Clement",
-            "last_name": "Atlee",
+            "last_name": "Attlee",
             "election": 20,
             "party": "The Labour Party",
             "state": "National",
@@ -253,8 +254,8 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 50000,
         "fields": {
-            "first_name": "The Conservative",
-            "last_name": "And Unionist Party",
+            "first_name": "The",
+            "last_name": "Conservative And Unionist Party",
             "election": 20,
             "party": "Conservative Party",
             "state": "National",
@@ -276,7 +277,7 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 50001,
         "fields": {
-            "first_name": "Winston ",
+            "first_name": "Winston",
             "last_name": "Churchill",
             "election": 20,
             "party": "The Conservative And Unionist Party",
