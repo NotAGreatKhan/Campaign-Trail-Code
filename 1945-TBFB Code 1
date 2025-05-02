@@ -115,7 +115,7 @@ document.styleSheets[0].insertRule("#main_content_area { height:82% !important;}
 document.getElementById("game_start").innerHTML = `<strong>Forge a new nation.</strong>`;
 
 
-campaignTrail_temp.credits = "<button onclick='credits()'>Team '45</button>"
+campaignTrail_temp.credits = "<button onclick='credits()'>Team ’45</button>"
 
 credits = function() {
   credits = ["[Lead Developer]", "Lole Ownstaff", "", "[Writing]", "Drobot2505", "", "[Graphics Design]", "Dante", "", "[And An Extra Huge Thanks]", "To Krypto"]
@@ -125,6 +125,27 @@ credits = function() {
   }
   alert(text)
 }
+
+
+vpTableHistorical = {
+    "The Labour Party" : "Tony C. L. Blair",
+    "The Conservative Party" : "Michael Howard",
+    "The Liberal Democrats" : "Charles P. Kennedy",
+    "The Scotland National Party" : "Alex E. A. Salmond"
+}
+
+HistEV = {
+    "The Labour Party" : "355",
+    "The Conservative Party" : "198",
+    "The Liberal Democrats" : "62",
+    "The Scotland National Party" : "6"
+}
+
+HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f"];
+HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party"];
+HistEV=["355","198","62","6"];
+HistPV=["9,552,376","8,785,942","5,985,704","412,267"];
+HistPVP=["35.2%","32.4%","22.0%","1.5%"];
 
 
 campaignTrail_temp.global_parameter_json = [
@@ -192,7 +213,7 @@ campaignTrail_temp.candidate_json = [
             "party": "The Labour Party",
             "state": "National",
             "priority": 1,
-            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name:The Labour Party</b></li><li><b>Founded: 1900</b></li><li><b>Seats:154</b></li><p> </p><b>The bombs may have stopped falling, but the battle for Britain’s future is only just beginning.</b><br><br>In the smoke-stained streets of the nation, a quiet revolution is stirring. The war has stripped everything bare—class, privilege, empire—and revealed the bones of a country straining under the weight of the past. Soldiers fight and die in the name of freedom, while at home millions struggle to heat their homes or find enough to eat.<br><br>And yet, in this hardship, something new is being born.<br><br>The Beveridge Report has been passed from hand to hand like samizdat scripture. It speaks of a world after war: a world without poverty, without ignorance, without disease. A world where the blood price paid at El Alamein and in the Atlantic convoys might mean something more than a return to how things were. The Conservatives—Churchill’s wartime men—promise gratitude, and glory, and a quiet return to comfort for those who had it before. But Labour knows better. The old world brought this crisis on itself. And when the dust settles, it must not be allowed to come back. Now is the time to organise. To demand. To build.<br><br>You are Labour. Voice of the worker, hand of the builder, promise of a better tomorrow. War may have made you necessary. Peace will make you powerful.<br><br>The new Britain is waiting. Will you rise to shape it?</div>",
+            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Labour Party</b></li><li><b>Founded: 1900</b></li><li><b>Seats: 154</b></li><p> </p><b>The bombs may have stopped falling, but the battle for Britain’s future is only just beginning.</b><br><br>In the smoke-stained streets of the nation, a quiet revolution is stirring. The war has stripped everything bare—class, privilege, empire—and revealed the bones of a country straining under the weight of the past. Soldiers fight and die in the name of freedom, while at home millions struggle to heat their homes or find enough to eat.<br><br>And yet, in this hardship, something new is being born.<br><br>The Beveridge Report has been passed from hand to hand like samizdat scripture. It speaks of a world after war: a world without poverty, without ignorance, without disease. A world where the blood price paid at El Alamein and in the Atlantic convoys might mean something more than a return to how things were. The Conservatives—Churchill’s wartime men—promise gratitude, and glory, and a quiet return to comfort for those who had it before. But Labour knows better. The old world brought this crisis on itself. And when the dust settles, it must not be allowed to come back. Now is the time to organise. To demand. To build.<br><br>You are Labour. Voice of the worker, hand of the builder, promise of a better tomorrow. War may have made you necessary. Peace will make you powerful.<br><br>The new Britain is waiting. Will you rise to shape it?</div>",
             "color_hex": "#ff000d",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -238,7 +259,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Conservative Party",
             "state": "National",
             "priority": 1,
-            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name:The Conservative And Unionist Party</b></li><li><b>Founded: 1834</b></li><li><b>Seats: 386</b></li><p> </p><b>This is not the time for experiments.</b> This is not the hour for theories drawn up in pamphlets or promises penned from the sidelines. This is war—and war demands leadership, discipline, and the wisdom of experience.<br><br>The Conservative Party has held Britain together through the storm.\nWhile cities burned, while nations fell, it was Conservative resolve—under Churchill’s iron direction—that kept the lamp of freedom burning. From the Blitz to the beaches of North Africa, the Union Jack still flies because we did not flinch.<br><br>Now, with victory on the horizon, the country looks ahead. The Labour men whisper of revolution, of great upheavals, of tearing down and building anew. But Britain is not clay to be remoulded by dreamers. It is a centuries-old citadel of law, liberty, and order.<br><br>We do not deny the need for change. But change must come through stability, not slogans. Through reform, not rupture. The welfare of the people depends not on grand schemes, but on sound finance, strong institutions, and the quiet competence of those who have governed before, and will govern again.<br><br>The people trust Winston Churchill—but beyond the man is the Party that made the stand. The Party of nation, empire, and tradition. The Party of duty.\n<p>\nYou are the Conservatives. The stewards of Britain’s past, and if you do not falter—its future.<br><br>Hold fast. Stay the course. The peace must be won just as the war was: with unity, strength, and the courage to preserve what matters.</div>",
+            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Conservative And Unionist Party</b></li><li><b>Founded: 1834</b></li><li><b>Seats: 386</b></li><p> </p><b>This is not the time for experiments.</b> This is not the hour for theories drawn up in pamphlets or promises penned from the sidelines. This is war—and war demands leadership, discipline, and the wisdom of experience.<br><br>The Conservative Party has held Britain together through the storm.\nWhile cities burned, while nations fell, it was Conservative resolve—under Churchill’s iron direction—that kept the lamp of freedom burning. From the Blitz to the beaches of North Africa, the Union Jack still flies because we did not flinch.<br><br>Now, with victory on the horizon, the country looks ahead. The Labour men whisper of revolution, of great upheavals, of tearing down and building anew. But Britain is not clay to be remoulded by dreamers. It is a centuries-old citadel of law, liberty, and order.<br><br>We do not deny the need for change. But change must come through stability, not slogans. Through reform, not rupture. The welfare of the people depends not on grand schemes, but on sound finance, strong institutions, and the quiet competence of those who have governed before, and will govern again.<br><br>The people trust Winston Churchill—but beyond the man is the Party that made the stand. The Party of nation, empire, and tradition. The Party of duty.\n<p>\nYou are the Conservatives. The stewards of Britain’s past, and if you do not falter—its future.<br><br>Hold fast. Stay the course. The peace must be won just as the war was: with unity, strength, and the courage to preserve what matters.</div>",
             "color_hex": "#0000FF",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -329,24 +350,62 @@ jet_data = {
 
 //#startcode
 
-
 corrr = '\n              <h2>The Battle For Britain</h2><font id="wittyquote" size="4" color="white"><em> "No Socialist system can be established without a political police... They would have to fall back on some form of Gestapo"- Winston Churchill</em></font>\n            ';
 
-
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
-
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#7a0016";
-
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-
 $(".container")[0].style.backgroundColor = "#1c005c";
-
 document.getElementById("header").src = "https://www.iwm.org.uk/sites/default/files/2022-02/1945%20election.jpg";
-
 document.body.background = "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg";
-
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#efeff1!important;}</style>";
 
 //#endcode
+
+
+// Difficulty Window
+function changeOpponentSelectionDescription() {
+  selectionObserver.disconnect();
+
+  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+  
+  if (opponentSelectionDescription) {
+    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties.</p><p>The system utilised in <i>1945: The Battle For Britain</i> was graciously provided by <b>u/ItsAstronomics</b>, and created by <b>u/AeronauticBlueberry</b>.</p>`;
+  }
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!selectionObserver){
+  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+function modifyForm(){
+  modifiedFormobserver.disconnect();
+
+  const form = document.querySelector('form[name="game_type_selection"]');
+
+  if (form) {
+    const select = form.querySelector('select[name="game_type_id"]');
+    const h3 = form.querySelector('h3');
+    const option = select.querySelector('option[value="1"]');
+
+    if (option && option.textContent !== 'Default: First Past The Post') {
+      option.textContent = 'Default: First Past The Post';
+    }
+    if (select && select.querySelector('option[value="2"]')) {
+      const queryTwo = select.querySelector('option[value="2"]');
+      if (queryTwo) {
+        queryTwo.remove();
+      }
+    }
+    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
+      h3.textContent = 'How would you like the seats to be allocated?';
+    }
+  }
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!modifiedFormobserver){
+  var modifiedFormobserver = new MutationObserver(modifyForm);
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
