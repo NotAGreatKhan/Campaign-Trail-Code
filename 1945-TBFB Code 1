@@ -338,9 +338,9 @@ campaignTrail_temp.opponents_weighted_json = [
 ]
 
 jet_data = {
-    "headerColor": "#700016",
-    "windowColor": "#7a0016",
-    "containerColor": "#1c005c",
+    "headerColor": "#573300",
+    "windowColor": "#b79d7b",
+    "containerColor": "#725d40",
     "innerWindowColor": "#efeff1",
     "bannerImageUrl": "https://www.iwm.org.uk/sites/default/files/2022-02/1945%20election.jpg",
     "backgroundImageUrl": "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg",
@@ -353,11 +353,11 @@ jet_data = {
 
 corrr = '\n              <h2>The Battle For Britain</h2><font id="wittyquote" size="4" color="white"><em> "No Socialist system can be established without a political police... They would have to fall back on some form of Gestapo"- Winston Churchill</em></font>\n            ';
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#7a0016";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#573300";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#b79d7b";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-$(".container")[0].style.backgroundColor = "#1c005c";
+$(".container")[0].style.backgroundColor = "#725d40";
 document.getElementById("header").src = "https://www.iwm.org.uk/sites/default/files/2022-02/1945%20election.jpg";
 document.body.background = "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg";
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#efeff1!important;}</style>";
