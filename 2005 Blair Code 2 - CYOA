@@ -997,85 +997,6 @@ console.log(playerPolling)
     }
   }
 
-// Kenneth Clarke
-    if(ans == 12797 && Cred < 3){
-    campaignTrail_temp.questions_json[10] = {
-    "model": "campaign_trail.question",
-    "pk": 14122,
-    "fields": {
-        "priority": 0,
-        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[18] = {
-    "model": "campaign_trail.question",
-    "pk": 14145,
-    "fields": {
-        "priority": 0,
-        "description": "Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Kenneth Clarke has just attacked your government's record, claiming you broke promises on taxes, europe and university top-up fees, saying repeatedly: “Why should anyone believe him again?”. You need to respond, for the sake of the country...",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[24] = {
-    "model": "campaign_trail.question",
-    "pk": 13919,
-    "fields": {
-        "priority": 0,
-        "description": "The fall of Iain Duncan Smith has given way for the Europhilic wing of the party to finally, and once again, reassert itself. If only after a fierce and haste contest. Across Kenneth Clarke’s campaign for Number 10, he lambasts your failures to push forth with the European agenda. The public’s sentiment is in favour of him. Polls released on his integrity show he holds a marginal, yet very real, lead over you. You need to bring his numbers down to Earth. The question is, how?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[28] = {
-    "model": "campaign_trail.question",
-    "pk": 13945,
-    "fields": {
-        "priority": 0,
-        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[30] = {
-    "model": "campaign_trail.question",
-    "pk": 13970,
-    "fields": {
-        "priority": 0,
-        "description": "The political centre of the country has rarely been more hotly contested in the marginal seats of Britain, than in this campaign. With your initiative to forge a new future with Europe from the beginning – and its subsequent backfiring – your main opponent has taken every opportunity to expose your diplomatic struggles across the pond and to the continent across the channel. His message is resonating with much of Middle Britain. You need to get them back.",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[31] = {
-    "model": "campaign_trail.question",
-    "pk": 13987,
-    "fields": {
-        "priority": 0,
-        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[32] = {
-    "model": "campaign_trail.question",
-    "pk": 14005,
-    "fields": {
-        "priority": 0,
-        "description": "The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. He even dares to speak of dramatically higher borrowing than predicted. How are you going to fight back against these blasphemous charges?",
-        "likelihood": 1
-      }
-    }
-  }
-
 // Michael Portillo
     if(ans == 12808 && Cred < 4 && ans == 14182 || ans == 14195 || ans == 14201){
     campaignTrail_temp.questions_json[10] = {
@@ -1150,6 +1071,85 @@ console.log(playerPolling)
     "fields": {
         "priority": 0,
         "description": "Portillo is not backing down, he’s now shifting his focused scope on your so-called “integrity issues”, he’s calling you out on your stealth tax rises, your turning on social progress and liberalism. He is throwing the kitchen sink. The final stages of the campaign are crucial. How will you keep these ludicrous attacks off of your back?",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Kenneth Clarke
+    if(ans == 12797 && Cred < 3){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 14122,
+    "fields": {
+        "priority": 0,
+        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14123 || ans == 14129){
+    campaignTrail_temp.questions_json[18] = {
+    "model": "campaign_trail.question",
+    "pk": 14145,
+    "fields": {
+        "priority": 0,
+        "description": "Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Kenneth Clarke has just attacked your government's record, claiming you broke promises on taxes, europe and university top-up fees, saying repeatedly: “Why should anyone believe him again?”. You need to respond, for the sake of the country...",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14123 || ans == 14129){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 13919,
+    "fields": {
+        "priority": 0,
+        "description": "The fall of Iain Duncan Smith has given way for the Europhilic wing of the party to finally, and once again, reassert itself. If only after a fierce and haste contest. Across Kenneth Clarke’s campaign for Number 10, he lambasts your failures to push forth with the European agenda. The public’s sentiment is in favour of him. Polls released on his integrity show he holds a marginal, yet very real, lead over you. You need to bring his numbers down to Earth. The question is, how?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14123 || ans == 14129){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 13945,
+    "fields": {
+        "priority": 0,
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14123 || ans == 14129){
+    campaignTrail_temp.questions_json[30] = {
+    "model": "campaign_trail.question",
+    "pk": 13970,
+    "fields": {
+        "priority": 0,
+        "description": "The political centre of the country has rarely been more hotly contested in the marginal seats of Britain, than in this campaign. With your initiative to forge a new future with Europe from the beginning – and its subsequent backfiring – your main opponent has taken every opportunity to expose your diplomatic struggles across the pond and to the continent across the channel. His message is resonating with much of Middle Britain. You need to get them back.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14123 || ans == 14129){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 13987,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14123 || ans == 14129){
+    campaignTrail_temp.questions_json[32] = {
+    "model": "campaign_trail.question",
+    "pk": 14005,
+    "fields": {
+        "priority": 0,
+        "description": "The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. He even dares to speak of dramatically higher borrowing than predicted. How are you going to fight back against these blasphemous charges?",
         "likelihood": 1
       }
     }
