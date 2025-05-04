@@ -1291,6 +1291,7 @@ tooltipList = [
         {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a fallen symbol of American pride."},
         {searchString: "Afghanistan", explanationText: "<img src=https://imgur.com/gx7shqJ.jpg> South Asian country surounded on all sides, and mountains crawling with a militia hellbent on oppression."},
         {searchString: "Taliban", explanationText: "<img src=https://imgur.com/twdih2b.jpg> Radical Islamist group seeking total control of Afghanistan. A nightmare for the strongest military in the world."},
+        {searchString: "it’s a major blow for Labour", explanationText: "<img src=https://imgur.com/Vc0qgst.jpg> The 2004 local elections saw the Labour party get hemorrhaged on all fronts. Labour lost 464 councillors and 8 councils, while the Conservatives made a net gain of 13 councils and 288 councillors, making them the clear winners. The Liberal Democrats even gain Newcastle and Leeds, giving them a strong mandate of credibility."},
 ];
 
 
