@@ -679,7 +679,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(playerPolling.pvp >= 0.375 || Resign == 0){
+    if(Resign == 0){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14691,
@@ -690,7 +690,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
      }
     }
-    if(playerPolling.pvp >= 0.375 || Resign == 0 && ans == 12873 || ans == 12874){
+    if(Resign == 0 && ans == 12873 || ans == 12874){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14698,
