@@ -97,7 +97,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
             "likelihood": 1
           }
-        }
+       }
+    }
+    if(ans == 13511){
         campaignTrail_temp.questions_json[20] = {
         "model": "campaign_trail.question",
         "pk": 14399,
@@ -116,7 +118,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "likelihood": 1
           }
         }
-        if(ans == 14430)
+        if(ans == 14430){
         campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
         "pk": 14623,
@@ -125,6 +127,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
             "likelihood": 1
           }
+         }
         }
         campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
