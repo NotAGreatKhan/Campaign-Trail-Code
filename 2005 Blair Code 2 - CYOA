@@ -1040,7 +1040,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12824 && Cred =< 4){
+    if(ans == 12824 && Cred <= 4){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14281,
