@@ -662,6 +662,85 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
 
+// Battered Michael Howard
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 13663,
+    "fields": {
+        "priority": 0,
+        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 13689,
+    "fields": {
+        "priority": 0,
+        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 13714,
+    "fields": {
+        "priority": 0,
+        "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 13729,
+    "fields": {
+        "priority": 0,
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[30] = {
+    "model": "campaign_trail.question",
+    "pk": 13750,
+    "fields": {
+        "priority": 0,
+        "description": "The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 13776,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[32] = {
+    "model": "campaign_trail.question",
+    "pk": 13794,
+    "fields": {
+        "priority": 0,
+        "description": "As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
+        "likelihood": 1
+      }
+    }
+  }
+
 // Other CYOA Stuff
     if(ans == 12797){
     campaignTrail_temp.questions_json[6] = {
@@ -916,17 +995,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 0){
-    campaignTrail_temp.questions_json[23] = {
+    if(Cred <= 5){
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
-    "pk": 14691,
+    "pk": 14768,
     "fields": {
         "priority": 0,
-        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "description": "With the grilling of Prime Minister’s Questions at last over, you now must announce the election outside the famous large black door of No. 10. All of the cameras and journalists are locked on your face, ready to broadcast your speech. What will you centre your speech around, given that this will be the first shot of the campaign?",
         "likelihood": 1
       }
-     }
     }
+  }
     if(Resign == 0 && ans == 12873 || ans == 12874){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
@@ -936,9 +1015,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
         "likelihood": 1
       }
-     }
     }
-
+  }
+    if(Resign == 0){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14691,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+    }
+  }
     if(Negative >= 5){
     campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
@@ -1080,85 +1169,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
-        "likelihood": 1
-      }
-    }
-  }
-
-// Battered Michael Howard
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[24] = {
-    "model": "campaign_trail.question",
-    "pk": 13663,
-    "fields": {
-        "priority": 0,
-        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[26] = {
-    "model": "campaign_trail.question",
-    "pk": 13689,
-    "fields": {
-        "priority": 0,
-        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[27] = {
-    "model": "campaign_trail.question",
-    "pk": 13714,
-    "fields": {
-        "priority": 0,
-        "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[28] = {
-    "model": "campaign_trail.question",
-    "pk": 13729,
-    "fields": {
-        "priority": 0,
-        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[30] = {
-    "model": "campaign_trail.question",
-    "pk": 13750,
-    "fields": {
-        "priority": 0,
-        "description": "The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[31] = {
-    "model": "campaign_trail.question",
-    "pk": 13776,
-    "fields": {
-        "priority": 0,
-        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[32] = {
-    "model": "campaign_trail.question",
-    "pk": 13794,
-    "fields": {
-        "priority": 0,
-        "description": "As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
         "likelihood": 1
       }
     }
