@@ -1359,28 +1359,22 @@ function openHeadquarter() {
         RScore = "<font color='#7ba922;'><b>secure</b></font> (<font color='#7ba922;'><b>0</b></font>)"
     }
     if (Resign == 1) {
-        RScore = "<font color='#7ba922;'><b>secure</b></font> (<font color='#7ba922;'><b>1</b></font>)"
+        RScore = "<font color='#7ba922;'><b>stable</b></font> (<font color='#7ba922;'><b>1</b></font>)"
     }
     if (Resign == 2) {
-        RScore = "<font color='#7ba922;'><b>stable</b></font> (<font color='#7ba922;'><b>2</b></font>)"
+        RScore = "<font color='#7ba922;'><b>showing stress</b></font> (<font color='#d58627;'><b>2</b></font>)"
     }
     if (Resign == 3) {
-        RScore = "<font color='#d58627;'><b>showing stress</b></font> (<font color='#d58627;'><b>3</b></font>)"
+        RScore = "<font color='#d58627;'><b>threatened</b></font> (<font color='#d58627;'><b>3</b></font>)"
     }
     if (Resign == 4) {
-        RScore = "<font color='#d58627;'><b>under pressure</b></font> (<font color='#d58627;'><b>4</b></font>)"
+        RScore = "<font color='#d58627;'><b>endangered</b></font> (<font color='#ad1313;'><b>4</b></font>)"
     }
     if (Resign == 5) {
-        RScore = "<font color='#d58627;'><b>threatened</b></font> (<font color='#d58627;'><b>5</b></font>)"
+        RScore = "<font color='#d58627;'><b>compromised</b></font> (<font color='#ad1313;'><b>5</b></font>)"
     }
     if (Resign == 6) {
-        RScore = "<font color='#ad1313;'><b>endangered</b></font> (<font color='#ad1313;'><b>6</b></font>)"
-    }
-    if (Resign == 7) {
-        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>7</b></font>)"
-    }
-    if (Resign == 8) {
-        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>8</b></font>)"
+        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>6</b></font>)"
     }
 
     if (OldLab == 0) {
