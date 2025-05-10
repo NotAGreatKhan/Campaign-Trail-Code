@@ -1275,6 +1275,7 @@ tooltipList = [
         {searchString: "Straw", explanationText: "<img src=https://imgur.com/uOElu71.jpg> Foreign and Commonwealth Secretary Jack Straw. A security hawk in all forms and names."},
         {searchString: "David Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Would still be the Home Secretary for the election, if it weren't for his affair with married magazine publisher Kimberly Quinn."},
         {searchString: "Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Would still be the Home Secretary for the election, if it weren't for his affair with married magazine publisher Kimberly Quinn."},
+        {searchString: "Ian McCartney", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> Party Chair of the Labour Party. Always the bearer of bad news, it seems."},
 
         // Characters
         {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
