@@ -190,340 +190,419 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // Question 1 – 9/11
     if(ans == 3493){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 2 – Afghanistan
     if(ans == 12793){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 13900){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 3 – Terror Bill
     if(ans == 14032){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14033){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 5 – 2002 Budget
     if(ans == 12802){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14392){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 7 – Making the case for war
     if(ans == 12813){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 12814){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14579){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14584){
       Cred += 1;
-    }
-
-    // Question 7 – Deciding which Euro country to support
-    if(ans == 13554){
-      Cred += 1;
+      console.log("You have impacted your credibility");
     }
     
     // Question 8 – Passing New Labour Legislation
     if(ans == 14073){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14072){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14072){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 9 – Commenting on Iraq Invasion
     if(ans == 13561){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     
     // Question 10 – Naming Dr Kelly
     if(ans == 12824){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 12825){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 10 – Aiding French Yes Campaign
     if(ans == 13619){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 10 – Aiding Dutch Yes Campaign
     if(ans == 13873){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 12 - HEA (Weak)
     if(ans == 14722){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14716){
       Cred -= 2;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14729){
       Cred -= 2;
+      console.log("You have impacted your credibility");
     }
 
     // Question 12 - HEA 
     if(ans == 12827){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 12828){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 12830){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 12 - HEA (Strong)
     if(ans == 14735){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14754){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 12 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14259){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14252){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 12 - PUB 
     if(ans == 14209){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14230){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14223){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
 
 
     // Question 13 - Hutton Inquiry
     if(ans == 12832){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 14290){
       Cred -= 2;
+      console.log("You have impacted your credibility");
     }
 
     // Question 14 – HR Groups protesting
     if(ans == 14052){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
 
     // Question 17 – Leigh Amendment
     if(ans == 12847){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 12848){
       Cred -= 1;
+      console.log("You have impacted your credibility");
     }
 
     if(ans == 13474){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 13561){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
     if(ans == 13861){
       Cred += 1;
+      console.log("You have impacted your credibility");
     }
 
     // RESIGNATION
-    if(ans == 13900){
-      Resign += 1;
-    }
-    if(ans == 12798){
-      Resign += 1;
-    }
     if(ans == 12814){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     }
     if(ans == 14584){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     } 
     if(ans == 12819){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     }
     if(ans == 12824){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     }
     if(ans == 12828){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     }
     if(ans == 14710){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     }
     if(ans == 14716){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     }
     if(ans == 14722){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     }
     if(ans == 14290){
       Resign += 1;
+      console.log("The hot seat looks dicey");
     }   
 
     // NEGATIVE
     if(ans == 12849){
       Negative += 1;
+      console.log("Language not looking nice");
     }
     if(ans == 12864){
       Negative += 1;
+      console.log("Language not looking nice");
     }
     if(ans == 12889){
       Negative += 1;
+      console.log("Language not looking nice");
     }
     if(ans == 12897){
       Negative -= 1;
+      console.log("Language not looking nice");
     }
     if(ans == 12909){
       Negative += 1;
+      console.log("Language not looking nice");
     }
     if(ans == 12917){
       Negative += 1;
+      console.log("Language not looking nice");
     }
 
     // OLD LABOUR
     // Question 5 – 2002 Budget
     if(ans == 12803){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
     if(ans == 14392){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
 
     // Question 6 – New Direction?
     if(ans == 12808){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
 
     // Question 7 – New Labour Legislation Session
     if(ans == 14464){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
     if(ans == 14470){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
 
     // Question 12 – PUB 
     if(ans == 14209){
       OldLab += 2;
+      console.log("Going old school are you?");
     }
     if(ans == 14216){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
     if(ans == 14223){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
     if(ans == 14230){
       OldLab -= 1;
+      console.log("Going old school are you?");
     }
 
     // Question 12 – PUB (Hutton Inquiry)
     if(ans == 14238){
       OldLab += 2;
+      console.log("Going old school are you?");
     }
     if(ans == 14245){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
     if(ans == 14252){
       OldLab += 1;
+      console.log("Going old school are you?");
     }
     if(ans == 14259){
       OldLab -= 1;
+      console.log("Going old school are you?");
     }
 
     // WINS
     // Question 2 – Afghanistan
     if(ans == 12793){
       Wins += 1;
+      console.log("Do they like you now?");
     }
 
     // Question 3 – Terror Bill
     if(ans == 14032){
       Wins += 1;
+      console.log("Do they like you now?");
     }
     
     // Question 7 – Making the case for war
     if(ans == 12814){
       Wins += 1;
+      console.log("Do they like you now?");
     }
     if(ans == 14584){
       Wins += 1;
+      console.log("Do they like you now?");
     }
 
     // Question 12 - HEA (Weak)
     if(ans == 14710){
       Wins += 1;
+      console.log("Do they like you now?");
     }
     // Question 12 - HEA 
     if(ans == 12827){
       Wins += 1;
+      console.log("Do they like you now?");
     }
     // Question 12 - HEA (Strong)
     if(ans == 14735){
       Wins += 1;
+      console.log("Do they like you now?");
     }
 
     // Question 12 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Wins += 1;
+      console.log("Do they like you now?");
     }
     // Question 12 - PUB 
     if(ans == 14209){
       Wins += 1;
+      console.log("Do they like you now?");
     }
 
     // Question 17 - Leigh Amendment to CPA 
     if(ans == 12847){
       Wins += 1;
+      console.log("Do they like you now?");
     }
 
     // EU CONSTITUTION
     if(ans == 13861){
       EUCnstn += 1;
+      console.log("The ball is rolling, and it is not stopping");
     }
 
 
 // Resignation Questions
-    if(Resign >= 7){
+    if(Resign >= 5 && Wins >= 3){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 14794,
+    "fields": {
+        "priority": 0,
+        "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do. There – there must.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Resign >= 5){
     campaignTrail_temp.questions_json[17] = {
     "model": "campaign_trail.question",
     "pk": 13499,
     "fields": {
         "priority": 0,
-        "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
+        "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do. There – there must.",
         "likelihood": 1
       }
     }
   } 
-
-    if(Resign >= 7){
+    if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 13500,
@@ -534,7 +613,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-
 
 // Michael Portillo
     if(ans == 14372 || ans == 14378){
@@ -667,6 +745,85 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. He even dares to speak of dramatically higher borrowing than predicted. How are you going to fight back against these blasphemous charges?",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Battered Michael Howard
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 13663,
+    "fields": {
+        "priority": 0,
+        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 13689,
+    "fields": {
+        "priority": 0,
+        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 13714,
+    "fields": {
+        "priority": 0,
+        "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 13729,
+    "fields": {
+        "priority": 0,
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[30] = {
+    "model": "campaign_trail.question",
+    "pk": 13750,
+    "fields": {
+        "priority": 0,
+        "description": "The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 13776,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[32] = {
+    "model": "campaign_trail.question",
+    "pk": 13794,
+    "fields": {
+        "priority": 0,
+        "description": "As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
         "likelihood": 1
       }
     }
@@ -926,17 +1083,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 0){
-    campaignTrail_temp.questions_json[23] = {
+    if(Cred <= 5){
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
-    "pk": 14691,
+    "pk": 14768,
     "fields": {
         "priority": 0,
-        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "description": "With the grilling of Prime Minister’s Questions at last over, you now must announce the election outside the famous large black door of No. 10. All of the cameras and journalists are locked on your face, ready to broadcast your speech. What will you centre your speech around, given that this will be the first shot of the campaign?",
         "likelihood": 1
       }
-     }
     }
+  }
     if(Resign == 0 && ans == 12873 || ans == 12874){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
@@ -946,9 +1103,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
         "likelihood": 1
       }
-     }
     }
-
+  }
+    if(Resign == 0){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14691,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+    }
+  }
     if(Negative >= 5){
     campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
@@ -1090,85 +1257,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
-        "likelihood": 1
-      }
-    }
-  }
-
-// Battered Michael Howard
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[24] = {
-    "model": "campaign_trail.question",
-    "pk": 13663,
-    "fields": {
-        "priority": 0,
-        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[26] = {
-    "model": "campaign_trail.question",
-    "pk": 13689,
-    "fields": {
-        "priority": 0,
-        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[27] = {
-    "model": "campaign_trail.question",
-    "pk": 13714,
-    "fields": {
-        "priority": 0,
-        "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[28] = {
-    "model": "campaign_trail.question",
-    "pk": 13729,
-    "fields": {
-        "priority": 0,
-        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[30] = {
-    "model": "campaign_trail.question",
-    "pk": 13750,
-    "fields": {
-        "priority": 0,
-        "description": "The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[31] = {
-    "model": "campaign_trail.question",
-    "pk": 13776,
-    "fields": {
-        "priority": 0,
-        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(ans == 12797){
-    campaignTrail_temp.questions_json[32] = {
-    "model": "campaign_trail.question",
-    "pk": 13794,
-    "fields": {
-        "priority": 0,
-        "description": "As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
         "likelihood": 1
       }
     }
@@ -1416,7 +1504,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12896,
         "fields": {
             "priority": 0,
-            "description": "Much to the vexation of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. Under the leadership of Charles Kennedy, their uptick could see them breach the 20%If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
+            "description": "Much to the vexation of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. Under the leadership of Charles Kennedy, their uptick could see them breach the 20% If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
             "likelihood": 1
         }
     },
@@ -1569,7 +1657,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13499,
         "fields": {
             "priority": 0,
-            "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do.",
+            "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do. There – there must.",
             "likelihood": 1
         }
     },
@@ -1677,7 +1765,7 @@ campaignTrail_temp.questions_json = [
         "pk": 13714,
         "fields": {
             "priority": 0,
-            "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
+            "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in another world. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
             "likelihood": 1
         }
     },
@@ -2112,6 +2200,24 @@ campaignTrail_temp.questions_json = [
             "description": "In 1998, your government passed up-front fees for students every year that they studied. Doing away with the consensus of education as a free right for the upcoming workforce. With universities breathing down your neck to keep their budgets in balance, you are now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Your advisors press that given the right play, it will pass. Nevertheless, it is deeply controversial and could very well risk failing the vote on the second reading. How will you ensure that it passes?",
             "likelihood": 1
         }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14768,
+        "fields": {
+            "priority": 0,
+            "description": "With the grilling of Prime Minister’s Questions at last over, you now must announce the election outside the famous large black door of No. 10. All of the cameras and journalists are locked on your face, ready to broadcast your speech. What will you centre your speech around, given that this will be the first shot of the campaign?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14794,
+        "fields": {
+            "priority": 0,
+            "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do. There – there must.",
+            "likelihood": 1
+        }
     }
 ]
 
@@ -2161,7 +2267,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12802,
         "fields": {
             "question": 12801,
-            "description": "…The National Insurance tax, which will be raised by 1% in order to properly account for the extra funding to the NHS. It would not be best however, to do anything drastic beyond this, for the sake of a lack of volatility from the public, and the economy’s safety."
+            "description": "…The National Insurance Tax, which will be raised by 1% in order to properly account for the extra funding to the NHS. It would not be best however, to do anything drastic beyond this, for the sake of a lack of volatility from the public, and the economy’s safety."
         }
     },
     {
@@ -2169,7 +2275,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12803,
         "fields": {
             "question": 12801,
-            "description": "…The capital gains tax, which will be raised by 25% in order to properly account for the extra funding to the NHS. I am of the firm belief that the rich of this society should start paying their fair share for the rest of the people of this country. And I believe this is a proactive step to do such a thing."
+            "description": "…The Capital Gains Tax, which will be raised by 25% in order to properly account for the extra funding to the NHS. I am of the firm belief that the rich of this society should start paying their fair share for the rest of the people of this country. And I believe this is a proactive step to do such a thing."
         }
     },
     {
@@ -2969,7 +3075,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13502,
         "fields": {
             "question": 13499,
-            "description": "I… I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over... "
+            "description": "I- I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over... "
         }
     },
     {
@@ -3473,7 +3579,7 @@ campaignTrail_temp.answers_json = [
         "pk": 13904,
         "fields": {
             "question": 12801,
-            "description": "…The Income tax, which will be raised by just under 1% in order to properly account for the extra funding to the NHS. It would not be best however, to do anything with instability beyond this, for the sake of a lack of volatility from the public, and the economy’s safety."
+            "description": "…The Income Tax, which will be raised by just under 1% in order to properly account for the extra funding to the NHS. It would not be best however, to do anything with instability beyond this, for the sake of a lack of volatility from the public, and the economy’s safety."
         }
     },
     {
@@ -4538,6 +4644,62 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14051,
             "description": "We cannot afford to step back from our first duty of the security of the realm. We must take any and all measures to ensure that our citizens can walk safely, that they do not live in fear of another attack by the evil of terrorism. We need to step up, and take that difficult decision for the good of the country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14769,
+        "fields": {
+            "question": 14768,
+            "description": "We will campaign to take hard-won economic stability, the investment in our public services, and entrench it, to make it last for the future and never return to the economic risks and the failing public services of the past."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14775,
+        "fields": {
+            "question": 14768,
+            "description": "Our campaign will continue to put the security of the world and our country first and foremost. By keeping our strong relationship with our American and European partners, we can – and we will – ensure the best future for our country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14781,
+        "fields": {
+            "question": 14768,
+            "description": "The choice this May is simple, either the steady hand of New Labour’s government, or the old and nasty Tories of the past. We will go forward, not back. Michael Howard will take this country once more to the past, we cannot afford to regress in that direction."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14788,
+        "fields": {
+            "question": 14768,
+            "description": "The campaign we will run shall pursue further, the strides in social health that we have championed over our tenure in government: record investment into the NHS, the best school results from our students, and anti-social behaviour finally being tackled to stop crime."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14795,
+        "fields": {
+            "question": 14794,
+            "description": "I- I can’t… I can’t go on. If my own cabinet doesn’t even support me, then it really is over... "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14798,
+        "fields": {
+            "question": 14794,
+            "description": "No… No, no, no. This won’t be how I go down, I won’t let it. I’m fighting this out! I need to, for the country, for New Labour. Everything we have accomplished together. Everything we could do in our grasp, and we’re just going to let go of that? No, I will contest whatever motion of No Confidence, whatever leadership challenge. I don’t care! I’m not… I’m not going out like this. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14801,
+        "fields": {
+            "question": 14794,
+            "description": "They're not going to jump ship yet, I know it. Just.. Just give me a few meetings and talks with them. I'll soothe things over, get it sorted. Let me have this."
         }
     }
 ]
@@ -8024,8 +8186,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 12862,
             "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": -0.046
+            "affected_candidate": 12631,
+            "global_multiplier": -0.5
         }
     },
     {
@@ -8034,8 +8196,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 12863,
             "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": -0.04
+            "affected_candidate": 12631,
+            "global_multiplier": -0.5
         }
     },
     {
@@ -8044,8 +8206,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 12864,
             "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": -0.045
+            "affected_candidate": 12631,
+            "global_multiplier": -0.5
         }
     },
     {
@@ -8064,8 +8226,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 12865,
             "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": -0.046
+            "affected_candidate": 12631,
+            "global_multiplier": -0.5
         }
     },
     {
@@ -8490,26 +8652,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 13285,
-        "fields": {
-            "answer": 12898,
-            "candidate": 12543,
-            "affected_candidate": 12631,
-            "global_multiplier": 0.6
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13286,
-        "fields": {
-            "answer": 12897,
-            "candidate": 12543,
-            "affected_candidate": 12631,
-            "global_multiplier": 0.55
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 13288,
         "fields": {
             "answer": 12899,
@@ -8526,16 +8668,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": 0.004
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13290,
-        "fields": {
-            "answer": 12899,
-            "candidate": 12543,
-            "affected_candidate": 12631,
-            "global_multiplier": 0.45
         }
     },
     {
@@ -8566,16 +8698,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12565,
             "global_multiplier": -0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13294,
-        "fields": {
-            "answer": 12900,
-            "candidate": 12543,
-            "affected_candidate": 12631,
-            "global_multiplier": 0.5
         }
     },
     {
@@ -9395,7 +9517,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 13503,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.065
+            "global_multiplier": -0.06
         }
     },
     {
@@ -9405,7 +9527,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 13508,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.06
+            "global_multiplier": 0.0055
         }
     },
     {
@@ -9880,16 +10002,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 13694,
-        "fields": {
-            "answer": 13690,
-            "candidate": 12543,
-            "affected_candidate": 12631,
-            "global_multiplier": 0.8
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 13697,
         "fields": {
             "answer": 13695,
@@ -9910,16 +10022,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 13699,
-        "fields": {
-            "answer": 13695,
-            "candidate": 12543,
-            "affected_candidate": 12631,
-            "global_multiplier": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 13703,
         "fields": {
             "answer": 13701,
@@ -9936,16 +10038,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": -0.04
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13705,
-        "fields": {
-            "answer": 13701,
-            "candidate": 12543,
-            "affected_candidate": 12631,
-            "global_multiplier": 0.6
         }
     },
     {
@@ -9976,16 +10068,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12565,
             "global_multiplier": -0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13712,
-        "fields": {
-            "answer": 13707,
-            "candidate": 12543,
-            "affected_candidate": 12631,
-            "global_multiplier": 0.5
         }
     },
     {
@@ -13707,6 +13789,166 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12587,
             "global_multiplier": 0.12
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14771,
+        "fields": {
+            "answer": 14769,
+            "candidate": 12543,
+            "affected_candidate": 12631,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14772,
+        "fields": {
+            "answer": 14769,
+            "candidate": 12543,
+            "affected_candidate": 12667,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14773,
+        "fields": {
+            "answer": 14769,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14777,
+        "fields": {
+            "answer": 14775,
+            "candidate": 12543,
+            "affected_candidate": 12631,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14778,
+        "fields": {
+            "answer": 14775,
+            "candidate": 12543,
+            "affected_candidate": 12667,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14779,
+        "fields": {
+            "answer": 14775,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14783,
+        "fields": {
+            "answer": 14781,
+            "candidate": 12543,
+            "affected_candidate": 12631,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14784,
+        "fields": {
+            "answer": 14781,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14785,
+        "fields": {
+            "answer": 14781,
+            "candidate": 12543,
+            "affected_candidate": 12667,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14786,
+        "fields": {
+            "answer": 14781,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.095
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14790,
+        "fields": {
+            "answer": 14788,
+            "candidate": 12543,
+            "affected_candidate": 12631,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14791,
+        "fields": {
+            "answer": 14788,
+            "candidate": 12543,
+            "affected_candidate": 12667,
+            "global_multiplier": -0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14792,
+        "fields": {
+            "answer": 14788,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14797,
+        "fields": {
+            "answer": 14795,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14800,
+        "fields": {
+            "answer": 14798,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.06
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14803,
+        "fields": {
+            "answer": 14801,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0355
+        }
     }
 ]
 
@@ -17340,6 +17582,46 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": -0.75,
             "issue_importance": 5
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14774,
+        "fields": {
+            "answer": 14769,
+            "issue": 27,
+            "issue_score": 0.11,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14780,
+        "fields": {
+            "answer": 14775,
+            "issue": 30,
+            "issue_score": -0.65,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14787,
+        "fields": {
+            "answer": 14781,
+            "issue": 29,
+            "issue_score": 0.5,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14793,
+        "fields": {
+            "answer": 14788,
+            "issue": 28,
+            "issue_score": 0.675,
+            "issue_importance": 1
+        }
     }
 ]
 
@@ -18320,7 +18602,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12862,
             "candidate": 12543,
-            "answer_feedback": "Voter paranoia around stealth taxes is present and will be exploited, but the strong economy is always something you can point to justify them, and reinforce your record."
+            "answer_feedback": "Voter paranoia around stealth taxes is present and will be exploited, but the strong economy is always something you can point to justify them, and reinforce your record. If you can keep this in their minds, and not get bogged down on vitriolic social issues, it could very well pay dividends for you."
         }
     },
     {
@@ -18329,7 +18611,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12863,
             "candidate": 12543,
-            "answer_feedback": "The overall War on Terror is waning in popularity, if still fairly supported by the electorate. Iraq will always remain a thorn in your side though."
+            "answer_feedback": "The overall War on Terror is waning in popularity, if still fairly supported by the electorate. Iraq will always remain a thorn in your side though. The Summer of protests a-million-strong weigh on you whenever you walk from residence to newsweek studio. It's a damn albatross – one you can't wrangle away."
         }
     },
     {
@@ -18338,7 +18620,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12864,
             "candidate": 12543,
-            "answer_feedback": "As the Conservatives are set to run an aggressive campaign this month, jousting back is a mildly-effective way to counter their “trust” accusations. However, keep in mind you do have a record available to stress, don’t forget that."
+            "answer_feedback": "As the Conservatives are set to run an aggressive campaign this month, jousting back is a mildly-effective way to counter their “trust” accusations. However, keep in mind you do have a record available to stress, don’t forget that. "
         }
     },
     {
@@ -18347,7 +18629,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12865,
             "candidate": 12543,
-            "answer_feedback": "Social policy is a bit more of a grey area than the economy. Howard takes the opportunity early on to point out immigration numbers, the numbers and statistics in general on the other hand point to a good performance of your government."
+            "answer_feedback": "Social policy is more of a grey area than the economy. Howard takes the opportunity early on to point out immigration numbers, the numbers and statistics in general on the other hand point to a good performance of your government. The people on the ground see things differently, and they'll let you know."
         }
     },
     {
@@ -18923,7 +19205,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13502,
             "candidate": 12543,
-            "answer_feedback": "You did your best Tony. Now though, it’s time for a new man to lead the country. Probably not a surprise as to who it will be."
+            "answer_feedback": "The backbenchers have their swords brandished, ready to perform a mutiny against all you have done for them. And they would rather turn to <i>him, that man</i>? There is no dignified end for politicians after all, just an expiry date for being thrown out of the kingdom's grand palace. It does hurt more than you let show – so much more."
         }
     },
     {
@@ -18932,7 +19214,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13503,
             "candidate": 12543,
-            "answer_feedback": "It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now. Everyone has an expiry date in politics, even you..."
+            "answer_feedback": "The knives are out. The letters flutter in. Ian McCartney informs you of the news: you're not going to survive a No-Confidence motion. It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now. Everyone has an expiry date in politics, even you."
         }
     },
     {
@@ -18941,7 +19223,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13508,
             "candidate": 12543,
-            "answer_feedback": "Fair sailing, Tony Blair."
+            "answer_feedback": "You pray you may finally achieve solace, but it never arrives..."
         }
     },
     {
@@ -20680,6 +20962,69 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "You hit your oratorical stride, the confidence swells within your chest, and it falls flat – entirely. The omnipresent paranoia has dimmed since the world was twisted on its axis on that fateful day. Such a belligerent case – if powerful – is received too strongly and sourly by those watching at home and particularly by the old Labour crowd. All for the pitiful reward of the socially hawkish sect."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14770,
+        "fields": {
+            "answer": 14769,
+            "candidate": 12543,
+            "answer_feedback": "By far the best message you could deliver solely off of public opinion and focus groups. However the working people on the ground still occasionally grumble over the tax rises, and that subject won't go away anytime soon. At the very least, they're not clutching their pocketbooks... yet."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14776,
+        "fields": {
+            "answer": 14775,
+            "candidate": 12543,
+            "answer_feedback": "You can't escape it. The protests. The jeers and boos. They see something hiding behind your Cheshire smile. But you don't have the heart to tell them. Not when you have an election to win – and a war you feel obligated to see to its end."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14782,
+        "fields": {
+            "answer": 14781,
+            "candidate": 12543,
+            "answer_feedback": "The Conservatives keep lashing across the bow, and it seems to dastardly work. Not to a total degree, and not enough for Middle Britain to flock away like Brighton seagulls. But boy do they turn heads, and you're going to have to fight with all you have got to keep up."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14789,
+        "fields": {
+            "answer": 14788,
+            "candidate": 12543,
+            "answer_feedback": "Any debate on social policy gets mired down into the standard, partisan battle lines. The statistics are relatively forgiving – not that it pushes the needle much ultimately. Once the cameras finish rolling, you feel discomfort knowing you have only moved the frontline negligibly in your favour."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14796,
+        "fields": {
+            "answer": 14795,
+            "candidate": 12543,
+            "answer_feedback": "The backbenchers have their swords brandished, ready to perform a mutiny against all you have done for them. And they would rather turn to <i>him, that man</i>? There is no dignified end for politicians after all, just an expiry date for being thrown out of the kingdom's grand palace. It does hurt more than you let show – so much more."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14799,
+        "fields": {
+            "answer": 14798,
+            "candidate": 12543,
+            "answer_feedback": "The knives are out. The letters flutter in. Ian McCartney informs you of the news: you're not going to survive a No-Confidence motion. It’s over Tony, you’ll just have to accept that. We hate to see you go, but that’s just how it is. It’s another man’s time now. Everyone has an expiry date in politics, even you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14802,
+        "fields": {
+            "answer": 14801,
+            "candidate": 12543,
+            "answer_feedback": "The fires dare to spread across the whole government. You don't stamp all of them out, but MP by MP, they slowly come around. Privately, they'll continue to chatter about your abandonment of the party, of its very principles. But publicly, they see what you've managed to pull off, and they'll stick by you. Tread carefully though, Tony. They're growing impatient."
+        }
     }
 ]
 
@@ -22101,28 +22446,22 @@ function openHeadquarter() {
         RScore = "<font color='#7ba922;'><b>secure</b></font> (<font color='#7ba922;'><b>0</b></font>)"
     }
     if (Resign == 1) {
-        RScore = "<font color='#7ba922;'><b>secure</b></font> (<font color='#7ba922;'><b>1</b></font>)"
+        RScore = "<font color='#7ba922;'><b>stable</b></font> (<font color='#7ba922;'><b>1</b></font>)"
     }
     if (Resign == 2) {
-        RScore = "<font color='#7ba922;'><b>stable</b></font> (<font color='#7ba922;'><b>2</b></font>)"
+        RScore = "<font color='#7ba922;'><b>showing stress</b></font> (<font color='#d58627;'><b>2</b></font>)"
     }
     if (Resign == 3) {
-        RScore = "<font color='#d58627;'><b>showing stress</b></font> (<font color='#d58627;'><b>3</b></font>)"
+        RScore = "<font color='#d58627;'><b>threatened</b></font> (<font color='#d58627;'><b>3</b></font>)"
     }
     if (Resign == 4) {
-        RScore = "<font color='#d58627;'><b>under pressure</b></font> (<font color='#d58627;'><b>4</b></font>)"
+        RScore = "<font color='#d58627;'><b>endangered</b></font> (<font color='#ad1313;'><b>4</b></font>)"
     }
     if (Resign == 5) {
-        RScore = "<font color='#d58627;'><b>threatened</b></font> (<font color='#d58627;'><b>5</b></font>)"
+        RScore = "<font color='#d58627;'><b>compromised</b></font> (<font color='#ad1313;'><b>5</b></font>)"
     }
     if (Resign == 6) {
-        RScore = "<font color='#ad1313;'><b>endangered</b></font> (<font color='#ad1313;'><b>6</b></font>)"
-    }
-    if (Resign == 7) {
-        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>7</b></font>)"
-    }
-    if (Resign == 8) {
-        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>8</b></font>)"
+        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>6</b></font>)"
     }
 
     if (OldLab == 0) {
