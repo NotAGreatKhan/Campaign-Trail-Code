@@ -90,64 +90,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
        }
     }
     if(ans == 13511){
-        campaignTrail_temp.questions_json[20] = {
-        "model": "campaign_trail.question",
-        "pk": 14399,
-        "fields": {
-            "priority": 0,
-            "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
-            "likelihood": 1
-          }
-        }
-        campaignTrail_temp.questions_json[21] = {
-        "model": "campaign_trail.question",
-        "pk": 14400,
-        "fields": {
-            "priority": 0,
-            "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
-            "likelihood": 1
-          }
-        }
-        if(ans == 14430){
-        campaignTrail_temp.questions_json[22] = {
-        "model": "campaign_trail.question",
-        "pk": 14623,
-        "fields": {
-            "priority": 0,
-            "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
-            "likelihood": 1
-          }
-         }
-        }
-        campaignTrail_temp.questions_json[22] = {
-        "model": "campaign_trail.question",
-        "pk": 14601,
-        "fields": {
-            "priority": 0,
-            "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
-            "likelihood": 1
-          }
-        }
-        campaignTrail_temp.questions_json[23] = {
-        "model": "campaign_trail.question",
-        "pk": 14645,
-        "fields": {
-            "priority": 0,
-            "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
-            "likelihood": 1
-          }
-        }
-        campaignTrail_temp.questions_json[24] = {
-        "model": "campaign_trail.question",
-        "pk": 14401,
-        "fields": {
-            "priority": 0,
-            "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
-            "likelihood": 1
-          }
-        }
-    }
-    if(ans == 13511){
         campaignTrail_temp.running_mate_json = JSON.parse(`[{
               "model": "campaign_trail.running_mate",
               "pk": 1,
@@ -606,6 +548,74 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+
+// Gordon Brown Questions
+    if(ans == 13511){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 14399,
+    "fields": {
+        "priority": 0,
+        "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
+        "likelihood": 1
+       }
+     }
+   }
+    if(ans == 13511){
+    campaignTrail_temp.questions_json[21] = {
+    "model": "campaign_trail.question",
+    "pk": 14400,
+    "fields": {
+        "priority": 0,
+        "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
+        "likelihood": 1
+          }
+        }
+      }
+    if(ans == 13511 && ans == 14430){
+    campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 14623,
+    "fields": {
+        "priority": 0,
+        "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+        "likelihood": 1
+          }
+         }
+        }
+    if(ans == 13511){
+    campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 14601,
+    "fields": {
+        "priority": 0,
+        "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+        "likelihood": 1
+          }
+        }
+      }
+    if(ans == 13511){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14645,
+    "fields": {
+        "priority": 0,
+        "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
+        "likelihood": 1
+          }
+        }
+      }
+    if(ans == 13511){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 14401,
+    "fields": {
+        "priority": 0,
+        "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+        "likelihood": 1
+          }
+       }
+    }
 
 // Michael Portillo
     if(ans == 14372 || ans == 14378){
