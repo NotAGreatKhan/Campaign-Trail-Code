@@ -1142,7 +1142,7 @@ function addDynamicCSS() {
     var css = `
 
         label {
-          cursor:default;
+          display:inline-block;
         }
   
         .inner_window_question h3 .mytooltip{
