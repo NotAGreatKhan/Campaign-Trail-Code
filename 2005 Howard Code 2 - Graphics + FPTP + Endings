@@ -759,7 +759,7 @@ function openHeadquarter() {
     hqDiv.style.display = "flex"; // Set layout to flex to allow columns
     hqDiv.style.color = "white";
     hqDiv.style.backgroundColor = "#383838";
-    hqDiv.style.backgroundImage = "url(https://imgur.com/sfodLOa.jpg)"; 
+    hqDiv.style.backgroundImage = "url(https://imgur.com/xUgXayB.jpg)"; 
     hqDiv.style.border = "5px solid black";
     hqDiv.style.borderRadius = "10px";
     hqDiv.style.height = "56%";
@@ -784,6 +784,13 @@ function openHeadquarter() {
         questions.style.display = "";
     }
     headerDiv.appendChild(backButton);
+ 
+    let headerText = document.createElement("h3");
+    headerText.textContent = "Her Majesty's Most Loyal Opposition";
+    headerText.style.textAlign = "center";  // Center the text
+    headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
+    headerText.style.color = "black";
+    headerDiv.appendChild(headerText);
 
     // Append headerDiv to the main hqDiv
     hqDiv.appendChild(headerDiv);
@@ -824,7 +831,7 @@ function openHeadquarter() {
 
     // Image
     let img = document.createElement("img");
-    img.src = "https://imgur.com/mB2xqdL.jpg";
+    img.src = "https://imgur.com/E1EJ14a.jpg";
     img.style.height = "50%";
     img.style.marginLeft = "1em";
     img.style.flexGrow = "0.1";
