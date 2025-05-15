@@ -3484,6 +3484,11 @@ campaignTrail_temp.answer_feedback_json = [
 ]
 
 
+campaignTrail_temp.candidate_image_url = "https://imgur.com/dZO9w4T.jpg";
+campaignTrail_temp.running_mate_image_url = "https://imgur.com/45BzG5y.jpg";
+campaignTrail_temp.candidate_last_name = "<small>Opposition Leader</small>";
+campaignTrail_temp.running_mate_last_name = "Smith";
+
 
 campaignTrail_temp.jet_data = [{
     "nicknames": {
