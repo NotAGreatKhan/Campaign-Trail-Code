@@ -8,6 +8,7 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
+
 e = campaignTrail_temp
 
 var Wins = 0;
@@ -44,13 +45,14 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 }
 
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
         "pk": 13904,
         "fields": {
             "priority": 0,
-            "description": "It is early September, 2001. You, Iain Duncan Smith, have just completed your campaign for the leadership of the Conservative Party called as a consequence of the lashing inflicted by the now-resigned William Hague. The votes are being tallied, the winner will be declared. But your anticipation is ripped away. Ripped away by the voice intoning on the television screen...<p></p>Destruction. Fire. And death. The World Trade Centre, a symbol of American prominence, is engulfed in it. The hope of the 90's has been gorily ripped out, and in its place an unfeeling mass paranoia. Shaken to your core, you prepare your statements as you come back to your political senses...",
+            "description": "It is early September, 2001. You, Iain Duncan Smith, have just completed your campaign for the leadership of the Conservative Party called as a consequence of the lashing inflicted by the now-resigned William Hague. The votes are being tallied, the winner will be declared.<p></p>But your anticipation is ripped away. Ripped away by the voice intoning on the television screen...<p></p>Destruction. Fire. And death. The World Trade Centre, a symbol of American prominence, is engulfed in it. The hope of the 90's has been gorily ripped out, and in its place an unfeeling mass paranoia.<p></p>Shaken to your core, you prepare your statements as you come back to your political senses...",
             "likelihood": 1
         }
     },
@@ -3339,7 +3341,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13942,
         "fields": {
             "answer": 13905,
-            "candidate": 12543,
+            "candidate": 12565,
             "affected_candidate": 12543,
             "global_multiplier": 0.98
         }
@@ -3349,7 +3351,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13943,
         "fields": {
             "answer": 13905,
-            "candidate": 12543,
+            "candidate": 12565,
             "affected_candidate": 12587,
             "global_multiplier": -0.25
         }
@@ -3359,7 +3361,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13947,
         "fields": {
             "answer": 13945,
-            "candidate": 12543,
+            "candidate": 12565,
             "affected_candidate": 12543,
             "global_multiplier": 0.95
         }
@@ -3369,7 +3371,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13948,
         "fields": {
             "answer": 13945,
-            "candidate": 12543,
+            "candidate": 12565,
             "affected_candidate": 12587,
             "global_multiplier": -0.25
         }
@@ -3389,7 +3391,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13954,
         "fields": {
             "answer": 13950,
-            "candidate": 12543,
+            "candidate": 12565,
             "affected_candidate": 12543,
             "global_multiplier": 0.9
         }
@@ -3399,7 +3401,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13955,
         "fields": {
             "answer": 13950,
-            "candidate": 12543,
+            "candidate": 12565,
             "affected_candidate": 12587,
             "global_multiplier": -0.25
         }
@@ -3409,7 +3411,7 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 13956,
         "fields": {
             "answer": 13950,
-            "candidate": 12543,
+            "candidate": 12565,
             "affected_candidate": 12565,
             "global_multiplier": -0.015
         }
@@ -3481,10 +3483,26 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-campaignTrail_temp.candidate_image_url = "https://imgur.com/dZO9w4T.jpg";
-campaignTrail_temp.running_mate_image_url = "https://imgur.com/45BzG5y.jpg";
-campaignTrail_temp.candidate_last_name = "Conservatives";
-campaignTrail_temp.running_mate_last_name = "Smith";
+
+
+campaignTrail_temp.jet_data = [{
+    "nicknames": {
+        "12543": "Labour",
+        "12565": "Conservative",
+        "12587": "LibDem",
+        "12609": "SNP",
+        "12631": "Greens",
+        "12649": "UKIP",
+        "12667": "Ind/Oth",
+        "12685": "DUP",
+        "12703": "Sinn Féin",
+        "12721": "Plaid Cymru",
+        "12739": "UUP",
+        "12757": "SDLP",
+        "12775": "Speaker"
+    }
+}
+]
 
 
 // If you resign as Duncan Smith or stay on
@@ -4248,7 +4266,7 @@ function openHeadquarter() {
     hqDiv.style.display = "flex"; // Set layout to flex to allow columns
     hqDiv.style.color = "white";
     hqDiv.style.backgroundColor = "#383838";
-    hqDiv.style.backgroundImage = "url(https://imgur.com/sfodLOa.jpg)"; 
+    hqDiv.style.backgroundImage = "url(https://imgur.com/xUgXayB.jpg)"; 
     hqDiv.style.border = "5px solid black";
     hqDiv.style.borderRadius = "10px";
     hqDiv.style.height = "56%";
@@ -4273,6 +4291,13 @@ function openHeadquarter() {
         questions.style.display = "";
     }
     headerDiv.appendChild(backButton);
+ 
+    let headerText = document.createElement("h3");
+    headerText.textContent = "Her Majesty's Most Loyal Opposition";
+    headerText.style.textAlign = "center";  // Center the text
+    headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
+    headerText.style.color = "black";
+    headerDiv.appendChild(headerText);
 
     // Append headerDiv to the main hqDiv
     hqDiv.appendChild(headerDiv);
@@ -4313,7 +4338,7 @@ function openHeadquarter() {
 
     // Image
     let img = document.createElement("img");
-    img.src = "https://imgur.com/mB2xqdL.jpg";
+    img.src = "https://imgur.com/E1EJ14a.jpg";
     img.style.height = "50%";
     img.style.marginLeft = "1em";
     img.style.flexGrow = "0.1";
