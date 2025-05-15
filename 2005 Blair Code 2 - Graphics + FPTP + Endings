@@ -12,12 +12,14 @@ var changeGameDisp = (hide) => {
 
 // If you resign as Blair
 e.candidateSwitcher = () => {
-  let potential_running_mate_pks = e.running_mate_json.filter(f=>f.fields.candidate == e.candidate_id).map(f=>f.fields.running_mate);
-  let pot_run_mat = potential_running_mate_pks.map(f=>e.candidate_json.find(_f=>_f.pk===f));
-  let running_mate_options = ``;
-  pot_run_mat.forEach(f=> {
-      running_mate_options += `<option value="${f.pk}">${f.fields.first_name} ${f.fields.last_name}</option>\n`
-  });
+console.log("candidateSwitcher triggered", document.querySelector("#candidate_form"), document.querySelector("#candidate_id"));
+
+let potential_running_mate_pks = e.running_mate_json.filter(f=>f.fields.candidate == e.candidate_id).map(f=>f.fields.running_mate);
+let pot_run_mat = potential_running_mate_pks.map(f=>e.candidate_json.find(_f=>_f.pk===f));
+let running_mate_options = ``;
+pot_run_mat.forEach(f=> {
+    running_mate_options += `<option value="${f.pk}">${f.fields.first_name} ${f.fields.last_name}</option>\n`
+});
 
   let vp_html = `
       <div id="running_mate_form">
@@ -89,10 +91,12 @@ e.candidateSwitcher = () => {
       e.running_mate_image_url = pot_run_mat[i].fields.image_url;
       e.selected_running_mate = pot_run_mat[i];
 
-      if ($("#campaign_sign")[0]) {
-          $("#campaign_sign").html(`<p>${e.candidate_last_name}</p><p>${e.running_mate_last_name}</p>`);
-          $("#running_mate_pic").attr("src", e.running_mate_image_url)
-      }
+if ($("#campaign_sign")[0]) {
+    $("#campaign_sign").html(`<p>${e.candidate_last_name}</p><p>${e.running_mate_last_name}</p>`);
+    if ($("#running_mate_pic")[0]) {
+        $("#running_mate_pic").attr("src", e.running_mate_image_url);
+    }
+}
 
       
       $("#inner_window_4").remove();
@@ -230,7 +234,11 @@ distributeSeatsUK = () => {
         if (state == 12446 && c == 12565) {return 1} // North East England
         if (state == 12452 && c == 12565) {return 8} // North West England        
         // Independent/Others
-        if (state == 12500 && c == 12667) {return 1} // Wales        
+        if (state == 12500 && c == 12667) {return 1} // Wales
+        // Galloway wins if Iraq War happens
+        if (iraq == 1){
+        if (state == 12482 && c == 12667) {return 1} // London        
+        }
         // Lib Dems elsewhere
         if (state == 12464 && c == 12587) {return 1} // East Midlands
         if (state == 12482 && c == 12587) {return 8} // London
@@ -344,7 +352,7 @@ let changeChartRunning = false;
 let mcaHeightRunning = false;
 let processedNodes = new Set();
 
-async function handleMutations(mutationsList, observer) {
+async function handleScrollMutation(mutationsList, observer) {
     if (observerRunning) return;
     observerRunning = true;
 
@@ -361,6 +369,26 @@ async function handleMutations(mutationsList, observer) {
         };
         buttons.forEach(button => button.addEventListener('click', handleClick));
         processedNodes.add(overallResult);
+    }
+    const state_result = document.getElementById('state_result');
+    if (state_result && !processedNodes.has(state_result)) {
+        state_result.style.overflow = 'auto';
+        const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
+        const handleClick = () => {
+            state_result.style.overflow = 'auto';
+        };
+        buttons.forEach(button => button.addEventListener('click', handleClick));
+        processedNodes.add(state_result);
+    }
+    const overall_details_container = document.getElementById('overall_election_details');
+    if (overall_details_container && !processedNodes.has(overall_details_container)) {
+        overall_details_container.style.overflow = 'auto';
+        const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
+        const handleClick = () => {
+            overall_details_container.style.overflow = 'auto';
+        };
+        buttons.forEach(button => button.addEventListener('click', handleClick));
+        processedNodes.add(overall_details_container);
     }
 
     // changechart
@@ -405,11 +433,12 @@ async function handleMutations(mutationsList, observer) {
     observerRunning = false;
 }
 
-let singleObserver = new MutationObserver(handleMutations);
-singleObserver.observe(document.documentElement, { childList: true, subtree: true });
+let scrollObserver = new MutationObserver(handleScrollMutation);
+scrollObserver.observe(document.documentElement, { childList: true, subtree: true });
     
 
 campaignTrail_temp.multiple_endings=true
+var used = false;
 endingPicker = (out, totv, aa, quickstats) => {
 
 distributeSeatsUK();
@@ -1510,3 +1539,6 @@ function handleMutations(mutationsList, observer) {
     observer.observe(document.documentElement, { childList: true, subtree: true });
     observerRunning = false;
 }
+
+let hqObserver = new MutationObserver(handleMutations);
+hqObserver.observe(document.documentElement, { childList: true, subtree: true });
