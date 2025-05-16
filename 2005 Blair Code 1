@@ -1756,8 +1756,8 @@ setupMusicPlayer();
 
 
 e.ElectionPopup = "Election night has, at last, arrived. We shall now see the decision of the people – as the bell of Elizabeth Tower tolls. Best of luck to you, you'll certainly need it."
-e.LossPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have determined your end. Click 'OK' to view the choice of the nation, and may life provide a more just conclusion than poltics already has."
-e.WinPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have enshrined upon you your hard-fought victory. Click 'OK' to view the choice of the nation, and may the collosuem of public life continue to provide you bountiful success."
+e.LossPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have determined your end. Click 'OK' to view the choice of the nation, and may life provide a more just conclusion than politics already has."
+e.WinPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have enshrined upon you your hard-fought victory. Click 'OK' to view the choice of the nation, and may the colosseum of public life continue to provide you bountiful success."
 
 
 campaignTrail_temp.achievements = {
