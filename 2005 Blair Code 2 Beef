@@ -17,6 +17,8 @@ var OldLab = 0;
 var Cred = 2;
 var Brown = false;
 var EUCnstn = 0;
+var iraq = 0;
+
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
     if(ans == 12807){
@@ -42,6 +44,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+        iraq += 1;
+        console.log("debug")
     }
     if(ans == 3493){
         document.body.background = "https://imgur.com/tjqFeeK.png"    
@@ -98,9 +102,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "likelihood": 1
           }
        }
-    }
-    if(ans == 13511){
-        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+    campaignTrail_temp.running_mate_json = JSON.parse(`[{
               "model": "campaign_trail.running_mate",
               "pk": 1,
               "fields": {
@@ -108,8 +110,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
                   "running_mate": 136
               }
         }]`);
-            window.setTimeout(e.candidateSwitcher, 20)
+    }
+    if(ans == 13511){
             e.VpText = "Please select your party leader:"
+            window.setTimeout(e.candidateSwitcher, 20)
     }
     if(ans == 13508){
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 25;
