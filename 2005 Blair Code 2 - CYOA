@@ -106,7 +106,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             window.setTimeout(e.candidateSwitcher, 20)
     }
     if(ans == 13508){
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 25;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 26;
       Brown = true;
     }
     if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){   
