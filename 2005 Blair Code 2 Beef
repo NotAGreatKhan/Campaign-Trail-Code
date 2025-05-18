@@ -93,7 +93,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13508){
         vpTable["The Labour Party"] = "J. Gordon Brown";
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
-        campaignTrail_temp.questions_json[19] = {
+        campaignTrail_temp.questions_json[20] = {
         "model": "campaign_trail.question",
         "pk": 13501,
         "fields": {
@@ -530,7 +530,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Resignation Questions
     if(Resign >= 5 && Wins >= 3){
-    campaignTrail_temp.questions_json[17] = {
+    campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 14794,
     "fields": {
@@ -541,7 +541,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Resign >= 5){
-    campaignTrail_temp.questions_json[17] = {
+    campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 13499,
     "fields": {
@@ -552,7 +552,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   } 
     if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 13500,
     "fields": {
@@ -565,7 +565,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Gordon Brown Questions
     if(ans == 13511){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[21] = {
     "model": "campaign_trail.question",
     "pk": 14399,
     "fields": {
@@ -576,7 +576,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
      }
    }
     if(ans == 13511){
-    campaignTrail_temp.questions_json[21] = {
+    campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 14400,
     "fields": {
@@ -587,7 +587,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
       }
     if(ans == 13511 && ans == 14430){
-    campaignTrail_temp.questions_json[22] = {
+    campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14623,
     "fields": {
@@ -598,7 +598,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
          }
         }
     if(ans == 13511){
-    campaignTrail_temp.questions_json[22] = {
+    campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14601,
     "fields": {
@@ -609,7 +609,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
       }
     if(ans == 13511){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14645,
     "fields": {
@@ -620,7 +620,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
       }
     if(ans == 13511){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 14401,
     "fields": {
@@ -633,7 +633,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Michael Portillo
     if(ans == 14372 || ans == 14378){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[21] = {
     "model": "campaign_trail.question",
     "pk": 14294,
     "fields": {
@@ -644,7 +644,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14372 || ans == 14378){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 14336,
     "fields": {
@@ -655,7 +655,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14372 || ans == 14378){
-    campaignTrail_temp.questions_json[26] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 14296,
     "fields": {
@@ -666,7 +666,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14372 || ans == 14378 && Cred < 5 && OldLab < 3){
-    campaignTrail_temp.questions_json[26] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 14321,
     "fields": {
@@ -677,7 +677,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14372 || ans == 14378){
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 14330,
     "fields": {
@@ -688,7 +688,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14372 || ans == 14378){
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[29] = {
     "model": "campaign_trail.question",
     "pk": 14331,
     "fields": {
@@ -701,7 +701,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Kenneth Clarke
     if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 14145,
     "fields": {
@@ -712,7 +712,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 13919,
     "fields": {
@@ -723,7 +723,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[29] = {
     "model": "campaign_trail.question",
     "pk": 13945,
     "fields": {
@@ -734,7 +734,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[30] = {
+    campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 13970,
     "fields": {
@@ -745,7 +745,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[31] = {
+    campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 13987,
     "fields": {
@@ -756,7 +756,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14123 || ans == 14129){
-    campaignTrail_temp.questions_json[32] = {
+    campaignTrail_temp.questions_json[33] = {
     "model": "campaign_trail.question",
     "pk": 14005,
     "fields": {
@@ -769,7 +769,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Battered Michael Howard
     if(ans == 12797){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 13663,
     "fields": {
@@ -780,7 +780,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[26] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 13689,
     "fields": {
@@ -791,7 +791,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13714,
     "fields": {
@@ -802,7 +802,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[29] = {
     "model": "campaign_trail.question",
     "pk": 13729,
     "fields": {
@@ -813,7 +813,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[30] = {
+    campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 13750,
     "fields": {
@@ -824,7 +824,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[31] = {
+    campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 13776,
     "fields": {
@@ -835,7 +835,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[32] = {
+    campaignTrail_temp.questions_json[33] = {
     "model": "campaign_trail.question",
     "pk": 13794,
     "fields": {
@@ -947,7 +947,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12808 && Cred < 4 && ans == 14182 || ans == 14195 || ans == 14201){
-    campaignTrail_temp.questions_json[10] = {
+    campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 14371,
     "fields": {
@@ -958,7 +958,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797 && Cred < 3){
-    campaignTrail_temp.questions_json[10] = {
+    campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 14122,
     "fields": {
@@ -969,7 +969,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[10] = {
+    campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 14100,
     "fields": {
@@ -980,7 +980,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   } 
     if(ans == 12808){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14208,
     "fields": {
@@ -991,7 +991,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12808 && ans == 12824){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14237,
     "fields": {
@@ -1002,7 +1002,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Cred >= 10){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14734,
     "fields": {
@@ -1013,7 +1013,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Cred <= 1){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14709,
     "fields": {
@@ -1024,7 +1024,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797 && ans == 13619 && Cred >= 8){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13860,
     "fields": {
@@ -1035,7 +1035,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13657,
     "fields": {
@@ -1046,7 +1046,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 13557 && ans == 13873 && Cred >= 8){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13894,
     "fields": {
@@ -1057,7 +1057,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 13557){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13888,
     "fields": {
@@ -1068,7 +1068,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12824 && Cred <= 4){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14281,
     "fields": {
@@ -1079,7 +1079,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12813 || ans == 12815){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13494,
     "fields": {
@@ -1090,7 +1090,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12825){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13410,
     "fields": {
@@ -1101,7 +1101,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Cred <= 5){
-    campaignTrail_temp.questions_json[19] = {
+    campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 14768,
     "fields": {
@@ -1112,7 +1112,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Resign == 0 && ans == 12873 || ans == 12874){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14698,
     "fields": {
@@ -1123,7 +1123,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Resign == 0){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14691,
     "fields": {
@@ -1134,7 +1134,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Negative >= 5){
-    campaignTrail_temp.questions_json[32] = {
+    campaignTrail_temp.questions_json[33] = {
     "model": "campaign_trail.question",
     "pk": 13427,
     "fields": {
@@ -1145,7 +1145,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12808 && OldLab >= 3){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 13443,
     "fields": {
@@ -1156,7 +1156,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12808 && OldLab < 3){
-    campaignTrail_temp.questions_json[22] = {
+    campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 13458,
     "fields": {
@@ -1167,7 +1167,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12819 || ans == 13418){
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 12901,
     "fields": {
@@ -1178,7 +1178,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12820 || ans == 13420){
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13596,
     "fields": {
@@ -1189,7 +1189,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14034){
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 14385,
     "fields": {
@@ -1200,7 +1200,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12803 || ans == 13904){
-    campaignTrail_temp.questions_json[33] = {
+    campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
     "pk": 14569,
     "fields": {
@@ -1211,7 +1211,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14290){
-    campaignTrail_temp.questions_json[33] = {
+    campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
     "pk": 14595,
     "fields": {
@@ -1222,7 +1222,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(EUCnstn == 1){
-    campaignTrail_temp.questions_json[34] = {
+    campaignTrail_temp.questions_json[35] = {
     "model": "campaign_trail.question",
     "pk": 14679,
     "fields": {
@@ -1233,7 +1233,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[34] = {
+    campaignTrail_temp.questions_json[35] = {
     "model": "campaign_trail.question",
     "pk": 13820,
     "fields": {
@@ -1244,7 +1244,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797 && ans == 13861){
-    campaignTrail_temp.questions_json[34] = {
+    campaignTrail_temp.questions_json[35] = {
     "model": "campaign_trail.question",
     "pk": 13839,
     "fields": {
@@ -1254,10 +1254,32 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(OldLab >= 5){
+    campaignTrail_temp.questions_json[36] = {
+    "model": "campaign_trail.question",
+    "pk": 14337,
+    "fields": {
+        "priority": 0,
+        "description": "The walls around the Thatcherite consensus have come crashing down.<p></p>Sitting in your office, you longingly gaze out of the window that received the same stares as Wilson, Callaghan, and Attlee before you. When you first came into this job, you felt a conviction to shift to the centre like no other Labour leader before you. But, time changes people more than they realise, it appears. As Deputy Prime Minister John Prescott – and Chancellor Brown – sit opposite you, many ideas are swirling like a vortex in your mind. But there’s only one which you can get out first.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(OldLab <= 0 && Cred >= 11){
+    campaignTrail_temp.questions_json[36] = {
+    "model": "campaign_trail.question",
+    "pk": 14337,
+    "fields": {
+        "priority": 0,
+        "description": "The realignment of British politics around Thatcher and her government has left a deep mark on public life, and your political conscience.<p></p>Many of your backbenchers holler at you in parliament, but that does not matter now, not to you. Before you, sits Foreign Secretary Jack Straw – Blunkett would be here too, but an affair got him kicked out from your cabinet. Milburn too, quietly waits in the wings. He speaks of the importance of securing our citizens, and protecting democracy at home, and abroad. His glare bores into you. What will you say to the man?",
+        "likelihood": 1
+      }
+    }
+  }
 
 // Local + European Elections
     if(ans == 12797){
-    campaignTrail_temp.questions_json[14] = {
+    campaignTrail_temp.questions_json[15] = {
     "model": "campaign_trail.question",
     "pk": 13621,
     "fields": {
@@ -1268,7 +1290,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[15] = {
+    campaignTrail_temp.questions_json[16] = {
     "model": "campaign_trail.question",
     "pk": 13647,
     "fields": {
@@ -1279,7 +1301,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
 }
-
 
 campaignTrail_temp.questions_json = [
     {
@@ -2437,7 +2458,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12844,
         "fields": {
             "question": 12841,
-            "description": "I’m deeply saddened, both as a politician and as a true European believer. The English People spoke, and it wasn't the way I expected. I fear not much Is going to be doable in the next few years."
+            "description": "I’m deeply saddened, both as a politician and as a true European believer. The English People spoke, and it wasn't the way I expected. I fear not much Is going to be doable in the next few years. Tone it down on talk about Europe, and we'll just see where we can go from here."
         }
     },
     {
@@ -2445,7 +2466,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12845,
         "fields": {
             "question": 12841,
-            "description": "This is disappointing, but I will not give up the fight for our crucial relationship with a closer, fairer Europe. It is crucial not only for our economy, but our well-being and international relationship as a nation."
+            "description": "This is disappointing, but I will not give up the fight for our crucial relationship with a closer, fairer Europe. It is crucial not only for our economy, but our well-being and international relationship as a nation. We cannot abandon the case for the right course on Europe."
         }
     },
     {
@@ -4734,6 +4755,38 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 12836,
             "description": "God, this is worrying. We need to start addressing the elephant in the room, get me in touch with the MPs and groups who are feeling antsy about the war. I'll bring them over, I can win them back."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14815,
+        "fields": {
+            "question": 14814,
+            "description": "We need to address what we're going to do about the Euro currency. It is the natural and logical conclusion for our continued relationship with Europe. if he wants to put a roadblock into it, then that is on him. We need to get him on <i>our</i> side."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14816,
+        "fields": {
+            "question": 14814,
+            "description": "Look, I know he hasn't exactly been ecstatic about this whole arrangement we came to back in that hotel. So let's just break bread and rebuild that bridge of years past. We can make this work, if I just – well – say a few words on when I'll go. After the next election I won't contest another one, it'll go to him. I mean it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14817,
+        "fields": {
+            "question": 14814,
+            "description": "I just need to set the record straight on our economic policy. He's been doing a great job on keeping the stability going, he just needs to keep staying with what we agreed upon. A progressive centrism which is still radical in its course."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14821,
+        "fields": {
+            "question": 14814,
+            "description": "Gordon and I don't exactly see eye-to-eye on social policy, but we must set the course properly regardless. If we can solve that, nothing can get in our way. We just need to have a real back-and-forth about healthcare and reforms, he will see the light. He just needs to be brought around the corner of the tunnel, so to say."
         }
     }
 ]
@@ -13993,6 +14046,66 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12587,
             "global_multiplier": 0.005
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14824,
+        "fields": {
+            "answer": 14815,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14825,
+        "fields": {
+            "answer": 14815,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0035
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14826,
+        "fields": {
+            "answer": 14816,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14829,
+        "fields": {
+            "answer": 14817,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.00085
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14831,
+        "fields": {
+            "answer": 14821,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0055
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14832,
+        "fields": {
+            "answer": 14821,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0085
+        }
     }
 ]
 
@@ -17706,6 +17819,56 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": -0.71,
             "issue_importance": 6
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14823,
+        "fields": {
+            "answer": 14815,
+            "issue": 31,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14827,
+        "fields": {
+            "answer": 14816,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14828,
+        "fields": {
+            "answer": 14816,
+            "issue": 28,
+            "issue_score": 0.35,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14830,
+        "fields": {
+            "answer": 14817,
+            "issue": "27",
+            "issue_score": 0.45,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14833,
+        "fields": {
+            "answer": 14821,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 4
+        }
     }
 ]
 
@@ -18542,7 +18705,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12844,
             "candidate": 12543,
-            "answer_feedback": "It made it official at least, the UK won't expand its role under a Blair administration. Europe will be an issue to avoid at most."
+            "answer_feedback": "It made it official at least, the UK won't expand its role under a Blair administration. Europe will be an issue to avoid at most. The Eurosceptics have delivered a decisive blow to your faltering machine at these elections. You better wish it won't happen nationally as well."
         }
     },
     {
@@ -18551,7 +18714,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12845,
             "candidate": 12543,
-            "answer_feedback": "Putting your foot down here makes sense on paper, but your falling political capital just cannot sustain this fight across the channel. It’s probably best to let the sleeping Eurosceptic dog lie for the time being."
+            "answer_feedback": "Putting your foot down here makes sense on paper, but your falling political capital just cannot sustain this fight across the channel. It’s probably best to let the sleeping Eurosceptic dog lie for the time being. Still, it stings, knowing what this means about Britain and the Euro."
         }
     },
     {
@@ -21117,6 +21280,42 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 14805,
             "candidate": 12543,
             "answer_feedback": "More nightly sessions with voters barating with you about the war. More journalists and presenters making your hands sweat. It all almost gets to you at times. Just keep on going – you made this choice. No going back now. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14818,
+        "fields": {
+            "answer": 14815,
+            "candidate": 12543,
+            "answer_feedback": "Gordon Brown almost immediately rejects it out of hand, going on about currency-inflationary cycles, effects on taxation, all the rest of the detail you never fully grasped quite like he did. The two of you devolve into a full-on row. Your Europhilic idealism versus his economic pragmatism. In the end, it goes nowhere. The government puts out a statement reiterating that it will not join any European single currency – effectively killing the dream all together."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14819,
+        "fields": {
+            "answer": 14816,
+            "candidate": 12543,
+            "answer_feedback": "You don't mean it, not fully. Some sweet words to soothe over the angst does go some way in calming his internal temper, it won't waft away the storm forever though. Eventually you are going to reckon with a more precise timetable – whether you like it or not."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14820,
+        "fields": {
+            "answer": 14817,
+            "candidate": 12543,
+            "answer_feedback": "Gordon politely nods along, calmly absorbing in your points and savouring in your slight – but still very real – delusion. Before he, in all of his grace and decor – shoots it down like a partridge, and reaffirms his domination over economic policy. Thankfully, your economic agenda will stay predominantly unmolested; well, whilst you are PM."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14822,
+        "fields": {
+            "answer": 14821,
+            "candidate": 12543,
+            "answer_feedback": "At first, all seems to be going well. You both get along on the constitutional and social justice reforms, and the chat is remarkably light. Inevitably – of course – the touchy subject of the NHS imminently threatens to crash the conversational plane down. And, it does. The question of allowing private interference in NHS surgeries finds its way to a mole who leaks it to <i>The Daily Telegraph</i>, the headlines are yet another menial and exhausting distraction. Your ploy backfires, and Blair-Brown relations are put back to square 1."
         }
     }
 ]
