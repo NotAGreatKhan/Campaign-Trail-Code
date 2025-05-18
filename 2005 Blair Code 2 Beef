@@ -1365,6 +1365,15 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
+        "pk": 14814,
+        "fields": {
+            "priority": 0,
+            "description": "The residence directly adjacent to yours is scheming – you're sure of it. No. 11's team of PR people and officials are doing everything in their ability to slow you down, to raise up Gordon and undermine <i>your</i> authority. It's a pestering and bedeviling ache in your mind. What could the Chancellor possibly pull next?<p></p>Yet now, he's right next to you. Right in front of your face. His jowls sag as his grumbling and scowls trickle out in a stream of harboured resentment. You need to sort something out with him – and now. Before anything more spills over.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
         "pk": 12821,
         "fields": {
             "priority": 0,
