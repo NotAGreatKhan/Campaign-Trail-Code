@@ -11,31 +11,25 @@ var iraq = 0;
 
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
-    if(ans == 12807){
+    if(ans == 14815 || ans == 14816 || ans == 14817 || ans == 14821 || ans == 12807 || ans == 12808){
         campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
         campaignTrail_temp.running_mate_last_name = "Blair";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"  
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"
     }
-    if(ans == 12808){
-        campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
-        campaignTrail_temp.running_mate_last_name = "Blair";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"  
-    }    
-    if(ans == 12797){
-        campaignTrail_temp.candidate_last_name = "Chancellor";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
-        campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
-    }
-    if(ans == 12798){
+    if(ans == 12797 || ans == 12798){
         campaignTrail_temp.candidate_last_name = "Chancellor";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
         iraq += 1;
         console.log("debug")
+    }
+    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13867 || ans == 13873 || ans == 13880 || ans == 13615 || ans == 13617 || ans == 13619){
+        campaignTrail_temp.candidate_last_name = "Tony";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/GPBuD3h.jpg"
+        campaignTrail_temp.running_mate_last_name = "Gordon";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/RGK5T1f.jpg"
     }
     if(ans == 3493){
         document.body.background = "https://imgur.com/tjqFeeK.png"    
