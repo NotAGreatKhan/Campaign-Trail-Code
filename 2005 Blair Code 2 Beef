@@ -940,7 +940,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12808 && Cred < 4 && ans == 14182 || ans == 14195 || ans == 14201){
+    if(ans == 12808 && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
     campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 14371,
@@ -951,7 +951,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && Cred < 3){
+    if(e.player_answers.includes(12797) && Cred < 3){
     campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 14122,
@@ -962,7 +962,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797){
+    if(e.player_answers.includes(12797)){
     campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 14100,
@@ -973,7 +973,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   } 
-    if(ans == 12808){
+    if(e.player_answers.includes(12808)){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14208,
@@ -1017,7 +1017,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797 && ans == 13619 && Cred >= 8){
+    if(e.player_answers.includes(12797)){
+    if(e.player_answers.includes(13554)){
+    if(e.player_answers.includes(13619) && Cred >= 8){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13860,
@@ -1028,7 +1030,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12797){
+    else{
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13657,
@@ -1039,7 +1041,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 13557 && ans == 13873 && Cred >= 8){
+ }
+    if(e.player_answers.includes(13557)){
+    if(e.player_answers.includes(13873) && Cred >= 8){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13894,
@@ -1050,7 +1054,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 13557){
+    else{
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13888,
@@ -1061,7 +1065,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12824 && Cred <= 4){
+ }
+}
+    if(e.player_answers.includes(12824) && Cred <= 4){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14281,
@@ -1105,7 +1111,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 0 && ans == 12873 || ans == 12874){
+    if(Resign == 0 && (ans == 12873 || ans == 12874)){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14698,
@@ -1138,7 +1144,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12808 && OldLab >= 3){
+    if(e.player_answers.includes(12808) && OldLab >= 3){
     campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 13443,
@@ -1149,7 +1155,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12808 && OldLab < 3){
+    if(e.player_answers.includes(12808) && OldLab < 3){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 13458,
@@ -1189,6 +1195,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Since your shooting down of the Anti-terrorism Bill, soon after the black swan perched her wings over New York, Straw and Blunkett have been badgering you to push at least some legislation through on the matter. According to them and scattered issue polls, the public are becoming suspicious of your lack of action on the matter. What move will you make on the security of the country?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14034){
+    campaignTrail_temp.questions_json[30] = {
+    "model": "campaign_trail.question",
+    "pk": 14840,
+    "fields": {
+        "priority": 0,
+        "description": "Crime is – much to your annoyance – becoming a salient talking point among the political class. After you shot down the original draft of the Anti-Terror Bill, the Conservatives have lashed out against you. They proclaim you to be surrendering ground to criminals and even terrorists. Although they're not pulling in a new coalition with this move, the Tory base is being energised more and more. Is there anything you'd like to do to swim against the wave?",
         "likelihood": 1
       }
     }
@@ -2258,6 +2275,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do. There – there must.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14840,
+        "fields": {
+            "priority": 0,
+            "description": "Crime is – much to your annoyance – becoming a salient talking point among the political class. After you shot down the original draft of the Anti-Terror Bill, the Conservatives have lashed out against you. They proclaim you to be surrendering ground to criminals and even terrorists. Although they're not pulling in a new coalition with this move, the Tory base is being energised more and more. Is there anything you'd like to do to swim against the wave?",
             "likelihood": 1
         }
     }
@@ -4782,6 +4808,46 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14814,
             "description": "Gordon and I don't exactly see eye-to-eye on social policy, but we must set the course properly regardless. If we can solve that, nothing can get in our way. We just need to have a real back-and-forth about healthcare and reforms, he will see the light. He just needs to be brought around the corner of the tunnel, so to say."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14834,
+        "fields": {
+            "question": 12841,
+            "description": "Get me a full report and dive into what on Earth happened here. If we ever want to keep moving forward with Europe, we have to put up a better performance for the future. We have to make the European dream a reality, and I don't want this to get in the way."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14841,
+        "fields": {
+            "question": 14840,
+            "description": "It is true that more needs to be done to tackle violent crime in this country, which is why I pledge a 15% cut in overall crime by 2008. To effectively combat this, we will introduce the Violent Crime Reduction Bill to restrict the rate of gun and knife usage. We are tough on crime, so we must act accordingly."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14846,
+        "fields": {
+            "question": 14840,
+            "description": "Crime overall has fallen by 30% since we came to power in 1997. We will stress crime-cutting plans, chiefly with the increase of police officers from 4,000 to 24,000 by 2008. We shouldn’t dither on this, and we are the only party who can put any meaningful commitment into this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14851,
+        "fields": {
+            "question": 14840,
+            "description": "We will push forward on the root cause of crime, and that is deep-rooted antisocial behaviour. Crime has to be addressed from the first stages, and we will introduce proper legislation to combat poverty. It is the best long term solution. We are tough on crime, and tough on the <i>causes</i> of crime too."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14857,
+        "fields": {
+            "question": 14840,
+            "description": "I am proud of the effort and work our government has done in order to combat crime. But even I must admit, we need to go further, if re-elected, we will move to significantly expand powers of the Home Office and Security Departments to ensure criminals and terrorists have no power to threaten our citizens."
         }
     }
 ]
@@ -14101,6 +14167,136 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12565,
             "global_multiplier": 0.0085
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14836,
+        "fields": {
+            "answer": 14834,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14837,
+        "fields": {
+            "answer": 14834,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14838,
+        "fields": {
+            "answer": 14834,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.001
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14843,
+        "fields": {
+            "answer": 14841,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14844,
+        "fields": {
+            "answer": 14841,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14848,
+        "fields": {
+            "answer": 14846,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14849,
+        "fields": {
+            "answer": 14846,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14853,
+        "fields": {
+            "answer": 14851,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14854,
+        "fields": {
+            "answer": 14851,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14855,
+        "fields": {
+            "answer": 14851,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14859,
+        "fields": {
+            "answer": 14857,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14860,
+        "fields": {
+            "answer": 14857,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.04
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14861,
+        "fields": {
+            "answer": 14857,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0125
+        }
     }
 ]
 
@@ -17790,7 +17986,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14808,
         "fields": {
             "answer": 12840,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 4,
             "issue_importance": 0
         }
@@ -17830,7 +18026,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14827,
         "fields": {
             "answer": 14816,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0,
             "issue_importance": 3
         }
@@ -17850,7 +18046,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14830,
         "fields": {
             "answer": 14817,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.45,
             "issue_importance": 4
         }
@@ -17863,6 +18059,56 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 28,
             "issue_score": 0,
             "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14839,
+        "fields": {
+            "answer": 14834,
+            "issue": 31,
+            "issue_score": 0.15,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14845,
+        "fields": {
+            "answer": 14841,
+            "issue": 28,
+            "issue_score": -0.125,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14850,
+        "fields": {
+            "answer": 14846,
+            "issue": 28,
+            "issue_score": -0.12,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14856,
+        "fields": {
+            "answer": 14851,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14862,
+        "fields": {
+            "answer": 14857,
+            "issue": 28,
+            "issue_score": -0.5,
+            "issue_importance": 1
         }
     }
 ]
@@ -21311,6 +21557,51 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 14821,
             "candidate": 12543,
             "answer_feedback": "At first, all seems to be going well. You both get along on the constitutional and social justice reforms, and the chat is remarkably light. Inevitably – of course – the touchy subject of the NHS imminently threatens to crash the conversational plane down. And, it does. The question of allowing private interference in NHS surgeries finds its way to a mole who leaks it to <i>The Daily Telegraph</i>, the headlines are yet another menial and exhausting distraction. Your ploy backfires, and Blair-Brown relations are put back to square 1."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14835,
+        "fields": {
+            "answer": 14834,
+            "candidate": 12543,
+            "answer_feedback": "The Eurosceptics are quietly building strength – sharpening their knives and biding their time for when the moment is right. The reports all drivel on about a faltering local New Labour machine on the ground. But you know something else is going on here, there are angry people, just wanting to lash out. Lash out at you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14842,
+        "fields": {
+            "answer": 14841,
+            "candidate": 12543,
+            "answer_feedback": "This would be competent enough messaging except it is significantly muddied by your own attitude to crime and security during the dark days immediately succeeding September 11th. Nothing is off of the table; say the Tories. And boy do they fight you on this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14847,
+        "fields": {
+            "answer": 14846,
+            "candidate": 12543,
+            "answer_feedback": "Once again, a defence of your government's record on the topic of the day. The numbers are on your side, but the mood just isn’t quite there. For many voters, this will not quite cut it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14852,
+        "fields": {
+            "answer": 14851,
+            "candidate": 12543,
+            "answer_feedback": "This angle of solving crime – the poverty and root causes – is more akin to the socially liberal side of the debate. This is popular with the left side of the spectrum, however it does give the Conservatives free reign to dominate the Law and Order vote."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14858,
+        "fields": {
+            "answer": 14857,
+            "candidate": 12543,
+            "answer_feedback": "A palpable, yet not totally unfounded, shift to the more typical \"Law and Order\" rhetoric you may see from a Tory or maybe even UKIP campaigner. Or so it would be had you not quite literally shoved this down yourself back in 2001. To the average voter, this is perceived as nothing but pointless pandering."
         }
     }
 ]
