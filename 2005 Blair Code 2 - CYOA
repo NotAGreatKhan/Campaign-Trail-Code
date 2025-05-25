@@ -25,7 +25,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         iraq += 1;
         console.log("debug")
     }
-    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13867 || ans == 13873 || ans == 13880 || ans == 13615 || ans == 13617 || ans == 13619){
+    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570){
         campaignTrail_temp.candidate_last_name = "Tony";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/GPBuD3h.jpg"
         campaignTrail_temp.running_mate_last_name = "Gordon";
@@ -331,6 +331,14 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Resign += 1;
       console.log("The hot seat looks dicey");
     } 
+    if(ans == 14815){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14821){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
     if(ans == 12819){
       Resign += 1;
       console.log("The hot seat looks dicey");
