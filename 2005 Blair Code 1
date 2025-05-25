@@ -1288,6 +1288,7 @@ tooltipList = [
         {searchString: "Bin Laden", explanationText: "<img src=https://imgur.com/rrlZ74j.jpg> Leader of the Islamist terrorist group Al Qaida. A royal pain in the arse for our intelligence and militaries."},
         {searchString: "Iain Duncan Smith", explanationText: "<img src=https://imgur.com/V6pvIWK.jpg> Tory MP for Chingford and Woodford Green, Iain Duncan Smith. The uncharismatic, sacrifical lamb elected after Hague's shellacking."},
         {searchString: "Duncan Smith", explanationText: "<img src=https://imgur.com/V6pvIWK.jpg> Tory MP for Chingford and Woodford Green, Iain Duncan Smith. The uncharismatic, sacrifical lamb elected after Hague's shellacking."},
+        {searchString: "John Major", explanationText: "<img src=https://imgur.com/KtGnTDZ.jpg> A respectful man, shame he was dogged by Thatcher and the Germans so much."},
 
         // Others
         {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a fallen symbol of American pride."},
@@ -1295,6 +1296,7 @@ tooltipList = [
         {searchString: "Taliban", explanationText: "<img src=https://imgur.com/twdih2b.jpg> Radical Islamist group seeking total control of Afghanistan. A nightmare for the strongest military in the world."},
         {searchString: "it’s a major blow for Labour", explanationText: "<img src=https://imgur.com/Vc0qgst.jpg> The 2004 local elections saw the Labour party get hemorrhaged on all fronts. Labour lost 464 councillors and 8 councils, while the Conservatives made a net gain of 13 councils and 288 councillors, making them the clear winners. The Liberal Democrats even gain Newcastle and Leeds, giving them a strong mandate of credibility."},
         {searchString: "a series of pricks on the Labour backside", explanationText: "<img src=https://imgur.com/Vc0qgst.jpg> The 2004 local elections saw the Labour party get threatened in councils. But holding on, losing 298 councillors and 3 councils, while the Conservatives made a net gain of 8 councils and 167 councillors. The Liberal Democrats did hold you to the line in Newcastle and Leeds though."},
+        {searchString: "the razor-thin victory of Kenneth Clarke", explanationText: "<img src=https://imgur.com/K56bJ4X.jpg> Your lagging performance across the channel loomed over the leadership contest, giving way for Kenneth Clarke to take the media by surprise and win a razor-thin upset against former Home Secretary, Michael Howard. Clarke is a sage for many in the Tory party – and the country – but he's not invulnerable."},
 ];
 
 
