@@ -37,56 +37,14 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13554 || ans == 13557){
         document.body.background = "https://imgur.com/w0SVuOH.png"    
     }
-    if(ans == 12862){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 12863){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 12864){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 12865){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-
-    if(ans == 14769){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 14775){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 14781){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 14788){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-
-    if(ans == 13508){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
+    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
+        document.body.background = "https://imgur.com/r1yqD5R.png"
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
         document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
-    }
-    if(ans == 12862){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-    }
-    if(ans == 12863){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-    }
-    if(ans == 12864){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-    }
-    if(ans == 12865){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-    }
-    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){
-        campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
         vpTable["The Labour Party"] = "J. Gordon Brown";
