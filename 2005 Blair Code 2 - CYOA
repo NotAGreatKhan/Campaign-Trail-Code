@@ -44,9 +44,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
+      Brown = true;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 26;
         document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
-    }
-    if(ans == 13508){
         vpTable["The Labour Party"] = "J. Gordon Brown";
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
         campaignTrail_temp.questions_json[20] = {
@@ -70,10 +70,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13511){
             e.VpText = "Please select your party leader:"
             window.setTimeout(e.candidateSwitcher, 20)
-    }
-    if(ans == 13508){
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 26;
-      Brown = true;
     }
     if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){   
         campaignTrail_temp.candidate_last_name = "Labour";
