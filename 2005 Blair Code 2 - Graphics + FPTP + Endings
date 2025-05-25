@@ -1405,6 +1405,9 @@ function openHeadquarter() {
     if (Resign == 6) {
         RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>6</b></font>)"
     }
+    if (Resign == 7) {
+        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>7</b></font>)"
+    }
 
     if (OldLab == 0) {
         OLScore = "<font color='#ff8097;'><b>virtually non-existent</b></font> (<font color='#ff8097;'><b>0</b></font>)"
