@@ -49,6 +49,20 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12865){
         document.body.background = "https://imgur.com/r1yqD5R.png"    
     }
+
+    if(ans == 14769){
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
+    }
+    if(ans == 14775){
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
+    }
+    if(ans == 14781){
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
+    }
+    if(ans == 14788){
+        document.body.background = "https://imgur.com/r1yqD5R.png"    
+    }
+
     if(ans == 13508){
         document.body.background = "https://imgur.com/r1yqD5R.png"    
     }
