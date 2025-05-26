@@ -35,7 +35,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         iraq += 1;
         console.log("debug")
     }
-    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13867 || ans == 13873 || ans == 13880 || ans == 13615 || ans == 13617 || ans == 13619){
+    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570){
         campaignTrail_temp.candidate_last_name = "Tony";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/GPBuD3h.jpg"
         campaignTrail_temp.running_mate_last_name = "Gordon";
@@ -47,44 +47,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13554 || ans == 13557){
         document.body.background = "https://imgur.com/w0SVuOH.png"    
     }
-    if(ans == 12862){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 12863){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 12864){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 12865){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 13508){
-        document.body.background = "https://imgur.com/r1yqD5R.png"    
-    }
-    if(ans == 13508){
-        document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
-    }
-    if(ans == 12862){
+    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
+        document.body.background = "https://imgur.com/r1yqD5R.png"
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-    }
-    if(ans == 12863){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-    }
-    if(ans == 12864){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-    }
-    if(ans == 12865){
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-    }
-    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
+      Brown = true;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 26;
+        document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
         vpTable["The Labour Party"] = "J. Gordon Brown";
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
         campaignTrail_temp.questions_json[20] = {
@@ -109,10 +81,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             e.VpText = "Please select your party leader:"
             window.setTimeout(e.candidateSwitcher, 20)
     }
-    if(ans == 13508){
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 26;
-      Brown = true;
-    }
     if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){   
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
@@ -120,7 +88,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
     }
-    if(ans == 14123 || ans == 14129){
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
         campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Kenneth H. Clarke";
     }
@@ -341,6 +309,14 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Resign += 1;
       console.log("The hot seat looks dicey");
     } 
+    if(ans == 14815){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14821){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
     if(ans == 12819){
       Resign += 1;
       console.log("The hot seat looks dicey");
@@ -694,7 +670,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Kenneth Clarke
-    if(ans == 14123 || ans == 14129){
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
     campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 14145,
@@ -705,7 +681,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 14123 || ans == 14129){
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
     campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 13919,
@@ -716,7 +692,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 14123 || ans == 14129){
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
     campaignTrail_temp.questions_json[29] = {
     "model": "campaign_trail.question",
     "pk": 13945,
@@ -727,7 +703,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 14123 || ans == 14129){
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
     campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 13970,
@@ -738,7 +714,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 14123 || ans == 14129){
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
     campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 13987,
@@ -749,7 +725,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 14123 || ans == 14129){
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
     campaignTrail_temp.questions_json[33] = {
     "model": "campaign_trail.question",
     "pk": 14005,
@@ -940,7 +916,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12808 && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
+    if((ans == 12808) && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
     campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 14371,
@@ -951,13 +927,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(e.player_answers.includes(12797) && Cred < 3){
+    if(e.player_answers.includes(12797) && Cred <= 4){
     campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 14122,
     "fields": {
         "priority": 0,
-        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – after a grueling and bitter dogfight – resulted in the razor-thin victory of Kenneth Clarke. Your team needs to know how to approach this darling of the Europhiles.",
         "likelihood": 1
       }
     }
@@ -1977,7 +1953,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14122,
         "fields": {
             "priority": 0,
-            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – after a grueling and bitter dogfight – resulted in the razor-thin victory of Kenneth Clarke. Your team needs to know how to approach this darling of the Europhiles.",
             "likelihood": 1
         }
     },
@@ -3911,7 +3887,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14123,
         "fields": {
             "question": 14122,
-            "description": "No point in fretting about it now. Let’s wait and see who our upcoming opponent will be at this election."
+            "description": "The conditions at home are favourable for us to press in our upcoming sparring with Clarke. All we have to do is make the case for our economic prosperity, and contrast it with the chaos of the last government. It will make the public fear a man from that time returning to government."
         }
     },
     {
@@ -3919,7 +3895,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14129,
         "fields": {
             "question": 14122,
-            "description": "I’m not going to take this opportunity too lightly. Let’s dot our i’s, and cross our t’s. Get some good attacks on our upcoming opponent, whoever they may be. Their party is still soul searching without a soul! Disunity hangs with them, and they are in no position to lead a government."
+            "description": "The solution is right there. The NHS! He was the one who put in those market reforms in the Service that made such hay back in the '90s. Position ourselves as the stalwart defenders of the Health Service, and corner him."
         }
     },
     {
@@ -4848,6 +4824,22 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14840,
             "description": "I am proud of the effort and work our government has done in order to combat crime. But even I must admit, we need to go further, if re-elected, we will move to significantly expand powers of the Home Office and Security Departments to ensure criminals and terrorists have no power to threaten our citizens."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14863,
+        "fields": {
+            "question": 14122,
+            "description": "Making this into a personality battle will do us wonders with the press. I'll keep it a bit lighter in Parliament. Crack some humorous remarks here and there. People can't see him as some likeable grandad, the comparisons will make themselves."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14864,
+        "fields": {
+            "question": 14122,
+            "description": "Europe is the magic word here. Clarke is teetering on the edge of a rebellion with his party, and boy does he know it. We'll just, well you know, point out how remarkably similar our positions on Europe are. He – for goodness sakes – wants to join the Euro. When the Tories reckon with that fact, they'll jump ship."
         }
     }
 ]
@@ -11715,7 +11707,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14123,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": 0.005
+            "global_multiplier": 0.039
         }
     },
     {
@@ -11725,7 +11717,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14129,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": -0.004
+            "global_multiplier": 0.0225
         }
     },
     {
@@ -11734,8 +11726,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 14129,
             "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": 0.005
+            "affected_candidate": 12649,
+            "global_multiplier": 0.0085
         }
     },
     {
@@ -14297,6 +14289,76 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12543,
             "global_multiplier": -0.0125
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14873,
+        "fields": {
+            "answer": 14864,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0365
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14874,
+        "fields": {
+            "answer": 14864,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.0125
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14875,
+        "fields": {
+            "answer": 14863,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0325
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14876,
+        "fields": {
+            "answer": 14863,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.0085
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14877,
+        "fields": {
+            "answer": 14123,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.0085
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14878,
+        "fields": {
+            "answer": 14864,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14879,
+        "fields": {
+            "answer": 14123,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0065
+        }
     }
 ]
 
@@ -16428,7 +16490,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14123,
             "issue": 27,
             "issue_score": 0.4,
-            "issue_importance": 6
+            "issue_importance": 7
         }
     },
     {
@@ -16438,7 +16500,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14123,
             "issue": 28,
             "issue_score": 0.4,
-            "issue_importance": 6
+            "issue_importance": 7
         }
     },
     {
@@ -16448,7 +16510,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14123,
             "issue": 30,
             "issue_score": -0.5,
-            "issue_importance": 6
+            "issue_importance": 7
         }
     },
     {
@@ -16458,7 +16520,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14129,
             "issue": 27,
             "issue_score": 0.4,
-            "issue_importance": 6
+            "issue_importance": 7
         }
     },
     {
@@ -16468,7 +16530,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14129,
             "issue": 28,
             "issue_score": 0.4,
-            "issue_importance": 6
+            "issue_importance": 7
         }
     },
     {
@@ -16476,8 +16538,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14135,
         "fields": {
             "answer": 14129,
-            "issue": 31,
-            "issue_score": 0,
+            "issue": 30,
+            "issue_score": -0.5,
             "issue_importance": 7
         }
     },
@@ -18109,6 +18171,66 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 28,
             "issue_score": -0.5,
             "issue_importance": 1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14867,
+        "fields": {
+            "answer": 14863,
+            "issue": "27",
+            "issue_score": 0.4,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14868,
+        "fields": {
+            "answer": 14863,
+            "issue": 28,
+            "issue_score": 0.4,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14869,
+        "fields": {
+            "answer": 14863,
+            "issue": 30,
+            "issue_score": -0.5,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14870,
+        "fields": {
+            "answer": 14864,
+            "issue": "27",
+            "issue_score": 0.4,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14871,
+        "fields": {
+            "answer": 14864,
+            "issue": 28,
+            "issue_score": 0.4,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14872,
+        "fields": {
+            "answer": 14864,
+            "issue": 30,
+            "issue_score": -0.5,
+            "issue_importance": 7
         }
     }
 ]
@@ -20548,7 +20670,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14123,
             "candidate": 12543,
-            "answer_feedback": "As your lagging performance across the channel looms over the leadership contest, Kenneth Clarke takes the media by surprise and wins a razor-thin upset against former Home Secretary, Michael Howard. Clarke is a sage for many in the Tory party – and the country – but he's not invulnerable, make sure to effectively hit at the cracks in his armour."
+            "answer_feedback": "People don't regret the sight of Clarke like they do Major or even Howard. They see him, and think of the falling interest rates, unemployment, and the silent killer of inflation. In the following PMQs, he lambasts the governments “mish-mash of unruly spending hikes” and “complete neglect of the enormous deficit and gold reserves”. All to the delight of his backbenchers. You better pray that Gordon's reputation as Chancellor holds."
         }
     },
     {
@@ -20557,7 +20679,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14129,
             "candidate": 12543,
-            "answer_feedback": "As your lagging performance across the channel looms over the leadership contest, Kenneth Clarke takes the media by surprise and wins a razor-thin upset against former Home Secretary, Michael Howard. Clarke is a sage for many in the Tory party – and the country – but for most watching this unfold, this attack seems to stick."
+            "answer_feedback": "“Those reforms were necessary to keep the Service solvent, I'd like to hear how it is doing now under this government” he declares before the House. The cheering and jeering sonorous across the chamber. This is tough ground to fight, but as the NHS care quality steadily ticks up, this could be a goldmine to dig into if you play your cards right."
         }
     },
     {
@@ -21602,6 +21724,24 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 14857,
             "candidate": 12543,
             "answer_feedback": "A palpable, yet not totally unfounded, shift to the more typical \"Law and Order\" rhetoric you may see from a Tory or maybe even UKIP campaigner. Or so it would be had you not quite literally shoved this down yourself back in 2001. To the average voter, this is perceived as nothing but pointless pandering."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14865,
+        "fields": {
+            "answer": 14863,
+            "candidate": 12543,
+            "answer_feedback": "Clarke has an ease about him, it is impossible to deny. Your media savvy is stark, yet voters are oddly amicable to the old guy's demeanour. His occasional quips do well to light up the House, and when they target you, they do leave a scratch. The battlelines across the dispatch boxes inch uncomfortably towards your home base, all the while turmoil rackets up across the English Channel."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14866,
+        "fields": {
+            "answer": 14864,
+            "candidate": 12543,
+            "answer_feedback": "Clarke immediately turns the tables, pointing the finger at your own failures to move the nation in any direction on Europe. He hints at your troubles with Gordon Brown, your backtracking over and over again. Unless you can recover the situation with the EU Constitution referendums, this attack line will only favour the newly-elected Opposition Leader."
         }
     }
 ]
@@ -23069,6 +23209,9 @@ function openHeadquarter() {
     }
     if (Resign == 6) {
         RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>6</b></font>)"
+    }
+    if (Resign == 7) {
+        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>7</b></font>)"
     }
 
     if (OldLab == 0) {
