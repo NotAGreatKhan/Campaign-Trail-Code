@@ -874,7 +874,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if((ans == 12797) Resign <= 1 && Cred >= 3){
+    if(((ans == 12797) && Cred >= 3) || (Resign <= 1 && Cred >= 5)){
     campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
     "pk": 14880,
