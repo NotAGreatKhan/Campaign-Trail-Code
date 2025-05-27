@@ -874,6 +874,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if((ans == 12797) Resign <= 1 && Cred >= 3){
+    campaignTrail_temp.questions_json[9] = {
+    "model": "campaign_trail.question",
+    "pk": 14880,
+    "fields": {
+        "priority": 0,
+        "description": "The residence directly adjacent to yours is scheming – you're sure of it. No. 11's team of PR people and officials are doing everything in their ability to slow you down, to raise up Gordon and undermine <i>your</i> authority. It's a pestering and bedeviling ache in your mind. What could the Chancellor possibly pull next?<p></p>Yet now, he's right next to you. Right in front of your face. His jowls sag as his grumbling and scowls trickle out in a stream of harboured resentment. You need to sort something out with him – and now. Before anything more spills over.",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 13554){
     campaignTrail_temp.questions_json[10] = {
     "model": "campaign_trail.question",
