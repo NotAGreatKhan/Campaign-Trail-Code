@@ -14,7 +14,7 @@ var Wins = 0;
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
-var Cred = 2;
+var Cred = 1;
 var Brown = false;
 var EUCnstn = 0;
 var iraq = 0;
@@ -98,32 +98,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // CREDIBILITY
-    // Question 1 – 9/11
-    if(ans == 3493){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-
-    // Question 2 – Afghanistan
-    if(ans == 12793){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-    if(ans == 13900){
-      Cred -= 1;
-      console.log("You have impacted your credibility");
-    }
-
-    // Question 3 – Terror Bill
-    if(ans == 14032){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-    if(ans == 14033){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-
     // Question 5 – 2002 Budget
     if(ans == 12802){
       Cred += 1;
@@ -172,7 +146,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
     
-    // Question 10 – Naming Dr Kelly
+    // Question 11 – Naming Dr Kelly
     if(ans == 12824){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -182,33 +156,29 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 10 – Aiding French Yes Campaign
+    // Question 11 – Aiding French Yes Campaign
     if(ans == 13619){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 10 – Aiding Dutch Yes Campaign
+    // Question 11 – Aiding Dutch Yes Campaign
     if(ans == 13873){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - HEA (Weak)
-    if(ans == 14722){
+    // Question 13 - HEA (Weak)
+    if(ans == 14716){
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 14716){
-      Cred -= 2;
-      console.log("You have impacted your credibility");
-    }
     if(ans == 14729){
-      Cred -= 2;
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - HEA 
+    // Question 13 - HEA 
     if(ans == 12827){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -222,7 +192,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - HEA (Strong)
+    // Question 13 - HEA (Strong)
     if(ans == 14735){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -232,7 +202,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - PUB (Hutton Inquiry)
+    // Question 13 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -246,7 +216,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - PUB 
+    // Question 13 - PUB 
     if(ans == 14209){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -261,7 +231,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
 
-    // Question 13 - Hutton Inquiry
+    // Question 14 - Hutton Inquiry
     if(ans == 12832){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -271,19 +241,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 14 – HR Groups protesting
+    // Question 15 – HR Groups protesting
     if(ans == 14052){
       Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-
-    // Question 17 – Leigh Amendment
-    if(ans == 12847){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-    if(ans == 12848){
-      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
@@ -458,29 +418,70 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 12 - HEA (Weak)
+    // Question 7 – Deciding which EU country to support
+    if(ans == 13554){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 8 – Legislation Season
+    if(ans == 14464){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14476){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 10 – Tony & Gordon...
+    // Will be possible here for Gordon to concede on policy agreements
+    // if(ans == _____ || ans == _____){
+    //   Wins += 1;
+    //   console.log("Do they like you now?");
+    // }
+
+    // Question 11 - Aiding French 'Yes' Campaign
+    if(ans == 13619){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 11 - Aiding Dutch 'Yes' Campaign
+    if(ans == 13873){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 13 - HEA (Weak)
     if(ans == 14710){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 12 - HEA 
+    // Question 13 - HEA 
     if(ans == 12827){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 12 - HEA (Strong)
+    // Question 13 - HEA (Strong)
     if(ans == 14735){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 12 - PUB (Hutton Inquiry)
+    // Question 13 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 12 - PUB 
+    // Question 13 - PUB 
     if(ans == 14209){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 14 – Referendum results
+    if(ans == 13861){
       Wins += 1;
       console.log("Do they like you now?");
     }
@@ -23121,8 +23122,9 @@ function addHeadquarterButton() {
 
 function openHeadquarter() {
 
+    var WScore = 0;
     var RScore = 0;
-    var CScore = 2;
+    var CScore = 1;
     var OLScore = 0;
 
     if (Cred == -5) {
@@ -23236,6 +23238,40 @@ function openHeadquarter() {
         OLScore = "<font color='#99000f;'><b>marking a new era</b></font> (<font color='#99000f;'><b>6</b></font>)"
     }
 
+    if (Wins == 0) {
+        WScore = "<font color='#ad1313;'><b>no wins</b></font> (<font color='#ad1313;'><b>0</b></font>)"
+    }
+    if (Wins == 1) {
+        WScore = "<font color='#ad1313;'><b>few wins</b></font> (<font color='#ad1313;'><b>1</b></font>)"
+    }
+    if (Wins == 2) {
+        WScore = "<font color='#d58627;'><b>little wins</b></font> (<font color='#ad1313;'><b>2</b></font>)"
+    } 
+    if (Wins == 3) {
+        WScore = "<font color='#d58627;'><b>some wins</b></font> (<font color='#d58627;'><b>3</b></font>)"
+    }
+    if (Wins == 4) {
+        WScore = "<font color='#d58627;'><b>a pocket of wins</b></font> (<font color='#d58627;'><b>4</b></font>)"
+    }
+    if (Wins == 5) {
+        WScore = "<font color='#d58627;'><b>a bite-size bag of wins</b></font> (<font color='#d58627;'><b>5</b></font>)"
+    }
+    if (Wins == 6) {
+        WScore = "<font color='#d58627;'><b>a rack of wins</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (Wins == 7) {
+        WScore = "<font color='#7ba922;'><b>many wins</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+    if (Wins == 8) {
+        WScore = "<font color='#7ba922;'><b>a bevy of wins</b></font> (<font color='#7ba922;'><b>8</b></font>)"
+    }
+    if (Wins == 9) {
+        WScore = "<font color='#7ba922;'><b>eye-watering wins</b></font> (<font color='#7ba922;'><b>9</b></font>)"
+    }
+    if (Wins == 10) {
+        WScore = "<font color='#7ba922;'><b>a duffle bag full of wins</b></font> (<font color='#7ba922;'><b>10</b></font>)"
+    }
+
     let questions = document.querySelector(".inner_window_question");
 
     questions.style.display = "none";
@@ -23308,30 +23344,37 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.innerHTML = 'Your credibility heading into the election is ' + CScore + '.';
+    a.innerHTML = 'Your <b>credibility</b> heading into the election is ' + CScore + '.';
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement("p");
-    b.innerHTML = 'Your standing as Prime Minister is ' + RScore + '.';
+    b.innerHTML = 'Your <b>standing</b> as Prime Minister is ' + RScore + '.';
     // b.style.flexGrow = "0.1";
     b.style.color = "black";
     b.style.margin = "8px";
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
-    c.innerHTML = 'Your willingness to accept <b>Old</b> Labour, instead of <b>New</b>, is ' + OLScore + '.';
+    c.innerHTML = 'Your government has secured ' + WScore + '.';
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
     hqDiv.appendChild(c);
 
+    let d = document.createElement("p");
+    d.innerHTML = 'Your willingness to accept <b>Old</b> Labour, instead of <b>New</b>, is ' + OLScore + '.';
+    // d.style.flexGrow = "0.1";
+    d.style.color = "black";
+    d.style.margin = "8px";
+    hqDiv.appendChild(d);
+
     // Image
     let img = document.createElement("img");
     img.src = "https://imgur.com/mB2xqdL.jpg";
-    img.style.height = "50%";
+    img.style.height = "30%";
     img.style.marginLeft = "1em";
     img.style.flexGrow = "0.1";
     img.style.border = "3px solid black";  // Add thin white border to the image
