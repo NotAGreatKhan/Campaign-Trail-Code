@@ -4,7 +4,7 @@ var Wins = 0;
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
-var Cred = 2;
+var Cred = 1;
 var Brown = false;
 var EUCnstn = 0;
 var iraq = 0;
@@ -88,32 +88,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // CREDIBILITY
-    // Question 1 – 9/11
-    if(ans == 3493){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-
-    // Question 2 – Afghanistan
-    if(ans == 12793){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-    if(ans == 13900){
-      Cred -= 1;
-      console.log("You have impacted your credibility");
-    }
-
-    // Question 3 – Terror Bill
-    if(ans == 14032){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-    if(ans == 14033){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-
     // Question 5 – 2002 Budget
     if(ans == 12802){
       Cred += 1;
@@ -162,7 +136,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
     
-    // Question 10 – Naming Dr Kelly
+    // Question 11 – Naming Dr Kelly
     if(ans == 12824){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -172,33 +146,29 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 10 – Aiding French Yes Campaign
+    // Question 11 – Aiding French Yes Campaign
     if(ans == 13619){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 10 – Aiding Dutch Yes Campaign
+    // Question 11 – Aiding Dutch Yes Campaign
     if(ans == 13873){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - HEA (Weak)
-    if(ans == 14722){
+    // Question 13 - HEA (Weak)
+    if(ans == 14716){
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 14716){
-      Cred -= 2;
-      console.log("You have impacted your credibility");
-    }
     if(ans == 14729){
-      Cred -= 2;
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - HEA 
+    // Question 13 - HEA 
     if(ans == 12827){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -212,7 +182,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - HEA (Strong)
+    // Question 13 - HEA (Strong)
     if(ans == 14735){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -222,7 +192,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - PUB (Hutton Inquiry)
+    // Question 13 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -236,7 +206,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 12 - PUB 
+    // Question 13 - PUB 
     if(ans == 14209){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -251,7 +221,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
 
-    // Question 13 - Hutton Inquiry
+    // Question 14 - Hutton Inquiry
     if(ans == 12832){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -261,19 +231,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 14 – HR Groups protesting
+    // Question 15 – HR Groups protesting
     if(ans == 14052){
       Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-
-    // Question 17 – Leigh Amendment
-    if(ans == 12847){
-      Cred += 1;
-      console.log("You have impacted your credibility");
-    }
-    if(ans == 12848){
-      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
@@ -448,29 +408,70 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 12 - HEA (Weak)
+    // Question 7 – Deciding which EU country to support
+    if(ans == 13554){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 8 – Legislation Season
+    if(ans == 14464){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14476){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 10 – Tony & Gordon...
+    // Will be possible here for Gordon to concede on policy agreements
+    // if(ans == _____ || ans == _____){
+    //   Wins += 1;
+    //   console.log("Do they like you now?");
+    // }
+
+    // Question 11 - Aiding French 'Yes' Campaign
+    if(ans == 13619){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 11 - Aiding Dutch 'Yes' Campaign
+    if(ans == 13873){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 13 - HEA (Weak)
     if(ans == 14710){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 12 - HEA 
+    // Question 13 - HEA 
     if(ans == 12827){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 12 - HEA (Strong)
+    // Question 13 - HEA (Strong)
     if(ans == 14735){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 12 - PUB (Hutton Inquiry)
+    // Question 13 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 12 - PUB 
+    // Question 13 - PUB 
     if(ans == 14209){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 14 – Referendum results
+    if(ans == 13861){
       Wins += 1;
       console.log("Do they like you now?");
     }
