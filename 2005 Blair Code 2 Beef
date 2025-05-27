@@ -23374,7 +23374,7 @@ function openHeadquarter() {
     // Image
     let img = document.createElement("img");
     img.src = "https://imgur.com/mB2xqdL.jpg";
-    img.style.height = "30%";
+    img.style.height = "40%";
     img.style.marginLeft = "1em";
     img.style.flexGrow = "0.1";
     img.style.border = "3px solid black";  // Add thin white border to the image
