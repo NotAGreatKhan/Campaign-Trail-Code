@@ -1316,6 +1316,7 @@ function addHeadquarterButton() {
 
 function openHeadquarter() {
 
+    var WScore = 0;
     var RScore = 0;
     var CScore = 1;
     var OLScore = 0;
@@ -1431,6 +1432,40 @@ function openHeadquarter() {
         OLScore = "<font color='#99000f;'><b>marking a new era</b></font> (<font color='#99000f;'><b>6</b></font>)"
     }
 
+    if (Wins == 0) {
+        WScore = "<font color='#ad1313;'><b>no wins</b></font> (<font color='#ad1313;'><b>0</b></font>)"
+    }
+    if (Wins == 1) {
+        WScore = "<font color='#ad1313;'><b>few wins</b></font> (<font color='#ad1313;'><b>1</b></font>)"
+    }
+    if (Wins == 2) {
+        WScore = "<font color='#d58627;'><b>little wins</b></font> (<font color='#ad1313;'><b>2</b></font>)"
+    } 
+    if (Wins == 3) {
+        WScore = "<font color='#d58627;'><b>some wins</b></font> (<font color='#d58627;'><b>3</b></font>)"
+    }
+    if (Wins == 4) {
+        WScore = "<font color='#d58627;'><b>a pocket of wins</b></font> (<font color='#d58627;'><b>4</b></font>)"
+    }
+    if (Wins == 5) {
+        WScore = "<font color='#d58627;'><b>a bite-size bag of wins</b></font> (<font color='#d58627;'><b>5</b></font>)"
+    }
+    if (Wins == 6) {
+        WScore = "<font color='#d58627;'><b>a rack of wins</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (Wins == 7) {
+        WScore = "<font color='#7ba922;'><b>many wins</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+    if (Wins == 8) {
+        WScore = "<font color='#7ba922;'><b>a bevy of wins</b></font> (<font color='#7ba922;'><b>8</b></font>)"
+    }
+    if (Wins == 9) {
+        WScore = "<font color='#7ba922;'><b>eye-watering wins</b></font> (<font color='#7ba922;'><b>9</b></font>)"
+    }
+    if (Wins == 10) {
+        WScore = "<font color='#7ba922;'><b>a duffle bag full of wins</b></font> (<font color='#7ba922;'><b>10</b></font>)"
+    }
+
     let questions = document.querySelector(".inner_window_question");
 
     questions.style.display = "none";
@@ -1503,30 +1538,37 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.innerHTML = 'Your credibility heading into the election is ' + CScore + '.';
+    a.innerHTML = 'Your <b>credibility</b> heading into the election is ' + CScore + '.';
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement("p");
-    b.innerHTML = 'Your standing as Prime Minister is ' + RScore + '.';
+    b.innerHTML = 'Your <b>standing</b> as Prime Minister is ' + RScore + '.';
     // b.style.flexGrow = "0.1";
     b.style.color = "black";
     b.style.margin = "8px";
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
-    c.innerHTML = 'Your willingness to accept <b>Old</b> Labour, instead of <b>New</b>, is ' + OLScore + '.';
+    c.innerHTML = 'Your government has secured ' + WScore + '.';
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
     hqDiv.appendChild(c);
 
+    let d = document.createElement("p");
+    d.innerHTML = 'Your willingness to accept <b>Old</b> Labour, instead of <b>New</b>, is ' + OLScore + '.';
+    // d.style.flexGrow = "0.1";
+    d.style.color = "black";
+    d.style.margin = "8px";
+    hqDiv.appendChild(d);
+
     // Image
     let img = document.createElement("img");
     img.src = "https://imgur.com/mB2xqdL.jpg";
-    img.style.height = "50%";
+    img.style.height = "30%";
     img.style.marginLeft = "1em";
     img.style.flexGrow = "0.1";
     img.style.border = "3px solid black";  // Add thin white border to the image
