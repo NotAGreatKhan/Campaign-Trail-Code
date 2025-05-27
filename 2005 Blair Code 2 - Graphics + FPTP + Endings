@@ -1439,7 +1439,7 @@ function openHeadquarter() {
         WScore = "<font color='#ad1313;'><b>few wins</b></font> (<font color='#ad1313;'><b>1</b></font>)"
     }
     if (Wins == 2) {
-        WScore = "<font color='#d58627;'><b>little wins</b></font> (<font color='#ad1313;'><b>2</b></font>)"
+        WScore = "<font color='#ad1313;'><b>little wins</b></font> (<font color='#ad1313;'><b>2</b></font>)"
     } 
     if (Wins == 3) {
         WScore = "<font color='#d58627;'><b>some wins</b></font> (<font color='#d58627;'><b>3</b></font>)"
@@ -1451,7 +1451,7 @@ function openHeadquarter() {
         WScore = "<font color='#d58627;'><b>a bite-size bag of wins</b></font> (<font color='#d58627;'><b>5</b></font>)"
     }
     if (Wins == 6) {
-        WScore = "<font color='#d58627;'><b>a rack of wins</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+        WScore = "<font color='#7ba922;'><b>a rack of wins</b></font> (<font color='#7ba922;'><b>6</b></font>)"
     }
     if (Wins == 7) {
         WScore = "<font color='#7ba922;'><b>many wins</b></font> (<font color='#7ba922;'><b>7</b></font>)"
