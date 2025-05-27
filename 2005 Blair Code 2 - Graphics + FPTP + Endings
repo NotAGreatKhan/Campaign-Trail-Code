@@ -1317,7 +1317,7 @@ function addHeadquarterButton() {
 function openHeadquarter() {
 
     var RScore = 0;
-    var CScore = 2;
+    var CScore = 1;
     var OLScore = 0;
 
     if (Cred == -5) {
