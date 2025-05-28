@@ -107,11 +107,23 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Cred += 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 14579){
+    if(ans == 14906){
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 14584){
+    if(ans == 14912){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14947){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14936){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14930){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
@@ -403,7 +415,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Wins += 1;
       console.log("Do they like you now?");
     }
-    if(ans == 14584){
+    if(ans == 12815){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14912){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14930){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14936){
       Wins += 1;
       console.log("Do they like you now?");
     }
