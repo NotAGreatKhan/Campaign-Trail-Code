@@ -514,7 +514,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 
 // Resignation Questions
-    if(Resign >= 5 && Wins >= 3){
+    if(Resign >= 6){
+    campaignTrail_temp.questions_json[18] = {
+    "model": "campaign_trail.question",
+    "pk": 14952,
+    "fields": {
+        "priority": 0,
+        "description": "The house is divided. It's all burning to the ground.<p></p>Gordon <i>hates</i> that you stole his throne all those years ago in 1994.<p></p>The apartment complexes of Downing Street insulates a mist of despair.<p></p>Your Ministers whisper of the letter box filled with Labour MP's clamoring for you to resign. It all makes your blood rush around your head, haemorrhaging your skull.<p></p>Suddenly, you feel it.<p></p>Your heartbeat accelerates at break-neck speed. Then it falls off a cliff. And into the abyss.<p></p>Your mind scarpers desperately to 2003.<p></p>Not again. Not like this.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Resign == 5 && Wins >= 3){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 14794,
@@ -525,7 +536,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign >= 5){
+    if(Resign == 5){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 13499,
@@ -536,7 +547,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   } 
-    if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798){
+    if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798 || ans == 14953){
     campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 13500,
