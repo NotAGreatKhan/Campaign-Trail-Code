@@ -1552,7 +1552,7 @@ function openHeadquarter() {
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
-    c.innerHTML = 'Your government has secured ' + WScore + '.';
+    c.innerHTML = 'Since <b>2001</b>, your government has secured ' + WScore + '.';
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
