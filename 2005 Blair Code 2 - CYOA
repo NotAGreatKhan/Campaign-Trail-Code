@@ -819,7 +819,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if((ans == 12542 && ans == 14033) && Cred >= 3){
+    if((ans == 12542 && ans == 14033) && Cred >= 2){
     campaignTrail_temp.questions_json[6] = {
     "model": "campaign_trail.question",
     "pk": 14929,
@@ -874,7 +874,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12813 || ans == 12815 || ans == 14900){
+    if(ans == 12813 || ans == 12815 || ans == 14900 || ans == 14906 || ans == 14918 || ans == 14924 || ans == 14942 || ans == 14947){
     campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
     "pk": 13417,
