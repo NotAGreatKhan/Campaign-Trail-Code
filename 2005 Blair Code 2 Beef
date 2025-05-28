@@ -459,7 +459,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // Question 10 – Tony & Gordon...
-    Will be possible here for Gordon to concede on policy agreements
     if(ans == 14881 || ans == 14891){
       Wins += 1;
       console.log("Do they like you now?");
