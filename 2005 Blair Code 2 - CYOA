@@ -527,7 +527,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14952,
     "fields": {
         "priority": 0,
-        "description": "The house is divided. It's all burning to the ground.<p></p>Gordon <i>hates</i> that you stole his throne all those years ago in 1994.<p></p>The apartment complexes of Downing Street insulates a mist of despair.<p></p>Your Ministers whisper of the letter box filled with Labour MP's clamoring for you to resign. It all makes your blood rush around your head, haemorrhaging your skull.<p></p>Suddenly, you feel it.<p></p>Your heartbeat accelerates at break-neck speed. Then it falls off a cliff. And into the abyss.<p></p>Your mind scarpers desperately to 2003.<p></p>Not again. Not like this.",
+        "description": "The house is divided. It's all burning to the ground.<p></p>Gordon <i>hates</i> that you stole his throne all those years ago in 1994. The apartment complexes of Downing Street insulates a mist of despair. Your Ministers whisper of the letter box filled with Labour MP's clamoring for you to resign. It all makes your blood rush around your head, haemorrhaging your skull.<p></p>Suddenly, you feel it.<p></p>Your heartbeat accelerates at break-neck speed. Then it falls off a cliff. And into the abyss.<p></p>Your mind scarpers desperately to 2003.<p></p>Not again. Not like this.",
         "likelihood": 1
       }
     }
