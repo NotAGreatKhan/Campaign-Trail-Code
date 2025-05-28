@@ -117,11 +117,23 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Cred += 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 14579){
+    if(ans == 14906){
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 14584){
+    if(ans == 14912){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14947){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14936){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14930){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
@@ -413,7 +425,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Wins += 1;
       console.log("Do they like you now?");
     }
-    if(ans == 14584){
+    if(ans == 12815){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14912){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14930){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14936){
       Wins += 1;
       console.log("Do they like you now?");
     }
@@ -435,11 +459,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // Question 10 – Tony & Gordon...
-    // Will be possible here for Gordon to concede on policy agreements
-    // if(ans == _____ || ans == _____){
-    //   Wins += 1;
-    //   console.log("Do they like you now?");
-    // }
+    Will be possible here for Gordon to concede on policy agreements
+    if(ans == 14881 || ans == 14891){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
 
     // Question 11 - Aiding French 'Yes' Campaign
     if(ans == 13619){
@@ -500,7 +524,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 
 // Resignation Questions
-    if(Resign >= 5 && Wins >= 3){
+    if(Resign >= 6){
+    campaignTrail_temp.questions_json[18] = {
+    "model": "campaign_trail.question",
+    "pk": 14952,
+    "fields": {
+        "priority": 0,
+        "description": "The house is divided. It's all burning to the ground.<p></p>Gordon <i>hates</i> that you stole his throne all those years ago in 1994.<p></p>The apartment complexes of Downing Street insulates a mist of despair.<p></p>Your Ministers whisper of the letter box filled with Labour MP's clamoring for you to resign. It all makes your blood rush around your head, haemorrhaging your skull.<p></p>Suddenly, you feel it.<p></p>Your heartbeat accelerates at break-neck speed. Then it falls off a cliff. And into the abyss.<p></p>Your mind scarpers desperately to 2003.<p></p>Not again. Not like this.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Resign == 5 && Wins >= 3){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 14794,
@@ -511,7 +546,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign >= 5){
+    if(Resign == 5){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 13499,
@@ -522,7 +557,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   } 
-    if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798){
+    if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798 || ans == 14953){
     campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 13500,
@@ -829,7 +864,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if((ans == 12542 && ans == 14033) && Cred >= 3){
+    if((ans == 12542 && ans == 14033) && Cred >= 2){
     campaignTrail_temp.questions_json[6] = {
     "model": "campaign_trail.question",
     "pk": 14929,
@@ -884,7 +919,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12813 || ans == 12815 || ans == 14900){
+    if(ans == 12813 || ans == 12815 || ans == 14900 || ans == 14906 || ans == 14918 || ans == 14924 || ans == 14942 || ans == 14947){
     campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
     "pk": 13417,
@@ -2301,6 +2336,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14952,
+        "fields": {
+            "priority": 0,
+            "description": "The house is divided. It's all burning to the ground.<p></p>Gordon <i>hates</i> that you stole his throne all those years ago in 1994.<p></p>The apartment complexes of Downing Street insulates a mist of despair.<p></p>Your Ministers whisper of the letter box filled with Labour MP's clamoring for you to resign. It all makes your blood rush around your head, haemorrhaging your skull.<p></p>Suddenly, you feel it.<p></p>Your heartbeat accelerates at break-neck speed. Then it falls off a cliff. And into the abyss.<p></p>Your mind scarpers desperately to 2003.<p></p>Not again. Not like this.",
             "likelihood": 1
         }
     }
@@ -4961,6 +5005,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14929,
             "description": "I like Bush, but his administration needs to broaden their scope of argument beyond the <b>Weapons of Mass Destruction</b> route. I'll head over to him on a visit and lay out the other reasons that we can use perfectly well for deposing Saddam Hussein."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14953,
+        "fields": {
+            "question": 14952,
+            "description": "<b>Shit.</b>"
         }
     }
 ]
@@ -14690,6 +14742,16 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12587,
             "global_multiplier": -0.001
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14955,
+        "fields": {
+            "answer": 14953,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.055
+        }
     }
 ]
 
@@ -22274,6 +22336,15 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "You have an evyable drive – one cannot deny. The moment you step into the White House, a cold fog settles into the American ministers seated with you. Only an unforgiving leer from the American ministers. Why not use the WMD angle? They query. Why would you possibly say this could backfire, they declaim. Little – if any – movement is made, all while France and Russia kill the second UN Resolution."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14954,
+        "fields": {
+            "answer": 14953,
+            "candidate": 12543,
+            "answer_feedback": "You instantly collapse to the ground – feet, then legs giving way. Your file of papers fly and sway in the breeze of the Downing Street offices, as your hand withdraws and snaps into a compressing grip on your chest.<p></p>It is only when you are bedridden, that you receive the news that your voodoo doll holder: Gordon Brown has already moved to replace you as Prime Minister.<p></p>Of course – you think – of course <i>it had to happen this way.</i>"
+        }
     }
 ]
 
@@ -22512,7 +22583,7 @@ function adjustFeedbackBox(width, height) {
     document.head.appendChild(styleSheet)
 }
 
-adjustFeedbackBox(57,69);
+adjustFeedbackBox(57,79);
 
 
 // For UK Mod
@@ -23888,7 +23959,7 @@ function openHeadquarter() {
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
-    c.innerHTML = 'Your government has secured ' + WScore + '.';
+    c.innerHTML = 'Since <b>2001</b>, your government has secured ' + WScore + '.';
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
