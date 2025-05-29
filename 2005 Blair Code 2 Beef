@@ -21,7 +21,7 @@ var iraq = 0;
 
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
-    if(ans == 14815 || ans == 14816 || ans == 14817 || ans == 14821 || ans == 12807 || ans == 12808){
+    if(ans == 14815 || ans == 14816 || ans == 14817 || ans == 14821 || ans == 12807 || ans == 12808 || ans == 14881 || ans == 14886 || ans == 14891 || ans == 14895){
         campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
         campaignTrail_temp.running_mate_last_name = "Blair";
@@ -80,6 +80,62 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13511){
             e.VpText = "Please select your party leader:"
             window.setTimeout(e.candidateSwitcher, 20)
+    campaignTrail_temp.questions_json[21] = {
+    "model": "campaign_trail.question",
+    "pk": 14399,
+    "fields": {
+        "priority": 0,
+        "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
+        "likelihood": 1
+       }
+     }
+    campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 14400,
+    "fields": {
+        "priority": 0,
+        "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
+        "likelihood": 1
+          }
+        }
+    if(ans == 14430){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14623,
+    "fields": {
+        "priority": 0,
+        "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+        "likelihood": 1
+          }
+        }
+      }
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14601,
+    "fields": {
+        "priority": 0,
+        "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+        "likelihood": 1
+          }
+        }
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 14645,
+    "fields": {
+        "priority": 0,
+        "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
+        "likelihood": 1
+          }
+        }
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 14401,
+    "fields": {
+        "priority": 0,
+        "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+        "likelihood": 1
+          }
+        }
     }
     if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){   
         campaignTrail_temp.candidate_last_name = "Labour";
@@ -277,7 +333,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Resign += 1;
       console.log("The hot seat looks dicey");
     }
-    if(ans == 14912){
+    if(ans == 14912){
       Resign += 1;
       console.log("The hot seat looks dicey");
     }
@@ -531,18 +587,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 
 // Resignation Questions
+    if(Resign >= 5){
     if(Resign >= 6){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 14952,
     "fields": {
         "priority": 0,
-        "description": "The house is divided. It's all burning to the ground.<p></p>Gordon <i>hates</i> that you stole his throne all those years ago in 1994.<p></p>The apartment complexes of Downing Street insulates a mist of despair.<p></p>Your Ministers whisper of the letter box filled with Labour MP's clamoring for you to resign. It all makes your blood rush around your head, haemorrhaging your skull.<p></p>Suddenly, you feel it.<p></p>Your heartbeat accelerates at break-neck speed. Then it falls off a cliff. And into the abyss.<p></p>Your mind scarpers desperately to 2003.<p></p>Not again. Not like this.",
+        "description": "The house is divided. It's all burning to the ground.<p></p>Gordon <i>hates</i> that you stole his throne all those years ago in 1994. The apartment complexes of Downing Street insulates a mist of despair. Your Ministers whisper of the letter box filled with Labour MP's clamoring for you to resign. It all makes your blood rush around your head, haemorrhaging your skull.<p></p>Suddenly, you feel it.<p></p>Your heartbeat accelerates at break-neck speed. Then it falls off a cliff. And into the abyss.<p></p>Your mind scarpers desperately to 2003.<p></p>Not again. Not like this.",
         "likelihood": 1
       }
     }
   }
-    if(Resign == 5 && Wins >= 3){
+    if(Wins >= 4){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 14794,
@@ -553,7 +610,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 5){
+    else{
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 13499,
@@ -563,7 +620,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  } 
+  }
+ }
     if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798 || ans == 14953){
     campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
@@ -575,74 +633,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-
-// Gordon Brown Questions
-    if(ans == 13511){
-    campaignTrail_temp.questions_json[21] = {
-    "model": "campaign_trail.question",
-    "pk": 14399,
-    "fields": {
-        "priority": 0,
-        "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
-        "likelihood": 1
-       }
-     }
-   }
-    if(ans == 13511){
-    campaignTrail_temp.questions_json[22] = {
-    "model": "campaign_trail.question",
-    "pk": 14400,
-    "fields": {
-        "priority": 0,
-        "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
-        "likelihood": 1
-          }
-        }
-      }
-    if(ans == 13511 && ans == 14430){
-    campaignTrail_temp.questions_json[23] = {
-    "model": "campaign_trail.question",
-    "pk": 14623,
-    "fields": {
-        "priority": 0,
-        "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
-        "likelihood": 1
-          }
-         }
-        }
-    if(ans == 13511){
-    campaignTrail_temp.questions_json[23] = {
-    "model": "campaign_trail.question",
-    "pk": 14601,
-    "fields": {
-        "priority": 0,
-        "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
-        "likelihood": 1
-          }
-        }
-      }
-    if(ans == 13511){
-    campaignTrail_temp.questions_json[24] = {
-    "model": "campaign_trail.question",
-    "pk": 14645,
-    "fields": {
-        "priority": 0,
-        "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
-        "likelihood": 1
-          }
-        }
-      }
-    if(ans == 13511){
-    campaignTrail_temp.questions_json[25] = {
-    "model": "campaign_trail.question",
-    "pk": 14401,
-    "fields": {
-        "priority": 0,
-        "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
-        "likelihood": 1
-          }
-       }
-    }
 
 // Michael Portillo
     if(ans == 14372 || ans == 14378){
@@ -904,7 +894,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Cred >= 4){
+    if(Cred >= 4 || Wins >= 3){
     campaignTrail_temp.questions_json[7] = {
     "model": "campaign_trail.question",
     "pk": 14456,
@@ -1036,7 +1026,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Cred >= 10){
+    if(Cred >= 6){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14734,
@@ -1060,7 +1050,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     if(e.player_answers.includes(12797)){
     if(e.player_answers.includes(13554)){
-    if(e.player_answers.includes(13619) && Cred >= 8){
+    if(e.player_answers.includes(13619) && Cred >= 5){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13860,
@@ -1084,7 +1074,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
     if(e.player_answers.includes(13557)){
-    if(e.player_answers.includes(13873) && Cred >= 8){
+    if(e.player_answers.includes(13873) && Cred >= 5){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13894,
@@ -1108,7 +1098,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
 }
-    if(e.player_answers.includes(12824) && Cred <= 4){
+    if(e.player_answers.includes(12824) && Cred <= 1){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14281,
@@ -1353,7 +1343,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
 }
-
 
 campaignTrail_temp.questions_json = [
     {
