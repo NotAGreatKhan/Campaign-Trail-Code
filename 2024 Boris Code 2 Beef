@@ -53,6 +53,21 @@ cyoAdventure = function (a) {
       Wins += 1;
     }
 
+    // Question 11 – Third COVID Reaction
+    if(ans == 5198){
+      Wins -= 1;
+    }
+
+    // Question 12 – Brownlow Decor Scandal
+    if(ans == 21148){
+      Wins += 1;
+    }
+
+    // Question 14 – The Raab Debacle
+    if(ans == 5201){
+      Wins += 1;
+    }
+
     // CREDIBILITY
     // Question 2
     if(ans == 5149){
@@ -88,6 +103,27 @@ cyoAdventure = function (a) {
     // Question 10 – Lockdown Parties?
     if(ans == 5220){
       Cred -= 2;
+    }
+
+    // Question 11 – Third COVID Reaction
+    if(ans == 5197){
+      Cred -= 1;
+    }
+
+    // Question 12 – Brownlow Decor Scandal
+    if(ans == 5190){
+      Cred -= 1;
+    }
+    if(ans == 5191 || ans == 21153){
+      Cred -= 1;
+    }
+
+    // Question 15 – Brownlow Decor Scandal
+    if(ans == 5233){
+      Cred -= 1;
+    }
+    if(ans == 5232){
+      Cred -= 1;
     }
 
 // General CYOA Stuff
@@ -234,7 +270,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1057,
         "fields": {
             "priority": 7,
-            "description": "Well dammit Boris, it seems your personal inclinations and habits have gotten the better of you. Donor Lord Brownlow’s money sent to you has been picked up by the media, It's become quite a headache,  The media won’t let go and the story is becoming a thorn in our backside. You need to get them off of your bloody apartment taste and steer the conversation to the work we’ve been doing.",
+            "description": "Well dammit Boris, it seems your personal inclinations and habits have gotten the better of you. Donor Lord Brownlow’s money sent to you has been picked up by the media, It's become quite a headache, The media won’t let go and the story is becoming a thorn in our backside. You need to get them off of your bloody apartment taste and steer the conversation to the work we’ve been doing.",
             "likelihood": 1
         }
     },
@@ -270,7 +306,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1069,
         "fields": {
             "priority": 7,
-            "description": "put description here",
+            "description": "One of the things you were elected on is “Levelling Up” the North of England. Those buggers up there want some action for their votes. What will you do?",
             "likelihood": 1
         }
     },
@@ -279,7 +315,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1063,
         "fields": {
             "priority": 7,
-            "description": "put description here",
+            "description": "With Brexit done, the world is your oyster—or at least a slightly awkward prawn cocktail. Where will you turn first?",
             "likelihood": 1
         }
     },
@@ -288,7 +324,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1066,
         "fields": {
             "priority": -7,
-            "description": "put description here",
+            "description": " Mauritius has come calling about the Chagos Islands. History, legality, sovereignty—oh my. What now?",
             "likelihood": 1
         }
     },
@@ -297,7 +333,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1067,
         "fields": {
             "priority": -6,
-            "description": "put description here",
+            "description": "Talks are ongoing, the vibe is cordial, but you need a breakthrough. Where do you press the issue?",
             "likelihood": 1
         }
     },
@@ -306,7 +342,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1071,
         "fields": {
             "priority": -5,
-            "description": "put description here",
+            "description": "The Earth beneath the ground of the Eastern European steppe shakes and rumbles. Tanks, drones, and troops of the Russian federation pour into Ukraine from nearly all sides. Putin’s made his move. Ukraine is under fire. History’s turning. And you’ve got a podium, a phone line, and a decision to make.",
             "likelihood": 1
         }
     },
@@ -315,7 +351,7 @@ campaignTrail_temp.questions_json = [
         "pk": 1072,
         "fields": {
             "priority": -4,
-            "description": "put description here",
+            "description": "The boats keep coming, and the right flank is sharpening its knives. Time for a bold move—or at least a convincing one.",
             "likelihood": 1
         }
     },
@@ -540,7 +576,7 @@ campaignTrail_temp.questions_json = [
         "pk": 21142,
         "fields": {
             "priority": 7,
-            "description": "Well dammit Boris, it seems your personal inclinations and habits have gotten the better of you. Donor Lord Brownlow’s money sent to you has been picked up by the media, It's become quite a headache,  The media won’t let go and the story is becoming a thorn in our backside. You need to get them off of your bloody apartment taste and steer the conversation to the work we’ve been doing.",
+            "description": "Well dammit Boris, it seems your personal inclinations and habits have gotten the better of you. Donor Lord Brownlow’s money sent to you has been picked up by the media, It's become quite a headache, The media won’t let go and the story is becoming a thorn in our backside. You need to get them off of your bloody apartment taste and steer the conversation to the work we’ve been doing.",
             "likelihood": 1
         }
     },
@@ -842,7 +878,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5212,
         "fields": {
             "question": 1063,
-            "description": "Donald Trump is lying when says he opposed the war. I challenge him to produce a single public statement that he made <em>before</em> the Iraq War started -- as opposed to years after the fact."
+            "description": "The Anglosphere! Australia, Canada, New Zealand—they speak English, they like the Queen, what’s not to love?"
         }
     },
     {
@@ -850,7 +886,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5213,
         "fields": {
             "question": 1063,
-            "description": "Donald Trump has shown an alarming lack of knowledge about even the basics of U.S. foreign policy. He would set us back many, many years on our objectives in Europe, Asia, the Middle East, and elsewhere."
+            "description": "To our American cousins! A deal for the ages, and maybe a slap-up steak dinner at the White House."
         }
     },
     {
@@ -858,7 +894,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5214,
         "fields": {
             "question": 1063,
-            "description": "If I knew what I know now, I wouldn't have voted \"yes\". But real culprit of this war was George Bush and the Republicans, using faulty intelligence."
+            "description": "Time for AUKUS. Shared history, nuclear subs, and plenty of flags. Let’s make it bigger."
         }
     },
     {
@@ -866,7 +902,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5215,
         "fields": {
             "question": 1063,
-            "description": "My vote in favor of this authorization was one of the toughest of my career. And I will admit, the war didn't go as well as Bush promised it would. But ultimately, we removed a murderous dictator and replaced him a parliamentary democracy."
+            "description": "What if… we go back to Brussels? Whisper it. Not to rejoin—but trade, cooperation, you know, the sensible stuff."
         }
     },
     {
@@ -890,7 +926,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5224,
         "fields": {
             "question": 1066,
-            "description": "This was an ill-considered and insensitive comment on my part, and I apologize. While this is a real issue, saying it describes \"half\" of Trump's supporters is a definite exaggeration."
+            "description": "Let’s go to the table, be the bigger empire."
         }
     },
     {
@@ -898,7 +934,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5225,
         "fields": {
             "question": 1066,
-            "description": "We should all be very concerned with the right-wing radicalism that Trump has enabled. It has no place in America, even if this particular remark could have been stated with more finesse."
+            "description": "Absolutely not. British territory is British territory, and that’s final."
         }
     },
     {
@@ -906,7 +942,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5226,
         "fields": {
             "question": 1066,
-            "description": "I will apologize for this remark when Trump apologizes for his \"rapist\" comments about Hispanics, his constant attacks on women, and his failure to condemn white supremicist supporters."
+            "description": "Kick it into the long grass. Announce a review, say something about sovereignty and strategic needs."
         }
     },
     {
@@ -914,7 +950,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5227,
         "fields": {
             "question": 1067,
-            "description": "After months of hard campaigning, what seemed to be a minor cough has turned into something more. Unfortunately it looks like I will need to take some days off from the campaign to rest and recuperate."
+            "description": "Start with Agriculture. We’re talking lamb, beef, the works. Keep the countryside on side."
         }
     },
     {
@@ -922,7 +958,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5228,
         "fields": {
             "question": 1067,
-            "description": "No comment really. It's unfortunate that the right-wing media is circulating numerous unfounded rumors about by health. The people will see these are lies as I campaign vigorously over the coming weeks."
+            "description": "Let’s go with Tariffs. Dull, perhaps, but quietly important."
         }
     },
     {
@@ -930,7 +966,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5229,
         "fields": {
             "question": 1067,
-            "description": "No comment really. It's unfortunate that the right-wing media is circulating numerous unfounded rumors about by health. The people will see these are lies as I campaign vigorously over the coming weeks."
+            "description": "Immigration—Commonwealth free movement, the romantic dream!"
         }
     },
     {
@@ -938,7 +974,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5230,
         "fields": {
             "question": 1067,
-            "description": "No comment really. It's unfortunate that the right-wing media is circulating numerous unfounded rumors about by health. The people will see these are lies as I campaign vigorously over the coming weeks."
+            "description": "Professional recognition. Engineers, doctors, the lot—if you can cut someone open in Toronto, why not in Leeds?"
         }
     },
     {
@@ -970,7 +1006,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5235,
         "fields": {
             "question": 1069,
-            "description": "We need to be vigilant in every case, but a cap of 10 thousand people is appalingly low from any humanitarian perspective. This conflict has displaced millions, including small children and infants."
+            "description": "What we need, my friends, is a proper, boots-on-the-ground Department for Levelling Up—something with clout, with teeth, and yes, with a decent budget too."
         }
     },
     {
@@ -978,7 +1014,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5236,
         "fields": {
             "question": 1069,
-            "description": "We must balance the humanitarian impulse with what is practical and politically feasible. I would prefer to see us offer generous aid to Turkey, Jordan, and other affected countries as we protect people from the brutal Assad regime and defeat ISIS."
+            "description": "We’ll entrust our most brilliant ministers—yes, the A-team—to draw up a laser-guided, no-nonsense funding plan to get this country firing on all cylinders."
         }
     },
     {
@@ -986,7 +1022,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5237,
         "fields": {
             "question": 1069,
-            "description": "What's happening in Syria right now is obviously tragic. The last thing we need right now is the divisive and unstable leadership of Donald Trump to make things worse."
+            "description": "Why settle for handouts and half-measures, when we can unleash the full might of British infrastructure? Roads! Railways! Regeneration! Let’s build, build, build!"
         }
     },
     {
@@ -994,7 +1030,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5242,
         "fields": {
             "question": 1071,
-            "description": "Donald Trump has already hinted that he won't accept the results of this election, and that any debate cannot be considered fair because of so-called moderator bias. I would prefer to take my case directly to the American people with 30-minute television spots."
+            "description": "We lead. Get the G7 together now. Speed, unity, resolve."
         }
     },
     {
@@ -1002,7 +1038,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5243,
         "fields": {
             "question": 1071,
-            "description": "These debates will expose Donald Trump as woefully unprepared and unqualified to assume the position of President. I am eagerly looking forward to participating."
+            "description": "Just send the weapons. Quietly, but with intent."
         }
     },
     {
@@ -1010,7 +1046,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5244,
         "fields": {
             "question": 1071,
-            "description": "These debates will expose Donald Trump as woefully unprepared and unqualified to assume the position of President. I am eagerly looking forward to participating."
+            "description": "Let’s build consensus with Berlin and Paris. Quiet diplomacy."
         }
     },
     {
@@ -1018,7 +1054,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5245,
         "fields": {
             "question": 1071,
-            "description": "These debates will expose Donald Trump as woefully unprepared and unqualified to assume the position of President. I am eagerly looking forward to participating."
+            "description": "No speeches. Just sanctions, fast and firm."
         }
     },
     {
@@ -1026,7 +1062,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5246,
         "fields": {
             "question": 1072,
-            "description": "Like many women, I was sickened and appalled to see Donald Trump bragging about assault in casual conversation. Are these the values that we stand for in America, and that we want to teach our children?"
+            "description": "To Rwanda! Bold, controversial, and just mad enough to work."
         }
     },
     {
@@ -1034,7 +1070,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5247,
         "fields": {
             "question": 1072,
-            "description": "This video clip is just one more piece of evidence that Donald Trump is a fake conservative who doesn't share Christian values. And of course, it also shows yet again how grossly unqualified Trump is to serve as President."
+            "description": "Get the French onside. Let them do the heavy lifting."
         }
     },
     {
@@ -1042,7 +1078,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5248,
         "fields": {
             "question": 1072,
-            "description": "This clip will show up all over the news and the internet for days. Let's continue to make our own case to the American people."
+            "description": "Invest in the system. Process people properly. Be humane and efficient."
         }
     },
     {
@@ -1050,7 +1086,7 @@ campaignTrail_temp.answers_json = [
         "pk": 5249,
         "fields": {
             "question": 1072,
-            "description": "As bad as it is, this clip is just part of an even larger pattern. His insinuations about Miss Universe contestants. His strange statements about his own daughter. There's a bizarre video where he fondles Rudy Giuliani, in drag."
+            "description": "More boats? Fine—more border patrols. Beef it up."
         }
     },
     {
@@ -1235,6 +1271,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 21163,
             "description": "Right then, we watch, we wait, and we see what unfolds. Hartlepool is a big moment, no doubt about it—a chance to show that the people back us to get the job done. Fingers crossed."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 21186,
+        "fields": {
+            "question": 1066,
+            "description": "Offer joint administration. A nod to the past, a wink to the present."
         }
     }
 ]
@@ -6519,7 +6563,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21170,
         "fields": {
             "answer": 5202,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0.4,
             "issue_importance": 2
         }
@@ -6539,7 +6583,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 21173,
         "fields": {
             "answer": 5200,
-            "issue": "100",
+            "issue": 100,
             "issue_score": 0.3,
             "issue_importance": 2
         }
@@ -6873,7 +6917,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5227,
             "candidate": 201,
-            "answer_feedback": "Unfortunately, an ill-timed health issue has cost you several days of appearances during a critical part of the campaign."
+            "answer_feedback": "The farmers cheer, New Zealand frowns, and everything immediately bogs down. Progress slows to a moo. But the NFU calls it “robust,” so that’s a win…?"
         }
     },
     {
@@ -6882,7 +6926,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5228,
             "candidate": 201,
-            "answer_feedback": "After a couple of days, the health issue recedes to the background."
+            "answer_feedback": "Everyone nods. The grown-ups approve. It moves the dial, even if no one’s putting it on a mug. And best of all, no one starts shouting."
         }
     },
     {
@@ -6891,7 +6935,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5229,
             "candidate": 201,
-            "answer_feedback": "You are campaigning hard, but several times you break out into uncontrolled coughing fits that don't escape public notice."
+            "answer_feedback": "You float it, and suddenly the tabloids are on fire. Australia balks, the youth cheer, and you’re left juggling visa caps and campaign promises. Exciting, but dangerous."
         }
     },
     {
@@ -6900,7 +6944,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5230,
             "candidate": 201,
-            "answer_feedback": "Unfortunately, your decision to keep campaigning has really backfired. Your health issue has gotten worse, forcing you to take a significant break from the campaign in October."
+            "answer_feedback": "A silent masterstroke. Business applauds, no one protests, and you even get a LinkedIn article praising your “modernisation agenda.” Very on-brand."
         }
     },
     {
@@ -6909,7 +6953,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5242,
             "candidate": 201,
-            "answer_feedback": "Your 30-minute TV spots have terrible ratings, and Trump doesn't hesitate to mock you for it on Twitter."
+            "answer_feedback": "The response is swift. Aid flows, Kyiv holds. You get a rare moment of gravitas. Even the BBC calls it “decisive.”"
         }
     },
     {
@@ -6918,7 +6962,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5243,
             "candidate": 201,
-            "answer_feedback": "Pundits seem to think that you did surprisingly poorly against Trump, even if he was his usual wild self."
+            "answer_feedback": "You’re first out the gate with anti-tank missiles. Biden follows suit. Kyiv holds—for now. It’s not flashy, but it works."
         }
     },
     {
@@ -6927,7 +6971,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5244,
             "candidate": 201,
-            "answer_feedback": "Your debate performances are widely praised, especially compared to Trump. Will it matter with the voters?"
+            "answer_feedback": "By the time you finish shaking hands with Olaf and Emmanuel, Russian tanks are rolling through Kyiv. You acted—just a few weeks too late."
         }
     },
     {
@@ -6936,7 +6980,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5245,
             "candidate": 201,
-            "answer_feedback": "Your debate performances are widely praised, especially compared to Trump. Will it matter with the voters?"
+            "answer_feedback": "Oligarchs grumble, City bankers panic slightly. But it's not enough to change the course of the war—and people notice as the Russian flag flies over Kyiv."
         }
     },
     {
@@ -6945,7 +6989,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5246,
             "candidate": 201,
-            "answer_feedback": "Trump's comments dominate the airwaves for several days, and even bring some condemnation from notable conservatives."
+            "answer_feedback": "The base cheers, the bishops weep, and the Lords grind their teeth. It drags through courts like a dying otter, but you look “tough.”"
         }
     },
     {
@@ -6954,7 +6998,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5247,
             "candidate": 201,
-            "answer_feedback": "Trump's comments dominate the airwaves for several days, and even bring some condemnation from notable conservatives."
+            "answer_feedback": "A few new processing centres pop up on their coast. You call it “entente cordiale, Part Deux.” Not flashy, but functional."
         }
     },
     {
@@ -6963,7 +7007,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5248,
             "candidate": 201,
-            "answer_feedback": "Trump's comments dominate the airwaves for several days, and even bring some condemnation from notable conservatives."
+            "answer_feedback": "Expensive. Slow. Civilised. The tabloids hate it. NGOs love it. And the hotels, well, they stay full for the foreseeable future."
         }
     },
     {
@@ -6972,7 +7016,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5249,
             "candidate": 201,
-            "answer_feedback": "Trump's comments dominate the airwaves for several days, and even bring some condemnation from notable conservatives."
+            "answer_feedback": "The coast gets choppy, the Navy gets busy, and the headlines say “action.” It’s not a solution, but it’s good telly."
         }
     },
     {
@@ -7053,7 +7097,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5212,
             "candidate": 201,
-            "answer_feedback": "Television commentator Sean Hannity recounts a single, private conversation between himself and Trump in 2003 where Trump said he opposed the war."
+            "answer_feedback": "The CANZUK dream makes for great speeches. Sadly, ironing out dairy tariffs and migration clauses takes ages. Looks good on a podium, but voters at Tesco still wonder why the apples cost more."
         }
     },
     {
@@ -7062,7 +7106,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5215,
             "candidate": 201,
-            "answer_feedback": "“Clinton defends Iraq War” is the headline today. Your statement might be factually accurate, but it's out of step with the views of most in your party."
+            "answer_feedback": "The EU raises an eyebrow, but listens. You start talking corridors of cooperation. Trouble is, half your party sees it as treason, and the tabloids scream betrayal. Still, it’s the grown-up option, and the IMF claps."
         }
     },
     {
@@ -7089,7 +7133,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5224,
             "candidate": 201,
-            "answer_feedback": "It may have been an off-the-cuff statement, but it has erupted onto the headlines, likely to your detriment."
+            "answer_feedback": "The press barely notices. A few post-imperial types grumble, but most people are too busy watching Love Island. You gain some quiet goodwill at the UN and the Foreign Office sends you a thank-you fruit basket."
         }
     },
     {
@@ -7098,7 +7142,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5225,
             "candidate": 201,
-            "answer_feedback": "It may have been an off-the-cuff statement, but it has erupted onto the headlines, likely to your detriment."
+            "answer_feedback": "The base loves it—flags wave, “Rule Britannia” trends briefly. But the UN issues another resolution, Mauritius fumes, and the US quietly wishes you’d picked your battles more wisely."
         }
     },
     {
@@ -7107,7 +7151,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5226,
             "candidate": 201,
-            "answer_feedback": "Whatever else people can say about this campaign, it certainly hasn't lacked in verbal combat between you and Mr. Trump."
+            "answer_feedback": "Classic foot-dragging. It buys you time, but no love. The international courts grumble, the NGOs fume, and it all bubbles on in the background like a forgotten curry on low heat."
         }
     },
     {
@@ -7125,7 +7169,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5235,
             "candidate": 201,
-            "answer_feedback": "Your talk about an “appallingly low” level and “millions” of refugees immediately starts the right-wing rumor mill churning about your refugee plans. "
+            "answer_feedback": "Whitehall gears up. A shiny new department springs to life, complete with mission statements, ministerial lanyards, and overpriced consultants. Costs spiral upwards at an admirable pace, but up North, people start to notice—bus routes returning, high streets with fewer boarded-up windows. It's not revolutionary, but it's something. And more importantly, it's visible."
         }
     },
     {
@@ -7134,7 +7178,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 5236,
             "candidate": 201,
-            "answer_feedback": "Some of your supporters are upset that you aren't taking a stronger stand on admitting Syrian refugees."
+            "answer_feedback": "The cabinet huddles together and emerges with a plan. But funnily enough, Barnard Castle gets a new civic centre, and some suspiciously generous grants find their way to constituencies with curiously similar postcodes to certain ministers. The rest? A few quid for a youth centre in Huddersfield and some bunting in Barrow."
         }
     },
     {
@@ -7261,6 +7305,42 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 5232,
             "candidate": 20815,
             "answer_feedback": "It’s a spectacular mess. Rees-Mogg is wheeled out to tinker with the machinery of Parliament, trying to swap out the referees mid-match. The backlash is ferocious. The Opposition smells blood, the media runs riot, and in the end, Paterson resigns anyway—leaving you looking like you fought a grubby battle only to lose twice."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21183,
+        "fields": {
+            "answer": 5237,
+            "candidate": 201,
+            "answer_feedback": "The rhetoric flies high—“British bulldozers for British jobs!”—but on the ground, councils drown in red tape, projects stall, and the only things that get built are cost reports and delay memos. Eventually, the grand vision becomes a slightly improved roundabout in Runcorn. Still, it looked good on the flyers."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21184,
+        "fields": {
+            "answer": 5213,
+            "candidate": 201,
+            "answer_feedback": "Trump calls you “tremendous,” then promptly loses the election. The incoming team is polite but less enthusiastic. Talks begin, but you’re not getting chlorinated chicken through Parliament without a riot."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21185,
+        "fields": {
+            "answer": 5214,
+            "candidate": 201,
+            "answer_feedback": "Defence minds clap, think tanks nod sagely, and you get a photo op on a submarine. It doesn’t lower energy bills, but it does make you look very Prime Ministerial for five minutes."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 21187,
+        "fields": {
+            "answer": 21186,
+            "candidate": 201,
+            "answer_feedback": "Mauritius is intrigued, and the Foreign Office calls it “elegantly ambiguous.” Nationalists get confused, the UN gets quiet, and you walk away looking almost like a statesman. Almost."
         }
     }
 ]
