@@ -384,7 +384,7 @@ let changeChartRunning = false;
 let mcaHeightRunning = false;
 let processedNodes = new Set();
 
-async function handleMutations(mutationsList, observer) {
+async function handleScrollMutation(mutationsList, observer) {
     if (observerRunning) return;
     observerRunning = true;
 
@@ -401,6 +401,26 @@ async function handleMutations(mutationsList, observer) {
         };
         buttons.forEach(button => button.addEventListener('click', handleClick));
         processedNodes.add(overallResult);
+    }
+    const state_result = document.getElementById('state_result');
+    if (state_result && !processedNodes.has(state_result)) {
+        state_result.style.overflow = 'auto';
+        const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
+        const handleClick = () => {
+            state_result.style.overflow = 'auto';
+        };
+        buttons.forEach(button => button.addEventListener('click', handleClick));
+        processedNodes.add(state_result);
+    }
+    const overall_details_container = document.getElementById('overall_election_details');
+    if (overall_details_container && !processedNodes.has(overall_details_container)) {
+        overall_details_container.style.overflow = 'auto';
+        const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
+        const handleClick = () => {
+            overall_details_container.style.overflow = 'auto';
+        };
+        buttons.forEach(button => button.addEventListener('click', handleClick));
+        processedNodes.add(overall_details_container);
     }
 
     // changechart
@@ -445,11 +465,12 @@ async function handleMutations(mutationsList, observer) {
     observerRunning = false;
 }
 
-let singleObserver = new MutationObserver(handleMutations);
-singleObserver.observe(document.documentElement, { childList: true, subtree: true });
+let scrollObserver = new MutationObserver(handleScrollMutation);
+scrollObserver.observe(document.documentElement, { childList: true, subtree: true });
     
 
 campaignTrail_temp.multiple_endings=true
+var used = false;
 endingPicker = (out, totv, aa, quickstats) => {
 
 distributeSeatsUK();
@@ -599,7 +620,7 @@ construct = (a = 1) => {
     e.header = "";
     e.executable = []
 
-// Final Endings
+// Endings
 
 
 return construct(0);
@@ -862,3 +883,6 @@ function handleMutations(mutationsList, observer) {
     observer.observe(document.documentElement, { childList: true, subtree: true });
     observerRunning = false;
 }
+
+let hqObserver = new MutationObserver(handleMutations);
+hqObserver.observe(document.documentElement, { childList: true, subtree: true });
