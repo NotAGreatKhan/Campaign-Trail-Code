@@ -19,6 +19,9 @@ var Brown = false;
 var EUCnstn = 0;
 var iraq = 0;
 
+ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+campaignTrail_temp.player_answers = [];
+
 cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
     if(ans == 14815 || ans == 14816 || ans == 14817 || ans == 14821 || ans == 12807 || ans == 12808 || ans == 14881 || ans == 14886 || ans == 14891 || ans == 14895){
@@ -1072,7 +1075,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
- }
+ }
     if(e.player_answers.includes(13557)){
     if(e.player_answers.includes(13873) && Cred >= 5){
     campaignTrail_temp.questions_json[13] = {
