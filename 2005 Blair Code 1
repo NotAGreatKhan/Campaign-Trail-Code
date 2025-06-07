@@ -1276,6 +1276,8 @@ tooltipList = [
         {searchString: "David Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Would still be the Home Secretary for the election, if it weren't for his affair with married magazine publisher Kimberly Quinn."},
         {searchString: "Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Would still be the Home Secretary for the election, if it weren't for his affair with married magazine publisher Kimberly Quinn."},
         {searchString: "Ian McCartney", explanationText: "<img src=https://imgur.com/MhvvaKu.jpg> Party Chair of the Labour Party. Always the bearer of bad news, it seems."},
+        {searchString: "Alan Milburn", explanationText: "<img src=https://imgur.com/Ok5BkBa.jpg> Chief election strategist of Labour. It won't be him who will bring this home, not alone."},
+        {searchString: "Milburn", explanationText: "<img src=https://imgur.com/Ok5BkBa.jpg> Chief election strategist of Labour. It won't be him who will bring this home, not alone."},
 
         // Characters
         {searchString: "Edward Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
