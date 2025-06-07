@@ -71,8 +71,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }]`);
     }
     if(ans == 13511){
-            e.VpText = "Please select your party leader:"
-            window.setTimeout(e.candidateSwitcher, 20)
+      e.VpText = "Please select your party leader:"
+      window.setTimeout(e.candidateSwitcher, 20)
     campaignTrail_temp.questions_json[21] = {
     "model": "campaign_trail.question",
     "pk": 14399,
@@ -621,7 +621,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13500,
     "fields": {
         "priority": 0,
-        "description": "The day you knew would come, but not so fast. It has finally arrived. Outside the large black door of No. 10 for your final time, it is time to make your resignation speech. It is time to sign off your premiership. Once and for all…",
+        "description": "Someday, you knew this day would come. It had to. The preening journalists will be able to concoct a slew of reasons, analysis and justifications for what you are about to do outside the glossy black door of No. 10. But you know the <i>real</i> reason, and he is residing in the flat right next to the one that used to be yours. In your heart of hearts, you know that you ae the only man who can take the vision of this government – and build further upon it to last.<p></p>You take a deep breath. Grasping the folder containing your last speech as Prime Minister.<p></p>With a last shake of the shoulders, you open the door, and address the nation one last time.",
         "likelihood": 1
       }
     }
@@ -978,7 +978,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12808 && ans == 12824){
+    if(e.player_answers.includes(12808) && e.player_answers.includes(12824)){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14237,
@@ -1083,7 +1083,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12825){
+    if(e.player_answers.includes(12825)){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 13410,
@@ -1105,7 +1105,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 0 && (ans == 12873 || ans == 12874)){
+    if(Resign == 0 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14698,
