@@ -1162,6 +1162,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
  }
+    if(e.player_answers.includes(12803) || e.player_answers.includes(13904)){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14960,
+    "fields": {
+        "priority": 0,
+        "description": "Your 2001 Party manifesto had it written that under this parliamentary term, no new tax rises would emerge under the government's numerous budgets. With the manner that the Chancellor – at your behest – has issued out these taxes, a public backlash rarely seen to the budgetary policy of New Labour has been witnessed by all. The profiteers of the butt-hurt wallets? The Conservatives of course with the Liberal Democrats worryingly close behind. In advertisement after advertisement, they flash their slogan: “Are you thinking what we’re thinking?”. Milburn presses you for a response on how to best combat this.",
+        "likelihood": 1
+      }
+    }
+  }
     if(ans == 12819 || ans == 13418){
     campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
