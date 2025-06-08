@@ -70,7 +70,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
               }
         }]`);
     }
-    if(ans == 13511){
+    if(e.player_answers.includes(13511)){
       e.VpText = "Please select your party leader:"
       window.setTimeout(e.candidateSwitcher, 20)
     campaignTrail_temp.questions_json[21] = {
@@ -91,7 +91,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
           }
         }
-    if(ans == 14430){
+    if(e.player_answers.includes(14430)){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14623,
