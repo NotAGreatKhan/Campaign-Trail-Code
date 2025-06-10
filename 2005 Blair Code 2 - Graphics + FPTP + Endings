@@ -1538,7 +1538,7 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.innerHTML = 'Your <b>credibility</b> heading into the election is ' + CScore + '.';
+    a.innerHTML = 'The <b>public perception</b> of your government heading into the election is ' + CScore + '.';
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
