@@ -730,13 +730,25 @@ function openHeadquarter() {
     }
     if (Wins == 1) {
         WnScore = "<font color='#d58627;'><b>few and far</b></font> (<font color='#d58627;'><b>1</b></font>)"
-    } 
+    }
+    if (Wins == 2) {
+        WnScore = "<font color='#d58627;'><b>slowly building up</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
     if (Wins == 3) {
         WnScore = "<font color='#7ba922;'><b>respectable</b></font> (<font color='#7ba922;'><b>3</b></font>)"
+    }
+    if (Wins == 4) {
+        WnScore = "<font color='#7ba922;'><b>numerous</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (Wins == 5) {
+        WnScore = "<font color='#7ba922;'><b>voluminous</b></font> (<font color='#7ba922;'><b>5</b></font>)"
     }
 
     if (Reptn == 0) {
         RTnScore = "<font color='#ad1313;'><b>miserable</b></font> (<font color='#ad1313;'><b>0</b></font>)"
+    }
+    if (Reptn == 1) {
+        RTnScore = "<font color='#ad1313;'><b>looked down upon</b></font> (<font color='#ad1313;'><b>1</b></font>)"
     }
     if (Reptn == 2) {
         RTnScore = "<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d58627;'><b>2</b></font>)"
@@ -763,6 +775,9 @@ function openHeadquarter() {
     }
     if (RightWing == 5) {
         RWgScore = "<font color='#233a71;'><b>embracing the old traditions of years past</b></font> (<font color='#233a71;'><b>5</b></font>)"
+    }
+    if (RightWing == 7) {
+        RWgScore = "<font color='#233a71;'><b>straying into the territory of Enoch Powell</b></font> (<font color='#233a71;'><b>7</b></font>)"
     }
 
     let questions = document.querySelector(".inner_window_question");
