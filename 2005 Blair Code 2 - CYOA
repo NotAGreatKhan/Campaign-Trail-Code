@@ -1105,6 +1105,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(Wins => 2){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 15018,
+    "fields": {
+        "priority": 0,
+        "description": "Social reform has been a major initiative of your premiership. Your government has pushed forward the monumental Civil Partnerships Act with a sound 426-49 vote in favour. However, a potential Tory wrench in the form of MP Edward Leigh is pushing an amendment to include siblings in the provisions. Whilst the proposal is already being ridiculed as the “wrecking amendment” by many but the most socially conservative MPs, it could undermine the reform you are trying to get through. Will you push, with effort, to shoot this amendment proposal down?",
+        "likelihood": 1
+      }
+    }
+  }
     if(Cred <= 5){
     campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
