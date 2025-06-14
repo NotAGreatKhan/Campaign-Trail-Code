@@ -350,6 +350,22 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Resign += 1;
       console.log("The hot seat looks dicey");
     }
+    if(ans == 14980){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14988){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 15003){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 15013){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
     if(ans == 12824){
       Resign += 1;
       console.log("The hot seat looks dicey");
