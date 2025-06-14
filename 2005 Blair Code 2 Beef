@@ -892,10 +892,21 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 12813 || ans == 12815 || ans == 14900 || ans == 14906 || ans == 14918 || ans == 14924 || ans == 14942 || ans == 14947){
     campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
-    "pk": 13417,
+    "pk": 14987,
     "fields": {
         "priority": 0,
-        "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
+        "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. The fateful decision falls to you.<p></p>The weight of an entire world rests upon your shoulders. The only thing stopping British troops from marching into Iraq is an anti-war vote in the House of Commons – it falls to you, whether you wish to shoot it down.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14930){
+    campaignTrail_temp.questions_json[8] = {
+    "model": "campaign_trail.question",
+    "pk": 15002,
+    "fields": {
+        "priority": 0,
+        "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. The fateful decision falls to you.<p></p>The weight of an entire world rests upon your shoulders. The only thing stopping British troops from marching into Iraq is an anti-war vote in the House of Commons – it falls to you, whether you wish to shoot it down.",
         "likelihood": 1
       }
     }
@@ -933,7 +944,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 12813 || ans == 12815){
+    if(ans == 12813 || ans == 12815 || ans == 14900 || ans == 14906 || ans == 14918 || ans == 14924 || ans == 14942 || ans == 14947){
     campaignTrail_temp.questions_json[10] = {
     "model": "campaign_trail.question",
     "pk": 13391,
@@ -1409,7 +1420,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12816,
         "fields": {
             "priority": 0,
-            "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. Now, the fateful decision falls to you: Will you push forward against the anti-war vote in the House of Commons in order to send troops alongside America in this invasion?",
+            "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. The fateful decision falls to you.<p></p>The weight of an entire world rests upon your shoulders. The only thing stopping British troops from marching into Iraq is an anti-war vote in the House of Commons – it falls to you, whether you wish to shoot it down.",
             "likelihood": 1
         }
     },
@@ -1769,7 +1780,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12819,
         "fields": {
             "question": 12816,
-            "description": "We must honour our commitment to the United States, and to combat terrorism across the globe, and part of that must involve this operation to be credible. I have decided. We’re going in."
+            "description": "We must honour our commitment to the United States, and to combat terrorism across the globe, and part of that must involve this operation to be credible. We cannot turn back now. I have decided. <b>We’re going in.</b>"
         }
     },
     {
@@ -1777,7 +1788,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12820,
         "fields": {
             "question": 12816,
-            "description": "I want to prevent terrorism just as much as anyone else, but the justification for war we have made is shaky enough as is. The opposition at home will just be too much to bear. Call off the vote before this gets out of hand."
+            "description": "I want to prevent terrorism just as much as anyone else, but the justification for war we have made is shaky enough as is. The opposition at home will just be too much to bear. Make it official. <b>We're keeping our boys home.</b>"
         }
     },
     {
@@ -2434,22 +2445,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 13410,
             "description": "Alastair… He’s been our strongest soldier on this. He has. We’ve just got to put ourselves out there more. Keep going, we had to make this decision. And, we can’t turn back on this now. We – we just can’t."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 13418,
-        "fields": {
-            "question": 13417,
-            "description": "We must honour our commitment to the United States, and to combat terrorism across the globe, and part of that must involve this operation to be credible. I have decided. We’re going in."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 13420,
-        "fields": {
-            "question": 13417,
-            "description": "I want to prevent terrorism just as much as anyone else, but the justification for war we have made is shaky enough as is. The opposition at home will just be too much to bear. Call off the vote before this gets out of hand."
         }
     },
     {
@@ -4362,6 +4357,62 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14960,
             "description": "If the public are so concerned about any further 'stealth taxes', then we should carve into our manifesto a small set of fiscal rules and guidelines to abide to. These will include income and capital gains. This way, we can commit to staying within budget without announcing any definitive figures to twist. We'll admit we did not anticipate the extra costs, and move on."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14980,
+        "fields": {
+            "question": 12816,
+            "description": "To retreat right here. Right now, I believe, would put at hazard all that we hold dearest, Saddam Hussein possesses <i>Weapons of Mass Destruction</i>. Weapons which pose a real and direct danger to all of us. <b>Shoot down the vote. Now.</b>"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14988,
+        "fields": {
+            "question": 14987,
+            "description": "We must honour our commitment to the United States, and to combat terrorism across the globe, and part of that must involve this operation to be credible. We cannot turn back now. I have decided. <b>We’re going in.</b>"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14993,
+        "fields": {
+            "question": 14987,
+            "description": "I want to prevent terrorism just as much as anyone else, but the justification for war we have made is shaky enough as is. The opposition at home will just be too much to bear. Make it official. <b>We're keeping our boys home.</b>"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14998,
+        "fields": {
+            "question": 14987,
+            "description": "Right here, right now, we cannot stand back. Saddam Hussein has repeatedly defied <i>The will of the UN</i>, daring to turn it back into a talking shop. He has repeatedly violated international law at every turn. <b>Shoot down the vote. Now.</b>"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15003,
+        "fields": {
+            "question": 15002,
+            "description": "We must honour our commitment to the United States, and to combat terrorism across the globe, and part of that must involve this operation to be credible. We cannot turn back now. I have decided. <b>We’re going in.</b>"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15008,
+        "fields": {
+            "question": 15002,
+            "description": "I want to prevent terrorism just as much as anyone else, but the justification for war we have made is shaky enough as is. The opposition at home will just be too much to bear. Make it official. <b>We're keeping our boys home.</b>"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15013,
+        "fields": {
+            "question": 15002,
+            "description": "Right here, right now, we cannot stand back. Saddam Hussein has repeatedly defied <i>The will of the UN</i>, daring to turn it back into a talking shop. He has repeatedly violated international law at every turn. <b>Shoot down the vote. Now.</b>"
         }
     }
 ]
@@ -7449,7 +7500,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12819,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.02
+            "global_multiplier": 0.0185
         }
     },
     {
@@ -8914,26 +8965,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 13422,
-        "fields": {
-            "answer": 13420,
-            "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13425,
-        "fields": {
-            "answer": 13418,
-            "candidate": 12543,
-            "affected_candidate": 12587,
-            "global_multiplier": 0.05
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 13430,
         "fields": {
             "answer": 13428,
@@ -9310,16 +9341,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": 0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 13595,
-        "fields": {
-            "answer": 13418,
-            "candidate": 12543,
-            "affected_candidate": 12565,
-            "global_multiplier": 0.04
         }
     },
     {
@@ -14181,6 +14202,136 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12565,
             "global_multiplier": 0.01
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14984,
+        "fields": {
+            "answer": 14980,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14986,
+        "fields": {
+            "answer": 12819,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14990,
+        "fields": {
+            "answer": 14988,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.0185
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14991,
+        "fields": {
+            "answer": 14988,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14995,
+        "fields": {
+            "answer": 14993,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.0025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14996,
+        "fields": {
+            "answer": 14993,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0085
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15000,
+        "fields": {
+            "answer": 14998,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.018
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15005,
+        "fields": {
+            "answer": 15003,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.0185
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15006,
+        "fields": {
+            "answer": 15003,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15010,
+        "fields": {
+            "answer": 15008,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.0025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15011,
+        "fields": {
+            "answer": 15008,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0085
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15015,
+        "fields": {
+            "answer": 15013,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.016
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15017,
+        "fields": {
+            "answer": 14998,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.007
+        }
     }
 ]
 
@@ -14311,7 +14462,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 12819,
             "issue": 30,
-            "issue_score": -0.85,
+            "issue_score": -0.8,
             "issue_importance": 10
         }
     },
@@ -14903,26 +15054,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 30,
             "issue_score": -0.71,
             "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 13423,
-        "fields": {
-            "answer": 13420,
-            "issue": 30,
-            "issue_score": 0.31,
-            "issue_importance": 2
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 13426,
-        "fields": {
-            "answer": 13418,
-            "issue": 30,
-            "issue_score": -0.7,
-            "issue_importance": 2
         }
     },
     {
@@ -18184,6 +18315,76 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0.4,
             "issue_importance": 3
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14985,
+        "fields": {
+            "answer": 14980,
+            "issue": "27",
+            "issue_score": -1,
+            "issue_importance": 10
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14992,
+        "fields": {
+            "answer": 14988,
+            "issue": 30,
+            "issue_score": -0.8,
+            "issue_importance": 10
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 14997,
+        "fields": {
+            "answer": 14993,
+            "issue": 30,
+            "issue_score": 0.31,
+            "issue_importance": 10
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15001,
+        "fields": {
+            "answer": 14998,
+            "issue": 30,
+            "issue_score": -0.4,
+            "issue_importance": 10
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15007,
+        "fields": {
+            "answer": 15003,
+            "issue": 30,
+            "issue_score": -0.8,
+            "issue_importance": 10
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15012,
+        "fields": {
+            "answer": 15008,
+            "issue": 30,
+            "issue_score": 0.31,
+            "issue_importance": 10
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15016,
+        "fields": {
+            "answer": 15013,
+            "issue": 30,
+            "issue_score": -0.4,
+            "issue_importance": 10
+        }
     }
 ]
 
@@ -18833,7 +19034,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12819,
             "candidate": 12543,
-            "answer_feedback": "The vote is defeated with a majority of 179. By your orders, 46,000 troops would be sent into a war larger than they could have possibly imagined. Hussein’s forces are routed and he is soon toppled from power. Privately, you have your own doubts with rumblings already festering, but Hussein is a dictator – you tell yourself – it must be done."
+            "answer_feedback": "The vote is defeated with a sweat-inducing majority of 87. By your orders, 46,000 troops would be sent into a war larger than they could have possibly imagined.<p></p>Hussein’s forces are routed and he will soon be toppled from power. Privately, you have your own doubts with rumblings already festering, but Hussein is a dictator – you tell yourself – it must be done. Your steadfast in the face of outcry does little to stop the chants in the streets of the capital. It never leaves your mind."
         }
     },
     {
@@ -18842,7 +19043,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12820,
             "candidate": 12543,
-            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision in light of your staunch support of the American effort. Although noticeably less people back this move, the bleeding to the Liberal Democrats has been stopped dead in its track. "
+            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision in light of your staunch support of the American effort. The major opposition has no compunction in attacking your decision, the hawks concur and nod. Against the enormous protests, no one notices it. It goes give you some reprieve to find out that the assembled crowds around Westminster finally begin to dissipate away."
         }
     },
     {
@@ -19581,24 +19782,6 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 13411,
             "candidate": 12543,
             "answer_feedback": "Your strongest political soldiers will always fight tooth-and-nail for the war you have. The media firestorm continues to envelop the political debate. All of those deaths, the toxicity. Will it be worth it?"
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 13421,
-        "fields": {
-            "answer": 13420,
-            "candidate": 12543,
-            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision in light of your staunch support of the American effort. Although noticeably less people back this move, the bleeding to the Liberal Democrats has been stopped dead in its track. "
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 13424,
-        "fields": {
-            "answer": 13418,
-            "candidate": 12543,
-            "answer_feedback": "The vote is disappointingly defeated with a majority of 53. By your orders, 46,000 troops would be sent into a war larger than they could have even imagined. Hussein’s forces are routed and he is soon toppled from power. But with a dip in domestic support, you’re virtually pursuing this war on your own – despite your honesty about it."
         }
     },
     {
@@ -21742,6 +21925,69 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "On <i>Have I Got News For You</i>, Ian Hislop makes hay of the policy slate “So what they're basically saying is: we're going to follow rules that we made... on ourselves! And, we don't even <i>have</i> to! I mean- I mean it's completely ridiculous” the audience seated in the studio heartily laughs along with them."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14981,
+        "fields": {
+            "answer": 14980,
+            "candidate": 12543,
+            "answer_feedback": "The vote is defeated definitively with a majority of 179. By your orders, 46,000 troops would be sent into a war larger than they could have possibly imagined.<p></p>Hussein’s forces are routed and he will soon be toppled from power, even still your steely resolve and steadfast belief is no cure for the protests and chanting echoing in the thousands on the streets of London. Your lobbying of the MP's with WMDs has paid off. But, if none are found – your tactics will be shown to the country as a sham."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14989,
+        "fields": {
+            "answer": 14988,
+            "candidate": 12543,
+            "answer_feedback": "The vote is defeated with a sweat-inducing majority of 87. By your orders, 46,000 troops would be sent into a war larger than they could have possibly imagined.<p></p>Hussein’s forces are routed and he will soon be toppled from power. Privately, you have your own doubts with rumblings already festering, but Hussein is a dictator – you tell yourself – it must be done. Your steadfast in the face of outcry does little to stop the chants in the streets of the capital. It never leaves your mind."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14994,
+        "fields": {
+            "answer": 14993,
+            "candidate": 12543,
+            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision in light of your staunch support of the American effort. The major opposition has no compunction in attacking your decision, the hawks concur and nod. Against the enormous protests, no one notices it. It goes give you some reprieve to find out that the assembled crowds around Westminster finally begin to dissipate away."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14999,
+        "fields": {
+            "answer": 14998,
+            "candidate": 12543,
+            "answer_feedback": "The vote is defeated with a majority of 47. By your orders, 46,000 troops would be sent into a war larger than they could have possibly imagined.<p></p>Hussein’s forces are routed and he will soon be toppled from power, even still your steely resolve and steadfast belief is no cure for the protests and chanting echoing in the thousands on the streets of London. Your argument faces mockery from the tabloids as they shove the failure to pass a second resolution in your face – your hands go white as you glance at them."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15004,
+        "fields": {
+            "answer": 15003,
+            "candidate": 12543,
+            "answer_feedback": "The vote is defeated with a sweat-inducing majority of 87. By your orders, 46,000 troops would be sent into a war larger than they could have possibly imagined.<p></p>Hussein’s forces are routed and he will soon be toppled from power. Privately, you have your own doubts with rumblings already festering, but Hussein is a dictator – you tell yourself – it must be done. Your steadfast in the face of outcry does little to stop the chants in the streets of the capital. It never leaves your mind."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15009,
+        "fields": {
+            "answer": 15008,
+            "candidate": 12543,
+            "answer_feedback": "For the first time in post-war history, an anti-war vote passes in Parliament. Britain, and the rest of the world, is shocked at the decision in light of your staunch support of the American effort. The major opposition has no compunction in attacking your decision, the hawks concur and nod. Against the enormous protests, no one notices it. It goes give you some reprieve to find out that the assembled crowds around Westminster finally begin to dissipate away."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15014,
+        "fields": {
+            "answer": 15013,
+            "candidate": 12543,
+            "answer_feedback": "The vote is crushed by a margin of 189. By your orders, 46,000 troops would be sent into a war larger than they could have possibly imagined.<p></p>Hussein’s forces are routed and he will soon be toppled from power. With your acquisition of a second UN Resolution, the Liberal Democrats have less ground to oppose your motion. And the Conservatives? They do nothing to stand in your way. The shouting of the protests never silence, but they do quell. For you, that is just enough."
+        }
     }
 ]
 
@@ -23342,7 +23588,7 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.innerHTML = 'Your <b>credibility</b> heading into the election is ' + CScore + '.';
+    a.innerHTML = 'The <b>public perception</b> of your government heading into the election is ' + CScore + '.';
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
