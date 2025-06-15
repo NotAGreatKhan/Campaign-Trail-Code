@@ -1121,6 +1121,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(e.player_answers.includes(14201)){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 15037,
+    "fields": {
+        "priority": 0,
+        "description": "Thinking about your moves to move Britain forward on equal rights brings nothing but painful stings and red-hot tempers, though you do well to keep it covered under your trademark expression. Today, you will have to reckon with it once again. After your government's failure to pass the Equal Marriage Bill in tatters and rags, you went ahead and sent through a watered down version of it. The Civil Partnerships Act, rolled through with an uncomfortably close 356-119 vote in favour given your majority. But now, the real fight begins. Sensing your falling goodwill and political capital, socially conservative Tory MP's headed by Edward Leigh have tabled forward a “wrecking amendment” seeking to add not just LGBT couples, but siblings to the provisions as well. They're not the only ones, Labour backbenchers too have approached you – with demands.",
+        "likelihood": 1
+      }
+    }
+    if(ans == 14209 || ans == 14238){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 15044,
+    "fields": {
+        "priority": 0,
+        "description": "Thinking about your moves to move Britain forward on equal rights brings nothing but painful stings and red-hot tempers, though you do well to keep it covered under your trademark expression. Today, you will have to reckon with it once again. After your government's failure to pass the Equal Marriage Bill in tatters and rags, you went ahead and sent through a watered down version of it. The Civil Partnerships Act, rolled through with an uncomfortably close 356-119 vote in favour given your majority. But now, the real fight begins. Sensing your falling goodwill and political capital, socially conservative Tory MP's headed by Edward Leigh have tabled forward a “wrecking amendment” seeking to add not just LGBT couples, but siblings to the provisions as well. They're not the only ones, Labour backbenchers too have approached you – with demands.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
     if(Wins => 2){
     campaignTrail_temp.questions_json[17] = {
     "model": "campaign_trail.question",
