@@ -1356,13 +1356,24 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Local + European Elections
-    if(ans == 12797){
+    if(ans == 12797 || (ans == 12798 && Cred >= 5)){
     campaignTrail_temp.questions_json[15] = {
     "model": "campaign_trail.question",
     "pk": 13621,
     "fields": {
         "priority": 0,
-        "description": "Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. Overall, you lose 298 councillors and 3 councils, while the Conservatives make a net gain of 8 councils and 167 councillors. The Liberal Democrats do hold you to the line in Newcastle and Leeds though. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+        "description": "Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+        "likelihood": 1
+      }
+    }
+  }
+    if((Cred <= 2 && Wins >= 5) || (ans == 12797 && Wins <= 3)){
+    campaignTrail_temp.questions_json[15] = {
+    "model": "campaign_trail.question",
+    "pk": 15037,
+    "fields": {
+        "priority": 0,
+        "description": "Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. Something feels off about this particular phone call though. You finally grip the receiver, and await the news. The results of the local elections have just come in, and they have not put your office's mood in an ideal place. And yet, they have simultaneously surpassed nigh all expectations from the folks at Fleet Street. It was a morose night for Labour. This is a concerning preview for the general election, whenever you decide to call it. How do you react to this series of events?",
         "likelihood": 1
       }
     }
