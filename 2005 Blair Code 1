@@ -1299,6 +1299,7 @@ tooltipList = [
         {searchString: "it’s a major blow for Labour", explanationText: "<img src=https://imgur.com/Vc0qgst.jpg> The 2004 local elections saw the Labour party get hemorrhaged on all fronts. Labour lost 464 councillors and 8 councils, while the Conservatives made a net gain of 13 councils and 288 councillors, making them the clear winners. The Liberal Democrats even gain Newcastle and Leeds, giving them a strong mandate of credibility."},
         {searchString: "a series of pricks on the Labour backside", explanationText: "<img src=https://imgur.com/Vc0qgst.jpg> The 2004 local elections saw the Labour party get threatened in councils. But holding on, losing 298 councillors and 3 councils, while the Conservatives made a net gain of 8 councils and 167 councillors. The Liberal Democrats did hold you to the line in Newcastle and Leeds though."},
         {searchString: "the razor-thin victory of Kenneth Clarke", explanationText: "<img src=https://imgur.com/K56bJ4X.jpg> Your lagging performance across the channel loomed over the leadership contest, giving way for Kenneth Clarke to take the media by surprise and win a razor-thin upset against former Home Secretary, Michael Howard. Clarke is a sage for many in the Tory party – and the country – but he's not invulnerable."},
+        {searchString: "back in that hotel", explanationText: "<img src=https://imgur.com/EfsyXZz.png> The place where the culmination of many inflection points of bickering and slapfighting for the top job occurred. Where it all could have been so different."},
 ];
 
 
