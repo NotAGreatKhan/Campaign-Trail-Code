@@ -8,10 +8,1399 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
-cyoAdventure = function (a) {
-    ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+e = campaignTrail_temp
 
+var Wins = 0;
+var Resign = 0;
+var Negative = 0;
+var OldLab = 0;
+var Cred = 1;
+var Brown = false;
+var EUCnstn = 0;
+var iraq = 0;
+
+ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+campaignTrail_temp.player_answers = [];
+
+cyoAdventure = function(a) {
+ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+    if(ans == 14815 || ans == 14816 || ans == 14817 || ans == 14821 || ans == 12807 || ans == 12808 || ans == 14881 || ans == 14886 || ans == 14891 || ans == 14895){
+        campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
+        campaignTrail_temp.running_mate_last_name = "Blair";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"
+    }
+    if(ans == 12797 || ans == 12798){
+        campaignTrail_temp.candidate_last_name = "Chancellor";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+        iraq += 1;
+        console.log("debug")
+    }
+    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570){
+        campaignTrail_temp.candidate_last_name = "Tony";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/GPBuD3h.jpg"
+        campaignTrail_temp.running_mate_last_name = "Gordon";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/RGK5T1f.jpg"
+    }
+    if(ans == 3493){
+        document.body.background = "https://imgur.com/tjqFeeK.png"    
+    }
+    if(ans == 13554 || ans == 13557){
+        document.body.background = "https://imgur.com/w0SVuOH.png"    
+    }
+    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
+        document.body.background = "https://imgur.com/r1yqD5R.png"
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
+    }
+    if(ans == 13508){
+      Brown = true;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 26;
+        document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
+        vpTable["The Labour Party"] = "J. Gordon Brown";
+        campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
+        campaignTrail_temp.questions_json[20] = {
+        "model": "campaign_trail.question",
+        "pk": 13501,
+        "fields": {
+            "priority": 0,
+            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
+            "likelihood": 1
+          }
+       }
+    campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": 12543,
+                  "running_mate": 136
+              }
+        }]`);
+    }
+    if(e.player_answers.includes(13511)){
+      e.VpText = "Please select your party leader:"
+      window.setTimeout(e.candidateSwitcher, 20)
+    campaignTrail_temp.questions_json[21] = {
+    "model": "campaign_trail.question",
+    "pk": 14399,
+    "fields": {
+        "priority": 0,
+        "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
+        "likelihood": 1
+       }
+     }
+    campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 14400,
+    "fields": {
+        "priority": 0,
+        "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
+        "likelihood": 1
+          }
+        }
+    if(e.player_answers.includes(14430)){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14623,
+    "fields": {
+        "priority": 0,
+        "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+        "likelihood": 1
+          }
+        }
+      }
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14601,
+    "fields": {
+        "priority": 0,
+        "description": "Though your Chancellorship has received a consistently high approval rating, the shadow of your predecessor is a looming giant over your own freshly germinating tenure in No. 10. When asked in an Ipsos poll about the opinion of Blair’s premiership, over 1,000 respondents gave the centrist a net -20 approval rating. Yet on certain issues, his ministry is viewed remarkably favourably, in spite of all of the turmoil. On the campaign trail, far too many journalists ask what you think of your old friend. Well, Gordon, what <i>are</i> your thoughts?",
+        "likelihood": 1
+          }
+        }
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 14645,
+    "fields": {
+        "priority": 0,
+        "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
+        "likelihood": 1
+          }
+        }
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 14401,
+    "fields": {
+        "priority": 0,
+        "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+        "likelihood": 1
+          }
+        }
+    }
+    if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){   
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
+        campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
+    }
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
+        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        vpTable["The Conservative Party"] = "Kenneth H. Clarke";
+    }
+    if(ans == 14372 || ans == 14378){
+        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        vpTable["The Conservative Party"] = "Michael Portillo";
+    }
+
+    // CREDIBILITY
+    // Question 5 – 2002 Budget
+    if(ans == 12802){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14392){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 7 – Making the case for war
+    if(ans == 12813){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 12814){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14906){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14912){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14947){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14936){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14930){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    
+    // Question 8 – Passing New Labour Legislation
+    if(ans == 14073){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14072){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14072){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 9 – Commenting on Iraq Invasion
+    if(ans == 13561){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    
+    // Question 11 – Naming Dr Kelly
+    if(ans == 12824){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 12825){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 11 – Aiding French Yes Campaign
+    if(ans == 13619){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 11 – Aiding Dutch Yes Campaign
+    if(ans == 13873){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 13 - HEA (Weak)
+    if(ans == 14716){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14729){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 13 - HEA 
+    if(ans == 12827){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 12828){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 12830){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 13 - HEA (Strong)
+    if(ans == 14735){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14754){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 13 - PUB (Hutton Inquiry)
+    if(ans == 14238){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14259){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14252){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 13 - PUB 
+    if(ans == 14209){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14230){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14223){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+
+    // Question 14 - Hutton Inquiry
+    if(ans == 12832){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14290){
+      Cred -= 2;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 15 – HR Groups protesting
+    if(ans == 14052){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    if(ans == 13474){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 13561){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 13861){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // RESIGNATION
+    if(ans == 12814){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14912){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14936){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14584){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    } 
+    if(ans == 14815){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14821){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 12819){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14980){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14988){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 15003){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 15013){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 12824){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 12828){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14710){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14716){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14722){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 14290){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }   
+
+    // NEGATIVE
+    if(ans == 12849){
+      Negative += 1;
+      console.log("Language not looking nice");
+    }
+    if(ans == 12864){
+      Negative += 1;
+      console.log("Language not looking nice");
+    }
+    if(ans == 12889){
+      Negative += 1;
+      console.log("Language not looking nice");
+    }
+    if(ans == 12897){
+      Negative -= 1;
+      console.log("Language not looking nice");
+    }
+    if(ans == 12909){
+      Negative += 1;
+      console.log("Language not looking nice");
+    }
+    if(ans == 12917){
+      Negative += 1;
+      console.log("Language not looking nice");
+    }
+
+    // OLD LABOUR
+    // Question 5 – 2002 Budget
+    if(ans == 12803){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+    if(ans == 14392){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+
+    // Question 6 – New Direction?
+    if(ans == 12808){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+
+    // Question 7 – New Labour Legislation Session
+    if(ans == 14464){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+    if(ans == 14470){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+
+    // Question 12 – PUB 
+    if(ans == 14209){
+      OldLab += 2;
+      console.log("Going old school are you?");
+    }
+    if(ans == 14216){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+    if(ans == 14223){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+    if(ans == 14230){
+      OldLab -= 1;
+      console.log("Going old school are you?");
+    }
+
+    // Question 12 – PUB (Hutton Inquiry)
+    if(ans == 14238){
+      OldLab += 2;
+      console.log("Going old school are you?");
+    }
+    if(ans == 14245){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+    if(ans == 14252){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+    if(ans == 14259){
+      OldLab -= 1;
+      console.log("Going old school are you?");
+    }
+
+    // WINS
+    // Question 2 – Afghanistan
+    if(ans == 12793){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 3 – Terror Bill
+    if(ans == 14032){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    
+    // Question 7 – Making the case for war
+    if(ans == 12814){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 12815){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14912){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14930){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14936){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 7 – Deciding which EU country to support
+    if(ans == 13554){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 8 – Legislation Season
+    if(ans == 14464){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14476){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 10 – Tony & Gordon...
+    if(ans == 14881 || ans == 14891){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 11 - Aiding French 'Yes' Campaign
+    if(ans == 13619){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 11 - Aiding Dutch 'Yes' Campaign
+    if(ans == 13873){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 13 - HEA (Weak)
+    if(ans == 14710){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    // Question 13 - HEA 
+    if(ans == 12827){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    // Question 13 - HEA (Strong)
+    if(ans == 14735){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 13 - PUB (Hutton Inquiry)
+    if(ans == 14238){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    // Question 13 - PUB 
+    if(ans == 14209){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 14 – Referendum results
+    if(ans == 13861){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 17 - Leigh Amendment to CPA 
+    if(ans == 12847){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // EU CONSTITUTION
+    if(ans == 13861){
+      EUCnstn += 1;
+      console.log("The ball is rolling, and it is not stopping");
+    }
+
+
+// Resignation Questions
+    if(Resign >= 5){
+    if(Resign >= 6){
+    campaignTrail_temp.questions_json[18] = {
+    "model": "campaign_trail.question",
+    "pk": 14952,
+    "fields": {
+        "priority": 0,
+        "description": "The house is divided. It's all burning to the ground.<p></p>Gordon <i>hates</i> that you stole his throne all those years ago in 1994. The apartment complexes of Downing Street insulates a mist of despair. Your Ministers whisper of the letter box filled with Labour MP's clamoring for you to resign. It all makes your blood rush around your head, haemorrhaging your skull.<p></p>Suddenly, you feel it.<p></p>Your heartbeat accelerates at break-neck speed. Then it falls off a cliff. And into the abyss.<p></p>Your mind scarpers desperately to 2003.<p></p>Not again. Not like this.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Wins >= 4){
+    campaignTrail_temp.questions_json[18] = {
+    "model": "campaign_trail.question",
+    "pk": 14794,
+    "fields": {
+        "priority": 0,
+        "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do. There – there must.",
+        "likelihood": 1
+      }
+    }
+  }
+    else{
+    campaignTrail_temp.questions_json[18] = {
+    "model": "campaign_trail.question",
+    "pk": 13499,
+    "fields": {
+        "priority": 0,
+        "description": "Your government is in damage control. Your Chancellor is eyeing your job with no shortage of brazenness and envy. And now, now, your position may have just reached its expiry date. A cold melancholy has settled in the apartment complexes of Downing Street. Whilst diligently writing, you receive news of over 50 Labour MPs' letters asking for you to resign. As you go around your fellow cabinet members, their responses to you are strange in their foreboding: “Prime Minister, we would like to support you all the way, but I just don’t believe that is sustainable anymore. It’s time for new blood”. It can’t be. It – it cannot be. There’s got to be something you can do. There – there must.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
+    if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798 || ans == 14953){
+    campaignTrail_temp.questions_json[19] = {
+    "model": "campaign_trail.question",
+    "pk": 13500,
+    "fields": {
+        "priority": 0,
+        "description": "Someday, you knew this day would come. It had to. The preening journalists will be able to concoct a slew of reasons, analysis and justifications for what you are about to do outside the glossy black door of No. 10. But you know the <i>real</i> reason, and he is residing in the flat right next to the one that used to be yours. In your heart of hearts, you know that you ae the only man who can take the vision of this government – and build further upon it to last.<p></p>You take a deep breath. Grasping the folder containing your last speech as Prime Minister.<p></p>With a last shake of the shoulders, you open the door, and address the nation one last time.",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Michael Portillo
+    if(e.player_answers.includes(14372) || e.player_answers.includes(14378)){
+    campaignTrail_temp.questions_json[21] = {
+    "model": "campaign_trail.question",
+    "pk": 14294,
+    "fields": {
+        "priority": 0,
+        "description": "Iain Duncan Smith suffered the wrath of his parliamentary cohort, and was thrown out as your party machine continued to roll ahead. Their fatigue in the face of your increasingly stentorian liberalism, has caused them to rally around the yet-again-transformed Michael Portillo. As he fires his opening shots for the campaign, his attacks centre around your abandonment of “Middle Britain”, your neglect of the “power of enterprise and of the citizens to lift themselves up”. You’re bleeding centrist voters fast. But, he’s not invincible. Knock him down some pegs.",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 14336,
+    "fields": {
+        "priority": 0,
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 14296,
+    "fields": {
+        "priority": 0,
+        "description": "Hague, Smith, and Howard are not leaders of the Tories. The centre has now been left open for the taking, Portillo is now honing in on your supposed ballooning of the state in public utilities, contrasting it with a failure to move the country forward on the rights of same-sex couples. According to him, you’re no longer New Labour – you are nothing more than a standard tax-and-spend Labour politician. But you <i>are</i> New Labour, so prove him wrong.",
+        "likelihood": 1
+      }
+    }
+    if(Cred < 5 && OldLab < 3){
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 14321,
+    "fields": {
+        "priority": 0,
+        "description": "Hague, Smith, and Howard are not leaders of the Tories. The centre has now been left open for the taking, Portillo is now honing in on your supposed ballooning of the state in public utilities, contrasting it with a failure to move the country forward on the rights of same-sex couples. According to him, you’re no longer New Labour – you are nothing more than a standard tax-and-spend Labour politician. But you <i>are</i> New Labour, so prove him wrong.",
+        "likelihood": 1
+      }
+    }
+  }
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 14330,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[29] = {
+    "model": "campaign_trail.question",
+    "pk": 14331,
+    "fields": {
+        "priority": 0,
+        "description": "Portillo is not backing down, he’s now shifting his focused scope on your so-called “integrity issues”, he’s calling you out on your stealth tax rises, your turning on social progress and liberalism. He is throwing the kitchen sink. The final stages of the campaign are crucial. How will you keep these ludicrous attacks off of your back?",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Kenneth Clarke
+    if(e.player_answers.includes(14123) || e.player_answers.includes(14129) || e.player_answers.includes(14863) || e.player_answers.includes(14864)){
+    campaignTrail_temp.questions_json[19] = {
+    "model": "campaign_trail.question",
+    "pk": 14145,
+    "fields": {
+        "priority": 0,
+        "description": "Just like in 2001, 4 years prior, you have decided to make your first official speech during Prime Minister’s Questions. Kenneth Clarke has just attacked your government's record, claiming you broke promises on taxes, europe and university top-up fees, saying repeatedly: “Why should anyone believe him again?”. You need to respond, for the sake of the country...",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 13919,
+    "fields": {
+        "priority": 0,
+        "description": "The fall of Iain Duncan Smith has given way for the Europhilic wing of the party to finally, and once again, reassert itself. If only after a fierce and haste contest. Across Kenneth Clarke’s campaign for Number 10, he lambasts your failures to push forth with the European agenda. The public’s sentiment is in favour of him. Polls released on his integrity show he holds a marginal, yet very real, lead over you. You need to bring his numbers down to Earth. The question is, how?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[29] = {
+    "model": "campaign_trail.question",
+    "pk": 13945,
+    "fields": {
+        "priority": 0,
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 13970,
+    "fields": {
+        "priority": 0,
+        "description": "The political centre of the country has rarely been more hotly contested in the marginal seats of Britain, than in this campaign. With your initiative to forge a new future with Europe from the beginning – and its subsequent backfiring – your main opponent has taken every opportunity to expose your diplomatic struggles across the pond and to the continent across the channel. His message is resonating with much of Middle Britain. You need to get them back.",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[32] = {
+    "model": "campaign_trail.question",
+    "pk": 13987,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[33] = {
+    "model": "campaign_trail.question",
+    "pk": 14005,
+    "fields": {
+        "priority": 0,
+        "description": "The closing broadsides are not being any kinder to you. Clarke is going on the record to attack your “deceptive stealth taxes” imposed on the British public, along with other general claims of damaging to your credibility and integrity. He even dares to speak of dramatically higher borrowing than predicted. How are you going to fight back against these blasphemous charges?",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Battered Michael Howard
+    if(e.player_answers.includes(12797)){
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 13663,
+    "fields": {
+        "priority": 0,
+        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 13689,
+    "fields": {
+        "priority": 0,
+        "description": "Much to the chagrin of both yourself, and the Tories, the Liberal Democrats are expected to perform significantly better than in prior elections. If they perform well enough, there is even a possibility that they will contribute to a hung parliament. We can’t afford to bleed our voters. What shall we do?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 13714,
+    "fields": {
+        "priority": 0,
+        "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[29] = {
+    "model": "campaign_trail.question",
+    "pk": 13729,
+    "fields": {
+        "priority": 0,
+        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 13750,
+    "fields": {
+        "priority": 0,
+        "description": "The campaign continues to heave itself along on the cobbled road to the next Parliament. Michael Howard has begun ripping into your stance on immigration, with the issue of Europe now playing front and centre though, he has been able to weave it into his manifesto to further bolster his narrative that you would enable uncontrolled immigration. This is hurting us, how do we ensure this doesn’t snowball into something larger?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[32] = {
+    "model": "campaign_trail.question",
+    "pk": 13776,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
+    campaignTrail_temp.questions_json[33] = {
+    "model": "campaign_trail.question",
+    "pk": 13794,
+    "fields": {
+        "priority": 0,
+        "description": "As the campaign trudges along, the Conservatives have begun to ramp up increasingly personal attacks on the trail. Their charges centre around your alleged misleading of the public over the conduct of the war in the Middle East, and the tax rises in the second-term budgets. You are not going to let this stand.",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Other CYOA Stuff
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[6] = {
+    "model": "campaign_trail.question",
+    "pk": 13553,
+    "fields": {
+        "priority": 0,
+        "description": "You furrow your brow as your eyes glaze and bore into the reports on polling for the upcoming deliberations on a grand initiative. The great European project. Over the next following years, the elite and fellow centrist political class of the continent, will make the case for a piece of legislation to be ratified known as the European Constitution. If all constituent members vote in favour via a series of referendums, then a legally codified, free-trade union of the continent is all but assured.<p></p>Before you though stand two significant obstacles that could sink this: the French, and the Dutch. You only have the influence to target one of them. So, Tony, which one will it be?",
+        "likelihood": 1
+      }
+    }
+  }
+    if((ans == 12542 && ans == 14033) && Cred >= 2){
+    campaignTrail_temp.questions_json[6] = {
+    "model": "campaign_trail.question",
+    "pk": 14929,
+    "fields": {
+        "priority": 0,
+        "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12542 || ans == 13900){
+    campaignTrail_temp.questions_json[6] = {
+    "model": "campaign_trail.question",
+    "pk": 14905,
+    "fields": {
+        "priority": 0,
+        "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12808){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 14181,
+    "fields": {
+        "priority": 0,
+        "description": "The world outside our fair shores, thought to be gentle and peaceful, has been anything but that. Even still, you were elected to govern the United Kingdom – and by God – that is what you are going to do. Your mandate from 2001 still grants you a large majority in parliament, and you intend to use it. The only question is: What will you do with it?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Cred >= 4 || Wins >= 3){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 14456,
+    "fields": {
+        "priority": 0,
+        "description": "The world outside our fair shores, thought to be gentle and peaceful, has been anything but that. Even still, you were elected to govern the United Kingdom – and by God – that is what you are going to do. Your mandate from 2001 still grants you a large majority in parliament, and you intend to use it. The only question is: What will you do with it?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[8] = {
+    "model": "campaign_trail.question",
+    "pk": 13560,
+    "fields": {
+        "priority": 0,
+        "description": "Ever since that fateful day in 2001, the US government – and the agency of the CIA – have been diligent to… attempt to gather evidence for the United States’ plan to invade Iraq. But without your aid, it was a herculean effort to get the public on their side. Now – with the American Congress decisively passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have regardless been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. What comment do you have to make on this matter?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12813 || ans == 12815 || ans == 14900 || ans == 14906 || ans == 14918 || ans == 14924 || ans == 14942 || ans == 14947){
+    campaignTrail_temp.questions_json[8] = {
+    "model": "campaign_trail.question",
+    "pk": 14987,
+    "fields": {
+        "priority": 0,
+        "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. The fateful decision falls to you.<p></p>The weight of an entire world rests upon your shoulders. The only thing stopping British troops from marching into Iraq is an anti-war vote in the House of Commons – it falls to you, whether you wish to shoot it down.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14930){
+    campaignTrail_temp.questions_json[8] = {
+    "model": "campaign_trail.question",
+    "pk": 15002,
+    "fields": {
+        "priority": 0,
+        "description": "Ever since that fateful day in 2001, your government – and the agencies of MI5, MI6, and the CIA – have been diligent to gather and fabricate evidence for the United States’ plan to invade Iraq. Now – with the American Congress overwhelmingly passing the “Joint Resolution To Authorise The Use Of United States Armed Forces Against Iraq” – their ambitions have finally been realised. Soon, rocket flares shall begin to illuminate the Iraqi skies as a culmination of these subterfuges. The fateful decision falls to you.<p></p>The weight of an entire world rests upon your shoulders. The only thing stopping British troops from marching into Iraq is an anti-war vote in the House of Commons – it falls to you, whether you wish to shoot it down.",
+        "likelihood": 1
+      }
+    }
+  }
+    if((e.player_answers.includes(12797) && Cred >= 3) || (Resign <= 1 && Cred >= 5)){
+    campaignTrail_temp.questions_json[9] = {
+    "model": "campaign_trail.question",
+    "pk": 14880,
+    "fields": {
+        "priority": 0,
+        "description": "The residence directly adjacent to yours is scheming – you're sure of it. No. 11's team of PR people and officials are doing everything in their ability to slow you down, to raise up Gordon and undermine <i>your</i> authority. It's a pestering and bedeviling ache in your mind. What could the Chancellor possibly pull next?<p></p>Yet now, he's right next to you. Right in front of your face. His jowls sag as his grumbling and scowls trickle out in a stream of harboured resentment. You need to sort something out with him – and now. Before anything more spills over.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 13554){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 13614,
+    "fields": {
+        "priority": 0,
+        "description": "As you cast off the commitment to support the invasion of Iraq, a new door has been opened up to you in the form of French President Jacques Chirac. The two of you both showing opposition to the Iraq War has made him significantly more receptive to your help with convincing the French electorate to vote in favour of ratifying the Constitution. At this crucial meeting to deliberate strategy, what will you recommend to the “Chameleon Bonaparte”?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 13557){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 13866,
+    "fields": {
+        "priority": 0,
+        "description": "With how many stuffy rooms and overhearing of Dutch phrases you have been put through, it’s tough to see how the Constitution could possibly fail with all of the mainstream parties supporting it. But back the “Yes” vote you must nonetheless. Once all of the heated chatter over how to convince the Dutch people subsides, they turn over to you for your input. Prime Minister Jan Peter Balkenende locks eyes with you. How will you sway and enlighten them, Tony?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12813 || ans == 12815 || ans == 14900 || ans == 14906 || ans == 14918 || ans == 14924 || ans == 14942 || ans == 14947){
+    campaignTrail_temp.questions_json[10] = {
+    "model": "campaign_trail.question",
+    "pk": 13391,
+    "fields": {
+        "priority": 0,
+        "description": "You may have stayed honest, but that doesn’t mean you have the entire populace behind you supporting the invasion. At the session of Prime Minister’s Questions, Ian Duncan Smith finally discovers some fresh timber to kindle a new fire within him. He rails against your government, declaring: “The Prime Minister wants to restore order in Iraq, when he can’t even maintain faith in the British people to support the war in the first place!”. How do you respond?",
+        "likelihood": 1
+      }
+    }
+  }
+    if((ans == 12808) && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 14371,
+    "fields": {
+        "priority": 0,
+        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(12797) && Cred <= 4){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 14122,
+    "fields": {
+        "priority": 0,
+        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – after a grueling and bitter dogfight – resulted in the razor-thin victory of Kenneth Clarke. Your team needs to know how to approach this darling of the Europhiles.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(12797)){
+    campaignTrail_temp.questions_json[11] = {
+    "model": "campaign_trail.question",
+    "pk": 14100,
+    "fields": {
+        "priority": 0,
+        "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+        "likelihood": 1
+      }
+    }
+  } 
+    if(e.player_answers.includes(12808)){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 14208,
+    "fields": {
+        "priority": 0,
+        "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(12808) && e.player_answers.includes(12824)){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 14237,
+    "fields": {
+        "priority": 0,
+        "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Wins >= 5){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 14734,
+    "fields": {
+        "priority": 0,
+        "description": "In 1998, your government passed up-front fees for students every year that they studied. This action had in essence done away with the consensus of education as a free right for the upcoming workforce. With universities breathing down your neck to keep their budgets in balance, you are now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Your advisors press that given the right play, it will pass. Nevertheless, it is deeply controversial and could very well risk failing the vote on the second reading. How will you ensure that it passes?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Wins <= 2){
+    campaignTrail_temp.questions_json[12] = {
+    "model": "campaign_trail.question",
+    "pk": 14709,
+    "fields": {
+        "priority": 0,
+        "description": "In 1998, your government passed up-front fees for students every year that they studied. This action had in essence done away with the consensus of education as a free right for the upcoming workforce. With universities breathing down your neck to keep their budgets in balance, you are now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Your advisors press that given the right play, it will pass. Nevertheless, it is deeply controversial and could very well risk failing the vote on the second reading. How will you ensure that it passes?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(12797)){
+    if(e.player_answers.includes(13554)){
+    if(e.player_answers.includes(13619) && Wins >= 4){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 13860,
+    "fields": {
+        "priority": 0,
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Oui’ l'a emporté. C'est une grande victoire pour Chirac et Blair ”...<p></p>Your eyes light up at the glassy television screen. Eagerly calling up Alastair, you notify him of the good news. You know now is the time to write up a statement. The initiative is in your court.",
+        "likelihood": 1
+      }
+    }
+  }
+    else{
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 13657,
+    "fields": {
+        "priority": 0,
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for France are in, with the Dutch very soon to follow. Watching the ballots trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been presumptuously shot down. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. Surely this could be? No. No it can’t.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
+    if(e.player_answers.includes(13557)){
+    if(e.player_answers.includes(13873) && Wins >= 4){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 13894,
+    "fields": {
+        "priority": 0,
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+        "likelihood": 1
+      }
+    }
+  }
+    else{
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 13888,
+    "fields": {
+        "priority": 0,
+        "description": "The backdoor strategy meetings. The countless and agonising deliberations on decisions. All of it, it has come to this. The referendum results for the Netherlands will be in, but first we must see how the French have written their fate through the ballot. Watching the votes trickle in and get counted – at God-knows what time – the announcers read out the results, your lips tightly pursed together...<p></p>“…Nous pouvons maintenant confirmer que le ‘Non’ l'a emporté, et de manière décisive”...<p></p>…Your dream of a unanimous vote has been smote. The Dutch “No” campaign is receiving a significant credibility boost in their own campaign’s final days due to this. Your mind is left in the dust, but sulking should only be ephemeral. The Dutch are still yet to cast away a stable future...",
+        "likelihood": 1
+      }
+    }
+  }
+ }
 }
+    if(e.player_answers.includes(12824) && Cred <= 1){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 14281,
+    "fields": {
+        "priority": 0,
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12813 || ans == 12815){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 13494,
+    "fields": {
+        "priority": 0,
+        "description": "The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(12825)){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 13410,
+    "fields": {
+        "priority": 0,
+        "description": "The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(14201)){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 15037,
+    "fields": {
+        "priority": 0,
+        "description": "Thinking about your moves to bring Britain forward on equal rights brings nothing but painful stings and red-hot tempers, though you do well to keep it covered under your trademark expression. Today, you will have to reckon with it once again. After your government's failure to pass the Equal Marriage Bill in tatters and rags, you went ahead and sent through a watered down version of it. The Civil Partnerships Act, rolled through with an uncomfortably close 356-119 vote in favour given your majority. But now, the real fight begins. Sensing your falling goodwill and political capital, socially conservative Tory MP's headed by Edward Leigh have tabled forward a “wrecking amendment” seeking to add not just LGBT couples, but siblings to the provisions as well. They're not the only ones, Labour backbenchers too have approached you – with demands.",
+        "likelihood": 1
+      }
+    }
+    if(ans == 14209 || ans == 14238){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 15060,
+    "fields": {
+        "priority": 0,
+        "description": "Thinking about your moves to bring Britain forward on equal rights brings nothing but painful stings and red-hot tempers, though you do well to keep it covered under your trademark expression. Today, you will have to reckon with it once again. After your government's failure to pass the Equal Marriage Bill in tatters and rags, you went ahead and sent through a watered down version of it. The Civil Partnerships Act, rolled through with an uncomfortably close 356-119 vote in favour given your majority. But now, the real fight begins. Sensing your falling goodwill and political capital, socially conservative Tory MP's headed by Edward Leigh have tabled forward a “wrecking amendment” seeking to add not just LGBT couples, but siblings to the provisions as well. They're not the only ones, Labour backbenchers too have approached you – with demands.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
+    if(Wins => 2){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 15018,
+    "fields": {
+        "priority": 0,
+        "description": "Social reform has been a major initiative of your premiership. Your government has pushed forward the monumental Civil Partnerships Act with a sound 426-49 vote in favour. However, a potential Tory wrench in the form of MP Edward Leigh is pushing an amendment to include siblings in the provisions. Whilst the proposal is already being ridiculed as the “wrecking amendment” by many but the most socially conservative MPs, it could undermine the reform you are trying to get through. Will you push, with effort, to shoot this amendment proposal down?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Cred <= 5){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 14768,
+    "fields": {
+        "priority": 0,
+        "description": "With the grilling of Prime Minister’s Questions at last over, you now must announce the election outside the famous large black door of No. 10. All of the cameras and journalists are locked on your face, ready to broadcast your speech. What will you centre your speech around, given that this will be the first shot of the campaign?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Resign == 0 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 14698,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Resign == 0){
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 14691,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Negative >= 5){
+    campaignTrail_temp.questions_json[33] = {
+    "model": "campaign_trail.question",
+    "pk": 13427,
+    "fields": {
+        "priority": 0,
+        "description": "From the day that you came into office, you pledged to the British people that you would not get in the mud and slander your opponents. This campaign though, you have — in the eyes of the public — thrown that right out of the window and into the political fire. With the unusually personal vitriol of this year’s election season being lobbed around by both sides, the Liberal Democrats have seen unprecedented rises in the polls, as your personal favourability sags alongside the foreboding polarisation. What will you do to ensure this doesn’t mean your defeat – calamity even more so – tomorrow evening?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(12808)){
+    if(OldLab >= 3){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 13443,
+    "fields": {
+        "priority": 0,
+        "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(OldLab <= 2){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 13458,
+    "fields": {
+        "priority": 0,
+        "description": "In your 2001 Party manifesto, your campaign promised to not raise any taxes on the British public. However, since then, your government has pushed ahead to force more radical changes to the state. From raising the contributions to National Insurance and VAT – along with council tax – to limiting the private sector in rail, energy, and more. The Conservatives have not only taken it upon themselves to attack your record in a recent advertisement, but have in their party manifesto, tacked towards the centre in an attempt to pick up disaffected centrists who are feeling antsy and may jump ship. How will you go about bringing this crucial bloc back into the fold?",
+        "likelihood": 1
+      }
+    }
+  }
+ }
+    if(e.player_answers.includes(12803) || e.player_answers.includes(13904)){
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 14960,
+    "fields": {
+        "priority": 0,
+        "description": "Your 2001 Party manifesto had it written that under this parliamentary term, no new tax rises would emerge under the government's numerous budgets. With the manner that the Chancellor – at your behest – has issued out these taxes, a public backlash rarely seen to the budgetary policy of New Labour has been witnessed by all. The profiteers of the butt-hurt wallets? The Conservatives of course with the Liberal Democrats worryingly close behind. In advertisement after advertisement, they flash their slogan: “Are you thinking what we’re thinking?”. Milburn presses you for a response on how to best combat this.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12819 || ans == 13418){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 12901,
+    "fields": {
+        "priority": 0,
+        "description": "Yet another problem with the Liberal Democrats. Not only are they performing better in their own right than in previous elections, but they are sucking out a good chunk of Labour voters due to your troubling decisions in Iraq. We need to do something to keep them with us, but what?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12820 || ans == 13420){
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 13596,
+    "fields": {
+        "priority": 0,
+        "description": "Continuing with the subject of the Liberal Democrats, your adamant support of the United States’ geopolitical thrust towards Baghdad has led to some core Labour rank-and-file defecting into the arms of Charles Kennedy’s party. One positive silver lining is that the electoral exodus is not as large as was originally suspected, likely as a result of your reluctance to deploy troops as part of the invasion. How will you approach this development?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14034){
+    campaignTrail_temp.questions_json[14] = {
+    "model": "campaign_trail.question",
+    "pk": 14385,
+    "fields": {
+        "priority": 0,
+        "description": "Since your shooting down of the Anti-terrorism Bill, soon after the black swan perched her wings over New York, Straw and Blunkett have been badgering you to push at least some legislation through on the matter. According to them and scattered issue polls, the public are becoming suspicious of your lack of action on the matter. What move will you make on the security of the country?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14034){
+    campaignTrail_temp.questions_json[30] = {
+    "model": "campaign_trail.question",
+    "pk": 14840,
+    "fields": {
+        "priority": 0,
+        "description": "Crime is – much to your annoyance – becoming a salient talking point among the political class. After you shot down the original draft of the Anti-Terror Bill, the Conservatives have lashed out against you. They proclaim you to be surrendering ground to criminals and even terrorists. Although they're not pulling in a new coalition with this move, the Tory base is being energised more and more. Is there anything you'd like to do to swim against the wave?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12803 || ans == 13904){
+    campaignTrail_temp.questions_json[34] = {
+    "model": "campaign_trail.question",
+    "pk": 14569,
+    "fields": {
+        "priority": 0,
+        "description": "During the BBC Question Time, you knew from the moment you sat in the leather chair that something was off. The members in the audience, universally cognisant of their wallets, were out for you as your face felt hotter under the studio lights. Finally, one daring man speaks up “what new stealth taxes you plan to implement next?”. Hearty laughs ring out across the room, with yourself feigning and joining in. How will you shut this tiring line down?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 14290){
+    campaignTrail_temp.questions_json[34] = {
+    "model": "campaign_trail.question",
+    "pk": 14595,
+    "fields": {
+        "priority": 0,
+        "description": "During the BBC Question Time, nobody could go a nanosecond without whispering on the war abroad. What of the soldiers who died for nothing? What <i>really</i> happened to Dr Kelly? Is a war criminal leading the Labour Party? The studio lights are white-hot, your hands are writhing and clammy to the touch of your trousers. It all culminates in a young man – fist clenched – declaring “when you presented your evidence to the House of Commons, you said it was authoritative and full-evidenced. That is a lie, you lied to this country and that's why we can't support you at the following election”. The cheering is a tremor throughout the studio hall, and you for one will not let it careen your polling.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(EUCnstn == 1){
+    campaignTrail_temp.questions_json[35] = {
+    "model": "campaign_trail.question",
+    "pk": 14679,
+    "fields": {
+        "priority": 0,
+        "description": "You're sitting alone in your office in No. 10. The gentle rustling of papers and the clicking of pens does little to break the deafening silence, but within your mind, a great tectonic eventuality troubles you.<p></p>When John Major joined the ERM – to near universal acclamation – the Pound Sterling's troubles forced an unmagnanimous crash out of the mechanism. When Thatcher pedalled her Euroskepticism, it fueled the rise of a populist faction yet to bear its greatest dream: a withdrawal from Europe outright. Everytime the grand project truly got under way, it stalled, backtracked, became little more than wasted potential. But not anymore. Within your hand rests the opportunity to bring the continent together in a new order. The only question, is how.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[35] = {
+    "model": "campaign_trail.question",
+    "pk": 13820,
+    "fields": {
+        "priority": 0,
+        "description": "It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797 && ans == 13861){
+    campaignTrail_temp.questions_json[35] = {
+    "model": "campaign_trail.question",
+    "pk": 13839,
+    "fields": {
+        "priority": 0,
+        "description": "It’s nearly over, this election season. Now, it is finally time to hammer home your final message. What will you say to convince the voters to vote for you this Spring?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(OldLab >= 5){
+    campaignTrail_temp.questions_json[36] = {
+    "model": "campaign_trail.question",
+    "pk": 14337,
+    "fields": {
+        "priority": 0,
+        "description": "The walls around the Thatcherite consensus have come crashing down.<p></p>Sitting in your office, you longingly gaze out of the window that received the same stares as Wilson, Callaghan, and Attlee before you. When you first came into this job, you felt a conviction to shift to the centre like no other Labour leader before you. But, time changes people more than they realise, it appears. As Deputy Prime Minister John Prescott – and Chancellor Brown – sit opposite you, many ideas are swirling like a vortex in your mind. But there’s only one which you can get out first.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(OldLab <= 0 && Cred >= 8){
+    campaignTrail_temp.questions_json[36] = {
+    "model": "campaign_trail.question",
+    "pk": 14337,
+    "fields": {
+        "priority": 0,
+        "description": "The realignment of British politics around Thatcher and her government has left a deep mark on public life, and your political conscience.<p></p>Many of your backbenchers holler at you in parliament, but that does not matter now, not to you. Before you, sits Foreign Secretary Jack Straw – Blunkett would be here too, but an affair got him kicked out from your cabinet. Milburn too, quietly waits in the wings. He speaks of the importance of securing our citizens, and protecting democracy at home, and abroad. His glare bores into you. What will you say to the man?",
+        "likelihood": 1
+      }
+    }
+  }
+
+// Local + European Elections
+    if(ans == 12797 || (ans == 12798 && Cred >= 5)){
+    campaignTrail_temp.questions_json[15] = {
+    "model": "campaign_trail.question",
+    "pk": 13621,
+    "fields": {
+        "priority": 0,
+        "description": "Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. But this time, this time it’s special. The results of the local elections are in. What is anticipated to be a major blow for Labour, turns out to be a series of pricks on the Labour backside. This is a somewhat worrisome preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+        "likelihood": 1
+      }
+    }
+  }
+    if((Cred <= 2 && Wins >= 5) || (ans == 12797 && Wins <= 3)){
+    campaignTrail_temp.questions_json[15] = {
+    "model": "campaign_trail.question",
+    "pk": 15037,
+    "fields": {
+        "priority": 0,
+        "description": "Another long day, another plate of dinner finally cleaned off. You receive yet another phone call – was it the 25th of the day? You’re barely sure yourself. Something feels off about this particular phone call though. You finally grip the receiver, and await the news. The results of the local elections have just come in, and they have not put your office's mood in an ideal place. And yet, they have simultaneously surpassed nigh all expectations from the folks at Fleet Street. It was a morose night for Labour. This is a concerning preview for the general election, whenever you decide to call it. How do you react to this series of events?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12797){
+    campaignTrail_temp.questions_json[16] = {
+    "model": "campaign_trail.question",
+    "pk": 13647,
+    "fields": {
+        "priority": 0,
+        "description": "Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
+        "likelihood": 1
+      }
+    }
+  }
+}
+
 
 campaignTrail_temp.questions_json = [
     {
