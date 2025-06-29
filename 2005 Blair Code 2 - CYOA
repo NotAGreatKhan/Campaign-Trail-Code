@@ -145,6 +145,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Michael Portillo";
     }
+    if(ans == 12824 || ans == 12825){
+        campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/yzh02lW.jpg";
+    }
 
     // CREDIBILITY
     // Question 5 – 2002 Budget
@@ -1154,6 +1157,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(Resign <= 0 && Cred >= 6){
+    campaignTrail_temp.questions_json[19] = {
+    "model": "campaign_trail.question",
+    "pk": 15061,
+    "fields": {
+        "priority": 0,
+        "description": "Manoeuvring the absolute minefield of your government would make a stroll through Bosnia look rather pleasant. The deal that you made with Gordon Brown all those years ago has been turning its ugly head since 2001. Stories ranging from cat-fights in office rooms to full blown shouting matches, have plagued news headlines and article hitpieces. Each one another thorn in the backside of your government's once harmonious chugging. In the turbulent Summers of 2002, '3, and '4, your mind clinged to the edge of despair – at some points it was overwhelming, crushing even. All the Chancellor did often was just pile on, nagging you to no end about a timetable to leave. You're not going to let that happen anymore. With your position within the Labour parliamentary party strengthened since then, Milburn hints at the possibility of getting him out of your way. For good.",
+        "likelihood": 1
+      }
+    }
+  }
     if(Cred <= 5){
     campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
@@ -1165,7 +1179,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 0 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
+    if(Wins >= 6 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14698,
@@ -1176,7 +1190,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 0){
+    if(Wins >= 6){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14691,
