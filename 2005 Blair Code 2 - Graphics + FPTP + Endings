@@ -1538,28 +1538,28 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.innerHTML = 'The <b>public’s trust</b> in your government heading into the election is ' + CScore + '.';
+    a.innerHTML = 'The <u><b>public’s trust</b></u> in your government heading into the election is ' + CScore + '.';
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement("p");
-    b.innerHTML = 'Your <b>standing</b> as Prime Minister is ' + RScore + '.';
+    b.innerHTML = 'Your <u><b>standing</b></u> as Prime Minister is ' + RScore + '.';
     // b.style.flexGrow = "0.1";
     b.style.color = "black";
     b.style.margin = "8px";
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
-    c.innerHTML = 'Since <b>2001</b>, your government has secured ' + WScore + '.';
+    c.innerHTML = '<u>Since <b>2001</b></u>, your government has secured ' + WScore + '.';
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
     hqDiv.appendChild(c);
 
     let d = document.createElement("p");
-    d.innerHTML = 'Your willingness to accept <b>Old</b> Labour, instead of <b>New</b>, is ' + OLScore + '.';
+    d.innerHTML = 'Your willingness to accept <u><b>Old</b> Labour, instead of <b>New</b></u>, is ' + OLScore + '.';
     // d.style.flexGrow = "0.1";
     d.style.color = "black";
     d.style.margin = "8px";
