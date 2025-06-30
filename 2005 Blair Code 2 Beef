@@ -155,6 +155,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Michael Portillo";
     }
+    if(ans == 12824 || ans == 12825){
+        campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/yzh02lW.jpg";
+    }
 
     // CREDIBILITY
     // Question 5 – 2002 Budget
@@ -1164,6 +1167,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(Resign <= 0 && Cred >= 6){
+    campaignTrail_temp.questions_json[19] = {
+    "model": "campaign_trail.question",
+    "pk": 15061,
+    "fields": {
+        "priority": 0,
+        "description": "Manoeuvring the absolute minefield of your government would make a stroll through Bosnia look rather pleasant. The deal that you made with Gordon has been turning its ugly head since 2001. Stories ranging from cat-fights in office rooms to full blown shouting matches, have plagued news headlines and article hitpieces. Each one another thorn in the backside of your government's once harmonious chugging. In the turbulent Summers of 2002, '3, and '4, your mind clinged to the edge of despair – at some points it was overwhelming, crushing even. All the Chancellor did often was just pile on, nagging you to no end about a timetable to leave. You're not going to let that happen anymore. With your position within the Labour parliamentary party strengthened since then, Milburn hints at the possibility of getting him out of your way. For good.",
+        "likelihood": 1
+      }
+    }
+  }
     if(Cred <= 5){
     campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
@@ -1175,7 +1189,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 0 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
+    if(Wins >= 6 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14698,
@@ -1186,7 +1200,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Resign == 0){
+    if(Wins >= 6){
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14691,
@@ -1400,6 +1414,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
 }
+
 
 campaignTrail_temp.questions_json = [
     {
@@ -2416,6 +2431,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Only 3 days after the local elections results, the European elections are once again a disappointment for Labour. Instead this time, the Conservatives didn’t make gains at all, and all of the profit went to UKIP – led by Roger Knapman – though it is not exactly a lion’s share. This is a formal representation, a real manifestation, of the rise of Euroscepticism. This is not great for your European initiative.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15061,
+        "fields": {
+            "priority": 0,
+            "description": "Manoeuvring the absolute minefield of your government would make a stroll through Bosnia look rather pleasant. The deal that you made with Gordon has been turning its ugly head since 2001. Stories ranging from cat-fights in office rooms to full blown shouting matches, have plagued news headlines and article hitpieces. Each one another thorn in the backside of your government's once harmonious chugging. In the turbulent Summers of 2002, '3, and '4, your mind clinged to the edge of despair – at some points it was overwhelming, crushing even. All the Chancellor did often was just pile on, nagging you to no end about a timetable to leave. You're not going to let that happen anymore. With your position within the Labour parliamentary party strengthened since then, Milburn hints at the possibility of getting him out of your way. For good.",
             "likelihood": 1
         }
     }
@@ -5204,6 +5228,38 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 15037,
             "description": "You know, I thought we were going to do worse than how we actually did. This is a good sign, and it means that our programme – our vision – is working. I'll talk to those who are still unsure, make sure they know that we do not have to fear retreat now."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15062,
+        "fields": {
+            "question": 15061,
+            "description": "I know it didn't happen when I said this last time around. But, we will do it again, and we can do it now. Get him into No. 10, and we'll settle this. We can salvage this. I- I know it. We just – look we – we just need to give it a chance. And this can all be resolved."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15064,
+        "fields": {
+            "question": 15061,
+            "description": "He has allowed far too much power at Downing Street to orbit around him, we've got to start tightening our grip on his staff and whatever the hell they're doing around here. It's clogging things up. I know I could've done this before, but it ends, and it ends now."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15066,
+        "fields": {
+            "question": 15061,
+            "description": "It's my ship, and it's about time I make sure everyone knows. Whatever policy I want to push through, it is going to happen. No more bickering and infighting, we- we have to get on top of this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15068,
+        "fields": {
+            "question": 15061,
+            "description": "Look, he has been difficult certainly at times. And, well he has been very – too – influential in the government. But I can't just shaft him now, it would never have worked in 2001, and it won't work now. He would make too much of a scene in a smaller role – and God knows what he would do on the backbenches. I'll let him be. For now."
         }
     }
 ]
@@ -15283,6 +15339,76 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12587,
             "global_multiplier": 0.0025
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15070,
+        "fields": {
+            "answer": 15062,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.0045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15073,
+        "fields": {
+            "answer": 15064,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15076,
+        "fields": {
+            "answer": 15066,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15079,
+        "fields": {
+            "answer": 15068,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15082,
+        "fields": {
+            "answer": 15062,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15083,
+        "fields": {
+            "answer": 15064,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15084,
+        "fields": {
+            "answer": 15066,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
     }
 ]
 
@@ -19406,6 +19532,86 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": -0.65,
             "issue_importance": 3
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15071,
+        "fields": {
+            "answer": 15062,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15072,
+        "fields": {
+            "answer": 15062,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15074,
+        "fields": {
+            "answer": 15064,
+            "issue": "27",
+            "issue_score": 0.25,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15075,
+        "fields": {
+            "answer": 15064,
+            "issue": 28,
+            "issue_score": 0.33,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15077,
+        "fields": {
+            "answer": 15066,
+            "issue": "27",
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15078,
+        "fields": {
+            "answer": 15066,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15080,
+        "fields": {
+            "answer": 15068,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15081,
+        "fields": {
+            "answer": 15068,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
     }
 ]
 
@@ -23063,6 +23269,42 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "Those nightly sessions with the journalists, MPs and people alike are still as draining as ever. Your resolve never wavers, even still. You still have a mandate, and by God, you are going to use it."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15063,
+        "fields": {
+            "answer": 15062,
+            "candidate": 12543,
+            "answer_feedback": "Once again psyching yourself up like you did back in 2001, you call him for a meeting to finally settle it. The tension in the air was palpable. Initially, you both held yourselves together with enough rigidity to get through a few standard items: foreign policy, constitutional reform, and even social care. But there is one battleground where he refuses to retreat – your resignation. He continues to verbally batter you on the point, doing his damned hardest to grind you down to a pulp. You hold firm, refusing to provide a concession on leaving. Emotions ran high, but the fortress remained standing. Seeing his resentful expression does pain you though, it does pain you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15065,
+        "fields": {
+            "answer": 15064,
+            "candidate": 12543,
+            "answer_feedback": "The two Ed's, Miliband and Balls, stand firm in standing behind Brown. The “Brownite” faction has grown in volume far past comfortability under your watch, and boy are they angry. Ed Balls in particular, is up in arms with Milburn and the rest of your Blairite faction. Before you know it, an unknown X amount of whistleblowers leak the chess power plays to savvy journalists – eager to get their next scoop in this ageing saga. All it does is produce yet another headache for you to deal with. Right before the upcoming election announcement too..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15067,
+        "fields": {
+            "answer": 15066,
+            "candidate": 12543,
+            "answer_feedback": "With your standing with the electorate stronger than those dark days, your newfound blasé is not met with the same grit and grinding of gears it would have seen before. On the other hand, of course, resistance is still encountered. Especially from those most joined-at-the-hip to Gordon. Some in the cabinet still grumble and grouse, yet their voices are smaller and more timid now. The government may just finally, truly, be yours."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15069,
+        "fields": {
+            "answer": 15068,
+            "candidate": 12543,
+            "answer_feedback": "You long for the days in the '80's and '90's. When you both shared an office. When you both were true friends – best friends, even. Everytime you got into a fight with him, it ached you more than you could ever admit to your work colleagues.<p></p>Someday, you wish for relief from the pain with Gordon. But – well – you're both politicians, and that fact alone, may stop that dream forever.<p></p>...<p></p>It hurts, but... you'll push on..."
+        }
     }
 ]
 
@@ -24663,28 +24905,28 @@ function openHeadquarter() {
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
     let a = document.createElement("p");
-    a.innerHTML = 'The <b>public perception</b> of your government heading into the election is ' + CScore + '.';
+    a.innerHTML = 'The <u><b>public’s trust</b></u> in your government heading into the election is ' + CScore + '.';
     // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
     a.style.color = "black"; // Can be used to change the color of the text
     a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement("p");
-    b.innerHTML = 'Your <b>standing</b> as Prime Minister is ' + RScore + '.';
+    b.innerHTML = 'Your <u><b>standing</b></u> as Prime Minister is ' + RScore + '.';
     // b.style.flexGrow = "0.1";
     b.style.color = "black";
     b.style.margin = "8px";
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
-    c.innerHTML = 'Since <b>2001</b>, your government has secured ' + WScore + '.';
+    c.innerHTML = '<u>Since <b>2001</b></u>, your government has secured ' + WScore + '.';
     // c.style.flexGrow = "0.1";
     c.style.color = "black";
     c.style.margin = "8px";
     hqDiv.appendChild(c);
 
     let d = document.createElement("p");
-    d.innerHTML = 'Your willingness to accept <b>Old</b> Labour, instead of <b>New</b>, is ' + OLScore + '.';
+    d.innerHTML = 'Your willingness to accept <u><b>Old</b> Labour, instead of <b>New</b></u>, is ' + OLScore + '.';
     // d.style.flexGrow = "0.1";
     d.style.color = "black";
     d.style.margin = "8px";
