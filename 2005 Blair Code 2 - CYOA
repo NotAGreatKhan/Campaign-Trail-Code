@@ -48,7 +48,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 13508){
       Brown = true;
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 26;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 27;
         document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
         vpTable["The Labour Party"] = "J. Gordon Brown";
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
@@ -73,7 +73,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(e.player_answers.includes(13511)){
       e.VpText = "Please select your party leader:"
       window.setTimeout(e.candidateSwitcher, 20)
-    campaignTrail_temp.questions_json[21] = {
+    campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 14399,
     "fields": {
@@ -82,7 +82,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
        }
      }
-    campaignTrail_temp.questions_json[22] = {
+    campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14400,
     "fields": {
@@ -92,7 +92,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
           }
         }
     if(e.player_answers.includes(14430)){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14623,
     "fields": {
@@ -102,7 +102,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
           }
         }
       }
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14601,
     "fields": {
@@ -111,7 +111,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
           }
         }
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 14645,
     "fields": {
@@ -120,7 +120,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
           }
         }
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 14401,
     "fields": {
@@ -601,7 +601,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 // Resignation Questions
     if(Resign >= 5){
     if(Resign >= 6){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 14952,
     "fields": {
@@ -612,7 +612,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Wins >= 4){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 14794,
     "fields": {
@@ -623,7 +623,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     else{
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 13499,
     "fields": {
@@ -635,7 +635,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
     if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798 || ans == 14953){
-    campaignTrail_temp.questions_json[19] = {
+    campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 13500,
     "fields": {
@@ -648,7 +648,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Michael Portillo
     if(e.player_answers.includes(14372) || e.player_answers.includes(14378)){
-    campaignTrail_temp.questions_json[21] = {
+    campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 14294,
     "fields": {
@@ -657,7 +657,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 14336,
     "fields": {
@@ -666,7 +666,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 14296,
     "fields": {
@@ -676,7 +676,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
     if(Cred < 5 && OldLab < 3){
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 14321,
     "fields": {
@@ -686,7 +686,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[29] = {
     "model": "campaign_trail.question",
     "pk": 14330,
     "fields": {
@@ -695,7 +695,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[29] = {
+    campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 14331,
     "fields": {
@@ -708,7 +708,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Kenneth Clarke
     if(e.player_answers.includes(14123) || e.player_answers.includes(14129) || e.player_answers.includes(14863) || e.player_answers.includes(14864)){
-    campaignTrail_temp.questions_json[19] = {
+    campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 14145,
     "fields": {
@@ -717,7 +717,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 13919,
     "fields": {
@@ -726,7 +726,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[29] = {
+    campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13945,
     "fields": {
@@ -735,7 +735,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[31] = {
+    campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 13970,
     "fields": {
@@ -744,7 +744,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[32] = {
+    campaignTrail_temp.questions_json[33] = {
     "model": "campaign_trail.question",
     "pk": 13987,
     "fields": {
@@ -753,7 +753,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[33] = {
+    campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
     "pk": 14005,
     "fields": {
@@ -766,7 +766,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Battered Michael Howard
     if(e.player_answers.includes(12797)){
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 13663,
     "fields": {
@@ -775,7 +775,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[27] = {
+    campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13689,
     "fields": {
@@ -784,7 +784,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[29] = {
     "model": "campaign_trail.question",
     "pk": 13714,
     "fields": {
@@ -793,7 +793,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[29] = {
+    campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13729,
     "fields": {
@@ -802,7 +802,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[31] = {
+    campaignTrail_temp.questions_json[32] = {
     "model": "campaign_trail.question",
     "pk": 13750,
     "fields": {
@@ -811,7 +811,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[32] = {
+    campaignTrail_temp.questions_json[33] = {
     "model": "campaign_trail.question",
     "pk": 13776,
     "fields": {
@@ -820,7 +820,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[33] = {
+    campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
     "pk": 13794,
     "fields": {
@@ -866,7 +866,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12808){
-    campaignTrail_temp.questions_json[7] = {
+    campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
     "pk": 14181,
     "fields": {
@@ -877,7 +877,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Cred >= 4 || Wins >= 3){
-    campaignTrail_temp.questions_json[7] = {
+    campaignTrail_temp.questions_json[8] = {
     "model": "campaign_trail.question",
     "pk": 14456,
     "fields": {
@@ -888,7 +888,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[8] = {
+    campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
     "pk": 13560,
     "fields": {
@@ -899,7 +899,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12813 || ans == 12815 || ans == 14900 || ans == 14906 || ans == 14918 || ans == 14924 || ans == 14942 || ans == 14947){
-    campaignTrail_temp.questions_json[8] = {
+    campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
     "pk": 14987,
     "fields": {
@@ -910,7 +910,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14930){
-    campaignTrail_temp.questions_json[8] = {
+    campaignTrail_temp.questions_json[9] = {
     "model": "campaign_trail.question",
     "pk": 15002,
     "fields": {
@@ -921,7 +921,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if((e.player_answers.includes(12797) && Cred >= 3) || (Resign <= 1 && Cred >= 5)){
-    campaignTrail_temp.questions_json[9] = {
+    campaignTrail_temp.questions_json[10] = {
     "model": "campaign_trail.question",
     "pk": 14880,
     "fields": {
@@ -932,7 +932,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 13554){
-    campaignTrail_temp.questions_json[10] = {
+    campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 13614,
     "fields": {
@@ -943,7 +943,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 13557){
-    campaignTrail_temp.questions_json[10] = {
+    campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 13866,
     "fields": {
@@ -954,7 +954,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12813 || ans == 12815 || ans == 14900 || ans == 14906 || ans == 14918 || ans == 14924 || ans == 14942 || ans == 14947){
-    campaignTrail_temp.questions_json[10] = {
+    campaignTrail_temp.questions_json[11] = {
     "model": "campaign_trail.question",
     "pk": 13391,
     "fields": {
@@ -965,7 +965,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if((ans == 12808) && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14371,
     "fields": {
@@ -976,7 +976,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(12797) && Cred <= 4){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14122,
     "fields": {
@@ -987,7 +987,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(12797)){
-    campaignTrail_temp.questions_json[11] = {
+    campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14100,
     "fields": {
@@ -998,7 +998,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   } 
     if(e.player_answers.includes(12808)){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14208,
     "fields": {
@@ -1009,7 +1009,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(12808) && e.player_answers.includes(12824)){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14237,
     "fields": {
@@ -1020,7 +1020,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Wins >= 5){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14734,
     "fields": {
@@ -1031,7 +1031,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Wins <= 2){
-    campaignTrail_temp.questions_json[12] = {
+    campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14709,
     "fields": {
@@ -1044,7 +1044,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(e.player_answers.includes(12797)){
     if(e.player_answers.includes(13554)){
     if(e.player_answers.includes(13619) && Wins >= 4){
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 13860,
     "fields": {
@@ -1055,7 +1055,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     else{
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 13657,
     "fields": {
@@ -1068,7 +1068,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
  }
     if(e.player_answers.includes(13557)){
     if(e.player_answers.includes(13873) && Wins >= 4){
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 13894,
     "fields": {
@@ -1079,7 +1079,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     else{
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 13888,
     "fields": {
@@ -1092,7 +1092,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
  }
 }
     if(e.player_answers.includes(12824) && Cred <= 1){
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 14281,
     "fields": {
@@ -1103,7 +1103,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12813 || ans == 12815){
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 13494,
     "fields": {
@@ -1114,7 +1114,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(12825)){
-    campaignTrail_temp.questions_json[13] = {
+    campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 13410,
     "fields": {
@@ -1125,7 +1125,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(14201)){
-    campaignTrail_temp.questions_json[17] = {
+    campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 15037,
     "fields": {
@@ -1135,7 +1135,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
     if(ans == 14209 || ans == 14238){
-    campaignTrail_temp.questions_json[17] = {
+    campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 15060,
     "fields": {
@@ -1147,7 +1147,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
     if(Wins => 2){
-    campaignTrail_temp.questions_json[17] = {
+    campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 15018,
     "fields": {
@@ -1158,7 +1158,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Resign <= 0 && Cred >= 6){
-    campaignTrail_temp.questions_json[19] = {
+    campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 15061,
     "fields": {
@@ -1169,7 +1169,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Cred <= 5){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[21] = {
     "model": "campaign_trail.question",
     "pk": 14768,
     "fields": {
@@ -1180,7 +1180,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Wins >= 6 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 14698,
     "fields": {
@@ -1191,7 +1191,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Wins >= 6){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 14691,
     "fields": {
@@ -1202,7 +1202,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Negative >= 5){
-    campaignTrail_temp.questions_json[33] = {
+    campaignTrail_temp.questions_json[34] = {
     "model": "campaign_trail.question",
     "pk": 13427,
     "fields": {
@@ -1214,7 +1214,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     if(e.player_answers.includes(12808)){
     if(OldLab >= 3){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 13443,
     "fields": {
@@ -1225,7 +1225,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(OldLab <= 2){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 13458,
     "fields": {
@@ -1237,7 +1237,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
     if(e.player_answers.includes(12803) || e.player_answers.includes(13904)){
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14960,
     "fields": {
@@ -1248,7 +1248,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12819 || ans == 13418){
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[29] = {
     "model": "campaign_trail.question",
     "pk": 12901,
     "fields": {
@@ -1259,7 +1259,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12820 || ans == 13420){
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[29] = {
     "model": "campaign_trail.question",
     "pk": 13596,
     "fields": {
@@ -1270,7 +1270,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14034){
-    campaignTrail_temp.questions_json[14] = {
+    campaignTrail_temp.questions_json[15] = {
     "model": "campaign_trail.question",
     "pk": 14385,
     "fields": {
@@ -1281,7 +1281,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14034){
-    campaignTrail_temp.questions_json[30] = {
+    campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 14840,
     "fields": {
@@ -1292,7 +1292,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12803 || ans == 13904){
-    campaignTrail_temp.questions_json[34] = {
+    campaignTrail_temp.questions_json[35] = {
     "model": "campaign_trail.question",
     "pk": 14569,
     "fields": {
@@ -1303,7 +1303,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14290){
-    campaignTrail_temp.questions_json[34] = {
+    campaignTrail_temp.questions_json[35] = {
     "model": "campaign_trail.question",
     "pk": 14595,
     "fields": {
@@ -1314,7 +1314,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(EUCnstn == 1){
-    campaignTrail_temp.questions_json[35] = {
+    campaignTrail_temp.questions_json[36] = {
     "model": "campaign_trail.question",
     "pk": 14679,
     "fields": {
@@ -1325,7 +1325,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[35] = {
+    campaignTrail_temp.questions_json[36] = {
     "model": "campaign_trail.question",
     "pk": 13820,
     "fields": {
@@ -1336,7 +1336,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797 && ans == 13861){
-    campaignTrail_temp.questions_json[35] = {
+    campaignTrail_temp.questions_json[36] = {
     "model": "campaign_trail.question",
     "pk": 13839,
     "fields": {
@@ -1347,7 +1347,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(OldLab >= 5){
-    campaignTrail_temp.questions_json[36] = {
+    campaignTrail_temp.questions_json[37] = {
     "model": "campaign_trail.question",
     "pk": 14337,
     "fields": {
@@ -1358,7 +1358,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(OldLab <= 0 && Cred >= 8){
-    campaignTrail_temp.questions_json[36] = {
+    campaignTrail_temp.questions_json[37] = {
     "model": "campaign_trail.question",
     "pk": 14337,
     "fields": {
@@ -1371,7 +1371,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Local + European Elections
     if(ans == 12797 || (ans == 12798 && Cred >= 5)){
-    campaignTrail_temp.questions_json[15] = {
+    campaignTrail_temp.questions_json[16] = {
     "model": "campaign_trail.question",
     "pk": 13621,
     "fields": {
@@ -1382,7 +1382,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if((Cred <= 2 && Wins >= 5) || (ans == 12797 && Wins <= 3)){
-    campaignTrail_temp.questions_json[15] = {
+    campaignTrail_temp.questions_json[16] = {
     "model": "campaign_trail.question",
     "pk": 15037,
     "fields": {
@@ -1393,7 +1393,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[16] = {
+    campaignTrail_temp.questions_json[17] = {
     "model": "campaign_trail.question",
     "pk": 13647,
     "fields": {
