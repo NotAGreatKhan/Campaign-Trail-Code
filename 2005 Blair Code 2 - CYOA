@@ -190,7 +190,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
     
-    // Question 8 – Passing New Labour Legislation
+    // Question 9 – Passing New Labour Legislation
     if(ans == 14073){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -210,7 +210,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
     
-    // Question 11 – Naming Dr Kelly
+    // Question 12 – Naming Dr Kelly
     if(ans == 12824){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -220,19 +220,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 11 – Aiding French Yes Campaign
+    // Question 12 – Aiding French Yes Campaign
     if(ans == 13619){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 11 – Aiding Dutch Yes Campaign
+    // Question 12 – Aiding Dutch Yes Campaign
     if(ans == 13873){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - HEA (Weak)
+    // Question 14 - HEA (Weak)
     if(ans == 14716){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -242,7 +242,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - HEA 
+    // Question 14 - HEA 
     if(ans == 12827){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -256,7 +256,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - HEA (Strong)
+    // Question 14 - HEA (Strong)
     if(ans == 14735){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -266,7 +266,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - PUB (Hutton Inquiry)
+    // Question 14 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -280,7 +280,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - PUB 
+    // Question 14 - PUB 
     if(ans == 14209){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -295,7 +295,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
 
-    // Question 14 - Hutton Inquiry
+    // Question 15 - Hutton Inquiry
     if(ans == 12832){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -305,7 +305,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 15 – HR Groups protesting
+    // Question 16 – HR Groups protesting
     if(ans == 14052){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -437,7 +437,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Going old school are you?");
     }
 
-    // Question 7 – New Labour Legislation Session
+    // Question 8 – New Labour Legislation Session
     if(ans == 14464){
       OldLab += 1;
       console.log("Going old school are you?");
@@ -447,7 +447,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Going old school are you?");
     }
 
-    // Question 12 – PUB 
+    // Question 13 – PUB 
     if(ans == 14209){
       OldLab += 2;
       console.log("Going old school are you?");
@@ -465,7 +465,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Going old school are you?");
     }
 
-    // Question 12 – PUB (Hutton Inquiry)
+    // Question 13 – PUB (Hutton Inquiry)
     if(ans == 14238){
       OldLab += 2;
       console.log("Going old school are you?");
@@ -524,7 +524,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 8 – Legislation Season
+    // Question 9 – Legislation Season
     if(ans == 14464){
       Wins += 1;
       console.log("Do they like you now?");
@@ -534,58 +534,58 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 10 – Tony & Gordon...
+    // Question 11 – Tony & Gordon...
     if(ans == 14881 || ans == 14891){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 11 - Aiding French 'Yes' Campaign
+    // Question 12 - Aiding French 'Yes' Campaign
     if(ans == 13619){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 11 - Aiding Dutch 'Yes' Campaign
+    // Question 12 - Aiding Dutch 'Yes' Campaign
     if(ans == 13873){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 13 - HEA (Weak)
+    // Question 14 - HEA (Weak)
     if(ans == 14710){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 13 - HEA 
+    // Question 14 - HEA 
     if(ans == 12827){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 13 - HEA (Strong)
+    // Question 14 - HEA (Strong)
     if(ans == 14735){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 13 - PUB (Hutton Inquiry)
+    // Question 14 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 13 - PUB 
+    // Question 14 - PUB 
     if(ans == 14209){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 14 – Referendum results
+    // Question 15 – Referendum results
     if(ans == 13861){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 17 - Leigh Amendment to CPA 
+    // Question 18 - Leigh Amendment to CPA 
     if(ans == 12847){
       Wins += 1;
       console.log("Do they like you now?");
@@ -861,6 +861,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12813 || ans == 14930 || ans == 14906){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 15106,
+    "fields": {
+        "priority": 0,
+        "description": "The UN Assembly has spoken, and it has delivered its definitive and bruising decision. There will not be a second resolution. France and Germany killed all momentum for the proposal with a motion of their own merely extending the deadline for the weapons inspectors, and the 'Swing Six' in the wider council have soundly rejected it too. The American military has lined up their ducks in a row, guns trained and fingers itching to pull. Kuwait has become a virtual country-sized American base. If they move forward, they're going to bring the country down. So, you have to make the case for it anyway. What will you say to a public already scrutinising the idea of a war with Iraq?"
         "likelihood": 1
       }
     }
