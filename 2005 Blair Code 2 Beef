@@ -200,7 +200,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
     
-    // Question 8 – Passing New Labour Legislation
+    // Question 9 – Passing New Labour Legislation
     if(ans == 14073){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -220,7 +220,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
     
-    // Question 11 – Naming Dr Kelly
+    // Question 12 – Naming Dr Kelly
     if(ans == 12824){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -230,19 +230,19 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 11 – Aiding French Yes Campaign
+    // Question 12 – Aiding French Yes Campaign
     if(ans == 13619){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 11 – Aiding Dutch Yes Campaign
+    // Question 12 – Aiding Dutch Yes Campaign
     if(ans == 13873){
       Cred += 1;
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - HEA (Weak)
+    // Question 14 - HEA (Weak)
     if(ans == 14716){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -252,7 +252,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - HEA 
+    // Question 14 - HEA 
     if(ans == 12827){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -266,7 +266,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - HEA (Strong)
+    // Question 14 - HEA (Strong)
     if(ans == 14735){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -276,7 +276,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - PUB (Hutton Inquiry)
+    // Question 14 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -290,7 +290,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 13 - PUB 
+    // Question 14 - PUB 
     if(ans == 14209){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -305,7 +305,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
 
-    // Question 14 - Hutton Inquiry
+    // Question 15 - Hutton Inquiry
     if(ans == 12832){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -315,7 +315,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 15 – HR Groups protesting
+    // Question 16 – HR Groups protesting
     if(ans == 14052){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -447,7 +447,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Going old school are you?");
     }
 
-    // Question 7 – New Labour Legislation Session
+    // Question 8 – New Labour Legislation Session
     if(ans == 14464){
       OldLab += 1;
       console.log("Going old school are you?");
@@ -457,7 +457,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Going old school are you?");
     }
 
-    // Question 12 – PUB 
+    // Question 13 – PUB 
     if(ans == 14209){
       OldLab += 2;
       console.log("Going old school are you?");
@@ -475,7 +475,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Going old school are you?");
     }
 
-    // Question 12 – PUB (Hutton Inquiry)
+    // Question 13 – PUB (Hutton Inquiry)
     if(ans == 14238){
       OldLab += 2;
       console.log("Going old school are you?");
@@ -534,7 +534,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 8 – Legislation Season
+    // Question 9 – Legislation Season
     if(ans == 14464){
       Wins += 1;
       console.log("Do they like you now?");
@@ -544,58 +544,58 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 10 – Tony & Gordon...
+    // Question 11 – Tony & Gordon...
     if(ans == 14881 || ans == 14891){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 11 - Aiding French 'Yes' Campaign
+    // Question 12 - Aiding French 'Yes' Campaign
     if(ans == 13619){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 11 - Aiding Dutch 'Yes' Campaign
+    // Question 12 - Aiding Dutch 'Yes' Campaign
     if(ans == 13873){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 13 - HEA (Weak)
+    // Question 14 - HEA (Weak)
     if(ans == 14710){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 13 - HEA 
+    // Question 14 - HEA 
     if(ans == 12827){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 13 - HEA (Strong)
+    // Question 14 - HEA (Strong)
     if(ans == 14735){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 13 - PUB (Hutton Inquiry)
+    // Question 14 - PUB (Hutton Inquiry)
     if(ans == 14238){
       Wins += 1;
       console.log("Do they like you now?");
     }
-    // Question 13 - PUB 
+    // Question 14 - PUB 
     if(ans == 14209){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 14 – Referendum results
+    // Question 15 – Referendum results
     if(ans == 13861){
       Wins += 1;
       console.log("Do they like you now?");
     }
 
-    // Question 17 - Leigh Amendment to CPA 
+    // Question 18 - Leigh Amendment to CPA 
     if(ans == 12847){
       Wins += 1;
       console.log("Do they like you now?");
@@ -871,6 +871,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12813 || ans == 14930 || ans == 14906){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 15106,
+    "fields": {
+        "priority": 0,
+        "description": "The UN Assembly has spoken, and it has delivered its definitive and bruising decision. There will not be a second resolution. France and Germany killed all momentum for the proposal with a motion of their own merely extending the deadline for the weapons inspectors, and the 'Swing Six' in the wider council have soundly rejected it too. The American military has lined up their ducks in a row, guns trained and fingers itching to pull. Kuwait has become a virtual country-sized American base. If they move forward, they're going to bring the country down. So, you have to make the case for it anyway. What will you say to a public already scrutinising the idea of a war with Iraq?"
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 12815 || ans == 14900 || ans == 14942 || ans == 14947 || ans == 14918 || ans == 14924){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 15127,
+    "fields": {
+        "priority": 0,
+        "description": "The UN Assembly has spoken, and it has delivered its definitive and bruising decision. There will not be a second resolution. France and Germany killed all momentum for the proposal with a motion of their own merely extending the deadline for the weapons inspectors, and the 'Swing Six' in the wider council have soundly rejected it too. The American military has lined up their ducks in a row, guns trained and fingers itching to pull. Kuwait has become a virtual country-sized American base. If they move forward, they're going to bring the country down. So, you have to make the case for it anyway. What will you say to a public already scrutinising the idea of a war with Iraq?"
         "likelihood": 1
       }
     }
@@ -1485,7 +1507,7 @@ campaignTrail_temp.questions_json = [
         "pk": 15085,
         "fields": {
             "priority": 0,
-            "description": "[Insert further Iraq strategy here or smthn I dunno]?",
+            "description": "The UN Assembly has spoken, and it has delivered its definitive and bruising decision. There will not be a second resolution. France and Germany killed all momentum for the proposal with a motion of their own merely extending the deadline for the weapons inspectors, and the 'Swing Six' in the wider council have soundly rejected it too. The American military has lined up their ducks in a row, guns trained and fingers itching to pull. Kuwait has become a virtual country-sized American base. If they move forward, they're going to bring the country down. So, you have to make the case for it anyway. What will you say to a public already scrutinising the idea of a war with Iraq?",
             "likelihood": 1
         }
     },
@@ -2449,6 +2471,24 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Manoeuvring the absolute minefield of your government would make a stroll through Bosnia look rather pleasant. The deal that you made with Gordon has been turning its ugly head since 2001. Stories ranging from cat-fights in office rooms to full blown shouting matches, have plagued news headlines and article hitpieces. Each one another thorn in the backside of your government's once harmonious chugging. In the turbulent Summers of 2002, '3, and '4, your mind clinged to the edge of despair – at some points it was overwhelming, crushing even. All the Chancellor did often was just pile on, nagging you to no end about a timetable to leave. You're not going to let that happen anymore. With your position within the Labour parliamentary party strengthened since then, Milburn hints at the possibility of getting him out of your way. For good.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15106,
+        "fields": {
+            "priority": 0,
+            "description": "The UN Assembly has spoken, and it has delivered its definitive and bruising decision. There will not be a second resolution. France and Germany killed all momentum for the proposal with a motion of their own merely extending the deadline for the weapons inspectors, and the 'Swing Six' in the wider council have soundly rejected it too. The American military has lined up their ducks in a row, guns trained and fingers itching to pull. Kuwait has become a virtual country-sized American base. If they move forward, they're going to bring the country down. So, you have to make the case for it anyway. What will you say to a public already scrutinising the idea of a war with Iraq?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15127,
+        "fields": {
+            "priority": 0,
+            "description": "The UN Assembly has spoken, and it has delivered its definitive and bruising decision. There will not be a second resolution. France and Germany killed all momentum for the proposal with a motion of their own merely extending the deadline for the weapons inspectors, and the 'Swing Six' in the wider council have soundly rejected it too. The American military has lined up their ducks in a row, guns trained and fingers itching to pull. Kuwait has become a virtual country-sized American base. If they move forward, they're going to bring the country down. So, you have to make the case for it anyway. What will you say to a public already scrutinising the idea of a war with Iraq?",
             "likelihood": 1
         }
     }
@@ -5276,7 +5316,7 @@ campaignTrail_temp.answers_json = [
         "pk": 15086,
         "fields": {
             "question": 15085,
-            "description": "put description here"
+            "description": "We need to go all the way with the WMDs route. If those little dictators in Baghdad try to scurry away and hide their staches they need to pay the price for it. I don't care how much backlash we may receive. How much it was “exaggerated”, we are using this. Period."
         }
     },
     {
@@ -5284,7 +5324,7 @@ campaignTrail_temp.answers_json = [
         "pk": 15087,
         "fields": {
             "question": 15085,
-            "description": "put description here"
+            "description": "We can go for a hybrid here. It does not have to involve one argument or the other, we can kill a bird with multiple stones if that's what it takes. Saddam Hussein is a proven threat to the international order and he has the wars and the WMDs to prove it."
         }
     },
     {
@@ -5292,7 +5332,7 @@ campaignTrail_temp.answers_json = [
         "pk": 15088,
         "fields": {
             "question": 15085,
-            "description": "put description here"
+            "description": "Diversifying our case and seeing the woods for the tree is crucial here. I'm still going to mention the weapons of mass destruction, biological and chemical. But they're going to take a back seat now, the backlash down the road – it could be too much."
         }
     },
     {
@@ -5300,7 +5340,63 @@ campaignTrail_temp.answers_json = [
         "pk": 15089,
         "fields": {
             "question": 15085,
-            "description": "put description here"
+            "description": "The Americans are the crucial lynchpin for us here. I haven't been tying myself to them for so long just to get nothing out of it. If I can just get in there and ask them to get their papers in order for a long-term plan, maybe this can all be resolved. This cannot pounce at us from behind."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15107,
+        "fields": {
+            "question": 15106,
+            "description": "Yes the cards are down for the UN, but, we still have a hand to play for the leaders of the European big players. Just one more time, I'm gonna have a talk with Chirac, Schröder, and Berlusconi, get them all on side just enough to not shout this bloody thing down."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15112,
+        "fields": {
+            "question": 15106,
+            "description": "Just because we couldn't get a second resolution, doesn't mean we can't use the UN as a talking point still. Hussein has repeatedly violated the United Nations at every opportunity he could, defying the will of international fairness. I'm not backing down on this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15117,
+        "fields": {
+            "question": 15106,
+            "description": "Regime change is the angle we're heading for here. All this talk about the UN has made people miss the woods for the lone tree. Hussein must not be allowed to remain in power after all the damage he has caused to the region, and it is a moral danger to keep him there."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15122,
+        "fields": {
+            "question": 15106,
+            "description": "The Americans are the crucial lynchpin for us here. I haven't been tying myself to them for so long just to get nothing out of it. If I can just get in there and ask them to get their papers in order for a long-term plan, maybe this can all be resolved. This cannot pounce at us from behind."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15128,
+        "fields": {
+            "question": 15127,
+            "description": "I haven't been cosying up for this long to America to get nothing out of it. I want to speak to President Bush, one-on-one, and urge him to see further ahead as to what could happen here. The Islamic groups in the region are not going anywhere, and chaos could erupt."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15133,
+        "fields": {
+            "question": 15127,
+            "description": ""
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15138,
+        "fields": {
+            "question": 15127,
+            "description": ""
         }
     }
 ]
@@ -15450,6 +15546,226 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12587,
             "global_multiplier": -0.004
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15094,
+        "fields": {
+            "answer": 15086,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15095,
+        "fields": {
+            "answer": 15086,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15098,
+        "fields": {
+            "answer": 15087,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15099,
+        "fields": {
+            "answer": 15087,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.0015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15100,
+        "fields": {
+            "answer": 15088,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15101,
+        "fields": {
+            "answer": 15088,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15103,
+        "fields": {
+            "answer": 15089,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15105,
+        "fields": {
+            "answer": 15089,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15109,
+        "fields": {
+            "answer": 15107,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15110,
+        "fields": {
+            "answer": 15107,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15114,
+        "fields": {
+            "answer": 15112,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15115,
+        "fields": {
+            "answer": 15112,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15119,
+        "fields": {
+            "answer": 15117,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15120,
+        "fields": {
+            "answer": 15117,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15124,
+        "fields": {
+            "answer": 15122,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15125,
+        "fields": {
+            "answer": 15122,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15130,
+        "fields": {
+            "answer": 15128,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15131,
+        "fields": {
+            "answer": 15128,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15135,
+        "fields": {
+            "answer": 15133,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15136,
+        "fields": {
+            "answer": 15133,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.0015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15140,
+        "fields": {
+            "answer": 15138,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15141,
+        "fields": {
+            "answer": 15138,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.002
+        }
     }
 ]
 
@@ -19579,7 +19895,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 15071,
         "fields": {
             "answer": 15062,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0,
             "issue_importance": 3
         }
@@ -19599,7 +19915,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 15074,
         "fields": {
             "answer": 15064,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.25,
             "issue_importance": 4
         }
@@ -19619,7 +19935,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 15077,
         "fields": {
             "answer": 15066,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0,
             "issue_importance": 3
         }
@@ -19639,7 +19955,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 15080,
         "fields": {
             "answer": 15068,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 3
         }
@@ -19651,6 +19967,116 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 15068,
             "issue": 28,
             "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15096,
+        "fields": {
+            "answer": 15086,
+            "issue": 30,
+            "issue_score": -0.8,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15097,
+        "fields": {
+            "answer": 15087,
+            "issue": 30,
+            "issue_score": -0.45,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15102,
+        "fields": {
+            "answer": 15088,
+            "issue": 30,
+            "issue_score": -0.25,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15104,
+        "fields": {
+            "answer": 15089,
+            "issue": 30,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15111,
+        "fields": {
+            "answer": 15107,
+            "issue": 30,
+            "issue_score": -0.25,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15116,
+        "fields": {
+            "answer": 15112,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15121,
+        "fields": {
+            "answer": 15117,
+            "issue": 30,
+            "issue_score": -0.25,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15126,
+        "fields": {
+            "answer": 15122,
+            "issue": 30,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15132,
+        "fields": {
+            "answer": 15128,
+            "issue": 30,
+            "issue_score": -0.8,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15137,
+        "fields": {
+            "answer": 15133,
+            "issue": 30,
+            "issue_score": -0.45,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15142,
+        "fields": {
+            "answer": 15138,
+            "issue": 30,
+            "issue_score": -0.25,
             "issue_importance": 3
         }
     }
@@ -23353,7 +23779,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15086,
             "candidate": 12543,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "It isn't long before your spin team – headed by the infamous Alastair Campbell – get to work spin-doctoring a paper and dossier belligerently and bellicosely. The “45 minute” claim of a weapon striking Europe becomes a mini headline in of itself. The chattering on Fleet Street and in the halls of Whitehall grow more resonant with each passing day. But the voters are divided, more than ever. While the government continues to churn its wheels, the protests on the streets echo louder and louder in the cities. Strap in, Tony."
         }
     },
     {
@@ -23362,7 +23788,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15087,
             "candidate": 12543,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "The formerly pointed thrust of your lawyer's document has been blunted dramatically into a splintering aged pencil. People are worried about Hussein – certainly – but dragging your feet on a topic of discourse you were so eager to exploit communicates a sore lack of confidence within your own self for the claim of WMDs existing at all. All you can hope for now is that the war drums beat loud enough to shake the Commons when the war vote claws its way in."
         }
     },
     {
@@ -23371,7 +23797,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15088,
             "candidate": 12543,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "Colin Powell's presentation to the UN did not turn enough heads to satisfy a majority of the council. Under this calculus, gunning for the idea of a pure regime change is logically sound. But the prying eyes of the media will not let you live it down that you, in essence, gave up your lightning rod issue – and neither will the Tories."
         }
     },
     {
@@ -23380,7 +23806,70 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15089,
             "candidate": 12543,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "The American Senate is itching for the upcoming war resolution to pass, their consciences frightened at the prospects of the illusive Weapons of Mass Destruction. The pace at the White House is not dissimilar, nearly the entire American cabinet is pugnacious for the conflict. Your pleas for your future in Downing Street fall on deaf ears, even with your ol' friend Bush."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15108,
+        "fields": {
+            "answer": 15107,
+            "candidate": 12543,
+            "answer_feedback": "Chirac shouts and bellows at you until you're too tired of it to go on, and Schröder merely groans before any notion of unity with him is dismissed. The only bright spot is Berlusconi who, grinning with his trademark fluorescent bandana, continues to support you until your elections. The lightning round of talks is a failure, and only serves to reinforce the Conservatives' rhetoric that your strategy is falling apart."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15113,
+        "fields": {
+            "answer": 15112,
+            "candidate": 12543,
+            "answer_feedback": "Hans Blix's reports on the findings of the weapons inspectors have not given a clean-cut conclusion on Hussein's intentions. The episode is emblematic of the ensuing discourse around the UN. Yes, Saddam has not respected them, but the cause for war is not set-in-stone either."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15118,
+        "fields": {
+            "answer": 15117,
+            "candidate": 12543,
+            "answer_feedback": "Colin Powell's presentation to the UN failed extraordinarily to sway their representatives. Under this calculus, gunning for the idea of a pure regime change is logically sound. Even still, the failure to secure a second resolution will not be swallowed away."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15123,
+        "fields": {
+            "answer": 15122,
+            "candidate": 12543,
+            "answer_feedback": "The American Senate is intrepid in wanting to go to war. The pace at the White House is neck-breaking, nearly the entire American cabinet is pugnacious for the conflict. Your pleas for your future in Downing Street fall on deaf ears, even with your ol' friend Bush. To your placid surprise, the President does offer words of encouragement to meet with him on how to plan for the aftermath."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15129,
+        "fields": {
+            "answer": 15128,
+            "candidate": 12543,
+            "answer_feedback": "The Islamic groups you refer to are somewhat lost on Bush. Without extravagant papers on existential dangers of biochemical weapons, the American Congress is clamouring for dangers Iraq poses to America <i>itself</i>, or else their constituents may start \"asking questions\" about the point to all of this. When you emerge out of the den to the flashing cameras, all you can say is that the Anglo-American forces have \"a staged plan to deliver peace and stability to the region\". Vague words just begging to be picked apart by Kennedy and Iain Duncan Smith."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15134,
+        "fields": {
+            "answer": 15133,
+            "candidate": 12543,
+            "answer_feedback": "The formerly pointed thrust of your lawyer's document has been blunted dramatically into a splintering aged pencil. People are worried about Hussein – certainly – but dragging your feet on a topic of discourse you were so eager to exploit communicates a sore lack of confidence within your own self for the claim of WMDs existing at all. All you can hope for now is that the war drums beat loud enough to shake the Commons when the war vote claws its way in."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15139,
+        "fields": {
+            "answer": 15138,
+            "candidate": 12543,
+            "answer_feedback": "Colin Powell's presentation to the UN did not turn enough heads to satisfy a majority of the council. Under this calculus, gunning for the idea of a pure regime change is logically sound. But the prying eyes of the media will not let you live it down that you, in essence, gave up your lightning rod issue – and neither will the Tories."
         }
     }
 ]
