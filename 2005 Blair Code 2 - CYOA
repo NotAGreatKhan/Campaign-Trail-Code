@@ -1020,17 +1020,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   } 
     if(e.player_answers.includes(12808)){
-    campaignTrail_temp.questions_json[13] = {
-    "model": "campaign_trail.question",
-    "pk": 14208,
-    "fields": {
-        "priority": 0,
-        "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(e.player_answers.includes(12808) && e.player_answers.includes(12824)){
+    if (e.player_answers.includes(12824)){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14237,
@@ -1041,6 +1031,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 14208,
+    "fields": {
+        "priority": 0,
+        "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "likelihood": 1
+      }
+    }
+  }
+    if (!e.player_answers.includes(12808)){
     if(Wins >= 5){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -1051,7 +1052,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  }
+  } 
     if(Wins <= 2){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -1063,6 +1064,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+}
     if(e.player_answers.includes(12797)){
     if(e.player_answers.includes(13554)){
     if(e.player_answers.includes(13619) && Wins >= 4){
