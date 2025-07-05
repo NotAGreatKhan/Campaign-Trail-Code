@@ -1359,8 +1359,6 @@ if(!modifiedFormobserver){
 (() => {
     const CONFIG = {
         titleColor: '#000000',
-        imageHeight: '100px',
-        imageSrc: 'https://imgur.com/7OYhnkP.jpg',
         margin: '-20px',
         widthCalc: 'calc(100% - 40px)'
     };
@@ -1387,10 +1385,9 @@ if(!modifiedFormobserver){
 
     function generatePrologueHTML({ titleColor, imageHeight, imageSrc }) {
         return `
-	  <div style=\"align-items: center; display: flex; height: ${imageHeight}; justify-content: center; overflow: hidden;\">
-        <img src=\"${imageSrc}\" alt=\"Image\" style=\"object-fit: cover; object-position: center; width: auto\" />
-      </div>
     <p>
+          <img src="https://imgur.com/7OYhnkP.jpg" width="650">
+    <br>
 	  Britain enters the new millennium, blissful and hopeful. But a new era shall bring with it its own myriad of challenges that, although braced for, never seem as close as they could be.
     <br><br>
 	  Until they are, and they're right in your face.
@@ -1406,6 +1403,8 @@ if(!modifiedFormobserver){
           Good luck stewarding Britain in <u>2005: Forward Not Back</u>
     <br><br>
           Because by God, you'll need it.
+    <br>
+          <img src="https://imgur.com/nsrx8L0.jpg" width="550">
     </p>
     `;
     }
