@@ -440,6 +440,22 @@ scrollObserver.observe(document.documentElement, { childList: true, subtree: tru
 campaignTrail_temp.multiple_endings=true
 var used = false;
 endingPicker = (out, totv, aa, quickstats) => {
+        if (!document.getElementById("ending-slide-style")) {
+            const style = document.createElement("style");
+            style.id = "ending-slide-style";
+            style.innerHTML = `            
+                .ending-slide {
+                    background: linear-gradient(to bottom, rgba(241, 240, 236, 0.8), rgba(92, 110, 111, 0.6));
+                    padding: 12px;
+                    border-radius:4px;
+                    box-shadow: 0 0 20px rgba(5, 28, 28, 0.5);
+                    margin: 1rem auto;
+                    max-width: 610px;
+                    line-height: 1.6;
+                }
+            `;
+            document.head.appendChild(style);
+        }
 
 distributeSeatsUK();
 
@@ -579,7 +595,7 @@ construct = (a = 1) => {
   }
     
     // ENDINGS -- this is slightly more reliable than the ending code method
-    
+
     e.header = "<h3>Error</h3>";
     e.pages = ["<p>This is an error handler, contact u/No-Reading9991</p>"];
     e.page = 0;
