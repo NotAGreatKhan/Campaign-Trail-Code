@@ -1386,7 +1386,7 @@ if(!modifiedFormobserver){
     function generatePrologueHTML({ titleColor, imageHeight, imageSrc }) {
         return `
     <p>
-          <img src="https://imgur.com/7OYhnkP.jpg" width="650">
+          <img src="https://imgur.com/7OYhnkP.jpg" width="750">
     <br>
 	  Britain enters the new millennium, blissful and hopeful. But a new era shall bring with it its own myriad of challenges that, although braced for, never seem as close as they could be.
     <br><br>
