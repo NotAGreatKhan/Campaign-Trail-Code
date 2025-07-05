@@ -1354,6 +1354,64 @@ if(!modifiedFormobserver){
 }
 
 
+// Original Code from 2016: A Lifetime of This by StrawberryMaster
+// For replacing the site_description with this custom modal.
+(() => {
+    const CONFIG = {
+        titleColor: '#000000',
+        imageHeight: '100px',
+        imageSrc: 'https://imgur.com/7OYhnkP.jpg',
+        margin: '-20px',
+        widthCalc: 'calc(100% - 40px)'
+    };
+
+    const inner = document.getElementById('inner_window_1');
+    if (!inner || inner.children.length < 2) return;
+    const [headingEl, contentEl] = inner.children;
+    const gameStart = document.getElementById('game_start');
+    const gameWindow = document.getElementById('game_window');
+
+    // temporary auto resize
+    if (gameWindow) gameWindow.style.height = 'auto';
+
+    headingEl.innerHTML = `<h3 style="color: #000000; letter-spacing: 1px">Welcome to the 2005 General Election</h3>`;
+    Object.assign(contentEl.style, { marginLeft: CONFIG.margin, width: CONFIG.widthCalc });
+    contentEl.innerHTML = generatePrologueHTML(CONFIG);
+
+    if (gameStart) {
+        gameStart.innerHTML = '<strong>Take the reigns.</strong>';
+        const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
+        if (window.jQuery) $('#game_start').on('click', clearHeight);
+        else gameStart.addEventListener('click', clearHeight);
+    }
+
+    function generatePrologueHTML({ titleColor, imageHeight, imageSrc }) {
+        return `
+	  <div style=\"align-items: center; display: flex; height: ${imageHeight}; justify-content: center; overflow: hidden;\">
+        <img src=\"${imageSrc}\" alt=\"Image\" style=\"object-fit: cover; object-position: center; width: auto\" />
+      </div>
+    <p>
+	  Britain enters the new millennium, blissful and hopeful. But a new era shall bring with it its own myriad of challenges that, although braced for, never seem as close as they could be.
+    <br><br>
+	  Until they are, and they're right in your face.
+    <br><br>
+          When Prime Minister Tony Blair won the 2001 election, it was – all things considered – a rather muted night. There was no great mountain to climb, and no calamitous obstacle he had to triumph over. And the civil service of which he revered so much, gave him nothing but gridlock and the gnashing of his teeth. There was always something <i>itching</i> at him. Something he still needed to conquer to seal his name in the history books.
+    <br><br>
+          <i>Something to secure his legacy for the ages.</i> 
+    <br><br>
+          But no one, and truly <i>no one</i>, anticipated the horrors which are stalking in the shadows, ready to unfurl their raven-black, all-consuming wings. Tony Blair was never a man to throw those beside him to the wabash for any decisive action, but now he may just have to. For the first time in his political career, Tony may just have to listen to his convictions deep within his gut, and do something he always recoiled at:
+    <br><br>
+          <i>Alienate those he could have bridged to him, and reach their soul.</i>
+    <br><br>
+          Good luck stewarding Britain in <u>2005: Forward Not Back</u>
+    <br><br>
+          Because by God, you'll need it.
+    </p>
+    `;
+    }
+})();
+
+
 // Music Player
 RecReading=true
 
