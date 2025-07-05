@@ -440,7 +440,11 @@ scrollObserver.observe(document.documentElement, { childList: true, subtree: tru
 campaignTrail_temp.multiple_endings=true
 var used = false;
 endingPicker = (out, totv, aa, quickstats) => {
-        if (!document.getElementById("ending-slide-style")) {
+
+distributeSeatsUK();
+
+/*
+if (!document.getElementById("ending-slide-style")) {
             const style = document.createElement("style");
             style.id = "ending-slide-style";
             style.innerHTML = `            
@@ -456,9 +460,7 @@ endingPicker = (out, totv, aa, quickstats) => {
             `;
             document.head.appendChild(style);
         }
-
-distributeSeatsUK();
-
+*/
 
 function onGameWindowChangeCandidates() {
     const resultsTableHolder = document.getElementById("overall_details_container");
@@ -782,11 +784,21 @@ else if (quickstats[0] >= 324) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3>
 <p>
-<i>David Dimbleby’s voice rings out across the Party headquarters</i>. Trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. A subtle despondence blankets the Party faithful as they fully grasp the scale of the loss of Labour’s dominance over Parliament. A victory apparently only applicable in name. You can already imagine the sneering media journalists calling out at you when you head to-and-from Number 10.
 <br><br>
-With a majority secured, you may be able to pursue those national security reforms you have desired for so long now. With how slim your majority is in Parliament though, don’t count on it to go too smoothly. All it would take is a significant amount of whip suspensions, resignations and by-election defeats, to eradicate your majority all together. Suffice to say, Gordon Brown is definitely going to be crossing his fingers whenever you resign in the near future.
+Within the farthest confines of your mind, you hungered for that elusive seat count to break into the next great tier. But it never came. The Tory-blue wave had been countered, but not fully contained. Colleague after colleague, seat after seat, changing from scarlet red to the searing blue: ‘CON GAIN’. The sprawling splotches of red on the map strangled by the Blue mass.
 <br><br>
-You fought with all you could, but in the end, only the most pitiful dividend was handed out. Best of luck, Prime Minister, you’re sure as hell going to need it.
+Your mind searches for all of the little nagging imperfections to the campaign. Decisions that could’ve been made, but were never taken. Your majority has been slashed by more than half, meaning any agenda that you wish to pass will be a nightmare to get through in your last days. Your reforms for national security, the advancement for the British education system — finally allowing the schools to innovate on their own, to breathe free. All of it will have to be taken in incredibly cautious steps. Whatever happens though, the Social Democratic dream has died, that you believe to be inevitable. The Liberal Democrats, despite failing to deadlock the election, have cauterised your majority at the pass. Governance will certainly require a great amount of delicacy and tact, whatever path you choose. Any small, nagging cabal of rebelling MPs will be able to sink any bill that you may try to ram through the House.
+<br><br>
+You picture the looks on Mandleson’s and Alastair’s faces, their grimacing and teeth gnawing watching the election unfold after all they went through. All of the arguing, the backlash, the endless controversy. For this…
+<br><br>
+But that’s just politics — you tell yourself — it’s just part of the job. Not that it has ever come to that for you… yet.
+<br><br>
+Perhaps all politicians have a permanent shelf life, you occasionally mused of the possibility coming <i>eventually</i>, but not quite in this unceremonious manner. Whatever you leave to Gordon Brown, he’ll be immensely grateful that you were finally shown the door.
+<br><br>
+Yet in spite of every bludgeoning you endured, every decision you agonised on, the transformative “Third Way” agenda you set out, the British people could never find it in you to back you all the way. Best of luck to you, Prime Minister.
+<br><br>
+You truly are going to need it.
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
