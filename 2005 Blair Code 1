@@ -1,3 +1,42 @@
+const summaryDiv = document.getElementById("election_summary");
+if (summaryDiv) {
+  summaryDiv.style.maxHeight = "none";
+  summaryDiv.style.overflowY = "visible";
+}
+  const styleFix = document.createElement("style");
+  styleFix.id = "descriptionLayoutFix";
+styleFix.innerHTML = `
+#election_description_window {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 250px;
+}
+
+  #election_image img {
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  #election_summary {
+    max-width: 580px;
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+    min-height: 200px;
+  }
+
+  #election_description_window > div {
+    min-width: 0;
+  }
+  `;
+  document.head.appendChild(styleFix);
+
+
 function removeCandidateSummary() {
 try {
   const candidateSummary = document.querySelector("#candidate_summary");
@@ -145,7 +184,7 @@ campaignTrail_temp.election_json = [
         "pk": 12,
         "fields": {
             "year": 2005,
-            "summary": "<div style='overflow-y:scroll;height:200px;'><u>Would the world ever be the same again? <i>He spurns</i> such a notion.</u><br><br>The 2001 election has given forth yet another lashing to the Conservatives, as Blair secured a ”Quiet Landslide” for his government. The gleaming popularity having waned since that ecstatic night in 1997. But even then, it was thought that nothing could be deemed impossible.<br><br>However now, with the blissful peace of the previous decade shattered and burned in the ashes of the World Trade Centre, Blair’s goodwill will be strenuously tested as his agenda shifts for the new century. The Bush Administration prepares for an invasion of Iraq – but the legacy of Britain's role in that war will rest first, and foremost on Blair's own shoulders. And with Chancellor Brown, the fine-tuned economy's smooth chugging needs to maintain its very confidence.<br><br>The Conservative Party must find its way out of the wilderness, if it hopes to ever get back in power. Blair must also defend from multiple flanks by the renewed Liberal Democrats and the Conservatives sniffing Labour-red blood. If he fails, Blair's progressive centre may be strangled as quickly as it was birthed – as the natural party of governance reasserts itself.<br><br>There is not time for dither nor delay. He must take <strong><span style='color:darkred; text-shadow: 0px 0px 8px white, 0px 0px 10px lightred;'>Britain forward, not back</span></strong>.</div>",
+            "summary": "<div style='overflow-y: auto; max-height: none;'><u>Would the world ever be the same again? <i>He spurns</i> such a notion.</u><br><br>The 2001 election has given forth yet another lashing to the Conservatives, as Blair secured a ”Quiet Landslide” for his government. The gleaming popularity having waned since that ecstatic night in 1997. But even then, it was thought that nothing could be deemed impossible.<br><br>However now, with the blissful peace of the previous decade shattered and burned in the ashes of the World Trade Centre, Blair’s goodwill will be strenuously tested as his agenda shifts for the new century. The Bush Administration prepares for an invasion of Iraq – but the legacy of Britain's role in that war will rest first, and foremost on Blair's own shoulders. And with Chancellor Brown, the fine-tuned economy's smooth chugging needs to maintain its very confidence.<br><br>The Conservative Party must find its way out of the wilderness, if it hopes to ever get back in power. Blair must also defend from multiple flanks by the renewed Liberal Democrats and the Conservatives sniffing Labour-red blood. If he fails, Blair's progressive centre may be strangled as quickly as it was birthed – as the natural party of governance reasserts itself.<br><br>There is not time for dither nor delay. He must take <strong><span style='color:darkred; text-shadow: 0px 0px 8px white, 0px 0px 10px lightred;'>Britain forward, not back</span></strong>.</div>",
             "image_url": "https://imgur.com/t35sV5w.jpg",
             "winning_electoral_vote_number": 324,
             "advisor_url": "https://imgur.com/u6zV6LD.jpg",
@@ -1352,6 +1391,56 @@ if(!modifiedFormobserver){
   var modifiedFormobserver = new MutationObserver(modifyForm);
   modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
+
+
+/*
+if(localStorage.getItem("variable")){
+function changeOpponentSelectionDescription() {
+  selectionObserver.disconnect();
+
+  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+  
+  if (opponentSelectionDescription) {
+    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p><p>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by <b>u/ItsAstronomics</b>, and created by <b>u/AeronauticBlueberry</b>.</p>`;
+  }
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!selectionObserver){
+  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+function modifyForm(){
+  modifiedFormobserver.disconnect();
+
+  const form = document.querySelector('form[name="game_type_selection"]');
+
+  if (form) {
+    const select = form.querySelector('select[name="game_type_id"]');
+    const h3 = form.querySelector('h3');
+    const option = select.querySelector('option[value="1"]');
+
+    if (option && option.textContent !== 'Default: First Past The Post') {
+      option.textContent = 'Default: First Past The Post';
+    }
+    if (select && select.querySelector('option[value="2"]')) {
+      const queryTwo = select.querySelector('option[value="2"]');
+      if (queryTwo) {
+        queryTwo.remove();
+      }
+    }
+    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
+      h3.textContent = 'How would you like the seats to be allocated?';
+    }
+  }
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!modifiedFormobserver){
+  var modifiedFormobserver = new MutationObserver(modifyForm);
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+}
+*/
 
 
 // Original Code from 2016: A Lifetime of This by StrawberryMaster
