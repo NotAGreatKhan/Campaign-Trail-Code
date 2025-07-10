@@ -895,7 +895,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 15148,
     "fields": {
         "priority": 0,
-        "description": "[EU Stuff]",
+        "description": "Vultures circle around your spin-doctoring team as the government gears up for the eventual referendums on the European Constitution. Eurosceptics and right wingers in the tabloid press who were in principle willing to stand behind you in the war against terror, have wasted no effort in screeching to the masses about the catastrophe a move towards a federalised Europe would inflict upon the 'sovereign' nation. If you don't define yourself on this issue, your mailbox could be drowned under the tide of anti-Europe populism. Getting ahead of this now would be prudent.",
         "likelihood": 1
       }
     }
