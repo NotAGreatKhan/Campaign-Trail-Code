@@ -189,6 +189,30 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Cred += 1;
       console.log("You have impacted your credibility");
     }
+
+    // Question 8 – EU Constitution
+    if(ans == 15151){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 8 – UN Assembly Aftermath
+    if(ans == 15107){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15112){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15128){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15133){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
     
     // Question 9 – Passing New Labour Legislation
     if(ans == 14073){
@@ -520,6 +544,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
     // Question 7 – Deciding which EU country to support
     if(ans == 13554){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 8 – EU Constitution
+    if(ans == 15150){
       Wins += 1;
       console.log("Do they like you now?");
     }
