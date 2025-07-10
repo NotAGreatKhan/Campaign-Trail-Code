@@ -875,6 +875,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(e.player_answers.includes(12798)){
     if(ans == 12813 || ans == 14930 || ans == 14906){
     campaignTrail_temp.questions_json[7] = {
     "model": "campaign_trail.question",
@@ -893,6 +894,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "The UN Assembly has spoken, and it has delivered its definitive and bruising decision. There will not be a second resolution. France and Germany killed all momentum for the proposal with a motion of their own merely extending the deadline for the weapons inspectors, and the 'Swing Six' in the wider council have soundly rejected it too. The American military has lined up their ducks in a row, guns trained and fingers itching to pull. Kuwait has become a virtual country-sized American base. If they move forward, they're going to bring the country down. So, you have to make the case for it anyway. What will you say to a public already scrutinising the idea of a war with Iraq?",
+        "likelihood": 1
+      }
+    }
+  }
+ }
+    if(e.player_answers.includes(12797)){
+    campaignTrail_temp.questions_json[7] = {
+    "model": "campaign_trail.question",
+    "pk": 15148,
+    "fields": {
+        "priority": 0,
+        "description": "Vultures circle around your spin-doctoring team as the government gears up for the eventual referendums on the European Constitution. Eurosceptics and right wingers in the tabloid press who were in principle willing to stand behind you in the war against terror, have wasted no effort in screeching to the masses about the catastrophe a move towards a federalised Europe would inflict upon the 'sovereign' nation. If you don't define yourself on this issue, your mailbox could be drowned under the tide of anti-Europe populism. Getting ahead of this now would be prudent.",
         "likelihood": 1
       }
     }
@@ -1030,17 +1043,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   } 
     if(e.player_answers.includes(12808)){
-    campaignTrail_temp.questions_json[13] = {
-    "model": "campaign_trail.question",
-    "pk": 14208,
-    "fields": {
-        "priority": 0,
-        "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(e.player_answers.includes(12808) && e.player_answers.includes(12824)){
+    if (e.player_answers.includes(12824)){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
     "pk": 14237,
@@ -1051,6 +1054,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 14208,
+    "fields": {
+        "priority": 0,
+        "description": "Your Deputy PM, John Prescott, is nigh-frothing at the mouth at the legislation about to be proposed to Parliament. A sweeping bill which would – for the first time since the days of Jim Callaghan – bring many parts of crucial utilities back into state control. Rail and energy are going to be the targets of this bill. If passed, it will end the private sector’s ability to freely dictate policy and initiatives around the way in which energy and rail will be controlled. You’re hinging much of your credibility on this. The only question, how will you get this over the last hurdle?",
+        "likelihood": 1
+      }
+    }
+  }
+    if (!e.player_answers.includes(12808)){
     if(Wins >= 5){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -1061,7 +1075,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  }
+  } 
     if(Wins <= 2){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -1073,6 +1087,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+}
     if(e.player_answers.includes(12797)){
     if(e.player_answers.includes(13554)){
     if(e.player_answers.includes(13619) && Wins >= 4){
@@ -2489,6 +2504,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "The UN Assembly has spoken, and it has delivered its definitive and bruising decision. There will not be a second resolution. France and Germany killed all momentum for the proposal with a motion of their own merely extending the deadline for the weapons inspectors, and the 'Swing Six' in the wider council have soundly rejected it too. The American military has lined up their ducks in a row, guns trained and fingers itching to pull. Kuwait has become a virtual country-sized American base. If they move forward, they're going to bring the country down. So, you have to make the case for it anyway. What will you say to a public already scrutinising the idea of a war with Iraq?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15148,
+        "fields": {
+            "priority": 0,
+            "description": "Vultures circle around your spin-doctoring team as the government gears up for the eventual referendums on the European Constitution. Eurosceptics and right wingers in the tabloid press who were in principle willing to stand behind you in the war against terror, have wasted no effort in screeching to the masses about the catastrophe a move towards a federalised Europe would inflict upon the 'sovereign' nation. If you don't define yourself on this issue, your mailbox could be drowned under the tide of anti-Europe populism. Getting ahead of this now would be prudent.",
             "likelihood": 1
         }
     }
@@ -5388,7 +5412,7 @@ campaignTrail_temp.answers_json = [
         "pk": 15133,
         "fields": {
             "question": 15127,
-            "description": ""
+            "description": "Invite Bush, Condi, and Rumsfeld all over here for a press conference to put forward an actual plan for what on Earth we're doing after this whole fight is done and over with. If we can show confidence in front of all of those bloody journalists, then we can actually salvage something out of this. God, our jobs could be on the line."
         }
     },
     {
@@ -5396,7 +5420,39 @@ campaignTrail_temp.answers_json = [
         "pk": 15138,
         "fields": {
             "question": 15127,
-            "description": ""
+            "description": "If no one else is going to do it, then we will have to take it upon ourselves to push this forward. Release a paper putting out points detailing how we would rebuild Iraq in the aftermath of the war. Don't reveal too much obviously, but make a point-by-point plan, show that we know what we're doing."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15149,
+        "fields": {
+            "question": 15148,
+            "description": "Crikey, with all of these angry folk, you'd think this thing would be dead in the water. But if they think it will, they should be more than happy to put it to a referendum here in the UK. After all, don't they support democracy?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15150,
+        "fields": {
+            "question": 15148,
+            "description": "I'm going to get out there, and loudly and boldly, make the case for ratifying the Constitution. It is a natural destiny for us as Europeans as well as Brits that we embrace this. This will absolutely be a positive, and the people will see it as such."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15151,
+        "fields": {
+            "question": 15148,
+            "description": "The Constitution as it stands, is a great step forward for our country, but it stands to reason that some would naturally find objections to it. We would be open to having a referendum on ratifying the Treaty on the basis that details and finer points can be hashed out ahead of course."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15155,
+        "fields": {
+            "question": 15148,
+            "description": "We need to go far and fast with the change that we need to bring to this country. This is just a step in the great march towards a united Europe. This will be an enormous change for the good of Britain, and it will begin anew with this."
         }
     }
 ]
@@ -15744,7 +15800,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 15133,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.0015
+            "global_multiplier": 0.002
         }
     },
     {
@@ -15765,6 +15821,116 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 12543,
             "affected_candidate": 12587,
             "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15157,
+        "fields": {
+            "answer": 15155,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15158,
+        "fields": {
+            "answer": 15155,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15160,
+        "fields": {
+            "answer": 15151,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15162,
+        "fields": {
+            "answer": 15150,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15163,
+        "fields": {
+            "answer": 15150,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15165,
+        "fields": {
+            "answer": 15149,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15166,
+        "fields": {
+            "answer": 15149,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0325
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15167,
+        "fields": {
+            "answer": 15149,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15168,
+        "fields": {
+            "answer": 15150,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15169,
+        "fields": {
+            "answer": 15151,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15170,
+        "fields": {
+            "answer": 15155,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.007
         }
     }
 ]
@@ -20056,7 +20222,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 15128,
             "issue": 30,
-            "issue_score": -0.8,
+            "issue_score": -0.25,
             "issue_importance": 4
         }
     },
@@ -20076,8 +20242,38 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 15138,
             "issue": 30,
-            "issue_score": -0.25,
+            "issue_score": 0,
             "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15159,
+        "fields": {
+            "answer": 15155,
+            "issue": 31,
+            "issue_score": 1,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15161,
+        "fields": {
+            "answer": 15151,
+            "issue": 31,
+            "issue_score": 0.25,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15164,
+        "fields": {
+            "answer": 15150,
+            "issue": 31,
+            "issue_score": 0.75,
+            "issue_importance": 5
         }
     }
 ]
@@ -23851,7 +24047,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15128,
             "candidate": 12543,
-            "answer_feedback": "The Islamic groups you refer to are somewhat lost on Bush. Without extravagant papers on existential dangers of biochemical weapons, the American Congress is clamouring for dangers Iraq poses to America <i>itself</i>, or else their constituents may start \"asking questions\" about the point to all of this. When you emerge out of the den to the flashing cameras, all you can say is that the Anglo-American forces have \"a staged plan to deliver peace and stability to the region\". Vague words just begging to be picked apart by Kennedy and Iain Duncan Smith."
+            "answer_feedback": "The Islamic groups you refer to are somewhat lost on Bush. Without extravagant papers on existential dangers of biochemical weapons, the American Congress is clamouring for dangers Iraq poses to America <i>itself</i>, or else their constituents may start \"asking questions\" about the point to all of this. When you emerge out of the den to the flashing cameras, all you can say is that the Anglo-American forces have \"a staged plan to deliver peace and stability to the region\". Vague words just begging to be picked apart by Kennedy and Iain Duncan Smith. Those phone calls feel like they matter less and less."
         }
     },
     {
@@ -23860,7 +24056,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15133,
             "candidate": 12543,
-            "answer_feedback": "The formerly pointed thrust of your lawyer's document has been blunted dramatically into a splintering aged pencil. People are worried about Hussein – certainly – but dragging your feet on a topic of discourse you were so eager to exploit communicates a sore lack of confidence within your own self for the claim of WMDs existing at all. All you can hope for now is that the war drums beat loud enough to shake the Commons when the war vote claws its way in."
+            "answer_feedback": "Lenses flash, and the rolling cameras are laser focused on your figure tightly gripping the podium with Bush right near you. Condi and Straw chatter about the Islamic groups bubbling underneath the surface of Saddam's boot. And the conference? The only thing people really took away from it was how uncomfortable Bush and Cheney seemed to be there. Long gone are the days when everyone rallied around the rubble of the old World Trade Centre."
         }
     },
     {
@@ -23869,7 +24065,43 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15138,
             "candidate": 12543,
-            "answer_feedback": "Colin Powell's presentation to the UN did not turn enough heads to satisfy a majority of the council. Under this calculus, gunning for the idea of a pure regime change is logically sound. But the prying eyes of the media will not let you live it down that you, in essence, gave up your lightning rod issue – and neither will the Tories."
+            "answer_feedback": "The government paper is less a detailed bullet-point plan, and more a grandiose preaching of principles and commitments for when Saddam is kicked to the curb: democratic elections, a republic, a so-called multi-ethnic body to represent all interests at the table. Journalists waste no time in picking it all apart, while simultaneously looking to America for comment. A small break is finally accomplished when Bush hides his discontent by giving the idea some credit, and promising to “work on it”, a nominal victory, for something."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15152,
+        "fields": {
+            "answer": 15149,
+            "candidate": 12543,
+            "answer_feedback": "Practically goading them, the Eurosceptics in the press hound you to live up to your word. At least by announcing a referendum will happen, you're settling the discussion of whether or not you truly have the gumption to move forward on such a contentious issue. The swords have been sharpened, so you better have your suit of armour on."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15153,
+        "fields": {
+            "answer": 15150,
+            "candidate": 12543,
+            "answer_feedback": "You hit your stride, you thump the podium with every strike against those who dare to try and rip European brothers and sisters apart. Though your words no longer move mountains like they used to, maybe – just maybe – you can still shift cliffs."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15154,
+        "fields": {
+            "answer": 15151,
+            "candidate": 12543,
+            "answer_feedback": "Presenting a concession like this to the sceptics does little to bring them over and galvanise them for your cause. Now that the subject of Europe has become more polarising to the electorate, tempers have flared to a point where neither side is too keen on extending an olive branch. This promise is only met with raised eyebrows."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15156,
+        "fields": {
+            "answer": 15155,
+            "candidate": 12543,
+            "answer_feedback": "You feel an oratorical freedom you have seldom felt before since the collapse of the Major government. The quotes and official statements are rolled out. The hopes and dreams of all British Europhiles are countered and slashed to pieces by the right wing print media, who waste no time in making sly insinuations about a European super-state in the works in smoke-filled back rooms. Alastair's fists tighten with every <i>Telegraph</i> headline he has to read. Maybe the EU is as far as this will ever go."
         }
     }
 ]
@@ -24376,6 +24608,24 @@ endingPicker = (out, totv, aa, quickstats) => {
 
 distributeSeatsUK();
 
+/*
+if (!document.getElementById("ending-slide-style")) {
+            const style = document.createElement("style");
+            style.id = "ending-slide-style";
+            style.innerHTML = `            
+                .ending-slide {
+                    background: linear-gradient(to bottom, rgba(241, 240, 236, 0.8), rgba(92, 110, 111, 0.6));
+                    padding: 12px;
+                    border-radius:4px;
+                    box-shadow: 0 0 20px rgba(5, 28, 28, 0.5);
+                    margin: 1rem auto;
+                    max-width: 610px;
+                    line-height: 1.6;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+*/
 
 function onGameWindowChangeCandidates() {
     const resultsTableHolder = document.getElementById("overall_details_container");
@@ -24512,7 +24762,7 @@ construct = (a = 1) => {
   }
     
     // ENDINGS -- this is slightly more reliable than the ending code method
-    
+
     e.header = "<h3>Error</h3>";
     e.pages = ["<p>This is an error handler, contact u/No-Reading9991</p>"];
     e.page = 0;
@@ -24699,11 +24949,21 @@ else if (quickstats[0] >= 324) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3>
 <p>
-<i>David Dimbleby’s voice rings out across the Party headquarters</i>. Trepidation grips your conscience and the Labour HQ. You have clinched a victory, but you have bled a lot of colleagues and seats as a result of this gruelling campaign, no doubt due to the Iraq War and the simple fact that Ian Duncan Smith is no longer existent in national politics.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. A subtle despondence blankets the Party faithful as they fully grasp the scale of the loss of Labour’s dominance over Parliament. A victory apparently only applicable in name. You can already imagine the sneering media journalists calling out at you when you head to-and-from Number 10.
 <br><br>
-With a majority secured, you may be able to pursue those national security reforms you have desired for so long now. With how slim your majority is in Parliament though, don’t count on it to go too smoothly. All it would take is a significant amount of whip suspensions, resignations and by-election defeats, to eradicate your majority all together. Suffice to say, Gordon Brown is definitely going to be crossing his fingers whenever you resign in the near future.
+Within the farthest confines of your mind, you hungered for that elusive seat count to break into the next great tier. But it never came. The Tory-blue wave had been countered, but not fully contained. Colleague after colleague, seat after seat, changing from scarlet red to the searing blue: ‘CON GAIN’. The sprawling splotches of red on the map strangled by the Blue mass.
 <br><br>
-You fought with all you could, but in the end, only the most pitiful dividend was handed out. Best of luck, Prime Minister, you’re sure as hell going to need it.
+Your mind searches for all of the little nagging imperfections to the campaign. Decisions that could’ve been made, but were never taken. Your majority has been slashed by more than half, meaning any agenda that you wish to pass will be a nightmare to get through in your last days. Your reforms for national security, the advancement for the British education system — finally allowing the schools to innovate on their own, to breathe free. All of it will have to be taken in incredibly cautious steps. Whatever happens though, the Social Democratic dream has died, that you believe to be inevitable. The Liberal Democrats, despite failing to deadlock the election, have cauterised your majority at the pass. Governance will certainly require a great amount of delicacy and tact, whatever path you choose. Any small, nagging cabal of rebelling MPs will be able to sink any bill that you may try to ram through the House.
+<br><br>
+You picture the looks on Mandleson’s and Alastair’s faces, their grimacing and teeth gnawing watching the election unfold after all they went through. All of the arguing, the backlash, the endless controversy. For this…
+<br><br>
+But that’s just politics — you tell yourself — it’s just part of the job. Not that it has ever come to that for you… yet.
+<br><br>
+Perhaps all politicians have a permanent shelf life, you occasionally mused of the possibility coming <i>eventually</i>, but not quite in this unceremonious manner. Whatever you leave to Gordon Brown, he’ll be immensely grateful that you were finally shown the door.
+<br><br>
+Yet in spite of every bludgeoning you endured, every decision you agonised on, the transformative “Third Way” agenda you set out, the British people could never find it in you to back you all the way. Best of luck to you, Prime Minister.
+<br><br>
+You truly are going to need it.
 </p>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif"})])
