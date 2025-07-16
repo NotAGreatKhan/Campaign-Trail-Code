@@ -1224,6 +1224,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(e.player_answers.includes(14801)){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 15171,
+    "fields": {
+        "priority": 0,
+        "description": "Stings and bruises from the near-death experience to your hold on power cast a long shadow over Prime Minister's Questions today. In the last of these sessions before the general election, the Tories have gathered around the campfire to see you get pinned one last time. You've dealt with Tory leaders many times before. But these charges, an imminent collapse of your government if they returned after the election recess, the fall of <i>you</i>. When so many on their side have kicked the can? It's spurious, ridiculous. You better shut this down.",
+        "likelihood": 1
+      }
+    }
+  }
     if(Resign <= 0 && Cred >= 6){
     campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
