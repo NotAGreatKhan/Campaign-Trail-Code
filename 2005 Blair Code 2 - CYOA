@@ -670,7 +670,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13500,
     "fields": {
         "priority": 0,
-        "description": "Someday, you knew this day would come. It had to. The preening journalists will be able to concoct a slew of reasons, analysis and justifications for what you are about to do outside the glossy black door of No. 10. But you know the <i>real</i> reason, and he is residing in the flat right next to the one that used to be yours. In your heart of hearts, you know that you ae the only man who can take the vision of this government – and build further upon it to last.<p></p>You take a deep breath. Grasping the folder containing your last speech as Prime Minister.<p></p>With a last shake of the shoulders, you open the door, and address the nation one last time.",
+        "description": "Someday, you knew this day would come. It had to. The preening journalists will be able to concoct a slew of reasons, analysis and justifications for what you are about to do outside the glossy black door of No. 10. But you know the <i>real</i> reason, and he is residing in the flat right next to the one that used to be yours. In your heart of hearts, you know that you are the only man who would have taken the vision of this government – and built further upon it to last.<p></p>You take a deep breath. Grasping the folder containing your last speech as Prime Minister.<p></p>With a last shake of the shoulders, you open the door, and address the nation one last time.",
         "likelihood": 1
       }
     }
