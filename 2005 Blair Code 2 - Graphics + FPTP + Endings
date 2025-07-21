@@ -1523,23 +1523,11 @@ function openHeadquarter() {
     headerDiv.style.width = "100%";
     headerDiv.style.alignItems = "center";
 
-    // Add back button to the header
-    let backButton = document.createElement("button");
-    backButton.innerText = "Back";
-    backButton.style.margin = "5px";
-    backButton.style.backgroundColor = "grey";
-    backButton.onclick = function() {
-        // Hide headquarters and show the original content
-        hqDiv.remove();
-        questions.style.display = "";
-    }
-    headerDiv.appendChild(backButton);
-
     let headerText = document.createElement("h3");
-    headerText.textContent = "Communications Director – Alastair Campbell";
-    headerText.style.textAlign = "center";  // Center the text
-    headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
-    headerText.style.color = "black";
+    headerText.textContent = 'Her Majesty’s Most Loyal Government';
+    headerText.style.textAlign = 'center';  // Center the text
+    headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
+    headerText.style.color = 'black';
     headerDiv.appendChild(headerText);
 
     // Append headerDiv to the main hqDiv
@@ -1567,40 +1555,52 @@ function openHeadquarter() {
 
     let a = document.createElement("p");
     a.innerHTML = 'The <u><b>public’s trust</b></u> in your government heading into the election is ' + CScore + '.';
-    // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
-    a.style.color = "black"; // Can be used to change the color of the text
-    a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
+    // a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    a.style.color = 'black'; // Can be used to change the color of the text
+    a.style.margin = '8px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
     hqDiv.appendChild(a);
 
     let b = document.createElement("p");
     b.innerHTML = 'Your <u><b>standing</b></u> as Prime Minister is ' + RScore + '.';
-    // b.style.flexGrow = "0.1";
-    b.style.color = "black";
-    b.style.margin = "8px";
+    // b.style.flexGrow = '0.1';
+    b.style.color = 'black';
+    b.style.margin = '8px';
     hqDiv.appendChild(b);
 
     let c = document.createElement("p");
     c.innerHTML = '<u>Since <b>2001</b></u>, your government has secured ' + WScore + '.';
-    // c.style.flexGrow = "0.1";
-    c.style.color = "black";
-    c.style.margin = "8px";
+    // c.style.flexGrow = '0.1';
+    c.style.color = 'black';
+    c.style.margin = '8px';
     hqDiv.appendChild(c);
 
     let d = document.createElement("p");
     d.innerHTML = 'Your willingness to accept <u><b>Old</b> Labour, instead of <b>New</b></u>, is ' + OLScore + '.';
-    // d.style.flexGrow = "0.1";
-    d.style.color = "black";
-    d.style.margin = "8px";
+    // d.style.flexGrow = '0.1';
+    d.style.color = 'black';
+    d.style.margin = '8px';
     hqDiv.appendChild(d);
 
     // Image
-    let img = document.createElement("img");
-    img.src = "https://imgur.com/mB2xqdL.jpg";
-    img.style.height = "40%";
-    img.style.marginLeft = "1em";
-    img.style.flexGrow = "0.1";
-    img.style.border = "3px solid black";  // Add thin white border to the image
+    let img = document.createElement('img');
+    img.src = 'https://imgur.com/mB2xqdL.jpg';
+    img.style.height = '40%';
+    img.style.marginLeft = '1em';
+    img.style.flexGrow = '0.1';
+    img.style.border = '3px solid black';  // Add thin white border to the image
     hqDiv.appendChild(img);
+
+    // Add back button to the header
+    let backButton = document.createElement("button");
+    backButton.innerText = "Back";
+    backButton.style.margin = "5px";
+    backButton.style.backgroundColor = "grey";
+    backButton.onclick = function() {
+        // Hide headquarters and show the original content
+        hqDiv.remove();
+        questions.style.display = "";
+    }
+    headerDiv.appendChild(backButton);
 }
 
 function handleMutations(mutationsList, observer) {
