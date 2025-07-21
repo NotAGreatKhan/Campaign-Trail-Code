@@ -811,21 +811,9 @@ function openHeadquarter() {
     headerDiv.style.justifyContent = "space-between";
     headerDiv.style.width = "100%";
     headerDiv.style.alignItems = "center";
-
-    // Add back button to the header
-    let backButton = document.createElement("button");
-    backButton.innerText = "Back";
-    backButton.style.margin = "5px";
-    backButton.style.backgroundColor = "grey";
-    backButton.onclick = function() {
-        // Hide headquarters and show the original content
-        hqDiv.remove();
-        questions.style.display = "";
-    }
-    headerDiv.appendChild(backButton);
  
     let headerText = document.createElement("h3");
-    headerText.textContent = "Her Majesty's Most Loyal Opposition";
+    headerText.textContent = 'Her Majesty’s Most Loyal Opposition';
     headerText.style.textAlign = "center";  // Center the text
     headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
     headerText.style.color = "black";
@@ -890,6 +878,18 @@ function openHeadquarter() {
     d.style.color = "black";
     d.style.margin = "8px";
     hqDiv.appendChild(d);
+
+    // Add back button to the header
+    let backButton = document.createElement("button");
+    backButton.innerText = "Back";
+    backButton.style.margin = "5px";
+    backButton.style.backgroundColor = "grey";
+    backButton.onclick = function() {
+        // Hide headquarters and show the original content
+        hqDiv.remove();
+        questions.style.display = "";
+    }
+    headerDiv.appendChild(backButton);
 }
 
 function handleMutations(mutationsList, observer) {
