@@ -90,6 +90,9 @@ e.candidateSwitcher = () => {
 }
 
 
+campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/5y01NQx.jpg";
+
+
 function changechart(){
     if (document.getElementById("state_info")!=null) {
     overallthing=document.getElementById("state_info").innerHTML;
@@ -221,7 +224,7 @@ function adjustFeedbackBox(width, height) {
     document.head.appendChild(styleSheet)
 }
 
-adjustFeedbackBox(57,69);
+adjustFeedbackBox(57,79);
 
 
 // For UK Mod
