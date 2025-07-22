@@ -1322,7 +1322,7 @@ function createSimplePopup() {
     popup.style.position = "fixed";
     popup.style.bottom = "20px";
     popup.style.right = "20px";
-    popup.style.width = "411px";
+    popup.style.width = "435px";
     popup.style.height = "450px";
     popup.style.border = "1px solid #000";
     popup.style.borderRadius = "5px";
@@ -1496,7 +1496,7 @@ function updateSimplePopup() {
       </p>
 
       <p>
-        <img src="https://imgur.com/mB2xqdL.jpg" width="400">
+        <img src="https://imgur.com/mB2xqdL.jpg" width="425">
       </p>
     `;
   }
