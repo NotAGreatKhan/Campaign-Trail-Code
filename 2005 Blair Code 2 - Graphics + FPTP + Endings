@@ -1314,7 +1314,230 @@ applyTooltipsToObject(campaignTrail_temp.answers_json);
 applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
 
+
+// Popup HQ
+function createSimplePopup() {
+    const popup = document.createElement("div");
+    popup.id = "simplePopup";
+    popup.style.position = "fixed";
+    popup.style.bottom = "20px";
+    popup.style.right = "20px";
+    popup.style.width = "500px";
+    popup.style.height = "250px";
+    popup.style.border = "1px solid #000";
+    popup.style.borderRadius = "5px";
+    popup.style.padding = "40px 10px 10px 10px";
+    popup.style.boxShadow = "0 0 5px rgba(0,0,0,0.2)";
+    popup.style.zIndex = "10000";
+    popup.style.fontFamily = "'Times New Roman'";
+    popup.style.fontSize = "14px";
+    popup.style.color = "#000";
+    popup.style.backgroundImage = "url('https://i.imgur.com/zCZdqv9.png')";
+    popup.style.backgroundSize = "cover";
+    popup.style.backgroundRepeat = "no-repeat";
+    popup.style.backgroundPosition = "center";
+    popup.style.display = "block";
+
+    const content = document.createElement("div");
+    content.id = "popupContent";
+    content.style.pointerEvents = "auto";
+    popup.appendChild(content);
+
+    document.body.appendChild(popup);
+
+    injectTooltipStyles(); // <-- inject styles ONCE
+    makePopupDraggable(popup);
+    updateSimplePopup();
+}
+
+
+function makePopupDraggable(popup) {
+    let offsetX = 0;
+    let offsetY = 0;
+    let isDragging = false;
+
+    popup.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        offsetX = e.clientX - popup.getBoundingClientRect().left;
+        offsetY = e.clientY - popup.getBoundingClientRect().top;
+        document.addEventListener("mousemove", onMouseMove);
+        document.addEventListener("mouseup", onMouseUp);
+    });
+
+    function onMouseMove(e) {
+        if (!isDragging) return;
+        let newX = e.clientX - offsetX;
+        let newY = e.clientY - offsetY;
+        const maxX = window.innerWidth - popup.offsetWidth + 150;
+        const maxY = window.innerHeight - popup.offsetHeight + 150;
+        newX = Math.max(-50, Math.min(newX, maxX));
+        newY = Math.max(-50, Math.min(newY, maxY));
+        popup.style.left = `${newX}px`;
+        popup.style.top = `${newY}px`;
+        popup.style.bottom = "auto";
+        popup.style.right = "auto";
+    }
+
+    function onMouseUp() {
+        isDragging = false;
+        document.removeEventListener("mousemove", onMouseMove);
+        document.removeEventListener("mouseup", onMouseUp);
+    }
+}
+
+function injectTooltipStyles() {
+    if (document.getElementById("tooltipStyles")) return;
+
+    const style = document.createElement("style");
+    style.id = "tooltipStyles";
+    style.textContent = `
+        .hover-value {
+            border-bottom: 1px dotted #000;
+            cursor: help;
+            position: relative;
+        }
+
+        .hover-value::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            background: url('https://i.imgur.com/zCZdqv9.png') center/cover no-repeat;
+            color: #000;
+            padding: 6px 10px;
+            font-family: 'Times New Roman';
+            font-size: 13px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            top: -32px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10001;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .hover-value:hover::after {
+            opacity: 1;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+function updateSimplePopup() {
+    const content = document.getElementById("popupContent");
+    if (!content) return;
+  
+    content.innerHTML = `
+
+      <p>
+        <span class="hover-value" data-tooltip="The <u><b>public’s trust</b></u> in your government heading into the election.">Government Trust</span>: 
+        <span ${Cred >= 7 ? "style=\"color:#7ba922;\"" : Cred <= 6 ? "style=\"color:#d58627;\"" : Cred <= 1 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+          Cred <= -5 ? 'Catastrophic' :
+          Cred === -4 ? 'Horror incarnate' :
+          Cred === -3 ? 'A trainwreck' :
+          Cred === -2 ? 'In shambles' :
+          Cred === -1 ? 'In the gutter' :
+          Cred === 0 ? 'Falling Sharply' :
+          Cred === 1 ? 'Declining' :
+          Cred === 2 ? 'Deteriorating' :
+          Cred === 3 ? 'Recoverable' :
+          Cred === 4 ? 'Turning heads' :
+          Cred <= 6 ? 'On the right track' :
+          Cred <= 8 ? 'Respectable' :
+          Cred <= 10 ? 'Strong' :
+          Cred <= 12 ? 'Undeniable' :
+          Cred <= 14 ? 'Indomitable' :
+          'In the heavens'
+        }">${Cred.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="How secure your <u><b>standing</b></u> as Prime Minister is.">Your Premiership</span>: 
+        <span ${Resign >= 4 ? "style=\"color:#ad1313;\"" : Resign <= 3 ? "style=\"color:#d58627;\"" : Resign <= 1 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          Resign <= 0 ? 'Secure' :
+          Resign === 1 ? 'Stable' :
+          Resign === 2 ? 'Showing Stress' :
+          Resign === 3 ? 'Threatened' :
+          Resign === 4 ? 'Endangered' :
+          'Compromised – start packing your bags'
+        }">${Resign.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="The <u><b>victories</b></u> your government has secured since 2001.">Promises Kept</span>: 
+        <span ${Wins >= 6 ? "style=\"color:#7ba922;\"" : Wins <= 5 ? "style=\"color:#d58627;\"" : Wins <= 2 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+          Wins <= 0 ? 'None at all' :
+          Wins === 1 ? 'Few and far between' :
+          Wins === 2 ? 'Little in number' :
+          Wins === 3 ? 'Some, in a sense' :
+          Wins === 4 ? 'A pocket-full of them' :
+          Wins === 5 ? 'A bite-size bag' :
+          Wins === 6 ? 'A rack of them' :
+          Wins === 7 ? 'Many of them' :
+          Wins === 8 ? 'A bevy of them' :
+          Wins === 9 ? 'Eye-watering amounts' :
+          'A duffle bag full of them'
+        }">${Wins.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="Your willingness to accept <u><b>Old</b> Labour, over <b>New</b></u>.">Labour And You</span>: 
+        <span ${OldLab >= 5 ? "style=\"color:#99000f;\"" : OldLab <= 4 ? "style=\"color:#de1237;\"" : OldLab <= 1 ? "style=\"color:#ff8097;\"" : ""} class="hover-value" data-tooltip="${
+          OldLab <= 0 ? 'Virtually non-existent' :
+          OldLab === 1 ? 'But a footnote' :
+          OldLab === 2 ? 'Reticent, but noticeable' :
+          OldLab === 3 ? 'Well under way' :
+          OldLab === 4 ? 'Showing signs of Prime Minister Wilson' :
+          OldLab === 5 ? 'Embracing traditions of years past' :
+          'Marking a new era'
+        }">${OldLab.toFixed(1)}</span>
+      </p>
+
+      <p>
+        <img src="https://imgur.com/mB2xqdL.jpg" width="250">
+      </p>
+    `;
+  }
+  
+
+function observeGameStats() {
+    const gameWindow = document.getElementById("game_window");
+    const config = { childList: true, subtree: true };
+    const observer = new MutationObserver(() => {
+        updateSimplePopup();
+    });
+    if (gameWindow) {
+        observer.observe(gameWindow, config);
+    }
+}
+
+function toggleSimplePopup() {
+    const popup = document.getElementById("simplePopup");
+    if (!popup) return;
+    popup.style.display = (popup.style.display === "none") ? "block" : "none";
+}
+
 function addHeadquarterButton() {
+    if (document.getElementById('headquarter_button')) return;
+    const refButton = document.getElementById('view_electoral_map');
+    if (!refButton) return;
+    const newButton = document.createElement('button');
+    newButton.id = 'headquarter_button';
+    newButton.style.marginLeft = '1.5em';
+    newButton.innerHTML = 'Government Stats';
+    newButton.addEventListener('click', toggleSimplePopup);
+    refButton.insertAdjacentElement('afterend', newButton);
+}
+
+createSimplePopup();
+observeGameStats();
+
+
+
+// Window Change HQ
+function addHQButton() {
     // Check if the button already exists
     if (document.getElementById("headquarter_button")) {
         return;
@@ -1333,16 +1556,16 @@ function addHeadquarterButton() {
 
     newButton.style.marginLeft = "1.5em";
 
-    newButton.innerHTML = "The Government";
+    newButton.innerHTML = "The Enemies";
 
     // Attach the click event listener
-    newButton.addEventListener("click", openHeadquarter);
+    newButton.addEventListener("click", openHQ);
 
     // Insert the new button next to the reference button
     refButton.insertAdjacentElement("afterend", newButton);
 }
 
-function openHeadquarter() {
+function openHQ() {
 
     var WScore = 0;
     var RScore = 0;
