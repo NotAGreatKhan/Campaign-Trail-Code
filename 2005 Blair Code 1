@@ -1319,6 +1319,8 @@ tooltipList = [
         {searchString: "Ian McCartney", explanationText: "<img src=https://imgur.com/MhvvaKu.jpg> Party Chair of the Labour Party. Always the bearer of bad news, it seems."},
         {searchString: "Alan Milburn", explanationText: "<img src=https://imgur.com/Ok5BkBa.jpg> Chief election strategist of Labour. It won't be him who will bring this home, not alone."},
         {searchString: "Milburn", explanationText: "<img src=https://imgur.com/Ok5BkBa.jpg> Chief election strategist of Labour. It won't be him who will bring this home, not alone."},
+        {searchString: "Charles", explanationText: "<img src=https://imgur.com/wHzfAQi.jpg> Minister without Portfolio, and Chairman of the Labour Party, well, at least until he can get into the Home Office, after he finishes his time as Sec. of State for Education and skills."},
+        {searchString: "Chairman Clarke", explanationText: "<img src=https://imgur.com/wHzfAQi.jpg> Minister without Portfolio, and Chairman of the Labour Party, well, at least until he can get into the Home Office, after he finishes his time as Sec. of State for Education and skills."},
 
         // Characters
         {searchString: "Edward Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
