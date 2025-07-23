@@ -1434,7 +1434,7 @@ function updateSimplePopup() {
 
       <p>
         <span class="hover-value" data-tooltip="The public’s trust in your government heading into the election.">Government Trust</span>: 
-        <span ${Cred >= 7 ? "style=\"color:#7ba922;\"" : Cred <= 6 ? "style=\"color:#d58627;\"" : Cred <= 1 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+        <span ${Cred <= 1 ? "style=\"color:#ad1313;\"" : Cred <= 6 ? "style=\"color:#d58627;\"" : Cred >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           Cred <= -5 ? 'Catastrophic' :
           Cred === -4 ? 'Horror incarnate' :
           Cred === -3 ? 'A trainwreck' :
@@ -1456,7 +1456,7 @@ function updateSimplePopup() {
   
       <p>
         <span class="hover-value" data-tooltip="How secure your standing as Prime Minister is.">Your Premiership</span>: 
-        <span ${Resign >= 4 ? "style=\"color:#ad1313;\"" : Resign <= 3 ? "style=\"color:#d58627;\"" : Resign <= 1 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+        <span ${Resign <= 1 ? "style=\"color:#7ba922;\"" : Resign <= 3 ? "style=\"color:#d58627;\"" : Resign >= 4 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
           Resign <= 0 ? 'Secure' :
           Resign === 1 ? 'Stable' :
           Resign === 2 ? 'Showing Stress' :
@@ -1468,7 +1468,7 @@ function updateSimplePopup() {
   
       <p>
         <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Promises Kept</span>: 
-        <span ${Wins >= 6 ? "style=\"color:#7ba922;\"" : Wins <= 5 ? "style=\"color:#d58627;\"" : Wins <= 2 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+        <span ${Wins <= 2 ? "style=\"color:#ad1313;\"" : Wins <= 5 ? "style=\"color:#d58627;\"" : Wins >= 6 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           Wins <= 0 ? 'None at all' :
           Wins === 1 ? 'Few and far between' :
           Wins === 2 ? 'Little in number' :
@@ -1485,7 +1485,7 @@ function updateSimplePopup() {
   
       <p>
         <span class="hover-value" data-tooltip="Your willingness to accept Old Labour, over New.">Labour And You</span>: 
-        <span ${OldLab >= 5 ? "style=\"color:#99000f;\"" : OldLab <= 4 ? "style=\"color:#de1237;\"" : OldLab <= 1 ? "style=\"color:#ff8097;\"" : ""} class="hover-value" data-tooltip="${
+        <span ${OldLab <= 1 ? "style=\"color:#ff8097;\"" : OldLab <= 4 ? "style=\"color:#de1237;\"" : OldLab >= 5 ? "style=\"color:#99000f;\"" : ""} class="hover-value" data-tooltip="${
           OldLab <= 0 ? 'Virtually non-existent' :
           OldLab === 1 ? 'But a footnote' :
           OldLab === 2 ? 'Reticent, but noticeable' :
@@ -1695,7 +1695,7 @@ function addHQButton() {
 
     newButton.style.marginLeft = '1.5em';
 
-    newButton.innerHTML = 'State of the Union ⚖️';
+    newButton.innerHTML = 'The Roadblocks';
 
     // Attach the click event listener
     newButton.addEventListener('click', openHQ);
@@ -1850,7 +1850,8 @@ function handleMutations(mutationsList, observer) {
     if (observerRunning) return;
     observerRunning = true;
 
-    addHeadquarterButton()
+    addHeadquarterButton();
+    addHQButton();
 
     observer.observe(document.documentElement, { childList: true, subtree: true });
     observerRunning = false;
