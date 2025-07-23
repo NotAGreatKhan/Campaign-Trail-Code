@@ -150,6 +150,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // CREDIBILITY
+    // Question 3 – Terror Bill
+    if(ans == 15182){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
     // Question 5 – 2002 Budget
     if(ans == 12802){
       Cred += 1;
