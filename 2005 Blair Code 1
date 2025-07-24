@@ -926,6 +926,14 @@ campaignTrail_temp.running_mate_json = [
     },
     {
         "model": "campaign_trail.running_mate",
+        "pk": 159977,
+        "fields": {
+            "candidate": 12587,
+            "running_mate": 126
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
         "pk": 159968,
         "fields": {
             "candidate": 12631,
@@ -1183,7 +1191,7 @@ const startScreenUpdater = setInterval(function() {
         	initContinue.click();
     	  }
           
-          else if(r == 125 || r == 127) {
+          else if(r == 125 || r == 126) {
         	if(runningMateButton) {
             	runningMateButton.remove();
         	}
