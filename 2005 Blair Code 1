@@ -432,7 +432,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Liberal Democrat",
             "state": "--",
             "priority": 1,
-            "description": "<p>Put description here</p>",
+            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Liberal Democrats</b></li><li><b>Role: Her Majesty's Most Loyal Third Party</b></li><li><b>Ideology: Centre-left Liberalism</b></li><p> </p><b>The Liberal Democratic Party</b> is the current largest third party in British parliamentary politics. Having emerged as a result of the former Social Democratic Party (or SDP that broke away from Labour in 1981) and the ailing, dying Liberal Party which once dominated the early 20th century. Towing the line of centre-left liberal ideology, they are loosely placed in the middle of the British political spectrum. The Lib Dems have – to a highly effective degree – proven their mettle as an opposition party able to suck out voter bases from both the Tories <i>and</i> Labour.<br><br>For Blair's Labour in particular, the leader of the party has a rare opportunity to sweep the government from the legs, and snatch voter sects teetering on jumping ship all together. Nobody realises it yet. Nobody yet knows the great trials and horrrors the geopolitical climate has in store. If the LibDem leader plays his cards right, he can pry the pre-existing fissures in the major parties into gaping chasms bleeding an exodus people disenfranchised by the Labour-Tory duopoly.<br><br>The young, the infirmed, the hopeful immigrants, and the disillusioned. They can all have the chance to raise a party which can plunge it's citrus-orange knife into the establishment which has governed without accountability for far too long.</div>",
             "color_hex": "#ffb752",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -463,7 +463,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Charles P. Kennedy</b></li><li><b>Role: Her Majesty's Leader of the Liberal Democrats</b></li><li><b>Constituency: Ross, Skye and Lochaber</b></li><p> </p><i>”.”</i>\n\n<p><b></p>\n\n<p></p>\n\n<p></p>\n\n<p></p></div>",
+            "description_as_running_mate": "<li><b>Name: Charles P. Kennedy</b></li><li><b>Role: Her Majesty's Leader of the Liberal Democrats</b></li><li><b>Constituency: Ross, Skye and Lochaber</b></li><p> </p><i>”Politics is much too serious to be taken too seriously; equally, there are many aspects of it so laughable as to be lamentable.”</i><p> </p><b>Charles Peter Kennedy</b>  <br><br> ",
             "candidate_score": 1,
             "running_mate": true
         }
