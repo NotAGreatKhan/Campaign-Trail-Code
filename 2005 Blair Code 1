@@ -463,7 +463,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<li><b>Name: Charles P. Kennedy</b></li><li><b>Role: Her Majesty's Leader of the Liberal Democrats</b></li><li><b>Constituency: Ross, Skye and Lochaber</b></li><p> </p><i>”Politics is much too serious to be taken too seriously; equally, there are many aspects of it so laughable as to be lamentable.”</i><p> </p><b>Charles Peter Kennedy</b>  <br><br> ",
+            "description_as_running_mate": "<li><b>Name: Charles P. Kennedy</b></li><li><b>Role: Her Majesty's Leader of the Liberal Democrats</b></li><li><b>Constituency: Ross, Skye and Lochaber</b></li><p> </p><i>”Politics is much too serious to be taken too seriously; equally, there are many aspects of it so laughable as to be lamentable.”</i><p> </p><b>Charles Peter Kennedy</b> is the epitmoe of a jovial, affable Scotsman. His cheery, light-hearted persona has simultaneously endeared him to the public, and generated chatter – both suspicious and hopeful – among the media class. Making his name as a principled speaker on the more liberal wing of the party, he has taken a long jounrey to stake himself out as a permanent face of the British national politik.<br><br>His climb to the mountain-top does not end here, however – he knew that all too well.",
             "candidate_score": 1,
             "running_mate": true
         }
