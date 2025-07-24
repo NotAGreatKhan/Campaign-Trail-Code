@@ -4,7 +4,7 @@ var Wins = 0;
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
-var Cred = 1;
+var Cred = 2;
 var Brown = false;
 var EUCnstn = 0;
 var iraq = 0;
@@ -150,6 +150,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // CREDIBILITY
+    // Question 2 – Afghanistan
+    if(ans == 12542){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
     // Question 3 – Terror Bill
     if(ans == 15182){
       Cred -= 1;
@@ -157,12 +163,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // Question 5 – 2002 Budget
-    if(ans == 12802){
-      Cred += 1;
+    if(ans == 12803){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 14392){
-      Cred += 1;
+    if(ans == 13904){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
