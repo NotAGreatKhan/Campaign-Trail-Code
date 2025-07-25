@@ -14,7 +14,7 @@ var Wins = 0;
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
-var Cred = 1;
+var Cred = 2;
 var Brown = false;
 var EUCnstn = 0;
 var iraq = 0;
@@ -160,13 +160,25 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // CREDIBILITY
-    // Question 5 – 2002 Budget
-    if(ans == 12802){
-      Cred += 1;
+    // Question 2 – Afghanistan
+    if(ans == 12542){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 14392){
-      Cred += 1;
+
+    // Question 3 – Terror Bill
+    if(ans == 15182){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 5 – 2002 Budget
+    if(ans == 12803){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 13904){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
@@ -197,6 +209,36 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 14930){
       Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 7 – Deciding which EU country to support
+    if(ans == 13554){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 8 – EU Constitution
+    if(ans == 15151){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 8 – UN Assembly Aftermath
+    if(ans == 15107){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15112){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15128){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15133){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
     
@@ -331,6 +373,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 13861){
       Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 18 – Weaker CPA
+    if(ans == 15025){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
@@ -528,8 +576,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 7 – Deciding which EU country to support
-    if(ans == 13554){
+    // Question 8 – EU Constitution
+    if(ans == 15150){
       Wins += 1;
       console.log("Do they like you now?");
     }
@@ -600,6 +648,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Wins += 1;
       console.log("Do they like you now?");
     }
+    if(ans == 15020){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
 
     // EU CONSTITUTION
     if(ans == 13861){
@@ -650,7 +702,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 13500,
     "fields": {
         "priority": 0,
-        "description": "Someday, you knew this day would come. It had to. The preening journalists will be able to concoct a slew of reasons, analysis and justifications for what you are about to do outside the glossy black door of No. 10. But you know the <i>real</i> reason, and he is residing in the flat right next to the one that used to be yours. In your heart of hearts, you know that you ae the only man who can take the vision of this government – and build further upon it to last.<p></p>You take a deep breath. Grasping the folder containing your last speech as Prime Minister.<p></p>With a last shake of the shoulders, you open the door, and address the nation one last time.",
+        "description": "Someday, you knew this day would come. It had to. The preening journalists will be able to concoct a slew of reasons, analysis and justifications for what you are about to do outside the glossy black door of No. 10. But you know the <i>real</i> reason, and he is residing in the flat right next to the one that used to be yours. In your heart of hearts, you know that you are the only man who would have taken the vision of this government – and built further upon it to last.<p></p>You take a deep breath. Grasping the folder containing your last speech as Prime Minister.<p></p>With a last shake of the shoulders, you open the door, and address the nation one last time.",
         "likelihood": 1
       }
     }
@@ -1009,7 +1061,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if((ans == 12808) && Cred < 4 && (ans == 14182 || ans == 14195 || ans == 14201)){
+    if((e.player_answers.includes(12808)) && Cred <= 3 && (ans == 14182 || ans == 14195 || ans == 14201)){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14371,
@@ -1020,7 +1072,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(e.player_answers.includes(12797) && Cred <= 4){
+    if(e.player_answers.includes(12797)){
+    if(Cred <= 4){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14122,
@@ -1031,7 +1084,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(e.player_answers.includes(12797)){
+    else{
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14100,
@@ -1041,7 +1094,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  } 
+  }
+ }
     if(e.player_answers.includes(12808)){
     if (e.player_answers.includes(12824)){
     campaignTrail_temp.questions_json[13] = {
@@ -1200,6 +1254,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Social reform has been a major initiative of your premiership. Your government has pushed forward the monumental Civil Partnerships Act with a sound 426-49 vote in favour. However, a potential Tory wrench in the form of MP Edward Leigh is pushing an amendment to include siblings in the provisions. Whilst the proposal is already being ridiculed as the “wrecking amendment” by many but the most socially conservative MPs, it could undermine the reform you are trying to get through. Will you push, with effort, to shoot this amendment proposal down?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(14801)){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 15171,
+    "fields": {
+        "priority": 0,
+        "description": "Stings and bruises from the near-death experience to your hold on power cast a long shadow over Prime Minister's Questions today. In the last of these sessions before the general election, the Tories have gathered around the campfire to see you get pinned one last time. You've dealt with Tory leaders many times before. But these charges, an imminent collapse of your government if they returned after the election recess, the total abdication of strategy – and most insulting of all – the fall of <i>you</i>. When so many on their side have bloody kicked the can? It's spurious, ridiculous. You better shut this down.",
         "likelihood": 1
       }
     }
@@ -2515,6 +2580,15 @@ campaignTrail_temp.questions_json = [
             "description": "Vultures circle around your spin-doctoring team as the government gears up for the eventual referendums on the European Constitution. Eurosceptics and right wingers in the tabloid press who were in principle willing to stand behind you in the war against terror, have wasted no effort in screeching to the masses about the catastrophe a move towards a federalised Europe would inflict upon the 'sovereign' nation. If you don't define yourself on this issue, your mailbox could be drowned under the tide of anti-Europe populism. Getting ahead of this now would be prudent.",
             "likelihood": 1
         }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15171,
+        "fields": {
+            "priority": 0,
+            "description": "Stings and bruises from the near-death experience to your hold on power cast a long shadow over Prime Minister's Questions today. In the last of these sessions before the general election, the Tories have gathered around the campfire to see you get pinned one last time. You've dealt with Tory leaders many times before. But these charges, an imminent collapse of your government if they returned after the election recess, the total abdication of strategy – and most insulting of all – the fall of <i>you</i>. When so many on their side have bloody kicked the can? It's spurious, ridiculous. You better shut this down.",
+            "likelihood": 1
+        }
     }
 ]
 
@@ -2900,7 +2974,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12888,
         "fields": {
             "question": 12886,
-            "description": "Although Ian Duncan Smith may no longer be leader, Howard has not exactly turned the party into a strong opposition. On every issue they have faltered to provide any meaningful alternative to the sound policy of this government."
+            "description": "Although Iain Duncan Smith may no longer be leader, Howard has not exactly turned the party into a strong opposition. On every issue they have faltered to provide any meaningful alternative to the sound policy of this government."
         }
     },
     {
@@ -5453,6 +5527,30 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 15148,
             "description": "We need to go far and fast with the change that we need to bring to this country. This is just a step in the great march towards a united Europe. This will be an enormous change for the good of Britain, and it will begin anew with this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15172,
+        "fields": {
+            "question": 15171,
+            "description": "I encourage the Right Honourable Gentleman to look outside and into the neighbourhoods of ordinary Britain! In the time since we have been in government, the living standards of this country have gone past any other standard before us. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15173,
+        "fields": {
+            "question": 15171,
+            "description": "I would be careful to throw such stones from that glass house. All that the Tories have embodied from the 90's to today is chaos and unravelling at the seams, and they want to challenge us as the chaos party? I'm not letting this slide."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15182,
+        "fields": {
+            "question": 14031,
+            "description": "Woah, woah. Hey, just hold on. Let's not get too ahead of ourselves here. The blowback from some in our part of the base would be something if we gave our government <i>that</i> many powers. Just write some stuff up boosting funding for the police, cybersecurity, and the rest of it. <i>Although</i> Charles has suggested some new ID cards, let's go with that too, and get it through fast."
         }
     }
 ]
@@ -11950,7 +12048,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14032,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.075
+            "global_multiplier": -0.08
         }
     },
     {
@@ -11960,7 +12058,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14033,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.06
+            "global_multiplier": -0.07
         }
     },
     {
@@ -11970,7 +12068,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14033,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": 0.01
+            "global_multiplier": 0.006
         }
     },
     {
@@ -11980,7 +12078,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14033,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.015
+            "global_multiplier": 0.009
         }
     },
     {
@@ -11990,7 +12088,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14034,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.09
+            "global_multiplier": -0.085
         }
     },
     {
@@ -12000,7 +12098,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14034,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": 0.015
+            "global_multiplier": 0.01
         }
     },
     {
@@ -15932,6 +16030,66 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12649,
             "global_multiplier": 0.007
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15177,
+        "fields": {
+            "answer": 15173,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15178,
+        "fields": {
+            "answer": 15173,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15179,
+        "fields": {
+            "answer": 15172,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15185,
+        "fields": {
+            "answer": 15182,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.08
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15186,
+        "fields": {
+            "answer": 15182,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.012
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15187,
+        "fields": {
+            "answer": 13900,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.003
+        }
     }
 ]
 
@@ -17781,8 +17939,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14044,
         "fields": {
             "answer": 14034,
-            "issue": 30,
-            "issue_score": 0.65,
+            "issue": 28,
+            "issue_score": 0,
             "issue_importance": 4
         }
     },
@@ -17791,7 +17949,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14045,
         "fields": {
             "answer": 14033,
-            "issue": 30,
+            "issue": 28,
             "issue_score": 4,
             "issue_importance": -0.65
         }
@@ -17801,7 +17959,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14046,
         "fields": {
             "answer": 14032,
-            "issue": 30,
+            "issue": 28,
             "issue_score": 4,
             "issue_importance": -0.8
         }
@@ -20275,6 +20433,36 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0.75,
             "issue_importance": 5
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15180,
+        "fields": {
+            "answer": 15172,
+            "issue": 30,
+            "issue_score": -0.75,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15181,
+        "fields": {
+            "answer": 15173,
+            "issue": 30,
+            "issue_score": -0.75,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15184,
+        "fields": {
+            "answer": 15182,
+            "issue": 28,
+            "issue_score": -0.5,
+            "issue_importance": 4
+        }
     }
 ]
 
@@ -22310,7 +22498,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13900,
             "candidate": 12543,
-            "answer_feedback": "You pointed your British sword at the terrorists, and feebly sheathed it back in your scabbard. In the House of Commons, Duncan Smith pounces, whipping it as \"shrinking away from his responsibilities as Commander in Chief\". The public reaction is not far off..."
+            "answer_feedback": "You pointed your British sword at the terrorists, and feebly sheathed it back in your scabbard. In the House of Commons, Duncan Smith pounces, whipping it as \"shrinking away from his responsibilities as Commander in Chief\". The public reaction is not far off, but, the dovish wing appreciates your restraint."
         }
     },
     {
@@ -23903,7 +24091,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15031,
             "candidate": 12543,
-            "answer_feedback": "You have etched the battle lines very clearly here. Your Labour benches are almost entirely behind you, but the traditional, socially conservative wing of the COnservatives wave their papers in the House as they prepare to fight. After a proper bruising on an amendment which – all things considered – should not have been a slap-fight, the amendment is shot down. Thank God."
+            "answer_feedback": "You have etched the battle lines very clearly here. Your Labour benches are almost entirely behind you, but the traditional, socially conservative wing of the Conservatives wave their papers in the House as they prepare to fight. After a proper bruising on an amendment which – all things considered – should not have been a slap-fight, the amendment is shot down. Thank God."
         }
     },
     {
@@ -24102,6 +24290,33 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 15155,
             "candidate": 12543,
             "answer_feedback": "You feel an oratorical freedom you have seldom felt before since the collapse of the Major government. The quotes and official statements are rolled out. The hopes and dreams of all British Europhiles are countered and slashed to pieces by the right wing print media, who waste no time in making sly insinuations about a European super-state in the works in smoke-filled back rooms. Alastair's fists tighten with every <i>Telegraph</i> headline he has to read. Maybe the EU is as far as this will ever go."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15175,
+        "fields": {
+            "answer": 15172,
+            "candidate": 12543,
+            "answer_feedback": "Pivoting back to the stable living conditions has been your ol' reliable for years now. Nevertheless, the Tory backbenches cheer like they rarely do in PMQs, and some queasy onlookers in your own benches wish they never had to deal with it with you standing at the dispatch box. You pray their ravenous looks won't show their ugly side until you resign – of your own volition."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15176,
+        "fields": {
+            "answer": 15173,
+            "candidate": 12543,
+            "answer_feedback": "Iain Duncan Smith's resignation has made this line lose most of its potency. Even if Michael Howard did not whip his party back into discipline, any other high profile Tory would have, in all likelihood, given them a stronger base of footing. All Howard has to do is point at your own backbenches waving their papers to score a cheap win."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15183,
+        "fields": {
+            "answer": 15182,
+            "candidate": 12543,
+            "answer_feedback": "Chairman Clarke's suggestion sends the cabinet into trepidation, but they move forward with it anyway. The bill is rushed through parliament by an enormous margin – well over 400 vote in favour – Andrew Marr says later that day: “The government has won the vote very easily but it has not necessarily won the argument”. It's not the only critique sent your way. Tories and LibDems sense blood in the water around your identity cards, and make hay to rip into it. The terror and silence of the public for now is more deafening, and yet, a shiver rattles your spine. As if you're hearing attacks meant for the next parliamentary term."
         }
     }
 ]
@@ -25479,300 +25694,506 @@ applyTooltipsToObject(campaignTrail_temp.answers_json);
 applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
 
+
+
+// Popup HQ
+function createSimplePopup() {
+    const popup = document.createElement("div");
+    popup.id = "simplePopup";
+    popup.style.position = "fixed";
+    popup.style.bottom = "20px";
+    popup.style.right = "20px";
+    popup.style.width = "435px";
+    popup.style.height = "450px";
+    popup.style.border = "1px solid #000";
+    popup.style.borderRadius = "5px";
+    popup.style.padding = "40px 10px 10px 10px";
+    popup.style.boxShadow = "0 0 5px rgba(0,0,0,0.2)";
+    popup.style.zIndex = "10000";
+    popup.style.fontFamily = "'Times New Roman'";
+    popup.style.fontSize = "14px";
+    popup.style.color = "#000";
+    popup.style.backgroundImage = "url('https://imgur.com/cs5mSqg.jpg')";
+    popup.style.backgroundSize = "cover";
+    popup.style.backgroundRepeat = "no-repeat";
+    popup.style.backgroundPosition = "center";
+    popup.style.display = "block";
+
+    const content = document.createElement("div");
+    content.id = "popupContent";
+    content.style.pointerEvents = "auto";
+    popup.appendChild(content);
+
+    document.body.appendChild(popup);
+
+    injectTooltipStyles(); // <-- inject styles ONCE
+    makePopupDraggable(popup);
+    updateSimplePopup();
+}
+
+
+function makePopupDraggable(popup) {
+    let offsetX = 0;
+    let offsetY = 0;
+    let isDragging = false;
+
+    popup.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        offsetX = e.clientX - popup.getBoundingClientRect().left;
+        offsetY = e.clientY - popup.getBoundingClientRect().top;
+        document.addEventListener("mousemove", onMouseMove);
+        document.addEventListener("mouseup", onMouseUp);
+    });
+
+    function onMouseMove(e) {
+        if (!isDragging) return;
+        let newX = e.clientX - offsetX;
+        let newY = e.clientY - offsetY;
+        const maxX = window.innerWidth - popup.offsetWidth + 150;
+        const maxY = window.innerHeight - popup.offsetHeight + 150;
+        newX = Math.max(-50, Math.min(newX, maxX));
+        newY = Math.max(-50, Math.min(newY, maxY));
+        popup.style.left = `${newX}px`;
+        popup.style.top = `${newY}px`;
+        popup.style.bottom = "auto";
+        popup.style.right = "auto";
+    }
+
+    function onMouseUp() {
+        isDragging = false;
+        document.removeEventListener("mousemove", onMouseMove);
+        document.removeEventListener("mouseup", onMouseUp);
+    }
+}
+
+function injectTooltipStyles() {
+    if (document.getElementById("tooltipStyles")) return;
+
+    const style = document.createElement("style");
+    style.id = "tooltipStyles";
+    style.textContent = `
+        .hover-value {
+            border-bottom: 1px dotted #000;
+            cursor: help;
+            position: relative;
+        }
+
+        .hover-value::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            background: url('https://imgur.com/cs5mSqg.jpg') center/cover no-repeat;
+            color: #000;
+            padding: 6px 10px;
+            font-family: 'Times New Roman';
+            font-size: 13px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            top: -32px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10001;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .hover-value:hover::after {
+            opacity: 1;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+function updateSimplePopup() {
+    const content = document.getElementById("popupContent");
+    if (!content) return;
+  
+    content.innerHTML = `
+
+      <p>
+        <span class="hover-value" data-tooltip="The public’s trust in your government heading into the election.">Government Trust</span>: 
+        <span ${Cred <= 1 ? "style=\"color:#ad1313;\"" : Cred <= 6 ? "style=\"color:#d58627;\"" : Cred >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          Cred <= -5 ? 'Catastrophic' :
+          Cred === -4 ? 'Horror incarnate' :
+          Cred === -3 ? 'A trainwreck' :
+          Cred === -2 ? 'In shambles' :
+          Cred === -1 ? 'In the gutter' :
+          Cred === 0 ? 'Falling Sharply' :
+          Cred === 1 ? 'Declining' :
+          Cred === 2 ? 'Deteriorating' :
+          Cred === 3 ? 'Recoverable' :
+          Cred === 4 ? 'Turning heads' :
+          Cred <= 6 ? 'On the right track' :
+          Cred <= 8 ? 'Respectable' :
+          Cred <= 10 ? 'Strong' :
+          Cred <= 12 ? 'Undeniable' :
+          Cred <= 14 ? 'Indomitable' :
+          'In the heavens'
+        }">${Cred.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="How secure your standing as Prime Minister is.">Your Premiership</span>: 
+        <span ${Resign <= 1 ? "style=\"color:#7ba922;\"" : Resign <= 3 ? "style=\"color:#d58627;\"" : Resign >= 4 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+          Resign <= 0 ? 'Secure' :
+          Resign === 1 ? 'Stable' :
+          Resign === 2 ? 'Showing Stress' :
+          Resign === 3 ? 'Threatened' :
+          Resign === 4 ? 'Endangered' :
+          'Compromised – start packing your bags'
+        }">${Resign.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Promises Kept</span>: 
+        <span ${Wins <= 2 ? "style=\"color:#ad1313;\"" : Wins <= 5 ? "style=\"color:#d58627;\"" : Wins >= 6 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          Wins <= 0 ? 'None at all' :
+          Wins === 1 ? 'Few and far between' :
+          Wins === 2 ? 'Little in number' :
+          Wins === 3 ? 'Some, in a sense' :
+          Wins === 4 ? 'A pocket-full of them' :
+          Wins === 5 ? 'A bite-size bag' :
+          Wins === 6 ? 'A rack of them' :
+          Wins === 7 ? 'Many of them' :
+          Wins === 8 ? 'A bevy of them' :
+          Wins === 9 ? 'Eye-watering amounts' :
+          'A duffle bag full of them'
+        }">${Wins.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="Your willingness to accept Old Labour, over New.">Labour And You</span>: 
+        <span ${OldLab <= 1 ? "style=\"color:#ff8097;\"" : OldLab <= 4 ? "style=\"color:#de1237;\"" : OldLab >= 5 ? "style=\"color:#99000f;\"" : ""} class="hover-value" data-tooltip="${
+          OldLab <= 0 ? 'Virtually non-existent' :
+          OldLab === 1 ? 'But a footnote' :
+          OldLab === 2 ? 'Reticent, but noticeable' :
+          OldLab === 3 ? 'Well under way' :
+          OldLab === 4 ? 'Showing signs of Prime Minister Wilson' :
+          OldLab === 5 ? 'Embracing traditions of years past' :
+          'Marking a new era'
+        }">${OldLab.toFixed(1)}</span>
+      </p>
+
+      <p>
+        <img src="https://imgur.com/mB2xqdL.jpg" width="435">
+      </p>
+    `;
+  }
+  
+
+function observeGameStats() {
+    const gameWindow = document.getElementById("game_window");
+    const config = { childList: true, subtree: true };
+    const observer = new MutationObserver(() => {
+        updateSimplePopup();
+    });
+    if (gameWindow) {
+        observer.observe(gameWindow, config);
+    }
+}
+
+function toggleSimplePopup() {
+    const popup = document.getElementById("simplePopup");
+    if (!popup) return;
+    popup.style.display = (popup.style.display === "none") ? "block" : "none";
+}
+
 function addHeadquarterButton() {
+    if (document.getElementById('headquarter_button')) return;
+    const refButton = document.getElementById('view_electoral_map');
+    if (!refButton) return;
+    const newButton = document.createElement('button');
+    newButton.id = 'headquarter_button';
+    newButton.style.marginLeft = '1.5em';
+    newButton.innerHTML = 'The Government';
+    newButton.addEventListener('click', toggleSimplePopup);
+    refButton.insertAdjacentElement('afterend', newButton);
+}
+
+createSimplePopup();
+observeGameStats();
+
+
+
+
+// Window Change HQ
+campaignTrail_temp.advisors = [
+    {
+        pk: 50000,
+        role: "Conservative Party Leader",   
+    },
+    {
+        pk: 50001,
+        role: "Party Factionalism",
+    },
+    {
+        pk: 50002,
+        role: "Chancellor Relations",
+    }
+];
+
+// updateAdvisor(50000, "Vacant", "'", "The Tory MPs have spoken, and they have called out for Duncan Smith to kick the can. About time.");
+// updateAdvisor(50000, "Kenneth Clarke", "https://imgur.com/sNj3Mnl.png", "A relic from a bygone era of the Tories. If it isn't 2001, make sure 2005 marks his end.");
+// updateAdvisor(50000, "Michael Portillo", "'", "This 'transformed' wet Tory hopes to bring social progressivism, but his Europophobia cannot enter No. 10.");
+
+// updateAdvisor(50001, "Corbyn and Benn", "'", "'");
+// updateAdvisor(50001, "George Galloway", "'", "'");
+// updateAdvisor(50001, "'", "'", "'");
+
+// updateAdvisor(50002, "'", "'", "'");
+// updateAdvisor(50002, "'", "'", "'");
+// updateAdvisor(50002, "A 'New' Beginning", "Alastair_Darling.png", "The Blair-Brown sob story is now a thing of the past. Revel in your newfound unity, Gordon.");
+
+// Define possible opponents and their conditions
+const opponents = [
+];
+
+// Function to select the closest opponent
+function selectClosestOpponent() {
+  if (bobby >= 1) {
+    return opponents.find(o => o.name === "Robert Kennedy Jr.");
+  }
+  
+  let closestOpponent = null;
+  let highestPriority = -1;
+
+  for (let opponent of opponents) {
+      let priority = opponent.priority();
+      if (priority > highestPriority) {
+          highestPriority = priority;
+          closestOpponent = opponent;
+      }
+  }
+
+  // Default opponent if no conditions are met
+  if (!closestOpponent) {
+      closestOpponent = {
+          name: "Michael Howard",
+          picture: "https://imgur.com/CZZmYV9.png",
+          advice: "A veteran government Tory who can actually whip some discipline, but he's no great moderniser."
+      };
+  }
+
+  return closestOpponent;
+}
+
+// Update the advisor based on the closest opponent
+function updateLeadingRepublicanOpponent() {
+  const opponent = selectClosestOpponent();
+  updateAdvisor(50000, opponent.name, opponent.picture, opponent.advice);
+}
+
+campaignTrail_temp.advice = [
+    {
+        advisor_pk: 50000,
+        name: "Iain Duncan Smith",
+        picture: "'",
+        advice: "A darling of the traditionalist Tories, and no one else. His fate will arrive soon enough."
+    },
+    {
+        advisor_pk: 50001,
+        name: "Scattered and Distant",
+        picture: "'",
+        advice: "The party caucus is united behind us in the wake of our 2001 victory, but a coalition is liable to fracturing."
+    },
+    {
+        advisor_pk: 50002,
+        name: "Holding Together",
+        picture: "'",
+        advice: "Gordon Brown has grievances simmering beneath the surface, but he's willing to shelve them. For now."
+    }
+];
+
+function updateAdvisor(advisor_pk, newName, newPicture, newAdvice) {
+    let advice = campaignTrail_temp.advice.find(a => a.advisor_pk === advisor_pk);
+
+    if (advice) {
+        advice.name = newName;
+        advice.picture = newPicture;
+        advice.advice = newAdvice;
+    } else {
+        console.error(`No advice found for advisor_pk: ${advisor_pk}`);
+    }
+}
+
+function addHQButton() {
     // Check if the button already exists
-    if (document.getElementById("headquarter_button")) {
+    if (document.getElementById('headquarter_button')) {
         return;
     }
 
     // Find the reference button by its ID
-    const refButton = document.getElementById("view_electoral_map");
+    const refButton = document.getElementById('view_electoral_map');
     if (!refButton) {
         return;
     }
 
     // Create a new button element
-    const newButton = document.createElement("button");
+    const newButton = document.createElement('button');
 
-    newButton.id = "headquarter_button";
+    newButton.id = 'headquarter_button';
 
-    newButton.style.marginLeft = "1.5em";
+    newButton.style.marginLeft = '1.5em';
 
-    newButton.innerHTML = "The Government";
+    newButton.innerHTML = 'The Roadblocks';
 
     // Attach the click event listener
-    newButton.addEventListener("click", openHeadquarter);
+    newButton.addEventListener('click', openHQ);
 
     // Insert the new button next to the reference button
-    refButton.insertAdjacentElement("afterend", newButton);
+    refButton.insertAdjacentElement('afterend', newButton);
 }
 
-function openHeadquarter() {
-
-    var WScore = 0;
-    var RScore = 0;
-    var CScore = 1;
-    var OLScore = 0;
-
-    if (Cred == -5) {
-        CScore = "<font color='#ad1313;'><b>catastrophic</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
-    }
-    if (Cred == -4) {
-        CScore = "<font color='#ad1313;'><b>horror incarnate</b></font> (<font color='#ad1313;'><b>-4</b></font>)"
-    }
-    if (Cred == -3) {
-        CScore = "<font color='#ad1313;'><b>a trainwreck</b></font> (<font color='#ad1313;'><b>-3</b></font>)"
-    }
-    if (Cred == -2) {
-        CScore = "<font color='#ad1313;'><b>in shambles</b></font> (<font color='#ad1313;'><b>-2</b></font>)"
-    }
-    if (Cred == -1) {
-        CScore = "<font color='#ad1313;'><b>in the gutter</b></font> (<font color='#ad1313;'><b>-1</b></font>)"
-    }
-    if (Cred == 0) {
-        CScore = "<font color='#ad1313;'><b>falling sharply</b></font> (<font color='#ad1313;'><b>0</b></font>)"
-    }
-    if (Cred == 1) {
-        CScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>1</b></font>)"
-    }
-    if (Cred == 2) {
-        CScore = "<font color='#d58627;'><b>deteriorating</b></font> (<font color='#d58627;'><b>2</b></font>)"
-    } 
-    if (Cred == 3) {
-        CScore = "<font color='#d58627;'><b>recoverable</b></font> (<font color='#d58627;'><b>3</b></font>)"
-    }
-    if (Cred == 4) {
-        CScore = "<font color='#d58627;'><b>noticeable</b></font> (<font color='#d58627;'><b>4</b></font>)"
-    }
-    if (Cred == 5) {
-        CScore = "<font color='#d58627;'><b>on the right track</b></font> (<font color='#d58627;'><b>5</b></font>)"
-    }
-    if (Cred == 6) {
-        CScore = "<font color='#d58627;'><b>on the right track</b></font> (<font color='#d58627;'><b>6</b></font>)"
-    }
-    if (Cred == 7) {
-        CScore = "<font color='#7ba922;'><b>respectable</b></font> (<font color='#7ba922;'><b>7</b></font>)"
-    }
-    if (Cred == 8) {
-        CScore = "<font color='#7ba922;'><b>respectable</b></font> (<font color='#7ba922;'><b>8</b></font>)"
-    }
-    if (Cred == 9) {
-        CScore = "<font color='#7ba922;'><b>strong</b></font> (<font color='#7ba922;'><b>9</b></font>)"
-    }
-    if (Cred == 10) {
-        CScore = "<font color='#7ba922;'><b>strong</b></font> (<font color='#7ba922;'><b>10</b></font>)"
-    }
-    if (Cred == 11) {
-        CScore = "<font color='#7ba922;'><b>undeniable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
-    }
-    if (Cred == 12) {
-        CScore = "<font color='#7ba922;'><b>undeniable</b></font> (<font color='#7ba922;'><b>12</b></font>)"
-    }
-    if (Cred == 13) {
-        CScore = "<font color='#7ba922;'><b>indomitable</b></font> (<font color='#7ba922;'><b>13</b></font>)"
-    } 
-    if (Cred == 14) {
-        CScore = "<font color='#7ba922;'><b>indomitable</b></font> (<font color='#7ba922;'><b>14</b></font>)"
-    }
-    if (Cred == 15) {
-        CScore = "<font color='#7ba922;'><b>in the heavens</b></font> (<font color='#7ba922;'><b>15</b></font>)"
-    }
-
-    if (Resign == 0) {
-        RScore = "<font color='#7ba922;'><b>secure</b></font> (<font color='#7ba922;'><b>0</b></font>)"
-    }
-    if (Resign == 1) {
-        RScore = "<font color='#7ba922;'><b>stable</b></font> (<font color='#7ba922;'><b>1</b></font>)"
-    }
-    if (Resign == 2) {
-        RScore = "<font color='#d58627;'><b>showing stress</b></font> (<font color='#d58627;'><b>2</b></font>)"
-    }
-    if (Resign == 3) {
-        RScore = "<font color='#d58627;'><b>threatened</b></font> (<font color='#d58627;'><b>3</b></font>)"
-    }
-    if (Resign == 4) {
-        RScore = "<font color='#ad1313;'><b>endangered</b></font> (<font color='#ad1313;'><b>4</b></font>)"
-    }
-    if (Resign == 5) {
-        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>5</b></font>)"
-    }
-    if (Resign == 6) {
-        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>6</b></font>)"
-    }
-    if (Resign == 7) {
-        RScore = "<font color='#ad1313;'><b>compromised</b></font> (<font color='#ad1313;'><b>7</b></font>)"
-    }
-
-    if (OldLab == 0) {
-        OLScore = "<font color='#ff8097;'><b>virtually non-existent</b></font> (<font color='#ff8097;'><b>0</b></font>)"
-    }
-    if (OldLab == 1) {
-        OLScore = "<font color='#ff8097;'><b>but a footnote</b></font> (<font color='#ff8097;'><b>1</b></font>)"
-    }
-    if (OldLab == 2) {
-        OLScore = "<font color='#de1237;'><b>reticent, but noticeable</b></font> (<font color='#de1237;'><b>2</b></font>)"
-    }
-    if (OldLab == 3) {
-        OLScore = "<font color='#de1237;'><b>well under way</b></font> (<font color='#de1237;'><b>3</b></font>)"
-    }
-    if (OldLab == 4) {
-        OLScore = "<font color='#de1237;'><b>showing signs of Prime Minister Wilson</b></font> (<font color='#de1237;'><b>4</b></font>)"
-    }
-    if (OldLab == 5) {
-        OLScore = "<font color='#99000f;'><b>embracing the old traditions of years past</b></font> (<font color='#99000f;'><b>5</b></font>)"
-    }
-    if (OldLab == 6) {
-        OLScore = "<font color='#99000f;'><b>marking a new era</b></font> (<font color='#99000f;'><b>6</b></font>)"
-    }
-
-    if (Wins == 0) {
-        WScore = "<font color='#ad1313;'><b>no wins</b></font> (<font color='#ad1313;'><b>0</b></font>)"
-    }
-    if (Wins == 1) {
-        WScore = "<font color='#ad1313;'><b>few wins</b></font> (<font color='#ad1313;'><b>1</b></font>)"
-    }
-    if (Wins == 2) {
-        WScore = "<font color='#ad1313;'><b>little wins</b></font> (<font color='#ad1313;'><b>2</b></font>)"
-    } 
-    if (Wins == 3) {
-        WScore = "<font color='#d58627;'><b>some wins</b></font> (<font color='#d58627;'><b>3</b></font>)"
-    }
-    if (Wins == 4) {
-        WScore = "<font color='#d58627;'><b>a pocket of wins</b></font> (<font color='#d58627;'><b>4</b></font>)"
-    }
-    if (Wins == 5) {
-        WScore = "<font color='#d58627;'><b>a bite-size bag of wins</b></font> (<font color='#d58627;'><b>5</b></font>)"
-    }
-    if (Wins == 6) {
-        WScore = "<font color='#7ba922;'><b>a rack of wins</b></font> (<font color='#7ba922;'><b>6</b></font>)"
-    }
-    if (Wins == 7) {
-        WScore = "<font color='#7ba922;'><b>many wins</b></font> (<font color='#7ba922;'><b>7</b></font>)"
-    }
-    if (Wins == 8) {
-        WScore = "<font color='#7ba922;'><b>a bevy of wins</b></font> (<font color='#7ba922;'><b>8</b></font>)"
-    }
-    if (Wins == 9) {
-        WScore = "<font color='#7ba922;'><b>eye-watering wins</b></font> (<font color='#7ba922;'><b>9</b></font>)"
-    }
-    if (Wins == 10) {
-        WScore = "<font color='#7ba922;'><b>a duffle bag full of wins</b></font> (<font color='#7ba922;'><b>10</b></font>)"
-    }
-
-    let questions = document.querySelector(".inner_window_question");
-
-    questions.style.display = "none";
-
-    const hqButton = document.getElementById("headquarter_button");
-    if (hqButton) {
-        hqButton.remove();
+function openHQ() {
+    // Update the leading Republican opponent
+    if (altprimary == true) {
+      updateLeadingRepublicanOpponent();
     }
     
-    // Create and set up the headquarters div
-    let hqDiv = document.createElement("div");
-    hqDiv.id = "headquarter";
-    hqDiv.style.display = "flex"; // Set layout to flex to allow columns
-    hqDiv.style.color = "white";
-    hqDiv.style.backgroundColor = "#383838";
-    hqDiv.style.backgroundImage = "url(https://imgur.com/sfodLOa.jpg)"; 
-    hqDiv.style.border = "5px solid black";
-    hqDiv.style.borderRadius = "10px";
-    hqDiv.style.height = "56%";
-    hqDiv.style.flexDirection = "column";
-    hqDiv.style.alignItems = "center";
-
-    // Create header div
-    let headerDiv = document.createElement("div");
-    headerDiv.style.display = "flex";
-    headerDiv.style.justifyContent = "space-between";
-    headerDiv.style.width = "100%";
-    headerDiv.style.alignItems = "center";
-
-    // Add back button to the header
-    let backButton = document.createElement("button");
-    backButton.innerText = "Back";
-    backButton.style.margin = "5px";
-    backButton.style.backgroundColor = "grey";
-    backButton.onclick = function() {
-        // Hide headquarters and show the original content
-        hqDiv.remove();
-        questions.style.display = "";
-    }
-    headerDiv.appendChild(backButton);
-
-    let headerText = document.createElement("h3");
-    headerText.textContent = "Communications Director – Alastair Campbell";
-    headerText.style.textAlign = "center";  // Center the text
-    headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
-    headerText.style.color = "black";
-    headerDiv.appendChild(headerText);
-
-    // Append headerDiv to the main hqDiv
-    hqDiv.appendChild(headerDiv);
-
-    // Create a container div for both columns
-    let columnsDiv = document.createElement("div");
-    columnsDiv.style.display = "flex";
-    columnsDiv.style.width = "100%";
-
-    // Create inner divs for columns
-    let leftCol = document.createElement('div');
-    leftCol.style.width = "50%";
-    columnsDiv.appendChild(leftCol);
-
-    let rightCol = document.createElement('div');
-    rightCol.style.width = "50%";
-    columnsDiv.appendChild(rightCol);
-
-    // Append columnsDiv to the main hqDiv
-    hqDiv.appendChild(columnsDiv);
-
-
-    questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
-
-    let a = document.createElement("p");
-    a.innerHTML = 'The <u><b>public’s trust</b></u> in your government heading into the election is ' + CScore + '.';
-    // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
-    a.style.color = "black"; // Can be used to change the color of the text
-    a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
-    hqDiv.appendChild(a);
-
-    let b = document.createElement("p");
-    b.innerHTML = 'Your <u><b>standing</b></u> as Prime Minister is ' + RScore + '.';
-    // b.style.flexGrow = "0.1";
-    b.style.color = "black";
-    b.style.margin = "8px";
-    hqDiv.appendChild(b);
-
-    let c = document.createElement("p");
-    c.innerHTML = '<u>Since <b>2001</b></u>, your government has secured ' + WScore + '.';
-    // c.style.flexGrow = "0.1";
-    c.style.color = "black";
-    c.style.margin = "8px";
-    hqDiv.appendChild(c);
-
-    let d = document.createElement("p");
-    d.innerHTML = 'Your willingness to accept <u><b>Old</b> Labour, instead of <b>New</b></u>, is ' + OLScore + '.';
-    // d.style.flexGrow = "0.1";
-    d.style.color = "black";
-    d.style.margin = "8px";
-    hqDiv.appendChild(d);
-
-    // Image
-    let img = document.createElement("img");
-    img.src = "https://imgur.com/mB2xqdL.jpg";
-    img.style.height = "40%";
-    img.style.marginLeft = "1em";
-    img.style.flexGrow = "0.1";
-    img.style.border = "3px solid black";  // Add thin white border to the image
-    hqDiv.appendChild(img);
+      let questions = document.querySelector(".inner_window_question");
+  
+      questions.style.display = 'none';
+  
+      const hqButton = document.getElementById('headquarter_button');
+      if (hqButton) {
+          hqButton.remove();
+      }
+  
+      // Create and set up the headquarters div
+      let hqDiv = document.createElement('div');
+      hqDiv.id = 'headquarter';
+      hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
+      hqDiv.style.color = 'black';
+      // hqDiv.style.backgroundColor = '#383838';
+      hqDiv.style.backgroundImage = 'url(https://imgur.com/sfodLOa.jpg)';
+      hqDiv.style.border = '5px solid black';
+      hqDiv.style.borderRadius = '10px';
+      hqDiv.style.height = '53%';
+      hqDiv.style.flexDirection = 'column';
+      hqDiv.style.alignItems = 'center';
+  
+      // Create header div
+      let headerDiv = document.createElement('div');
+      headerDiv.style.display = 'flex';
+      headerDiv.style.justifyContent = 'space-between';
+      headerDiv.style.width = '100%';
+      headerDiv.style.alignItems = 'center';
+  
+      // Add back button to the header
+      let backButton = document.createElement('button');
+      backButton.innerText = 'Back';
+      backButton.style.margin = '5px';
+      backButton.style.backgroundColor = 'grey';
+      backButton.style.position = 'absolute';
+      backButton.style.top = '95px';
+      backButton.style.left = '20px';
+      backButton.onclick = function() {
+          // Hide headquarters and show the original content
+          hqDiv.remove();
+          questions.style.display = '';
+      }
+      headerDiv.appendChild(backButton);
+  
+      // Create h3 element for the header
+      let headerText = document.createElement('h2');
+      headerText.textContent = 'The Hostiles';
+      headerText.style.textAlign = 'center';  // Center the text
+      headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
+      headerDiv.appendChild(headerText);
+  
+      // Append headerDiv to the main hqDiv
+      hqDiv.appendChild(headerDiv);
+  
+      // Create a container div for both columns
+      let columnsDiv = document.createElement('div');
+      columnsDiv.style.display = 'flex';
+      columnsDiv.style.width = '100%';
+  
+      // Create inner divs for columns
+      let leftCol = document.createElement('div');
+      leftCol.style.width = '50%';
+      columnsDiv.appendChild(leftCol);
+  
+      let rightCol = document.createElement('div');
+      rightCol.style.width = '50%';
+      columnsDiv.appendChild(rightCol);
+  
+      // Append columnsDiv to the main hqDiv
+      hqDiv.appendChild(columnsDiv);
+  
+      var roles = [
+          { role: 'Conservative Party Leader', pk: 50000 },
+          { role: 'Party Factionalism', pk: 50001 },
+          { role: 'Chancellor Relations', pk: 50002 },
+          // { role: 'United States Attorney General', pk: 50003 }
+      ];
+  
+      for (let i = 0; i < roles.length; i++) {
+          let roleInfo = roles[i];
+          let advice = campaignTrail_temp.advice.find(a => a.advisor_pk === roleInfo.pk);
+  
+          if (!advice) {
+              console.error(`No advice found for advisor_pk: ${roleInfo.pk}`);
+              continue;
+          }
+  
+          let advisorDiv = document.createElement('div');
+          advisorDiv.style.height = '7.5em';
+          advisorDiv.style.padding = '1em';
+          advisorDiv.style.display = 'flex';
+          advisorDiv.style.marginBottom = '1em';
+  
+          // Image
+          let img = document.createElement('img');
+          img.src = advice.picture;
+          img.style.height = '100%';
+          img.style.marginRight = '1em';
+          img.style.border = '1px solid black';
+  
+          // Description
+          let descriptionDiv = document.createElement('div');
+          descriptionDiv.style.display = 'flex';
+          descriptionDiv.style.flexDirection = 'column';
+          descriptionDiv.style.justifyContent = 'center';
+  
+          let role = document.createElement('h5');
+          role.textContent = roleInfo.role;
+          role.style.margin = '3px';
+          descriptionDiv.appendChild(role);
+  
+          let name = document.createElement('h3');
+          name.textContent = advice.name;
+          name.style.margin = '3px';
+          descriptionDiv.appendChild(name);
+  
+          let bio = document.createElement('p');
+          bio.textContent = advice.advice;
+          bio.style.margin = '3px';
+          descriptionDiv.appendChild(bio);
+  
+          advisorDiv.appendChild(img);
+          advisorDiv.appendChild(descriptionDiv);
+  
+          // Append advisorDiv to the appropriate column
+          if (i % 2 === 0) {
+              leftCol.appendChild(advisorDiv);
+          } else {
+              rightCol.appendChild(advisorDiv);
+          }
+      }
+  
+      questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 }
+
 
 function handleMutations(mutationsList, observer) {
     if (observerRunning) return;
     observerRunning = true;
 
-    addHeadquarterButton()
+    addHeadquarterButton();
+    addHQButton();
 
     observer.observe(document.documentElement, { childList: true, subtree: true });
     observerRunning = false;
