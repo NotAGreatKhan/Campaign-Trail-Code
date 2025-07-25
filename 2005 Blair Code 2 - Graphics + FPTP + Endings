@@ -1554,31 +1554,20 @@ campaignTrail_temp.advisors = [
     }
 ];
 
-// updateAdvisor(50000, "Vacant", "https://itsastronomical.com/assets/2024/opp/vacant.png", "NOW: MCCARTHY APPEARS TO SUFFER DEFEAT ON FIRST SPEAKER BALLOT");
-// updateAdvisor(50000, "Kevin McCarthy", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "Has yearned for decades for this position. Is it worth it?");
+// updateAdvisor(50000, "Vacant", "'", "The Tory MPs have spoken, and they have called out for Duncan Smith to kick the can. About time.");
+// updateAdvisor(50000, "Kenneth Clarke", "https://imgur.com/sNj3Mnl.png", "A relic from a bygone era of the Tories. If it isn't 2001, make sure 2005 marks his end.");
+// updateAdvisor(50000, "Michael Portillo", "'", "This 'transformed' wet Tory hopes to bring social progressivism, but his Europophobia cannot enter No. 10.");
 
-// updateAdvisor(50001, "Donald Trump Jr.", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
-// updateAdvisor(50001, "Nikki Haley", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
+// updateAdvisor(50001, "Corbyn and Benn", "'", "'");
+// updateAdvisor(50001, "George Galloway", "'", "'");
+// updateAdvisor(50001, "'", "'", "'");
 
-// updateAdvisor(50002, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "Him running is as annoying as his voice. As scandalous as one would expect from a Kennedy.");
-// updateAdvisor(50002, "Jill Stein", "https://itsastronomical.com/assets/2024/opp/stein.png", "Greatest ally of the left, Vladimir Putin, and the Republican National Convention.");
+// updateAdvisor(50002, "'", "'", "'");
+// updateAdvisor(50002, "'", "'", "'");
+// updateAdvisor(50002, "A 'New' Beginning", "Alastair_Darling.png", "The Blair-Brown sob story is now a thing of the past. Revel in your newfound unity, Gordon.");
 
 // Define possible opponents and their conditions
 const opponents = [
-  {
-      name: "Kenneth Clarke",
-      picture: "_.png",
-      advice: " ",
-      condition: () => ans == ( || || || ),
-      priority: () => (bobby >= 1 ? 1 : 0)
-  },
-  {
-      name: "Michael Portillo",
-      picture: "_.png",
-      advice: "This 'transformed' wet Tory hopes to bring social progressivism, but his Europophobia cannot enter No. 10.",
-      condition: () => wins >= 4 && gaza >= 2,
-      priority: () => (wins >= 4 ? 1 : 0) + (gaza >= 2 ? 1 : 0)
-  }
 ];
 
 // Function to select the closest opponent
@@ -1602,7 +1591,7 @@ function selectClosestOpponent() {
   if (!closestOpponent) {
       closestOpponent = {
           name: "Michael Howard",
-          picture: "_.png",
+          picture: "https://imgur.com/CZZmYV9.png",
           advice: "A veteran government Tory who can actually whip some discipline, but he's no great moderniser."
       };
   }
@@ -1620,19 +1609,19 @@ campaignTrail_temp.advice = [
     {
         advisor_pk: 50000,
         name: "Iain Duncan Smith",
-        picture: "_.png",
-        advice: "A darling of the traditionalist Tories, and no one else. His fate will arrive soon."
+        picture: "'",
+        advice: "A darling of the traditionalist Tories, and no one else. His fate will arrive soon enough."
     },
     {
         advisor_pk: 50001,
         name: "Scattered and Distant",
-        picture: "_.png",
+        picture: "'",
         advice: "The party caucus is united behind us in the wake of our 2001 victory, but a coalition is liable to fracturing."
     },
     {
         advisor_pk: 50002,
         name: "Holding Together",
-        picture: "_.png",
+        picture: "'",
         advice: "Gordon Brown has grievances simmering beneath the surface, but he's willing to shelve them. For now."
     }
 ];
