@@ -1062,7 +1062,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(e.player_answers.includes(12797) && Cred <= 4){
+    if(e.player_answers.includes(12797)){
+    if(Cred <= 4){
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14122,
@@ -1073,7 +1074,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(e.player_answers.includes(12797)){
+    else{
     campaignTrail_temp.questions_json[12] = {
     "model": "campaign_trail.question",
     "pk": 14100,
@@ -1083,7 +1084,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  } 
+  }
+ }
     if(e.player_answers.includes(12808)){
     if (e.player_answers.includes(12824)){
     campaignTrail_temp.questions_json[13] = {
