@@ -1341,6 +1341,8 @@ tooltipList = [
         {searchString: "Iain Duncan Smith", explanationText: "<img src=https://imgur.com/V6pvIWK.jpg> Tory MP for Chingford and Woodford Green, Iain Duncan Smith. The uncharismatic, sacrificial lamb elected after Hague's shellacking."},
         {searchString: "Duncan Smith", explanationText: "<img src=https://imgur.com/V6pvIWK.jpg> Tory MP for Chingford and Woodford Green, Iain Duncan Smith. The uncharismatic, sacrificial lamb elected after Hague's shellacking."},
         {searchString: "John Major", explanationText: "<img src=https://imgur.com/KtGnTDZ.jpg> A respectful man, shame he was dogged by Thatcher and the Germans so much."},
+        {searchString: "Charles Kennedy", explanationText: "<img src=https://imgur.com/lJMfi6s.jpg> Charles Peter Kennedy, the biggest threat to your parliamentary majority."},
+        {searchString: "Kennedy", explanationText: "<img src=https://imgur.com/lJMfi6s.jpg> Charles Peter Kennedy, the biggest threat to your parliamentary majority."},
 
         // Others
         {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a fallen symbol of American pride."},
