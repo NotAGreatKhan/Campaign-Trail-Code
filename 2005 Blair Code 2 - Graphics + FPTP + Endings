@@ -1546,7 +1546,7 @@ campaignTrail_temp.advisors = [
     },
     {
         pk: 50001,
-        role: "Party Factions",
+        role: "Party Factionalism",
     },
     {
         pk: 50002,
@@ -1565,40 +1565,19 @@ campaignTrail_temp.advisors = [
 
 // Define possible opponents and their conditions
 const opponents = [
-    {
-      name: "Robert Kennedy Jr.",
-      picture: "https://itsastronomical.com/assets/2024/opp/rfk.png",
-      advice: "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.",
-      condition: () => bobby >= 1,
+  {
+      name: "Kenneth Clarke",
+      picture: "_.png",
+      advice: " ",
+      condition: () => ans == ( || || || ),
       priority: () => (bobby >= 1 ? 1 : 0)
   },
   {
-      name: "JD Vance",
-      picture: "https://itsastronomical.com/assets/2024/opp/vance.png",
-      advice: "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.",
+      name: "Michael Portillo",
+      picture: "_.png",
+      advice: "This 'transformed' wet Tory hopes to bring social progressivism, but his Europophobia cannot enter No. 10.",
       condition: () => wins >= 4 && gaza >= 2,
       priority: () => (wins >= 4 ? 1 : 0) + (gaza >= 2 ? 1 : 0)
-  },
-  {
-      name: "Nikki Haley",
-      picture: "https://itsastronomical.com/assets/2024/opp/haley.png",
-      advice: "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.",
-      condition: () => wins >= 4 && gaza <= 1,
-      priority: () => (wins >= 4 ? 1 : 0) + (gaza < 2 ? 1 : 0)
-  },
-  {
-      name: "Ron DeSantis",
-      picture: "https://itsastronomical.com/assets/2024/opp/desantis.png",
-      advice: "Governor of Florida. Fighting wokeism, one book burning at a time.",
-      condition: () => wins < 4 && gaza >= 2,
-      priority: () => (wins < 4 ? 1 : 0) + (gaza >= 2 ? 1 : 0)
-  },
-  {
-      name: "Doug Burgum",
-      picture: "https://itsastronomical.com/assets/2024/opp/burgum.png",
-      advice: "How he managed to get here remains a mystery. Even he's amazed by it.",
-      condition: () => wins < 4 && gaza <= 1,
-      priority: () => (wins < 4 ? 1 : 0) + (gaza < 2 ? 1 : 0)
   }
 ];
 
@@ -1622,9 +1601,9 @@ function selectClosestOpponent() {
   // Default opponent if no conditions are met
   if (!closestOpponent) {
       closestOpponent = {
-          name: "Donald Trump Jr.",
-          picture: "https://itsastronomical.com/assets/2024/opp/donjr.png",
-          advice: "Donald Trump's namesake. But not his first choice for Crown Prince."
+          name: "Michael Howard",
+          picture: "_.png",
+          advice: "A veteran government Tory who can actually whip some discipline, but he's no great moderniser."
       };
   }
 
@@ -1634,33 +1613,27 @@ function selectClosestOpponent() {
 // Update the advisor based on the closest opponent
 function updateLeadingRepublicanOpponent() {
   const opponent = selectClosestOpponent();
-  updateAdvisor(5001, opponent.name, opponent.picture, opponent.advice);
+  updateAdvisor(50000, opponent.name, opponent.picture, opponent.advice);
 }
 
 campaignTrail_temp.advice = [
     {
         advisor_pk: 50000,
-        name: "Nancy Pelosi",
-        picture: "https://itsastronomical.com/assets/2024/opp/pelosi.png",
-        advice: "Tormented Trump for two years. Eager to shepherd your agenda."
+        name: "Iain Duncan Smith",
+        picture: "_.png",
+        advice: "A darling of the traditionalist Tories, and no one else. His fate will arrive soon."
     },
     {
         advisor_pk: 50001,
-        name: "Donald Trump",
-        picture: "https://itsastronomical.com/assets/2024/trump.png",
-        advice: "Runner-up in 2020, though he's too egoistical to ever admit that."
+        name: "Scattered and Distant",
+        picture: "_.png",
+        advice: "The party caucus is united behind us in the wake of our 2001 victory, but a coalition is liable to fracturing."
     },
     {
         advisor_pk: 50002,
-        name: "Virtually None",
-        picture: "https://itsastronomical.com/assets/2024/opp/unity.png",
-        advice: "Keep this up, and who knows what is possible? Keep in mind a coalition can fall apart easily..."
-    },
-    {
-        advisor_pk: 50003,
-        name: "Jeffery A. Rosen",
-        picture: "https://itsastronomical.com/assets/2024/opp/rosen.png",
-        advice: "Trump's Executive Government remains a revolving door."
+        name: "Holding Together",
+        picture: "_.png",
+        advice: "Gordon Brown has grievances simmering beneath the surface, but he's willing to shelve them. For now."
     }
 ];
 
@@ -1723,10 +1696,10 @@ function openHQ() {
       let hqDiv = document.createElement('div');
       hqDiv.id = 'headquarter';
       hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
-      hqDiv.style.color = 'white';
+      hqDiv.style.color = 'black';
       // hqDiv.style.backgroundColor = '#383838';
-      hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/2024/potusoffice.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
-      hqDiv.style.border = '5px solid white';
+      hqDiv.style.backgroundImage = 'url(https://imgur.com/sfodLOa.jpg)';
+      hqDiv.style.border = '5px solid black';
       hqDiv.style.borderRadius = '10px';
       hqDiv.style.height = '53%';
       hqDiv.style.flexDirection = 'column';
@@ -1756,7 +1729,7 @@ function openHQ() {
   
       // Create h3 element for the header
       let headerText = document.createElement('h2');
-      headerText.textContent = 'State of the Union';
+      headerText.textContent = 'The Hostiles';
       headerText.style.textAlign = 'center';  // Center the text
       headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
       headerDiv.appendChild(headerText);
@@ -1782,10 +1755,10 @@ function openHQ() {
       hqDiv.appendChild(columnsDiv);
   
       var roles = [
-          { role: 'Speaker of the House', pk: 50000 },
-          { role: 'Leading Republican Opponent', pk: 50001 },
-          { role: 'Factional Opposition', pk: 50002 },
-          { role: 'United States Attorney General', pk: 50003 }
+          { role: 'Conservative Party Leader', pk: 50000 },
+          { role: 'Party Factionalism', pk: 50001 },
+          { role: 'Chancellor Relations', pk: 50002 },
+          // { role: 'United States Attorney General', pk: 50003 }
       ];
   
       for (let i = 0; i < roles.length; i++) {
@@ -1808,7 +1781,7 @@ function openHQ() {
           img.src = advice.picture;
           img.style.height = '100%';
           img.style.marginRight = '1em';
-          img.style.border = '1px solid white';  // Add thin white border to the image
+          img.style.border = '1px solid black';
   
           // Description
           let descriptionDiv = document.createElement('div');
