@@ -7,6 +7,8 @@ var OldLab = 0;
 var Cred = 2;
 var Brown = false;
 var EUCnstn = 0;
+var Ken = 0;
+var Porty = 0;
 var iraq = 0;
 
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
@@ -649,6 +651,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("The ball is rolling, and it is not stopping");
     }
 
+    // TORY LEADER VARIABLES
+    if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
+      Ken += 1;
+      console.log("Ken Clarke is now the Tory leader")
+    }
+
+    if(ans == 14372 || ans == 14378){
+      Porty += 1;
+      console.log("Michael Portillo is now the Tory leader")
+    }
 
 // Resignation Questions
     if(Resign >= 5){
@@ -699,7 +711,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Michael Portillo
-    if(e.player_answers.includes(14372) || e.player_answers.includes(14378)){
+    if(Porty == 1){
     campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 14294,
@@ -759,7 +771,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Kenneth Clarke
-    if(e.player_answers.includes(14123 || 14129 || 14863 || 14864)){
+    if(Ken == 1){
     campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 14145,
