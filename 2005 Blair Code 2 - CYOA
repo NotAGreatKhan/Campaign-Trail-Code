@@ -759,7 +759,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
 
 // Kenneth Clarke
-    if(e.player_answers.includes(14123) || e.player_answers.includes(14129) || e.player_answers.includes(14863) || e.player_answers.includes(14864)){
+    if(e.player_answers.includes(14123 || 14129 || 14863 || 14864)){
     campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 14145,
