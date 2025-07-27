@@ -188,11 +188,21 @@ campaignTrail_temp.election_json = [
             "image_url": "https://imgur.com/t35sV5w.jpg",
             "winning_electoral_vote_number": 324,
             "advisor_url": "https://imgur.com/u6zV6LD.jpg",
-            "recommended_reading": `<div id="tab-select"> <p class="ftab-active" id="start">Overview</p> <p class="ftab">Sources</p> <p class="ftab">Background</p> <p class="ftab" id="end">Further Credits</p></div>
-                                    <div style="text-align: left;margin: auto 5em;"> <span id="rpage0" style="display: inline-block;">   </span></div>
-                                    <div style="text-align: left;margin: auto 5em;"> <span id="rpage1" style="display: inline-block;">   </span></div>
-                                    <div style="text-align: left;margin: auto 5em;"> <span id="rpage2" style="display: inline-block;">   </span></div>
-                                    <div style="text-align: left;margin: auto 5em;"> <span id="rpage3" style="display: inline-block;">   </span></div>`,
+            "recommended_reading": `<div id="tab-select"> <p class="ftab-active" id="start">Overview</p> <p class="ftab">Sources</p> <p class="ftab">Britain in 2005</p> <p class="ftab" id="end">Further Credits</p></div>
+                                    <div style="text-align: center;"> <span id="rpage0" style="display: inline-block;">
+                                        <h2>Blair, Brown, the government, and the new millenium</h2>
+                                        <h3>A personal note from NoReadingKhan</h3>
+                                        <br>                
+                                        Hello! Welcome to the Further Reading section of this mod. If you have made it here, congratulations! Takes a certain kind of junkie to go this far for a mod about <i>Britain</i> in the <i>2000's</i>.
+                                        <br><br>
+                                        As a fairly proud Brit myself, I have always felt as though there are not really enough British mods on this (wonderful) game. After having a crack at a few mock-ups here and there which I was rather pleased with, I decided to have a crack at it and make a full, CYOA mod. An international one too at that. What was supposed to take a few months has admittedly ballooned in size to taking well over a year to complete. As on-and-off as the journey has been, it has been very worth it.
+                                        <br><br>
+                                        Whatever becomes of this mod, I hope it at least gave someone an enjoyable experience, even if it was just an iota of what this dinky game has done for me in times of high and low.
+                                        </span>
+                                        </div>
+                                    <div style="text-align: center;"> <span id="rpage1" style="display: inline-block;">Nothin' here yet...</span></div>
+                                    <div style="text-align: center;"> <span id="rpage2" style="display: inline-block;">Nothin' here yet...</span></div>
+                                    <div style="text-align: center;"> <span id="rpage3" style="display: inline-block;">Nothin' here yet...</span></div>`,
             "has_visits": 0,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
             "creator": "u/No-Reading9991",
