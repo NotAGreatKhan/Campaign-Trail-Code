@@ -188,7 +188,11 @@ campaignTrail_temp.election_json = [
             "image_url": "https://imgur.com/t35sV5w.jpg",
             "winning_electoral_vote_number": 324,
             "advisor_url": "https://imgur.com/u6zV6LD.jpg",
-            "recommended_reading": "This election has no further reading yet.",
+            "recommended_reading": `<div id="tab-select"> <p class="ftab-active" id="start">Overview</p> <p class="ftab">Sources</p> <p class="ftab">Background</p> <p class="ftab" id="end">Further Credits</p></div>
+                                    <div style="text-align: left;margin: auto 5em;"> <span id="rpage0" style="display: inline-block;">   </span></div>
+                                    <div style="text-align: left;margin: auto 5em;"> <span id="rpage1" style="display: inline-block;">   </span></div>
+                                    <div style="text-align: left;margin: auto 5em;"> <span id="rpage2" style="display: inline-block;">   </span></div>
+                                    <div style="text-align: left;margin: auto 5em;"> <span id="rpage3" style="display: inline-block;">   </span></div>`,
             "has_visits": 0,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
             "creator": "u/No-Reading9991",
