@@ -140,11 +140,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
     }
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
-        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
+        campaignTrail_temp.candidate_json[id].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Kenneth H. Clarke";
     }
     if(ans == 14372 || ans == 14378){
-        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
+        campaignTrail_temp.candidate_json[id].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Michael Portillo";
     }
     if(ans == 12824 || ans == 12825){
