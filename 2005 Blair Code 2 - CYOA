@@ -1133,7 +1133,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  } 
+  }
+    if(Wins <= 4){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 12826,
+    "fields": {
+        "priority": 0,
+        "description": "In 1998, your government passed up-front fees for students every year that they studied. This action had in essence done away with the consensus of education as a free right for the upcoming workforce. With universities breathing down your neck to keep their budgets in balance, you are now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Your advisors press that given the right play, it will pass. Nevertheless, it is deeply controversial and could very well risk failing the vote on the second reading. How will you ensure that it passes?",
+        "likelihood": 1
+      }
+    }
+  }
     if(Wins <= 2){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -1414,6 +1425,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Since your shooting down of the Anti-terrorism Bill, soon after the black swan perched her wings over New York, Straw and Blunkett have been badgering you to push at least some legislation through on the matter. According to them and scattered issue polls, the public are becoming suspicious of your lack of action on the matter. What move will you make on the security of the country?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 15206){
+    campaignTrail_temp.questions_json[15] = {
+    "model": "campaign_trail.question",
+    "pk": 15205,
+    "fields": {
+        "priority": 0,
+        "description": "The aura of world-politik which has accumulated around you is being pulled apart at every thread. You personally have <i>really</i> been feeling the sweltering heat and pressure of British Human Rights groups and MPs, attacking the government's sweeping powers under the Anti-Terrorism Crime and Security Act. But their lightning rod issue has materialised in the form of small cards burdening the pockets of ordinary Brits. The Identity Cards, to be specific. The discontent has been bubbling under the surface for years, and now it has finally burst. How will you bat away the trained pitchforks?",
         "likelihood": 1
       }
     }
