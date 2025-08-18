@@ -1297,6 +1297,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 15247,
+    "fields": {
+        "priority": 0,
+        "description": "Ghosts haunt the walls of Downing Street. Voices – aged and breathing – expectorate on your neck. <i>They</i> pull at your hands and shoulders, beckoning you to “go out with dignity”. As if there is <i>any dignity</i> with getting out of the halls of power and into the throes of blistering defeat. But they whisper to you. They whisper of your approval ratings, your “personality issues” with the public. It could all come tumbling down with a single wrong step...<p></p>Milburn finally interrupts your descent, bluntly addressing you with the fact that you actually need to say something. Maybe it has all fallen apart already. In what way shall you sign your death warrant?",
+        "likelihood": 1
+      }
+    }
   }
     if(Resign <= 0 && Cred >= 6){
     campaignTrail_temp.questions_json[20] = {
