@@ -356,6 +356,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Cred += 1;
       console.log("You have impacted your credibility");
     }
+    if(ans == 15234){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
 
     if(ans == 13474){
       Cred += 1;
@@ -633,6 +637,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
     // Question 15 – Referendum results
     if(ans == 13861){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 16 – HR Groups Protesting
+    if(ans == 14052){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 15232){
       Wins += 1;
       console.log("Do they like you now?");
     }
