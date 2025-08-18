@@ -150,11 +150,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
     }
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
-        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
+        campaignTrail_temp.candidate_json[id].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Kenneth H. Clarke";
     }
     if(ans == 14372 || ans == 14378){
-        campaignTrail_temp.candidate_json[1].fields.color_hex = "#0063b4"
+        var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
+        campaignTrail_temp.candidate_json[id].fields.color_hex = "#0063b4"
         vpTable["The Conservative Party"] = "Michael Portillo";
     }
     if(ans == 12824 || ans == 12825){
@@ -362,6 +364,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // Question 16 – HR Groups protesting
     if(ans == 14052){
       Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15234){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
@@ -645,6 +651,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
+    // Question 16 – HR Groups Protesting
+    if(ans == 14052){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 15232){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
     // Question 18 - Leigh Amendment to CPA 
     if(ans == 12847){
       Wins += 1;
@@ -664,12 +680,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // TORY LEADER VARIABLES
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
       Ken += 1;
-      console.log("Ken Clarke is now the Tory leader")
+      console.log("Ken Clarke is now the Tory leader");
     }
 
     if(ans == 14372 || ans == 14378){
       Porty += 1;
-      console.log("Michael Portillo is now the Tory leader")
+      console.log("Michael Portillo is now the Tory leader");
     }
 
 // Resignation Questions
@@ -1141,7 +1157,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-  } 
+  }
+    if(Wins <= 4){
+    campaignTrail_temp.questions_json[13] = {
+    "model": "campaign_trail.question",
+    "pk": 12826,
+    "fields": {
+        "priority": 0,
+        "description": "In 1998, your government passed up-front fees for students every year that they studied. This action had in essence done away with the consensus of education as a free right for the upcoming workforce. With universities breathing down your neck to keep their budgets in balance, you are now pushing forward the Higher Education Bill of 2004. This bill, if enacted, would replace the up-front fees system with a loan system. Your advisors press that given the right play, it will pass. Nevertheless, it is deeply controversial and could very well risk failing the vote on the second reading. How will you ensure that it passes?",
+        "likelihood": 1
+      }
+    }
+  }
     if(Wins <= 2){
     campaignTrail_temp.questions_json[13] = {
     "model": "campaign_trail.question",
@@ -1280,6 +1307,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 15247,
+    "fields": {
+        "priority": 0,
+        "description": "Ghosts haunt the walls of Downing Street. Voices – aged and breathing – expectorate on your neck. <i>They</i> pull at your hands and shoulders, beckoning you to “go out with dignity”. As if there is <i>any dignity</i> with getting out of the halls of power and into the throes of blistering defeat. But they whisper to you. They whisper of your approval ratings, your “personality issues” with the public. It could all come tumbling down with a single wrong step...<p></p>Milburn finally interrupts your descent, bluntly addressing you with the fact that you actually need to say something. Maybe it has all fallen apart already. In what way shall you sign your death warrant?",
+        "likelihood": 1
+      }
+    }
   }
     if(Resign <= 0 && Cred >= 6){
     campaignTrail_temp.questions_json[20] = {
@@ -1314,6 +1350,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(Cred >= 5){
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 15186,
+    "fields": {
+        "priority": 0,
+        "description": "Ghosts haunt the walls of Downing Street. Voices – aged and breathing – expectorate on your neck. <i>They</i> pull at your hands and shoulders, beckoning you to “go out with dignity”. As if there is <i>any dignity</i> with getting out of the halls of power and into the throes of blistering defeat. But they whisper to you. They whisper of your approval ratings, your “personality issues” with the public. It could all come tumbling down with a single wrong step... Milburn finally interrupts your descent, bluntly addressing you with the fact that you actually need to say something. It's as if it's all going to crescendo with a rupture. In what way shall you sign your death warrant?",
+        "likelihood": 1
+      }
+    }
+    if(Wins >= 6){
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 14691,
+    "fields": {
+        "priority": 0,
+        "description": "With yourself at the head of the machine, Labour is – for the first time – running for a third consecutive term and with you as Prime Minister. For years of this parliament, voices and press journalists have postulated the inevitability of your resignation. It is what they sneered when your polling hit the rut, when crises hit the shores of this country. No more. The initiative is in your hands, and it is an initiative you are more than willing to use.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
     if(Wins >= 6){
     campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
@@ -1400,6 +1458,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Since your shooting down of the Anti-terrorism Bill, soon after the black swan perched her wings over New York, Straw and Blunkett have been badgering you to push at least some legislation through on the matter. According to them and scattered issue polls, the public are becoming suspicious of your lack of action on the matter. What move will you make on the security of the country?",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 15206){
+    campaignTrail_temp.questions_json[15] = {
+    "model": "campaign_trail.question",
+    "pk": 15205,
+    "fields": {
+        "priority": 0,
+        "description": "The aura of world-politik which has accumulated around you is being pulled apart at every thread. You personally have <i>really</i> been feeling the sweltering heat and pressure of British Human Rights groups and MPs, attacking the government's sweeping powers under the Anti-Terrorism Crime and Security Act. But their lightning rod issue has materialised in the form of small cards burdening the pockets of ordinary Brits. The Identity Cards, to be specific. The discontent has been bubbling under the surface for years, and now it has finally burst. How will you bat away the trained pitchforks?",
         "likelihood": 1
       }
     }
@@ -1644,7 +1713,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14048,
         "fields": {
             "priority": 0,
-            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – whether it shall be a coronation or a bitter dogfight – shall be decided. Any final moves you’d like to make, or will you wait it out?",
+            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – consummated by the bowing out of David Davis, Ancram, and even Clarke – culminated in former Home Secretary Michael Howard being elected unopposed. Ahead of his first PMQs as Opposition Leader, where should we train our guns to nail him in the head?",
             "likelihood": 1
         }
     },
@@ -1761,7 +1830,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12881,
         "fields": {
             "priority": 0,
-            "description": "With Labour – and yourself – running for an unprecedented third term as Prime Minister, some members in both your advisory and the public are saying that you should resign amidst pressures over your increasing unpopularity. What will you announce to the public ahead of the election on this matter?",
+            "description": "Ghosts haunt the walls of Downing Street. Voices – aged and breathing – expectorate on your neck. <i>They</i> pull at your hands and shoulders, beckoning you to “go out with dignity”. As if there is <i>any dignity</i> with getting out of the halls of power and into the throes of blistering defeat. But they whisper to you. They whisper of your approval ratings, your “personality issues” with the public. It could all come tumbling down with a single wrong step... Milburn finally interrupts your descent, bluntly addressing you with the fact that you actually need to say something. It's as if it's all going to crescendo with a rupture. In what way shall you sign your death warrant?",
             "likelihood": 1
         }
     },
@@ -2601,6 +2670,33 @@ campaignTrail_temp.questions_json = [
             "description": "Stings and bruises from the near-death experience to your hold on power cast a long shadow over Prime Minister's Questions today. In the last of these sessions before the general election, the Tories have gathered around the campfire to see you get pinned one last time. You've dealt with Tory leaders many times before. But these charges, an imminent collapse of your government if they returned after the election recess, the total abdication of strategy – and most insulting of all – the fall of <i>you</i>. When so many on their side have bloody kicked the can? It's spurious, ridiculous. You better shut this down.",
             "likelihood": 1
         }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15186,
+        "fields": {
+            "priority": 0,
+            "description": "Ghosts haunt the walls of Downing Street. Voices – aged and breathing – expectorate on your neck. <i>They</i> pull at your hands and shoulders, beckoning you to “go out with dignity”. As if there is <i>any dignity</i> with getting out of the halls of power and into the throes of blistering defeat. But they whisper to you. They whisper of your approval ratings, your “personality issues” with the public. It could all come tumbling down with a single wrong step... Milburn finally interrupts your descent, bluntly addressing you with the fact that you actually need to say something. It's as if it's all going to crescendo with a rupture. In what way shall you sign your death warrant?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15205,
+        "fields": {
+            "priority": 0,
+            "description": "The aura of world-politik which has accumulated around you is being pulled apart at every thread. You personally have <i>really</i> been feeling the sweltering heat and pressure of British Human Rights groups and MPs, attacking the government's sweeping powers under the Anti-Terrorism Crime and Security Act. But their lightning rod issue has materialised in the form of small cards burdening the pockets of ordinary Brits. The Identity Cards, to be specific. The discontent has been bubbling under the surface for years, and now it has finally burst. How will you bat away the trained pitchforks?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15247,
+        "fields": {
+            "priority": 0,
+            "description": "Ghosts haunt the walls of Downing Street. Voices – aged and breathing – expectorate on your neck. <i>They</i> pull at your hands and shoulders, beckoning you to “go out with dignity”. As if there is <i>any dignity</i> with getting out of the halls of power and into the throes of blistering defeat. But they whisper to you. They whisper of your approval ratings, your “personality issues” with the public. It could all come tumbling down with a single wrong step...<p></p>Milburn finally interrupts your descent, bluntly addressing you with the fact that you actually need to say something. Maybe it has all fallen apart already. In what way shall you sign your death warrant?",
+            "likelihood": 1
+        }
     }
 ]
 
@@ -2762,7 +2858,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12830,
         "fields": {
             "question": 12826,
-            "description": "If this is the bill that becomes the first failed vote of my premiership, it could pave the road to disaster, or worse, resignation. Drop the bill before this gets too far, or else we very well may risk embarrassment in the press."
+            "description": "If this is the bill that becomes the failed vote of my premiership, it could pave the road to disaster, or worse, resignation. Drop the bill before this gets too far, or else we very well may risk embarrassment in the press."
         }
     },
     {
@@ -2962,7 +3058,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12884,
         "fields": {
             "question": 12881,
-            "description": "I will announce my resignation will occur in my third term, in the event that I win. Whatever people may say, I cannot keep going forever, and my popularity as leader just will not sustain it."
+            "description": "I will announce my resignation will occur in my third term, in the event that I win. Whatever people may say, I cannot keep going forever, and my popularity as leader just will not sustain it. It's... It- It's alright."
         }
     },
     {
@@ -2986,7 +3082,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12888,
         "fields": {
             "question": 12886,
-            "description": "Although Iain Duncan Smith may no longer be leader, Howard has not exactly turned the party into a strong opposition. On every issue they have faltered to provide any meaningful alternative to the sound policy of this government."
+            "description": "Although Ian Duncan Smith may no longer be leader, Howard has not exactly turned the party into a strong opposition. On every issue they have faltered to provide any meaningful alternative to the sound policy of this government."
         }
     },
     {
@@ -4130,7 +4226,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14049,
         "fields": {
             "question": 14048,
-            "description": "No point in fretting about it now. Let’s wait and see who our upcoming opponent will be at this election."
+            "description": "[Attacking his employment record]"
         }
     },
     {
@@ -4138,7 +4234,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14050,
         "fields": {
             "question": 14048,
-            "description": "I’m not going to take this opportunity too lightly. Let’s dot our i’s, and cross our t’s. Get some good attacks on our upcoming opponent, whoever they may be. Their party is still soul searching without a soul! Disunity hangs with them, and they are in no position to lead a government."
+            "description": "[Attacking his economic record]"
         }
     },
     {
@@ -4946,7 +5042,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14729,
         "fields": {
             "question": 14709,
-            "description": "If this is the bill that becomes the first failed vote of my premiership, it could pave the road to disaster, or worse, resignation. Drop the bill before this gets too far, or else we very well may risk embarrassment in the press."
+            "description": "If this is the bill that becomes the failed vote of my premiership, it could pave the road to disaster, or worse, resignation. Drop the bill before this gets too far, or else we very well may risk embarrassment in the press."
         }
     },
     {
@@ -4978,7 +5074,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14754,
         "fields": {
             "question": 14734,
-            "description": "If this is the bill that becomes the first failed vote of my premiership, it could pave the road to disaster, or worse, resignation. Drop the bill before this gets too far, or else we very well may risk embarrassment in the press."
+            "description": "If this is the bill that becomes the failed vote of my premiership, it could pave the road to disaster, or worse, resignation. Drop the bill before this gets too far, or else we very well may risk embarrassment in the press."
         }
     },
     {
@@ -5561,8 +5657,80 @@ campaignTrail_temp.answers_json = [
         "model": "campaign_trail.answer",
         "pk": 15182,
         "fields": {
+            "question": 14048,
+            "description": "[Attack him as an asset of the right]"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15183,
+        "fields": {
+            "question": 14048,
+            "description": "[Attack him as weak]"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15187,
+        "fields": {
+            "question": 15186,
+            "description": "I will announce my resignation will occur in my third term, in the event that I win. Whatever people may say, I cannot keep going forever, and my popularity as leader just will not sustain it. It's... It- It's alright."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15193,
+        "fields": {
+            "question": 15186,
+            "description": "I’m not going to sit around and let myself become a lame-duck PM for my last couple years. Let’s hold back on this, and simply move on to other areas where we are stronger. If a few rabble-rousers in my party have a problem with that, then that is their problem."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15199,
+        "fields": {
+            "question": 15186,
+            "description": "All I’ll say is that I will not contest a fourth term as the leader of the party. We will continue to govern this country on a prosperous future, and it will not end prematurely."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15206,
+        "fields": {
             "question": 14031,
-            "description": "Woah, woah. Hey, just hold on. Let's not get too ahead of ourselves here. The blowback from some in our part of the base would be something if we gave our government <i>that</i> many powers. Just write some stuff up boosting funding for the police, cybersecurity, and the rest of it. <i>Although</i> Charles has suggested some new ID cards, let's go with that too, and get it through fast."
+            "description": "Woah, woah. Hey, just hold on. Let's not get too ahead of ourselves here. The blowback from some in our part of the base would be something if we gave our government <i>that</i> many powers. Just write some stuff up boosting funding for the police, cybersecurity, and the rest of it. <i>Although</i> Charles Minister without Portfolio, and Chairman of the Labour Party, well, at least until he can get into the Home Office, after he finishes his time as Sec. of State for Education and skills. has suggested some new ID cards, let's go with that too, and get it through fast."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15232,
+        "fields": {
+            "question": 15205,
+            "description": "The identity cards that we have put into law, as cumbersome as they may be to some, are a crucial measure to protect our citizens from the very real danger of terrorism which has threatened our collective security. We cannot, and will not, back down from this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15233,
+        "fields": {
+            "question": 15205,
+            "description": "With the concern any reasonable person would have about crime, we decided to take this step to increase the security of our constituents. Criminals should not be able to get away scot-free, and this is crucial for that. We cannot shove this away when the going gets tough."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15234,
+        "fields": {
+            "question": 15205,
+            "description": "Goodness, this is not the reaction we anticipated from those opinion polls. Look, we will for now keep this in place – of course. But in the near future, perhaps in the lead-up to the election, we'll announce a “revision” of the policy, and indicate openness to altering it to only being applied in certain fields."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15248,
+        "fields": {
+            "question": 15247,
+            "description": "I will announce my resignation will occur in my third term, in the event that I win. Whatever people may say, I cannot keep going forever, and my popularity as leader just will not sustain it. It's... It- It's alright."
         }
     }
 ]
@@ -9260,7 +9428,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12885,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.02
+            "global_multiplier": 0.002
         }
     },
     {
@@ -12060,7 +12228,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14032,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.08
+            "global_multiplier": -0.075
         }
     },
     {
@@ -12070,7 +12238,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14033,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.07
+            "global_multiplier": -0.06
         }
     },
     {
@@ -12080,7 +12248,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14033,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": 0.006
+            "global_multiplier": 0.01
         }
     },
     {
@@ -12090,7 +12258,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14033,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": 0.009
+            "global_multiplier": 0.015
         }
     },
     {
@@ -12100,7 +12268,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14034,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.085
+            "global_multiplier": -0.09
         }
     },
     {
@@ -12110,7 +12278,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 14034,
             "candidate": 12543,
             "affected_candidate": 12565,
-            "global_multiplier": 0.01
+            "global_multiplier": 0.015
         }
     },
     {
@@ -16075,9 +16243,69 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 15185,
+        "pk": 15189,
         "fields": {
-            "answer": 15182,
+            "answer": 15187,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15190,
+        "fields": {
+            "answer": 15187,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15195,
+        "fields": {
+            "answer": 15193,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15196,
+        "fields": {
+            "answer": 15193,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15201,
+        "fields": {
+            "answer": 15199,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15202,
+        "fields": {
+            "answer": 15199,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15208,
+        "fields": {
+            "answer": 15206,
             "candidate": 12543,
             "affected_candidate": 12543,
             "global_multiplier": -0.08
@@ -16085,9 +16313,9 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 15186,
+        "pk": 15209,
         "fields": {
-            "answer": 15182,
+            "answer": 15206,
             "candidate": 12543,
             "affected_candidate": 12587,
             "global_multiplier": 0.012
@@ -16095,12 +16323,82 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 15187,
+        "pk": 15241,
         "fields": {
-            "answer": 13900,
+            "answer": 15234,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15242,
+        "fields": {
+            "answer": 15234,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15243,
+        "fields": {
+            "answer": 15233,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15244,
+        "fields": {
+            "answer": 15233,
             "candidate": 12543,
             "affected_candidate": 12587,
-            "global_multiplier": -0.003
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15245,
+        "fields": {
+            "answer": 15232,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15246,
+        "fields": {
+            "answer": 15232,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.0085
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15250,
+        "fields": {
+            "answer": 15248,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15251,
+        "fields": {
+            "answer": 15248,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
         }
     }
 ]
@@ -17951,8 +18249,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14044,
         "fields": {
             "answer": 14034,
-            "issue": 28,
-            "issue_score": 0,
+            "issue": 30,
+            "issue_score": 0.65,
             "issue_importance": 4
         }
     },
@@ -17961,7 +18259,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14045,
         "fields": {
             "answer": 14033,
-            "issue": 28,
+            "issue": 30,
             "issue_score": 4,
             "issue_importance": -0.65
         }
@@ -17971,7 +18269,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14046,
         "fields": {
             "answer": 14032,
-            "issue": 28,
+            "issue": 30,
             "issue_score": 4,
             "issue_importance": -0.8
         }
@@ -20468,12 +20766,122 @@ campaignTrail_temp.answer_score_issue_json = [
     },
     {
         "model": "campaign_trail.answer_score_issue",
-        "pk": 15184,
+        "pk": 15191,
         "fields": {
-            "answer": 15182,
+            "answer": 15187,
+            "issue": 27,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15192,
+        "fields": {
+            "answer": 15187,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15197,
+        "fields": {
+            "answer": 15193,
+            "issue": 27,
+            "issue_score": 0.25,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15198,
+        "fields": {
+            "answer": 15193,
+            "issue": 28,
+            "issue_score": 0.25,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15203,
+        "fields": {
+            "answer": 15199,
+            "issue": 27,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15204,
+        "fields": {
+            "answer": 15199,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15207,
+        "fields": {
+            "answer": 15206,
             "issue": 28,
             "issue_score": -0.5,
             "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15238,
+        "fields": {
+            "answer": 15232,
+            "issue": 28,
+            "issue_score": -0.4,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15239,
+        "fields": {
+            "answer": 15233,
+            "issue": 28,
+            "issue_score": -0.8,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15240,
+        "fields": {
+            "answer": 15234,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15252,
+        "fields": {
+            "answer": 15248,
+            "issue": 27,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15253,
+        "fields": {
+            "answer": 15248,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 3
         }
     }
 ]
@@ -21187,7 +21595,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12830,
             "candidate": 12543,
-            "answer_feedback": "The media run circles around you, and the opposition benches sheath their democratic swords. Your cabinet has avoided the embarrassment of its first ever failed vote. Even still, this retraction makes your government look sheepish in the face of a challenge, and those extra university funds still need to be extracted somehow. The Liberal Democrats tout a victory of \"living up to their manifesto, without being in government\"."
+            "answer_feedback": "The media run circles around you, and the opposition benches sheath their democratic swords. Your cabinet has avoided the embarrassment of a nightmare failed vote. Even still, this retraction makes your government look sheepish in the face of a challenge, and those extra university funds still need to be extracted somehow. The Liberal Democrats tout a victory of \"living up to their manifesto, without being in government\"."
         }
     },
     {
@@ -21511,7 +21919,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12884,
             "candidate": 12543,
-            "answer_feedback": "Announcing a definitive resignation is good for election unity, but it may limit the amount of credit and strength you can gain from any victories this coming election. But that’s for the future to worry about, right now you have to win."
+            "answer_feedback": "Announcing a definitive resignation is good for election unity, but it may limit the amount of credit and strength you can gain from any victories this coming election. But that’s for the future to worry about, right now you have to win.<p></p>But even if you win, it may not be enough."
         }
     },
     {
@@ -21520,7 +21928,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12885,
             "candidate": 12543,
-            "answer_feedback": "Whilst there is nothing wrong with this per se, the question of your number of terms, and resignation will linger in the media for the entire remainder of your premiership. Let’s hope this doesn’t affect us too much."
+            "answer_feedback": "Whilst there is nothing wrong with this per se, the question of your number of terms, and resignation will linger in the media for the entire remainder of your premiership.<p></p>Perhaps it is finally time for the king to pass the crown..."
         }
     },
     {
@@ -21529,7 +21937,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13235,
             "candidate": 12543,
-            "answer_feedback": "This is certainly an answer, if a somewhat vague one. At the very least, no one will be thinking that you’ll try to run forever."
+            "answer_feedback": "This is certainly an answer, if a somewhat vague one. At the very least, no one will be thinking that you’ll try to run forever. It doesn't stop the press from budding speculation about a “timetable” for you to go.<p></p>Why couldn't we just be back in 1997...?"
         }
     },
     {
@@ -22510,7 +22918,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 13900,
             "candidate": 12543,
-            "answer_feedback": "You pointed your British sword at the terrorists, and feebly sheathed it back in your scabbard. In the House of Commons, Duncan Smith pounces, whipping it as \"shrinking away from his responsibilities as Commander in Chief\". The public reaction is not far off, but, the dovish wing appreciates your restraint."
+            "answer_feedback": "You pointed your British sword at the terrorists, and feebly sheathed it back in your scabbard. In the House of Commons, Duncan Smith pounces, whipping it as \"shrinking away from his responsibilities as Commander in Chief\". The public reaction is not far off..."
         }
     },
     {
@@ -22735,7 +23143,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14049,
             "candidate": 12543,
-            "answer_feedback": "The hours proceeding Smith's resignation is a whirlwind. David Davis – and Clarke – both bow out of the leadership election, fearing a loss to you over a divided party contest. Instead, former Home Secretary Michael Howard is elected unopposed. Though he is a steady hand, he has weaknesses that you can more than utilise to your advantage."
+            "answer_feedback": "put feedback here, don't forget to change candidate"
         }
     },
     {
@@ -22744,7 +23152,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14050,
             "candidate": 12543,
-            "answer_feedback": "With David Davis and Clarke both bowing out of the leadership election – fearing a loss to you over a divided party contest – former Home Secretary Michael Howard is elected unopposed. Through his a steady hand, these attacks fall flat amidst a united party. Despite this though, he has weaknesses. Make sure to use them."
+            "answer_feedback": "put feedback here, don't forget to change candidate"
         }
     },
     {
@@ -23635,7 +24043,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14729,
             "candidate": 12543,
-            "answer_feedback": "The media run circles around you, and the opposition benches sheath their democratic swords. Your cabinet has avoided the embarrassment of its first ever failed vote. Even still, this retraction makes your government look sheepish in the face of a challenge, and those extra university funds still need to be extracted somehow. The Liberal Democrats tout a victory of \"living up to their manifesto, without being in government\"."
+            "answer_feedback": "The media run circles around you, and the opposition benches sheath their democratic swords. Your cabinet has avoided the embarrassment of its nightmare failed vote. Even still, this retraction makes your government look sheepish in the face of a challenge, and those extra university funds still need to be extracted somehow. The Liberal Democrats tout a victory of \"living up to their manifesto, without being in government\"."
         }
     },
     {
@@ -23671,7 +24079,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14754,
             "candidate": 12543,
-            "answer_feedback": "The media run circles around you, and the opposition benches sheath their democratic swords. Your cabinet has avoided the embarrassment of its first ever failed vote. Even still, this retraction makes your government look sheepish in the face of a challenge, and those extra university funds still need to be extracted somehow. The Liberal Democrats tout a victory of \"living up to their manifesto, without being in government\"."
+            "answer_feedback": "The media run circles around you, and the opposition benches sheath their democratic swords. Your cabinet has avoided the embarrassment of its nightmare failed vote. Even still, this retraction makes your government look sheepish in the face of a challenge, and those extra university funds still need to be extracted somehow. The Liberal Democrats tout a victory of \"living up to their manifesto, without being in government\"."
         }
     },
     {
@@ -24103,7 +24511,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15031,
             "candidate": 12543,
-            "answer_feedback": "You have etched the battle lines very clearly here. Your Labour benches are almost entirely behind you, but the traditional, socially conservative wing of the Conservatives wave their papers in the House as they prepare to fight. After a proper bruising on an amendment which – all things considered – should not have been a slap-fight, the amendment is shot down. Thank God."
+            "answer_feedback": "You have etched the battle lines very clearly here. Your Labour benches are almost entirely behind you, but the traditional, socially conservative wing of the COnservatives wave their papers in the House as they prepare to fight. After a proper bruising on an amendment which – all things considered – should not have been a slap-fight, the amendment is shot down. Thank God."
         }
     },
     {
@@ -24324,11 +24732,92 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 15183,
+        "pk": 15184,
         "fields": {
             "answer": 15182,
             "candidate": 12543,
-            "answer_feedback": "Chairman Clarke's suggestion sends the cabinet into trepidation, but they move forward with it anyway. The bill is rushed through parliament by an enormous margin – well over 400 vote in favour – Andrew Marr says later that day: “The government has won the vote very easily but it has not necessarily won the argument”. It's not the only critique sent your way. Tories and LibDems sense blood in the water around your identity cards, and make hay to rip into it. The terror and silence of the public for now is more deafening, and yet, a shiver rattles your spine. As if you're hearing attacks meant for the next parliamentary term."
+            "answer_feedback": "put feedback here, don't forget to change candidate"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15185,
+        "fields": {
+            "answer": 15183,
+            "candidate": 12543,
+            "answer_feedback": "put feedback here, don't forget to change candidate"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15188,
+        "fields": {
+            "answer": 15187,
+            "candidate": 12543,
+            "answer_feedback": "Announcing a definitive resignation is good for election unity, but it may limit the amount of credit and strength you can gain from any victories this coming election. But that’s for the future to worry about, right now you have to win.<p></p>But even if you win, it may not be enough."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15194,
+        "fields": {
+            "answer": 15193,
+            "candidate": 12543,
+            "answer_feedback": "For once, you find reprieve amidst the scratching voices inside. They clear away – just enough for you to get out there to the cheering rallies once again.<p></p>You know it cannot last. Not after what you've seen."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15200,
+        "fields": {
+            "answer": 15199,
+            "candidate": 12543,
+            "answer_feedback": "This is certainly an answer, if a somewhat vague one. At the very least, no one will be thinking that you’ll try to run forever. It doesn't stop the press from budding speculation about a “timetable” for you to go.<p></p>Why couldn't we just be back in 1997...?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15210,
+        "fields": {
+            "answer": 15206,
+            "candidate": 12543,
+            "answer_feedback": "Chairman Clarke's suggestion sends the cabinet into trepidation, but they move forward with it anyway. The bill is rushed through parliament by an enormous margin – well over 400 vote in favour – Andrew Marr says later that day: “The government has won the vote very easily but it has not necessarily won the argument”. It's not the only critique sent your way. Tories and LibDems sense blood in the water around your identity cards, and make hay to rip into it. The terror and silence of the public for now is more deafening, and yet, a shiver rattles your spine. As if you're hearing attacks meant for the next parliamentary term.\n\n"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15235,
+        "fields": {
+            "answer": 15232,
+            "candidate": 12543,
+            "answer_feedback": "The scourge and fear of terror is a reliable and consistent method of scaring the old middle-class archetype into line. It does little, however, to muffle out the anger of the disenchanted civil liberties groups who continue to hammer the implementation costs, floodgates for discrimination, and surveillance culture. An opinion poll conducted soon after today finds a majority of the public approve of ID cards by 10% – but the margin is shrinking – and will only shrink more."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15236,
+        "fields": {
+            "answer": 15233,
+            "candidate": 12543,
+            "answer_feedback": "Crime is morphing into an annoying bug on the government's back. Quietly festering in the background, it has breathed new life into the Tory opposition. It does even less to muffle out the anger of the disenchanted civil liberties groups who continue to hammer the implementation costs, floodgates for discrimination, and surveillance culture. An opinion poll conducted soon after today finds the public only look kindly upon it by 2% – and the margin is evaporating fast."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15237,
+        "fields": {
+            "answer": 15234,
+            "candidate": 12543,
+            "answer_feedback": "Any willingness to accept and support the ID cards the public may have felt, withers and dies with this announcement. The Liberal Democrats and aforementioned civil liberties groups tout victory. It is possible that you have, in some respect, avoided further hurt down the road at least. Just, don't expect this to fly well with those expecting more from your newly found “convictions”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15249,
+        "fields": {
+            "answer": 15248,
+            "candidate": 12543,
+            "answer_feedback": "The Labour rank-and-file breathe a sigh of relief, and strut on.<p></p>For you... there is nothing but your crown.<p></p>Shattered to pieces on the floor."
         }
     }
 ]
