@@ -1452,7 +1452,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 15206){
+    if(e.player_answers.includes(15206)){
     campaignTrail_temp.questions_json[15] = {
     "model": "campaign_trail.question",
     "pk": 15205,
@@ -1463,13 +1463,35 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 14034){
+    if(e.player_answers.includes(14034)){
     campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 14840,
     "fields": {
         "priority": 0,
         "description": "Crime is – much to your annoyance – becoming a salient talking point among the political class. After you shot down the original draft of the Anti-Terror Bill, the Conservatives have lashed out against you. They proclaim you to be surrendering ground to criminals and even terrorists. Although they're not pulling in a new coalition with this move, the Tory base is being energised more and more. Is there anything you'd like to do to swim against the wave?",
+        "likelihood": 1
+      }
+    }
+    if((e.player_answers.includes(12820) || e.player_answers.includes(14993) || e.player_answers.includes(15008)) && Ken == 0 && Porty == 0){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 15275,
+    "fields": {
+        "priority": 0,
+        "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are certainly campaigning on it, expecting to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
+    if((e.player_answers.includes(12820) || e.player_answers.includes(14993) || e.player_answers.includes(15008)) && Ken == 0 && Porty == 0){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 15275,
+    "fields": {
+        "priority": 0,
+        "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are certainly campaigning on it, expecting to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
         "likelihood": 1
       }
     }
