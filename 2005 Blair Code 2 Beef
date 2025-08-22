@@ -1462,7 +1462,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 15206){
+    if(e.player_answers.includes(15206)){
     campaignTrail_temp.questions_json[15] = {
     "model": "campaign_trail.question",
     "pk": 15205,
@@ -1473,7 +1473,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(ans == 14034){
+    if(e.player_answers.includes(14034)){
     campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 14840,
@@ -1483,7 +1483,55 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
+    if((e.player_answers.includes(12820) || e.player_answers.includes(14993) || e.player_answers.includes(15008)) && Ken == 0 && Porty == 0){
+    if(e.player_answers.includes(12793)){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 15297,
+    "fields": {
+        "priority": 0,
+        "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are belligerently campaigning on it, having hoped to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
+        "likelihood": 1
+      }
+    }
   }
+    else{
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 15275,
+    "fields": {
+        "priority": 0,
+        "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are belligerently campaigning on it, having hoped to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
+}
+    if((e.player_answers.includes(12820) || e.player_answers.includes(14993) || e.player_answers.includes(15008)) && Ken == 0 && Porty == 0){
+    if(e.player_answers.includes(12793)){
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 15297,
+    "fields": {
+        "priority": 0,
+        "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are belligerently campaigning on it, having hoped to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
+        "likelihood": 1
+      }
+    }
+  }
+    else{
+    campaignTrail_temp.questions_json[31] = {
+    "model": "campaign_trail.question",
+    "pk": 15275,
+    "fields": {
+        "priority": 0,
+        "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are belligerently campaigning on it, having hoped to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
     if(ans == 12803 || ans == 13904){
     campaignTrail_temp.questions_json[35] = {
     "model": "campaign_trail.question",
@@ -2695,6 +2743,24 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Ghosts haunt the walls of Downing Street. Voices – aged and breathing – expectorate on your neck. <i>They</i> pull at your hands and shoulders, beckoning you to “go out with dignity”. As if there is <i>any dignity</i> with getting out of the halls of power and into the throes of blistering defeat. But they whisper to you. They whisper of your approval ratings, your “personality issues” with the public. It could all come tumbling down with a single wrong step...<p></p>Milburn finally interrupts your descent, bluntly addressing you with the fact that you actually need to say something. Maybe it has all fallen apart already. In what way shall you sign your death warrant?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15275,
+        "fields": {
+            "priority": 0,
+            "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are belligerently campaigning on it, having hoped to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15297,
+        "fields": {
+            "priority": 0,
+            "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are belligerently campaigning on it, having hoped to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
             "likelihood": 1
         }
     }
@@ -4226,7 +4292,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14049,
         "fields": {
             "question": 14048,
-            "description": "[Attacking his employment record]"
+            "description": "The answer here is rather simple. Unemployment went dramatically up under his tenure as Home Secretary, giving us a way to allude to the ERM crisis under Major. We can use this to associate him with the pain that came along with it."
         }
     },
     {
@@ -4234,7 +4300,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14050,
         "fields": {
             "question": 14048,
-            "description": "[Attacking his economic record]"
+            "description": "He may get under Gordon's skin, but as Chancellor himself, he was under the premiership of John Major. And, heh, we did beat him rather thoroughly. The public still remember the sterling crisis and ERM withdrawal, and all of the pain that came with it. We'll tie him to that."
         }
     },
     {
@@ -5658,7 +5724,7 @@ campaignTrail_temp.answers_json = [
         "pk": 15182,
         "fields": {
             "question": 14048,
-            "description": "[Attack him as an asset of the right]"
+            "description": "You know, Michael Howard really is cut from the same cloth as Duncan Smith and Hague. The unpalatable right wing of the party that the public is not amiable to. He is an asset of that wing. Make that the message against him, and soon enough, we can pry him away from the centre ground."
         }
     },
     {
@@ -5666,7 +5732,7 @@ campaignTrail_temp.answers_json = [
         "pk": 15183,
         "fields": {
             "question": 14048,
-            "description": "[Attack him as weak]"
+            "description": "So you're telling me right after he resigned on trying to become leader, he accepts a shadow cabinet post, and then just becomes the leader unopposed? He has had no real test of his mettle. He will not be able to keep his party together, that is our angle. Then, they'll start sniffing for new blood again."
         }
     },
     {
@@ -5731,6 +5797,70 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 15247,
             "description": "I will announce my resignation will occur in my third term, in the event that I win. Whatever people may say, I cannot keep going forever, and my popularity as leader just will not sustain it. It's... It- It's alright."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15276,
+        "fields": {
+            "question": 15275,
+            "description": "You know, we can have a discussion about troops – without tossing the entire kitchen sink. All we have to do is pledge to organise UN soldiers to go in as a peacekeeping force after this war is finished. There still needs to be an occupation after all is said and done."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15278,
+        "fields": {
+            "question": 15275,
+            "description": "I really do not have much to say except for the fact that we made the right choice here. We have done plenty to assist America already, but we do not need to send our lads in to make a point. End of story."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15280,
+        "fields": {
+            "question": 15275,
+            "description": "Our campaign can include details on the intelligence and aid flow – humanitarian and military – that we have supplied for the inva- heh- military operation. To affirm our support, why don't we give President Bush a little visit?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15282,
+        "fields": {
+            "question": 15275,
+            "description": "If the Conservatives were in power, they would see us amass our entire military in a conflict thousands of miles away. We are already doing all that we can to combat terror without expending so many lives."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15298,
+        "fields": {
+            "question": 15297,
+            "description": "You know, we can have a discussion about troops – without tossing the entire kitchen sink. All we have to do is pledge to organise UN soldiers to go in as a peacekeeping force after this war is finished. There still needs to be an occupation after all is said and done."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15304,
+        "fields": {
+            "question": 15297,
+            "description": "I really do not have much to say except for the fact that we made the right choice here. We have done plenty to assist America already, but we do not need to send our lads in to make a point. End of story."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15309,
+        "fields": {
+            "question": 15297,
+            "description": "Our campaign can include details on the intelligence and aid flow – humanitarian and military – that we have supplied for the inva- heh- military operation. To affirm our support, why don't we give President Bush a little visit?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15314,
+        "fields": {
+            "question": 15297,
+            "description": "If the Conservatives were in power, they would see us amass our entire military in a conflict thousands of miles away. We are already doing all that we can to combat terror without expending so many lives."
         }
     }
 ]
@@ -16400,6 +16530,226 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12543,
             "global_multiplier": -0.004
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15266,
+        "fields": {
+            "answer": 15183,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15267,
+        "fields": {
+            "answer": 15183,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15271,
+        "fields": {
+            "answer": 15182,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15272,
+        "fields": {
+            "answer": 15182,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.0015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15284,
+        "fields": {
+            "answer": 15276,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15285,
+        "fields": {
+            "answer": 15276,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15286,
+        "fields": {
+            "answer": 15276,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15291,
+        "fields": {
+            "answer": 15282,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15292,
+        "fields": {
+            "answer": 15282,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15293,
+        "fields": {
+            "answer": 15278,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.006
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15294,
+        "fields": {
+            "answer": 15278,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15295,
+        "fields": {
+            "answer": 15280,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15296,
+        "fields": {
+            "answer": 15280,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15300,
+        "fields": {
+            "answer": 15298,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15301,
+        "fields": {
+            "answer": 15298,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15302,
+        "fields": {
+            "answer": 15298,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15306,
+        "fields": {
+            "answer": 15304,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15307,
+        "fields": {
+            "answer": 15304,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.0055
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15311,
+        "fields": {
+            "answer": 15309,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15312,
+        "fields": {
+            "answer": 15309,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15316,
+        "fields": {
+            "answer": 15314,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15317,
+        "fields": {
+            "answer": 15314,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": -0.01
+        }
     }
 ]
 
@@ -18321,7 +18671,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14050,
             "issue": 27,
             "issue_score": 0,
-            "issue_importance": 6
+            "issue_importance": 5
         }
     },
     {
@@ -18330,8 +18680,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 14050,
             "issue": 28,
-            "issue_score": 0,
-            "issue_importance": 6
+            "issue_score": 0.35,
+            "issue_importance": 4
         }
     },
     {
@@ -18351,7 +18701,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 14049,
             "issue": 27,
             "issue_score": 0,
-            "issue_importance": 6
+            "issue_importance": 4
         }
     },
     {
@@ -18360,8 +18710,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 14049,
             "issue": 28,
-            "issue_score": 0,
-            "issue_importance": 6
+            "issue_score": 0.35,
+            "issue_importance": 5
         }
     },
     {
@@ -18369,9 +18719,9 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 14069,
         "fields": {
             "answer": 14049,
-            "issue": 30,
-            "issue_score": -0.15,
-            "issue_importance": 6
+            "issue": 29,
+            "issue_score": 0.35,
+            "issue_importance": 7
         }
     },
     {
@@ -20883,6 +21233,136 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0.5,
             "issue_importance": 3
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15268,
+        "fields": {
+            "answer": 15183,
+            "issue": 28,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15269,
+        "fields": {
+            "answer": 15182,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15270,
+        "fields": {
+            "answer": 15182,
+            "issue": 27,
+            "issue_score": 0.25,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15273,
+        "fields": {
+            "answer": 15183,
+            "issue": 29,
+            "issue_score": 0.35,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15274,
+        "fields": {
+            "answer": 15182,
+            "issue": 29,
+            "issue_score": 0.35,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15287,
+        "fields": {
+            "answer": 15276,
+            "issue": 30,
+            "issue_score": 0.25,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15288,
+        "fields": {
+            "answer": 15278,
+            "issue": 30,
+            "issue_score": 0.7,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15289,
+        "fields": {
+            "answer": 15282,
+            "issue": 30,
+            "issue_score": 0.65,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15290,
+        "fields": {
+            "answer": 15280,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15303,
+        "fields": {
+            "answer": 15298,
+            "issue": 30,
+            "issue_score": 0.25,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15308,
+        "fields": {
+            "answer": 15304,
+            "issue": 30,
+            "issue_score": 0.7,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15313,
+        "fields": {
+            "answer": 15309,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15318,
+        "fields": {
+            "answer": 15314,
+            "issue": 30,
+            "issue_score": 0.65,
+            "issue_importance": 5
+        }
     }
 ]
 
@@ -23143,7 +23623,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14049,
             "candidate": 12543,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "On this, Howard makes little headway to counter this charge. Playing on nostalgia negatively very rarely works to the incumbent's benefit – even with a strong economy. In spite of this, you manage to hold him at bay, even after he quips about two questions you <i>supposedly</i> didn't answer."
         }
     },
     {
@@ -23152,7 +23632,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14050,
             "candidate": 12543,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "Much to your distaste, people just don't see the economic malaise and recession in Michael Howard being the poster boy. Howard himself takes the opportune moment to clap back with charges of incompetence and faulty exchequer in public services and government. “That hypocrite” you steam to aides."
         }
     },
     {
@@ -24736,7 +25216,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15182,
             "candidate": 12543,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "While true to an extent – in a vacuum – Howard quickly proves his efficacy in keeping the troops home, whilst simultaneously marching them on. In the Commons, he wastes no time drawing lines in the sand and whipping the base into shape. You have not lost your first duel – not close – yet you have made little ground for his debut."
         }
     },
     {
@@ -24745,7 +25225,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15183,
             "candidate": 12543,
-            "answer_feedback": "put feedback here, don't forget to change candidate"
+            "answer_feedback": "It is a very different story in the House. Upon standing at the dispatch box for his first Opposition Leader rodeo, he is immediately greeted to thunderous cheers from the benches behind him. He shirks off all of your accusations, punching back with an ear-grating list of high-profile rebellions to your own agenda. Leaving your Right Honourable friends' pride wounded as a result."
         }
     },
     {
@@ -24818,6 +25298,78 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 15248,
             "candidate": 12543,
             "answer_feedback": "The Labour rank-and-file breathe a sigh of relief, and strut on.<p></p>For you... there is nothing but your crown.<p></p>Shattered to pieces on the floor."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15277,
+        "fields": {
+            "answer": 15276,
+            "candidate": 12543,
+            "answer_feedback": "The classic Third Way that once served you so well is faltering in the charged climate of the War on Terror. You turn right to see Howard's ovular facial profile railing against your “inadequate and half-hearted proposal” to bring about peace. To your left, is Kennedy as he tsks about a “band-aid solution” to a “long-term issue of religious tension”. In the end, it's only Kennedy's face that the public see a principled foreign policy vision in. It scores him a cheap win on vague details."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15279,
+        "fields": {
+            "answer": 15278,
+            "candidate": 12543,
+            "answer_feedback": "Your dovishness with the grueling struggle in Afghanistan gives this line more credibility, and manages to (paradoxically) avoid the fact that you had no role to play in the retreat of the Taliban forces. Luckily for you, the media landscape has made very little coverage for the continuing occupation of the landlocked nation – and their microphones turn to Howard, who looks increasingly outlandish and fringe by following his party's line."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15281,
+        "fields": {
+            "answer": 15280,
+            "candidate": 12543,
+            "answer_feedback": "Your campaign staff go white in the face when you float the idea of the President visiting the UK in the middle of election season. Even after they convince you to fly to the US, their relief is short-lived. Bush stumbles through the initial questions, accidentally calling your support “in-unfaithful” to the fight against terror. The tension was, suffice it to say, palpable and unwarranted. The “special relationship” may not be so special after all..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15283,
+        "fields": {
+            "answer": 15282,
+            "candidate": 12543,
+            "answer_feedback": "Sniffing miasma in the air, Howard turns his sights not only on Iraq, but Afghanistan as well. A quick opinion poll organised for the occasion finds 68% of the public wish your government “took significantly more action” to fight the Taliban terrorists, going right into the Opposition Leader's hands and stealing all gains you could have made."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15299,
+        "fields": {
+            "answer": 15298,
+            "candidate": 12543,
+            "answer_feedback": "The classic Third Way that once served you so well is faltering in the charged climate of the War on Terror. You turn right to see Howard's ovular facial profile railing against your “inadequate and half-hearted proposal” to bring about peace. To your left, is Kennedy as he tsks about a “band-aid solution” to a “long-term issue of religious tension”. In the end, it's only Kennedy's face that the public see a principled foreign policy vision in. It scores him a cheap win on vague details."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15305,
+        "fields": {
+            "answer": 15304,
+            "candidate": 12543,
+            "answer_feedback": "The tight-fisted virtue you attempt to push gives a revolting reaction from the public when you yourself gave the go-ahead for British troops to march into Afghanistan. Framed in a <i>different</i> manner, you could have used Afghanistan to your advantage – portraying the limited casualties against the defeat of the Taliban fighters. Instead, Howard seizes a rare opportunity to align himself with the mood of the nation by calling you a “blatant hypocrite”."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15310,
+        "fields": {
+            "answer": 15309,
+            "candidate": 12543,
+            "answer_feedback": "Your campaign staff go white in the face when you float the idea of the President visiting the UK in the middle of election season. Even after they convince you to fly to the US, their relief is short-lived. Bush stumbles through the initial questions, accidentally calling your support “in-unfaithful” to the fight against terror. The tension was, suffice it to say, palpable and unwarranted. The “special relationship” may not be so special after all..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15315,
+        "fields": {
+            "answer": 15314,
+            "candidate": 12543,
+            "answer_feedback": "The success of the British armed forces in Afghanistan in 2001-2002 plays perfectly into your hawkish messaging whilst avoiding the toxic fumes of the tar pits of Iraq. Wildly out of step with the spirits of the onlookers, Howard does little more than meekly roll out recited lines on backing the special relationship with America."
         }
     }
 ]
