@@ -693,6 +693,219 @@ applyTooltipsToObject(campaignTrail_temp.answers_json);
 applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
 
+
+
+// Popup HQ
+function createSimplePopup() {
+    const popup = document.createElement("div");
+    popup.id = "simplePopup";
+    popup.style.position = "fixed";
+    popup.style.bottom = "20px";
+    popup.style.right = "20px";
+    popup.style.width = "435px";
+    popup.style.height = "450px";
+    popup.style.border = "1px solid #000";
+    popup.style.borderRadius = "5px";
+    popup.style.padding = "40px 10px 10px 10px";
+    popup.style.boxShadow = "0 0 5px rgba(0,0,0,0.2)";
+    popup.style.zIndex = "10000";
+    popup.style.fontFamily = "'Times New Roman'";
+    popup.style.fontSize = "14px";
+    popup.style.color = "#000";
+    popup.style.backgroundImage = "url('https://imgur.com/cs5mSqg.jpg')";
+    popup.style.backgroundSize = "cover";
+    popup.style.backgroundRepeat = "no-repeat";
+    popup.style.backgroundPosition = "center";
+    popup.style.display = "block";
+
+    const content = document.createElement("div");
+    content.id = "popupContent";
+    content.style.pointerEvents = "auto";
+    popup.appendChild(content);
+
+    document.body.appendChild(popup);
+
+    injectTooltipStyles(); // <-- inject styles ONCE
+    makePopupDraggable(popup);
+    updateSimplePopup();
+}
+
+
+function makePopupDraggable(popup) {
+    let offsetX = 0;
+    let offsetY = 0;
+    let isDragging = false;
+
+    popup.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        offsetX = e.clientX - popup.getBoundingClientRect().left;
+        offsetY = e.clientY - popup.getBoundingClientRect().top;
+        document.addEventListener("mousemove", onMouseMove);
+        document.addEventListener("mouseup", onMouseUp);
+    });
+
+    function onMouseMove(e) {
+        if (!isDragging) return;
+        let newX = e.clientX - offsetX;
+        let newY = e.clientY - offsetY;
+        const maxX = window.innerWidth - popup.offsetWidth + 150;
+        const maxY = window.innerHeight - popup.offsetHeight + 150;
+        newX = Math.max(-50, Math.min(newX, maxX));
+        newY = Math.max(-50, Math.min(newY, maxY));
+        popup.style.left = `${newX}px`;
+        popup.style.top = `${newY}px`;
+        popup.style.bottom = "auto";
+        popup.style.right = "auto";
+    }
+
+    function onMouseUp() {
+        isDragging = false;
+        document.removeEventListener("mousemove", onMouseMove);
+        document.removeEventListener("mouseup", onMouseUp);
+    }
+}
+
+function injectTooltipStyles() {
+    if (document.getElementById("tooltipStyles")) return;
+
+    const style = document.createElement("style");
+    style.id = "tooltipStyles";
+    style.textContent = `
+        .hover-value {
+            border-bottom: 1px dotted #000;
+            cursor: help;
+            position: relative;
+        }
+
+        .hover-value::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            background: url('https://imgur.com/LBu38ns.jpg') center/cover no-repeat;
+            color: #000;
+            padding: 6px 10px;
+            font-family: 'Times New Roman';
+            font-size: 13px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            top: -32px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10001;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .hover-value:hover::after {
+            opacity: 1;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+function updateSimplePopup() {
+    const content = document.getElementById("popupContent");
+    if (!content) return;
+  
+    content.innerHTML = `
+
+      <p>
+        <span class="hover-value" data-tooltip="Our party’s accumulated number of wins.">The Bulwark</span>: 
+        <span ${Wins <= 0 ? "style=\"color:#ad1313;\"" : Wins <= 2 ? "style=\"color:#d58627;\"" : Wins >= 3 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          Wins <= 0 ? 'Nil' :
+          Wins === 1 ? 'Few and far' :
+          Wins === 2 ? 'Slowly building up' :
+          Wins === 3 ? 'Respectable' :
+          Wins === 4 ? 'Numerous' :
+          'Voluminous'
+        }">${Wins.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="How much slack the public is willing to give us.">Party Reputation</span>: 
+        <span ${Reptn <= 1 ? "style=\"color:#7ba922;\"" : Reptn <= 2 ? "style=\"color:#d58627;\"" : Reptn >= 5 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+          Reptn <= 0 ? 'Miserable' :
+          Reptn === 1 ? 'Looked down upon' :
+          Reptn === 2 ? 'Lukewarm' :
+          Reptn === 3 ? 'Sympathetic' :
+          Reptn === 4 ? 'In good spirits' :
+          'Popular'
+        }">${Reptn.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="How well organised and lined up the rank and file are.">Party Unity</span>: 
+        <span ${PartyL <= 2 ? "style=\"color:#ad1313;\"" : PartyL <= 3 ? "style=\"color:#d58627;\"" : PartyL >= 6 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          PartyL <= -1 ? 'Falling apart' :
+          PartyL === 0 ? 'Scattered' :
+          PartyL === 1 ? 'Tied by string and tape' :
+          PartyL === 2 ? 'Cobbled together' :
+          PartyL === 3 ? 'Getting together' :
+          PartyL === 4 ? 'The rank and file' :
+          PartyL === 5 ? 'Rallying around' :
+          'Marching on'
+        }">${PartyL.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="The Conservative Party’s path to the right.">The Ghosts of Toryism</span>: 
+        <span ${RightWing <= 1 ? "style=\"color:#75a3ff;\"" : RightWing <= 4 ? "style=\"color:#3c68d7;\"" : RightWing >= 5 ? "style=\"color:#233a71;\"" : ""} class="hover-value" data-tooltip="${
+          RightWing <= 0 ? 'Virtually non-existent' :
+          RightWing === 1 ? 'But a footnote' :
+          RightWing === 2 ? 'Reticent, but noticeable' :
+          RightWing === 3 ? 'Well under way' :
+          RightWing === 4 ? 'Dipping into Thatcherite waters' :
+          RightWing === 5 ? 'Embracing traditions of years past' :
+          'Straying into the territory of Enoch Powell'
+        }">${RightWing.toFixed(1)}</span>
+      </p>
+
+      <p>
+        <img src="https://imgur.com/E1EJ14a.jpg" width="435">
+      </p>
+    `;
+  }
+  
+
+function observeGameStats() {
+    const gameWindow = document.getElementById("game_window");
+    const config = { childList: true, subtree: true };
+    const observer = new MutationObserver(() => {
+        updateSimplePopup();
+    });
+    if (gameWindow) {
+        observer.observe(gameWindow, config);
+    }
+}
+
+function toggleSimplePopup() {
+    const popup = document.getElementById("simplePopup");
+    if (!popup) return;
+    popup.style.display = (popup.style.display === "none") ? "block" : "none";
+}
+
+function addHeadquarterButton() {
+    if (document.getElementById('headquarter_button')) return;
+    const refButton = document.getElementById('view_electoral_map');
+    if (!refButton) return;
+    const newButton = document.createElement('button');
+    newButton.id = 'headquarter_button';
+    newButton.style.marginLeft = '1.5em';
+    newButton.innerHTML = 'The Opposition';
+    newButton.addEventListener('click', toggleSimplePopup);
+    refButton.insertAdjacentElement('afterend', newButton);
+}
+
+createSimplePopup();
+observeGameStats();
+
+
+
+
+/*
+// Window Change HQ
 function addHeadquarterButton() {
     // Check if the button already exists
     if (document.getElementById("headquarter_button")) {
@@ -904,3 +1117,4 @@ function handleMutations(mutationsList, observer) {
 
 let hqObserver = new MutationObserver(handleMutations);
 hqObserver.observe(document.documentElement, { childList: true, subtree: true });
+*/
