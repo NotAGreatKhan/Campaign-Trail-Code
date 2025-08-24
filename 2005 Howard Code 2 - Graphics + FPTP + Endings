@@ -712,7 +712,7 @@ function createSimplePopup() {
     popup.style.fontFamily = "'Times New Roman'";
     popup.style.fontSize = "14px";
     popup.style.color = "#000";
-    popup.style.backgroundImage = "url('https://imgur.com/cs5mSqg.jpg')";
+    popup.style.backgroundImage = "url('https://imgur.com/LBu38ns.jpg')";
     popup.style.backgroundSize = "cover";
     popup.style.backgroundRepeat = "no-repeat";
     popup.style.backgroundPosition = "center";
@@ -825,7 +825,7 @@ function updateSimplePopup() {
   
       <p>
         <span class="hover-value" data-tooltip="How much slack the public is willing to give us.">Party Reputation</span>: 
-        <span ${Reptn <= 1 ? "style=\"color:#7ba922;\"" : Reptn <= 2 ? "style=\"color:#d58627;\"" : Reptn >= 5 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+        <span ${Reptn <= 1 ? "style=\"color:#ad1313;\"" : Reptn <= 2 ? "style=\"color:#d58627;\"" : Reptn >= 5 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           Reptn <= 0 ? 'Miserable' :
           Reptn === 1 ? 'Looked down upon' :
           Reptn === 2 ? 'Lukewarm' :
@@ -925,7 +925,7 @@ function addHeadquarterButton() {
 
     newButton.style.marginLeft = "1.5em";
 
-    newButton.innerHTML = "The Opposition";
+    newButton.innerHTML = "The Roadblocks";
 
     // Attach the click event listener
     newButton.addEventListener("click", openHeadquarter);
