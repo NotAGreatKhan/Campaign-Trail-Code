@@ -134,7 +134,7 @@ vpTable = {
 }
 
 
-document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
+document.getElementById("header").src = "https://imgur.com/6qgA0yr.jpg";
 
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
