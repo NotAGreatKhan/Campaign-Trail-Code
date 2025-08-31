@@ -1,3 +1,18 @@
+function updateQuestionBanner() {
+		let questionBanner = document.getElementById("campaign_sign");
+		if(!questionBanner || questionBanner.nodeName != "DIV") return;
+		let img = document.createElement('img');
+		if(e.VPisCandidate == 0)
+		{
+			img.src = 'https://i.imgur.com/qUZdBfp.png';
+		}
+		else if(e.VPisCandidate == 1){
+			img.src = 'https://i.imgur.com/58q88Tg.png';
+		}
+		questionBanner.replaceWith(img);
+}
+
+
 var changeGameDisp = (hide) => {
     disp = "";
     if (hide) {
