@@ -2148,111 +2148,26 @@ createSimplePopup();
 observeGameStats();
 
 
-function closeSurrogates() {
-    const popOutMenu = document.getElementById('popOutMenu');
-    if (popOutMenu) {
-        savedX = popOutMenu.getBoundingClientRect().left;
-        savedY = popOutMenu.getBoundingClientRect().top;
-
-        popOutMenu.remove();
-    }
-}
-
-function refreshSurrogates() {
-    const popOutMenu = document.getElementById('popOutMenu');
-    if (popOutMenu) {
-        popOutMenu.remove();
-        openSurrogates();
-    }
-
-}
-
-
-function makeDraggable(element) {
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    element.onmousedown = function(event) {
-        isDragging = true;
-        offsetX = event.clientX - element.getBoundingClientRect().left;
-        offsetY = event.clientY - element.getBoundingClientRect().top;
-
-        document.onmousemove = function(event) {
-            if (isDragging) {
-                const newX = event.clientX - offsetX;
-                const newY = event.clientY - offsetY;
-
-                // Update the position of the element
-                element.style.left = newX + 'px';
-                element.style.top = newY + 'px';
-
-                // Save the position in global variables
-                savedX = newX;
-                savedY = newY;
-            }
-        };
-
-        document.onmouseup = function() {
-            isDragging = false;
-            document.onmousemove = null;
-            document.onmouseup = null;
-        };
-    };
-}
-
-const windowCheck = localStorage.getItem('astroWindow');
 
 function handleMutations(mutationsList, observer) {
-    if (observerRunning) return;
-    observerRunning = true;
+  if (observerRunning) return;
+  observerRunning = true;
 
-    
-    if (windowCheck == "true"){
-        addWindowButton();
-    }
-    else {
-        addHeadquarterButton();
-    }
-    addHQButton();
+  addHeadquarterButton();
+  addOpButton();
 
-    observer.observe(document.documentElement, { childList: true, subtree: true });
-    observerRunning = false;
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+  observerRunning = false;
 }
-
-const electionObserver = new MutationObserver((mutations, electionObserverInstance) => {
-    for (let mutation of mutations) {
-        if (mutation.type === "childList") {
-            const electionElement = document.getElementById("election_night_buttons");
-            if (electionElement) {
-                const electionPlaylist = new Playlist();
-                const electionSong = new Song(
-                    "Happy Survival",
-                    "Childish Gambino",
-                    "https://itsastronomical.com/assets/2024/bando.gif",
-                    "https://audio.jukehost.co.uk/KYHOjg3S1P8gsvKo3FQsDBn5PXJwFRNR"
-                );
-                electionPlaylist.addSong(electionSong);
-                changePlaylist(electionPlaylist);
-                electionObserverInstance.disconnect(); 
-                break;
-            }
-        }
-    }
-});
-
-electionObserver.observe(document.body, { childList: true, subtree: true });
 
 let observerRunning = false;
 
 var element = document.getElementById('controlElement');
 if (!element) {
-    let singleObserver = new MutationObserver(handleMutations);
-    singleObserver.observe(document.documentElement, { childList: true, subtree: true });
-    var controlElement = document.createElement('div');
-    controlElement.style.display = 'none';
-    controlElement.id = 'controlElement';
-    document.body.appendChild(controlElement);
+let singleObserver = new MutationObserver(handleMutations);
+singleObserver.observe(document.documentElement, { childList: true, subtree: true });
+var controlElement = document.createElement('div');
+controlElement.style.display = 'none';
+controlElement.id = 'controlElement';
+document.body.appendChild(controlElement);
 }
-
-// hqDiv.style.height = '54%'; 
-// hqDiv.style.height = '55%'; 
