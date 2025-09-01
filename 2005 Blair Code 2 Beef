@@ -25447,7 +25447,7 @@ campaignTrail_temp.jet_data = [{
 ]
 
 
-
+/*
 e = campaignTrail_temp
 
 	campaignTrail_temp.answer_feedback_flg = 1;
@@ -25484,7 +25484,7 @@ function updateQuestionBanner() {
 		}
 		questionBanner.replaceWith(img);
 }
-
+*/
 
 
 var changeGameDisp = (hide) => {
