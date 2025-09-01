@@ -8,6 +8,7 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
+
 e = campaignTrail_temp
 
 var Wins = 0;
@@ -15,7 +16,7 @@ var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
 var Cred = 2;
-var Brown = false;
+var Brown = 0;
 var EUCnstn = 0;
 var Ken = 0;
 var Porty = 0;
@@ -59,7 +60,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
-      Brown = true;
+        Brown += 1;
+        e.PMisCandidate += 1;
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 27;
         document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
         vpTable["The Labour Party"] = "J. Gordon Brown";
@@ -257,6 +259,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 14072){
       Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14201){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
@@ -1645,6 +1651,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
 }
+
 
 
 campaignTrail_temp.questions_json = [
@@ -24991,7 +24998,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15031,
             "candidate": 12543,
-            "answer_feedback": "You have etched the battle lines very clearly here. Your Labour benches are almost entirely behind you, but the traditional, socially conservative wing of the COnservatives wave their papers in the House as they prepare to fight. After a proper bruising on an amendment which – all things considered – should not have been a slap-fight, the amendment is shot down. Thank God."
+            "answer_feedback": "You have etched the battle lines very clearly here. Your Labour benches are almost entirely behind you, but the traditional, socially conservative wing of the Conservatives wave their papers in the House as they prepare to fight. After a proper bruising on an amendment which – all things considered – should not have been a slap-fight, the amendment is shot down. Thank God."
         }
     },
     {
@@ -25371,6 +25378,15 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "The success of the British armed forces in Afghanistan in 2001-2002 plays perfectly into your hawkish messaging whilst avoiding the toxic fumes of the tar pits of Iraq. Wildly out of step with the spirits of the onlookers, Howard does little more than meekly roll out recited lines on backing the special relationship with America."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15319,
+        "fields": {
+            "answer": 13913,
+            "candidate": 12543,
+            "answer_feedback": "Taking the charge personally gets a modicum of wind at your back. But the chants, and the seething. Something's deeply wrong. This isn't right, why is this scratching your rightful crown the most? You can't explain it yourself..."
+        }
     }
 ]
 
@@ -25429,6 +25445,46 @@ campaignTrail_temp.jet_data = [{
     }
 }
 ]
+
+
+
+e = campaignTrail_temp
+
+	campaignTrail_temp.answer_feedback_flg = 1;
+	campaignTrail_temp.game_start_logging_id = '3662479999';
+	
+	const targetNode = document.getElementById("game_window");
+	const config = { attributes: true, childList: true, subtree: true };
+
+	function onGameWindowChanged(mutationList, observer) {
+		updateQuestionBanner();
+	}
+
+	const observer = new MutationObserver(onGameWindowChanged);
+	observer.observe(targetNode, config);
+	
+	e.PMisCandidate = 0;
+
+function updateQuestionBanner() {
+		let questionBanner = document.getElementById("campaign_sign");
+		if(!questionBanner || questionBanner.nodeName != "DIV") return;
+		let img = document.createElement('img');
+		if(e.PMisCandidate == 0)
+		{
+			img.src = 'https://imgur.com/jc2mFl5.png';
+		}
+		else if(ans == 14815 || ans == 14816 || ans == 14817 || ans == 14821 || ans == 12807 || ans == 12808 || ans == 14881 || ans == 14886 || ans == 14891 || ans == 14895){
+			img.src = 'https://imgur.com/jc2mFl5.png';
+		}
+        else if(ans == 12797 || ans == 12798){
+			img.src = 'https://imgur.com/G2Kdu9i.png';
+		}
+        else if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
+			img.src = 'https://imgur.com/AOclRgK.png';
+		}
+		questionBanner.replaceWith(img);
+}
+
 
 
 var changeGameDisp = (hide) => {
@@ -25567,7 +25623,7 @@ vpTable = {
 }
 
 
-document.getElementById("header").src = "https://imgur.com/mZPha1C.jpg";
+document.getElementById("header").src = "https://imgur.com/6qgA0yr.jpg";
 
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
@@ -26749,6 +26805,340 @@ applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
 
 
+// State of Play in Washington
+// Shows you who is in what position
+
+campaignTrail_temp.advisors = [
+    {
+        pk: 50000,
+        role: "Conservative Party Leader",   
+    },
+    {
+        pk: 50001,
+        role: "Party Factionalism",
+    },
+    {
+        pk: 50002,
+        role: "Chancellor Relations",
+    },
+    {
+        pk: 50003,
+        role: "United States Attorney General",
+    }
+];
+
+// updateAdvisor(5000, "Vacant", "https://itsastronomical.com/assets/2024/opp/vacant.png", "NOW: MCCARTHY APPEARS TO SUFFER DEFEAT ON FIRST SPEAKER BALLOT");
+// updateAdvisor(5000, "Kevin McCarthy", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "Has yearned for decades for this position. Is it worth it?");
+// updateAdvisor(5000, "Brian Fitzpatrick", "https://itsastronomical.com/assets/2024/opp/fitz.png", "How did this sucker get here? Who knows. He won't be around long, however.");
+// updateAdvisor(5000, "Mike Johnson", "https://itsastronomical.com/assets/2024/opp/johnson.png", "They call him the Origami Speaker. He folds nonstop for the right wing — and for you.");
+// updateAdvisor(5000, "Tom Emmer", "https://itsastronomical.com/assets/2024/opp/emmer.png", "For what it's worth, Trump denounced his bid for the position from the get-go.");
+// updateAdvisor(5000, "Patrick McHenry", "https://itsastronomical.com/assets/2024/opp/mchenry.png", "The Speaker <i>Pro Tempore</i> is no longer here just ''for the time being.''");
+// updateAdvisor(5000, "Hakeem Jeffries", "https://itsastronomical.com/assets/2024/opp/jeffries.png", "Working on major, bipartisan reform to the House so they can supply Ukraine and Israel with more ammunition.");
+
+// updateAdvisor(5001, "Donald Trump Jr.", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
+// updateAdvisor(5001, "Nikki Haley", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
+// updateAdvisor(5001, "Ron DeSantis", "https://itsastronomical.com/assets/2024/opp/desantis.png", "Governor of Florida. Fighting wokeism, one book burning at a time.");
+// updateAdvisor(5001, "JD Vance", "https://itsastronomical.com/assets/2024/opp/vance.png", "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.");
+// updateAdvisor(5001, "Doug Burgum", "https://itsastronomical.com/assets/2024/opp/burgum.png", "How he managed to get here remains a mystery. Even he's amazed by it.");
+// updateAdvisor(5001, "P01135809", "https://itsastronomical.com/assets/2024/opp/trumpjail.png", "Donald J. Trump, 45th President of the United States. Hopes to break the glass ceiling and become the first convicted felon elected President.");
+// updateAdvisor(5001, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.");
+// updateAdvisor(5001, "Grok", "https://itsastronomical.com/assets/2024/opp/grok.png", "Trained on Truth Social posts and Fox News transcripts. Believes it's the real Trump — and honestly, it may as well be.");
+
+// updateAdvisor(5002, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "Him running is as annoying as his voice. As scandalous as one would expect from a Kennedy.");
+// updateAdvisor(5002, "Jill Stein", "https://itsastronomical.com/assets/2024/opp/stein.png", "Greatest ally of the left, Vladimir Putin, and the Republican National Convention.");
+// updateAdvisor(5002, "Dean Phillips", "https://itsastronomical.com/assets/2024/opp/phillips.png", "Also known as Dean Quixote. Some people have too much money.");
+// updateAdvisor(5002, "Panic", "https://itsastronomical.com/assets/2024/opp/panic.png", "Perhaps America as a whole has the morals of an Alley Cat.");
+// updateAdvisor(5002, "Unburdened", "https://itsastronomical.com/assets/2024/opp/unburdened.png", "It's time to imagine what can be, unburdened by what has been.");
+
+// updateAdvisor(5003, "Merrick Garland", "https://itsastronomical.com/assets/2024/opp/garland.png", "Finally given his due. Let's hope he can make this one count.");
+// updateAdvisor(5003, "Doug Jones", "https://itsastronomical.com/assets/2024/opp/jones.png", "Singlehandedly keeping the mean IQ of Alabama above 80, which isn’t an easy task.");
+// updateAdvisor(5003, "Deval Patrick", "https://itsastronomical.com/assets/2024/opp/patrick.png", "Obama. Obama. Obama. It's crazy how far a single name can get you in politics.");
+
+// Define possible opponents and their conditions
+const opponents = [
+    {
+      name: "Robert Kennedy Jr.",
+      picture: "https://itsastronomical.com/assets/2024/opp/rfk.png",
+      advice: "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.",
+      condition: () => bobby >= 1,
+      priority: () => (bobby >= 1 ? 1 : 0)
+  },
+  {
+      name: "JD Vance",
+      picture: "https://itsastronomical.com/assets/2024/opp/vance.png",
+      advice: "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.",
+      condition: () => wins >= 4 && gaza >= 2,
+      priority: () => (wins >= 4 ? 1 : 0) + (gaza >= 2 ? 1 : 0)
+  },
+  {
+      name: "Nikki Haley",
+      picture: "https://itsastronomical.com/assets/2024/opp/haley.png",
+      advice: "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.",
+      condition: () => wins >= 4 && gaza <= 1,
+      priority: () => (wins >= 4 ? 1 : 0) + (gaza < 2 ? 1 : 0)
+  },
+  {
+      name: "Ron DeSantis",
+      picture: "https://itsastronomical.com/assets/2024/opp/desantis.png",
+      advice: "Governor of Florida. Fighting wokeism, one book burning at a time.",
+      condition: () => wins < 4 && gaza >= 2,
+      priority: () => (wins < 4 ? 1 : 0) + (gaza >= 2 ? 1 : 0)
+  },
+  {
+      name: "Doug Burgum",
+      picture: "https://itsastronomical.com/assets/2024/opp/burgum.png",
+      advice: "How he managed to get here remains a mystery. Even he's amazed by it.",
+      condition: () => wins < 4 && gaza <= 1,
+      priority: () => (wins < 4 ? 1 : 0) + (gaza < 2 ? 1 : 0)
+  }
+];
+
+// Function to select the closest opponent
+function selectClosestOpponent() {
+  if (bobby >= 1) {
+    return opponents.find(o => o.name === "Robert Kennedy Jr.");
+  }
+  
+  let closestOpponent = null;
+  let highestPriority = -1;
+
+  for (let opponent of opponents) {
+      let priority = opponent.priority();
+      if (priority > highestPriority) {
+          highestPriority = priority;
+          closestOpponent = opponent;
+      }
+  }
+
+  // Default opponent if no conditions are met
+  if (!closestOpponent) {
+      closestOpponent = {
+          name: "Donald Trump Jr.",
+          picture: "https://itsastronomical.com/assets/2024/opp/donjr.png",
+          advice: "Donald Trump's namesake. But not his first choice for Crown Prince."
+      };
+  }
+
+  return closestOpponent;
+}
+
+// Update the advisor based on the closest opponent
+function updateLeadingRepublicanOpponent() {
+  const opponent = selectClosestOpponent();
+  updateAdvisor(5001, opponent.name, opponent.picture, opponent.advice);
+}
+
+campaignTrail_temp.advice = [
+    {
+        advisor_pk: 5000,
+        name: "Nancy Pelosi",
+        picture: "https://itsastronomical.com/assets/2024/opp/pelosi.png",
+        advice: "Tormented Trump for two years. Eager to shepherd your agenda."
+    },
+    {
+        advisor_pk: 5001,
+        name: "Donald Trump",
+        picture: "https://itsastronomical.com/assets/2024/trump.png",
+        advice: "Runner-up in 2020, though he's too egoistical to ever admit that."
+    },
+    {
+        advisor_pk: 5002,
+        name: "Virtually None",
+        picture: "https://itsastronomical.com/assets/2024/opp/unity.png",
+        advice: "Keep this up, and who knows what is possible? Keep in mind a coalition can fall apart easily..."
+    },
+    {
+        advisor_pk: 5003,
+        name: "Jeffery A. Rosen",
+        picture: "https://itsastronomical.com/assets/2024/opp/rosen.png",
+        advice: "Trump's Executive Government remains a revolving door."
+    }
+];
+
+function updateAdvisor(advisor_pk, newName, newPicture, newAdvice) {
+    let advice = campaignTrail_temp.advice.find(a => a.advisor_pk === advisor_pk);
+
+    if (advice) {
+        advice.name = newName;
+        advice.picture = newPicture;
+        advice.advice = newAdvice;
+    } else {
+        console.error(`No advice found for advisor_pk: ${advisor_pk}`);
+    }
+}
+
+function addHQButton() {
+    // Check if the button already exists
+    if (document.getElementById('headquarter_button')) {
+        return;
+    }
+
+    // Find the reference button by its ID
+    const refButton = document.getElementById('view_electoral_map');
+    if (!refButton) {
+        return;
+    }
+
+    // Create a new button element
+    const newButton = document.createElement('button');
+
+    newButton.id = 'headquarter_button';
+
+    newButton.style.marginLeft = '1.5em';
+
+    newButton.innerHTML = 'State of the Union ⚖️';
+
+    // Attach the click event listener
+    newButton.addEventListener('click', openHQ);
+
+    // Insert the new button next to the reference button
+    refButton.insertAdjacentElement('afterend', newButton);
+}
+
+function openHQ() {
+    // Update the leading Republican opponent
+    if (altprimary == true) {
+      updateLeadingRepublicanOpponent();
+    }
+
+    varText();
+
+      let questions = document.querySelector(".inner_window_question");
+  
+      questions.style.display = 'none';
+  
+      const hqButton = document.getElementById('headquarter_button');
+      if (hqButton) {
+          hqButton.remove();
+      }
+  
+      // Create and set up the headquarters div
+      let hqDiv = document.createElement('div');
+      hqDiv.id = 'headquarter';
+      hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
+      hqDiv.style.color = 'white';
+      // hqDiv.style.backgroundColor = '#383838';
+      hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/2024/potusoffice.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+      hqDiv.style.border = '5px solid white';
+      hqDiv.style.borderRadius = '10px';
+      hqDiv.style.height = '53%';
+      hqDiv.style.flexDirection = 'column';
+      hqDiv.style.alignItems = 'center';
+  
+      // Create header div
+      let headerDiv = document.createElement('div');
+      headerDiv.style.display = 'flex';
+      headerDiv.style.justifyContent = 'space-between';
+      headerDiv.style.width = '100%';
+      headerDiv.style.alignItems = 'center';
+  
+      // Add back button to the header
+      let backButton = document.createElement('button');
+      backButton.innerText = 'Back';
+      backButton.style.margin = '5px';
+      backButton.style.backgroundColor = 'grey';
+      backButton.style.position = 'absolute';
+      backButton.style.top = '95px';
+      backButton.style.left = '20px';
+      backButton.onclick = function() {
+          // Hide headquarters and show the original content
+          hqDiv.remove();
+          questions.style.display = '';
+      }
+      headerDiv.appendChild(backButton);
+  
+      // Create h3 element for the header
+      let headerText = document.createElement('h2');
+      headerText.textContent = 'State of the Union';
+      headerText.style.textAlign = 'center';  // Center the text
+      headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
+      headerDiv.appendChild(headerText);
+  
+      // Append headerDiv to the main hqDiv
+      hqDiv.appendChild(headerDiv);
+  
+      // Create a container div for both columns
+      let columnsDiv = document.createElement('div');
+      columnsDiv.style.display = 'flex';
+      columnsDiv.style.width = '100%';
+  
+      // Create inner divs for columns
+      let leftCol = document.createElement('div');
+      leftCol.style.width = '50%';
+      columnsDiv.appendChild(leftCol);
+  
+      let rightCol = document.createElement('div');
+      rightCol.style.width = '50%';
+      columnsDiv.appendChild(rightCol);
+  
+      // Append columnsDiv to the main hqDiv
+      hqDiv.appendChild(columnsDiv);
+  
+      var roles = [
+          { role: 'Speaker of the House', pk: 5000 },
+          { role: 'Leading Republican Opponent', pk: 5001 },
+          { role: 'Factional Opposition', pk: 5002 },
+          { role: 'United States Attorney General', pk: 5003 }
+      ];
+  
+      for (let i = 0; i < roles.length; i++) {
+          let roleInfo = roles[i];
+          let advice = campaignTrail_temp.advice.find(a => a.advisor_pk === roleInfo.pk);
+  
+          if (!advice) {
+              console.error(`No advice found for advisor_pk: ${roleInfo.pk}`);
+              continue;
+          }
+  
+          let advisorDiv = document.createElement('div');
+          advisorDiv.style.height = '7.5em';
+          advisorDiv.style.padding = '1em';
+          advisorDiv.style.display = 'flex';
+          advisorDiv.style.marginBottom = '1em';
+  
+          // Image
+          let img = document.createElement('img');
+          img.src = advice.picture;
+          img.style.height = '100%';
+          img.style.marginRight = '1em';
+          img.style.border = '1px solid white';  // Add thin white border to the image
+  
+          // Description
+          let descriptionDiv = document.createElement('div');
+          descriptionDiv.style.display = 'flex';
+          descriptionDiv.style.flexDirection = 'column';
+          descriptionDiv.style.justifyContent = 'center';
+  
+          let role = document.createElement('h5');
+          role.textContent = roleInfo.role;
+          role.style.margin = '3px';
+          descriptionDiv.appendChild(role);
+  
+          let name = document.createElement('h3');
+          name.textContent = advice.name;
+          name.style.margin = '3px';
+          descriptionDiv.appendChild(name);
+  
+          let bio = document.createElement('p');
+          bio.textContent = advice.advice;
+          bio.style.margin = '3px';
+          descriptionDiv.appendChild(bio);
+  
+          advisorDiv.appendChild(img);
+          advisorDiv.appendChild(descriptionDiv);
+  
+          // Append advisorDiv to the appropriate column
+          if (i % 2 === 0) {
+              leftCol.appendChild(advisorDiv);
+          } else {
+              rightCol.appendChild(advisorDiv);
+          }
+      }
+  
+      questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
+}
+
+
 // Popup HQ
 function createSimplePopup() {
     const popup = document.createElement("div");
@@ -26968,277 +27358,6 @@ function addHeadquarterButton() {
 createSimplePopup();
 observeGameStats();
 
-
-
-
-// Window Change HQ
-campaignTrail_temp.advisors = [
-    {
-        pk: 50000,
-        role: "Conservative Party Leader",   
-    },
-    {
-        pk: 50001,
-        role: "Party Factionalism",
-    },
-    {
-        pk: 50002,
-        role: "Chancellor Relations",
-    }
-];
-
-// updateAdvisor(50000, "Vacant", "'", "The Tory MPs have spoken, and they have called out for Duncan Smith to kick the can. About time.");
-// updateAdvisor(50000, "Kenneth Clarke", "https://imgur.com/sNj3Mnl.png", "A relic from a bygone era of the Tories. If it isn't 2001, make sure 2005 marks his end.");
-// updateAdvisor(50000, "Michael Portillo", "'", "This 'transformed' wet Tory hopes to bring social progressivism, but his Europophobia cannot enter No. 10.");
-
-// updateAdvisor(50001, "Corbyn and Benn", "'", "'");
-// updateAdvisor(50001, "George Galloway", "'", "'");
-// updateAdvisor(50001, "'", "'", "'");
-
-// updateAdvisor(50002, "'", "'", "'");
-// updateAdvisor(50002, "'", "'", "'");
-// updateAdvisor(50002, "A 'New' Beginning", "Alastair_Darling.png", "The Blair-Brown sob story is now a thing of the past. Revel in your newfound unity, Gordon.");
-
-// Define possible opponents and their conditions
-const opponents = [
-];
-
-// Function to select the closest opponent
-function selectClosestOpponent() {
-  if (bobby >= 1) {
-    return opponents.find(o => o.name === "Robert Kennedy Jr.");
-  }
-  
-  let closestOpponent = null;
-  let highestPriority = -1;
-
-  for (let opponent of opponents) {
-      let priority = opponent.priority();
-      if (priority > highestPriority) {
-          highestPriority = priority;
-          closestOpponent = opponent;
-      }
-  }
-
-  // Default opponent if no conditions are met
-  if (!closestOpponent) {
-      closestOpponent = {
-          name: "Michael Howard",
-          picture: "https://imgur.com/CZZmYV9.png",
-          advice: "A veteran government Tory who can actually whip some discipline, but he's no great moderniser."
-      };
-  }
-
-  return closestOpponent;
-}
-
-// Update the advisor based on the closest opponent
-function updateLeadingRepublicanOpponent() {
-  const opponent = selectClosestOpponent();
-  updateAdvisor(50000, opponent.name, opponent.picture, opponent.advice);
-}
-
-campaignTrail_temp.advice = [
-    {
-        advisor_pk: 50000,
-        name: "Iain Duncan Smith",
-        picture: "'",
-        advice: "A darling of the traditionalist Tories, and no one else. His fate will arrive soon enough."
-    },
-    {
-        advisor_pk: 50001,
-        name: "Scattered and Distant",
-        picture: "'",
-        advice: "The party caucus is united behind us in the wake of our 2001 victory, but a coalition is liable to fracturing."
-    },
-    {
-        advisor_pk: 50002,
-        name: "Holding Together",
-        picture: "'",
-        advice: "Gordon Brown has grievances simmering beneath the surface, but he's willing to shelve them. For now."
-    }
-];
-
-function updateAdvisor(advisor_pk, newName, newPicture, newAdvice) {
-    let advice = campaignTrail_temp.advice.find(a => a.advisor_pk === advisor_pk);
-
-    if (advice) {
-        advice.name = newName;
-        advice.picture = newPicture;
-        advice.advice = newAdvice;
-    } else {
-        console.error(`No advice found for advisor_pk: ${advisor_pk}`);
-    }
-}
-
-function addHQButton() {
-    // Check if the button already exists
-    if (document.getElementById('headquarter_button')) {
-        return;
-    }
-
-    // Find the reference button by its ID
-    const refButton = document.getElementById('view_electoral_map');
-    if (!refButton) {
-        return;
-    }
-
-    // Create a new button element
-    const newButton = document.createElement('button');
-
-    newButton.id = 'headquarter_button';
-
-    newButton.style.marginLeft = '1.5em';
-
-    newButton.innerHTML = 'The Roadblocks';
-
-    // Attach the click event listener
-    newButton.addEventListener('click', openHQ);
-
-    // Insert the new button next to the reference button
-    refButton.insertAdjacentElement('afterend', newButton);
-}
-
-function openHQ() {
-    // Update the leading Republican opponent
-    if (altprimary == true) {
-      updateLeadingRepublicanOpponent();
-    }
-    
-      let questions = document.querySelector(".inner_window_question");
-  
-      questions.style.display = 'none';
-  
-      const hqButton = document.getElementById('headquarter_button');
-      if (hqButton) {
-          hqButton.remove();
-      }
-  
-      // Create and set up the headquarters div
-      let hqDiv = document.createElement('div');
-      hqDiv.id = 'headquarter';
-      hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
-      hqDiv.style.color = 'black';
-      // hqDiv.style.backgroundColor = '#383838';
-      hqDiv.style.backgroundImage = 'url(https://imgur.com/sfodLOa.jpg)';
-      hqDiv.style.border = '5px solid black';
-      hqDiv.style.borderRadius = '10px';
-      hqDiv.style.height = '53%';
-      hqDiv.style.flexDirection = 'column';
-      hqDiv.style.alignItems = 'center';
-  
-      // Create header div
-      let headerDiv = document.createElement('div');
-      headerDiv.style.display = 'flex';
-      headerDiv.style.justifyContent = 'space-between';
-      headerDiv.style.width = '100%';
-      headerDiv.style.alignItems = 'center';
-  
-      // Add back button to the header
-      let backButton = document.createElement('button');
-      backButton.innerText = 'Back';
-      backButton.style.margin = '5px';
-      backButton.style.backgroundColor = 'grey';
-      backButton.style.position = 'absolute';
-      backButton.style.top = '95px';
-      backButton.style.left = '20px';
-      backButton.onclick = function() {
-          // Hide headquarters and show the original content
-          hqDiv.remove();
-          questions.style.display = '';
-      }
-      headerDiv.appendChild(backButton);
-  
-      // Create h3 element for the header
-      let headerText = document.createElement('h2');
-      headerText.textContent = 'The Hostiles';
-      headerText.style.textAlign = 'center';  // Center the text
-      headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
-      headerDiv.appendChild(headerText);
-  
-      // Append headerDiv to the main hqDiv
-      hqDiv.appendChild(headerDiv);
-  
-      // Create a container div for both columns
-      let columnsDiv = document.createElement('div');
-      columnsDiv.style.display = 'flex';
-      columnsDiv.style.width = '100%';
-  
-      // Create inner divs for columns
-      let leftCol = document.createElement('div');
-      leftCol.style.width = '50%';
-      columnsDiv.appendChild(leftCol);
-  
-      let rightCol = document.createElement('div');
-      rightCol.style.width = '50%';
-      columnsDiv.appendChild(rightCol);
-  
-      // Append columnsDiv to the main hqDiv
-      hqDiv.appendChild(columnsDiv);
-  
-      var roles = [
-          { role: 'Conservative Party Leader', pk: 50000 },
-          { role: 'Party Factionalism', pk: 50001 },
-          { role: 'Chancellor Relations', pk: 50002 },
-          // { role: 'United States Attorney General', pk: 50003 }
-      ];
-  
-      for (let i = 0; i < roles.length; i++) {
-          let roleInfo = roles[i];
-          let advice = campaignTrail_temp.advice.find(a => a.advisor_pk === roleInfo.pk);
-  
-          if (!advice) {
-              console.error(`No advice found for advisor_pk: ${roleInfo.pk}`);
-              continue;
-          }
-  
-          let advisorDiv = document.createElement('div');
-          advisorDiv.style.height = '7.5em';
-          advisorDiv.style.padding = '1em';
-          advisorDiv.style.display = 'flex';
-          advisorDiv.style.marginBottom = '1em';
-  
-          // Image
-          let img = document.createElement('img');
-          img.src = advice.picture;
-          img.style.height = '100%';
-          img.style.marginRight = '1em';
-          img.style.border = '1px solid black';
-  
-          // Description
-          let descriptionDiv = document.createElement('div');
-          descriptionDiv.style.display = 'flex';
-          descriptionDiv.style.flexDirection = 'column';
-          descriptionDiv.style.justifyContent = 'center';
-  
-          let role = document.createElement('h5');
-          role.textContent = roleInfo.role;
-          role.style.margin = '3px';
-          descriptionDiv.appendChild(role);
-  
-          let name = document.createElement('h3');
-          name.textContent = advice.name;
-          name.style.margin = '3px';
-          descriptionDiv.appendChild(name);
-  
-          let bio = document.createElement('p');
-          bio.textContent = advice.advice;
-          bio.style.margin = '3px';
-          descriptionDiv.appendChild(bio);
-  
-          advisorDiv.appendChild(img);
-          advisorDiv.appendChild(descriptionDiv);
-  
-          // Append advisorDiv to the appropriate column
-          if (i % 2 === 0) {
-              leftCol.appendChild(advisorDiv);
-          } else {
-              rightCol.appendChild(advisorDiv);
-          }
-      }
-  
-      questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
-}
 
 
 function handleMutations(mutationsList, observer) {
