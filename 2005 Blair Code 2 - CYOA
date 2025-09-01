@@ -5,7 +5,7 @@ var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
 var Cred = 2;
-var Brown = false;
+var Brown = 0;
 var EUCnstn = 0;
 var Ken = 0;
 var Porty = 0;
@@ -49,7 +49,8 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
     }
     if(ans == 13508){
-      Brown = true;
+        Brown += 1;
+        e.PMisCandidate += 1;
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 27;
         document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
         vpTable["The Labour Party"] = "J. Gordon Brown";
@@ -247,6 +248,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 14072){
       Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14201){
+      Cred -= 1;
       console.log("You have impacted your credibility");
     }
 
