@@ -21,20 +21,21 @@ function updateQuestionBanner() {
 		let img = document.createElement('img');
 		if(e.PMisCandidate == 0){
         // PM Blair 
-			img.src = 'https://imgur.com/_______.png';
+			img.src = 'https://imgur.com/vheneLE.png';
 		}
 		else if(ans == 14815 || ans == 14816 || ans == 14817 || ans == 14821 || ans == 12807 || ans == 12808 || ans == 14881 || ans == 14886 || ans == 14891 || ans == 14895){
         // PM Blair
-			img.src = 'https://imgur.com/_______.png';
+			img.src = 'https://imgur.com/vheneLE.png';
 		}
         else if(ans == 12797 || ans == 12798){
         // CotE Brown
-			img.src = 'https://imgur.com/_______.png';
+			img.src = 'https://imgur.com/aswORgv.png';
 		}
         else if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570){
         // Tony & Gordon
-			img.src = 'https://imgur.com/_______.png';
+			img.src = 'https://imgur.com/nxFwooH.png';
 		}
+        /*
         else if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
         // LabourBlair
 			img.src = 'https://imgur.com/_______.png';
@@ -43,6 +44,7 @@ function updateQuestionBanner() {
         // LabourBrown
             img.src = 'https://imgur.com/_______.png';
         }
+        */
 		questionBanner.replaceWith(img);
 }
 
