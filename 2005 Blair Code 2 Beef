@@ -21,6 +21,7 @@ var EUCnstn = 0;
 var Ken = 0;
 var Porty = 0;
 var iraq = 0;
+var CampaignSign = "PMBlair"
 
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
 campaignTrail_temp.player_answers = [];
@@ -32,12 +33,14 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
         campaignTrail_temp.running_mate_last_name = "Blair";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"
+        CampaignSign = "PMBlair"
     }
     if(ans == 12797 || ans == 12798){
         campaignTrail_temp.candidate_last_name = "Chancellor";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+        CampaignSign = "CotEBrown"
         iraq += 1;
         console.log("debug")
     }
@@ -46,6 +49,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_image_url = "https://imgur.com/GPBuD3h.jpg"
         campaignTrail_temp.running_mate_last_name = "Gordon";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/RGK5T1f.jpg"
+        CampaignSign = "TonyGordon"
     }
     if(ans == 3493){
         document.body.background = "https://imgur.com/tjqFeeK.png"    
@@ -58,6 +62,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
+        CampaignSign = "LabBlair"
     }
     if(ans == 13508){
         Brown += 1;
@@ -150,6 +155,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
+        CampaignSign = "LabBrown"
     }
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
         var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
@@ -25447,7 +25453,7 @@ campaignTrail_temp.jet_data = [{
 ]
 
 
-/*
+
 e = campaignTrail_temp
 
 	campaignTrail_temp.answer_feedback_flg = 1;
@@ -25469,33 +25475,26 @@ function updateQuestionBanner() {
 		let questionBanner = document.getElementById("campaign_sign");
 		if(!questionBanner || questionBanner.nodeName != "DIV") return;
 		let img = document.createElement('img');
-		if(e.PMisCandidate == 0){
-    // PM Blair 
+		if(CampaignSign == "PMBlair"){
+			img.src = 'https://imgur.com/vheneLE.png';
+		}
+    else if(CampaignSign == "CotEBrown"){
+			img.src = 'https://imgur.com/aswORgv.png';
+		}
+    else if(CampaignSign == "TonyGordon"){
+			img.src = 'https://imgur.com/nxFwooH.png';
+		}
+    /*
+    else if(CampaignSign == "LabBlair"){
 			img.src = 'https://imgur.com/_______.png';
 		}
-		else if(ans == 14815 || ans == 14816 || ans == 14817 || ans == 14821 || ans == 12807 || ans == 12808 || ans == 14881 || ans == 14886 || ans == 14891 || ans == 14895){
-    // PM Blair
-			img.src = 'https://imgur.com/_______.png';
-		}
-    else if(ans == 12797 || ans == 12798){
-    // CotE Brown
-			img.src = 'https://imgur.com/_______.png';
-		}
-    else if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570){
-    // Tony & Gordon
-			img.src = 'https://imgur.com/_______.png';
-		}
-    else if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
-    // LabourBlair
-			img.src = 'https://imgur.com/_______.png';
-		}
-    else if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){
-    // LabourBrown
+    else if(CampaignSign == "LabBrown"){
       img.src = 'https://imgur.com/_______.png';
     }
+    */
 		questionBanner.replaceWith(img);
 }
-*/
+
 
 
 var changeGameDisp = (hide) => {
