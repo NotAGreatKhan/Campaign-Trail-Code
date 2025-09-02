@@ -10,6 +10,7 @@ var EUCnstn = 0;
 var Ken = 0;
 var Porty = 0;
 var iraq = 0;
+var CampaignSign = "PMBlair"
 
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
 campaignTrail_temp.player_answers = [];
@@ -21,12 +22,14 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_image_url = "https://imgur.com/RzlDlUU.png"
         campaignTrail_temp.running_mate_last_name = "Blair";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"
+        CampaignSign = "PMBlair"
     }
     if(ans == 12797 || ans == 12798){
         campaignTrail_temp.candidate_last_name = "Chancellor";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+        CampaignSign = "CotEBrown"
         iraq += 1;
         console.log("debug")
     }
@@ -35,6 +38,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_image_url = "https://imgur.com/GPBuD3h.jpg"
         campaignTrail_temp.running_mate_last_name = "Gordon";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/RGK5T1f.jpg"
+        CampaignSign = "TonyGordon"
     }
     if(ans == 3493){
         document.body.background = "https://imgur.com/tjqFeeK.png"    
@@ -47,6 +51,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
+        CampaignSign = "LabBlair"
     }
     if(ans == 13508){
         Brown += 1;
@@ -139,6 +144,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
         campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
+        CampaignSign = "LabBrown"
     }
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
         var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
