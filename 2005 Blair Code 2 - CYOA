@@ -1602,7 +1602,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(OldLab <= 0 && Cred >= 8){
     campaignTrail_temp.questions_json[37] = {
     "model": "campaign_trail.question",
-    "pk": 14337,
+    "pk": 14364,
     "fields": {
         "priority": 0,
         "description": "The realignment of British politics around Thatcher and her government has left a deep mark on public life, and your political conscience.<p></p>Many of your backbenchers holler at you in parliament, but that does not matter now, not to you. Before you, sits Foreign Secretary Jack Straw – Blunkett would be here too, but an affair got him kicked out from your cabinet. Milburn too, quietly waits in the wings. He speaks of the importance of securing our citizens, and protecting democracy at home, and abroad. His glare bores into you. What will you say to the man?",
