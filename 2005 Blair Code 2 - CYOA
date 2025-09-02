@@ -33,7 +33,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         iraq += 1;
         console.log("debug")
     }
-    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570){
+    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570 || ans == 14988 || ans == 14993 || ans == 14998 || ans == 15003 || ans == 15008 || ans == 15013){
         campaignTrail_temp.candidate_last_name = "Tony";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/GPBuD3h.jpg"
         campaignTrail_temp.running_mate_last_name = "Gordon";
