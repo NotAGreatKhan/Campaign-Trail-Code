@@ -28,14 +28,12 @@ function updateQuestionBanner() {
         else if(CampaignSign == "TonyGordon"){
 			img.src = 'https://imgur.com/nxFwooH.png';
 		}
-        /*
         else if(CampaignSign == "LabBlair"){
-			img.src = 'https://imgur.com/_______.png';
+			img.src = 'https://imgur.com/coFQrUF.png';
 		}
         else if(CampaignSign == "LabBrown"){
-            img.src = 'https://imgur.com/_______.png';
+            img.src = 'https://imgur.com/Rwq6mLt.png';
         }
-        */
 		questionBanner.replaceWith(img);
 }
 
