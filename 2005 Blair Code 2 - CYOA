@@ -88,6 +88,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             window.setTimeout(e.candidateSwitcher, 20)
             e.VpText = "Please select your party leader:"
     }
+    if(ans == 15172 || ans == 15173){
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": 12543,
+                  "running_mate": 139
+              }
+        }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
+    }
     if(e.player_answers.includes(13511)){
     campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
