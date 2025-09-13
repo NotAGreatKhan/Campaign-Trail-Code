@@ -355,6 +355,29 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 139,
+        "fields": {
+            "first_name": "Anthony",
+            "last_name": "Blair",
+            "election": 12,
+            "party": "Labour",
+            "state": "Sedgefield",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#4848a8",
+            "secondary_color_hex": "#4848a8",
+            "is_active": 0,
+            "image_url": "https://imgur.com/f1V2M3Z.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<li><b>Name: Anthony Blair</b></li><li><b>Role: Her Majesty's Terminal Prime Minister</b></li><li><b>Constituency: Sedgefield</b></li><p> </p><b>BLAIR:</b> Look, Alan, this situation we face... I frankly don't know how we can make it out alive.<br><br><span style=\"float:right\"><b>MILBURN:</b> It's gonna be a lot, Tony – I'm not going to pull wool over your eyes. But we can salvage this. You'll make it.</span><br><br><b>BLAIR:</b> I hope so. I really do hope so, maybe Gordon and I [Inaudible].<br><br>The King's crown has fallen far from its crest on the mountain. Its jewels cracked and deformed as their gold housing is battered by the hail and storm.<br><br>He may never feel the sparkling glimmer of the summit's sunshine again.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 12565,
         "fields": {
             "first_name": "The",
