@@ -49,7 +49,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 15325 || ans == 15332 || ans == 15339){
         document.getElementById("header").src = "https://imgur.com/pdMtkk5.jpg"  
     }
-    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
+    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){
         document.body.background = "https://imgur.com/r1yqD5R.png"
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
@@ -93,7 +93,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(Brown == 1){
     campaignTrail_temp.questions_json[21] = {
         "model": "campaign_trail.question",
-        "pk": 13501,
+        "pk": 15346,
         "fields": {
             "priority": 0,
             "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
