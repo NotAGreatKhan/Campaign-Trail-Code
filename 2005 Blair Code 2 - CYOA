@@ -64,18 +64,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
         vpTable["The Labour Party"] = "J. Gordon Brown";
         CampaignSign = "CotEBrown"
-    }
-    if(ans == 13508){
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
-        campaignTrail_temp.questions_json[21] = {
-        "model": "campaign_trail.question",
-        "pk": 13501,
-        "fields": {
-            "priority": 0,
-            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
-            "likelihood": 1
-          }
-       }
     }
     if(ans == 13508){
         campaignTrail_temp.running_mate_json = JSON.parse(`[{
@@ -101,7 +90,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             window.setTimeout(e.candidateSwitcher, 20)
             e.VpText = "Please select your party leader:"
     }
-    if(e.player_answers.includes(13511)){
+    if(Brown == 1){
+    campaignTrail_temp.questions_json[21] = {
+        "model": "campaign_trail.question",
+        "pk": 13501,
+        "fields": {
+            "priority": 0,
+            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
+            "likelihood": 1
+          }
+       }
     campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 14399,
