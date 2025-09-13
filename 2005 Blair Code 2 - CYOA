@@ -62,6 +62,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 27;
         document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
         vpTable["The Labour Party"] = "J. Gordon Brown";
+        CampaignSign = "CotEBrown"
+    }
+    if(ans == 13508){
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
         campaignTrail_temp.questions_json[20] = {
         "model": "campaign_trail.question",
