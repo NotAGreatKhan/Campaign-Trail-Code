@@ -53,6 +53,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         document.body.background = "https://imgur.com/r1yqD5R.png"
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
         CampaignSign = "LabBlair"
     }
