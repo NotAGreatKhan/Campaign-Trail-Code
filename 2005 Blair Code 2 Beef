@@ -57,6 +57,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13554 || ans == 13557){
         document.body.background = "https://imgur.com/w0SVuOH.png"    
     }
+    if(ans == 15325 || ans == 15332 || ans == 15339){
+        document.getElementById("header").src = "https://imgur.com/pdMtkk5.jpg"  
+    }
     if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
         document.body.background = "https://imgur.com/r1yqD5R.png"
         campaignTrail_temp.candidate_last_name = "Labour";
@@ -70,6 +73,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.global_parameter_json[0].fields.question_count = 27;
         document.getElementById("header").src = "https://imgur.com/2u3lJ7m.jpg"
         vpTable["The Labour Party"] = "J. Gordon Brown";
+        CampaignSign = "CotEBrown"
+    }
+    if(ans == 13508){
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
         campaignTrail_temp.questions_json[20] = {
         "model": "campaign_trail.question",
