@@ -44,7 +44,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         iraq += 1;
         console.log("debug")
     }
-    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570 || ans == 14988 || ans == 14993 || ans == 14998 || ans == 15003 || ans == 15008 || ans == 15013){
+    if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570 || ans == 14988 || ans == 14993 || ans == 14998 || ans == 15003 || ans == 15008 || ans == 15013 || ans == 14980){
         campaignTrail_temp.candidate_last_name = "Tony";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/GPBuD3h.jpg"
         campaignTrail_temp.running_mate_last_name = "Gordon";
@@ -80,7 +80,9 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "likelihood": 1
           }
        }
-    campaignTrail_temp.running_mate_json = JSON.parse(`[{
+    }
+    if(ans == 13508){
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
               "model": "campaign_trail.running_mate",
               "pk": 1,
               "fields": {
@@ -88,10 +90,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
                   "running_mate": 136
               }
         }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
     }
     if(e.player_answers.includes(13511)){
-      e.VpText = "Please select your party leader:"
-      window.setTimeout(e.candidateSwitcher, 20)
     campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 14399,
@@ -1351,6 +1353,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(OldLab >= 4){
+    campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 15324,
+    "fields": {
+        "priority": 0,
+        "description": "Parliament is officially dissolved, and a core tenant of the electoral system must be sorted: the party manifesto. Within the little red booklet is housed all of your policy proposals and policies for the populace to eat up – or mostly the media class. Still, how the manifesto will be composited is yet to be decided. The team now needs to know how you would like to tinker this book so that it's camera ready.",
+        "likelihood": 1
+      }
+    }
+  }
     if(Wins >= 6 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
     campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
@@ -1613,7 +1626,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(OldLab <= 0 && Cred >= 8){
     campaignTrail_temp.questions_json[37] = {
     "model": "campaign_trail.question",
-    "pk": 14337,
+    "pk": 14364,
     "fields": {
         "priority": 0,
         "description": "The realignment of British politics around Thatcher and her government has left a deep mark on public life, and your political conscience.<p></p>Many of your backbenchers holler at you in parliament, but that does not matter now, not to you. Before you, sits Foreign Secretary Jack Straw – Blunkett would be here too, but an affair got him kicked out from your cabinet. Milburn too, quietly waits in the wings. He speaks of the importance of securing our citizens, and protecting democracy at home, and abroad. His glare bores into you. What will you say to the man?",
@@ -1864,7 +1877,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12866,
         "fields": {
             "priority": 0,
-            "description": "As Parliament is officially dissolved, it is time to announce your party manifesto for this year. With a sleuth of locations and regions available to you, what region would you like to visit to unveil the red booklet?",
+            "description": "Parliament is officially dissolved, and a core tenant of the electoral system must be sorted: the party manifesto. Within the little red booklet is housed all of your policy proposals and policies for the populace to eat up – or mostly the media class. Still, how the manifesto will be composited is yet to be decided. The team now needs to know how you would like to tinker this book so that it's camera ready.",
             "likelihood": 1
         }
     },
@@ -2665,7 +2678,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14337,
         "fields": {
             "priority": 0,
-            "description": "The realignment of British politics around Thatcher and her government has left a deep mark on public life, and your political conscience.<p></p>Many of your backbenchers holler at you in parliament, but that does not matter now, not to you. Before you, sits Foreign Secretary Jack Straw – Blunkett would be here too, but an affair got him kicked out from your cabinet. Milburn too, quietly waits in the wings. He speaks of the importance of securing our citizens, and protecting democracy at home, and abroad. His glare bores into you. What will you say to the man?",
+            "description": "The walls around the Thatcherite consensus have come crashing down.<p></p>Sitting in your office, you longingly gaze out of the window that received the same stares as Wilson, Callaghan, and Attlee before you. When you first came into this job, you felt a conviction to shift to the centre like no other Labour leader before you. But, time changes people more than they realise, it appears. As Deputy Prime Minister John Prescott – and Chancellor Brown – sit opposite you, many ideas are swirling like a vortex in your mind. But there’s only one which you can get out first.",
             "likelihood": 1
         }
     },
@@ -2774,6 +2787,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "When you first made your intention to support the war in Iraq clear, the entirety of Britain held still in bated breath on just how far you would go. Just when the alluring call of the hellish deep tempted you to take that step into the unknown – you were pulled out. The British troops stayed home, never knowing the barren sands of Iraq first hand (in this war at least). The reaction from the public has generally been one of relief. Yet for the Conservatives – themselves consistent and rabid supporters of the war – have staked a firm position arguing for further involvement in the conflict. The Tory MPs are belligerently campaigning on it, having hoped to vote in favour of it in the Commons, and Michael Howard is leaning into it. Make them see the light, Tony.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15324,
+        "fields": {
+            "priority": 0,
+            "description": "Parliament is officially dissolved, and a core tenant of the electoral system must be sorted: the party manifesto. Within the little red booklet is housed all of your policy proposals and policies for the populace to eat up – or mostly the media class. Still, how the manifesto will be composited is yet to be decided. The team now needs to know how you would like to tinker this book so that it's camera ready.",
             "likelihood": 1
         }
     }
@@ -3057,7 +3079,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12867,
         "fields": {
             "question": 12866,
-            "description": "Let’s go to the very heart of our nation, the capital city of London. I think it would be a great symbolic place, with all of the diversity and bustling nature of the city. We’ll pick a good place to go, I’m sure there’ll be plentiful options."
+            "description": "We'll make the design simple and straightforward. With every field of relevant topic listed out and explained in detail, combining our record and our future ideas. We can't afford to leave anything up to interpretation."
         }
     },
     {
@@ -3065,7 +3087,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12868,
         "fields": {
             "question": 12866,
-            "description": "Why not go to my constituency in the North? With its history to the industrial region, we can really press our economic programs for the lower classes of this country."
+            "description": "You know, our working class communities don't feel completely included. We can skim this thing down a bit – not too much. But we can ensure that the graphics side of it is ready to go, along with making the campaign pledges more digestible."
         }
     },
     {
@@ -3073,15 +3095,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12869,
         "fields": {
             "question": 12866,
-            "description": "I’d like to go to the South of the country, perhaps Brighton. The pleasant sandy beaches at the precipice of the rest of Europe, it would be great for the emphasis of our partnership with Europe."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 12870,
-        "fields": {
-            "question": 12866,
-            "description": "I think Gordon would like a trip back to his home, Scotland. The work we have done with devolution would be something worth highlighting."
+            "description": "Let's try for a different angle this time around. Last time, we didn't really excite turnout with the base even though the Conservatives were as weak as they were. <i>This</i> time around, we'll lean a bit more progressive on our economic issues."
         }
     },
     {
@@ -5593,7 +5607,7 @@ campaignTrail_temp.answers_json = [
         "pk": 15068,
         "fields": {
             "question": 15061,
-            "description": "Look, he has been difficult certainly at times. And, well he has been very – too – influential in the government. But I can't just shaft him now, it would never have worked in 2001, and it won't work now. He would make too much of a scene in a smaller role – and God knows what he would do on the backbenches. I'll let him be. For now."
+            "description": "Look, he has been difficult certainly at times. And, well he's been very – too – influential in government. But I can't just shaft him now, I didn't in 2001, and I won't now. He would make too much of a scene – and God knows what he would do on the backbenches. I'll let him be. For now."
         }
     },
     {
@@ -5874,6 +5888,30 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 15297,
             "description": "If the Conservatives were in power, they would see us amass our entire military in a conflict thousands of miles away. We are already doing all that we can to combat terror without expending so many lives."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15325,
+        "fields": {
+            "question": 15324,
+            "description": "We'll make the design simple and straightforward. With every field of relevant topic listed out and explained in detail, combining our record and our future ideas. We can't afford to leave anything up to interpretation."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15332,
+        "fields": {
+            "question": 15324,
+            "description": "You know, our working class communities don't feel completely included. We can skim this thing down a bit – not too much. But we can ensure that the graphics side of it is ready to go, along with making the campaign pledges more digestible."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15339,
+        "fields": {
+            "question": 15324,
+            "description": "Let's try for a different angle this time around. Last time, we didn't really excite turnout with the base even though the Conservatives were as weak as they were. <i>This</i> time around, we'll lean a bit more progressive on our economic issues."
         }
     }
 ]
@@ -12696,16 +12734,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 14121,
-        "fields": {
-            "answer": 12870,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "global_multiplier": -0.01
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 14125,
         "fields": {
             "answer": 14123,
@@ -16763,6 +16791,96 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12565,
             "global_multiplier": -0.01
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15320,
+        "fields": {
+            "answer": 12869,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15321,
+        "fields": {
+            "answer": 12868,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15322,
+        "fields": {
+            "answer": 12867,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15327,
+        "fields": {
+            "answer": 15325,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15328,
+        "fields": {
+            "answer": 15325,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15334,
+        "fields": {
+            "answer": 15332,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15335,
+        "fields": {
+            "answer": 15332,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15341,
+        "fields": {
+            "answer": 15339,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15342,
+        "fields": {
+            "answer": 15339,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.012
+        }
     }
 ]
 
@@ -17104,7 +17222,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12867,
             "issue": 28,
             "issue_score": 0.45,
-            "issue_importance": 2
+            "issue_importance": 3
         }
     },
     {
@@ -17112,8 +17230,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13204,
         "fields": {
             "answer": 12867,
-            "issue": 30,
-            "issue_score": -0.71,
+            "issue": 29,
+            "issue_score": 0.2,
             "issue_importance": 3
         }
     },
@@ -17124,7 +17242,7 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 12868,
             "issue": 27,
             "issue_score": 0.25,
-            "issue_importance": 2
+            "issue_importance": 3
         }
     },
     {
@@ -17132,8 +17250,8 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13207,
         "fields": {
             "answer": 12868,
-            "issue": 30,
-            "issue_score": -0.71,
+            "issue": 29,
+            "issue_score": -0.3,
             "issue_importance": 3
         }
     },
@@ -17142,7 +17260,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 13209,
         "fields": {
             "answer": 12869,
-            "issue": 29,
+            "issue": 27,
             "issue_score": 0.4,
             "issue_importance": 2
         }
@@ -21376,6 +21494,76 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0.65,
             "issue_importance": 5
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15323,
+        "fields": {
+            "answer": 12869,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15329,
+        "fields": {
+            "answer": 15325,
+            "issue": 28,
+            "issue_score": 0.45,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15330,
+        "fields": {
+            "answer": 15325,
+            "issue": 29,
+            "issue_score": 0.2,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15336,
+        "fields": {
+            "answer": 15332,
+            "issue": 27,
+            "issue_score": 0.25,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15337,
+        "fields": {
+            "answer": 15332,
+            "issue": 29,
+            "issue_score": -0.3,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15343,
+        "fields": {
+            "answer": 15339,
+            "issue": 27,
+            "issue_score": 0.4,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15344,
+        "fields": {
+            "answer": 15339,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 4
+        }
     }
 ]
 
@@ -21587,17 +21775,6 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 12543,
             "affected_candidate": 12543,
             "state_multiplier": 0.003
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 13552,
-        "fields": {
-            "answer": 12870,
-            "state": 12506,
-            "candidate": 12543,
-            "affected_candidate": 12543,
-            "state_multiplier": 0.008
         }
     },
     {
@@ -21906,6 +22083,39 @@ campaignTrail_temp.answer_score_state_json = [
             "candidate": 12543,
             "affected_candidate": 12543,
             "state_multiplier": 0.0155
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15331,
+        "fields": {
+            "answer": 15325,
+            "state": 12482,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15338,
+        "fields": {
+            "answer": 15332,
+            "state": 12446,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15345,
+        "fields": {
+            "answer": 15339,
+            "state": 12488,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "state_multiplier": 0.003
         }
     }
 ]
@@ -22304,7 +22514,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12867,
             "candidate": 12543,
-            "answer_feedback": "You unveil your manifesto at the Mermaid theatre in Central London. The bustling crowds, the blaring lights and flashes of cameras on your Cheshire cat face. It’s time to hit this campaign on the road. The fact that it was held in London is nice for showing unity in your social message, hopefully it will also aid in combating the LibDem surge here."
+            "answer_feedback": "An expected course of action, if lacking the imaginative manifesto innovation some may have hoped for. Soon after, the Conservatives unveil their image-heavy, quote-and-slogan ridden pooklet only a few dozen pages long. Your campaign teases it as _The shortest suicide note in history_, but something inside you wails about how this could reach less politically invested voters.<p></p>You unveil your manifesto at the Mermaid theatre in Central London. The bustling crowds, the blaring lights and flashes of cameras on your Cheshire cat face. It’s time to hit this campaign on the road."
         }
     },
     {
@@ -22313,7 +22523,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12868,
             "candidate": 12543,
-            "answer_feedback": "You unveil your manifesto at a local Sedgefield market. The smiling constituents of the vibrant town, it reminds you of where it all began. Nearby, an anti-war protest echoes in the distance. Regardless, it’s time to hit this campaign on the road. Hosting the event near Gordon Brown’s home, and in your constituency, shores up your economic argument well."
+            "answer_feedback": "The rural and lower class folk do find the manifesto perfectly fine to go through, but it doesn't stop some from implying it reeks of _condescension_ for those your campaign is trying to reach. When the Conservatives unveil their remarkably similar manifesto but with hand drawn, critical quotes from voters, your press team trots out that _imitation is the highest form of flattery_. Though, it doesn't get much attention.<p></p>You unveil your manifesto at a local Sedgefield market. The smiling constituents of the vibrant town, it reminds you of where your road to power all began. Nearby, an anti-war protest echoes in the distance. Regardless, it’s time to hit this campaign on the road."
         }
     },
     {
@@ -22322,16 +22532,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12869,
             "candidate": 12543,
-            "answer_feedback": "You unveil your manifesto at the Trade Union Congress in Brighton. Seeing the shores of that Southern English coast, it reminds you of that European Council Presidency… and that harrowing day in 2001. It’s time to hit this campaign on the road. The location definitely seems to emphasise immigration and Europe, not your strongest bases, but still useful."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 13201,
-        "fields": {
-            "answer": 12870,
-            "candidate": 12543,
-            "answer_feedback": "You unveil your manifesto in Central Glasgow. Whilst Scotland has traditionally been Labour country, the emergence of the SNP, and the LibDems, could change that. This should help in keeping them down."
+            "answer_feedback": "The effort to tap into the silent, ravaging base of Old Labour ends with a disappointing splutter. Corbyn muses how little he'll need to change his critiques of your government assuming you are re-elected. For those your siren calls wish to lure, the feeling is mutual.<p></p>You unveil your manifesto at the Trade Union Congress in Brighton. Seeing the shores of that Southern English coast, it reminds you of that European Council Presidency… and that harrowing day in 2001. It’s time to hit this campaign on the road."
         }
     },
     {
@@ -23789,7 +23990,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14201,
             "candidate": 12543,
-            "answer_feedback": "The Equal Marriage Bill, having been anticipated by the media and Parliament, is put through the wringer by the Conservative opposition. Your abnormal decision to whip the party on a moral issue leads to fierce and religiously worked-up debates both in and outside the Commons. The Bill gets through, but not after being bruised and abstained from, to near failure."
+            "answer_feedback": "The Equal Marriage Bill, having been anticipated by the media and Parliament, is put through the wringer by the Conservative opposition. Your abnormal decision to whip the party on a moral issue leads to fierce and religiously worked-up debates both in and outside the Commons. The Bill gets through, but not after being bruised and abstained from, to near failure. The opposition benches clink glasses and chuckle over a well fought battle against your decaying titan body."
         }
     },
     {
@@ -25393,6 +25594,33 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "Taking the charge personally gets a modicum of wind at your back. But the chants, and the seething. Something's deeply wrong. This isn't right, why is this scratching your rightful crown the most? You can't explain it yourself..."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15326,
+        "fields": {
+            "answer": 15325,
+            "candidate": 12543,
+            "answer_feedback": "An expected course of action, if lacking the imaginative manifesto innovation some may have hoped for. Soon after, the Conservatives unveil their image-heavy, quote-and-slogan ridden pooklet only a few dozen pages long. Your campaign teases it as _The shortest suicide note in history_, but something inside you wails about how this could reach less politically invested voters.<p></p>You unveil your manifesto at the Mermaid theatre in Central London. The bustling crowds, the blaring lights and flashes of cameras on your Cheshire cat face. It’s time to hit this campaign on the road."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15333,
+        "fields": {
+            "answer": 15332,
+            "candidate": 12543,
+            "answer_feedback": "The rural and lower class folk do find the manifesto perfectly fine to go through, but it doesn't stop some from implying it reeks of _condescension_ for those your campaign is trying to reach. When the Conservatives unveil their remarkably similar manifesto but with hand drawn, critical quotes from voters, your press team trots out that _imitation is the highest form of flattery_. Though, it doesn't get much attention.<p></p>You unveil your manifesto at a local Sedgefield market. The smiling constituents of the vibrant town, it reminds you of where your road to power all began. Nearby, an anti-war protest echoes in the distance. Regardless, it’s time to hit this campaign on the road."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15340,
+        "fields": {
+            "answer": 15339,
+            "candidate": 12543,
+            "answer_feedback": "When you go out into the fog and chill of an English morning, a distinct – unmistakable – energy fills the venue you stand in. Whether it's London, Manchester, or Bristol, a vitality ebbs and flows. For the deluge of the median voters that float away, a <i>new</i> fresh air sets in. It may never be enough, but it's almost enough to fly in the wind for just a moment.<p></p>You unveil your manifesto at the Trade Union Congress in Brighton. Seeing the shores of that Southern English coast, it reminds you of that European Council Presidency… and that harrowing day in 2001. It’s time to hit this campaign on the road."
+        }
     }
 ]
 
@@ -25478,20 +25706,18 @@ function updateQuestionBanner() {
 		if(CampaignSign == "PMBlair"){
 			img.src = 'https://imgur.com/vheneLE.png';
 		}
-    else if(CampaignSign == "CotEBrown"){
+        else if(CampaignSign == "CotEBrown"){
 			img.src = 'https://imgur.com/aswORgv.png';
 		}
-    else if(CampaignSign == "TonyGordon"){
+        else if(CampaignSign == "TonyGordon"){
 			img.src = 'https://imgur.com/nxFwooH.png';
 		}
-    /*
-    else if(CampaignSign == "LabBlair"){
-			img.src = 'https://imgur.com/_______.png';
+        else if(CampaignSign == "LabBlair"){
+			img.src = 'https://imgur.com/coFQrUF.png';
 		}
-    else if(CampaignSign == "LabBrown"){
-      img.src = 'https://imgur.com/_______.png';
-    }
-    */
+        else if(CampaignSign == "LabBrown"){
+            img.src = 'https://imgur.com/Rwq6mLt.png';
+        }
 		questionBanner.replaceWith(img);
 }
 
