@@ -61,10 +61,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 15325 || ans == 15332 || ans == 15339){
         document.getElementById("header").src = "https://imgur.com/pdMtkk5.jpg"  
     }
-    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405 || ans == 13508){
+    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){
         document.body.background = "https://imgur.com/r1yqD5R.png"
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/QZ4aC8T.png"
         campaignTrail_temp.election_json[0]["fields"].has_visits = 1;
         CampaignSign = "LabBlair"
     }
@@ -76,17 +77,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         vpTable["The Labour Party"] = "J. Gordon Brown";
         CampaignSign = "CotEBrown"
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
-    }
-    if(ans == 13508){
-        campaignTrail_temp.questions_json[21] = {
-        "model": "campaign_trail.question",
-        "pk": 13501,
-        "fields": {
-            "priority": 0,
-            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
-            "likelihood": 1
-          }
-       }
     }
     if(ans == 13508){
         campaignTrail_temp.running_mate_json = JSON.parse(`[{
@@ -113,6 +103,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             e.VpText = "Please select your party leader:"
     }
     if(Brown == 1){
+    campaignTrail_temp.questions_json[21] = {
+        "model": "campaign_trail.question",
+        "pk": 15346,
+        "fields": {
+            "priority": 0,
+            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
+            "likelihood": 1
+          }
+       }
     campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 14399,
@@ -2815,6 +2814,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Parliament is officially dissolved, and a core tenant of the electoral system must be sorted: the party manifesto. Within the little red booklet is housed all of your policy proposals and policies for the populace to eat up – or mostly the media class. Still, how the manifesto will be composited is yet to be decided. The team now needs to know how you would like to tinker this book so that it's camera ready.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15346,
+        "fields": {
+            "priority": 0,
+            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
             "likelihood": 1
         }
     }
@@ -5931,6 +5939,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 15324,
             "description": "Let's try for a different angle this time around. Last time, we didn't really excite turnout with the base even though the Conservatives were as weak as they were. <i>This</i> time around, we'll lean a bit more progressive on our economic issues."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15347,
+        "fields": {
+            "question": 15346,
+            "description": "“Hello? ...Yes, it’s me, Tony.”"
         }
     }
 ]
@@ -16900,6 +16916,16 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12587,
             "global_multiplier": -0.012
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15349,
+        "fields": {
+            "answer": 15347,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.05
+        }
     }
 ]
 
@@ -21583,6 +21609,36 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 0.5,
             "issue_importance": 4
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15350,
+        "fields": {
+            "answer": 15347,
+            "issue": "27",
+            "issue_score": 0.5,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15351,
+        "fields": {
+            "answer": 15347,
+            "issue": 28,
+            "issue_score": 0.5,
+            "issue_importance": 7
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15352,
+        "fields": {
+            "answer": 15347,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 6
+        }
     }
 ]
 
@@ -25639,6 +25695,15 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 15339,
             "candidate": 12543,
             "answer_feedback": "When you go out into the fog and chill of an English morning, a distinct – unmistakable – energy fills the venue you stand in. Whether it's London, Manchester, or Bristol, a vitality ebbs and flows. For the deluge of the median voters that float away, a <i>new</i> fresh air sets in. It may never be enough, but it's almost enough to fly in the wind for just a moment.<p></p>You unveil your manifesto at the Trade Union Congress in Brighton. Seeing the shores of that Southern English coast, it reminds you of that European Council Presidency… and that harrowing day in 2001. It’s time to hit this campaign on the road."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15348,
+        "fields": {
+            "answer": 15347,
+            "candidate": 12543,
+            "answer_feedback": "The two of you talk for a deceptively small several hours. Reminiscing on bad press stories, all of the domestic scares, and the challenges that you together overcame.<p></p>It is inconceivable to miss his regret and bitterness over the manner in which he was made to be shown the door. But, he leaves some words, “Look, Gordon. I know we haven’t been exactly two peas in a pod these past few years. But, I know that you are an immensely capable man. I chose you for a reason. Don’t forget it”. After a deep sigh, he says goodbye.<p></p>For the first time ever, you will hold the key to the great black door.<p></p>Mr Brown, welcome to No. 10."
         }
     }
 ]
