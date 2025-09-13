@@ -188,7 +188,30 @@ campaignTrail_temp.election_json = [
             "image_url": "https://imgur.com/t35sV5w.jpg",
             "winning_electoral_vote_number": 324,
             "advisor_url": "https://imgur.com/u6zV6LD.jpg",
-            "recommended_reading": "This election has no further reading yet.",
+            "recommended_reading": `<div id="tab-select"> <p class="ftab-active" id="start">Overview</p> <p class="ftab">Britain in 2005</p> <p class="ftab">Sources</p> <p class="ftab" id="end">Further Credits</p></div>
+                                    <span id="rpage0" style="display: none;">
+                                        <h3>Blair, Brown, the government, and the new millenium</h3>
+                                        <h4>A personal note from NoReadingKhan</h4>
+                                        <br>                
+                                        Hello! Welcome to the Further Reading section of this mod. If you have made it here, congratulations! Takes a certain kind of junkie to go this far for a mod about <i>Britain</i> in the <i>2000's</i>.
+                                        <br><br>
+                                        As a fairly proud Brit myself, I have always felt as though there are not really enough British mods on this (wonderful) game. After having a crack at a few mock-ups here and there which I was rather pleased with, I decided to have a crack at it and make a full, CYOA mod. An international one too at that. What was supposed to take a few months has admittedly ballooned in size to taking well over a year to complete. As on-and-off as the journey has been, it has been very worth it.
+                                        <br><br>
+                                        Whatever becomes of this mod, I hope it at least gave someone an enjoyable experience, even if it was just an iota of what this dinky game has done for me in times of high and low.
+                                    </span>
+
+                                    <span id="rpage1" style="display: none;">
+                                        Nothin' here yet...
+                                    </span>
+
+                                    <span id="rpage2" style="display: none;">
+                                        Nothin' here yet...
+                                    </span>
+ 
+                                    <span id="rpage3" style="display: none;">
+                                        Nothin' here yet...
+                                    </span>
+            </div>`,
             "has_visits": 0,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
             "creator": "u/No-Reading9991",
@@ -340,7 +363,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Conservative",
             "state": "--",
             "priority": 2,
-            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Conservative Party</b></li><li><b>Role: Her Majesty's Most Loyal Opposition</b></li><li><b>Ideology: Classical Conservatism</b></li><p> </p><b>The Conservative and Unionist Party</b> is the oldest still-active party in Britain, evolving from the old Tory party that had predominantly overseen the rise of the modern British state. Until the 1990s, it was deemed a simple political fact – a law of nature – that they were 'the natural party of governance'. After the fall of Margaret Thatcher, and the stagnation proceeding Black Wednesday, Prime Minister John Major was routed and swept aside under the red tide of the New Labour revolution. Their ability to have any influence on policy snatched away from their grip. The landslide defeats of '97 and '01 have suppressed the Conservatives to electoral weakness.<br><br>Despite all of this however, they are far from out of the fight. As the new millennium dawns on the world, the War on Terror will consume the Blair government's agenda, and could provide ample opportunity to rip open festering Labour wounds. It is very much possible that regardless of the previous loss, it could be very much turned around.<br><br>But they need the right man to wield the great sword of the party.<br><br>The leader immediately following the defeated William Hague is Ian Duncan Smith, a man so charismatically inept that his implosion is all but assured. If his successor can effectively take the attack to the Prime Minister, and renew the drive of the Tories, it is possible – feasible even – that they can snuff out the Labour domination just as hastily as it was brought into the halls of Downing Street. Take them back.<br><br>To their natural holders.</div>",
+            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Conservative Party</b></li><li><b>Role: Her Majesty's Most Loyal Opposition</b></li><li><b>Ideology: Classical Conservatism</b></li><p> </p><b>The Conservative and Unionist Party</b> is the oldest still-active party in Britain, evolving from the old Tory party that had predominantly overseen the rise of the modern British state. Until the 1990s, it was deemed a simple political fact – a law of nature – that they were 'the natural party of governance'. After the turmoil of the 90's, Prime Minister John Major was routed and swept aside under the red tide of the New Labour revolution. Their ability to have any influence on policy snatched away from their grip. The landslide defeats of '97 and '01 have suppressed the Conservatives to electoral weakness.<br><br>Despite all of this however, they are far from out of the fight. As the new millennium dawns on the world, the War on Terror will consume the Blair government's agenda, and could provide ample opportunity to rip open festering Labour wounds. It is very much possible that regardless of the previous loss, it could still be turned around.<br><br>But they need the right man to wield the great sword of the party.<br><br>If the party leader can effectively take the attack to the Prime Minister, and renew the drive of the Tories, it is possible – feasible even – that they can snuff out the Labour domination just as hastily as it was brought into the halls of Downing Street. Take them back.<br><br>To their natural holders.</div>",
             "color_hex": "#4848a8",
             "secondary_color_hex": "#4848a8",
             "is_active": 1,
@@ -432,10 +455,10 @@ campaignTrail_temp.candidate_json = [
             "party": "Liberal Democrat",
             "state": "--",
             "priority": 1,
-            "description": "<p>Put description here</p>",
+            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Liberal Democrats</b></li><li><b>Role: Her Majesty's Most Loyal Third Party</b></li><li><b>Ideology: Centre-left Liberalism</b></li><p> </p><b>The Liberal Democratic Party</b> is the current largest third party in British parliamentary politics. Having emerged as a result of the former Social Democratic Party (or SDP that broke away from Labour in 1981) and the ailing, dying Liberal Party which once dominated the early 20th century. Towing the line of centre-left liberal ideology, they are loosely placed in the middle of the British political spectrum. The Lib Dems have – to a highly effective degree – proven their mettle as an opposition party able to suck out voter bases from both the Tories <i>and</i> Labour.<br><br>For Blair's Labour in particular, the leader of the party has a rare opportunity to sweep the government from the legs, and snatch voter sects teetering on jumping ship all together. Nobody realises it yet. Nobody yet knows the great trials and horrrors the geopolitical climate has in store. If the LibDem leader plays his cards right, he can pry the pre-existing fissures in the major parties into gaping chasms bleeding an exodus people disenfranchised by the Labour-Tory duopoly.<br><br>The young, the infirmed, the hopeful immigrants, and the disillusioned. They can all have the chance to raise a party which can plunge it's citrus-orange knife into the establishment which has governed without accountability for far too long.</div>",
             "color_hex": "#ffb752",
             "secondary_color_hex": null,
-            "is_active": 0,
+            "is_active": 1,
             "image_url": "https://imgur.com/J2gXM1R.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
@@ -463,7 +486,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Charles P. Kennedy</b></li><li><b>Role: Her Majesty's Leader of the Liberal Democrats</b></li><li><b>Constituency: Ross, Skye and Lochaber</b></li><p> </p><i>”.”</i>\n\n<p><b></p>\n\n<p></p>\n\n<p></p>\n\n<p></p></div>",
+            "description_as_running_mate": "<li><b>Name: Charles P. Kennedy</b></li><li><b>Role: Her Majesty's Leader of the Liberal Democrats</b></li><li><b>Constituency: Ross, Skye and Lochaber</b></li><p> </p><i>”Politics is much too serious to be taken too seriously; equally, there are many aspects of it so laughable as to be lamentable.”</i><p> </p><b>Charles Peter Kennedy</b> is the epitmoe of a jovial, affable Scotsman. His cheery, light-hearted persona has simultaneously endeared him to the public, and generated chatter – both suspicious and hopeful – among the media class. Making his name as a principled speaker on the more liberal wing of the party, he has taken a long jounrey to stake himself out as a permanent face of the British national politik.<br><br>His climb to the mountain-top does not end here, however – he knew that all too well. He may be a fresh face after becoming leader in 1999, but his new coalition heading into 2005 must enlargen and secure its tent for those seeking refuge from the betrayal of the major parties. If he can minimise his gaffes on the trail, project strength among the parliamentary cohorts – he may just have a chance to cause the first deadlock since the 1970's.",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -926,6 +949,14 @@ campaignTrail_temp.running_mate_json = [
     },
     {
         "model": "campaign_trail.running_mate",
+        "pk": 159977,
+        "fields": {
+            "candidate": 12587,
+            "running_mate": 126
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
         "pk": 159968,
         "fields": {
             "candidate": 12631,
@@ -1085,7 +1116,14 @@ jet_data = {
 
 //#startcode
 
-corrr = '\n              <h2>Her Majesty’s Campaign Trail</h2><font id="wittyquote" size="4" color="white"><em>"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</em></font>\n            ';
+corrr = `
+<div style="font-size: 8px; font-family: monospace; color: white;">
+    <h2 style="font-style: normal;">
+      <img src="https://imgur.com/ovwPvlH.jpg" alt="Her Majesty's Campaign Trail" style="margin-top: 2px;">
+    </h2>
+  </div>
+<font id="wittyquote" size="3" color="white">"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</font>
+`;
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
@@ -1167,6 +1205,33 @@ document.head.innerHTML += `<link
   
   #game_window{max-width:1000px;}
 </style>`
+
+
+const startScreenUpdater = setInterval(function() {
+      const goBackButton = document.getElementById("candidate_id_back");
+      const candidateButton = document.getElementById("candidate_id_button");
+      const runningMateButton = document.getElementById("running_mate_id_button");
+      
+      if(candidateButton || c != 0){ 
+          var c = document.getElementById("candidate_id")?.value ?? -1;          
+          var r = document.getElementById("running_mate_id")?.value ?? -1;
+          if(c == 12543 && !(candidateButton) && !(runningMateButton)) {
+        	goBackButton.click();
+        	const initContinue = document.getElementById("election_id_button");
+        	initContinue.click();
+    	  }
+          
+          else if(r == 126) {
+        	if(runningMateButton) {
+            	runningMateButton.remove();
+        	}
+    	    }
+	}
+        if(finalScreenID) { // delete back button and delete the interval
+    	finalScreenBB.remove();
+    	clearInterval(startScreenUpdater);
+	}
+}, 1);
 
 
 let contentBox = document.getElementsByClassName("content_box")[0];
@@ -1291,6 +1356,8 @@ tooltipList = [
         {searchString: "Ian McCartney", explanationText: "<img src=https://imgur.com/MhvvaKu.jpg> Party Chair of the Labour Party. Always the bearer of bad news, it seems."},
         {searchString: "Alan Milburn", explanationText: "<img src=https://imgur.com/Ok5BkBa.jpg> Chief election strategist of Labour. It won't be him who will bring this home, not alone."},
         {searchString: "Milburn", explanationText: "<img src=https://imgur.com/Ok5BkBa.jpg> Chief election strategist of Labour. It won't be him who will bring this home, not alone."},
+        {searchString: "Charles", explanationText: "<img src=https://imgur.com/wHzfAQi.jpg> Minister without Portfolio, and Chairman of the Labour Party, well, at least until he can get into the Home Office, after he finishes his time as Sec. of State for Education and skills."},
+        {searchString: "Chairman Clarke", explanationText: "<img src=https://imgur.com/wHzfAQi.jpg> Minister without Portfolio, and Chairman of the Labour Party, well, at least until he can get into the Home Office, after he finishes his time as Sec. of State for Education and skills."},
 
         // Characters
         {searchString: "Edward Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. Supported Margaret Thatcher, and is generally known for his strident conservative views."},
@@ -1304,6 +1371,8 @@ tooltipList = [
         {searchString: "Iain Duncan Smith", explanationText: "<img src=https://imgur.com/V6pvIWK.jpg> Tory MP for Chingford and Woodford Green, Iain Duncan Smith. The uncharismatic, sacrificial lamb elected after Hague's shellacking."},
         {searchString: "Duncan Smith", explanationText: "<img src=https://imgur.com/V6pvIWK.jpg> Tory MP for Chingford and Woodford Green, Iain Duncan Smith. The uncharismatic, sacrificial lamb elected after Hague's shellacking."},
         {searchString: "John Major", explanationText: "<img src=https://imgur.com/KtGnTDZ.jpg> A respectful man, shame he was dogged by Thatcher and the Germans so much."},
+        {searchString: "Charles Kennedy", explanationText: "<img src=https://imgur.com/lJMfi6s.jpg> Charles Peter Kennedy, the biggest threat to your parliamentary majority."},
+        {searchString: "Kennedy", explanationText: "<img src=https://imgur.com/lJMfi6s.jpg> Charles Peter Kennedy, the biggest threat to your parliamentary majority."},
 
         // Others
         {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> The centre of financial trade and power of New York City, and a fallen symbol of American pride."},
@@ -1363,6 +1432,56 @@ if(!modifiedFormobserver){
   var modifiedFormobserver = new MutationObserver(modifyForm);
   modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
 }
+
+
+/*
+if(localStorage.getItem("variable")){
+function changeOpponentSelectionDescription() {
+  selectionObserver.disconnect();
+
+  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+  
+  if (opponentSelectionDescription) {
+    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p><p>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by <b>u/ItsAstronomics</b>, and created by <b>u/AeronauticBlueberry</b>.</p>`;
+  }
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!selectionObserver){
+  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
+  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+function modifyForm(){
+  modifiedFormobserver.disconnect();
+
+  const form = document.querySelector('form[name="game_type_selection"]');
+
+  if (form) {
+    const select = form.querySelector('select[name="game_type_id"]');
+    const h3 = form.querySelector('h3');
+    const option = select.querySelector('option[value="1"]');
+
+    if (option && option.textContent !== 'Default: First Past The Post') {
+      option.textContent = 'Default: First Past The Post';
+    }
+    if (select && select.querySelector('option[value="2"]')) {
+      const queryTwo = select.querySelector('option[value="2"]');
+      if (queryTwo) {
+        queryTwo.remove();
+      }
+    }
+    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
+      h3.textContent = 'How would you like the seats to be allocated?';
+    }
+  }
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+if(!modifiedFormobserver){
+  var modifiedFormobserver = new MutationObserver(modifyForm);
+  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+}
+*/
 
 
 // Original Code from 2016: A Lifetime of This by StrawberryMaster
