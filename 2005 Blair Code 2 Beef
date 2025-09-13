@@ -78,7 +78,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
     if(ans == 13508){
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
-        campaignTrail_temp.questions_json[20] = {
+        campaignTrail_temp.questions_json[21] = {
         "model": "campaign_trail.question",
         "pk": 13501,
         "fields": {
