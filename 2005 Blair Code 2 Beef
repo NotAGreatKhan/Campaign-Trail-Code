@@ -9,6 +9,7 @@ function getQuestionNumberFromPk(pk) {
 }
 
 
+
 e = campaignTrail_temp
 
 var Wins = 0;
@@ -94,6 +95,18 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
               "fields": {
                   "candidate": 12543,
                   "running_mate": 136
+              }
+        }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
+    }
+    if(ans == 15172 || ans == 15173){
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": 12543,
+                  "running_mate": 139
               }
         }]`);
             window.setTimeout(e.candidateSwitcher, 20)
@@ -25607,7 +25620,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15325,
             "candidate": 12543,
-            "answer_feedback": "An expected course of action, if lacking the imaginative manifesto innovation some may have hoped for. Soon after, the Conservatives unveil their image-heavy, quote-and-slogan ridden pooklet only a few dozen pages long. Your campaign teases it as _The shortest suicide note in history_, but something inside you wails about how this could reach less politically invested voters.<p></p>You unveil your manifesto at the Mermaid theatre in Central London. The bustling crowds, the blaring lights and flashes of cameras on your Cheshire cat face. It’s time to hit this campaign on the road."
+            "answer_feedback": "An expected course of action, if lacking the imaginative manifesto innovation some may have hoped for. Soon after, the Conservatives unveil their image-heavy, quote-and-slogan ridden pooklet only a few dozen pages long. Your campaign teases it as “The shortest suicide note in history”, but something inside you wails about how this could reach less politically invested voters.<p></p>You unveil your manifesto at the Mermaid theatre in Central London. The bustling crowds, the blaring lights and flashes of cameras on your Cheshire cat face. It’s time to hit this campaign on the road."
         }
     },
     {
@@ -25616,7 +25629,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15332,
             "candidate": 12543,
-            "answer_feedback": "The rural and lower class folk do find the manifesto perfectly fine to go through, but it doesn't stop some from implying it reeks of _condescension_ for those your campaign is trying to reach. When the Conservatives unveil their remarkably similar manifesto but with hand drawn, critical quotes from voters, your press team trots out that _imitation is the highest form of flattery_. Though, it doesn't get much attention.<p></p>You unveil your manifesto at a local Sedgefield market. The smiling constituents of the vibrant town, it reminds you of where your road to power all began. Nearby, an anti-war protest echoes in the distance. Regardless, it’s time to hit this campaign on the road."
+            "answer_feedback": "The rural and lower class folk do find the manifesto perfectly fine to go through, but it doesn't stop some from implying it reeks of “condescension” for those your campaign is trying to reach. When the Conservatives unveil their remarkably similar manifesto but with hand drawn, critical quotes from voters, your press team trots out that “imitation is the highest form of flattery”. Though, it doesn't get much attention.<p></p>You unveil your manifesto at a local Sedgefield market. The smiling constituents of the vibrant town, it reminds you of where your road to power all began. Nearby, an anti-war protest echoes in the distance. Regardless, it’s time to hit this campaign on the road."
         }
     },
     {
