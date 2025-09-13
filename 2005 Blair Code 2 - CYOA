@@ -1342,6 +1342,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(OldLab >= 4){
+    campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 15324,
+    "fields": {
+        "priority": 0,
+        "description": "Parliament is officially dissolved, and a core tenant of the electoral system must be sorted: the party manifesto. Within the little red booklet is housed all of your policy proposals and policies for the populace to eat up – or mostly the media class. Still, how the manifesto will be composited is yet to be decided. The team now needs to know how you would like to tinker this book so that it's camera ready.",
+        "likelihood": 1
+      }
+    }
+  }
     if(Wins >= 6 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
     campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
