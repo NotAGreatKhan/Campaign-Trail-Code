@@ -1292,6 +1292,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if((e.player_answers.includes(12814) && (e.player_answers.includes(15087) || e.player_answers.includes(15088))) || (e.player_answers.includes(12813) && (e.player_answers.includes(15107) || e.player_answers.includes(15112))) && (e.player_answers.includes(12820) || e.player_answers.includes(14993) || e.player_answers.includes(15008))){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 15353,
+    "fields": {
+        "priority": 0,
+        "description": " ",
+        "likelihood": 1
+      }
+    }
+  }
     if(e.player_answers.includes(14201)){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
