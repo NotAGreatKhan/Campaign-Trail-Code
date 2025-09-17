@@ -1298,7 +1298,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 15353,
     "fields": {
         "priority": 0,
-        "description": " ",
+        "description": "All of the frantic scarpering from office to office in Westminster, and European nation to nation across the channel, has taken your mind away from the campaign that has dogged your unlikely friend from Texas. The 2004 Presidential election. From the instant the Democratic and Republican Conventions concluded, polling had been teetering between Bush, and John Kerry. Tonight, the verdict of the public rang throughout the Western world. Thanks to a razor-thin margin in Ohio for the blue column in the final hour, Senator Kerry has clawed and wrenched out a bare win against the now-lame-duck President. Your team scrambles to prepare something for you. He's going out now, Tony.",
         "likelihood": 1
       }
     }
