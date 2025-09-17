@@ -187,8 +187,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // Question 3 – Terror Bill
-    if(ans == 15182){
+    if(ans == 15206){
       Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14033){
+      Cred += 1;
       console.log("You have impacted your credibility");
     }
 
@@ -578,6 +582,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
     // Question 3 – Terror Bill
     if(ans == 14032){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 14033){
       Wins += 1;
       console.log("Do they like you now?");
     }
