@@ -9,7 +9,6 @@ function getQuestionNumberFromPk(pk) {
 }
 
 
-
 e = campaignTrail_temp
 
 var Wins = 0;
@@ -199,8 +198,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // Question 3 – Terror Bill
-    if(ans == 15182){
+    if(ans == 15206){
       Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 14033){
+      Cred += 1;
       console.log("You have impacted your credibility");
     }
 
@@ -416,7 +419,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 18 – Weaker CPA
+    // Question 18 – President-Elect Kerry
+    if(ans == 15354){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 19 – Weaker CPA
     if(ans == 15025){
       Cred -= 1;
       console.log("You have impacted your credibility");
@@ -593,6 +602,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Wins += 1;
       console.log("Do they like you now?");
     }
+    if(ans == 14033){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
     
     // Question 7 – Making the case for war
     if(ans == 12814){
@@ -693,7 +706,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 18 - Leigh Amendment to CPA 
+    // Question 18 – President-Elect Kerry
+    if(ans == 15363){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 19 - Leigh Amendment to CPA 
     if(ans == 12847){
       Wins += 1;
       console.log("Do they like you now?");
@@ -1292,6 +1311,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
+        "likelihood": 1
+      }
+    }
+  }
+    if((e.player_answers.includes(12814) && (e.player_answers.includes(15087) || e.player_answers.includes(15088))) || (e.player_answers.includes(12813) && (e.player_answers.includes(15107) || e.player_answers.includes(15112))) && (e.player_answers.includes(12820) || e.player_answers.includes(14993) || e.player_answers.includes(15008))){
+    campaignTrail_temp.questions_json[17] = {
+    "model": "campaign_trail.question",
+    "pk": 15353,
+    "fields": {
+        "priority": 0,
+        "description": "All of the frantic scarpering from office to office in Westminster, and from European nation to nation across the channel, has taken your mind away from the campaign that has dogged your unlikely friend from Texas. The 2004 Presidential election. From the instant the Democratic and Republican Conventions concluded, polling had been teetering between Bush, and John Kerry. Tonight, the verdict of the public rang throughout the Western world. Thanks to a razor-thin margin in Ohio for the blue column in the final hour, Senator Kerry has clawed and wrenched out a bare win against the now-lame-duck President. Your team scrambles to prepare something for you. He's going out now, Tony.",
         "likelihood": 1
       }
     }
@@ -2825,6 +2855,15 @@ campaignTrail_temp.questions_json = [
             "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
             "likelihood": 1
         }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15353,
+        "fields": {
+            "priority": 0,
+            "description": "All of the frantic scarpering from office to office in Westminster, and from European nation to nation across the channel, has taken your mind away from the campaign that has dogged your unlikely friend from Texas. The 2004 Presidential election. From the instant the Democratic and Republican Conventions concluded, polling had been teetering between Bush, and John Kerry. Tonight, the verdict of the public rang throughout the Western world. Thanks to a razor-thin margin in Ohio for the blue column in the final hour, Senator Kerry has clawed and wrenched out a bare win against the now-lame-duck President. Your team scrambles to prepare something for you. He's going out now, Tony.",
+            "likelihood": 1
+        }
     }
 ]
 
@@ -4322,7 +4361,7 @@ campaignTrail_temp.answers_json = [
         "pk": 14032,
         "fields": {
             "question": 14031,
-            "description": "It is of utmost importance that we work to guarantee the security of our people. Don’t make any delay, get the bill through as quickly as possible, and we can sort this out before any more danger can come to us."
+            "description": "It is of utmost importance that we work to guarantee the security of our people. Don’t make any delay, get the bill through as quickly as possible, and we can sort this out before any more danger can come to us. Ram it through."
         }
     },
     {
@@ -5947,6 +5986,38 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 15346,
             "description": "“Hello? ...Yes, it’s me, Tony.”"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15354,
+        "fields": {
+            "question": 15353,
+            "description": "God, it actually happened. All of the exit polling was projecting he'd clinch it. Let's just stay quiet on this whole thing, and wait for his inauguration. Who knows, perhaps it could turn out better for us in the end."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15357,
+        "fields": {
+            "question": 15353,
+            "description": "Alright, alright. We need to get ahead of this. Write something up about hoping to establish a new relation with America. Setting things straight. Just, well, push it in that direction, like a fresh start."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15360,
+        "fields": {
+            "question": 15353,
+            "description": "You know, Kerry could be a blessing in disguise. God knows how much we could do with a change of accent from the White House. We will issue a standard congratulatory statement, and state that we look forward to working with them."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15363,
+        "fields": {
+            "question": 15353,
+            "description": "Let's reach out to Senator Kerry. It won't be much, but I would like to at least have a phone call with the man. Talk about issues, foreign policy of course, but also climate and diplomacy more specifically too."
         }
     }
 ]
@@ -16926,6 +16997,116 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12543,
             "global_multiplier": 0.05
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15356,
+        "fields": {
+            "answer": 15354,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15359,
+        "fields": {
+            "answer": 15357,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15362,
+        "fields": {
+            "answer": 15360,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15365,
+        "fields": {
+            "answer": 15363,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15366,
+        "fields": {
+            "answer": 15354,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15369,
+        "fields": {
+            "answer": 15357,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15370,
+        "fields": {
+            "answer": 15363,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15373,
+        "fields": {
+            "answer": 15354,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15374,
+        "fields": {
+            "answer": 15357,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15375,
+        "fields": {
+            "answer": 15360,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15376,
+        "fields": {
+            "answer": 15363,
+            "candidate": 12543,
+            "affected_candidate": 12649,
+            "global_multiplier": 0.01
+        }
     }
 ]
 
@@ -21615,7 +21796,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 15350,
         "fields": {
             "answer": 15347,
-            "issue": "27",
+            "issue": 27,
             "issue_score": 0.5,
             "issue_importance": 7
         }
@@ -21638,6 +21819,46 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 30,
             "issue_score": 0,
             "issue_importance": 6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15367,
+        "fields": {
+            "answer": 15354,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15368,
+        "fields": {
+            "answer": 15357,
+            "issue": 30,
+            "issue_score": 0.45,
+            "issue_importance": 5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15371,
+        "fields": {
+            "answer": 15360,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15372,
+        "fields": {
+            "answer": 15363,
+            "issue": 30,
+            "issue_score": 0.7,
+            "issue_importance": 4
         }
     }
 ]
@@ -25704,6 +25925,42 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 15347,
             "candidate": 12543,
             "answer_feedback": "The two of you talk for a deceptively small several hours. Reminiscing on bad press stories, all of the domestic scares, and the challenges that you together overcame.<p></p>It is inconceivable to miss his regret and bitterness over the manner in which he was made to be shown the door. But, he leaves some words, “Look, Gordon. I know we haven’t been exactly two peas in a pod these past few years. But, I know that you are an immensely capable man. I chose you for a reason. Don’t forget it”. After a deep sigh, he says goodbye.<p></p>For the first time ever, you will hold the key to the great black door.<p></p>Mr Brown, welcome to No. 10."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15355,
+        "fields": {
+            "answer": 15354,
+            "candidate": 12543,
+            "answer_feedback": "Some find it unusual that one of your closest international allies gets not a Mary peep from your press office. For such a pivotal electoral process in global geopolitics with significant ramifications, the other party leaders take the opportunity to pick up the ball where you slack behind. Kennedy yearns for a more sensitive approach from America, while the Conservatives tut-tut about maintaining stability abroad."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15358,
+        "fields": {
+            "answer": 15357,
+            "candidate": 12543,
+            "answer_feedback": "The wording may be subtle, but it's all the press needs to immediately speculate on how this will affect Anglo-American relations going forward. As President-Elect Kerry prepares his cabinet nominations, many at home wonder if it means your foreign policy on Iraq is going to... tactfully shift to meet the times. Alastair begins to worry about whether you can stick to anything with the regime."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15361,
+        "fields": {
+            "answer": 15360,
+            "candidate": 12543,
+            "answer_feedback": "After the thrill of the election fever subsides, you decide to make a call to George Bush, his voice aching and solemn. You both spend the night recounting old memories of the struggles with Iraq, the annoyance he expresses with Europe – which you pray he can't sense your grimace at. The phone line goes dead as the rustling of papers and lugging of boxes faintly thuds in the White House. As the titan of leadership falls to the ground across the pond, you fear you'll be next on death row."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15364,
+        "fields": {
+            "answer": 15363,
+            "candidate": 12543,
+            "answer_feedback": "Though the details of the call will be hidden for years to come. The folks back home see a slight shimmer of hope that with your cozying up to the new preeminent leadership in America, a new era for the Iraqi people can begin. Yet to the mothers and sons waiting silently for their soldiers to come home, nothing you can say can ever make them save their tears."
         }
     }
 ]
