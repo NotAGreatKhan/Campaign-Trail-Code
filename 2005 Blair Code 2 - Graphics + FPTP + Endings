@@ -1917,8 +1917,9 @@ function openHeadquarter() {
     headerDiv.appendChild(backButton);
 }
 
-// Stuff for Floating HQ
 
+
+// Stuff for Floating HQ
 function addWindowButton() {
     // Check if the button already exists
     if (document.getElementById('window_button')) {
@@ -1967,47 +1968,6 @@ function insertAt(arr, index, newItem) {
 
 let savedX = null;
 let savedY = null;
-
-// By default, only 3 Republicans - Trump, Haley, and DeSantis show up.
-const menuItemsA = [
-    { photo: 'https://itsastronomical.com/assets/2024/square/trumptrial.png', name: 'Donald Trump', text: 'The former President hasn’t even bothered to set up a Presidential Library - Mar-A-Lago is now a Government in exile. Only the hammer of justice could force him from the race.', button: 'Defer', id: 'TRUMP_intro'},
-    { photo: 'https://itsastronomical.com/assets/2024/square/desantis.png', name: 'Ron DeSantis', text: 'With the swing state of Florida having swung to Trump after 2020, some are starting to consider what a post-Trump GOP may look like. Governor Ron DeSantis seems to be the answer to that.', button: 'Defer', id: 'DESANTIS_intro'},
-    { photo: 'https://itsastronomical.com/assets/2024/square/haley.png', name: 'Nikki Haley', text: 'Although the Neocons were largely sent into exile by Trump, former UN Ambassador Nikki Haley hopes she can clinch the Republican nomination.', button: 'Defer', id: 'HALEY_intro'}
-]
-
-// Cards that get added/changed later
-
-let trumpCard = { photo: 'https://itsastronomical.com/assets/2024/square/trumptrial.png', name: 'Donald Trump', text: 'Free from criminal consequences, Trump now prepares to return to the White House, eager to undo any attempt at justice in this nation. The only court that has a chance to convict him in time is the court of public opinion.', button: 'Defer', id: 'TRUMP'}
-let donjrCard = { photo: 'https://itsastronomical.com/assets/2024/square/donjr.png', name: 'Donald Trump Jr.', text: 'Although not his father\'s favorite, Don Jr. seems to have quickly locked up the Republican nomination following his dad\'s arrest. He is here not to lead, but to free his father from prison.', button: 'Defer', id: 'DONJR'}
-let desantisCard = { photo: 'https://itsastronomical.com/assets/2024/square/desantis.png', name: 'Ron DeSantis', text: 'The Governor who turned the once prominent swing state red now plans to take his success to a national level. His culture warrior style will only secure him nomination if foreign policy is at rest.', button: 'Defer', id: 'DESANTIS'}
-let haleyCard = { photo: 'https://itsastronomical.com/assets/2024/square/haley.png', name: 'Nikki Haley', text: 'Although unpopular with MAGA, Nikki Haley still commands a plausible minority of the Republican Party. With foreign policy being her strong point, troubles abroad shall be her best chance at securing the nomination.', button: 'Defer', id: 'HALEY'}
-let burgumCard = { photo: 'https://itsastronomical.com/assets/2024/square/burgum.png', name: 'Doug Burgum', text: '\"Burgumania"\ as it\'s called, seems to be sweeping the nation. A deflated MAGA base, and weaknesses both domestic and abroad seem to be fueling a potential dark horse nomination.', button: 'Defer', id: 'BURGUM'}
-let vanceCard = { photo: 'https://itsastronomical.com/assets/2024/square/vance.png', name: 'JD Vance', text: 'Running with the blessing of Don Jr., the guy who once called Trump "America’s Hitler" now seems eager to spend his time kissing his ass. Successes both domestic and abroad may clear the way for him to stumble on stage.', button: 'Defer', id: 'VANCE'}
-let rfkCard = { photo: 'https://itsastronomical.com/assets/2024/square/rfk.png', name: 'Robert Kennedy Jr.', text: 'What does it say about the Republicans that they seem willing to nominate a fucking Kennedy? This is a part with nothing to show after years in opposition. Bury them.', button: 'Defer', id: 'KENNEDY'}
-let powCard = { photo: 'https://itsastronomical.com/assets/2024/square/trumpcourt.png', name: 'P01135809', text: 'Fully consumed by Trump, the Republicans have chosen to nominate their dear leader while he serves under House Arrest. It\'s utterly shameful - do not let them get away with this.', button: 'Defer', id: 'POW'}
-let grokCard = { photo: 'https://itsastronomical.com/assets/2024/square/grok.png', name: 'Grok/xAI', text: 'I’m sorry, I’m having trouble responding. Could you clarify or provide more details?', button: 'Defer', id: 'GROK'}
-
-// Fake Cards for Flair
-
-// menuItemsA.unshift(KennedyCand);
-/* 
-index = menuItemsA.findIndex(item => item.id === 'BIDEN_A');
-if (index == -1) {
-  menuItemsA.push(BidenFake); 
-}
-*/
-
-let haleyFAKECard = { photo: 'https://itsastronomical.com/assets/2024/square/haley.png', name: 'Nikki Haley', text: 'Despite expectation that DeSantis would be the runner-up in the show elections for the GOP nomination, Haley has become the main opposition to Trump. Of course, it’s doubtful a candidate like her will be able to secure the nomination against Trump. ', button: 'Defer', id: 'HALEY_fake'}
-let vivekCard = { photo: 'https://itsastronomical.com/assets/2024/square/vivek.png', name: 'Vivek Ramaswamy', text: 'Emboldened by Burgum’s rise in the polls, Vivek Ramaswamy has shifted away from competing against him in the primaries and instead is positioning himself for a third party bid, hoping to woo over “true loyalists” to the MAGA cause.', button: 'Defer', id: 'VIVEK_fake'}
-let rfkhaleyCard = { photo: 'https://itsastronomical.com/assets/2024/square/rfkthird.png', name: 'Robert Kennedy Jr.', text: 'The nomination of Haley has caused an identity crisis within the Republican Party. Kennedy’s quixotic, populist bid has become refuge for disaffected conservatives. He seems to poll best in the Appalachia region.', button: 'Defer', id: 'RFK_haley'}
-let oliverCard = { photo: 'https://itsastronomical.com/assets/2024/square/oliver.png', name: 'Chase Oliver', text: 'Once overshadowed by Robert F. Kennedy Jr., the Libertarians hope to have an impact on the election. It’s unlikely they will, however.', button: 'Defer', id: 'OLIVER_third'}
-let yangCard = { photo: 'https://itsastronomical.com/assets/2024/square/yang.png', name: 'Andrew Yang', text: 'With Democratic victory looking confident (enough), the Forward Party have chosen to put a feel-good campaign together. Hopefully they peel away disgruntled Trump voters.', button: 'Defer', id: 'YANG_third'}
-let joeCard = { photo: 'https://itsastronomical.com/assets/2024/square/cunning.png', name: 'Joe Cunningham', text: 'A total breakdown of trust has given No Labels the room they need to put forth a ticket - Joe Cunningham and Chris Christie.', button: 'Defer', id: 'JOE_third'}
-let christieCard = { photo: 'https://itsastronomical.com/assets/2024/square/christie.png', name: 'Chris Christie', text: 'The nomination of RFK Jr. has caused No Labels to put up one of their biggest names - a pro-Trump Republican turned anti-MAGA leader.', button: 'Defer', id: 'CHRISTIE_third'}
-let rfkthirdCard = { photo: 'https://itsastronomical.com/assets/2024/square/rfkthird.png', name: 'Robert Kennedy Jr.', text: 'Dropping out in all but name, Kennedy has tried to keep his name on the ballot in states the GOP campaign doesn’t deem crucial. Hopefully he can still peel off support where it matters.', button: 'Defer', id: 'RFK_third'}
-let steinCard = { photo: 'https://itsastronomical.com/assets/2024/square/stein.png', name: 'Jill Stein', text: 'Dissatisfaction amongst progressives over Gaza has put Stein’s return to politics into prominence. She costed Hillary the election in 2016 - she could do the same to you, too, if you aren’t careful.', button: 'Defer', id: 'STEIN_third'}
-let westCard = { photo: 'https://itsastronomical.com/assets/2024/square/west.png', name: 'Cornel West', text: 'The retreat of the IDF from Gaza has allowed Cornel West to surge amongst the left wing third party vote. It’s unknown how serious of an impact he will have.', button: 'Defer', id: 'WEST_third'}
-
 
 function openSurrogates() {
     let questions = document.querySelector(".inner_window_question");
@@ -2125,7 +2085,7 @@ function openSurrogates() {
         ov.style.position = 'relative';
         ov.style.marginTop = '-4px'; 
         ov.style.lineHeight = '0.7';
-            ov.style.fontFamily = '"Mercury", Times New Roman';
+            ov.style.fontFamily = 'Times New Roman';
             ov.style.color = '#0a2458';
         // ov.style.backgroundColor = 'rgba(219, 208, 208, 0.5)'; 
         ov.style.padding = '12px';            
@@ -2210,7 +2170,7 @@ function openSurrogates() {
             name.style.fontSize = "15px"; 
             name.style.color = "#ffffffff"; 
             name.innerHTML = item.name; 
-            name.style.fontFamily = '"Decimal", Times New Roman'; 
+            name.style.fontFamily = 'Times New Roman'; 
             name.style.textRendering = "optimizeSpeed"; 
             name.style.webkitFontSmoothing = "none"; 
             name.style.mozOsxFontSmoothing = "none"; 
@@ -2223,7 +2183,7 @@ function openSurrogates() {
             const text = document.createElement('p');
             text.style.fontSize = "11px"; 
             text.innerHTML = item.text; 
-            text.style.fontFamily = '"Decimal-Semibold", Times New Roman';
+            text.style.fontFamily = 'Times New Roman';
             text.style.textRendering = "optimizeSpeed"; 
             text.style.webkitFontSmoothing = "none"; 
             text.style.mozOsxFontSmoothing = "none"; 
