@@ -229,7 +229,7 @@ jet_data = {
 
 //#startcode
 
-document.getElementById("inner_window_1").children[0].innerHTML = `<h3>The End Of May</h3>`
+document.getElementById("inner_window_1").children[0].innerHTML = `<h3>Brexit Means Brexit</h3>`
 document.getElementById("inner_window_1").children[1].style.marginLeft = "-20px";
 document.getElementById("inner_window_1").children[1].style.width = "calc(100% + -40px)"; // Adjust the value as needed
 document.getElementById("inner_window_1").children[1].innerHTML = `<b>Prologue</b><br><br><img src="https://i.imgur.com/D5887r9.png" alt="Image" style="width: %;"><br><br> <br><br> <br><br> <b></b>`;
@@ -250,9 +250,9 @@ nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#212121";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#d3b0ab";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-$("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/uldCMIe.png)" 
+$("#game_window")[0].style.backgroundImage = "url(https://imgur.com/kvp4g7Y.jpg)" 
 $(".container")[0].style.backgroundColor = "#212121";
-document.getElementById("header").src = "https://i.imgur.com/Zpn0sDv.png";
+document.getElementById("header").src = "https://imgur.com/e9iKwS3.jpg";
 document.body.background = "https://i.imgur.com/AW3OKHP.png";
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eed6d3!important;}</style>";
 
@@ -1601,7 +1601,7 @@ const startScreenUpdater = setInterval(function() {
           if (paragraphs.length > 1) paragraphs[1].innerHTML = "<b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: Hello, Madam President. I just wanted to return your call about the upcoming election cycle.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: Yes? <br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: It's a tough one. The economy may recover, but the malaise from Biden still lingers. People don't feel like we're on track, even if the numbers begin to improve.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: When have they ever? More importantly, what can we do about it?<br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: If you want to get your approvals up, we should probably get some successes in. Knives are out on Thune, so if you can help him get some success in, he might be willing to help you.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: Mm-hm.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: Look, you're between a rock and a hard place right now. It's a tough spot for anyone."
           let bgSet = document.getElementById("opponent_selection_description_window");
           if (bgSet) {
-              let lastBg = "https://i.imgur.com/6YSiZlG.png";
+              let lastBg = "https://imgur.com/KuS3s9u.png";
               bgSet.style.backgroundImage = 
                   `linear-gradient(to right, transparent, rgba(32, 30, 26, 1)), url(${lastBg})`;
           }
