@@ -1157,26 +1157,28 @@ appendStyle();
 
 // Music Player
 
-  // Select the node that will be observed for mutations
-  const windowsAdvisorTargetNode = document.getElementById("game_window");
+  RecReading=true
+    
+// Select the node that will be observed for mutations
+const windowsAdvisorTargetNode = document.getElementById("game_window");
   
-  // Options for the observer (which mutations to observe)
-  const windowsAdvisorConfig = { attributes: true, childList: true, subtree: true };
+// Options for the observer (which mutations to observe)
+const windowsAdvisorConfig = { attributes: true, childList: true, subtree: true };
   
-  // Callback function to execute when mutations are observed
-  const callback = (mutationList, observer) => {
-      visitWindow = document.getElementsByClassName("overlay_window")[0];
+// Callback function to execute when mutations are observed
+const callback = (mutationList, observer) => {
+   visitWindow = document.getElementsByClassName("overlay_window")[0];
   
-      if(visitWindow == null || visitWindow.classList.contains("done")) {
-          return;
-      }
-      visitWindow.classList.add("done");
-      visitWindow.classList.add("window");
-      let titleBar = visitWindow.querySelector("h3");
-      titleBar.classList.add("title-bar");
-      titleBar.classList.add("title-bar-text")
-      titleBar.style.paddingLeft = "3px";
-  };
+   if(visitWindow == null || visitWindow.classList.contains("done")) {
+        return;
+}
+   visitWindow.classList.add("done");
+   visitWindow.classList.add("window");
+   let titleBar = visitWindow.querySelector("h3");
+   titleBar.classList.add("title-bar");
+   titleBar.classList.add("title-bar-text")
+   titleBar.style.paddingLeft = "3px";
+};
   
   class Song {
     constructor(title, artist, coverLink, audioLink) {
@@ -1246,44 +1248,58 @@ appendStyle();
   }
   
   window.updateUI=updateUI
-  
-  
-  function setupMusicPlayer() {
-    playlist = new Playlist();
-  
-  
-    const song1 = new Song(
-      "No One Mourns The Wicked",
-      "Wicked Movie Cast",
-      "https://m.media-amazon.com/images/I/91qEUz9QyjL._UF1000,1000_QL80_.jpg",
-      "https://audio.jukehost.co.uk/TqqyWd0t3iqC7ZVIb8FI6KmTSSmJSyxp"
+
+function setupMusicPlayer() {
+  playlist = new Playlist();
+
+  const song1 = new Song(
+      "London Calling",
+      "The Clash",
+      "https://tse2.mm.bing.net/th?id=OIP.YnItbAedSOdBbd72Dg6rtwHaHa&pid=Api&P=0&h=180",
+      "https://audio.jukehost.co.uk/eT9iFWO30UCAlzCww3cMKq0DNhKolBVr"
+    );
+
+    const song2 = new Song(
+      "Stuck In The Middle With You",
+      "Stealers Wheel",
+      "https://i.scdn.co/image/ab67616d0000b273a5ce236c22035a02cf87d4de",
+      "https://audio.jukehost.co.uk/LTXuDotdtIga72J4SixO8aYRxBFvofc2"
+    );
+
+    const song3 = new Song(
+      "Blinding Lights",
+      "The Weeknd",
+      "https://i.redd.it/cwy6srzrj2o41.jpg",
+      "https://audio.jukehost.co.uk/d5nbSMjCx0MwbUgPHjZuxqULYkRgrwUB"
+    );
+
+    const song4 = new Song(
+      "Feel Good Inc.",
+      "Gorillaz",
+      "https://media.senscritique.com/media/000004802973/source_big/Demon_Days.jpg",
+      "https://audio.jukehost.co.uk/4Nd89zn65XoKzwdZMsHDHZnQ7oDnO8wU"
     );
     
-    const song2 = new Song(
-      "Breathe Deeper",
-      "Tame Impala",
-      "https://upload.wikimedia.org/wikipedia/en/5/54/Tame_Impala_-_The_Slow_Rush.png",
-      "https://audio.jukehost.co.uk/mgSBCH842YYvJADACIVRnOrKNSnEKPt0"
+    const song5 = new Song(
+      "You Can't Always Get What You Want",
+      "The Rolling Stones",
+      "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/74/d5/74/74d57427-0a8c-87d8-b335-a8a51e331bfc/source/1200x1200bb.jpg",
+      "https://audio.jukehost.co.uk/spZAsbCzyaudIt59CF72cZ2VKcYDPBmE"
     );
-  
-    const song3 = new Song(
-      "man at the garden",
-      "Kendrick Lamar",
-      "https://upload.wikimedia.org/wikipedia/en/9/93/Kendrick_Lamar_-_GNX.png",      
-      "https://audio.jukehost.co.uk/fDrBtym8BuNqqIpvEbBMLyCy8rz2KhMB"
+
+    const song6 = new Song(
+      "Vossi Bop",
+      "Stormzy",
+      "https://i.scdn.co/image/ab67616d0000b273a1e8b73748ee972a4c22be16",
+      "https://audio.jukehost.co.uk/6HWwqjqNsMxQNr6wEvy6BBFTt5iKATto"
     );
-  
-    const song4 = new Song(
-      "Open Arms",
-      "SZA",
-      "https://m.media-amazon.com/images/I/91BazzuLE+L.jpg",
-      "https://audio.jukehost.co.uk/4p1AViOa1doUfFvOYQGbVVlPtVi42EHf"
-    );
-  
+
     playlist.addSong(song1);
     playlist.addSong(song2);
     playlist.addSong(song3);
     playlist.addSong(song4);
+    playlist.addSong(song5);
+    playlist.addSong(song6);
   
     const playerContainer = document.createElement("div");
     playerContainer.id = "player";
@@ -1297,9 +1313,9 @@ appendStyle();
   
   const infoContainer = document.createElement("div");
   infoContainer.id = "info-container";
-  infoContainer.style.backgroundImage = "url('https://i.imgur.com/BB1ejv6.png')";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/OaI7oBj.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
-  infoContainer.style.color = "white"; // Set text color to white
+  infoContainer.style.color = "black"; // Set text color to white
   
   const songInfo = document.createElement("div");
   songInfo.id = "song-info";
@@ -1326,19 +1342,19 @@ appendStyle();
   
   const prevButton = document.createElement("img");
   prevButton.id = "prevButton";
-  prevButton.src = "https://i.imgur.com/imIqTEA.png";
+  prevButton.src = "https://imgur.com/jcTGWRt.png";
   prevButton.alt = "Previous";
   controls.appendChild(prevButton);
   
   const playPauseButton = document.createElement("img");
   playPauseButton.id = "playPauseButton";
-  playPauseButton.src = "https://i.imgur.com/oQbfTxw.png"; // Set the default play image
+  playPauseButton.src = "https://imgur.com/bYFaYbm.png"; // Set the default play image
   playPauseButton.alt = "Play/Pause";
   controls.appendChild(playPauseButton);
   
   const nextButton = document.createElement("img");
   nextButton.id = "nextButton";
-  nextButton.src = "https://i.imgur.com/7TtaN04.png";
+  nextButton.src = "https://imgur.com/eQ3Zd6B.png";
   nextButton.alt = "Next";
   controls.appendChild(nextButton);
   
@@ -1348,10 +1364,10 @@ appendStyle();
     const audio = document.getElementById("audio");
     if (audio.paused) {
       audio.play();
-      playPauseButton.src = "https://i.imgur.com/oQbfTxw.png"; // Set the pause image
+      playPauseButton.src = "https://imgur.com/bYFaYbm.png"; // Set the pause image
     } else {
       audio.pause();
-      playPauseButton.src = "https://i.imgur.com/ttdoyfG.png"; // Set the play image
+      playPauseButton.src = "https://imgur.com/s84pnkp.png"; // Set the play image
     }
   });
   
@@ -1389,7 +1405,7 @@ appendStyle();
     volumeContainer.id = "volume-container";
   
   const volumeLabel = document.createElement("img");
-  volumeLabel.src = "https://i.imgur.com/0BJYsXt.png";
+  volumeLabel.src = "https://imgur.com/5OeJsB6.png";
   volumeLabel.alt = "Volume";
   volumeContainer.appendChild(volumeLabel);
   
@@ -1481,7 +1497,7 @@ appendStyle();
       display: flex;
       flex-direction: row;
     height:191px;
-      background-Image: url("https://i.imgur.com/Ok791w6.png");
+      background-Image: url("https://imgur.com/DqF4Qtn.png");
     }
   
     #display-box {
@@ -1547,6 +1563,8 @@ document.head.appendChild(style);
 const gameWindow_player = document.getElementById("game_window");
 //use this function directly or put it in an event listener to start the music on the press of a certain button
 setupMusicPlayer();
+
+
 
 var c = 201;
 var storedChar = 0;
