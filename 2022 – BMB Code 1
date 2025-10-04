@@ -219,7 +219,7 @@ jet_data = {
     "headerColor": "#212121",
     "windowColor": "#d3b0ab",
     "containerColor": "#212121",
-    "innerWindowColor": "#eed6d3",
+    "innerWindowColor": "#'",
     "bannerImageUrl": "https://i.imgur.com/UYXSH6i.gif",
     "backgroundImageUrl": "https://i.imgur.com/AW3OKHP.png",
     "endingTextColor": "#000000",
@@ -319,7 +319,7 @@ async function appendStyle() {
       }
     }
     #inner_window_1 {
-      background-color: #1F1D19;
+      background-color: #191c1f;
       height: 494px; 
       color: #F8F8F8;
     }
@@ -329,10 +329,10 @@ async function appendStyle() {
 
     @keyframes bgFadeS1 {
       0% {
-        background-color: #1F1D19;
+        background-color: #191c1f;
       }
       20% {
-        background-color: #1F1D19;
+        background-color: #191c1f;
       }
       100% {
         background-color: #3A3934;
@@ -362,10 +362,10 @@ async function appendStyle() {
     }
     @keyframes bgFade2 {
       0% {
-        background-color: #1F1D19;
+        background-color: #191c1f;
       }
       20% {
-        background-color: #1F1D19;
+        background-color: #191c1f;
       }
       100% {
         background-color: #F8F8F8;
@@ -407,7 +407,7 @@ async function appendStyle() {
       animation: bgFadeS1 1s ease-in-out forwards !important;
     }
     #election_description_window{
-      background-color: #1F1D19;
+      background-color: #191c1f;
       font-size:12.6px;
       height: 317px;          
     }
@@ -492,7 +492,7 @@ async function appendStyle() {
 
     :root {
       --stroke-color: #466C95;
-      --fill-color: #1F1D19;
+      --fill-color: #191c1f;
       --left-space: -434px; 
       --from-Scroll: 340%;
       --to-Scroll: -275.82%%;
@@ -556,7 +556,7 @@ async function appendStyle() {
       font-weight: bold;
       text-align: center;
       position: relative;
-      color: #1F1D19; 
+      color: #191c1f; 
       display: inline-block;
       white-space: nowrap;
       margin-top: -2px;
@@ -679,7 +679,7 @@ async function appendStyle() {
     }
     
     .campaign_trail_start_emphasis {
-      background-color: #1F1D19;
+      background-color: #191c1f;
     }
 
     #candidate_pic,
