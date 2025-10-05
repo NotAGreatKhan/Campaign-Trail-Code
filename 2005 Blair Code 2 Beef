@@ -1859,6 +1859,15 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
+        "pk": 12886,
+        "fields": {
+            "priority": 0,
+            "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – his candidacy having been unopposed by figures such as Kenneth Clarke. Now that the campaign season is underway, how will you go about attacking his candidacy?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
         "pk": 14051,
         "fields": {
             "priority": 0,
@@ -1890,6 +1899,15 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Social reform has been a major initiative of your premiership. Your government has pushed forward the monumental Civil Partnerships Act with a sound 426-49 vote in favour. However, a potential Tory wrench in the form of MP Edward Leigh is pushing an amendment to include siblings in the provisions. Whilst the proposal is already being ridiculed as the “wrecking amendment” by many but the most socially conservative MPs, it could undermine the reform you are trying to get through. Will you push, with effort, to shoot this amendment proposal down?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 13945,
+        "fields": {
+            "priority": 0,
+            "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
             "likelihood": 1
         }
     },
@@ -1953,15 +1971,6 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Ghosts haunt the walls of Downing Street. Voices – aged and breathing – expectorate on your neck. <i>They</i> pull at your hands and shoulders, beckoning you to “go out with dignity”. As if there is <i>any dignity</i> with getting out of the halls of power and into the throes of blistering defeat. But they whisper to you. They whisper of your approval ratings, your “personality issues” with the public. It could all come tumbling down with a single wrong step... Milburn finally interrupts your descent, bluntly addressing you with the fact that you actually need to say something. It's as if it's all going to crescendo with a rupture. In what way shall you sign your death warrant?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 12886,
-        "fields": {
-            "priority": 0,
-            "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – his candidacy having been unopposed by figures such as Kenneth Clarke. Now that the campaign season is underway, how will you go about attacking his candidacy?",
             "likelihood": 1
         }
     },
@@ -2223,15 +2232,6 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "The fall of Iain Duncan Smith has given way for the Europhilic wing of the party to finally, and once again, reassert itself. If only after a fierce and haste contest. Across Kenneth Clarke’s campaign for Number 10, he lambasts your failures to push forth with the European agenda. The public’s sentiment is in favour of him. Polls released on his integrity show he holds a marginal, yet very real, lead over you. You need to bring his numbers down to Earth. The question is, how?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 13945,
-        "fields": {
-            "priority": 0,
-            "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
             "likelihood": 1
         }
     },
