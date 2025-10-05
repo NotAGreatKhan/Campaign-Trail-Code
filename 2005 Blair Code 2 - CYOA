@@ -778,25 +778,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Michael Portillo
     if(Porty == 1){
-    campaignTrail_temp.questions_json[22] = {
-    "model": "campaign_trail.question",
-    "pk": 14294,
-    "fields": {
-        "priority": 0,
-        "description": "Iain Duncan Smith suffered the wrath of his parliamentary cohort, and was thrown out as your party machine continued to roll ahead. Their fatigue in the face of your increasingly stentorian liberalism, has caused them to rally around the yet-again-transformed Michael Portillo. As he fires his opening shots for the campaign, his attacks centre around your abandonment of “Middle Britain”, your neglect of the “power of enterprise and of the citizens to lift themselves up”. You’re bleeding centrist voters fast. But, he’s not invincible. Knock him down some pegs.",
-        "likelihood": 1
-      }
-    }
-    campaignTrail_temp.questions_json[26] = {
-    "model": "campaign_trail.question",
-    "pk": 14336,
-    "fields": {
-        "priority": 0,
-        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Portillo and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
-        "likelihood": 1
-      }
-    }
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 14296,
     "fields": {
@@ -806,7 +788,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
     if(Cred < 5 && OldLab < 3){
-    campaignTrail_temp.questions_json[28] = {
+    campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 14321,
     "fields": {
@@ -816,15 +798,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    campaignTrail_temp.questions_json[29] = {
-    "model": "campaign_trail.question",
-    "pk": 14330,
-    "fields": {
-        "priority": 0,
-        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
-        "likelihood": 1
-      }
-    }
     campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 14331,
@@ -834,11 +807,20 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
+    campaignTrail_temp.questions_json[33] = {
+    "model": "campaign_trail.question",
+    "pk": 14330,
+    "fields": {
+        "priority": 0,
+        "description": "More recently, the idea of televised debates directly with the candidates have been gaining traction with the British people. Despite never having been done before, it could be a good opportunity to gain points with voters. Will you agree to appear with your opponents in the nationally televised debate?",
+        "likelihood": 1
+      }
+    }
   }
 
 // Kenneth Clarke
     if(Ken == 1){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 14145,
     "fields": {
@@ -847,21 +829,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[26] = {
+    campaignTrail_temp.questions_json[31] = {
     "model": "campaign_trail.question",
     "pk": 13919,
     "fields": {
         "priority": 0,
         "description": "The fall of Iain Duncan Smith has given way for the Europhilic wing of the party to finally, and once again, reassert itself. If only after a fierce and haste contest. Across Kenneth Clarke’s campaign for Number 10, he lambasts your failures to push forth with the European agenda. The public’s sentiment is in favour of him. Polls released on his integrity show he holds a marginal, yet very real, lead over you. You need to bring his numbers down to Earth. The question is, how?",
-        "likelihood": 1
-      }
-    }
-    campaignTrail_temp.questions_json[30] = {
-    "model": "campaign_trail.question",
-    "pk": 13945,
-    "fields": {
-        "priority": 0,
-        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Clarke and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
         "likelihood": 1
       }
     }
@@ -896,15 +869,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Battered Michael Howard
     if(e.player_answers.includes(12797)){
-    campaignTrail_temp.questions_json[26] = {
-    "model": "campaign_trail.question",
-    "pk": 13663,
-    "fields": {
-        "priority": 0,
-        "description": "In the years proceeding the dramatic fall of former Conservative Party Leader Ian Duncan Smith, establishment MP Micheal Howard has led the party until this election – but only after having to fight a contentious leadership election with Kenneth Clarke, and the now disgraced Duncan Smith. Now that the campaign season is underway, how will you go about attacking his candidacy?",
-        "likelihood": 1
-      }
-    }
     campaignTrail_temp.questions_json[28] = {
     "model": "campaign_trail.question",
     "pk": 13689,
@@ -920,15 +884,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Kennedy no longer has a lightning rod issue to drive out turnout in quite the same way he would have in, say, another scenario. But, he still has a legitimate appeal to certain sects of our party coalition. What attacks would you like to hone in to keep them from properly establishing themselves as a third option?",
-        "likelihood": 1
-      }
-    }
-    campaignTrail_temp.questions_json[30] = {
-    "model": "campaign_trail.question",
-    "pk": 13729,
-    "fields": {
-        "priority": 0,
-        "description": "Today, you have been scheduled to go on the Jeremy Paxman Interview, along with Howard and Kennedy later this month. The pressure is certainly going to be on you in the responses. So with all of that said. How will you approach the tone of this interview?",
         "likelihood": 1
       }
     }
@@ -1305,7 +1260,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if((e.player_answers.includes(12814) && (e.player_answers.includes(15087) || e.player_answers.includes(15088))) || (e.player_answers.includes(12813) && (e.player_answers.includes(15107) || e.player_answers.includes(15112))) && (e.player_answers.includes(12820) || e.player_answers.includes(14993) || e.player_answers.includes(15008))){
-    campaignTrail_temp.questions_json[17] = {
+    campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 15353,
     "fields": {
@@ -1316,7 +1271,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(14201)){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 15037,
     "fields": {
@@ -1326,7 +1281,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
     if(ans == 14209 || ans == 14238){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 15060,
     "fields": {
@@ -1338,7 +1293,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
     if(Wins => 2){
-    campaignTrail_temp.questions_json[18] = {
+    campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 15018,
     "fields": {
@@ -1349,7 +1304,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(14801)){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 15171,
     "fields": {
@@ -1358,7 +1313,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 15247,
     "fields": {
@@ -1369,7 +1324,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Resign <= 0 && Cred >= 6){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
     "pk": 15061,
     "fields": {
@@ -1380,7 +1335,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Cred <= 5){
-    campaignTrail_temp.questions_json[21] = {
+    campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14768,
     "fields": {
@@ -1391,7 +1346,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(OldLab >= 4){
-    campaignTrail_temp.questions_json[22] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 15324,
     "fields": {
@@ -1402,7 +1357,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Wins >= 6 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 14698,
     "fields": {
@@ -1413,7 +1368,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Cred >= 5){
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 15186,
     "fields": {
@@ -1423,7 +1378,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
     if(Wins >= 6){
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 14691,
     "fields": {
@@ -1435,7 +1390,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
     if(Wins >= 6){
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 14691,
     "fields": {
@@ -1458,7 +1413,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
     if(e.player_answers.includes(12808)){
     if(OldLab >= 3){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 13443,
     "fields": {
@@ -1469,7 +1424,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(OldLab <= 2){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 13458,
     "fields": {
@@ -1481,7 +1436,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
     if(e.player_answers.includes(12803) || e.player_answers.includes(13904)){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 14960,
     "fields": {
@@ -1492,7 +1447,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12819 || ans == 13418){
-    campaignTrail_temp.questions_json[29] = {
+    campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 12901,
     "fields": {
@@ -1503,7 +1458,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12820 || ans == 13420){
-    campaignTrail_temp.questions_json[29] = {
+    campaignTrail_temp.questions_json[30] = {
     "model": "campaign_trail.question",
     "pk": 13596,
     "fields": {
@@ -1514,7 +1469,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 14034){
-    campaignTrail_temp.questions_json[15] = {
+    campaignTrail_temp.questions_json[16] = {
     "model": "campaign_trail.question",
     "pk": 14385,
     "fields": {
@@ -1525,7 +1480,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(15206)){
-    campaignTrail_temp.questions_json[15] = {
+    campaignTrail_temp.questions_json[16] = {
     "model": "campaign_trail.question",
     "pk": 15205,
     "fields": {
@@ -1674,7 +1629,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Local + European Elections
     if(ans == 12797 || (ans == 12798 && Cred >= 5)){
-    campaignTrail_temp.questions_json[16] = {
+    campaignTrail_temp.questions_json[17] = {
     "model": "campaign_trail.question",
     "pk": 13621,
     "fields": {
@@ -1685,7 +1640,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if((Cred <= 2 && Wins >= 5) || (ans == 12797 && Wins <= 3)){
-    campaignTrail_temp.questions_json[16] = {
+    campaignTrail_temp.questions_json[17] = {
     "model": "campaign_trail.question",
     "pk": 15037,
     "fields": {
@@ -1696,7 +1651,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(ans == 12797){
-    campaignTrail_temp.questions_json[17] = {
+    campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
     "pk": 13647,
     "fields": {
