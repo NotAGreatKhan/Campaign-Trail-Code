@@ -385,7 +385,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
-    // Question 16 – HR Groups protesting
+    // Question 16 – Fighting Back
+    if(ans == 15337){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 17 – HR Groups protesting
     if(ans == 14052){
       Cred += 1;
       console.log("You have impacted your credibility");
@@ -416,6 +422,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
     // Question 19 – Weaker CPA
     if(ans == 15025){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    // Question 21 – Blunkett Scandal
+    if(ans == 15381){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15382){
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
@@ -579,6 +595,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Going old school are you?");
     }
 
+    // Question 16 – Fighting Back
+    if(ans == 15378){
+      OldLab -= 1;
+      console.log("Going old school are you?");
+    }
+
     // WINS
     // Question 2 – Afghanistan
     if(ans == 12793){
@@ -685,7 +707,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
 
-    // Question 16 – HR Groups Protesting
+    // Question 16 – Fighting Back
+    if(ans == 15378){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 17 – HR Groups Protesting
     if(ans == 14052){
       Wins += 1;
       console.log("Do they like you now?");
