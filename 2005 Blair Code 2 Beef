@@ -72,7 +72,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 13508){
         Brown += 1;
         e.PMisCandidate += 1;
-        campaignTrail_temp.global_parameter_json[0].fields.question_count = 27;
+        campaignTrail_temp.global_parameter_json[0].fields.question_count = 28;
         document.getElementById("header").src = "https://imgur.com/l2cfVzG.jpg"
         vpTable["The Labour Party"] = "J. Gordon Brown";
         CampaignSign = "CotEBrown"
@@ -103,7 +103,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             e.VpText = "Please select your party leader:"
     }
     if(Brown == 1){
-    campaignTrail_temp.questions_json[21] = {
+    campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
         "pk": 15346,
         "fields": {
@@ -112,7 +112,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             "likelihood": 1
           }
        }
-    campaignTrail_temp.questions_json[22] = {
+    campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14399,
     "fields": {
@@ -121,7 +121,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
        }
      }
-    campaignTrail_temp.questions_json[23] = {
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
     "pk": 14400,
     "fields": {
@@ -131,7 +131,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
           }
         }
     if(e.player_answers.includes(14430)){
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 14623,
     "fields": {
@@ -141,7 +141,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
           }
         }
       }
-    campaignTrail_temp.questions_json[24] = {
+    campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 14601,
     "fields": {
@@ -150,7 +150,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
           }
         }
-    campaignTrail_temp.questions_json[25] = {
+    campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
     "pk": 14645,
     "fields": {
@@ -159,7 +159,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
           }
         }
-    campaignTrail_temp.questions_json[26] = {
+    campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 14401,
     "fields": {
@@ -771,7 +771,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 // Resignation Questions
     if(Resign >= 5){
     if(Resign >= 6){
-    campaignTrail_temp.questions_json[19] = {
+    campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 14952,
     "fields": {
@@ -782,7 +782,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(Wins >= 4){
-    campaignTrail_temp.questions_json[19] = {
+    campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 14794,
     "fields": {
@@ -793,7 +793,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     else{
-    campaignTrail_temp.questions_json[19] = {
+    campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 13499,
     "fields": {
@@ -805,7 +805,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
     if(ans == 13502 || ans == 13503 || ans == 14795 || ans == 14798 || ans == 14953){
-    campaignTrail_temp.questions_json[20] = {
+    campaignTrail_temp.questions_json[21] = {
     "model": "campaign_trail.question",
     "pk": 13500,
     "fields": {
