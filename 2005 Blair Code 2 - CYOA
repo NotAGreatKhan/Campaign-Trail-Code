@@ -391,6 +391,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
+    if(ans == 15415){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15426){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
+    if(ans == 15439){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15450){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15457){
+      Cred -= 2;
+      console.log("You have impacted your credibility");
+    }
+
     // Question 17 – HR Groups protesting
     if(ans == 14052){
       Cred += 1;
@@ -710,6 +732,24 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // Question 16 – Fighting Back
     if(ans == 15378){
       Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    if(ans == 15421){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 15433){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    if(ans == 15445){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 15457){
+      Wins -= 1;
       console.log("Do they like you now?");
     }
 
@@ -1287,6 +1327,30 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(e.player_answers.includes(12797)){
+    if(e.player_answers.includes(14815)){
+    campaignTrail_temp.questions_json[15] = {
+    "model": "campaign_trail.question",
+    "pk": 15414,
+    "fields": {
+        "priority": 0,
+        "description": "It's been a tough few years since our last election, that cannot be denied. Sitting in your office, sweat clinging your collar to your neck, you scan over piles of memos and documents on the current situation and where to go from here. Though you are alone in your room, you always seem to feel Gordon and Straw trying to pull your arms to nigh dislocation in opposite directions. You <i>have</i> to reclaim the narrative. Get the ball rolling back on track. You take one last look through your papers – and clear your throat.",
+        "likelihood": 1
+      }
+    }
+  }
+    else{
+    campaignTrail_temp.questions_json[15] = {
+    "model": "campaign_trail.question",
+    "pk": 15438,
+    "fields": {
+        "priority": 0,
+        "description": "It's been a tough few years since our last election, that cannot be denied. Sitting in your office, sweat clinging your collar to your neck, you scan over piles of memos and documents on the current situation and where to go from here. Though you are alone in your room, you always seem to feel Gordon and Straw trying to pull your arms to nigh dislocation in opposite directions. You <i>have</i> to reclaim the narrative. Get the ball rolling back on track. You take one last look through your papers – and clear your throat.",
+        "likelihood": 1
+      }
+    }
+  }
+ }
     if((e.player_answers.includes(12814) && (e.player_answers.includes(15087) || e.player_answers.includes(15088))) || (e.player_answers.includes(12813) && (e.player_answers.includes(15107) || e.player_answers.includes(15112))) && (e.player_answers.includes(12820) || e.player_answers.includes(14993) || e.player_answers.includes(15008))){
     campaignTrail_temp.questions_json[18] = {
     "model": "campaign_trail.question",
