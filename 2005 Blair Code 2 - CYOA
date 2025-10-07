@@ -619,7 +619,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
     // Question 16 – Fighting Back
     if(ans == 15378){
-      OldLab -= 1;
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+    if(ans == 15421){
+      OldLab += 1;
+      console.log("Going old school are you?");
+    }
+    if(ans == 15445){
+      OldLab += 1;
       console.log("Going old school are you?");
     }
 
