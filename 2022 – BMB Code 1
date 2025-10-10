@@ -232,7 +232,7 @@ jet_data = {
 document.getElementById("inner_window_1").children[0].innerHTML = `<h3>Brexit Means Brexit</h3>`
 document.getElementById("inner_window_1").children[1].style.marginLeft = "-20px";
 document.getElementById("inner_window_1").children[1].style.width = "calc(100% + -40px)"; // Adjust the value as needed
-document.getElementById("inner_window_1").children[1].innerHTML = `<b>Prologue</b><br><br><img src="https://imgur.com/IyoJmQM.png" alt="Image" style="width: %;"><br><br> <br><br> <br><br> <b></b>`;
+document.getElementById("inner_window_1").children[1].innerHTML = `<b>Prologue</b><br><br><img src="https://imgur.com/IyoJmQM.png" alt="Image" width="600;"><br><br> <br><br> <br><br> <b></b>`;
 document.getElementById("game_start").innerHTML = "<strong>Steer The Nation.</strong>";
 
 campaignTrail_temp.modBoxTheme = {
