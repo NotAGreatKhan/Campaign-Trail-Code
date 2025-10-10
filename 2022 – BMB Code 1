@@ -1315,7 +1315,7 @@ function setupMusicPlayer() {
   infoContainer.id = "info-container";
   infoContainer.style.backgroundImage = "url('https://imgur.com/ypgnuf9.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
-  infoContainer.style.color = "black"; // Set text color to white
+  infoContainer.style.color = "white"; // Set text color to white
   
   const songInfo = document.createElement("div");
   songInfo.id = "song-info";
@@ -1598,7 +1598,7 @@ const startScreenUpdater = setInterval(function() {
     if(c == 201) {
       e.ElectionPopup = "Election night is here. Your fate now belongs to the people, not you."
       setTimeout(() => {
-        document.getElementById("candidate_summary").innerHTML = "<span style=\"color:#97afc9; font-size: 18px;\">Theresa M. May</span><br><span style=\"color:#97afc9; font-size: 17px;\">Conservative</span><br><span style=\"color:#97afc9; font-size: 16px;\">Untenable Position</span><br><b style=\"color:#97afc9; font-size: 13px;\">Kamala Harris</b>, as President of the United States, is the main character of our story. Prior to her coronation as the Democratic nominee in 2024, she was widely considered a footnote - a side character in the high-stakes rematch between Joe Biden and Donald Trump. But as Biden's fortunes dissipated, it was Harris who was casted for the role of the Democratic candidate, and in turn, the people casted her for the role of President of the United States.<br><br>In her new role, however, she holds many positions - President of the United States. Commander in Chief. Leader of the Free World. Most Powerful Person in the World. To be casted in such a fashion, especially after years of being sidelined may perhaps prove too much for President Harris. Across our story, she will have to focus on many issues at hand - fixing the economy, ending conflicts, and protecting America from enemies both domestic and abroad.<br><br>";
+        document.getElementById("candidate_summary").innerHTML = "<br><br><span style=\"color:#97afc9; font-size: 18px;\">Theresa M. May</span><br><span style=\"color:#97afc9; font-size: 17px;\">Conservative</span><br><span style=\"color:#97afc9; font-size: 16px;\">Untenable Position</span><br><br><b>Kamala Harris</b>, as President of the United States, is the main character of our story. Prior to her coronation as the Democratic nominee in 2024, she was widely considered a footnote - a side character in the high-stakes rematch between Joe Biden and Donald Trump. But as Biden's fortunes dissipated, it was Harris who was casted for the role of the Democratic candidate, and in turn, the people casted her for the role of President of the United States.<br><br>In her new role, however, she holds many positions - President of the United States. Commander in Chief. Leader of the Free World. Most Powerful Person in the World. To be casted in such a fashion, especially after years of being sidelined may perhaps prove too much for President Harris. Across our story, she will have to focus on many issues at hand - fixing the economy, ending conflicts, and protecting America from enemies both domestic and abroad.<br><br>";
         document.documentElement.style.setProperty("--left-space", -1155 + "px");
         document.documentElement.style.setProperty("--stroke-color", "#97afc9");
         document.documentElement.style.setProperty("--text-content", `"${descText}"`);
