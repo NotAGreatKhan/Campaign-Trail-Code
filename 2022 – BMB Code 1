@@ -67,17 +67,17 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 201,
         "fields": {
-            "first_name": "Kamala",
-            "last_name": "Harris",
+            "first_name": "Theresa",
+            "last_name": "May",
             "election": 20,
-            "party": "Democratic",
-            "state": "California",
+            "party": "Conservative",
+            "state": "Maidenhead",
             "priority": 1,
             "description": "<p>Kamala Harris, as President of the United States, is the main character of our story. Prior to her coronation as the Democratic nominee in 2024, she was widely considered a footnote - a side character in the high-stakes rematch between Joe Biden and Donald Trump. But as Biden's fortunes dissipated, it was Harris who was casted for the role of the Democratic candidate, and in turn, the people casted her for the role of President of the United States.</p><p>In her new role, however, she holds many positions - President of the United States. Commander in Chief. Leader of the Free World. Most Powerful Person in the World. To be casted in such a fashion, especially after years of being sidelined may perhaps prove too much for President Harris. Across our story, she will have to focus on many issues at hand - fixing the economy, ending conflicts, and protecting America from enemies both domestic and abroad.</p>",
             "color_hex": "#466C95",
             "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "https://i.imgur.com/2He2V85.png",
+            "image_url": "https://imgur.com/3JmkUc7.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -1598,7 +1598,7 @@ const startScreenUpdater = setInterval(function() {
     if(c == 201) {
       e.ElectionPopup = "Election night is here. Your fate now belongs to the people, not you."
       setTimeout(() => {
-        document.getElementById("candidate_summary").innerHTML = "<br><br><span style=\"color:#97afc9; font-size: 18px;\">Theresa M. May</span><br><span style=\"color:#97afc9; font-size: 17px;\">Conservative</span><br><span style=\"color:#97afc9; font-size: 16px;\">Untenable Position</span><br><br><b>Kamala Harris</b>, as President of the United States, is the main character of our story. Prior to her coronation as the Democratic nominee in 2024, she was widely considered a footnote - a side character in the high-stakes rematch between Joe Biden and Donald Trump. But as Biden's fortunes dissipated, it was Harris who was casted for the role of the Democratic candidate, and in turn, the people casted her for the role of President of the United States.<br><br>In her new role, however, she holds many positions - President of the United States. Commander in Chief. Leader of the Free World. Most Powerful Person in the World. To be casted in such a fashion, especially after years of being sidelined may perhaps prove too much for President Harris. Across our story, she will have to focus on many issues at hand - fixing the economy, ending conflicts, and protecting America from enemies both domestic and abroad.<br><br>";
+        document.getElementById("candidate_summary").innerHTML = "<br><br><span style=\"color:#97afc9; font-size: 18px;\"><b><u>Theresa M. May</u></b></span><br><span style=\"color:#97afc9; font-size: 16px;\"><b>Conservative</b></span><br><span style=\"color:#97afc9; font-size: 15px;\"><b>Untenable</b> Position</span><br><br><b>Theresa Mary May</b>, as President of the United States, is the main character of our story. Prior to her coronation as the Democratic nominee in 2024, she was widely considered a footnote - a side character in the high-stakes rematch between Joe Biden and Donald Trump. But as Biden's fortunes dissipated, it was Harris who was casted for the role of the Democratic candidate, and in turn, the people casted her for the role of President of the United States.<br><br>In her new role, however, she holds many positions - President of the United States. Commander in Chief. Leader of the Free World. Most Powerful Person in the World. To be casted in such a fashion, especially after years of being sidelined may perhaps prove too much for President Harris. Across our story, she will have to focus on many issues at hand - fixing the economy, ending conflicts, and protecting America from enemies both domestic and abroad.<br><br>";
         document.documentElement.style.setProperty("--left-space", -1155 + "px");
         document.documentElement.style.setProperty("--stroke-color", "#97afc9");
         document.documentElement.style.setProperty("--text-content", `"${descText}"`);
