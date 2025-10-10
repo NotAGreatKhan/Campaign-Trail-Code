@@ -232,7 +232,7 @@ jet_data = {
 document.getElementById("inner_window_1").children[0].innerHTML = `<h3>Brexit Means Brexit</h3>`
 document.getElementById("inner_window_1").children[1].style.marginLeft = "-20px";
 document.getElementById("inner_window_1").children[1].style.width = "calc(100% + -40px)"; // Adjust the value as needed
-document.getElementById("inner_window_1").children[1].innerHTML = `<b>Prologue</b><br><br><img src="https://i.imgur.com/D5887r9.png" alt="Image" style="width: %;"><br><br> <br><br> <br><br> <b></b>`;
+document.getElementById("inner_window_1").children[1].innerHTML = `<b>Prologue</b><br><br><img src="https://imgur.com/IyoJmQM.png" alt="Image" style="width: %;"><br><br> <br><br> <br><br> <b></b>`;
 document.getElementById("game_start").innerHTML = "<strong>Steer The Nation.</strong>";
 
 campaignTrail_temp.modBoxTheme = {
@@ -1313,7 +1313,7 @@ function setupMusicPlayer() {
   
   const infoContainer = document.createElement("div");
   infoContainer.id = "info-container";
-  infoContainer.style.backgroundImage = "url('https://imgur.com/OaI7oBj.png')";
+  infoContainer.style.backgroundImage = "url('https://imgur.com/ypgnuf9.png')";
   infoContainer.style.backgroundSize = "cover"; // Optional: adjust based on your needs
   infoContainer.style.color = "black"; // Set text color to white
   
@@ -1497,7 +1497,7 @@ function setupMusicPlayer() {
       display: flex;
       flex-direction: row;
     height:191px;
-      background-Image: url("https://imgur.com/DqF4Qtn.png");
+      background-Image: url("https://imgur.com/Gg1b5qp.png");
     }
   
     #display-box {
