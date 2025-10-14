@@ -1230,10 +1230,28 @@ document.head.innerHTML += `<link
 </style>`
 
 
+var ch = 12543;
 const startScreenUpdater = setInterval(function() {
       const goBackButton = document.getElementById("candidate_id_back");
       const candidateButton = document.getElementById("candidate_id_button");
       const runningMateButton = document.getElementById("running_mate_id_button");
+      const finalScreenBB = document.getElementById("opponent_selection_id_back");
+      const difficultySelect = document.getElementById("difficulty_level_id");
+      const finalScreenID = document.getElementById("opponent_selection_id_button");
+      const modeSelection = document.getElementById("opponent_selection_description_window");
+      const window = document.getElementById("inner_window_4");
+      const gamemode = document.getElementById("game_options");
+      const candbackb = document.getElementById("candidate_id_back");
+      var selectElement = document.getElementById('candidate_id');
+      var gamemodElem = document.getElementById('game_type_id');
+
+      if(!(localStorage.getItem("hasWon"))){
+        for (let i = selectElement.options.length - 1; i >= 0; i--) {
+          if (selectElement.options[i].value === '81') {
+              selectElement.remove(i);
+          }
+        }
+      }
       
       if(candidateButton || c != 0){ 
           var c = document.getElementById("candidate_id")?.value ?? -1;          
@@ -1250,9 +1268,51 @@ const startScreenUpdater = setInterval(function() {
         	}
     	    }
 	}
+
+if(candidateButton) { // change theme on candidate viewing
+    ch = document.getElementById("candidate_id").value;
+    console.log(ch + "   " + storedChar);
+    if(ch == 12543) {
+      setTimeout(() => {
+       
+        storedChar = ch;
+      }, 15);
+    }
+
+  }
+
+    if(gamemode){
+    setTimeout(() => {
+        let paragraphs = document.querySelectorAll("#opponent_selection_description_window p");
+        if (paragraphs.length > 0) paragraphs[0].innerHTML = "";
+        if (paragraphs.length > 2) paragraphs[2].innerHTML = "";
+        if(ch == 12543){
+          if (paragraphs.length > 1) paragraphs[1].innerHTML = "<b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: Hello, Madam President. I just wanted to return your call about the upcoming election cycle.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: Yes? <br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: It's a tough one. The economy may recover, but the malaise from Biden still lingers. People don't feel like we're on track, even if the numbers begin to improve.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: When have they ever? More importantly, what can we do about it?<br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: If you want to get your approvals up, we should probably get some successes in. Knives are out on Thune, so if you can help him get some success in, he might be willing to help you.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: Mm-hm.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: Look, you're between a rock and a hard place right now. It's a tough spot for anyone."
+          let bgSet = document.getElementById("opponent_selection_description_window");
+          if (bgSet) {
+              let lastBg = "https://imgur.com/gDLpuLn.png";
+              bgSet.style.backgroundImage = 
+                  `width="237", linear-gradient(to right, transparent, rgba(32, 30, 26, 1)), url(${lastBg})`;
+          }
+        }
+    }, 15);
+    for (let i = gamemodElem.options.length - 1; i >= 0; i--) {
+      if (gamemodElem.options[i].value === '2') {
+          gamemodElem.remove(i);
+      }
+    }
+  }
+
         if(finalScreenID) { // delete back button and delete the interval
+
     	finalScreenBB.remove();
     	clearInterval(startScreenUpdater);
+
+        const dropdown = document.getElementById("difficulty_level_id");
+
+        dropdown.addEventListener("input", () => {
+        e.difficultychosen = dropdown.value;
+        });
 	}
 }, 1);
 
@@ -1462,50 +1522,7 @@ if(!modifiedFormobserver){
 
 /*
 if(localStorage.getItem("variable")){
-function changeOpponentSelectionDescription() {
-  selectionObserver.disconnect();
 
-  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
-  
-  if (opponentSelectionDescription) {
-    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p><p>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by <b>u/ItsAstronomics</b>, and created by <b>u/AeronauticBlueberry</b>.</p>`;
-  }
-  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-if(!selectionObserver){
-  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
-  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-
-function modifyForm(){
-  modifiedFormobserver.disconnect();
-
-  const form = document.querySelector('form[name="game_type_selection"]');
-
-  if (form) {
-    const select = form.querySelector('select[name="game_type_id"]');
-    const h3 = form.querySelector('h3');
-    const option = select.querySelector('option[value="1"]');
-
-    if (option && option.textContent !== 'Default: First Past The Post') {
-      option.textContent = 'Default: First Past The Post';
-    }
-    if (select && select.querySelector('option[value="2"]')) {
-      const queryTwo = select.querySelector('option[value="2"]');
-      if (queryTwo) {
-        queryTwo.remove();
-      }
-    }
-    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
-      h3.textContent = 'How would you like the seats to be allocated?';
-    }
-  }
-  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-if(!modifiedFormobserver){
-  var modifiedFormobserver = new MutationObserver(modifyForm);
-  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
-}
 }
 */
 
