@@ -14,7 +14,7 @@ campaignTrail_temp.election_json = [
             "year": 2022,
             "display_year": "2022",
             "summary": "<p> </p><p> </b>",
-            "image_url": "https://imgur.com/UYXSH6i.png",
+            "image_url": "https://imgur.com/FoBYjDk.png",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.imgur.com/qXgNdH3.gif",
             "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">Credits and Special Thanks</h4><p> </p><p> </p><p> </p><br><img src=\"https://wisconsinpublictv.s3.us-east-2.amazonaws.com/wp-content/uploads/2024/08/ap-politcis-election-2024-milwaukee-fiserv-harris-walz-20240820-1536x864.jpg\" width=\"360px\">",
@@ -390,7 +390,7 @@ async function appendStyle() {
       height: 317px;
       background-image: 
         linear-gradient(to right, transparent, rgba(32, 30, 26, 1)), 
-        url('https://i.imgur.com/UYXSH6i.gif'); 
+        url('https://imgur.com/FoBYjDk.png'); 
       background-size: cover; 
       z-index: 1;
     }
