@@ -1,9 +1,96 @@
-window.loadBenefitChecker = function () {
-  const content = document.getElementById("benefitcontent");
-  if (content) {
-    content.innerHTML = "<p style='font-style: italic;'>Benefit Checker data is not available in this scenario.</p>";
+function removeCandidateSummary() {
+try {
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
   }
-};
+} catch {}
+}
+window.setInterval(removeCandidateSummary,200)
+
+function updateCandidateForm() {
+  formobserver.disconnect();
+  const heading = document.querySelector("#candidate_form form h3");
+
+  if (heading) {
+    heading.textContent = "Please select your party leader:";
+  }
+  formobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+var formobserver = new MutationObserver(updateCandidateForm);
+formobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeRunningMateSummary() {
+try {
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+} catch {}
+}
+window.setInterval(removeCandidateSummary,200)
+
+function updateRunningMateForm() {
+  runformobserver.disconnect();
+  const heading = document.querySelector("#running_mate_form form h3");
+
+  if (heading) {
+    heading.textContent = "Please select your party:";
+  }
+  runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+var runformobserver = new MutationObserver(updateRunningMateForm);
+runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+
+function removeCandidateSummary() {
+   sumobserver.disconnect();
+  const candidateSummary = document.querySelector("#candidate_summary");
+  if (candidateSummary) {
+    const ulList = candidateSummary.querySelector("ul");
+    if (ulList) {
+      candidateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
+
+function removeRunningMateSummary() {
+   sumobserver.disconnect();
+  const running_mateSummary = document.querySelector("#running_mate_summary");
+  if (running_mateSummary) {
+    const ulList = running_mateSummary.querySelector("ul");
+    if (ulList) {
+      running_mateSummary.removeChild(ulList);
+    }
+  }
+  sumobserver.observe(document.body, {childList: true,subtree: true});
+}
+
+var sumobserver = new MutationObserver(removeRunningMateSummary);
+sumobserver.observe(document.body, {childList: true,subtree: true});
+
+function updateHeader() {
+  var gameHeader = document.getElementsByClassName("game_header")[0];
+
+  if (gameHeader.getAttribute("id") !== "modifiedHeader") {
+    gameHeader.innerHTML = corrr;
+    gameHeader.style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+    gameHeader.setAttribute("id", "modifiedHeader");
+  }
+}
+window.setInterval(removeRunningMateSummary,10)
+
 
 
 campaignTrail_temp.election_json = [
@@ -13,7 +100,7 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 2022,
             "display_year": "2022",
-            "summary": "<p>(The stage is dimly lit with a lone stagelight on the Prime Minister. Behind her is the large black door of No. 10. She has her back turned away.)<br><br><b style=\"text-shadow: -2px 2px 6px rgba(187, 49, 30, 1); font-size: 14px;\">THERESA</b><br>(Remorseful, looking downwards.)<br><i>And now, here we are after the vote of '17,</i><br><i>It's result a strangling serpentine</i><br><i>Socialists jeer to my left,</i><br><i>Old Etonians squawk to my right</i><br><i>Any ounce of embrace now bereft,</i><br><i>Their obstruction now a tool of great might</i><br><i>I pray God aid any in my path!</i><br><i>For they shall face Westminster's wrath...</i><br><br>(Theresa now turns around to face the door, outstretches her hand, and opens it.)</p>",
+            "summary": "<p>(The stage is dimly lit with a lone stagelight on the Prime Minister. Behind her is the large black door of No. 10. She has her back turned away.)<br><br><b style=\"text-shadow: -2px 2px 6px rgba(44, 161, 213, 1); font-size: 14px;\">THERESA</b><br>(Remorseful, looking downwards.)<br><i>And now, here we are after the vote of '17,</i><br><i>It's result a strangling serpentine</i><br><i>Socialists jeer to my left,</i><br><i>Old Etonians squawk to my right</i><br><i>Any ounce of embrace now bereft,</i><br><i>Their obstruction now a tool of great might</i><br><i>I pray God aid any in my path!</i><br><i>For they shall face Westminster's wrath...</i><br><br>(Theresa now faces the door, outstretches her hand, and opens it.)</p>",
             "image_url": "https://imgur.com/FoBYjDk.png",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.imgur.com/qXgNdH3.gif",
