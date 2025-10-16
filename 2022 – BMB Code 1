@@ -319,7 +319,7 @@ jet_data = {
 document.getElementById("inner_window_1").children[0].innerHTML = `<h3>Brexit Means Brexit</h3>`
 document.getElementById("inner_window_1").children[1].style.marginLeft = "-20px";
 document.getElementById("inner_window_1").children[1].style.width = "calc(100% + -40px)"; // Adjust the value as needed
-document.getElementById("inner_window_1").children[1].innerHTML = `<b>Prologue</b><br><br><img src="https://imgur.com/IyoJmQM.png" alt="Image" width="600;"><br><br><i>It was only a year ago, and yet it already feels like a lifetime.</i><br><br>David Cameron's referendum on EU membership<br><br>                                                                       <b></b>`;
+document.getElementById("inner_window_1").children[1].innerHTML = `<b>Prologue</b><br><br><img src="https://imgur.com/IyoJmQM.png" alt="Image" width="600;"><br><br><i>It was only a year ago, and yet it already feels like a lifetime.</i><br><br>David Cameron's referendum on EU membership was not an ambitious fending off of the Eurosceptic right, but an audacious gamble. One which thrusted Britain into the economic abyss, and Theresa May is well aware that everyone is walking blind in the dark.<br><br>May never anticipated she would be in the top job so early. All expectations pointed to Cameron serving a full second term and either strutting on or being defeated in the 2020 election. A cushy time cracking down on immigration at the Home Office was suddenly euthanised the moment she saw an opportunity to sweep in on her former boss' office.<br><br>Though, some chalices are better left alone, their poison sitting in the liquid.`;
 document.getElementById("game_start").innerHTML = "<strong>Steer The Nation.</strong>";
 
 campaignTrail_temp.modBoxTheme = {
