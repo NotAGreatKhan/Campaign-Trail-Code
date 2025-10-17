@@ -359,8 +359,9 @@ document.getElementById("header").src = "https://imgur.com/e9iKwS3.jpg";
 document.body.background = "https://i.imgur.com/AW3OKHP.png";
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#656972!important;}</style>";
 
-
 //#endcode
+
+
 
 async function appendStyle() {
   var metaTag=document.createElement('meta');
@@ -392,6 +393,10 @@ async function appendStyle() {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .game_header {
+        height: 0px; 
     }
 
     .playbill-logo span {
