@@ -1,3 +1,19 @@
+if (!e.done) {
+e.done = true;
+
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningMateSummary = document.querySelector("#running_mate_summary");
+    if (runningMateSummary) {
+        $("#running_mate_id_button").click();
+        observer.disconnect()
+    }
+});
+
+  z.observe(document, { subtree: true, childList: true });
+} 
+
+
+
 function removeCandidateSummary() {
 try {
   const candidateSummary = document.querySelector("#candidate_summary");
@@ -306,7 +322,7 @@ jet_data = {
     "headerColor": "#212121",
     "windowColor": "#d3b0ab",
     "containerColor": "#212121",
-    "innerWindowColor": "#'",
+    "innerWindowColor": "#656972",
     "bannerImageUrl": "https://i.imgur.com/UYXSH6i.gif",
     "backgroundImageUrl": "https://i.imgur.com/AW3OKHP.png",
     "endingTextColor": "#000000",
@@ -325,6 +341,7 @@ document.getElementById("game_start").innerHTML = "<strong>Steer The Nation.</st
 campaignTrail_temp.modBoxTheme = {
   "header_color": "#201e1a",
   "header_text_color": "#ffffff",
+  "inner_window_color": "#656972",
   "description_text_color": "#000000",
   "description_background_color": "#d3b0ab",
   "main_color": "#d3b0ab",
@@ -335,6 +352,7 @@ campaignTrail_temp.modBoxTheme = {
 corrr = '\n              <h2></h2>\n            ';
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#212121";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#d3b0ab";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_inner_window = "#656972";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
 $("#game_window")[0].style.backgroundImage = "url(https://imgur.com/kvp4g7Y.jpg)" 
@@ -1727,4 +1745,3 @@ const startScreenUpdater = setInterval(function() {
     });
   }
 }, 1);
-
