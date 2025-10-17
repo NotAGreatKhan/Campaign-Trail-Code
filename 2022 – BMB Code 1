@@ -357,7 +357,7 @@ $("#game_window")[0].style.backgroundImage = "url(https://imgur.com/kvp4g7Y.jpg)
 $(".container")[0].style.backgroundColor = "#212121";
 document.getElementById("header").src = "https://imgur.com/e9iKwS3.jpg";
 document.body.background = "https://i.imgur.com/AW3OKHP.png";
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eed6d3!important;}</style>";
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#656972!important;}</style>";
 
 
 //#endcode
