@@ -1186,103 +1186,6 @@ function getTooltips(str) {
     applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
 
- let observerRunning = false;
- let changeChartRunning = false;
- let mcaHeightRunning = false;
- let processedNodes = new Set();
- 
- async function handleMutations(mutationsList, observer) {
-     if (observerRunning) return;
-     observerRunning = true;
- 
-     // stop observing
-     observer.disconnect();
- 
-     // addScrollbar
-     const overallResult = document.getElementById('overall_result');
-     if (overallResult && !processedNodes.has(overallResult)) {
-         overallResult.style.overflow = 'auto';
-         const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
-         const handleClick = () => {
-             overallResult.style.overflow = 'auto';
-         };
-         buttons.forEach(button => button.addEventListener('click', handleClick));
-         processedNodes.add(overallResult);
-     }
- 
-     // Code to change the results screen
-     if (!changeChartRunning) {
-         changeChartRunning = true;
-         const elementIDs = ["overall_vote_statistics", "state_result_data_summary", "overall_details_container"];
-         for(let id of elementIDs) {
-             let element = document.getElementById(id);
-             if (element && !processedNodes.has(element)) {
-                 let overallthing = element.innerHTML;
-                 overallthing = overallthing.replace("Electoral Votes","Seats Won");
-                 overallthing = overallthing.replace("Candidate","Leader - Party");
-                 element.innerHTML = overallthing;
-                 processedNodes.add(element);
-             }
-         }
-         changeChartRunning = false;
-     }
-  // Code to contain the seat’s results in its box. Adds a scrollbar if they don’t.
-     if (!mcaHeightRunning) {
-         mcaHeightRunning = true;
-         let results_container = document.getElementById("results_container");
-         let chart = document.getElementById("myChart");
-         if (results_container && !processedNodes.has(results_container)) {
-             if (!chart){
-                 results_container.style.height = "98%";
-                 results_container.style.overflow = "scroll";
-             } else {
-                 let mca = document.getElementById("main_content_area");
-                 if (mca) {
-                     mca.style.height = "80%";
-                 }
-             }
-             processedNodes.add(results_container);
-         }
-         mcaHeightRunning = false;
-     }
- 
- // Code to contain the seat’s issue scores and electorate. Adds a scrollbar if they don’t fit. Also changes “State Summary” to “Seat Summary”
-     if (!mcaHeightRunning) {	
-         mcaHeightRunning = true;
-         let seat_container = document.getElementById("state_result_container");
- let chart = document.getElementById("myChart");
-         if (seat_container && !processedNodes.has(state_result_container)) { 
-             if (!chart){
-                 seat_container.style.height = "52%";
-                 seat_container.style.overflow = "scroll";
-             } else {
-                 let mca = document.getElementById("main_content_area");
-                 if (mca) {
-                     mca.style.height = "100%";
- let element = document.getElementById("state_info");
-             if (element && !processedNodes.has(element)) {
-                 let seatsummary = element.innerHTML;
-                 seatsummary = seat_container.replace("STATE SUMMARY","Seat Summary");
- element.innerHTML = seatsummary;
- 
- }
- 
-                 }
-             }
-             processedNodes.add(state_result_container);
-         }
-         mcaHeightRunning = false;
-     }
- 
-     // Resume observing
-     observer.observe(document.documentElement, { childList: true, subtree: true });
-     observerRunning = false;
- }
- 
- let singleObserver = new MutationObserver(handleMutations);
- singleObserver.observe(document.documentElement, { childList: true, subtree: true });
-
-
 
 e = campaignTrail_temp;
 
@@ -1291,49 +1194,49 @@ e = campaignTrail_temp;
 
 campaignTrail_temp.advisors = [
     {
-        pk: 5000,
-        role: "Speaker of the House of Representatives",   
+        pk: 50000,
+        role: "Prime Minister",   
     },
     {
-        pk: 5001,
-        role: "Leading Republican Opponent",
+        pk: 50001,
+        role: "Labour Leader",
     },
     {
-        pk: 5002,
-        role: "Factional Opposition",
+        pk: 50002,
+        role: "Lib Dem Factionalism",
     },
     {
-        pk: 5003,
-        role: "United States Attorney General",
+        pk: 50003,
+        role: "Our Government Influence",
     }
 ];
 
-// updateAdvisor(5000, "Vacant", "https://itsastronomical.com/assets/2024/opp/vacant.png", "NOW: MCCARTHY APPEARS TO SUFFER DEFEAT ON FIRST SPEAKER BALLOT");
-// updateAdvisor(5000, "Kevin McCarthy", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "Has yearned for decades for this position. Is it worth it?");
-// updateAdvisor(5000, "Brian Fitzpatrick", "https://itsastronomical.com/assets/2024/opp/fitz.png", "How did this sucker get here? Who knows. He won't be around long, however.");
-// updateAdvisor(5000, "Mike Johnson", "https://itsastronomical.com/assets/2024/opp/johnson.png", "They call him the Origami Speaker. He folds nonstop for the right wing — and for you.");
-// updateAdvisor(5000, "Tom Emmer", "https://itsastronomical.com/assets/2024/opp/emmer.png", "For what it's worth, Trump denounced his bid for the position from the get-go.");
-// updateAdvisor(5000, "Patrick McHenry", "https://itsastronomical.com/assets/2024/opp/mchenry.png", "The Speaker <i>Pro Tempore</i> is no longer here just ''for the time being.''");
-// updateAdvisor(5000, "Hakeem Jeffries", "https://itsastronomical.com/assets/2024/opp/jeffries.png", "Working on major, bipartisan reform to the House so they can supply Ukraine and Israel with more ammunition.");
+// updateAdvisor(50000, "Vacant", "https://itsastronomical.com/assets/2024/opp/vacant.png", "NOW: MCCARTHY APPEARS TO SUFFER DEFEAT ON FIRST SPEAKER BALLOT");
+// updateAdvisor(50000, "Kevin McCarthy", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "Has yearned for decades for this position. Is it worth it?");
+// updateAdvisor(50000, "Brian Fitzpatrick", "https://itsastronomical.com/assets/2024/opp/fitz.png", "How did this sucker get here? Who knows. He won't be around long, however.");
+// updateAdvisor(50000, "Mike Johnson", "https://itsastronomical.com/assets/2024/opp/johnson.png", "They call him the Origami Speaker. He folds nonstop for the right wing — and for you.");
+// updateAdvisor(50000, "Tom Emmer", "https://itsastronomical.com/assets/2024/opp/emmer.png", "For what it's worth, Trump denounced his bid for the position from the get-go.");
+// updateAdvisor(50000, "Patrick McHenry", "https://itsastronomical.com/assets/2024/opp/mchenry.png", "The Speaker <i>Pro Tempore</i> is no longer here just ''for the time being.''");
+// updateAdvisor(50000, "Hakeem Jeffries", "https://itsastronomical.com/assets/2024/opp/jeffries.png", "Working on major, bipartisan reform to the House so they can supply Ukraine and Israel with more ammunition.");
 
-// updateAdvisor(5001, "Donald Trump Jr.", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
-// updateAdvisor(5001, "Nikki Haley", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
-// updateAdvisor(5001, "Ron DeSantis", "https://itsastronomical.com/assets/2024/opp/desantis.png", "Governor of Florida. Fighting wokeism, one book burning at a time.");
-// updateAdvisor(5001, "JD Vance", "https://itsastronomical.com/assets/2024/opp/vance.png", "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.");
-// updateAdvisor(5001, "Doug Burgum", "https://itsastronomical.com/assets/2024/opp/burgum.png", "How he managed to get here remains a mystery. Even he's amazed by it.");
-// updateAdvisor(5001, "P01135809", "https://itsastronomical.com/assets/2024/opp/trumpjail.png", "Donald J. Trump, 45th President of the United States. Hopes to break the glass ceiling and become the first convicted felon elected President.");
-// updateAdvisor(5001, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.");
-// updateAdvisor(5001, "Grok", "https://itsastronomical.com/assets/2024/opp/grok.png", "Trained on Truth Social posts and Fox News transcripts. Believes it's the real Trump — and honestly, it may as well be.");
+// updateAdvisor(50001, "Donald Trump Jr.", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
+// updateAdvisor(50001, "Nikki Haley", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
+// updateAdvisor(50001, "Ron DeSantis", "https://itsastronomical.com/assets/2024/opp/desantis.png", "Governor of Florida. Fighting wokeism, one book burning at a time.");
+// updateAdvisor(50001, "JD Vance", "https://itsastronomical.com/assets/2024/opp/vance.png", "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.");
+// updateAdvisor(50001, "Doug Burgum", "https://itsastronomical.com/assets/2024/opp/burgum.png", "How he managed to get here remains a mystery. Even he's amazed by it.");
+// updateAdvisor(50001, "P01135809", "https://itsastronomical.com/assets/2024/opp/trumpjail.png", "Donald J. Trump, 45th President of the United States. Hopes to break the glass ceiling and become the first convicted felon elected President.");
+// updateAdvisor(50001, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.");
+// updateAdvisor(50001, "Grok", "https://itsastronomical.com/assets/2024/opp/grok.png", "Trained on Truth Social posts and Fox News transcripts. Believes it's the real Trump — and honestly, it may as well be.");
 
-// updateAdvisor(5002, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "Him running is as annoying as his voice. As scandalous as one would expect from a Kennedy.");
-// updateAdvisor(5002, "Jill Stein", "https://itsastronomical.com/assets/2024/opp/stein.png", "Greatest ally of the left, Vladimir Putin, and the Republican National Convention.");
-// updateAdvisor(5002, "Dean Phillips", "https://itsastronomical.com/assets/2024/opp/phillips.png", "Also known as Dean Quixote. Some people have too much money.");
-// updateAdvisor(5002, "Panic", "https://itsastronomical.com/assets/2024/opp/panic.png", "Perhaps America as a whole has the morals of an Alley Cat.");
-// updateAdvisor(5002, "Unburdened", "https://itsastronomical.com/assets/2024/opp/unburdened.png", "It's time to imagine what can be, unburdened by what has been.");
+// updateAdvisor(50002, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "Him running is as annoying as his voice. As scandalous as one would expect from a Kennedy.");
+// updateAdvisor(50002, "Jill Stein", "https://itsastronomical.com/assets/2024/opp/stein.png", "Greatest ally of the left, Vladimir Putin, and the Republican National Convention.");
+// updateAdvisor(50002, "Dean Phillips", "https://itsastronomical.com/assets/2024/opp/phillips.png", "Also known as Dean Quixote. Some people have too much money.");
+// updateAdvisor(50002, "Panic", "https://itsastronomical.com/assets/2024/opp/panic.png", "Perhaps America as a whole has the morals of an Alley Cat.");
+// updateAdvisor(50002, "Unburdened", "https://itsastronomical.com/assets/2024/opp/unburdened.png", "It's time to imagine what can be, unburdened by what has been.");
 
-// updateAdvisor(5003, "Merrick Garland", "https://itsastronomical.com/assets/2024/opp/garland.png", "Finally given his due. Let's hope he can make this one count.");
-// updateAdvisor(5003, "Doug Jones", "https://itsastronomical.com/assets/2024/opp/jones.png", "Singlehandedly keeping the mean IQ of Alabama above 80, which isn’t an easy task.");
-// updateAdvisor(5003, "Deval Patrick", "https://itsastronomical.com/assets/2024/opp/patrick.png", "Obama. Obama. Obama. It's crazy how far a single name can get you in politics.");
+// updateAdvisor(50003, "Merrick Garland", "https://itsastronomical.com/assets/2024/opp/garland.png", "Finally given his due. Let's hope he can make this one count.");
+// updateAdvisor(50003, "Doug Jones", "https://itsastronomical.com/assets/2024/opp/jones.png", "Singlehandedly keeping the mean IQ of Alabama above 80, which isn’t an easy task.");
+// updateAdvisor(50003, "Deval Patrick", "https://itsastronomical.com/assets/2024/opp/patrick.png", "Obama. Obama. Obama. It's crazy how far a single name can get you in politics.");
 
 // Define possible opponents and their conditions
 const opponents = [
@@ -1411,26 +1314,26 @@ function updateLeadingRepublicanOpponent() {
 
 campaignTrail_temp.advice = [
     {
-        advisor_pk: 5000,
-        name: "Nancy Pelosi",
+        advisor_pk: 50000,
+        name: "David Cameron",
         picture: "https://itsastronomical.com/assets/2024/opp/pelosi.png",
         advice: "Tormented Trump for two years. Eager to shepherd your agenda."
     },
     {
-        advisor_pk: 5001,
-        name: "Donald Trump",
+        advisor_pk: 50001,
+        name: "Gordon Brown",
         picture: "https://itsastronomical.com/assets/2024/trump.png",
         advice: "Runner-up in 2020, though he's too egoistical to ever admit that."
     },
     {
-        advisor_pk: 5002,
+        advisor_pk: 50002,
         name: "Virtually None",
         picture: "https://itsastronomical.com/assets/2024/opp/unity.png",
         advice: "Keep this up, and who knows what is possible? Keep in mind a coalition can fall apart easily..."
     },
     {
-        advisor_pk: 5003,
-        name: "Jeffery A. Rosen",
+        advisor_pk: 50003,
+        name: "None As Of Yet",
         picture: "https://itsastronomical.com/assets/2024/opp/rosen.png",
         advice: "Trump's Executive Government remains a revolving door."
     }
@@ -1556,10 +1459,10 @@ function openHQ() {
       hqDiv.appendChild(columnsDiv);
   
       var roles = [
-          { role: 'Speaker of the House', pk: 5000 },
-          { role: 'Leading Republican Opponent', pk: 5001 },
-          { role: 'Factional Opposition', pk: 5002 },
-          { role: 'United States Attorney General', pk: 5003 }
+          { role: 'Prime Minister', pk: 50000 },
+          { role: 'Labour Leader', pk: 50001 },
+          { role: 'Lib Dem Factionalism', pk: 50002 },
+          { role: 'Our Government Influence', pk: 50003 }
       ];
   
       for (let i = 0; i < roles.length; i++) {
