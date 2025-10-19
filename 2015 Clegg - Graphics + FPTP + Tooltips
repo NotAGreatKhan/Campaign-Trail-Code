@@ -1,3 +1,127 @@
+function varText() {
+// Variable Increase Code
+
+    if (Cred == -7) {
+        CScore = "<font color='#ad1313;'><b>utterly destroyed</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
+    }
+    if (Cred == -6) {
+        CScore = "<font color='#ad1313;'><b>in tatters and rags</b></font> (<font color='#ad1313;'><b>-6</b></font>)"
+    }
+    if (Cred == -5) {
+        CScore = "<font color='#ad1313;'><b>in collapse</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (Cred == -4) {
+        CScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>-4</b></font>)"
+    }
+    if (Cred == -3) {
+        CScore = "<font color='#ad1313;'><b>non-existent</b></font> (<font color='#ad1313;'><b>-3</b></font>)"
+    }
+    if (Cred == -2) {
+        CScore = "<font color='#d58627;'><b>concerning</b></font> (<font color='#d58627;'><b>-2</b></font>)"
+    }
+    if (Cred == -1) {
+        CScore = "<font color='#d58627;'><b>questionable</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (Cred == 0) {
+        CScore = "<font color='#d58627;'><b>lagging</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
+    if (Cred == 1) {
+        CScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (Cred == 2) {
+        CScore = "<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (Cred == 3) {
+        CScore = "<font color='#7ba922;'><b>narrowly stable</b></font> (<font color='#7ba922;'><b>3</b></font>)"
+    }
+    if (Cred == 4) {
+        CScore = "<font color='#7ba922;'><b>holding steady</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (Cred == 5) {
+        CScore = "<font color='#7ba922;'><b>improving</b></font> (<font color='#7ba922;'><b>5</b></font>)"
+    }
+    if (Cred == 6) {
+        CScore = "<font color='#7ba922;'><b>rocketing</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (Cred == 7) {
+        CScore = "<font color='#7ba922;'><b>soaring</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+
+    if (ConRep == -12) {
+        CRpScore = "<font color='#ad1313;'><b>blown to oblivion</b></font> (<font color='#ad1313;'><b>-12</b></font>)"
+    }
+    if (ConRep == -11) {
+        CRpScore = "<font color='#ad1313;'><b>nearing annihilation</b></font> (<font color='#ad1313;'><b>-11</b></font>)"
+    }
+    if (ConRep == -10) {
+        CRpScore = "<font color='#ad1313;'><b>unworkable</b></font> (<font color='#ad1313;'><b>-10</b></font>)"
+    }
+    if (ConRep == -9) {
+        CRpScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>-9</b></font>)"
+    }
+    if (ConRep == -8) {
+        CRpScore = "<font color='#ad1313;'><b>deteriorating</b></font> (<font color='#ad1313;'><b>-8</b></font>)"
+    }
+    if (ConRep == -7) {
+        CRpScore = "<font color='#ad1313;'><b>unhealthy</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
+    }
+    if (ConRep == -6) {
+        CRpScore = "<font color='#ad1313;'><b>unproductive</b></font> (<font color='#ad1313;'><b>-6</b></font>)"
+    }
+    if (ConRep == -5) {
+        CRpScore = "<font color='#ad1313;'><b>on rough relations</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (ConRep == -4) {
+        CRpScore = "<font color='#d58627;'><b>fast and loose</b></font> (<font color='#d58627;'><b>-4</b></font>)"
+    }
+    if (ConRep == -3) {
+        CRpScore = "<font color='#d58627;'><b>raising eyebrows</b></font> (<font color='#d58627;'><b>-3</b></font>)"
+    }
+    if (ConRep == -2) {
+        CRpScore = "<font color='#d58627;'><b>unsatisfactory</b></font> (<font color='#d58627;'><b>-2</b></font>)"
+    }
+    if (ConRep == -1) {
+        CRpScore = "<font color='#d58627;'><b>in a rough spot</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (ConRep == 0) {
+        CRpScore = "<font color='#d58627;'><b>concerned</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
+    if (ConRep == 1) {
+        CRpScore = "<font color='#d58627;'><b>under question</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (ConRep == 2) {
+        CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (ConRep == 3) {
+        CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>3</b></font>)"
+    }
+    if (ConRep == 4) {
+        CRpScore = "<font color='#7ba922;'><b>in the right direction</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (ConRep == 5) {
+        CRpScore = "<font color='#7ba922;'><b>healthy</b></font> (<font color='#7ba922;'><b>5</b></font>)"
+    }
+    if (ConRep == 6) {
+        CRpScore = "<font color='#7ba922;'><b>cooperative</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (ConRep == 7) {
+        CRpScore = "<font color='#7ba922;'><b>healthy</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+    if (ConRep == 8) {
+        CRpScore = "<font color='#7ba922;'><b>strong and stable</b></font> (<font color='#7ba922;'><b>8</b></font>)"
+    }
+    if (ConRep == 9) {
+        CRpScore = "<font color='#7ba922;'><b>harmonious</b></font> (<font color='#7ba922;'><b>9</b></font>)"
+    }
+    if (ConRep == 10) {
+        CRpScore = "<font color='#7ba922;'><b>impervious</b></font> (<font color='#7ba922;'><b>10</b></font>)"
+    }
+    if (ConRep == 11) {
+        CRpScore = "<font color='#7ba922;'><b>unbreakable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
+    }
+}
+
+
 function changechart(){
     if (document.getElementById("state_info")!=null) {
     overallthing=document.getElementById("state_info").innerHTML;
