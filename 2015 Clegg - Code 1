@@ -1,5 +1,10 @@
-document.head.innerHTML += `
-<style>
+document.head.innerHTML += `<link
+		  rel="stylesheet"
+		  href="https://unpkg.com/7.css"
+>`
+
+document.head.innerHTML += `<style>
+
 h3 {
     font-size: 1.025em !important;
     line-height: 17px;
