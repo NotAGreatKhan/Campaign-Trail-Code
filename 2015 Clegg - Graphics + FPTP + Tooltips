@@ -2209,9 +2209,10 @@ function openSurrogates() {
         overviewtxt += 'Our Victories with the country number as ' + Wins + '.<br><br>';
 
         if (SnapElection == true) {
-        overviewtxt += 'Kamala Harris’ loyalty to President Biden is <u><b>' + loyaltyText + '</b></u> (<b>' + loyalty + '</b>)<br>';
+        overviewtxt += 'Kamala Harris’ loyalty to President Biden is <u><b>' + loyaltyText + '</b></u> (<b>' + loyalty + '</b>)<br><br>';
         }
-        
+
+        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="435">';        
 
         const ovsubtxt = document.createElement('h3');
         ovsubtxt.innerHTML = overviewtxt;
