@@ -12,6 +12,9 @@ var Cred = 2;
 var ConRep = 2;
 var PolCap = 0;
 var Wins = 0;
+var altprimary = false;
+var SnapElection = false;
+
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
     if (ans == 21687 || ans == 21706){
@@ -5859,6 +5862,130 @@ campaignTrail_temp.jet_data = [{
 ]
 
 
+function varText() {
+// Variable Increase Code
+
+    if (Cred == -7) {
+        CScore = "<font color='#ad1313;'><b>utterly destroyed</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
+    }
+    if (Cred == -6) {
+        CScore = "<font color='#ad1313;'><b>in tatters and rags</b></font> (<font color='#ad1313;'><b>-6</b></font>)"
+    }
+    if (Cred == -5) {
+        CScore = "<font color='#ad1313;'><b>in collapse</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (Cred == -4) {
+        CScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>-4</b></font>)"
+    }
+    if (Cred == -3) {
+        CScore = "<font color='#ad1313;'><b>non-existent</b></font> (<font color='#ad1313;'><b>-3</b></font>)"
+    }
+    if (Cred == -2) {
+        CScore = "<font color='#d58627;'><b>concerning</b></font> (<font color='#d58627;'><b>-2</b></font>)"
+    }
+    if (Cred == -1) {
+        CScore = "<font color='#d58627;'><b>questionable</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (Cred == 0) {
+        CScore = "<font color='#d58627;'><b>lagging</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
+    if (Cred == 1) {
+        CScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (Cred == 2) {
+        CScore = "<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (Cred == 3) {
+        CScore = "<font color='#7ba922;'><b>narrowly stable</b></font> (<font color='#7ba922;'><b>3</b></font>)"
+    }
+    if (Cred == 4) {
+        CScore = "<font color='#7ba922;'><b>holding steady</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (Cred == 5) {
+        CScore = "<font color='#7ba922;'><b>improving</b></font> (<font color='#7ba922;'><b>5</b></font>)"
+    }
+    if (Cred == 6) {
+        CScore = "<font color='#7ba922;'><b>rocketing</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (Cred == 7) {
+        CScore = "<font color='#7ba922;'><b>soaring</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+
+    if (ConRep == -12) {
+        CRpScore = "<font color='#ad1313;'><b>blown to oblivion</b></font> (<font color='#ad1313;'><b>-12</b></font>)"
+    }
+    if (ConRep == -11) {
+        CRpScore = "<font color='#ad1313;'><b>nearing annihilation</b></font> (<font color='#ad1313;'><b>-11</b></font>)"
+    }
+    if (ConRep == -10) {
+        CRpScore = "<font color='#ad1313;'><b>unworkable</b></font> (<font color='#ad1313;'><b>-10</b></font>)"
+    }
+    if (ConRep == -9) {
+        CRpScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>-9</b></font>)"
+    }
+    if (ConRep == -8) {
+        CRpScore = "<font color='#ad1313;'><b>deteriorating</b></font> (<font color='#ad1313;'><b>-8</b></font>)"
+    }
+    if (ConRep == -7) {
+        CRpScore = "<font color='#ad1313;'><b>unhealthy</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
+    }
+    if (ConRep == -6) {
+        CRpScore = "<font color='#ad1313;'><b>unproductive</b></font> (<font color='#ad1313;'><b>-6</b></font>)"
+    }
+    if (ConRep == -5) {
+        CRpScore = "<font color='#ad1313;'><b>on rough relations</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (ConRep == -4) {
+        CRpScore = "<font color='#d58627;'><b>fast and loose</b></font> (<font color='#d58627;'><b>-4</b></font>)"
+    }
+    if (ConRep == -3) {
+        CRpScore = "<font color='#d58627;'><b>raising eyebrows</b></font> (<font color='#d58627;'><b>-3</b></font>)"
+    }
+    if (ConRep == -2) {
+        CRpScore = "<font color='#d58627;'><b>unsatisfactory</b></font> (<font color='#d58627;'><b>-2</b></font>)"
+    }
+    if (ConRep == -1) {
+        CRpScore = "<font color='#d58627;'><b>in a rough spot</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (ConRep == 0) {
+        CRpScore = "<font color='#d58627;'><b>concerned</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
+    if (ConRep == 1) {
+        CRpScore = "<font color='#d58627;'><b>under question</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (ConRep == 2) {
+        CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (ConRep == 3) {
+        CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>3</b></font>)"
+    }
+    if (ConRep == 4) {
+        CRpScore = "<font color='#7ba922;'><b>in the right direction</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (ConRep == 5) {
+        CRpScore = "<font color='#7ba922;'><b>healthy</b></font> (<font color='#7ba922;'><b>5</b></font>)"
+    }
+    if (ConRep == 6) {
+        CRpScore = "<font color='#7ba922;'><b>cooperative</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (ConRep == 7) {
+        CRpScore = "<font color='#7ba922;'><b>healthy</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+    if (ConRep == 8) {
+        CRpScore = "<font color='#7ba922;'><b>strong and stable</b></font> (<font color='#7ba922;'><b>8</b></font>)"
+    }
+    if (ConRep == 9) {
+        CRpScore = "<font color='#7ba922;'><b>harmonious</b></font> (<font color='#7ba922;'><b>9</b></font>)"
+    }
+    if (ConRep == 10) {
+        CRpScore = "<font color='#7ba922;'><b>impervious</b></font> (<font color='#7ba922;'><b>10</b></font>)"
+    }
+    if (ConRep == 11) {
+        CRpScore = "<font color='#7ba922;'><b>unbreakable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
+    }
+}
+
+
 function changechart(){
     if (document.getElementById("state_info")!=null) {
     overallthing=document.getElementById("state_info").innerHTML;
@@ -7047,129 +7174,375 @@ function getTooltips(str) {
     applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
 
- let observerRunning = false;
- let changeChartRunning = false;
- let mcaHeightRunning = false;
- let processedNodes = new Set();
- 
- async function handleMutations(mutationsList, observer) {
-     if (observerRunning) return;
-     observerRunning = true;
- 
-     // stop observing
-     observer.disconnect();
- 
-     // addScrollbar
-     const overallResult = document.getElementById('overall_result');
-     if (overallResult && !processedNodes.has(overallResult)) {
-         overallResult.style.overflow = 'auto';
-         const buttons = document.querySelectorAll('#view_electoral_map, #answer_select_button, #ok_button, #final_election_map_button');
-         const handleClick = () => {
-             overallResult.style.overflow = 'auto';
-         };
-         buttons.forEach(button => button.addEventListener('click', handleClick));
-         processedNodes.add(overallResult);
-     }
- 
-     // Code to change the results screen
-     if (!changeChartRunning) {
-         changeChartRunning = true;
-         const elementIDs = ["overall_vote_statistics", "state_result_data_summary", "overall_details_container"];
-         for(let id of elementIDs) {
-             let element = document.getElementById(id);
-             if (element && !processedNodes.has(element)) {
-                 let overallthing = element.innerHTML;
-                 overallthing = overallthing.replace("Electoral Votes","Seats Won");
-                 overallthing = overallthing.replace("Candidate","Leader - Party");
-                 element.innerHTML = overallthing;
-                 processedNodes.add(element);
-             }
-         }
-         changeChartRunning = false;
-     }
-  // Code to contain the seat’s results in its box. Adds a scrollbar if they don’t.
-     if (!mcaHeightRunning) {
-         mcaHeightRunning = true;
-         let results_container = document.getElementById("results_container");
-         let chart = document.getElementById("myChart");
-         if (results_container && !processedNodes.has(results_container)) {
-             if (!chart){
-                 results_container.style.height = "98%";
-                 results_container.style.overflow = "scroll";
-             } else {
-                 let mca = document.getElementById("main_content_area");
-                 if (mca) {
-                     mca.style.height = "80%";
-                 }
-             }
-             processedNodes.add(results_container);
-         }
-         mcaHeightRunning = false;
-     }
- 
- // Code to contain the seat’s issue scores and electorate. Adds a scrollbar if they don’t fit. Also changes “State Summary” to “Seat Summary”
-     if (!mcaHeightRunning) {	
-         mcaHeightRunning = true;
-         let seat_container = document.getElementById("state_result_container");
- let chart = document.getElementById("myChart");
-         if (seat_container && !processedNodes.has(state_result_container)) { 
-             if (!chart){
-                 seat_container.style.height = "52%";
-                 seat_container.style.overflow = "scroll";
-             } else {
-                 let mca = document.getElementById("main_content_area");
-                 if (mca) {
-                     mca.style.height = "100%";
- let element = document.getElementById("state_info");
-             if (element && !processedNodes.has(element)) {
-                 let seatsummary = element.innerHTML;
-                 seatsummary = seat_container.replace("STATE SUMMARY","Seat Summary");
- element.innerHTML = seatsummary;
- 
- }
- 
-                 }
-             }
-             processedNodes.add(state_result_container);
-         }
-         mcaHeightRunning = false;
-     }
- 
-     // Resume observing
-     observer.observe(document.documentElement, { childList: true, subtree: true });
-     observerRunning = false;
- }
- 
- let singleObserver = new MutationObserver(handleMutations);
- singleObserver.observe(document.documentElement, { childList: true, subtree: true });
 
+e = campaignTrail_temp;
 
-function addHeadquarterButton() {
+// State of Play in Washington
+// Shows you who is in what position
+
+campaignTrail_temp.advisors = [
+    {
+        pk: 50000,
+        role: "Speaker of the House of Representatives",   
+    },
+    {
+        pk: 50001,
+        role: "Leading Republican Opponent",
+    },
+    {
+        pk: 50002,
+        role: "Factional Opposition",
+    },
+    {
+        pk: 50003,
+        role: "United States Attorney General",
+    }
+];
+
+// updateAdvisor(50000, "Vacant", "https://itsastronomical.com/assets/2024/opp/vacant.png", "NOW: MCCARTHY APPEARS TO SUFFER DEFEAT ON FIRST SPEAKER BALLOT");
+// updateAdvisor(50000, "Kevin McCarthy", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "Has yearned for decades for this position. Is it worth it?");
+// updateAdvisor(50000, "Brian Fitzpatrick", "https://itsastronomical.com/assets/2024/opp/fitz.png", "How did this sucker get here? Who knows. He won't be around long, however.");
+// updateAdvisor(50000, "Mike Johnson", "https://itsastronomical.com/assets/2024/opp/johnson.png", "They call him the Origami Speaker. He folds nonstop for the right wing — and for you.");
+// updateAdvisor(50000, "Tom Emmer", "https://itsastronomical.com/assets/2024/opp/emmer.png", "For what it's worth, Trump denounced his bid for the position from the get-go.");
+// updateAdvisor(50000, "Patrick McHenry", "https://itsastronomical.com/assets/2024/opp/mchenry.png", "The Speaker <i>Pro Tempore</i> is no longer here just ''for the time being.''");
+// updateAdvisor(50000, "Hakeem Jeffries", "https://itsastronomical.com/assets/2024/opp/jeffries.png", "Working on major, bipartisan reform to the House so they can supply Ukraine and Israel with more ammunition.");
+
+// updateAdvisor(50001, "Donald Trump Jr.", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
+// updateAdvisor(50001, "Nikki Haley", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
+// updateAdvisor(50001, "Ron DeSantis", "https://itsastronomical.com/assets/2024/opp/desantis.png", "Governor of Florida. Fighting wokeism, one book burning at a time.");
+// updateAdvisor(50001, "JD Vance", "https://itsastronomical.com/assets/2024/opp/vance.png", "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.");
+// updateAdvisor(50001, "Doug Burgum", "https://itsastronomical.com/assets/2024/opp/burgum.png", "How he managed to get here remains a mystery. Even he's amazed by it.");
+// updateAdvisor(50001, "P01135809", "https://itsastronomical.com/assets/2024/opp/trumpjail.png", "Donald J. Trump, 45th President of the United States. Hopes to break the glass ceiling and become the first convicted felon elected President.");
+// updateAdvisor(50001, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.");
+// updateAdvisor(50001, "Grok", "https://itsastronomical.com/assets/2024/opp/grok.png", "Trained on Truth Social posts and Fox News transcripts. Believes it's the real Trump — and honestly, it may as well be.");
+
+// updateAdvisor(50002, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "Him running is as annoying as his voice. As scandalous as one would expect from a Kennedy.");
+// updateAdvisor(50002, "Jill Stein", "https://itsastronomical.com/assets/2024/opp/stein.png", "Greatest ally of the left, Vladimir Putin, and the Republican National Convention.");
+// updateAdvisor(50002, "Dean Phillips", "https://itsastronomical.com/assets/2024/opp/phillips.png", "Also known as Dean Quixote. Some people have too much money.");
+// updateAdvisor(50002, "Panic", "https://itsastronomical.com/assets/2024/opp/panic.png", "Perhaps America as a whole has the morals of an Alley Cat.");
+// updateAdvisor(50002, "Unburdened", "https://itsastronomical.com/assets/2024/opp/unburdened.png", "It's time to imagine what can be, unburdened by what has been.");
+
+// updateAdvisor(50003, "Merrick Garland", "https://itsastronomical.com/assets/2024/opp/garland.png", "Finally given his due. Let's hope he can make this one count.");
+// updateAdvisor(50003, "Doug Jones", "https://itsastronomical.com/assets/2024/opp/jones.png", "Singlehandedly keeping the mean IQ of Alabama above 80, which isn’t an easy task.");
+// updateAdvisor(50003, "Deval Patrick", "https://itsastronomical.com/assets/2024/opp/patrick.png", "Obama. Obama. Obama. It's crazy how far a single name can get you in politics.");
+
+// Define possible opponents and their conditions
+const opponents = [
+    {
+      name: "Robert Kennedy Jr.",
+      picture: "https://itsastronomical.com/assets/2024/opp/rfk.png",
+      advice: "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.",
+      condition: () => bobby >= 1,
+      priority: () => (bobby >= 1 ? 1 : 0)
+  },
+  {
+      name: "JD Vance",
+      picture: "https://itsastronomical.com/assets/2024/opp/vance.png",
+      advice: "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.",
+      condition: () => wins >= 4 && gaza >= 2,
+      priority: () => (wins >= 4 ? 1 : 0) + (gaza >= 2 ? 1 : 0)
+  },
+  {
+      name: "Nikki Haley",
+      picture: "https://itsastronomical.com/assets/2024/opp/haley.png",
+      advice: "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.",
+      condition: () => wins >= 4 && gaza <= 1,
+      priority: () => (wins >= 4 ? 1 : 0) + (gaza < 2 ? 1 : 0)
+  },
+  {
+      name: "Ron DeSantis",
+      picture: "https://itsastronomical.com/assets/2024/opp/desantis.png",
+      advice: "Governor of Florida. Fighting wokeism, one book burning at a time.",
+      condition: () => wins < 4 && gaza >= 2,
+      priority: () => (wins < 4 ? 1 : 0) + (gaza >= 2 ? 1 : 0)
+  },
+  {
+      name: "Doug Burgum",
+      picture: "https://itsastronomical.com/assets/2024/opp/burgum.png",
+      advice: "How he managed to get here remains a mystery. Even he's amazed by it.",
+      condition: () => wins < 4 && gaza <= 1,
+      priority: () => (wins < 4 ? 1 : 0) + (gaza < 2 ? 1 : 0)
+  }
+];
+
+// Function to select the closest opponent
+function selectClosestOpponent() {
+  if (bobby >= 1) {
+    return opponents.find(o => o.name === "Robert Kennedy Jr.");
+  }
+  
+  let closestOpponent = null;
+  let highestPriority = -1;
+
+  for (let opponent of opponents) {
+      let priority = opponent.priority();
+      if (priority > highestPriority) {
+          highestPriority = priority;
+          closestOpponent = opponent;
+      }
+  }
+
+  // Default opponent if no conditions are met
+  if (!closestOpponent) {
+      closestOpponent = {
+          name: "Donald Trump Jr.",
+          picture: "https://itsastronomical.com/assets/2024/opp/donjr.png",
+          advice: "Donald Trump's namesake. But not his first choice for Crown Prince."
+      };
+  }
+
+  return closestOpponent;
+}
+
+// Update the advisor based on the closest opponent
+function updateLeadingRepublicanOpponent() {
+  const opponent = selectClosestOpponent();
+  updateAdvisor(5001, opponent.name, opponent.picture, opponent.advice);
+}
+
+campaignTrail_temp.advice = [
+    {
+        advisor_pk: 50000,
+        name: "Nancy Pelosi",
+        picture: "https://itsastronomical.com/assets/2024/opp/pelosi.png",
+        advice: "Tormented Trump for two years. Eager to shepherd your agenda."
+    },
+    {
+        advisor_pk: 50001,
+        name: "Donald Trump",
+        picture: "https://itsastronomical.com/assets/2024/trump.png",
+        advice: "Runner-up in 2020, though he's too egoistical to ever admit that."
+    },
+    {
+        advisor_pk: 50002,
+        name: "Virtually None",
+        picture: "https://itsastronomical.com/assets/2024/opp/unity.png",
+        advice: "Keep this up, and who knows what is possible? Keep in mind a coalition can fall apart easily..."
+    },
+    {
+        advisor_pk: 50003,
+        name: "Jeffery A. Rosen",
+        picture: "https://itsastronomical.com/assets/2024/opp/rosen.png",
+        advice: "Trump's Executive Government remains a revolving door."
+    }
+];
+
+function updateAdvisor(advisor_pk, newName, newPicture, newAdvice) {
+    let advice = campaignTrail_temp.advice.find(a => a.advisor_pk === advisor_pk);
+
+    if (advice) {
+        advice.name = newName;
+        advice.picture = newPicture;
+        advice.advice = newAdvice;
+    } else {
+        console.error(`No advice found for advisor_pk: ${advisor_pk}`);
+    }
+}
+
+function addHQButton() {
     // Check if the button already exists
-    if (document.getElementById("headquarter_button")) {
+    if (document.getElementById('headquarter_button')) {
         return;
     }
 
     // Find the reference button by its ID
-    const refButton = document.getElementById("view_electoral_map");
+    const refButton = document.getElementById('view_electoral_map');
     if (!refButton) {
         return;
     }
 
     // Create a new button element
-    const newButton = document.createElement("button");
+    const newButton = document.createElement('button');
 
-    newButton.id = "headquarter_button";
+    newButton.id = 'headquarter_button';
 
-    newButton.style.marginLeft = "1.5em";
+    newButton.style.marginLeft = '1.5em';
 
-    newButton.innerHTML = "Our Standing";
+    newButton.innerHTML = 'The Parliament';
 
     // Attach the click event listener
-    newButton.addEventListener("click", openHeadquarter);
+    newButton.addEventListener('click', openHQ);
 
     // Insert the new button next to the reference button
-    refButton.insertAdjacentElement("afterend", newButton);
+    refButton.insertAdjacentElement('afterend', newButton);
+}
+
+function openHQ() {
+    // Update the leading Republican opponent
+    if (altprimary == true) {
+      updateLeadingRepublicanOpponent();
+    }
+
+    varText();
+
+      let questions = document.querySelector(".inner_window_question");
+  
+      questions.style.display = 'none';
+  
+      const hqButton = document.getElementById('headquarter_button');
+      if (hqButton) {
+          hqButton.remove();
+      }
+  
+      // Create and set up the headquarters div
+      let hqDiv = document.createElement('div');
+      hqDiv.id = 'headquarter';
+      hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
+      hqDiv.style.color = 'black';
+      // hqDiv.style.backgroundColor = '#383838';
+      hqDiv.style.backgroundImage = 'url(https://imgur.com/swUf4Yu.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+      hqDiv.style.border = '5px solid black';
+      hqDiv.style.borderRadius = '10px';
+      hqDiv.style.height = '53%';
+      hqDiv.style.flexDirection = 'column';
+      hqDiv.style.alignItems = 'center';
+  
+      // Create header div
+      let headerDiv = document.createElement('div');
+      headerDiv.style.display = 'flex';
+      headerDiv.style.justifyContent = 'space-between';
+      headerDiv.style.width = '100%';
+      headerDiv.style.alignItems = 'center';
+  
+      // Add back button to the header
+      let backButton = document.createElement('button');
+      backButton.innerText = 'Back';
+      backButton.style.margin = '5px';
+      backButton.style.backgroundColor = 'grey';
+      backButton.style.position = 'absolute';
+      backButton.style.top = '95px';
+      backButton.style.left = '20px';
+      backButton.onclick = function() {
+          // Hide headquarters and show the original content
+          hqDiv.remove();
+          questions.style.display = '';
+      }
+      headerDiv.appendChild(backButton);
+  
+      // Create h3 element for the header
+      let headerText = document.createElement('h2');
+      headerText.textContent = 'The Parliament';
+      headerText.style.textAlign = 'center';  // Center the text
+      headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
+      headerDiv.appendChild(headerText);
+  
+      // Append headerDiv to the main hqDiv
+      hqDiv.appendChild(headerDiv);
+  
+      // Create a container div for both columns
+      let columnsDiv = document.createElement('div');
+      columnsDiv.style.display = 'flex';
+      columnsDiv.style.width = '100%';
+  
+      // Create inner divs for columns
+      let leftCol = document.createElement('div');
+      leftCol.style.width = '50%';
+      columnsDiv.appendChild(leftCol);
+  
+      let rightCol = document.createElement('div');
+      rightCol.style.width = '50%';
+      columnsDiv.appendChild(rightCol);
+  
+      // Append columnsDiv to the main hqDiv
+      hqDiv.appendChild(columnsDiv);
+  
+      var roles = [
+          { role: 'Speaker of the House', pk: 50000 },
+          { role: 'Leading Republican Opponent', pk: 50001 },
+          { role: 'Factional Opposition', pk: 50002 },
+          { role: 'United States Attorney General', pk: 50003 }
+      ];
+  
+      for (let i = 0; i < roles.length; i++) {
+          let roleInfo = roles[i];
+          let advice = campaignTrail_temp.advice.find(a => a.advisor_pk === roleInfo.pk);
+  
+          if (!advice) {
+              console.error(`No advice found for advisor_pk: ${roleInfo.pk}`);
+              continue;
+          }
+  
+          let advisorDiv = document.createElement('div');
+          advisorDiv.style.height = '7.5em';
+          advisorDiv.style.padding = '1em';
+          advisorDiv.style.display = 'flex';
+          advisorDiv.style.marginBottom = '1em';
+  
+          // Image
+          let img = document.createElement('img');
+          img.src = advice.picture;
+          img.style.height = '100%';
+          img.style.marginRight = '1em';
+          img.style.border = '1px solid black';  // Add thin white border to the image
+  
+          // Description
+          let descriptionDiv = document.createElement('div');
+          descriptionDiv.style.display = 'flex';
+          descriptionDiv.style.flexDirection = 'column';
+          descriptionDiv.style.justifyContent = 'center';
+  
+          let role = document.createElement('h5');
+          role.textContent = roleInfo.role;
+          role.style.margin = '3px';
+          descriptionDiv.appendChild(role);
+  
+          let name = document.createElement('h3');
+          name.textContent = advice.name;
+          name.style.margin = '3px';
+          descriptionDiv.appendChild(name);
+  
+          let bio = document.createElement('p');
+          bio.textContent = advice.advice;
+          bio.style.margin = '3px';
+          descriptionDiv.appendChild(bio);
+  
+          advisorDiv.appendChild(img);
+          advisorDiv.appendChild(descriptionDiv);
+  
+          // Append advisorDiv to the appropriate column
+          if (i % 2 === 0) {
+              leftCol.appendChild(advisorDiv);
+          } else {
+              rightCol.appendChild(advisorDiv);
+          }
+      }
+  
+      questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
+}
+
+// Variable HQ
+
+function addHeadquarterButton() {
+    // Check if the button already exists
+    if (document.getElementById('hq_button')) {
+        return;
+    }
+
+    // Find the reference button by its ID
+    const refButton = document.getElementById('view_electoral_map');
+    if (!refButton) {
+        return;
+    }
+
+    // Create a new button element
+    const newButton = document.createElement('button');
+
+    newButton.id = 'hq_button';
+
+    newButton.style.marginLeft = '1.5em';
+ 
+    newButton.innerHTML = 'Our Standing';
+
+    // Attach the click event listener
+    newButton.addEventListener('click', openHeadquarter);
+
+    // Insert the new button next to the Headquarters button
+    const headquarterButton = document.getElementById('headquarter_button');
+    if (headquarterButton) {
+        headquarterButton.insertAdjacentElement('afterend', newButton);
+    } else {
+        refButton.insertAdjacentElement('afterend', newButton);
+    }
 }
 
 function openHeadquarter() {
@@ -7297,113 +7670,648 @@ function openHeadquarter() {
     }
 
     let questions = document.querySelector(".inner_window_question");
+    questions.style.display = 'none';
 
-    questions.style.display = "none";
-
-    const hqButton = document.getElementById("headquarter_button");
-    if (hqButton) {
-        hqButton.remove();
+    const hq_Button = document.getElementById('hq_button');
+    if (hq_Button) {
+        hq_Button.remove();
     }
-    
+
     // Create and set up the headquarters div
-    let hqDiv = document.createElement("div");
-    hqDiv.id = "headquarter";
-    hqDiv.style.display = "flex"; // Set layout to flex to allow columns
-    hqDiv.style.color = "white";
-    hqDiv.style.backgroundColor = "#383838";
-    hqDiv.style.backgroundImage = "url(https://imgur.com/swUf4Yu.jpg)"; 
-    hqDiv.style.border = "5px solid black";
-    hqDiv.style.borderRadius = "10px";
-    hqDiv.style.height = "56%";
-    hqDiv.style.flexDirection = "column";
-    hqDiv.style.alignItems = "center";
+    let hqDiv = document.createElement('div');
+    hqDiv.id = 'headquarter';
+    hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
+    hqDiv.style.color = 'white';
+    hqDiv.style.backgroundColor = '#383838';
+    hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/2024/potusoffice.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+    hqDiv.style.border = '5px solid black';
+    hqDiv.style.borderRadius = '10px';
+    hqDiv.style.height = '53%';
+    hqDiv.style.flexDirection = 'column';
+    hqDiv.style.alignItems = 'center';
+    hqDiv.style.position = 'relative';  
+
 
     // Create header div
-    let headerDiv = document.createElement("div");
-    headerDiv.style.display = "flex";
-    headerDiv.style.justifyContent = "space-between";
-    headerDiv.style.width = "100%";
-    headerDiv.style.alignItems = "center";
+    let headerDiv = document.createElement('div');
+    headerDiv.style.display = 'flex';
+    headerDiv.style.justifyContent = 'space-between';
+    headerDiv.style.width = '100%';
+    headerDiv.style.alignItems = 'center';
 
-    // Add back button to the header
-    let backButton = document.createElement("button");
-    backButton.innerText = "Back";
-    backButton.style.margin = "5px";
-    backButton.style.backgroundColor = "grey";
-    backButton.onclick = function() {
-        // Hide headquarters and show the original content
-        hqDiv.remove();
-        questions.style.display = "";
-    }
-    headerDiv.appendChild(backButton);
-
-    let headerText = document.createElement("h3");
-    headerText.textContent = "Chief of Staff – Danny Alexander";
-    headerText.style.textAlign = "center";  // Center the text
-    headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
-    headerText.style.color = "black";
+    let headerText = document.createElement('h2');
+    headerText.innerHTML  = 'Chief of Staff - Campaign Data';
+    headerText.style.textAlign = 'center';  // Center the text
+    headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
     headerDiv.appendChild(headerText);
 
     // Append headerDiv to the main hqDiv
     hqDiv.appendChild(headerDiv);
 
     // Create a container div for both columns
-    let columnsDiv = document.createElement("div");
-    columnsDiv.style.display = "flex";
-    columnsDiv.style.width = "100%";
+    let columnsDiv = document.createElement('div');
+    columnsDiv.style.display = 'flex';
+    columnsDiv.style.width = '100%';
 
     // Create inner divs for columns
     let leftCol = document.createElement('div');
-    leftCol.style.width = "50%";
+    leftCol.style.width = '50%';
     columnsDiv.appendChild(leftCol);
 
     let rightCol = document.createElement('div');
-    rightCol.style.width = "50%";
+    rightCol.style.width = '50%';
     columnsDiv.appendChild(rightCol);
 
     // Append columnsDiv to the main hqDiv
     hqDiv.appendChild(columnsDiv);
 
-
     questions.parentNode.insertBefore(hqDiv, questions.nextSibling);
 
-    let a = document.createElement("p");
-    a.innerHTML = 'Your credibility heading into the election is ' + CScore + '.';
-    // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
-    a.style.color = "black"; // Can be used to change the color of the text
-    a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
+    // This is the bulk of the content you can edit. You can add more text or images here.
+
+    // Create Bulk of the Text
+
+    let a = document.createElement('p');
+    a.innerHTML  = 'Your credibility heading into the election is ' + CScore + '.'; 
+    // a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    a.style.color = 'black'; // Can be used to change the color of the text
+    a.style.margin = '5px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
+    // a.style.fontSize  = '15px'; 
     hqDiv.appendChild(a);
 
-    let b = document.createElement("p");
-    b.innerHTML = 'Your reputation with the Conservative government is ' + CRpScore + '.';
-    // b.style.flexGrow = "0.1";
-    b.style.color = "black";
-    b.style.margin = "8px";
+    let b = document.createElement('p');
+    b.innerHTML  = 'Your reputation with the Conservative government is ' + CRpScore + '.';
+    // b.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    b.style.color = 'black';
+    b.style.margin = '5px';
     hqDiv.appendChild(b);
 
-    let c = document.createElement("c");
-    c.innerHTML = 'Our Victories with the country number as ' + Wins + '.';
-    // c.style.flexGrow = "0.1";
-    c.style.color = "black";
-    c.style.margin = "8px";
+    let c = document.createElement('p');
+    c.innerHTML  = 'Our Victories with the country number as ' + Wins + '.';
+    // c.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    c.style.color = 'black';
+    c.style.margin = '5px';
     hqDiv.appendChild(c);
 
+    if (SnapElection == true) {
+    let e = document.createElement('p');
+    e.innerHTML  = 'Kamala Harris’ loyalty to President Biden is <u><b>' + loyaltyText + '</b></u> (<b>' + loyalty + '</b>)';
+    // d.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    e.style.color = 'white';
+    e.style.margin = '5px';
+    hqDiv.appendChild(e);
+    }
+
     // Image
-    let img = document.createElement("img");
-    img.src = "https://imgur.com/TfpSe4M.jpg";
-    img.style.height = "50%";
-    img.style.marginLeft = "1em";
-    img.style.flexGrow = "0.1";
-    img.style.border = "3px solid black";  // Add thin white border to the image
+    let img = document.createElement('img');
+    img.src = 'https://imgur.com/TfpSe4M.jpg';
+    img.style.height = '30%';
+    img.style.marginLeft = '1em';
+    img.style.flexGrow = '0.1';
+    img.style.border = '3px solid black';  // Add thin white border to the image
     hqDiv.appendChild(img);
+
+    // Add back button to the header
+    let backButton = document.createElement('button');
+    backButton.innerText = 'Back';
+    backButton.style.margin = '5px';
+    backButton.style.backgroundColor = 'grey';
+    backButton.style.position = 'absolute';
+    backButton.style.top = '16px';
+    backButton.style.left = '10px';
+    backButton.onclick = function() {
+        // Hide headquarters and show the original content
+        hqDiv.remove();
+        questions.style.display = '';
+    }
+    headerDiv.appendChild(backButton);
 }
+
+// Stuff for Floating HQ
+
+function addWindowButton() {
+    // Check if the button already exists
+    if (document.getElementById('window_button')) {
+        return;
+    }
+
+    // Find the reference button by its ID
+    const refButton = document.getElementById('view_electoral_map');
+    if (!refButton) {
+        return;
+    }
+
+    // Create a new button element
+    const newButton = document.createElement('button');
+
+    newButton.id = 'window_button';
+
+    newButton.style.marginLeft = '1.5em';
+
+    newButton.innerHTML = 'Our Standing';
+
+    // Attach the click event listener
+    newButton.addEventListener('click', openSurrogates);
+
+    // Insert the new button next to the reference button
+    refButton.insertAdjacentElement('afterend', newButton);
+}
+
+function removeById(arr, id) {
+  const index = arr.findIndex(item => item.id === id);
+  if (index !== -1) arr.splice(index, 1);
+  refreshSurrogates()
+}
+
+function replaceById(arr, id, newItem) {
+  const index = arr.findIndex(item => item.id === id);
+  if (index !== -1) arr.splice(index, 1, newItem);
+  refreshSurrogates();
+
+}
+
+function insertAt(arr, index, newItem) {
+  arr.splice(index, 0, newItem);
+  refreshSurrogates();
+}
+
+let savedX = null;
+let savedY = null;
+
+// By default, only 3 Republicans - Trump, Haley, and DeSantis show up.
+const menuItemsA = [
+    { photo: 'https://itsastronomical.com/assets/2024/square/trumptrial.png', name: 'Donald Trump', text: 'The former President hasn’t even bothered to set up a Presidential Library - Mar-A-Lago is now a Government in exile. Only the hammer of justice could force him from the race.', button: 'Defer', id: 'TRUMP_intro'},
+    { photo: 'https://itsastronomical.com/assets/2024/square/desantis.png', name: 'Ron DeSantis', text: 'With the swing state of Florida having swung to Trump after 2020, some are starting to consider what a post-Trump GOP may look like. Governor Ron DeSantis seems to be the answer to that.', button: 'Defer', id: 'DESANTIS_intro'},
+    { photo: 'https://itsastronomical.com/assets/2024/square/haley.png', name: 'Nikki Haley', text: 'Although the Neocons were largely sent into exile by Trump, former UN Ambassador Nikki Haley hopes she can clinch the Republican nomination.', button: 'Defer', id: 'HALEY_intro'}
+]
+
+// Cards that get added/changed later
+
+let trumpCard = { photo: 'https://itsastronomical.com/assets/2024/square/trumptrial.png', name: 'Donald Trump', text: 'Free from criminal consequences, Trump now prepares to return to the White House, eager to undo any attempt at justice in this nation. The only court that has a chance to convict him in time is the court of public opinion.', button: 'Defer', id: 'TRUMP'}
+let donjrCard = { photo: 'https://itsastronomical.com/assets/2024/square/donjr.png', name: 'Donald Trump Jr.', text: 'Although not his father\'s favorite, Don Jr. seems to have quickly locked up the Republican nomination following his dad\'s arrest. He is here not to lead, but to free his father from prison.', button: 'Defer', id: 'DONJR'}
+let desantisCard = { photo: 'https://itsastronomical.com/assets/2024/square/desantis.png', name: 'Ron DeSantis', text: 'The Governor who turned the once prominent swing state red now plans to take his success to a national level. His culture warrior style will only secure him nomination if foreign policy is at rest.', button: 'Defer', id: 'DESANTIS'}
+let haleyCard = { photo: 'https://itsastronomical.com/assets/2024/square/haley.png', name: 'Nikki Haley', text: 'Although unpopular with MAGA, Nikki Haley still commands a plausible minority of the Republican Party. With foreign policy being her strong point, troubles abroad shall be her best chance at securing the nomination.', button: 'Defer', id: 'HALEY'}
+let burgumCard = { photo: 'https://itsastronomical.com/assets/2024/square/burgum.png', name: 'Doug Burgum', text: '\"Burgumania"\ as it\'s called, seems to be sweeping the nation. A deflated MAGA base, and weaknesses both domestic and abroad seem to be fueling a potential dark horse nomination.', button: 'Defer', id: 'BURGUM'}
+let vanceCard = { photo: 'https://itsastronomical.com/assets/2024/square/vance.png', name: 'JD Vance', text: 'Running with the blessing of Don Jr., the guy who once called Trump "America’s Hitler" now seems eager to spend his time kissing his ass. Successes both domestic and abroad may clear the way for him to stumble on stage.', button: 'Defer', id: 'VANCE'}
+let rfkCard = { photo: 'https://itsastronomical.com/assets/2024/square/rfk.png', name: 'Robert Kennedy Jr.', text: 'What does it say about the Republicans that they seem willing to nominate a fucking Kennedy? This is a part with nothing to show after years in opposition. Bury them.', button: 'Defer', id: 'KENNEDY'}
+let powCard = { photo: 'https://itsastronomical.com/assets/2024/square/trumpcourt.png', name: 'P01135809', text: 'Fully consumed by Trump, the Republicans have chosen to nominate their dear leader while he serves under House Arrest. It\'s utterly shameful - do not let them get away with this.', button: 'Defer', id: 'POW'}
+let grokCard = { photo: 'https://itsastronomical.com/assets/2024/square/grok.png', name: 'Grok/xAI', text: 'I’m sorry, I’m having trouble responding. Could you clarify or provide more details?', button: 'Defer', id: 'GROK'}
+
+// Fake Cards for Flair
+
+// menuItemsA.unshift(KennedyCand);
+/* 
+index = menuItemsA.findIndex(item => item.id === 'BIDEN_A');
+if (index == -1) {
+  menuItemsA.push(BidenFake); 
+}
+*/
+
+let haleyFAKECard = { photo: 'https://itsastronomical.com/assets/2024/square/haley.png', name: 'Nikki Haley', text: 'Despite expectation that DeSantis would be the runner-up in the show elections for the GOP nomination, Haley has become the main opposition to Trump. Of course, it’s doubtful a candidate like her will be able to secure the nomination against Trump. ', button: 'Defer', id: 'HALEY_fake'}
+let vivekCard = { photo: 'https://itsastronomical.com/assets/2024/square/vivek.png', name: 'Vivek Ramaswamy', text: 'Emboldened by Burgum’s rise in the polls, Vivek Ramaswamy has shifted away from competing against him in the primaries and instead is positioning himself for a third party bid, hoping to woo over “true loyalists” to the MAGA cause.', button: 'Defer', id: 'VIVEK_fake'}
+let rfkhaleyCard = { photo: 'https://itsastronomical.com/assets/2024/square/rfkthird.png', name: 'Robert Kennedy Jr.', text: 'The nomination of Haley has caused an identity crisis within the Republican Party. Kennedy’s quixotic, populist bid has become refuge for disaffected conservatives. He seems to poll best in the Appalachia region.', button: 'Defer', id: 'RFK_haley'}
+let oliverCard = { photo: 'https://itsastronomical.com/assets/2024/square/oliver.png', name: 'Chase Oliver', text: 'Once overshadowed by Robert F. Kennedy Jr., the Libertarians hope to have an impact on the election. It’s unlikely they will, however.', button: 'Defer', id: 'OLIVER_third'}
+let yangCard = { photo: 'https://itsastronomical.com/assets/2024/square/yang.png', name: 'Andrew Yang', text: 'With Democratic victory looking confident (enough), the Forward Party have chosen to put a feel-good campaign together. Hopefully they peel away disgruntled Trump voters.', button: 'Defer', id: 'YANG_third'}
+let joeCard = { photo: 'https://itsastronomical.com/assets/2024/square/cunning.png', name: 'Joe Cunningham', text: 'A total breakdown of trust has given No Labels the room they need to put forth a ticket - Joe Cunningham and Chris Christie.', button: 'Defer', id: 'JOE_third'}
+let christieCard = { photo: 'https://itsastronomical.com/assets/2024/square/christie.png', name: 'Chris Christie', text: 'The nomination of RFK Jr. has caused No Labels to put up one of their biggest names - a pro-Trump Republican turned anti-MAGA leader.', button: 'Defer', id: 'CHRISTIE_third'}
+let rfkthirdCard = { photo: 'https://itsastronomical.com/assets/2024/square/rfkthird.png', name: 'Robert Kennedy Jr.', text: 'Dropping out in all but name, Kennedy has tried to keep his name on the ballot in states the GOP campaign doesn’t deem crucial. Hopefully he can still peel off support where it matters.', button: 'Defer', id: 'RFK_third'}
+let steinCard = { photo: 'https://itsastronomical.com/assets/2024/square/stein.png', name: 'Jill Stein', text: 'Dissatisfaction amongst progressives over Gaza has put Stein’s return to politics into prominence. She costed Hillary the election in 2016 - she could do the same to you, too, if you aren’t careful.', button: 'Defer', id: 'STEIN_third'}
+let westCard = { photo: 'https://itsastronomical.com/assets/2024/square/west.png', name: 'Cornel West', text: 'The retreat of the IDF from Gaza has allowed Cornel West to surge amongst the left wing third party vote. It’s unknown how serious of an impact he will have.', button: 'Defer', id: 'WEST_third'}
+
+
+function openSurrogates() {
+    let questions = document.querySelector(".inner_window_question");
+    varText();
+
+    if (Cred == -7) {
+        CScore = "<font color='#ad1313;'><b>utterly destroyed</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
+    }
+    if (Cred == -6) {
+        CScore = "<font color='#ad1313;'><b>in tatters and rags</b></font> (<font color='#ad1313;'><b>-6</b></font>)"
+    }
+    if (Cred == -5) {
+        CScore = "<font color='#ad1313;'><b>in collapse</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (Cred == -4) {
+        CScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>-4</b></font>)"
+    }
+    if (Cred == -3) {
+        CScore = "<font color='#ad1313;'><b>non-existent</b></font> (<font color='#ad1313;'><b>-3</b></font>)"
+    }
+    if (Cred == -2) {
+        CScore = "<font color='#d58627;'><b>concerning</b></font> (<font color='#d58627;'><b>-2</b></font>)"
+    }
+    if (Cred == -1) {
+        CScore = "<font color='#d58627;'><b>questionable</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (Cred == 0) {
+        CScore = "<font color='#d58627;'><b>lagging</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
+    if (Cred == 1) {
+        CScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (Cred == 2) {
+        CScore = "<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (Cred == 3) {
+        CScore = "<font color='#7ba922;'><b>narrowly stable</b></font> (<font color='#7ba922;'><b>3</b></font>)"
+    }
+    if (Cred == 4) {
+        CScore = "<font color='#7ba922;'><b>holding steady</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (Cred == 5) {
+        CScore = "<font color='#7ba922;'><b>improving</b></font> (<font color='#7ba922;'><b>5</b></font>)"
+    }
+    if (Cred == 6) {
+        CScore = "<font color='#7ba922;'><b>rocketing</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (Cred == 7) {
+        CScore = "<font color='#7ba922;'><b>soaring</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+
+    if (ConRep == -12) {
+        CRpScore = "<font color='#ad1313;'><b>blown to oblivion</b></font> (<font color='#ad1313;'><b>-12</b></font>)"
+    }
+    if (ConRep == -11) {
+        CRpScore = "<font color='#ad1313;'><b>nearing annihilation</b></font> (<font color='#ad1313;'><b>-11</b></font>)"
+    }
+    if (ConRep == -10) {
+        CRpScore = "<font color='#ad1313;'><b>unworkable</b></font> (<font color='#ad1313;'><b>-10</b></font>)"
+    }
+    if (ConRep == -9) {
+        CRpScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>-9</b></font>)"
+    }
+    if (ConRep == -8) {
+        CRpScore = "<font color='#ad1313;'><b>deteriorating</b></font> (<font color='#ad1313;'><b>-8</b></font>)"
+    }
+    if (ConRep == -7) {
+        CRpScore = "<font color='#ad1313;'><b>unhealthy</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
+    }
+    if (ConRep == -6) {
+        CRpScore = "<font color='#ad1313;'><b>unproductive</b></font> (<font color='#ad1313;'><b>-6</b></font>)"
+    }
+    if (ConRep == -5) {
+        CRpScore = "<font color='#ad1313;'><b>on rough relations</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (ConRep == -4) {
+        CRpScore = "<font color='#d58627;'><b>fast and loose</b></font> (<font color='#d58627;'><b>-4</b></font>)"
+    }
+    if (ConRep == -3) {
+        CRpScore = "<font color='#d58627;'><b>raising eyebrows</b></font> (<font color='#d58627;'><b>-3</b></font>)"
+    }
+    if (ConRep == -2) {
+        CRpScore = "<font color='#d58627;'><b>unsatisfactory</b></font> (<font color='#d58627;'><b>-2</b></font>)"
+    }
+    if (ConRep == -1) {
+        CRpScore = "<font color='#d58627;'><b>in a rough spot</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (ConRep == 0) {
+        CRpScore = "<font color='#d58627;'><b>concerned</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
+    if (ConRep == 1) {
+        CRpScore = "<font color='#d58627;'><b>under question</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (ConRep == 2) {
+        CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (ConRep == 3) {
+        CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>3</b></font>)"
+    }
+    if (ConRep == 4) {
+        CRpScore = "<font color='#7ba922;'><b>in the right direction</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (ConRep == 5) {
+        CRpScore = "<font color='#7ba922;'><b>healthy</b></font> (<font color='#7ba922;'><b>5</b></font>)"
+    }
+    if (ConRep == 6) {
+        CRpScore = "<font color='#7ba922;'><b>cooperative</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (ConRep == 7) {
+        CRpScore = "<font color='#7ba922;'><b>healthy</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+    if (ConRep == 8) {
+        CRpScore = "<font color='#7ba922;'><b>strong and stable</b></font> (<font color='#7ba922;'><b>8</b></font>)"
+    }
+    if (ConRep == 9) {
+        CRpScore = "<font color='#7ba922;'><b>harmonious</b></font> (<font color='#7ba922;'><b>9</b></font>)"
+    }
+    if (ConRep == 10) {
+        CRpScore = "<font color='#7ba922;'><b>impervious</b></font> (<font color='#7ba922;'><b>10</b></font>)"
+    }
+    if (ConRep == 11) {
+        CRpScore = "<font color='#7ba922;'><b>unbreakable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
+    }
+
+    // Check if the menu already exists
+    let popOutMenu = document.getElementById('popOutMenu');
+    if (!popOutMenu) {
+        // Create the pop-out menu container
+        popOutMenu = document.createElement('div');
+        popOutMenu.id = 'popOutMenu';
+        popOutMenu.style.position = 'absolute'; // Change to absolute for relative positioning
+        popOutMenu.style.width = '430px';
+        popOutMenu.style.height = '530px';
+        popOutMenu.style.padding = '15px';
+        popOutMenu.style.backgroundColor = '#fff';
+        popOutMenu.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+        popOutMenu.style.border = '2px solid #000000';
+        popOutMenu.style.zIndex = '1000';
+        popOutMenu.style.backgroundColor = '#FAFBFC';
+        popOutMenu.style.backgroundSize = 'cover';
+        popOutMenu.style.backgroundPosition = 'bottom';
+        popOutMenu.style.alignItems = 'center';     
+
+        /* Create the menu title
+        const menuTitle = document.createElement('h1');
+        menuTitle.innerText = 'File';
+        menuTitle.style.textAlign = 'center';
+            menuTitle.style.fontFamily = '"Bahnschrift SemiBold", "Bahnschrift", sans-serif';
+            menuTitle.style.color = '#B62C1A';
+            menuTitle.style.textShadow = '2px 2px 3px #000000';
+        menuTitle.style.top = '-04px';   
+        menuTitle.style.position = 'relative';
+        menuTitle.style.marginTop = '-04px'; 
+        menuTitle.style.marginBottom = '-04px'; 
+        menuTitle.style.lineHeight = '0.7';
+        // menuTitle.style.backgroundColor = 'rgba(219, 208, 208, 0.5)'; 
+        menuTitle.style.padding = '2px';            
+        menuTitle.style.borderRadius = '1px';    
+        menuTitle.style.display = 'block';     
+        menuTitle.style.fontSize = '24px';
+        // menuTitle.style.outline = '1px solid #0F0E0C';
+        popOutMenu.appendChild(menuTitle);
+        */
+
+        let img = document.createElement('img');
+        img.src = 'https://itsastronomical.com/assets/2024/brandonsite.png';
+        img.style.height = '40px';
+        popOutMenu.appendChild(img);
+        
+        const ov = document.createElement('h2');
+        ov.innerText = 'Biden/Harris Campaign Data';
+        ov.style.textAlign = 'center';
+        ov.style.position = 'relative';
+        ov.style.marginTop = '-4px'; 
+        ov.style.lineHeight = '0.7';
+            ov.style.fontFamily = 'Times New Roman';
+            ov.style.color = '#0a2458';
+        // ov.style.backgroundColor = 'rgba(219, 208, 208, 0.5)'; 
+        ov.style.padding = '12px';            
+        ov.style.borderRadius = '1px';       
+        ov.style.fontSize = '24px';
+        ov.style.display = 'block';    
+        // ov.style.outline = '1px solid #0F0E0C';
+        popOutMenu.appendChild(ov);
+
+        //<b><span style="color: #D9321E;">
+        var overviewtxt  = ""
+
+        overviewtxt += 'Your credibility heading into the election is ' + CScore + '.<br><br>';
+        
+        overviewtxt += 'Your reputation with the Conservative government is ' + CRpScore + '.<br><br>';
+
+        overviewtxt += 'Our Victories with the country number as ' + Wins + '.<br><br>';
+
+        if (SnapElection == true) {
+        overviewtxt += 'Kamala Harris’ loyalty to President Biden is <u><b>' + loyaltyText + '</b></u> (<b>' + loyalty + '</b>)<br><br>';
+        }
+
+        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="435">';        
+
+        const ovsubtxt = document.createElement('h3');
+        ovsubtxt.innerHTML = overviewtxt;
+        ovsubtxt.style.textAlign = 'center';
+        ovsubtxt.style.top = '-04px';
+        ovsubtxt.style.fontSize = '16px';   
+        ovsubtxt.style.fontFamily = 'Times New Roman';
+        ovsubtxt.style.position = 'relative';
+        ovsubtxt.style.marginTop = '-04px'; 
+        ovsubtxt.style.lineHeight = '1.1';
+        //ovsubtxt.style.textShadow = '2px 2px 3px rgba(58, 58, 58, 0.85)';
+        ovsubtxt.style.padding = '2px';            
+        ovsubtxt.style.borderRadius = '1px';    
+        ovsubtxt.style.display = 'block';    
+        ovsubtxt.style.marginTop = '-8px';
+        ovsubtxt.style.textAlign = 'left';      
+        ovsubtxt.style.paddingLeft = '10px';
+        ovsubtxt.style.listStyleType = 'disc'; 
+        ovsubtxt.style.backgroundColor = '#FAFBFC';
+        popOutMenu.appendChild(ovsubtxt);
+
+        const menuListA = document.createElement('ul');
+        menuListA.style.listStyle = 'none';
+        menuListA.style.position = "absolute";
+        menuListA.style.top = "320px";  
+        menuListA.style.right = "2px"; 
+        menuListA.style.padding = '0';
+        menuListA.style.maxHeight = '199px'; 
+        menuListA.style.overflowY = 'auto'; 
+
+        // Add menu items from the array
+        menuItemsA.forEach(item => {
+            const menuItem = document.createElement('div');
+            menuItem.style.display = 'flex';
+            menuItem.style.alignItems = 'flex-start';
+            if (item.id == "HALEY_fake") { // fake candidate
+                menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/fakeheader.png")';
+            } else if (item.id == "VIVEK_fake" || item.id == "RFK_haley" || item.id == "OLIVER_third" || item.id == "YANG_third" || item.id == "JOE_third" || item.id == "RFK_third" || item.id == "STEIN_third" || item.id == "WEST_third" || item.id == "CHRISTIE_third") { // third party
+                menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/thirdpartyheader.png")';
+            } else {
+                menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/opponentbg.png")';
+            }
+            menuItem.style.marginBottom = '1px';
+            menuItem.style.width = '438px';
+            menuItem.style.height = '90px';
+            menuItem.style.backgroundColor = 'rgba(255, 255, 255)'; 
+
+            const photo = document.createElement('img');
+            photo.src = item.photo;
+            photo.style.border = "1px solid #000000"; 
+            photo.style.padding = "1px"; 
+            photo.style.height = '85px';
+            photo.style.marginRight = '10px';
+
+            const textAndButton = document.createElement('div');
+
+            const name = document.createElement('p');
+            name.style.fontSize = "15px"; 
+            name.style.color = "#ffffffff"; 
+            name.innerHTML = item.name; 
+            name.style.fontFamily = 'Times New Roman'; 
+            name.style.textRendering = "optimizeSpeed"; 
+            name.style.webkitFontSmoothing = "none"; 
+            name.style.mozOsxFontSmoothing = "none"; 
+            name.style.fontWeight = "450"; 
+            name.style.position = "absolute";  
+            name.style.marginLeft = "4px";    
+            name.style.marginTop = "5px";    
+            textAndButton.appendChild(name);
+
+            const text = document.createElement('p');
+            text.style.fontSize = "11px"; 
+            text.innerHTML = item.text; 
+            text.style.fontFamily = 'Times New Roman';
+            text.style.textRendering = "optimizeSpeed"; 
+            text.style.webkitFontSmoothing = "none"; 
+            text.style.mozOsxFontSmoothing = "none"; 
+            text.style.fontWeight = "450"; 
+            text.style.position = "absolute"; 
+            text.style.marginLeft = "-7px";    
+            text.style.marginTop = "29px";    
+
+            textAndButton.appendChild(text);
+            menuItem.appendChild(photo);
+            menuItem.appendChild(textAndButton);
+
+            menuListA.appendChild(menuItem);
+        });
+        popOutMenu.appendChild(menuListA);
+
+        /*
+        let footer = document.createElement('img');
+        footer.src = 'https://itsastronomical.com/assets/2024/dembanner.png';
+        footer.style.height = '80px';
+        popOutMenu.appendChild(footer);
+        */
+        let br = document.createElement('br');        
+        popOutMenu.appendChild(br);
+        popOutMenu.appendChild(br);
+
+
+        const closeButton = document.createElement('button');
+        closeButton.innerText = 'Close';
+        closeButton.style.position = 'absolute';
+        closeButton.style.right = '16px';
+        closeButton.style.bottom = '16px';
+        closeButton.onclick = closeSurrogates;
+        popOutMenu.appendChild(closeButton);
+
+        document.body.appendChild(popOutMenu);
+
+        makeDraggable(popOutMenu);
+    } 
+
+    if (savedX !== null && savedY !== null) {
+        popOutMenu.style.left = savedX + 'px';
+        popOutMenu.style.top = savedY + 'px';
+    }
+    else {
+        const buttonRect = event.target.getBoundingClientRect();
+        popOutMenu.style.left = buttonRect.right + 353 + 'px'; // Offset X
+        popOutMenu.style.top = buttonRect.top - 292 + 'px'; // Offset Y
+        savedX = popOutMenu.getBoundingClientRect().left;
+        savedY = popOutMenu.getBoundingClientRect().top;
+    }
+
+    // Display the menu
+    popOutMenu.style.display = 'block';
+}
+
+function closeSurrogates() {
+    const popOutMenu = document.getElementById('popOutMenu');
+    if (popOutMenu) {
+        savedX = popOutMenu.getBoundingClientRect().left;
+        savedY = popOutMenu.getBoundingClientRect().top;
+
+        popOutMenu.remove();
+    }
+}
+
+function refreshSurrogates() {
+    const popOutMenu = document.getElementById('popOutMenu');
+    if (popOutMenu) {
+        popOutMenu.remove();
+        openSurrogates();
+    }
+
+}
+
+
+function makeDraggable(element) {
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    element.onmousedown = function(event) {
+        isDragging = true;
+        offsetX = event.clientX - element.getBoundingClientRect().left;
+        offsetY = event.clientY - element.getBoundingClientRect().top;
+
+        document.onmousemove = function(event) {
+            if (isDragging) {
+                const newX = event.clientX - offsetX;
+                const newY = event.clientY - offsetY;
+
+                // Update the position of the element
+                element.style.left = newX + 'px';
+                element.style.top = newY + 'px';
+
+                // Save the position in global variables
+                savedX = newX;
+                savedY = newY;
+            }
+        };
+
+        document.onmouseup = function() {
+            isDragging = false;
+            document.onmousemove = null;
+            document.onmouseup = null;
+        };
+    };
+}
+
+const windowCheck = localStorage.getItem('astroWindow');
 
 function handleMutations(mutationsList, observer) {
     if (observerRunning) return;
     observerRunning = true;
 
-    addHeadquarterButton()
+    
+    if (windowCheck == "true"){
+        addWindowButton();
+    }
+    else {
+        addHeadquarterButton();
+    }
+    addHQButton();
 
     observer.observe(document.documentElement, { childList: true, subtree: true });
     observerRunning = false;
 }
+
+const electionObserver = new MutationObserver((mutations, electionObserverInstance) => {
+    for (let mutation of mutations) {
+        if (mutation.type === "childList") {
+            const electionElement = document.getElementById("election_night_buttons");
+            if (electionElement) {
+                const electionPlaylist = new Playlist();
+                const electionSong = new Song(
+                    "Happy Survival",
+                    "Childish Gambino",
+                    "https://itsastronomical.com/assets/2024/bando.gif",
+                    "https://audio.jukehost.co.uk/KYHOjg3S1P8gsvKo3FQsDBn5PXJwFRNR"
+                );
+                electionPlaylist.addSong(electionSong);
+                changePlaylist(electionPlaylist);
+                electionObserverInstance.disconnect(); 
+                break;
+            }
+        }
+    }
+});
+
+electionObserver.observe(document.body, { childList: true, subtree: true });
+
+let observerRunning = false;
+
+var element = document.getElementById('controlElement');
+if (!element) {
+    let singleObserver = new MutationObserver(handleMutations);
+    singleObserver.observe(document.documentElement, { childList: true, subtree: true });
+    var controlElement = document.createElement('div');
+    controlElement.style.display = 'none';
+    controlElement.id = 'controlElement';
+    document.body.appendChild(controlElement);
+}
+
+// hqDiv.style.height = '54%'; 
+// hqDiv.style.height = '55%';
