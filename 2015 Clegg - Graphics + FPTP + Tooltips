@@ -181,6 +181,17 @@ style.textContent = `
 document.head.append(style);
 
 
+const style = document.createElement('style');
+style.textContent = `
+#map_container {
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-image: url("https://imgur.com/s7Xkgf0.jpg");
+}
+`;
+document.head.append(style);
+
+
 function adjustFeedbackBox(width, height) {
     let styles = `
     .overlay_window {
@@ -2212,7 +2223,7 @@ function openSurrogates() {
         overviewtxt += 'Kamala Harris’ loyalty to President Biden is <u><b>' + loyaltyText + '</b></u> (<b>' + loyalty + '</b>)<br><br>';
         }
 
-        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="435">';        
+        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="250">';        
 
         const ovsubtxt = document.createElement('h3');
         ovsubtxt.innerHTML = overviewtxt;
