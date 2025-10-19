@@ -2,6 +2,9 @@ var Cred = 2;
 var ConRep = 2;
 var PolCap = 0;
 var Wins = 0;
+var altprimary = false;
+var SnapElection = false;
+
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
     if (ans == 21687 || ans == 21706){
