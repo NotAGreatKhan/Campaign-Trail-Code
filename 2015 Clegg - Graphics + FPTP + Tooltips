@@ -1195,19 +1195,19 @@ e = campaignTrail_temp;
 campaignTrail_temp.advisors = [
     {
         pk: 50000,
-        role: "Prime Minister",   
+        role: "Speaker of the House of Representatives",   
     },
     {
         pk: 50001,
-        role: "Labour Leader",
+        role: "Leading Republican Opponent",
     },
     {
         pk: 50002,
-        role: "Lib Dem Factionalism",
+        role: "Factional Opposition",
     },
     {
         pk: 50003,
-        role: "Our Government Influence",
+        role: "United States Attorney General",
     }
 ];
 
@@ -1315,13 +1315,13 @@ function updateLeadingRepublicanOpponent() {
 campaignTrail_temp.advice = [
     {
         advisor_pk: 50000,
-        name: "David Cameron",
+        name: "Nancy Pelosi",
         picture: "https://itsastronomical.com/assets/2024/opp/pelosi.png",
         advice: "Tormented Trump for two years. Eager to shepherd your agenda."
     },
     {
         advisor_pk: 50001,
-        name: "Gordon Brown",
+        name: "Donald Trump",
         picture: "https://itsastronomical.com/assets/2024/trump.png",
         advice: "Runner-up in 2020, though he's too egoistical to ever admit that."
     },
@@ -1333,7 +1333,7 @@ campaignTrail_temp.advice = [
     },
     {
         advisor_pk: 50003,
-        name: "None As Of Yet",
+        name: "Jeffery A. Rosen",
         picture: "https://itsastronomical.com/assets/2024/opp/rosen.png",
         advice: "Trump's Executive Government remains a revolving door."
     }
@@ -1370,7 +1370,7 @@ function addHQButton() {
 
     newButton.style.marginLeft = '1.5em';
 
-    newButton.innerHTML = 'State of the Union ⚖️';
+    newButton.innerHTML = 'The Parliament';
 
     // Attach the click event listener
     newButton.addEventListener('click', openHQ);
@@ -1400,10 +1400,10 @@ function openHQ() {
       let hqDiv = document.createElement('div');
       hqDiv.id = 'headquarter';
       hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
-      hqDiv.style.color = 'white';
+      hqDiv.style.color = 'black';
       // hqDiv.style.backgroundColor = '#383838';
-      hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/2024/potusoffice.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
-      hqDiv.style.border = '5px solid white';
+      hqDiv.style.backgroundImage = 'url(https://imgur.com/swUf4Yu.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+      hqDiv.style.border = '5px solid black';
       hqDiv.style.borderRadius = '10px';
       hqDiv.style.height = '53%';
       hqDiv.style.flexDirection = 'column';
@@ -1433,7 +1433,7 @@ function openHQ() {
   
       // Create h3 element for the header
       let headerText = document.createElement('h2');
-      headerText.textContent = 'State of the Union';
+      headerText.textContent = 'The Parliament';
       headerText.style.textAlign = 'center';  // Center the text
       headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
       headerDiv.appendChild(headerText);
@@ -1459,10 +1459,10 @@ function openHQ() {
       hqDiv.appendChild(columnsDiv);
   
       var roles = [
-          { role: 'Prime Minister', pk: 50000 },
-          { role: 'Labour Leader', pk: 50001 },
-          { role: 'Lib Dem Factionalism', pk: 50002 },
-          { role: 'Our Government Influence', pk: 50003 }
+          { role: 'Speaker of the House', pk: 50000 },
+          { role: 'Leading Republican Opponent', pk: 50001 },
+          { role: 'Factional Opposition', pk: 50002 },
+          { role: 'United States Attorney General', pk: 50003 }
       ];
   
       for (let i = 0; i < roles.length; i++) {
@@ -1485,7 +1485,7 @@ function openHQ() {
           img.src = advice.picture;
           img.style.height = '100%';
           img.style.marginRight = '1em';
-          img.style.border = '1px solid white';  // Add thin white border to the image
+          img.style.border = '1px solid black';  // Add thin white border to the image
   
           // Description
           let descriptionDiv = document.createElement('div');
@@ -1690,51 +1690,40 @@ function openHeadquarter() {
     }
 
     // Create and set up the headquarters div
-    let hqDiv = document.createElement("div");
-    hqDiv.id = "headquarter";
-    hqDiv.style.display = "flex"; // Set layout to flex to allow columns
-    hqDiv.style.color = "white";
-    hqDiv.style.backgroundColor = "#383838";
-    hqDiv.style.backgroundImage = "url(https://imgur.com/swUf4Yu.jpg)"; 
-    hqDiv.style.border = "5px solid black";
-    hqDiv.style.borderRadius = "10px";
-    hqDiv.style.height = "56%";
-    hqDiv.style.flexDirection = "column";
-    hqDiv.style.alignItems = "center";
+    let hqDiv = document.createElement('div');
+    hqDiv.id = 'headquarter';
+    hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
+    hqDiv.style.color = 'white';
+    hqDiv.style.backgroundColor = '#383838';
+    hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/2024/potusoffice.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+    hqDiv.style.border = '5px solid black';
+    hqDiv.style.borderRadius = '10px';
+    hqDiv.style.height = '53%';
+    hqDiv.style.flexDirection = 'column';
+    hqDiv.style.alignItems = 'center';
+    hqDiv.style.position = 'relative';  
+
 
     // Create header div
-    let headerDiv = document.createElement("div");
-    headerDiv.style.display = "flex";
-    headerDiv.style.justifyContent = "space-between";
-    headerDiv.style.width = "100%";
-    headerDiv.style.alignItems = "center";
+    let headerDiv = document.createElement('div');
+    headerDiv.style.display = 'flex';
+    headerDiv.style.justifyContent = 'space-between';
+    headerDiv.style.width = '100%';
+    headerDiv.style.alignItems = 'center';
 
-    // Add back button to the header
-    let backButton = document.createElement("button");
-    backButton.innerText = "Back";
-    backButton.style.margin = "5px";
-    backButton.style.backgroundColor = "grey";
-    backButton.onclick = function() {
-        // Hide headquarters and show the original content
-        hqDiv.remove();
-        questions.style.display = "";
-    }
-    headerDiv.appendChild(backButton);
-
-    let headerText = document.createElement("h3");
-    headerText.textContent = "Chief of Staff – Danny Alexander";
-    headerText.style.textAlign = "center";  // Center the text
-    headerText.style.flexGrow = "1";  // Make h3 take up the maximum space available
-    headerText.style.color = "black";
+    let headerText = document.createElement('h2');
+    headerText.innerHTML  = 'Chief of Staff - Campaign Data';
+    headerText.style.textAlign = 'center';  // Center the text
+    headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
     headerDiv.appendChild(headerText);
 
     // Append headerDiv to the main hqDiv
     hqDiv.appendChild(headerDiv);
 
     // Create a container div for both columns
-    let columnsDiv = document.createElement("div");
-    columnsDiv.style.display = "flex";
-    columnsDiv.style.width = "100%";
+    let columnsDiv = document.createElement('div');
+    columnsDiv.style.display = 'flex';
+    columnsDiv.style.width = '100%';
 
     // Create inner divs for columns
     let leftCol = document.createElement('div');
@@ -1753,27 +1742,27 @@ function openHeadquarter() {
     // This is the bulk of the content you can edit. You can add more text or images here.
 
     // Create Bulk of the Text
-    // Duplicate this section to add more lines of text. Make sure to change the variable name "a" to something else. In this case, I changed it to "b".
-    
-   let a = document.createElement("p");
-    a.innerHTML = 'Your credibility heading into the election is ' + CScore + '.';
-    // a.style.flexGrow = "0.1";  // Make h3 take up the maximum space available
-    a.style.color = "black"; // Can be used to change the color of the text
-    a.style.margin = "8px"; // Can be used to change the space in between the text. Useful if you have a lot of functions.
+
+    let a = document.createElement('p');
+    a.innerHTML  = 'Your credibility heading into the election is ' + CScore + '.'; 
+    // a.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    a.style.color = 'black'; // Can be used to change the color of the text
+    a.style.margin = '5px'; // Can be used to change the space in between the text. Useful if you have a lot of functions.
+    // a.style.fontSize  = '15px'; 
     hqDiv.appendChild(a);
 
-    let b = document.createElement("p");
-    b.innerHTML = 'Your reputation with the Conservative government is ' + CRpScore + '.';
-    // b.style.flexGrow = "0.1";
-    b.style.color = "black";
-    b.style.margin = "8px";
+    let b = document.createElement('p');
+    b.innerHTML  = 'Your reputation with the Conservative government is ' + CRpScore + '.';
+    // b.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    b.style.color = 'black';
+    b.style.margin = '5px';
     hqDiv.appendChild(b);
 
-    let c = document.createElement("c");
-    c.innerHTML = 'Our Victories with the country number as ' + Wins + '.';
-    // c.style.flexGrow = "0.1";
-    c.style.color = "black";
-    c.style.margin = "8px";
+    let c = document.createElement('p');
+    c.innerHTML  = 'Our Victories with the country number as ' + Wins + '.';
+    // c.style.flexGrow = '0.1';  // Make h3 take up the maximum space available
+    c.style.color = 'black';
+    c.style.margin = '5px';
     hqDiv.appendChild(c);
 
     if (SnapElection == true) {
@@ -1786,12 +1775,12 @@ function openHeadquarter() {
     }
 
     // Image
-    let img = document.createElement("img");
-    img.src = "https://imgur.com/TfpSe4M.jpg";
-    img.style.height = "50%";
-    img.style.marginLeft = "1em";
-    img.style.flexGrow = "0.1";
-    img.style.border = "3px solid black";  // Add thin white border to the image
+    let img = document.createElement('img');
+    img.src = 'https://imgur.com/TfpSe4M.jpg';
+    img.style.height = '30%';
+    img.style.marginLeft = '1em';
+    img.style.flexGrow = '0.1';
+    img.style.border = '3px solid black';  // Add thin white border to the image
     hqDiv.appendChild(img);
 
     // Add back button to the header
@@ -1905,9 +1894,6 @@ let westCard = { photo: 'https://itsastronomical.com/assets/2024/square/west.png
 function openSurrogates() {
     let questions = document.querySelector(".inner_window_question");
     varText();
-
-    var CScore = 2;
-    var CRpScore = 2;
 
     if (Cred == -7) {
         CScore = "<font color='#ad1313;'><b>utterly destroyed</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
@@ -2079,7 +2065,7 @@ function openSurrogates() {
         ov.style.position = 'relative';
         ov.style.marginTop = '-4px'; 
         ov.style.lineHeight = '0.7';
-            ov.style.fontFamily = '"Mercury", Times New Roman';
+            ov.style.fontFamily = 'Times New Roman';
             ov.style.color = '#0a2458';
         // ov.style.backgroundColor = 'rgba(219, 208, 208, 0.5)'; 
         ov.style.padding = '12px';            
@@ -2162,7 +2148,7 @@ function openSurrogates() {
             name.style.fontSize = "15px"; 
             name.style.color = "#ffffffff"; 
             name.innerHTML = item.name; 
-            name.style.fontFamily = '"Decimal", Times New Roman'; 
+            name.style.fontFamily = 'Times New Roman'; 
             name.style.textRendering = "optimizeSpeed"; 
             name.style.webkitFontSmoothing = "none"; 
             name.style.mozOsxFontSmoothing = "none"; 
@@ -2175,7 +2161,7 @@ function openSurrogates() {
             const text = document.createElement('p');
             text.style.fontSize = "11px"; 
             text.innerHTML = item.text; 
-            text.style.fontFamily = '"Decimal-Semibold", Times New Roman';
+            text.style.fontFamily = 'Times New Roman';
             text.style.textRendering = "optimizeSpeed"; 
             text.style.webkitFontSmoothing = "none"; 
             text.style.mozOsxFontSmoothing = "none"; 
