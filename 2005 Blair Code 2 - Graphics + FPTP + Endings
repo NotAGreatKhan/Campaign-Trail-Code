@@ -1364,49 +1364,49 @@ e = campaignTrail_temp;
 
 campaignTrail_temp.advisors = [
     {
-        pk: 5000,
+        pk: 50000,
         role: "Speaker of the House of Representatives",   
     },
     {
-        pk: 5001,
+        pk: 50001,
         role: "Leading Republican Opponent",
     },
     {
-        pk: 5002,
+        pk: 50002,
         role: "Factional Opposition",
     },
     {
-        pk: 5003,
+        pk: 50003,
         role: "United States Attorney General",
     }
 ];
 
-// updateAdvisor(5000, "Vacant", "https://itsastronomical.com/assets/2024/opp/vacant.png", "NOW: MCCARTHY APPEARS TO SUFFER DEFEAT ON FIRST SPEAKER BALLOT");
-// updateAdvisor(5000, "Kevin McCarthy", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "Has yearned for decades for this position. Is it worth it?");
-// updateAdvisor(5000, "Brian Fitzpatrick", "https://itsastronomical.com/assets/2024/opp/fitz.png", "How did this sucker get here? Who knows. He won't be around long, however.");
-// updateAdvisor(5000, "Mike Johnson", "https://itsastronomical.com/assets/2024/opp/johnson.png", "They call him the Origami Speaker. He folds nonstop for the right wing — and for you.");
-// updateAdvisor(5000, "Tom Emmer", "https://itsastronomical.com/assets/2024/opp/emmer.png", "For what it's worth, Trump denounced his bid for the position from the get-go.");
-// updateAdvisor(5000, "Patrick McHenry", "https://itsastronomical.com/assets/2024/opp/mchenry.png", "The Speaker <i>Pro Tempore</i> is no longer here just ''for the time being.''");
-// updateAdvisor(5000, "Hakeem Jeffries", "https://itsastronomical.com/assets/2024/opp/jeffries.png", "Working on major, bipartisan reform to the House so they can supply Ukraine and Israel with more ammunition.");
+// updateAdvisor(50000, "Vacant", "https://itsastronomical.com/assets/2024/opp/vacant.png", "NOW: MCCARTHY APPEARS TO SUFFER DEFEAT ON FIRST SPEAKER BALLOT");
+// updateAdvisor(50000, "Kevin McCarthy", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "Has yearned for decades for this position. Is it worth it?");
+// updateAdvisor(50000, "Brian Fitzpatrick", "https://itsastronomical.com/assets/2024/opp/fitz.png", "How did this sucker get here? Who knows. He won't be around long, however.");
+// updateAdvisor(50000, "Mike Johnson", "https://itsastronomical.com/assets/2024/opp/johnson.png", "They call him the Origami Speaker. He folds nonstop for the right wing — and for you.");
+// updateAdvisor(50000, "Tom Emmer", "https://itsastronomical.com/assets/2024/opp/emmer.png", "For what it's worth, Trump denounced his bid for the position from the get-go.");
+// updateAdvisor(50000, "Patrick McHenry", "https://itsastronomical.com/assets/2024/opp/mchenry.png", "The Speaker <i>Pro Tempore</i> is no longer here just ''for the time being.''");
+// updateAdvisor(50000, "Hakeem Jeffries", "https://itsastronomical.com/assets/2024/opp/jeffries.png", "Working on major, bipartisan reform to the House so they can supply Ukraine and Israel with more ammunition.");
 
-// updateAdvisor(5001, "Donald Trump Jr.", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
-// updateAdvisor(5001, "Nikki Haley", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
-// updateAdvisor(5001, "Ron DeSantis", "https://itsastronomical.com/assets/2024/opp/desantis.png", "Governor of Florida. Fighting wokeism, one book burning at a time.");
-// updateAdvisor(5001, "JD Vance", "https://itsastronomical.com/assets/2024/opp/vance.png", "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.");
-// updateAdvisor(5001, "Doug Burgum", "https://itsastronomical.com/assets/2024/opp/burgum.png", "How he managed to get here remains a mystery. Even he's amazed by it.");
-// updateAdvisor(5001, "P01135809", "https://itsastronomical.com/assets/2024/opp/trumpjail.png", "Donald J. Trump, 45th President of the United States. Hopes to break the glass ceiling and become the first convicted felon elected President.");
-// updateAdvisor(5001, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.");
-// updateAdvisor(5001, "Grok", "https://itsastronomical.com/assets/2024/opp/grok.png", "Trained on Truth Social posts and Fox News transcripts. Believes it's the real Trump — and honestly, it may as well be.");
+// updateAdvisor(50001, "Donald Trump Jr.", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
+// updateAdvisor(50001, "Nikki Haley", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
+// updateAdvisor(50001, "Ron DeSantis", "https://itsastronomical.com/assets/2024/opp/desantis.png", "Governor of Florida. Fighting wokeism, one book burning at a time.");
+// updateAdvisor(50001, "JD Vance", "https://itsastronomical.com/assets/2024/opp/vance.png", "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.");
+// updateAdvisor(50001, "Doug Burgum", "https://itsastronomical.com/assets/2024/opp/burgum.png", "How he managed to get here remains a mystery. Even he's amazed by it.");
+// updateAdvisor(50001, "P01135809", "https://itsastronomical.com/assets/2024/opp/trumpjail.png", "Donald J. Trump, 45th President of the United States. Hopes to break the glass ceiling and become the first convicted felon elected President.");
+// updateAdvisor(50001, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.");
+// updateAdvisor(50001, "Grok", "https://itsastronomical.com/assets/2024/opp/grok.png", "Trained on Truth Social posts and Fox News transcripts. Believes it's the real Trump — and honestly, it may as well be.");
 
-// updateAdvisor(5002, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "Him running is as annoying as his voice. As scandalous as one would expect from a Kennedy.");
-// updateAdvisor(5002, "Jill Stein", "https://itsastronomical.com/assets/2024/opp/stein.png", "Greatest ally of the left, Vladimir Putin, and the Republican National Convention.");
-// updateAdvisor(5002, "Dean Phillips", "https://itsastronomical.com/assets/2024/opp/phillips.png", "Also known as Dean Quixote. Some people have too much money.");
-// updateAdvisor(5002, "Panic", "https://itsastronomical.com/assets/2024/opp/panic.png", "Perhaps America as a whole has the morals of an Alley Cat.");
-// updateAdvisor(5002, "Unburdened", "https://itsastronomical.com/assets/2024/opp/unburdened.png", "It's time to imagine what can be, unburdened by what has been.");
+// updateAdvisor(50002, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "Him running is as annoying as his voice. As scandalous as one would expect from a Kennedy.");
+// updateAdvisor(50002, "Jill Stein", "https://itsastronomical.com/assets/2024/opp/stein.png", "Greatest ally of the left, Vladimir Putin, and the Republican National Convention.");
+// updateAdvisor(50002, "Dean Phillips", "https://itsastronomical.com/assets/2024/opp/phillips.png", "Also known as Dean Quixote. Some people have too much money.");
+// updateAdvisor(50002, "Panic", "https://itsastronomical.com/assets/2024/opp/panic.png", "Perhaps America as a whole has the morals of an Alley Cat.");
+// updateAdvisor(50002, "Unburdened", "https://itsastronomical.com/assets/2024/opp/unburdened.png", "It's time to imagine what can be, unburdened by what has been.");
 
-// updateAdvisor(5003, "Merrick Garland", "https://itsastronomical.com/assets/2024/opp/garland.png", "Finally given his due. Let's hope he can make this one count.");
-// updateAdvisor(5003, "Doug Jones", "https://itsastronomical.com/assets/2024/opp/jones.png", "Singlehandedly keeping the mean IQ of Alabama above 80, which isn’t an easy task.");
-// updateAdvisor(5003, "Deval Patrick", "https://itsastronomical.com/assets/2024/opp/patrick.png", "Obama. Obama. Obama. It's crazy how far a single name can get you in politics.");
+// updateAdvisor(50003, "Merrick Garland", "https://itsastronomical.com/assets/2024/opp/garland.png", "Finally given his due. Let's hope he can make this one count.");
+// updateAdvisor(50003, "Doug Jones", "https://itsastronomical.com/assets/2024/opp/jones.png", "Singlehandedly keeping the mean IQ of Alabama above 80, which isn’t an easy task.");
+// updateAdvisor(50003, "Deval Patrick", "https://itsastronomical.com/assets/2024/opp/patrick.png", "Obama. Obama. Obama. It's crazy how far a single name can get you in politics.");
 
 // Define possible opponents and their conditions
 const opponents = [
@@ -1484,25 +1484,25 @@ function updateLeadingRepublicanOpponent() {
 
 campaignTrail_temp.advice = [
     {
-        advisor_pk: 5000,
+        advisor_pk: 50000,
         name: "Nancy Pelosi",
         picture: "https://itsastronomical.com/assets/2024/opp/pelosi.png",
         advice: "Tormented Trump for two years. Eager to shepherd your agenda."
     },
     {
-        advisor_pk: 5001,
+        advisor_pk: 50001,
         name: "Donald Trump",
         picture: "https://itsastronomical.com/assets/2024/trump.png",
         advice: "Runner-up in 2020, though he's too egoistical to ever admit that."
     },
     {
-        advisor_pk: 5002,
+        advisor_pk: 50002,
         name: "Virtually None",
         picture: "https://itsastronomical.com/assets/2024/opp/unity.png",
         advice: "Keep this up, and who knows what is possible? Keep in mind a coalition can fall apart easily..."
     },
     {
-        advisor_pk: 5003,
+        advisor_pk: 50003,
         name: "Jeffery A. Rosen",
         picture: "https://itsastronomical.com/assets/2024/opp/rosen.png",
         advice: "Trump's Executive Government remains a revolving door."
@@ -1540,7 +1540,7 @@ function addHQButton() {
 
     newButton.style.marginLeft = '1.5em';
 
-    newButton.innerHTML = 'The Hostiles';
+    newButton.innerHTML = 'The Parliament';
 
     // Attach the click event listener
     newButton.addEventListener('click', openHQ);
@@ -1570,10 +1570,10 @@ function openHQ() {
       let hqDiv = document.createElement('div');
       hqDiv.id = 'headquarter';
       hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
-      hqDiv.style.color = 'white';
+      hqDiv.style.color = 'black';
       // hqDiv.style.backgroundColor = '#383838';
-      hqDiv.style.backgroundImage = 'url(https://itsastronomical.com/assets/2024/potusoffice.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
-      hqDiv.style.border = '5px solid white';
+      hqDiv.style.backgroundImage = 'url(https://imgur.com/swUf4Yu.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+      hqDiv.style.border = '5px solid black';
       hqDiv.style.borderRadius = '10px';
       hqDiv.style.height = '53%';
       hqDiv.style.flexDirection = 'column';
@@ -1603,7 +1603,7 @@ function openHQ() {
   
       // Create h3 element for the header
       let headerText = document.createElement('h2');
-      headerText.textContent = 'State of the Union';
+      headerText.textContent = 'The Parliament';
       headerText.style.textAlign = 'center';  // Center the text
       headerText.style.flexGrow = '1';  // Make h3 take up the maximum space available
       headerDiv.appendChild(headerText);
@@ -1629,10 +1629,10 @@ function openHQ() {
       hqDiv.appendChild(columnsDiv);
   
       var roles = [
-          { role: 'Speaker of the House', pk: 5000 },
-          { role: 'Leading Republican Opponent', pk: 5001 },
-          { role: 'Factional Opposition', pk: 5002 },
-          { role: 'United States Attorney General', pk: 5003 }
+          { role: 'Speaker of the House', pk: 50000 },
+          { role: 'Leading Republican Opponent', pk: 50001 },
+          { role: 'Factional Opposition', pk: 50002 },
+          { role: 'United States Attorney General', pk: 50003 }
       ];
   
       for (let i = 0; i < roles.length; i++) {
@@ -1655,7 +1655,7 @@ function openHQ() {
           img.src = advice.picture;
           img.style.height = '100%';
           img.style.marginRight = '1em';
-          img.style.border = '1px solid white';  // Add thin white border to the image
+          img.style.border = '1px solid black';  // Add thin white border to the image
   
           // Description
           let descriptionDiv = document.createElement('div');
@@ -1694,7 +1694,9 @@ function openHQ() {
 
 
 
-// Stuff for Floating HQ
+
+// Variable HQ
+
 function createSimplePopup() {
     const popup = document.createElement("div");
     popup.id = "simplePopup";
@@ -1914,78 +1916,17 @@ createSimplePopup();
 observeGameStats();
 
 
-
-function closeSurrogates() {
-    const popOutMenu = document.getElementById('popOutMenu');
-    if (popOutMenu) {
-        savedX = popOutMenu.getBoundingClientRect().left;
-        savedY = popOutMenu.getBoundingClientRect().top;
-
-        popOutMenu.remove();
-    }
-}
-
-function refreshSurrogates() {
-    const popOutMenu = document.getElementById('popOutMenu');
-    if (popOutMenu) {
-        popOutMenu.remove();
-        openSurrogates();
-    }
-
-}
-
-
-function makeDraggable(element) {
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    element.onmousedown = function(event) {
-        isDragging = true;
-        offsetX = event.clientX - element.getBoundingClientRect().left;
-        offsetY = event.clientY - element.getBoundingClientRect().top;
-
-        document.onmousemove = function(event) {
-            if (isDragging) {
-                const newX = event.clientX - offsetX;
-                const newY = event.clientY - offsetY;
-
-                // Update the position of the element
-                element.style.left = newX + 'px';
-                element.style.top = newY + 'px';
-
-                // Save the position in global variables
-                savedX = newX;
-                savedY = newY;
-            }
-        };
-
-        document.onmouseup = function() {
-            isDragging = false;
-            document.onmousemove = null;
-            document.onmouseup = null;
-        };
-    };
-}
-
-const windowCheck = localStorage.getItem('astroWindow');
-
 function handleMutations(mutationsList, observer) {
     if (observerRunning) return;
     observerRunning = true;
 
+    addHeadquarterButton();
     
-    if (windowCheck == "true"){
-        addWindowButton();
-    }
-    else {
-        addHeadquarterButton();
-    }
     addHQButton();
 
     observer.observe(document.documentElement, { childList: true, subtree: true });
     observerRunning = false;
 }
-
 
 const electionObserver = new MutationObserver((mutations, electionObserverInstance) => {
     for (let mutation of mutations) {
