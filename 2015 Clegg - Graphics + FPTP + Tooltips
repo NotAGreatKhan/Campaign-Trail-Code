@@ -2190,12 +2190,12 @@ function openSurrogates() {
         */
 
         let img = document.createElement('img');
-        img.src = 'https://itsastronomical.com/assets/2024/brandonsite.png';
+        img.src = 'https://imgur.com/ADg3du9.png';
         img.style.height = '40px';
         popOutMenu.appendChild(img);
         
         const ov = document.createElement('h2');
-        ov.innerText = 'Biden/Harris Campaign Data';
+        ov.innerText = 'The Coalition Government';
         ov.style.textAlign = 'center';
         ov.style.position = 'relative';
         ov.style.marginTop = '-4px'; 
