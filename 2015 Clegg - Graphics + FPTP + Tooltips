@@ -1321,38 +1321,28 @@ e = campaignTrail_temp;
 campaignTrail_temp.advisors = [
     {
         pk: 50000,
-        role: "Speaker of the House of Representatives",   
+        role: "Prime Minister",   
     },
     {
         pk: 50001,
-        role: "Leading Republican Opponent",
+        role: "Opposition Leader",
     },
     {
         pk: 50002,
-        role: "Factional Opposition",
+        role: "Party Factionalism",
     },
     {
         pk: 50003,
-        role: "United States Attorney General",
+        role: "Cabinet Influence",
     }
 ];
 
-// updateAdvisor(50000, "Vacant", "https://itsastronomical.com/assets/2024/opp/vacant.png", "NOW: MCCARTHY APPEARS TO SUFFER DEFEAT ON FIRST SPEAKER BALLOT");
-// updateAdvisor(50000, "Kevin McCarthy", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "Has yearned for decades for this position. Is it worth it?");
-// updateAdvisor(50000, "Brian Fitzpatrick", "https://itsastronomical.com/assets/2024/opp/fitz.png", "How did this sucker get here? Who knows. He won't be around long, however.");
-// updateAdvisor(50000, "Mike Johnson", "https://itsastronomical.com/assets/2024/opp/johnson.png", "They call him the Origami Speaker. He folds nonstop for the right wing — and for you.");
-// updateAdvisor(50000, "Tom Emmer", "https://itsastronomical.com/assets/2024/opp/emmer.png", "For what it's worth, Trump denounced his bid for the position from the get-go.");
-// updateAdvisor(50000, "Patrick McHenry", "https://itsastronomical.com/assets/2024/opp/mchenry.png", "The Speaker <i>Pro Tempore</i> is no longer here just ''for the time being.''");
-// updateAdvisor(50000, "Hakeem Jeffries", "https://itsastronomical.com/assets/2024/opp/jeffries.png", "Working on major, bipartisan reform to the House so they can supply Ukraine and Israel with more ammunition.");
+// updateAdvisor(50000, "Gordon Brown", "https://itsastronomical.com/assets/2024/opp/vacant.png", "Finally has the job he wanted his whole life – and it is already slipping from his grasp.");
+// updateAdvisor(50000, "David Cameron", "https://itsastronomical.com/assets/2024/opp/vacant.png", "Promised and hyped as the heir to Blair. Instead stuck with the bloated corpse of corporate greed.");
+// updateAdvisor(50000, "George Osborne", "https://itsastronomical.com/assets/2024/opp/mccarthy.png", "The face of austerity has been parachuted in. But at this rate, he may last even shorter than Cameron.");
 
-// updateAdvisor(50001, "Donald Trump Jr.", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
-// updateAdvisor(50001, "Nikki Haley", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
-// updateAdvisor(50001, "Ron DeSantis", "https://itsastronomical.com/assets/2024/opp/desantis.png", "Governor of Florida. Fighting wokeism, one book burning at a time.");
-// updateAdvisor(50001, "JD Vance", "https://itsastronomical.com/assets/2024/opp/vance.png", "Sold his soul just for the chance to be here. Hopes he's making his meemaw proud.");
-// updateAdvisor(50001, "Doug Burgum", "https://itsastronomical.com/assets/2024/opp/burgum.png", "How he managed to get here remains a mystery. Even he's amazed by it.");
-// updateAdvisor(50001, "P01135809", "https://itsastronomical.com/assets/2024/opp/trumpjail.png", "Donald J. Trump, 45th President of the United States. Hopes to break the glass ceiling and become the first convicted felon elected President.");
-// updateAdvisor(50001, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "The GOP must have truly lost their way if they're running a fucking Kennedy - not only that, but possibly the worst one.");
-// updateAdvisor(50001, "Grok", "https://itsastronomical.com/assets/2024/opp/grok.png", "Trained on Truth Social posts and Fox News transcripts. Believes it's the real Trump — and honestly, it may as well be.");
+// updateAdvisor(50001, "Gordon Brown", "https://itsastronomical.com/assets/2024/opp/donjr.png", "Donald Trump's namesake. But not his first choice for Crown Prince.");
+// updateAdvisor(50001, "Ed Miliband", "https://itsastronomical.com/assets/2024/opp/haley.png", "Trump calls her 'Birdbrain'. Ignore the fact she was in his administration.");
 
 // updateAdvisor(50002, "Robert Kennedy Jr.", "https://itsastronomical.com/assets/2024/opp/rfk.png", "Him running is as annoying as his voice. As scandalous as one would expect from a Kennedy.");
 // updateAdvisor(50002, "Jill Stein", "https://itsastronomical.com/assets/2024/opp/stein.png", "Greatest ally of the left, Vladimir Putin, and the Republican National Convention.");
