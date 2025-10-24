@@ -252,7 +252,7 @@ e.candidate_json = [
             "description": "",
             "color_hex": "#3069a1",
             "secondary_color_hex": null,
-            "is_active": 0,
+            "is_active": 1,
             "image_url": "https://imgur.com/Q6b6Pga.jpg",
             "electoral_victory_message": "<h3>This guy wins!</h3>",
             "electoral_loss_message": "<h3>This guy loses!</h3>",
@@ -653,6 +653,59 @@ document.getElementById("header").src = "https://i.imgur.com/t2pdZDO.png";
 document.body.background = "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2010/4/19/1271694806936/Nick-Clegg-Obama-poster-001.jpg?width=445&dpr=1&s=none&crop=none";
 
 corrr = '\n              <h2>The Campaign Trail</h2>\n            ';
+
+
+
+const startScreenUpdater = setInterval(function() {
+      const goBackButton = document.getElementById("candidate_id_back");
+      const candidateButton = document.getElementById("candidate_id_button");
+      const runningMateButton = document.getElementById("running_mate_id_button");
+      const finalScreenBB = document.getElementById("opponent_selection_id_back");
+      const difficultySelect = document.getElementById("difficulty_level_id");
+      const finalScreenID = document.getElementById("opponent_selection_id_button");
+      const modeSelection = document.getElementById("opponent_selection_description_window");
+      const window = document.getElementById("inner_window_4");
+      const gamemode = document.getElementById("game_options");
+      const candbackb = document.getElementById("candidate_id_back");
+      var selectElement = document.getElementById('candidate_id');
+      var gamemodElem = document.getElementById('game_type_id');
+
+      if(!(localStorage.getItem("hasWon"))){
+        for (let i = selectElement.options.length - 1; i >= 0; i--) {
+          if (selectElement.options[i].value === '81') {
+              selectElement.remove(i);
+          }
+        }
+      }
+      
+      if(candidateButton || c != 0){ 
+          var c = document.getElementById("candidate_id")?.value ?? -1;          
+          var r = document.getElementById("running_mate_id")?.value ?? -1;
+          if(c == 201 && !(candidateButton) && !(runningMateButton)) {
+        	goBackButton.click();
+        	const initContinue = document.getElementById("election_id_button");
+        	initContinue.click();
+    	  }
+          
+          else if(c == 200) {
+        	if(candidateButton) {
+            	candidateButton.remove();
+        	}
+    	    }
+      }
+      if(finalScreenID) { // delete back button and delete the interval
+
+    	finalScreenBB.remove();
+    	clearInterval(startScreenUpdater);
+
+        const dropdown = document.getElementById("difficulty_level_id");
+
+        dropdown.addEventListener("input", () => {
+        e.difficultychosen = dropdown.value;
+        });
+	}
+}, 1);
+
 
 
 // Difficulty Window
