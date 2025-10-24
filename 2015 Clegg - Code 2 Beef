@@ -6045,6 +6045,17 @@ style.textContent = `
 document.head.append(style);
 
 
+const style = document.createElement('style');
+style.textContent = `
+#map_container {
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-image: url("https://imgur.com/s7Xkgf0.jpg");
+}
+`;
+document.head.append(style);
+
+
 function adjustFeedbackBox(width, height) {
     let styles = `
     .overlay_window {
@@ -8043,12 +8054,12 @@ function openSurrogates() {
         */
 
         let img = document.createElement('img');
-        img.src = 'https://itsastronomical.com/assets/2024/brandonsite.png';
+        img.src = 'https://imgur.com/ADg3du9.png';
         img.style.height = '40px';
         popOutMenu.appendChild(img);
         
         const ov = document.createElement('h2');
-        ov.innerText = 'Biden/Harris Campaign Data';
+        ov.innerText = 'The Coalition Government';
         ov.style.textAlign = 'center';
         ov.style.position = 'relative';
         ov.style.marginTop = '-4px'; 
@@ -8076,7 +8087,7 @@ function openSurrogates() {
         overviewtxt += 'Kamala Harris’ loyalty to President Biden is <u><b>' + loyaltyText + '</b></u> (<b>' + loyalty + '</b>)<br><br>';
         }
 
-        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="435">';        
+        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="250">';        
 
         const ovsubtxt = document.createElement('h3');
         ovsubtxt.innerHTML = overviewtxt;
@@ -8117,7 +8128,7 @@ function openSurrogates() {
             } else if (item.id == "VIVEK_fake" || item.id == "RFK_haley" || item.id == "OLIVER_third" || item.id == "YANG_third" || item.id == "JOE_third" || item.id == "RFK_third" || item.id == "STEIN_third" || item.id == "WEST_third" || item.id == "CHRISTIE_third") { // third party
                 menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/thirdpartyheader.png")';
             } else {
-                menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/opponentbg.png")';
+                menuItem.style.backgroundImage = 'url("https://imgur.com/sf7mlzf.png")';
             }
             menuItem.style.marginBottom = '1px';
             menuItem.style.width = '438px';
