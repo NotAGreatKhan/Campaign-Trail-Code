@@ -2264,7 +2264,7 @@ function openSurrogates() {
             } else if (item.id == "VIVEK_fake" || item.id == "RFK_haley" || item.id == "OLIVER_third" || item.id == "YANG_third" || item.id == "JOE_third" || item.id == "RFK_third" || item.id == "STEIN_third" || item.id == "WEST_third" || item.id == "CHRISTIE_third") { // third party
                 menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/thirdpartyheader.png")';
             } else {
-                menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/opponentbg.png")';
+                menuItem.style.backgroundImage = 'url("https://imgur.com/sf7mlzf.png")';
             }
             menuItem.style.marginBottom = '1px';
             menuItem.style.width = '438px';
