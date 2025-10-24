@@ -11,6 +11,8 @@ var Ken = 0;
 var Porty = 0;
 var iraq = 0;
 var CampaignSign = "PMBlair"
+var altprimary = false;
+var SnapElection = false;
 
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
 campaignTrail_temp.player_answers = [];
