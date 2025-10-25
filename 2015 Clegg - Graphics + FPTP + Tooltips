@@ -1516,10 +1516,10 @@ function openHQ() {
       let hqDiv = document.createElement('div');
       hqDiv.id = 'headquarter';
       hqDiv.style.display = 'flex'; // Set layout to flex to allow columns
-      hqDiv.style.color = 'black';
+      hqDiv.style.color = 'white';
       // hqDiv.style.backgroundColor = '#383838';
-      hqDiv.style.backgroundImage = 'url(https://imgur.com/swUf4Yu.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
-      hqDiv.style.border = '5px solid black';
+      hqDiv.style.backgroundImage = 'url(https://imgur.com/cAtf4ca.png)'; // Set background image. I would recommend using the same file size as the original image, ~959 x 327. Otherwise it will stretch the image. Comment or remove this line of text if you don't want a background image and instead want hqDiv.style.backgroundColor to set your background color
+      hqDiv.style.border = '3px solid black';
       hqDiv.style.borderRadius = '10px';
       hqDiv.style.height = '53%';
       hqDiv.style.flexDirection = 'column';
@@ -1601,7 +1601,7 @@ function openHQ() {
           img.src = advice.picture;
           img.style.height = '100%';
           img.style.marginRight = '1em';
-          img.style.border = '1px solid black';  // Add thin white border to the image
+          img.style.border = '1px solid white';  // Add thin white border to the image
   
           // Description
           let descriptionDiv = document.createElement('div');
