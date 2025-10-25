@@ -1736,6 +1736,9 @@ function openSurrogates() {
     let questions = document.querySelector(".inner_window_question");
     varText();
 
+    var CScore = 2;
+    var CRpScore = 2;
+
     if (Cred == -7) {
         CScore = "<font color='#ad1313;'><b>utterly destroyed</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
     }
