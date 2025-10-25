@@ -655,9 +655,11 @@ document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_st
 
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
 
+$("#game_window")[0].style.backgroundImage = "url(https://imgur.com/hGZkWUg.png)" 
+
 $(".container")[0].style.backgroundColor = "#925d02";
 
-document.getElementById("header").src = "https://i.imgur.com/t2pdZDO.png";
+document.getElementById("header").src = "https://imgur.com/Q1rKk6k.png";
 
 document.body.background = "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2010/4/19/1271694806936/Nick-Clegg-Obama-poster-001.jpg?width=445&dpr=1&s=none&crop=none";
 
