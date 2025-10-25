@@ -2,6 +2,8 @@ var Cred = 2;
 var ConRep = 2;
 var PolCap = 0;
 var Wins = 0;
+var CScore = '<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d58627;'><b>2</b></font>)';
+var CRpScore = '<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>2</b></font>)';
 var altprimary = false;
 var SnapElection = false;
 
