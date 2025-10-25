@@ -19,6 +19,10 @@ var SnapElection = false;
 
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+
+    refreshSurrogates()
+    varText();
+
     if (ans == 21687 || ans == 21706){
     campaignTrail_temp.candidate_json[3]["fields"].first_name = "Mr"
     campaignTrail_temp.candidate_json[3]["fields"].last_name = "Labour"
@@ -262,10 +266,14 @@ cyoAdventure = function (a) {
 
     if(Wins >= 6){
     campaignTrail_temp.questions_json[29] = tunnel(21898);
-  }
+    }
 
 
+
+    refreshSurrogates()
 }
+
+
 
 campaignTrail_temp.questions_json = [
     {
