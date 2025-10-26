@@ -657,7 +657,7 @@ $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selected
 
 $("#game_window")[0].style.backgroundImage = "url(https://imgur.com/hGZkWUg.png)" 
 
-$(".container")[0].style.backgroundColor = "#925d02";
+$(".container")[0].style.backgroundColor = "#555047";
 
 document.getElementById("header").src = "https://imgur.com/Q1rKk6k.png";
 
@@ -1082,9 +1082,9 @@ style.textContent = `
 			gap: 15px;
 			padding: 0 10px;
 			height: 191px;
-			background: linear-gradient(to bottom, #0e3583, #02143b);
+			background: linear-gradient(to bottom, #f8cf9a, #555047);
 			border-radius: 5px;
-			border: 1px solid #4a6a9b;
+			border: 1px solid #ffffff;
 			box-shadow: 0 0 10px rgba(74, 106, 155, 0.5);
 			color: white;
 			overflow: hidden;
