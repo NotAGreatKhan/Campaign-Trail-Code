@@ -932,9 +932,9 @@ function playSong(audio, uiElements) {
 
 function setupMusicPlayer() {
     const songData = [
+        { title: "This Charming Man", artist: "The Smiths", genre: "Alternative", cover: "https://imgur.com/NfOEbrE.jpg", audio: "https://audio.jukehost.co.uk/ky7adF1CI4jOj5l7kArIODW3jl3CI1F8.mp3" },
         { title: "Valerie", artist: "Mark Ronson (ft. Amy Winehouse)", genre: "Funk", cover: "https://imgur.com/2RTh8Da.jpg", audio: "https://audio.jukehost.co.uk/cvLeevTzQ89qTM8at3FVBFY6KvZyLQPu.mp3" },
-        { title: "Fake Plastic Trees", artist: "RadioHead", genre: "Alternative", cover: "https://imgur.com/NoFOEIA.jpg", audio: "https://audio.jukehost.co.uk/gZk2viAPg5Q4PiQdvHtW0ZeyOZQeOd4D.mp3" },
-        { title: "This Charming Man", artist: "The Smiths", genre: "Alternative", cover: "https://imgur.com/NfOEbrE.jpg", audio: "https://audio.jukehost.co.uk/ky7adF1CI4jOj5l7kArIODW3jl3CI1F8.mp3" }
+        { title: "Fake Plastic Trees", artist: "RadioHead", genre: "Alternative", cover: "https://imgur.com/NoFOEIA.jpg", audio: "https://audio.jukehost.co.uk/gZk2viAPg5Q4PiQdvHtW0ZeyOZQeOd4D.mp3" }
     ];
 
     playlist = new Playlist();
