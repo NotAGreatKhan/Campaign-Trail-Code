@@ -1082,7 +1082,7 @@ style.textContent = `
 			gap: 15px;
 			padding: 0 10px;
 			height: 191px;
-			background: linear-gradient(to bottom, #f8cf9a, #555047);
+			background: linear-gradient(to bottom, #f8cf9a, #7a6f5d);
 			border-radius: 5px;
 			border: 1px solid #ffffff;
 			box-shadow: 0 0 10px rgba(74, 106, 155, 0.5);
