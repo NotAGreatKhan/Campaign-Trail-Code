@@ -646,21 +646,25 @@ campaignTrail_temp.opponents_weighted_json = [
     }
 ]
 
+
+
+jet_data = {
+    "innerWindowColor": "#cfb28c",
+}
+
+
+
 // Infobox Graphics
+
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d4901c";
-
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#faa61a";
-
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-
 $("#game_window")[0].style.backgroundImage = "url(https://imgur.com/hGZkWUg.png)" 
-
 $(".container")[0].style.backgroundColor = "#555047";
 
 document.getElementById("header").src = "https://imgur.com/Q1rKk6k.png";
-
 document.body.background = "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2010/4/19/1271694806936/Nick-Clegg-Obama-poster-001.jpg?width=445&dpr=1&s=none&crop=none";
 
 corrr = '              <h2>𝗧𝗵𝗲 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 𝗼𝗳 𝗗𝗲𝗺𝗼𝗰𝗿𝗮𝗰𝘆</h2>            ';
