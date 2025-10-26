@@ -932,13 +932,9 @@ function playSong(audio, uiElements) {
 
 function setupMusicPlayer() {
     const songData = [
-        { title: "Queen of Hearts", artist: "Fucked Up", genre: "Punk", cover: "https://i.imgur.com/y1p4zEg.jpeg", audio: "https://file.garden/ZjghkE74SkXuNmZh/Queen%20of%20Hearts.mp3" },
-        { title: "Millennium of the Blind", artist: "Megadeth", genre: "Metal", cover: "https://i.imgur.com/Six3bC3.jpeg", audio: "https://file.garden/ZlwBsQzAvyz0wLEA/Millennium%20of%20The%20Blind.mp3" },
-        { title: "Hussein", artist: "Blue Scholars", genre: "Hip-Hop", cover: "https://i.imgur.com/jCzb20O.jpeg", audio: "https://file.garden/ZjghkE74SkXuNmZh/Hussein.mp3" },
-        { title: "Terrorist Threats", artist: "Ab-Soul (ft. Danny Brown, Jhene Aiko)", genre: "Rap", cover: "https://i.imgur.com/Uarvapg.jpeg", audio: "https://file.garden/ZkYlpFmp3wv99L22/Ab-Soul.mp3" },
-        { title: "Headlines", artist: "Drake", genre: "Rap", cover: "https://i.imgur.com/NNMiAp3.jpeg", audio: "https://file.garden/aGMtX3HRbS8W-RJ6/Drake%20%20%20Headlines%20Explicit%20HD.mp3" },
-        { title: "Words I Never Said", artist: "Lupe Fiasco (ft. Skylar Grey)", genre: "Rap", cover: "https://i.imgur.com/fGT2dTk.jpeg", audio: "https://file.garden/ZjwDHsS1nDDehStj/Words%20I%20Never%20Said.mp3" },
-        { title: "Illuminati", artist: "Korn (ft. Excision, Downlink)", genre: "Metal", cover: "https://i.imgur.com/I3RwsaS.jpeg", audio: "https://file.garden/ZlwBsQzAvyz0wLEA/Illuminati.mp3" }
+        { title: "Valerie", artist: "Mark Ronson (ft. Amy Winehouse)", genre: "Funk", cover: "https://imgur.com/2RTh8Da.jpg", audio: "https://audio.jukehost.co.uk/cvLeevTzQ89qTM8at3FVBFY6KvZyLQPu.mp3" },
+        { title: "Fake Plastic Trees", artist: "RadioHead", genre: "Alternative", cover: "https://imgur.com/NoFOEIA.jpg", audio: "https://audio.jukehost.co.uk/gZk2viAPg5Q4PiQdvHtW0ZeyOZQeOd4D.mp3" },
+        { title: "This Charming Man", artist: "The Smiths", genre: "Alternative", cover: "https://imgur.com/NfOEbrE.jpg", audio: "https://audio.jukehost.co.uk/ky7adF1CI4jOj5l7kArIODW3jl3CI1F8.mp3" }
     ];
 
     playlist = new Playlist();
