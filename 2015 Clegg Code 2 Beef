@@ -10,15 +10,10 @@ function getQuestionNumberFromPk(pk) {
 
 var Cred = 2;
 var ConRep = 2;
-var LabRep = 1;
 var PolCap = 0;
 var Wins = 0;
-var Economy = -1;
 var CScore = "<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d58627;'><b>2</b></font>)";
-var PCScore = "<font color='#ad1313;'><b>lukewarm</b></font> (<font color='#ad1313;'><b>0</b></font>)";
 var CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>2</b></font>)";
-var LRpScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)";
-var EScore = "<font color='#ad1313;'><b>receding</b></font> (<font color='#ad1313;'><b>-1</b></font>)";
 var altprimary = false;
 var SnapElection = false;
 var CampaignSign = "CltnClegg"
@@ -7884,8 +7879,8 @@ let savedY = null;
 
 // By default, only 3 Republicans - Trump, Haley, and DeSantis show up.
 const menuItemsA = [
-    { photo: 'https://imgur.com/og6lD1k.jpg', name: 'David Cameron', text: 'The heir to Blair has finally ascended to his king's former throne. But this time it is on the stilts of your own party. Depending on how you manoeuvre around him, most of his agenda may just b stymied to a snap election.', button: 'Defer', id: 'CAMERON_intro'},
-    { photo: 'https://imgur.com/FqzS4QM.jpg', name: 'Gordon Brown', text: 'He had spent the entirity of the last government seething and gnashing for the job he has just lost from his grasp. At this rate, the question is not whether he clings on, but who will come next.', button: 'Defer', id: 'BROWN_intro'}
+    { photo: 'https://imgur.com/og6lD1k.jpg', name: 'Donald Trump', text: 'The heir to Blair has finally ascended to his king's former throne. But this time it is on the stilts of your own party. Depending on how you manoeuvre around him, most of his agenda may just b stymied to a snap election.', button: 'Defer', id: 'TRUMP_intro'},
+    { photo: 'https://imgur.com/FqzS4QM.jpg', name: 'Ron Desantis', text: 'He had spent the entirity of the last government seething and gnashing for the job he has just lost from his grasp. At this rate, the question is not whether he clings on, but who will come next.', button: 'Defer', id: 'DESANTIS_intro'}
 ]
 
 // Cards that get added/changed later
@@ -8110,22 +8105,16 @@ function openSurrogates() {
         var overviewtxt  = ""
 
         overviewtxt += 'Your credibility heading into the election is ' + CScore + '.<br><br>';
-
-        overviewtxt += 'Your leverage in parliament is ' + PCScore + '.<br><br>'; 
         
         overviewtxt += 'Your reputation with the Conservative government is ' + CRpScore + '.<br><br>';
 
-        overviewtxt += 'Your reputation with the Labour opposition is ' + LRpScore + '.<br><br>';
-
         overviewtxt += 'Our Victories with the country number as ' + Wins + '.<br><br>';
-
-        overviewtxt += 'The state of our economy is currently ' + Economy + '.<br><br>';
 
         if (SnapElection == true) {
         overviewtxt += 'Kamala Harris’ loyalty to President Biden is <u><b>' + loyaltyText + '</b></u> (<b>' + loyalty + '</b>)<br><br>';
         }
 
-        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="200">';        
+        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="250">';        
 
         const ovsubtxt = document.createElement('h3');
         ovsubtxt.innerHTML = overviewtxt;
