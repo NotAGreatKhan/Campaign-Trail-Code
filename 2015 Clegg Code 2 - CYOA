@@ -6,6 +6,7 @@ var CScore = "<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d5862
 var CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>2</b></font>)";
 var altprimary = false;
 var SnapElection = false;
+var CampaignSign = "CltnClegg"
 
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
