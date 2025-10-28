@@ -151,6 +151,18 @@ function varText() {
     if (ConRep == 11) {
         CRpScore = "<font color='#7ba922;'><b>unbreakable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
     }
+
+    if (LabRep == 1) {
+        LRpScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+
+    if (Economy == -1) {
+        EScore = "<font color='#ad1313;'><b>receding</b></font> (<font color='#ad1313;'><b>-1</b></font>)"
+    }
+
+    if (PolCap == 0) {
+        PCScore = "<font color='#ad1313;'><b>lukewarm</b></font> (<font color='#ad1313;'><b>0</b></font>)"
+    }
 }
 
 
@@ -2162,6 +2174,18 @@ function openSurrogates() {
     }
     if (ConRep == 11) {
         CRpScore = "<font color='#7ba922;'><b>unbreakable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
+    }
+
+    if (LabRep == 1) {
+        LRpScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+
+    if (Economy == -1) {
+        EScore = "<font color='#ad1313;'><b>receding</b></font> (<font color='#ad1313;'><b>-1</b></font>)"
+    }
+
+    if (PolCap == 0) {
+        PCScore = "<font color='#ad1313;'><b>lukewarm</b></font> (<font color='#ad1313;'><b>0</b></font>)"
     }
 
     // Check if the menu already exists
