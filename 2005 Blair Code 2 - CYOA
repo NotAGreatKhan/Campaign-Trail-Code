@@ -1651,7 +1651,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
  }
-    if(ans == 12803 || ans == 13904){
+    if(e.player_answers.includes(15354) || e.player_answers.includes(15357) || e.player_answers.includes(15360)){
+    campaignTrail_temp.questions_json[32] = {
+    "model": "campaign_trail.question",
+    "pk": 15462,
+    "fields": {
+        "priority": 0,
+        "description": "Michael Howard takes to the campaign with a new crucible to wield. With your perceived shortcomings abroad looming over the debate around Iraq, he has come forward with full force against your “shattering of Britain’s credibility abroad”. Unlike in 2003, the long-term effects of your errors are now epitomised with Bush's defeat last year. His ironclad appeals to bread-and-butter Tory issues are sprinkled with repeated references to Bush (your “best mate” according to him) getting rightfully canned for Kerry. He’s turning heads around Tony, now you need to turn them back.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(e.player_answers.includes(15364)){
+    campaignTrail_temp.questions_json[32] = {
+    "model": "campaign_trail.question",
+    "pk": 15484,
+    "fields": {
+        "priority": 0,
+        "description": "Michael Howard takes to the campaign with a new crucible to wield. With your perceived shortcomings abroad looming over the debate around Iraq, he has come forward with full force against your “shattering of Britain’s credibility abroad”. Unlike in 2003, the long-term effects of your errors are now epitomised with Bush's defeat last year. His ironclad appeals to bread-and-butter Tory issues are sprinkled with repeated references to Bush (your “best mate” according to him) getting rightfully canned for Kerry. He’s turning heads around Tony, now you need to turn them back.",
+        "likelihood": 1
+      }
+    }
+  }    if(ans == 12803 || ans == 13904){
     campaignTrail_temp.questions_json[35] = {
     "model": "campaign_trail.question",
     "pk": 14569,
