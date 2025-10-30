@@ -1290,7 +1290,7 @@ if(candidateButton) { // change theme on candidate viewing
           if (paragraphs.length > 1) paragraphs[1].innerHTML = "<b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: Hello, Madam President. I just wanted to return your call about the upcoming election cycle.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: Yes? <br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: It's a tough one. The economy may recover, but the malaise from Biden still lingers. People don't feel like we're on track, even if the numbers begin to improve.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: When have they ever? More importantly, what can we do about it?<br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: If you want to get your approvals up, we should probably get some successes in. Knives are out on Thune, so if you can help him get some success in, he might be willing to help you.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(151, 175, 201, 1);\">HARRIS</b>: Mm-hm.<br><br><b style=\"text-shadow: -2px 2px 6px rgba(223, 223, 217, 1);\">CHÁVEZ RODRIGUEZ</b>: Look, you're between a rock and a hard place right now. It's a tough spot for anyone."
           let bgSet = document.getElementById("opponent_selection_description_window");
           if (bgSet) {
-              let lastBg = "https://imgur.com/gDLpuLn.png";
+              let lastBg = "https://imgur.com/6wTgfq4.png";
               bgSet.style.backgroundImage = 
                   `linear-gradient(to right, transparent, rgba(32, 30, 26, 1)), url(${lastBg})`;
           }
