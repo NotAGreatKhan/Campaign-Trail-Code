@@ -7879,7 +7879,7 @@ let savedY = null;
 
 // By default, only 3 Republicans - Trump, Haley, and DeSantis show up.
 const menuItemsA = [
-    { photo: 'https://imgur.com/og6lD1k.jpg', name: 'Donald Trump', text: 'The heir to Blair has finally ascended to his king's former throne. But this time it is on the stilts of your own party. Depending on how you manoeuvre around him, most of his agenda may just b stymied to a snap election.', button: 'Defer', id: 'TRUMP_intro'},
+    { photo: 'https://imgur.com/og6lD1k.jpg', name: 'Donald Trump', text: 'The heir to Blair has finally ascended to his king’s former throne. But this time it is on the stilts of your own party. Depending on how you manoeuvre around him, most of his agenda may just b stymied to a snap election.', button: 'Defer', id: 'TRUMP_intro'},
     { photo: 'https://imgur.com/FqzS4QM.jpg', name: 'Ron Desantis', text: 'He had spent the entirity of the last government seething and gnashing for the job he has just lost from his grasp. At this rate, the question is not whether he clings on, but who will come next.', button: 'Defer', id: 'DESANTIS_intro'}
 ]
 
