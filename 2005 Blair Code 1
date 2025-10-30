@@ -1292,7 +1292,7 @@ if(candidateButton) { // change theme on candidate viewing
           if (bgSet) {
               let lastBg = "https://imgur.com/6wTgfq4.png";
               bgSet.style.backgroundImage = 
-                  `linear-gradient(to right, transparent, rgba(32, 30, 26, 1)), url(${lastBg})`;
+                  `linear-gradient(to right, transparent, rgba(200, 200, 200, 0.5)), url(${lastBg})`;
           }
         }
     }, 15);
