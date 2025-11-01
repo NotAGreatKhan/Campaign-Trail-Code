@@ -780,6 +780,14 @@ function addDynamicCSS() {
             background-color: #ffce66;
         }
 
+        .content_single li {
+			line-height: 1em;
+		}
+  
+		input[type=radio]+label {
+			display: inline;
+		}
+
         .mytooltip {
             position: relative;
             display: inline-block;
