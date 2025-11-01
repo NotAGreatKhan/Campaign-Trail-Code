@@ -23,11 +23,22 @@ cyoAdventure = function (a) {
     campaignTrail_temp.candidate_json[3]["fields"].first_name = "Mr"
     campaignTrail_temp.candidate_json[3]["fields"].last_name = "Labour"
     campaignTrail_temp.candidate_json[3].fields.color_hex = "#ea1f1f"
+    removeById(menuItemsA, 'BROWN_intro');
+    insertAt(menuItemsA, edmilibandCard);
+    insertAt(menuItemsA, davidmilibandCard);
+    insertAt(menuItemsA, ballsCard);
     }
     if (ans == 21688 || ans == 21709){
     campaignTrail_temp.candidate_json[3]["fields"].first_name = "Ed"
     campaignTrail_temp.candidate_json[3]["fields"].last_name = "Miliband"
     campaignTrail_temp.candidate_json[3].fields.color_hex = "#ff0000"
+    removeById(menuItemsA, davidmilibandCard);
+    removeById(menuItemsA, ballsCard);
+    insertAt(menuItemsA, lucasCard);
+    insertAt(menuItemsA, farageCard);
+    }
+    if (ans == 21728 || ans == 21730) {
+    removeById(menuItemsA, davidmilibandCard);
     }
     
     // CREDIBILITY
@@ -261,9 +272,16 @@ cyoAdventure = function (a) {
     }
 
     if(Wins >= 6){
-    campaignTrail_temp.questions_json[29] = tunnel(21898);
+    campaignTrail_temp.questions_json[28] = {
+    "model": "campaign_trail.question",
+    "pk": 21898,
+    "fields": {
+        "priority": 0,
+        "description": "In this day and age, people want to hear their politicians give them a narrative to run with. This is part of the reason we did so well in 2010. We need to craft a narrative that showcases what we’ve done while distracting the public from our shallow CV. What story are we going to tell them?",
+        "likelihood": 1
+      }
+    }
   }
-
 
 
     refreshSurrogates()
