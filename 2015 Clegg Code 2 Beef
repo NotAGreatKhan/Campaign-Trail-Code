@@ -8469,7 +8469,7 @@ function openSurrogates() {
 
         overviewtxt += 'The state of our economy is currently ' + EScore + '.<br><br>';
 
-        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="200">';
+        overviewtxt += '<img src="https://imgur.com/TfpSe4M.png" width="200"><br><br>';
 
         overviewtxt += 'Your leverage in parliament is ' + PCScore + '.<br><br>'; 
         
