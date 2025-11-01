@@ -2621,10 +2621,10 @@ function openSurrogates() {
             const menuItem = document.createElement('div');
             menuItem.style.display = 'flex';
             menuItem.style.alignItems = 'flex-start';
-            if (item.id == "HALEY_fake") { // fake candidate
-                menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/fakeheader.png")';
-            } else if (item.id == "VIVEK_fake" || item.id == "RFK_haley" || item.id == "OLIVER_third" || item.id == "YANG_third" || item.id == "JOE_third" || item.id == "RFK_third" || item.id == "STEIN_third" || item.id == "WEST_third" || item.id == "CHRISTIE_third") { // third party
-                menuItem.style.backgroundImage = 'url("https://itsastronomical.com/assets/2024/thirdpartyheader.png")';
+            if (item.id == "D_MILIBAND" || item.id == "BALLS") { // fake candidate
+                menuItem.style.backgroundImage = 'url("https://imgur.com/C4nAirw.png")';
+            } else if (item.id == "LUCAS_fake" || item.id == "BENNETT_fake" || item.id == "FARAGE_fake") { // third party
+                menuItem.style.backgroundImage = 'url("https://imgur.com/iBDISQz.png")';
             } else {
                 menuItem.style.backgroundImage = 'url("https://imgur.com/sf7mlzf.png")';
             }
