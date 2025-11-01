@@ -3,12 +3,12 @@ var ConRep = 2;
 var LabRep = 1;
 var PolCap = 0;
 var Wins = 0;
-var Economy = -1;
+var Economy = -2;
 var CScore = "<font color='#d58627;'><b>lukewarm</b></font> (<font color='#d58627;'><b>2</b></font>)";
-var PCScore = "<font color='#ad1313;'><b>lukewarm</b></font> (<font color='#ad1313;'><b>0</b></font>)";
+var PCScore = "<b>nil, you <font color='#ad1313;'>owe debt to them</font></b> (<font color='#ad1313;'><b>0</b></font>)";
 var CRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>2</b></font>)";
-var LRpScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)";
-var EScore = "<font color='#ad1313;'><b>receding</b></font> (<font color='#ad1313;'><b>-1</b></font>)";
+var LRpScore = "<font color='#d58627;'><b>under question</b></font> (<font color='#d58627;'><b>1</b></font>)";
+var EScore = "<font color='#ad1313;'><b>receding</b></font> (<font color='#ad1313;'><b>-2</b></font>)";
 var altprimary = false;
 var SnapElection = false;
 var CampaignSign = "CltnClegg"
