@@ -79,6 +79,7 @@ function varText() {
         CScore = "<font color='#7ba922;'><b>soaring</b></font> (<font color='#7ba922;'><b>7</b></font>)"
     }
 
+
     if (ConRep == -12) {
         CRpScore = "<font color='#ad1313;'><b>blown to oblivion</b></font> (<font color='#ad1313;'><b>-12</b></font>)"
     }
@@ -152,16 +153,121 @@ function varText() {
         CRpScore = "<font color='#7ba922;'><b>unbreakable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
     }
 
+
+    if (LabRep == -12) {
+        LRpScore = "<font color='#ad1313;'><b>blown to oblivion</b></font> (<font color='#ad1313;'><b>-12</b></font>)"
+    }
+    if (LabRep == -11) {
+        LRpScore = "<font color='#ad1313;'><b>nearing annihilation</b></font> (<font color='#ad1313;'><b>-11</b></font>)"
+    }
+    if (LabRep == -10) {
+        LRpScore = "<font color='#ad1313;'><b>unworkable</b></font> (<font color='#ad1313;'><b>-10</b></font>)"
+    }
+    if (LabRep == -9) {
+        LRpScore = "<font color='#ad1313;'><b>declining</b></font> (<font color='#ad1313;'><b>-9</b></font>)"
+    }
+    if (LabRep == -8) {
+        LRpScore = "<font color='#ad1313;'><b>deteriorating</b></font> (<font color='#ad1313;'><b>-8</b></font>)"
+    }
+    if (LabRep == -7) {
+        LRpScore = "<font color='#ad1313;'><b>unhealthy</b></font> (<font color='#ad1313;'><b>-7</b></font>)"
+    }
+    if (LabRep == -6) {
+        LRpScore = "<font color='#ad1313;'><b>unproductive</b></font> (<font color='#ad1313;'><b>-6</b></font>)"
+    }
+    if (LabRep == -5) {
+        LRpScore = "<font color='#ad1313;'><b>on rough relations</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (LabRep == -4) {
+        LRpScore = "<font color='#d58627;'><b>fast and loose</b></font> (<font color='#d58627;'><b>-4</b></font>)"
+    }
+    if (LabRep == -3) {
+        LRpScore = "<font color='#d58627;'><b>raising eyebrows</b></font> (<font color='#d58627;'><b>-3</b></font>)"
+    }
+    if (LabRep == -2) {
+        LRpScore = "<font color='#d58627;'><b>unsatisfactory</b></font> (<font color='#d58627;'><b>-2</b></font>)"
+    }
+    if (LabRep == -1) {
+        LRpScore = "<font color='#d58627;'><b>in a rough spot</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (LabRep == 0) {
+        LRpScore = "<font color='#d58627;'><b>concerned</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
     if (LabRep == 1) {
-        LRpScore = "<font color='#d58627;'><b>sub-optimal</b></font> (<font color='#d58627;'><b>1</b></font>)"
+        LRpScore = "<font color='#d58627;'><b>under question</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (LabRep == 2) {
+        LRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (LabRep == 3) {
+        LRpScore = "<font color='#d58627;'><b>shaky</b></font> (<font color='#d58627;'><b>3</b></font>)"
+    }
+    if (LabRep == 4) {
+        LRpScore = "<font color='#7ba922;'><b>in the right direction</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (LabRep == 5) {
+        LRpScore = "<font color='#7ba922;'><b>healthy</b></font> (<font color='#7ba922;'><b>5</b></font>)"
+    }
+    if (LabRep == 6) {
+        LRpScore = "<font color='#7ba922;'><b>cooperative</b></font> (<font color='#7ba922;'><b>6</b></font>)"
+    }
+    if (LabRep == 7) {
+        LRpScore = "<font color='#7ba922;'><b>healthy</b></font> (<font color='#7ba922;'><b>7</b></font>)"
+    }
+    if (LabRep == 8) {
+        LRpScore = "<font color='#7ba922;'><b>strong and stable</b></font> (<font color='#7ba922;'><b>8</b></font>)"
+    }
+    if (LabRep == 9) {
+        LRpScore = "<font color='#7ba922;'><b>harmonious</b></font> (<font color='#7ba922;'><b>9</b></font>)"
+    }
+    if (LabRep == 10) {
+        LRpScore = "<font color='#7ba922;'><b>impervious</b></font> (<font color='#7ba922;'><b>10</b></font>)"
+    }
+    if (LabRep == 11) {
+        LRpScore = "<font color='#7ba922;'><b>unbreakable</b></font> (<font color='#7ba922;'><b>11</b></font>)"
     }
 
+
+    if (Economy == -5) {
+        EScore = "<font color='#ad1313;'><b>collapsing</b></font> (<font color='#ad1313;'><b>-5</b></font>)"
+    }
+    if (Economy == -4) {
+        EScore = "<font color='#ad1313;'><b>in crisis</b></font> (<font color='#ad1313;'><b>-4</b></font>)"
+    }
+    if (Economy == -3) {
+        EScore = "<font color='#ad1313;'><b>shrinking</b></font> (<font color='#ad1313;'><b>-3</b></font>)"
+    }
+    if (Economy == -2) {
+        EScore = "<font color='#ad1313;'><b>receding</b></font> (<font color='#ad1313;'><b>-2</b></font>)"
+    }
     if (Economy == -1) {
-        EScore = "<font color='#ad1313;'><b>receding</b></font> (<font color='#ad1313;'><b>-1</b></font>)"
+        EScore = "<font color='#d58627;'><b>stagnating</b></font> (<font color='#d58627;'><b>-1</b></font>)"
+    }
+    if (Economy == 0) {
+        EScore = "<font color='#d58627;'><b>stagnating</b></font> (<font color='#d58627;'><b>0</b></font>)"
+    }
+    if (Economy == 1) {
+        EScore = "<font color='#d58627;'><b>recovering</b></font> (<font color='#d58627;'><b>1</b></font>)"
+    }
+    if (Economy == 2) {
+        EScore = "<font color='#d58627;'><b>steady</b></font> (<font color='#d58627;'><b>2</b></font>)"
+    }
+    if (Economy == 3) {
+        EScore = "<font color='#7ba922;'><b>growing</b></font> (<font color='#7ba922;'><b>3</b></font>)"
+    }
+    if (Economy == 4) {
+        EScore = "<font color='#7ba922;'><b>rocketing</b></font> (<font color='#7ba922;'><b>4</b></font>)"
+    }
+    if (Economy == 5) {
+        EScore = "<font color='#7ba922;'><b>booming</b></font> (<font color='#7ba922;'><b>5</b></font>)"
     }
 
+
+    if (PolCap <= -1) {
+        PCScore = "<b><font color='#ad1313;'>terrible, you have no chance</font></b>"
+    }
     if (PolCap == 0) {
-        PCScore = "<font color='#ad1313;'><b>lukewarm</b></font> (<font color='#ad1313;'><b>0</b></font>)"
+        PCScore = "<b>nil, you <font color='#ad1313;'>owe debt to them</font></b> (<font color='#ad1313;'><b>0</b></font>)"
     }
 }
 
