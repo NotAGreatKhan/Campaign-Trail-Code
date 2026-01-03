@@ -1524,6 +1524,23 @@ function updateSimplePopup() {
           Wins === 9 ? 'Eye-watering amounts' :
           'A duffle bag full of them'
         }">${Wins.toFixed(1)}</span>
+     </p>
+
+     <p>
+        <span class="hover-value" data-tooltip="How influential we are in foreign affairs.">Our Image Abroad</span>: 
+        <span ${Frgn <= 2 ? "style=\"color:#ad1313;\"" : Frgn <= 4 ? "style=\"color:#d58627;\"" : Frgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          Frgn <= 0 ? 'An international embarassement' :
+          Frgn === 1 ? 'Mocked at the UN' :
+          Frgn === 2 ? 'Getting red-hot glares' :
+          Frgn === 3 ? 'Seated at the table' :
+          Frgn === 4 ? 'A valued voice' :
+          Frgn === 5 ? 'Respected abroad' :
+          Frgn === 6 ? 'Having Europe's ear' :
+          Frgn === 7 ? 'The Trans-Atlantic bridge' :
+          Frgn === 8 ? 'Eyes and ears everywhere' :
+          Frgn === 9 ? 'A world statesman' :
+          'The rose-red dove'
+        }">${Frgn.toFixed(1)}</span>
       </p>
   
       <p>
