@@ -808,8 +808,78 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // FOREIGN POINTS
-    // Question _ – Afghanistan
-    if(ans == 1____){
+    // Question 2 – Afghanistan
+    if(ans == 12542){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 13900){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 4 – Iraq?
+    if(ans == 12797){
+      Frgn += 2;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 7 – Iraq Ressolution
+    if(ans == 12814){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 12813){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 14900){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 8 – Un Nay Vote
+    if(ans == 15087){
+      Frgn -= 2;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15088){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15089){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 10 – Sending Troops
+    if(ans == 14980){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 12819){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 12 – Dr Kelly
+    if(ans == 12824){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 12825){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 15 – Hutton Inquiry
+    if(ans == 12832){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 16 – Reclaiming the Narrative
+    if(ans == 15380){
       Frgn += 1;
       console.log("Something's up outside our shores");
     }
