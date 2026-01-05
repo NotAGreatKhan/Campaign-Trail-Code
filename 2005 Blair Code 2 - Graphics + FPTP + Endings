@@ -1535,7 +1535,7 @@ function updateSimplePopup() {
           Frgn === 3 ? 'Seated at the table' :
           Frgn === 4 ? 'A valued voice' :
           Frgn === 5 ? 'Respected abroad' :
-          Frgn === 6 ? 'Having Europe's ear' :
+          Frgn === 6 ? 'Having Europe’s ear' :
           Frgn === 7 ? 'The Trans-Atlantic bridge' :
           Frgn === 8 ? 'Eyes and ears everywhere' :
           Frgn === 9 ? 'A world statesman' :
