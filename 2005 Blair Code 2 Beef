@@ -9,18 +9,20 @@ function getQuestionNumberFromPk(pk) {
 }
 
 
+
 e = campaignTrail_temp
 
 var Wins = 0;
 var Resign = 0;
 var Negative = 0;
 var OldLab = 0;
+var Frgn = 4;
 var Cred = 2;
 var Brown = 0;
 var EUCnstn = 0;
 var Ken = 0;
 var Porty = 0;
-var iraq = 0;
+var debug = 0;
 var CampaignSign = "PMBlair"
 var altprimary = false;
 var SnapElection = false;
@@ -43,7 +45,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         campaignTrail_temp.running_mate_last_name = "Brown";
         campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
         CampaignSign = "CotEBrown"
-        iraq += 1;
+        debug += 1;
         console.log("debug")
     }
     if(ans == 12819 || ans == 12820 || ans == 13418 || ans == 13420 || ans == 13561 || ans == 13565 || ans == 13570 || ans == 14988 || ans == 14993 || ans == 14998 || ans == 15003 || ans == 15008 || ans == 15013 || ans == 14980){
@@ -815,6 +817,83 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 14372 || ans == 14378){
       Porty += 1;
       console.log("Michael Portillo is now the Tory leader");
+    }
+
+    // FOREIGN POINTS
+    // Question 2 – Afghanistan
+    if(ans == 12542){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 13900){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 4 – Iraq?
+    if(ans == 12797){
+      Frgn += 2;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 7 – Iraq Ressolution
+    if(ans == 12814){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 12813){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 14900){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 8 – Un Nay Vote
+    if(ans == 15087){
+      Frgn -= 2;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15088){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15089){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 10 – Sending Troops
+    if(ans == 14980){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 12819){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 12 – Dr Kelly
+    if(ans == 12824){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 12825){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 15 – Hutton Inquiry
+    if(ans == 12832){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 16 – Reclaiming the Narrative
+    if(ans == 15380){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
     }
 
 // Resignation Questions
@@ -1796,6 +1875,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
 }
+
 
 
 campaignTrail_temp.questions_json = [
@@ -6309,18 +6389,18 @@ campaignTrail_temp.issues_json = [
         "pk": 27,
         "fields": {
             "name": "Economics",
-            "description": 0,
-            "stance_1": "Low Tax, High Growth",
+            "description": "Any discussion around economic policy hinges on taxation, and degrees of public versus private ownership. For years, the Conservatives enjoyed the reputation as the party of stable economic growth. Since, your election, Labour has at a glance taken steps to wrench this mantra for themselves. What you will do to keep the public's pocketbooks happy is all yours to decide.",
+            "stance_1": "Flatten All The Taxes",
             "stance_desc_1": 0,
-            "stance_2": "Conservative",
+            "stance_2": "The Laffer Curve",
             "stance_desc_2": 0,
-            "stance_3": "Wet Tory",
+            "stance_3": "Living Within Our Means",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Public-Private Partnership",
             "stance_desc_4": 0,
-            "stance_5": "Liberalism Lite",
+            "stance_5": "Social Democracy",
             "stance_desc_5": 0,
-            "stance_6": "Progressive",
+            "stance_6": "Nationalise Utilities",
             "stance_desc_6": 0,
             "stance_7": "A New Welfare State",
             "stance_desc_7": 0,
@@ -6332,20 +6412,20 @@ campaignTrail_temp.issues_json = [
         "pk": 28,
         "fields": {
             "name": "Social Issues",
-            "description": 0,
-            "stance_1": "Very Conservative",
+            "description": "Human rights, minority rights, and all manners of policy relating public safety and welfare. Should welfare programmes be expanded, or slimmed down? Is our commitment to rights institutions necessary, or a crutch? Incarceration, or rehabilitation? Some debates never truly age.",
+            "stance_1": "Hawks Of Society",
             "stance_desc_1": 0,
-            "stance_2": "Conservative",
+            "stance_2": "Incarceration",
             "stance_desc_2": 0,
-            "stance_3": "Leans Conservative",
+            "stance_3": "Businesses and Police",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Keep The Peace",
             "stance_desc_4": 0,
-            "stance_5": "Leans Liberal",
+            "stance_5": "Extending A Hand",
             "stance_desc_5": 0,
-            "stance_6": "Liberal",
+            "stance_6": "Welfare For All",
             "stance_desc_6": 0,
-            "stance_7": "Very Liberal",
+            "stance_7": "Full Collectivism",
             "stance_desc_7": 0,
             "election": 9
         }
@@ -6355,7 +6435,7 @@ campaignTrail_temp.issues_json = [
         "pk": 29,
         "fields": {
             "name": "Immigration",
-            "description": 0,
+            "description": "You've seen your fair share of bile from the right wing print media cartel. You just didn't anticipate seeing it in mainstream discussion. Anti-immigrant/immigration sentiment is not enough to swing elections, but something is simmering – curdling – beneath the surface.",
             "stance_1": "Let None In",
             "stance_desc_1": 0,
             "stance_2": "Secure Borders",
@@ -6377,21 +6457,21 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 30,
         "fields": {
-            "name": "Foreign Policy",
-            "description": 0,
-            "stance_1": "To Kingdom Come!",
+            "name": "War On Terror",
+            "description": "Ever since the terrorist attacks on the World Trade Centre, a yearning for the glamour of the 90's has grinded that era's blissful optimism into paste. With America racing nose-first into the Middle East, the trans-atlantic alliance is wobbling amidst the turmoil worldwide. How you captain the ship through the sweeping waves remains to be determined.",
+            "stance_1": "Just 45 Minutes",
             "stance_desc_1": 0,
-            "stance_2": "Knock 'Em Out",
+            "stance_2": "Nation Building",
             "stance_desc_2": 0,
-            "stance_3": "Agressive Defence",
+            "stance_3": "Troop Deployments",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Balanced Approach",
             "stance_desc_4": 0,
-            "stance_5": "Cautious Defence",
+            "stance_5": "Human Rights",
             "stance_desc_5": 0,
             "stance_6": "Should Step Back",
             "stance_desc_6": 0,
-            "stance_7": "It's Time To Get Out!",
+            "stance_7": "Immediate Withdrawal",
             "stance_desc_7": 0,
             "election": 9
         }
@@ -6401,7 +6481,7 @@ campaignTrail_temp.issues_json = [
         "pk": 31,
         "fields": {
             "name": "Europe",
-            "description": 0,
+            "description": "Britain's relationship with Europe, and more specifically the European Union, has ghostly stalked both major parties and enabled fissures destabilising politicians seemingly indispensable. You're own line in 2001 has been adamantly Europhilic, only stopping before accepting Euro at Gordon's behest. All you have to do, is keep the Tories more divided than Labour.",
             "stance_1": "I'd Rather Be Out!",
             "stance_desc_1": 0,
             "stance_2": "Let's Shy Away",
@@ -27618,7 +27698,6 @@ applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
 
 
-
 e = campaignTrail_temp;
 
 
@@ -27787,6 +27866,23 @@ function updateSimplePopup() {
           Wins === 9 ? 'Eye-watering amounts' :
           'A duffle bag full of them'
         }">${Wins.toFixed(1)}</span>
+     </p>
+
+     <p>
+        <span class="hover-value" data-tooltip="How influential we are in foreign affairs.">Our Image Abroad</span>: 
+        <span ${Frgn <= 2 ? "style=\"color:#ad1313;\"" : Frgn <= 4 ? "style=\"color:#d58627;\"" : Frgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          Frgn <= 0 ? 'An international embarassement' :
+          Frgn === 1 ? 'Mocked at the UN' :
+          Frgn === 2 ? 'Getting red-hot glares' :
+          Frgn === 3 ? 'Seated at the table' :
+          Frgn === 4 ? 'A valued voice' :
+          Frgn === 5 ? 'Respected abroad' :
+          Frgn === 6 ? 'Having Europe's ear' :
+          Frgn === 7 ? 'The Trans-Atlantic bridge' :
+          Frgn === 8 ? 'Eyes and ears everywhere' :
+          Frgn === 9 ? 'A world statesman' :
+          'The rose-red dove'
+        }">${Frgn.toFixed(1)}</span>
       </p>
   
       <p>
