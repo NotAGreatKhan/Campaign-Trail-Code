@@ -1528,7 +1528,7 @@ function updateSimplePopup() {
 
      <p>
         <span class="hover-value" data-tooltip="How influential we are in foreign affairs.">Our Image Abroad</span>: 
-        <span ${Frgn <= 2 ? "style=\"color:#ad1313;\"" : Frgn <= 4 ? "style=\"color:#d58627;\"" : Frgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+        <span ${Frgn <= 2 ? "style=\"color:#ad1313;\"" : Frgn <= 6 ? "style=\"color:#d58627;\"" : Frgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           Frgn <= 0 ? 'An international embarassement' :
           Frgn === 1 ? 'Mocked at the UN' :
           Frgn === 2 ? 'Getting red-hot glares' :
