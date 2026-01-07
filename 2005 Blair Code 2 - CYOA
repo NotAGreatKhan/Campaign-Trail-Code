@@ -529,7 +529,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 14290){
       Resign += 1;
       console.log("The hot seat looks dicey");
-    }   
+    }
+    if(ans == 15457){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
 
     // NEGATIVE
     if(ans == 12849){
@@ -820,7 +824,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
     // Question 4 – Iraq?
     if(ans == 12797){
-      Frgn += 2;
+      Frgn += 1;
       console.log("Something's up outside our shores");
     }
 
@@ -862,6 +866,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Something's up outside our shores");
     }
 
+    // Question 10 – Commenting On Iraq
+    if(ans == 13561){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 13570){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
     // Question 12 – Dr Kelly
     if(ans == 12824){
       Frgn -= 1;
@@ -872,9 +886,31 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Something's up outside our shores");
     }
 
+    // Question 12 – French Yes Campaign
+    if(ans == 13619){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 12 – Dutch Yes Campaign
+    if(ans == 13873){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 13867){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
     // Question 15 – Hutton Inquiry
     if(ans == 12832){
       Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    // Question 15 – Successful French Referendum
+    if(ans == 13861){
+      Frgn += 1;
       console.log("Something's up outside our shores");
     }
 
