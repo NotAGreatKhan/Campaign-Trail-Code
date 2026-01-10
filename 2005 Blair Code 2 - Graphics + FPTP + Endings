@@ -1078,7 +1078,7 @@ In heated exchanges between the prime minister and opposition leaders at questio
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg"})])
 }
 
-else if (e.player_answers.includes(14034)) {
+else if (quickstats[0] >= 324 && e.player_answers.includes(14034)) {
 e.pages.push(`
 <h3 style='text-align: center,'>Behind the scenes on the Minister of Education</h3>
 <p>
@@ -1106,7 +1106,110 @@ e.pages.push(`
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg"})])
 }
 
-// Fourth Slides
+else if (aa[0].candidate == 12565) {
+e.pages.push(`
+<h3 style='text-align: center,'>Protests erupt as House contemplates new Immigration Bill</h3>
+<b style="font-size: 1.2em;"><i>The Daily Mirror</i> | <i>20th September, 2006</i></b>
+<br><br>
+<b>As parliament begins the second reading of legislation to restrict immigration into the UK, protesters gather mobilised by new anti-terror measures.</b>
+<br><br>
+With the recent local elections being generally unremarkable for the Conservatives, No 10 has pushed forward with their flagship manifesto policy: immigration restriction.
+<br><br>
+This comes after the government <u><font color='#e06666;'>walked back from its original intention to</font></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
+<br><br>
+The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><font color='#e06666;'>labelled as “cowardly”</font></u>, according to leaked memos.
+<br><br>
+Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><font color='#e06666;'>using the 7/7 attacks last year</font></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
+<br><br>
+Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><font color='#e06666;'>in the latest budget</font></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
+<br><br>
+It remains to be seen if the bill will survive today’s vote. But, if the protests outside Whitehall are of any indication, it won’t go down quietly.
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur/_.jpg"})])
+}
+
+else if (Porty == 1 && aa[0].candidate == 12565) {
+e.pages.push(`
+<h3 style='text-align: center,'>The Portillo Interview | YouTube</h3>
+<p>
+<b style="font-size: 1.2em;">thatcheritescot</b> <button>Subscribe</button>
+<br>
+10.2K subscribers
+<br><br>
+513,798 views  Jan 21, 2009
+<br>
+prime minister michael portillo is grilled by the times on the economy and his past
+<br><br>
+<b style="font-size: 1.1em;">462 Comments</b>
+<br><br>
+<b style="font-size: 0.8em;">@mikeh4011</b>
+<br>
+Great interview. Really showed Portillo to be the twat he is.
+<br>
+<b>100 Likes</b>
+<br><br>
+<b style="font-size: 0.8em;">@charlie_charldon</b>
+<br>
+“Your chancellor struggling to get any good news is a bad sign for your government” – Michael Portillo, 2005
+<br>
+Well look how true that turned out to be.
+<br>
+<b>251 Likes</b>
+<br><br>
+<b style="font-size: 0.8em;">@greghoward1530</b>
+<br>
+And I thought Gordon Brown was bad, at least he didn’t fuck up a recession!
+<br>
+<b>78 Likes</b>
+<br><br>
+<b style="font-size: 0.8em;">@jackboondoggle0624</b>
+<br>
+really is something when the guy manages to go lower than cheating with boys, not a high bar…
+<br>
+<b>162 Likes</b>
+<br><br>
+<b style="font-size: 0.8em;">@henryhawkins</b>
+<br>
+I gotta say, the music choices are pretty great for such a damaging interview lol
+<br>
+<b>58 Likes</b>
+</p>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/OIEc7pW.jpg"})])
+}
+
+else if (Ken == 1 && aa[0].candidate == 12565) {
+e.pages.push(`
+<h3 style='text-align: center,'>Farage touts election result as a “rejection of the Tory-EU establishment”</h3>
+<p>
+<b style="font-size: 1.2em;"><i>BBC News</i> | <i>9th June, 2009</i></b>
+<br><br>
+<b>The UK Independence Party has achieved their highest voteshare ever in today’s European elections, showing a “real want for change”, says Nigel Farage.</b>
+<br><br>
+In spite of the Conservatives marching through the campaigns for the most part straddling the party line, their pro-Europe stance was not enough to prevent their fall from first place. Not only did their vote share <u><font color='#5185b1;'>fall by nearly double-digits</font></u>, but the Labour party came back from their poor showing in 2004 to reach first place.
+<br><br>
+<li>After the Conservative’s disappointing night <u><font color='#5185b1;'>landing in third place</font></u>, Timothy Kirkhope insisted that the Tories are “not out of the fight yet”, though he did acknowledge the 14 MEPs lost from the last election.</li>
+<br><br>
+<li><u><font color='#5185b1;'>Regaining their first place</font></u> for the first time in 15 years, Labour came out of the affair in high spirits. Glenis Willmott noticeably tacked away from the haunting of the general election 4 years prior, saying it’s a “fantastic turnaround for Europe”.</li>
+<br><br>
+<li>UKIP <u><font color='#5185b1;'>continued to climb in voteshare</font></u> and landed themselves 15 MEPs after taking the fight directly to the Conservatives on their pet issue.</li>
+<br><br>
+Speaking on the loss, Kirkhope expressed that he “appreciated the concerns of those skeptical” of the “European project” that the Clarke government is pursuing. “The voters have also shown that they are concerned about the economy because of the global financial crisis”, he then added.
+<br><br>
+When questioned on to what extent the financial crisis of last year played a role, Kirkhope responded with “the government is doing all that they can to relieve people as they feel the effects of the crisis”, he further added that “the government is doing great work to ensure struggling families can find their foot again”, referring to the bailout package passed last year.
+<br><br>
+It is contested and debated, however, as to whether or not the response to the crash has been felt positively on the ground. Or, even if the economic turmoil has been the deciding factor in the European elections at all. In the wake of these results, Conservative backbenchers in parliament are adding this to the growing list of grievances they have against Prime Minister Clarke. Further piling on to these anxieties was an <u><font color='#5185b1;'>Ipsos poll showing the approval ratings</font></u> of the Prime Minister at his near-all-time low.
+<br><br>
+In light of this, such as David Davis and Boris Johnson, are hinting at the need for the Conservatives to shift to the right and further embrace a skeptical tone on European institutions. In lieu of this, moderate Tory MPs such as David Cameron and George Osborne urge that the party must continue to fight for a European ideal – especially given the floating ex-Blair MPs in Labour who could aid the minority government in legislation.
+<br><br>
+But whatever the consequences of this might be, one thing that is undeniable is how much cold water has been poured onto the Tories, and after an unprecedented economic crisis no-less.
+</p>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/_.jpg"})])
+}
+
+
+// Third Slides
 if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
 <h3 style='text-align: center;'>A MONSTER OF DELUSION –– <font color='#be2f42;'>CHILCOT SPECIAL EDITION</font></h3>
@@ -1140,7 +1243,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg
 }
 
 
-// Fifth Slides
+// Fourth Slides
 if (quickstats[0] >= 390) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Happy summer! Enjoy one of our blonde candidates to celebrate Brat Summer, 2024!</h3>
