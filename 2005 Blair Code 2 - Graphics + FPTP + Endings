@@ -1125,7 +1125,7 @@ Speaking of the opposition, the Labour party has taken no time to ruthlessly att
 <br><br>
 It remains to be seen if the bill will survive today’s vote. But, if the protests outside Whitehall are of any indication, it won’t go down quietly.
 `)
-e.executable.push([1, (() => {e.image = e.image = "https://imgur/_.jpg"})])
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/IKStDf4.jpg"})])
 }
 
 else if (Porty == 1 && aa[0].candidate == 12565) {
