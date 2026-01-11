@@ -861,6 +861,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Something's up outside our shores");
     }
 
+    if(ans == 15122){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15107){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15112){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    if(ans == 15138){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15128){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
     // Question 10 – Sending Troops
     if(ans == 14980){
       Frgn -= 1;
