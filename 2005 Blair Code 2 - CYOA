@@ -1488,6 +1488,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
       }
     }
+    if(Frgn >= 5){
+    campaignTrail_temp.questions_json[14] = {
+    "model": "campaign_trail.question",
+    "pk": 15526,
+    "fields": {
+        "priority": 0,
+        "description": "Hussein has fallen. The invasion is over. When it comes to Iraq's future though, those two events are the only certainties we can count on. From the ashes of Baghdad’s old regime now resides a power vacuum the size of a third of the Levant. Thanks to your troop deployments, the UK has one major chance to heave the needle on how Iraq should begin its reconstruction. If tying yourself so close to the Bush administration has made you such a pariah to the student youth of Britain, something better have come out of this Godforsaken ordeal. Cheney's grimace snaps you back to the situation room you’re pushing against. How should we collect the rubble, Tony?",
+        "likelihood": 1
+      }
+    }
+   }
   }
     if(e.player_answers.includes(12797)){
     if(e.player_answers.includes(14815)){
