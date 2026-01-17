@@ -1621,6 +1621,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(Wins <= 3){
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 15546,
+    "fields": {
+        "priority": 0,
+        "description": ".",
+        "likelihood": 1
+      }
+    }
+  }
     if(Wins >= 6 && (e.player_answers.includes(12873) || e.player_answers.includes(12874))){
     campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
