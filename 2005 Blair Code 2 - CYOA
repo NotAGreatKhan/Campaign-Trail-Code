@@ -1621,13 +1621,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Wins <= 3){
+    if(Wins <= 3 || (e.player_answers.includes(15064) || e.player_answers.includes(15062)) || Resign == 5){
     campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 15546,
     "fields": {
         "priority": 0,
-        "description": ".",
+        "description": "The malignant forces are crawling everywhere in your cabinet, and they all have a hive they answer to. Ever since that agreement you made with him in 1994, he has taken every Godforsaken opportunity to amass more and more influence in every facet of government. The press is sniffing blood in the waters. According to Alastair, they sense mistrust, and even loathing. The worst part is that it's true. But, they cannot see that. You – <i>you</i> – are the Prime Minister and he needs to see that. Blair-Brown Pact be damned.",
         "likelihood": 1
       }
     }
