@@ -873,6 +873,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Something's up outside our shores");
     }
 
+    if(ans == 15122){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15107){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15112){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
+    if(ans == 15138){
+      Frgn += 1;
+      console.log("Something's up outside our shores");
+    }
+    if(ans == 15128){
+      Frgn -= 1;
+      console.log("Something's up outside our shores");
+    }
+
     // Question 10 – Sending Troops
     if(ans == 14980){
       Frgn -= 1;
@@ -1468,6 +1490,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(!e.player_answers.includes(14912) && iraq == 1){
+    campaignTrail_temp.questions_json[14] = {
+    "model": "campaign_trail.question",
+    "pk": 15506,
+    "fields": {
+        "priority": 0,
+        "description": "Hussein has fallen. The invasion is over. When it comes to Iraq's future though, those two events are the only certainties we can count on. From the ashes of Baghdad’s old regime now resides a power vacuum the size of a third of the Levant. Thanks to your troop deployments, the UK has one major chance to heave the needle on how Iraq should begin its reconstruction. If tying yourself so close to the Bush administration has made you such a pariah to the student youth of Britain, something better have come out of this Godforsaken ordeal. Cheney's grimace snaps you back to the situation room you’re pushing against. How should we collect the rubble, Tony?",
+        "likelihood": 1
+      }
+    }
+    if(Frgn >= 5){
+    campaignTrail_temp.questions_json[14] = {
+    "model": "campaign_trail.question",
+    "pk": 15526,
+    "fields": {
+        "priority": 0,
+        "description": "Hussein has fallen. The invasion is over. When it comes to Iraq's future though, those two events are the only certainties we can count on. From the ashes of Baghdad’s old regime now resides a power vacuum the size of a third of the Levant. Thanks to your troop deployments, the UK has one major chance to heave the needle on how Iraq should begin its reconstruction. If tying yourself so close to the Bush administration has made you such a pariah to the student youth of Britain, something better have come out of this Godforsaken ordeal. Cheney's grimace snaps you back to the situation room you’re pushing against. How should we collect the rubble, Tony?",
+        "likelihood": 1
+      }
+    }
+   }
+  }
     if(e.player_answers.includes(12797)){
     if(e.player_answers.includes(14815)){
     campaignTrail_temp.questions_json[15] = {
@@ -1585,6 +1629,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "Parliament is officially dissolved, and a core tenant of the electoral system must be sorted: the party manifesto. Within the little red booklet is housed all of your policy proposals and policies for the populace to eat up – or mostly the media class. Still, how the manifesto will be composited is yet to be decided. The team now needs to know how you would like to tinker this book so that it's camera ready.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(Wins <= 3 || (e.player_answers.includes(15064) || e.player_answers.includes(15062)) || Resign == 5){
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 15546,
+    "fields": {
+        "priority": 0,
+        "description": "The malignant forces are crawling everywhere in your cabinet, and they all have a hive they answer to. Ever since that agreement you made with him in 1994, he has taken every Godforsaken opportunity to amass more and more influence in every facet of government. The press is sniffing blood in the waters. According to Alastair, they sense mistrust, and even loathing. The worst part is that it's true. But, they cannot see that. You – <i>you</i> – are the Prime Minister and he needs to see that. Blair-Brown Pact be damned.",
         "likelihood": 1
       }
     }
@@ -3069,6 +3124,33 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Michael Howard takes to the campaign with a new crucible to wield. With your perceived shortcomings abroad looming over the debate around Iraq, he has come forward with full force against your “shattering of Britain’s credibility abroad”. Unlike in 2003, the long-term effects of your errors are now epitomised with Bush's defeat last year. His ironclad appeals to bread-and-butter Tory issues are sprinkled with repeated references to Bush (your “best mate” according to him) getting rightfully canned for Kerry. He’s turning heads around Tony, now you need to turn them back.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15506,
+        "fields": {
+            "priority": 0,
+            "description": "Hussein has fallen. The invasion is over. When it comes to Iraq's future though, those two events are the only certainties we can count on. From the ashes of Baghdad’s old regime now resides a power vacuum the size of a third of the Levant. Thanks to your troop deployments, the UK has one major chance to heave the needle on how Iraq should begin its reconstruction. If tying yourself so close to the Bush administration has made you such a pariah to the student youth of Britain, something better have come out of this Godforsaken ordeal. Cheney's grimace snaps you back to the situation room you’re pushing against. How should we collect the rubble, Tony?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15526,
+        "fields": {
+            "priority": 0,
+            "description": "Hussein has fallen. The invasion is over. When it comes to Iraq's future though, those two events are the only certainties we can count on. From the ashes of Baghdad’s old regime now resides a power vacuum the size of a third of the Levant. Thanks to your troop deployments, the UK has one major chance to heave the needle on how Iraq should begin its reconstruction. If tying yourself so close to the Bush administration has made you such a pariah to the student youth of Britain, something better have come out of this Godforsaken ordeal. Cheney's grimace snaps you back to the situation room you’re pushing against. How should we collect the rubble, Tony?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15546,
+        "fields": {
+            "priority": 0,
+            "description": "The malignant forces are crawling everywhere in your cabinet, and they all have a hive they answer to. Ever since that agreement you made with him in 1994, he has taken every Godforsaken opportunity to amass more and more influence in every facet of government. The press is sniffing blood in the waters. According to Alastair, they sense mistrust, and even loathing. The worst part is that it's true. But, they cannot see that. You – <i>you</i> – are the Prime Minister and he needs to see that. Blair-Brown Pact be damned.",
             "likelihood": 1
         }
     }
@@ -6249,6 +6331,94 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 15484,
             "description": "President Kerry is not going to leave us out on a limb. He is going to come into office next, and we need to establish that the special relationship will still be safe. He sees the world like we do, not like that fool Howard."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15507,
+        "fields": {
+            "question": 15506,
+            "description": "Without coming across as putting forward a soundbite for the sake of it, it's all about Education, edu- I’m sure you get it by now. One of the few things the old regime was able to do right was providing a proper semblance of a schooling system for the young. If we stick to this infrastructure primarily, we’re sorted."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15508,
+        "fields": {
+            "question": 15506,
+            "description": "I fully understand the sentiment behind the “De-Ba’athification” initiative. Having too many of the old bureaucrats from Saddam’s time doesn’t look ideal. But, the majority of the skilled professional workforce in the service and government are some form of Ba’athist. Let's keep at least some of them around. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15509,
+        "fields": {
+            "question": 15506,
+            "description": "If we want this to go anywhere, the Iraqi state needs to feel secure in its existence. We'll keep Bremer’s plan except for completely removing the Iraqi army. It’ll help a great deal psychologically if the people can see more than American and NATO flags on the soldiers’ uniforms."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15510,
+        "fields": {
+            "question": 15506,
+            "description": "Already the problem of funding is becoming a complete pain trying to get stuff done. The Americans have put in a lot, but there's always more to do. We can't do this properly with just the World Bank and some NGOs. We need others including ourselves to chip in. Economically."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15527,
+        "fields": {
+            "question": 15526,
+            "description": "Without coming across as putting forward a soundbite for the sake of it, it's all about Education, edu- I’m sure you get it by now. One of the few things the old regime was able to do right was providing a proper semblance of a schooling system for the young. If we stick to this infrastructure primarily, we’re sorted."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15531,
+        "fields": {
+            "question": 15526,
+            "description": "I fully understand the sentiment behind the “De-Ba’athification” initiative. Having too many of the old bureaucrats from Saddam’s time doesn’t look ideal. But, the majority of the skilled professional workforce in the service and government are some form of Ba’athist. Let's keep at least some of them around. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15536,
+        "fields": {
+            "question": 15526,
+            "description": "If we want this to go anywhere, the Iraqi state needs to feel secure in its existence. We'll keep Bremer’s plan except for completely removing the Iraqi army. It’ll help a great deal psychologically if the people can see more than American and NATO flags on the soldiers’ uniforms."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15541,
+        "fields": {
+            "question": 15526,
+            "description": "Already the problem of funding is becoming a complete pain trying to get stuff done. The Americans have put in a lot, but there's always more to do. We can't do this properly with just the World Bank and some NGOs. We need others including ourselves to chip in. Economically."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15547,
+        "fields": {
+            "question": 15546,
+            "description": "Christ on a bicycle, if we can't do much on this, can we at least film a commercial ad of the two of us? Have him for our big conferences? He can do as he pleases after all of that. But for us, I- I'm requesting only this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15548,
+        "fields": {
+            "question": 15546,
+            "description": "The only way to combat this – Christ – perception, is if he is with us, in the flesh, on <u>the campaign trail</u>. Everywhere we go, we need to project this sense of arm-locking camaraderie."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15549,
+        "fields": {
+            "question": 15546,
+            "description": "Look, I understand, that- that recent events have not exactly helped with this perception. So we have to pull out all of the stops to combat this. Alastair understands this perfectly. I can get Gordon on this. I- I can."
         }
     }
 ]
@@ -17408,6 +17578,206 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 12565,
             "global_multiplier": -0.002
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15516,
+        "fields": {
+            "answer": 15507,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15517,
+        "fields": {
+            "answer": 15509,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15518,
+        "fields": {
+            "answer": 15509,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15521,
+        "fields": {
+            "answer": 15510,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15522,
+        "fields": {
+            "answer": 15510,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15523,
+        "fields": {
+            "answer": 15508,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15524,
+        "fields": {
+            "answer": 15508,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0035
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15529,
+        "fields": {
+            "answer": 15527,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15533,
+        "fields": {
+            "answer": 15531,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": 0.0055
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15534,
+        "fields": {
+            "answer": 15531,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": -0.0025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15538,
+        "fields": {
+            "answer": 15536,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.004
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15539,
+        "fields": {
+            "answer": 15536,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15543,
+        "fields": {
+            "answer": 15541,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15544,
+        "fields": {
+            "answer": 15541,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15554,
+        "fields": {
+            "answer": 15547,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15555,
+        "fields": {
+            "answer": 15547,
+            "candidate": 12543,
+            "affected_candidate": 12587,
+            "global_multiplier": 0.0045
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15556,
+        "fields": {
+            "answer": 15548,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.0065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15557,
+        "fields": {
+            "answer": 15548,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15558,
+        "fields": {
+            "answer": 15549,
+            "candidate": 12543,
+            "affected_candidate": 12543,
+            "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15559,
+        "fields": {
+            "answer": 15549,
+            "candidate": 12543,
+            "affected_candidate": 12565,
+            "global_multiplier": 0.0075
+        }
     }
 ]
 
@@ -22191,6 +22561,116 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue_score": 1,
             "issue_importance": 3
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15515,
+        "fields": {
+            "answer": 15507,
+            "issue": 30,
+            "issue_score": -0.15,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15519,
+        "fields": {
+            "answer": 15509,
+            "issue": 30,
+            "issue_score": -0.4,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15520,
+        "fields": {
+            "answer": 15510,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15525,
+        "fields": {
+            "answer": 15508,
+            "issue": 30,
+            "issue_score": 0.1,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15530,
+        "fields": {
+            "answer": 15527,
+            "issue": 30,
+            "issue_score": -0.15,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15535,
+        "fields": {
+            "answer": 15531,
+            "issue": 30,
+            "issue_score": 0.4,
+            "issue_importance": 4
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15540,
+        "fields": {
+            "answer": 15536,
+            "issue": 30,
+            "issue_score": -0.4,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15545,
+        "fields": {
+            "answer": 15541,
+            "issue": 30,
+            "issue_score": 0,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15560,
+        "fields": {
+            "answer": 15547,
+            "issue": "27",
+            "issue_score": -1,
+            "issue_importance": 2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15561,
+        "fields": {
+            "answer": 15548,
+            "issue": "27",
+            "issue_score": -1,
+            "issue_importance": 3
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 15562,
+        "fields": {
+            "answer": 15549,
+            "issue": "27",
+            "issue_score": -1,
+            "issue_importance": 4
+        }
     }
 ]
 
@@ -26320,6 +26800,105 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 12543,
             "answer_feedback": "A light breaks through the clouds when you manage to secure a meeting in D.C. with President Kerry. Journalists from CNN and the BBC alike delight in seeing the both of you strike up humourous barbs and upbeat discussions on an array of issues. Michael Howard's lunges into your previous media disasters in the build-up to the invasion are drowned out with optimistic speculation in the press of potential withdrawal plans. An opinion piece in <i>The Guardian</i> calls the meeting “hopeful and bright”, making Howard's support of sending troops look cynical by comparison."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15511,
+        "fields": {
+            "answer": 15507,
+            "candidate": 12543,
+            "answer_feedback": "The great financial institutions of the world get to work bankrolling the installation of telephone lines, electric plants, and schools. The arbitrary goal of 6000MW worth of power from the pre-war days is set to meet – and it all grinds down. The brain drain, Sunni resentment, and an inability to properly establish control makes an underground insurgency a near certainty."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15512,
+        "fields": {
+            "answer": 15508,
+            "candidate": 12543,
+            "answer_feedback": "The Bush administration just cannot bring themselves on to this issue, pointing to the Shiite elites who will be enraged by so brazenly maintaining the Hussein status quo. With that idea shot down, the brain drain only accelerates as crucial government bureaucracy slowly erodes away. It's as if screaming your voice couldn't even recreate the power it had just 4 years ago..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15513,
+        "fields": {
+            "answer": 15509,
+            "candidate": 12543,
+            "answer_feedback": "They don't budge. Not one bit. The coalition keeps to using exclusively NATO troops instead of turning to whatever remained of the Iraqi military. Any wishful thoughts of beefing up a British presence are dashed when the protests back home only drum with more thunder. Iraq will remain a state teetering on civil war."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15514,
+        "fields": {
+            "answer": 15510,
+            "candidate": 12543,
+            "answer_feedback": "This helps to a marginal capacity. But without proper accountability on the grounds for ensuring the funds are reaching the right areas, expenditures only continue to climb with little to show for it. Electricity generation falls behind target. And every day, a fully restored Iraq free from the slithering snake of insurgency stretches further away."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15528,
+        "fields": {
+            "answer": 15527,
+            "candidate": 12543,
+            "answer_feedback": "The great financial institutions of the world get to work bankrolling the installation of telephone lines, electric plants, and schools. The arbitrary goal of 6000MW worth of power from the pre-war days is set to meet – and it all grinds down. The brain drain, Sunni resentment, and an inability to properly establish control makes an underground insurgency a near certainty."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15532,
+        "fields": {
+            "answer": 15531,
+            "candidate": 12543,
+            "answer_feedback": "One by one, the callous faces of the American cabinet slowly turn your way. By the end of your short speech, even Bush begins to quietly nod along with you – not even Cheney can stop this from happening now. In the following months, the old Ba’athists trickle in like a broken stream. The great wheels of government turn once more in Iraq. And for the first time in years, <i>The Telegraph</i> just cannot convince Middle Britain that all is lost."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15537,
+        "fields": {
+            "answer": 15536,
+            "candidate": 12543,
+            "answer_feedback": "They don't budge. Not one bit. The coalition keeps to using exclusively NATO troops instead of turning to whatever remained of the Iraqi military. Any wishful thoughts of beefing up a British presence are dashed when the protests back home only drum with more thunder. Iraq will remain a state teetering on civil war."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15542,
+        "fields": {
+            "answer": 15541,
+            "candidate": 12543,
+            "answer_feedback": "This helps to a marginal capacity. But without proper accountability on the grounds for ensuring the funds are reaching the right areas, expenditures only continue to climb with little to show for it. Electricity generation falls behind target. And every day, a fully restored Iraq free from the slithering snake of insurgency stretches further away."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15551,
+        "fields": {
+            "answer": 15547,
+            "candidate": 12543,
+            "answer_feedback": "Gordon grits his teeth and curls his fingers, but ultimately agrees to the plan – if only for the sake of electoral politics. The prop papers and pens are whipped out, the film cameras roll, and you both depart while the campaign cuts together the ads for the air. The public reaction to the ads are generally positive. Yet when you brought yourself once to watch it through, any suggestion of a “relationship that's worked” makes you physically cringe."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15552,
+        "fields": {
+            "answer": 15548,
+            "candidate": 12543,
+            "answer_feedback": "The ghost of the close friendship you both once held straggles behind the motorcade carrying the both of you to the streets of London. At a publicity stunt in the Strand Park, Gordon awkwardly outstretches his arm to hold your offered ice cream. The joint appearances are far and few between. By the end of the campaign, the rallies stop happening at all – only feeding the beast of speculation."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15553,
+        "fields": {
+            "answer": 15549,
+            "candidate": 12543,
+            "answer_feedback": "Gordon's stout frame hunches more and more as he shifts uncomfortably in his skin. On the <i>first</i> public appearance on the trail, just about everybody chatters about how much snarling rage emanates from every pore of his face. After the fiasco is done with, he strops to his office in the Exchequer and shoots you daggers at every subsequent meeting. The planned commercials starring the two of you are also thrown to the cutting room floor."
+        }
     }
 ]
 
@@ -27461,7 +28040,7 @@ In heated exchanges between the prime minister and opposition leaders at questio
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg"})])
 }
 
-else if (e.player_answers.includes(14034)) {
+else if (quickstats[0] >= 324 && e.player_answers.includes(14034)) {
 e.pages.push(`
 <h3 style='text-align: center,'>Behind the scenes on the Minister of Education</h3>
 <p>
@@ -27489,7 +28068,110 @@ e.pages.push(`
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg"})])
 }
 
-// Fourth Slides
+else if (aa[0].candidate == 12565) {
+e.pages.push(`
+<h3 style='text-align: center,'>Protests erupt as House contemplates new Immigration Bill</h3>
+<b style="font-size: 1.2em;"><i>The Daily Mirror</i> | <i>20th September, 2006</i></b>
+<br><br>
+<b>As parliament begins the second reading of legislation to restrict immigration into the UK, protesters gather mobilised by new anti-terror measures.</b>
+<br><br>
+With the recent local elections being generally unremarkable for the Conservatives, No 10 has pushed forward with their flagship manifesto policy: immigration restriction.
+<br><br>
+This comes after the government <u><font color='#e06666;'>walked back from its original intention to</font></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
+<br><br>
+The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><font color='#e06666;'>labelled as “cowardly”</font></u>, according to leaked memos.
+<br><br>
+Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><font color='#e06666;'>using the 7/7 attacks last year</font></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
+<br><br>
+Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><font color='#e06666;'>in the latest budget</font></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
+<br><br>
+It remains to be seen if the bill will survive today’s vote. But, if the protests outside Whitehall are of any indication, it won’t go down quietly.
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/IKStDf4.jpg"})])
+}
+
+else if (Porty == 1 && aa[0].candidate == 12565) {
+e.pages.push(`
+<h3 style='text-align: center,'>The Portillo Interview | YouTube</h3>
+<p>
+<b style="font-size: 1.2em;">thatcheritescot</b> <button>Subscribe</button>
+<br>
+10.2K subscribers
+<br><br>
+513,798 views  Jan 21, 2009
+<br>
+prime minister michael portillo is grilled by the times on the economy and his past
+<br><br>
+<b style="font-size: 1.1em;">462 Comments</b>
+<br><br>
+<b style="font-size: 0.8em;">@mikeh4011</b>
+<br>
+Great interview. Really showed Portillo to be the twat he is.
+<br>
+<b>100 Likes</b>
+<br><br>
+<b style="font-size: 0.8em;">@charlie_charldon</b>
+<br>
+“Your chancellor struggling to get any good news is a bad sign for your government” – Michael Portillo, 2005
+<br>
+Well look how true that turned out to be.
+<br>
+<b>251 Likes</b>
+<br><br>
+<b style="font-size: 0.8em;">@greghoward1530</b>
+<br>
+And I thought Gordon Brown was bad, at least he didn’t fuck up a recession!
+<br>
+<b>78 Likes</b>
+<br><br>
+<b style="font-size: 0.8em;">@jackboondoggle0624</b>
+<br>
+really is something when the guy manages to go lower than cheating with boys, not a high bar…
+<br>
+<b>162 Likes</b>
+<br><br>
+<b style="font-size: 0.8em;">@henryhawkins</b>
+<br>
+I gotta say, the music choices are pretty great for such a damaging interview lol
+<br>
+<b>58 Likes</b>
+</p>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/OIEc7pW.jpg"})])
+}
+
+else if (Ken == 1 && aa[0].candidate == 12565) {
+e.pages.push(`
+<h3 style='text-align: center,'>Farage touts election result as a “rejection of the Tory-EU establishment”</h3>
+<p>
+<b style="font-size: 1.2em;"><i>BBC News</i> | <i>9th June, 2009</i></b>
+<br><br>
+<b>The UK Independence Party has achieved their highest voteshare ever in today’s European elections, showing a “real want for change”, says Nigel Farage.</b>
+<br><br>
+In spite of the Conservatives marching through the campaigns for the most part straddling the party line, their pro-Europe stance was not enough to prevent their fall from first place. Not only did their vote share <u><font color='#5185b1;'>fall by nearly double-digits</font></u>, but the Labour party came back from their poor showing in 2004 to reach first place.
+<br><br>
+<li>After the Conservative’s disappointing night <u><font color='#5185b1;'>landing in third place</font></u>, Timothy Kirkhope insisted that the Tories are “not out of the fight yet”, though he did acknowledge the 14 MEPs lost from the last election.</li>
+<br><br>
+<li><u><font color='#5185b1;'>Regaining their first place</font></u> for the first time in 15 years, Labour came out of the affair in high spirits. Glenis Willmott noticeably tacked away from the haunting of the general election 4 years prior, saying it’s a “fantastic turnaround for Europe”.</li>
+<br><br>
+<li>UKIP <u><font color='#5185b1;'>continued to climb in voteshare</font></u> and landed themselves 15 MEPs after taking the fight directly to the Conservatives on their pet issue.</li>
+<br><br>
+Speaking on the loss, Kirkhope expressed that he “appreciated the concerns of those skeptical” of the “European project” that the Clarke government is pursuing. “The voters have also shown that they are concerned about the economy because of the global financial crisis”, he then added.
+<br><br>
+When questioned on to what extent the financial crisis of last year played a role, Kirkhope responded with “the government is doing all that they can to relieve people as they feel the effects of the crisis”, he further added that “the government is doing great work to ensure struggling families can find their foot again”, referring to the bailout package passed last year.
+<br><br>
+It is contested and debated, however, as to whether or not the response to the crash has been felt positively on the ground. Or, even if the economic turmoil has been the deciding factor in the European elections at all. In the wake of these results, Conservative backbenchers in parliament are adding this to the growing list of grievances they have against Prime Minister Clarke. Further piling on to these anxieties was an <u><font color='#5185b1;'>Ipsos poll showing the approval ratings</font></u> of the Prime Minister at his near-all-time low.
+<br><br>
+In light of this, such as David Davis and Boris Johnson, are hinting at the need for the Conservatives to shift to the right and further embrace a skeptical tone on European institutions. In lieu of this, moderate Tory MPs such as David Cameron and George Osborne urge that the party must continue to fight for a European ideal – especially given the floating ex-Blair MPs in Labour who could aid the minority government in legislation.
+<br><br>
+But whatever the consequences of this might be, one thing that is undeniable is how much cold water has been poured onto the Tories, and after an unprecedented economic crisis no-less.
+</p>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/_.jpg"})])
+}
+
+
+// Third Slides
 if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
 <h3 style='text-align: center;'>A MONSTER OF DELUSION –– <font color='#be2f42;'>CHILCOT SPECIAL EDITION</font></h3>
@@ -27523,7 +28205,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg
 }
 
 
-// Fifth Slides
+// Fourth Slides
 if (quickstats[0] >= 390) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Happy summer! Enjoy one of our blonde candidates to celebrate Brat Summer, 2024!</h3>
@@ -27911,7 +28593,7 @@ function updateSimplePopup() {
 
      <p>
         <span class="hover-value" data-tooltip="How influential we are in foreign affairs.">Our Image Abroad</span>: 
-        <span ${Frgn <= 2 ? "style=\"color:#ad1313;\"" : Frgn <= 4 ? "style=\"color:#d58627;\"" : Frgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+        <span ${Frgn <= 2 ? "style=\"color:#ad1313;\"" : Frgn <= 6 ? "style=\"color:#d58627;\"" : Frgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           Frgn <= 0 ? 'An international embarassement' :
           Frgn === 1 ? 'Mocked at the UN' :
           Frgn === 2 ? 'Getting red-hot glares' :
