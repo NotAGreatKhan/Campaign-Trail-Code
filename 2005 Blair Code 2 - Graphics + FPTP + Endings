@@ -1226,7 +1226,7 @@ Tony Blair made an astonishing defence of the invasion of Iraq yesterday despite
 He even raised the prospect the war could be illegal – with relatives of some of the 170 dead British troops threatening to haul Mr Blair before the courts. Sir John said the UK intervention in Iraq 'went badly wrong, with consequences to this day'. But, in an extraordinary two-hour press conference, a defiant Mr Blair shrugged off the verdict of history and said he would 'take the same decision' to invade again.
 </p>
 `)
-e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
 
 else if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
@@ -1242,8 +1242,55 @@ Tony Blair made an astonishing defence of the enabling of the invasion of Iraq y
 He even raised the prospect the war could be illegal – with relatives of the martyr Dr David Kelly threatening to haul Mr Blair before the courts. Sir John said the UK intelligence provided for Iraq 'was badly wrong, with consequences to this day'. But, in an extraordinary hour-long press conference, a defiant Mr Blair shrugged off the verdict of history and said he would 'take the same decision to back America' again.
 </p>
 `)
-e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
+
+else if (e.player_answers.includes(15531)) {
+e.pages.push(`
+<h3 style='text-align: center;'>World Bank Group | <i>17th May, 2019</i></font></h3>
+<div class="ending-slide tv-fade world-bank-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<img src="https://imgur.com/1tvHbXO.png" alt="World Bank logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b><font color='#1155cc;'>Understanding Poverty / Research & Publications / Documents & Reports</font></b>
+<br><br>
+<b style="font-size: 1.2em;">The Reconstruction of Iraq after 2003: What should be Continued and Discarded</b>
+<br><br>
+Beginning in 2003, diverse and significant actors, both domestic and international, engaged in reconstruction activities in Iraq. The total budget committed to Iraq’s reconstruction was unprecedented among post conflict operations mobilized by the international community. Although there were threats of an islamic insurgency presented to the multiple institutions established, and the cost of the efforts continued to mount, the verdict is largely agreed upon to be a success. The Reconstruction of Iraq after 2003: What should be Continued and Discarded focuses on the period after 2003, that is, after the United States–led invasion and overthrow of the Saddam Hussein regime, and everything succeeding it involving the cementing of the legislative body, and the balancing of the myriad of religious and partisan groups. This book assesses several dimensions of Iraq’s reconstruction. First, it considers the response of key international actors, such as the United Nations, the World Bank, the United States, and other bilateral donors, specifically, the European Union, Japan, and the United Kingdom, as well as nongovernmental organizations. Second, it analyzes the process and results of the reconstruction of key sectors (electricity, oil, education, and health), and the interventions geared to institution building and governance reform. Pursuing effective reconstruction within the context of conflict and fragility is a formidable challenge because of the uncertain, fluid, and complex environment. Based on the experience in Iraq, how can the international community support the effectiveness and durability of reconstruction? This book identifies lessons in seven areas and offers four recommendations for international and domestic actors and citizens engaged in reconstruction activities. The Reconstruction of Iraq after 2003 is important reading for development practitioners and policy makers who are or will be engaged in reconstruction efforts in fragile and conflict-affected environments.
+<br><br>
+<b><u>DETAILS</u></b>
+<br><br>
+<b>Author:</b> <u><a href="#" style="color:#1155c;">Matsunaga, Hideki;</a></u>
+<br><br>
+<b>Document Date:</b> 2019/01/01
+<br><br>
+<b>Document Type:</b> Publication
+<br><br>
+<b>Report Number:</b> 136976
+<br><br>
+<b>Volume No:</b> 1
+<br><br>
+<b>Total Volume(s):</b> 1
+<br><br>
+<b>Country:</b> <u><a href="#" style="color:#1155c;">Middle East and North Africa, Iraq,</a></u>
+<br><br>
+<b>Region:</b> <u><a href="#" style="color:#1155c;">Middle East, North Africa, Afghanistan, and Pakistan,</a></u>
+<br><br>
+<b>Disclosure Date:</b> 2019/05/17
+<br><br>
+<b>Disclosure Status:</b> Disclosed
+<br><br>
+<b>Doc Name:</b> The Reconstruction of Iraq after 2003 : What should be Continued and Discarded
+<br><br>
+<b>Keywords:</b> reconstruction activities
+</div>
+</div>
+</div>
+`)
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/aX14st3.jpg"})])
+}
+
 
 
 // Fourth Slides
@@ -1265,7 +1312,7 @@ New Labour has been in government for over a decade. In that time, Britain has s
 This scenario was made by <button>Various people</button>.
 </p>
 `)
-e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
 
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12543) {     
@@ -1286,7 +1333,7 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 `)
-e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
 
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12565) {     
@@ -1307,7 +1354,7 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 `)
-e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
 
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12543) {     
@@ -1328,7 +1375,7 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 `)
-e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
 
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12565) {     
@@ -1349,7 +1396,7 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 `)
-e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
 
 else if (aa[0].candidate == 12543) {     
@@ -1370,7 +1417,7 @@ Heading into the 2005 election, the campaign is being fought in the backdrop of 
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 `)
-e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
 
 else if (aa[0].candidate == 12565) {     
@@ -1391,7 +1438,7 @@ Heading into the 2005 election, the campaign is being fought in the backdrop of 
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 `)
-e.executable.push([4, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
 
 return construct(0);
