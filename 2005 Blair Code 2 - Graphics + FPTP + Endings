@@ -1215,9 +1215,11 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/_.jpg"})])
 // Third Slides
 if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
-<h3 style='text-align: center;'>A MONSTER OF DELUSION –– <font color='#be2f42;'>CHILCOT SPECIAL EDITION</font></h3>
+<h3 style='text-align: center;'>A MONSTER OF DELUSION –– <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a></h3>
 <p>
-<img src = https://imgur.com/hPzZXy8.png>
+<img src = https://imgur.com/kyXorvy.png>
+<br>
+<a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a>
 <br><br>
 <b>For two hours, Blair dissembled and denied in the face of Chilcot’s devastating verdict. Then, with sickening egomania, he declared: I can’t say sorry for Iraq… I’d do it again.</b>
 <br><br>
@@ -1231,9 +1233,11 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg
 
 else if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
 e.pages.push(`
-<h3 style='text-align: center;'>A DEMON OF DECEPTION –– <font color='#be2f42;'>CHILCOT SPECIAL EDITION</font></h3>
+<h3 style='text-align: center;'>A DEMON OF DECEPTION –– <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a></h3>
 <p>
-<img src = https://imgur.com/hPzZXy8.png>
+<img src = https://https://imgur.com/kyXorvy.png>
+<br>
+<a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a>
 <br><br>
 <b>For two hours, Blair dissembled and denied in the face of Chilcot’s devastating verdict. Then, with sickening egomania, he declared: I can’t say sorry for Iraq… I’d aid it again.</b>
 <br><br>
@@ -1253,7 +1257,7 @@ e.pages.push(`
 <div style="display: flex; align-items: center;">
 <img src="https://imgur.com/1tvHbXO.png" alt="World Bank logo" style="height: 44px; margin-right: 12px;">
 <br><br>
-<b><font color='#1155cc;'>Understanding Poverty / Research & Publications / Documents & Reports</font></b>
+<b><a href="#" style="color:#1155cc;">Understanding Poverty / Research & Publications / Documents & Reports</a></b>
 <br><br>
 <b style="font-size: 1.2em;">The Reconstruction of Iraq after 2003: What should be Continued and Discarded</b>
 <br><br>
@@ -1261,7 +1265,7 @@ Beginning in 2003, diverse and significant actors, both domestic and internation
 <br><br>
 <b><u>DETAILS</u></b>
 <br><br>
-<b>Author:</b> <u><a href="#" style="color:#1155c;">Matsunaga, Hideki;</a></u>
+<b>Author:</b> <u><a href="#" style="color:#1155cc;">Matsunaga, Hideki;</a></u>
 <br><br>
 <b>Document Date:</b> 2019/01/01
 <br><br>
@@ -1273,9 +1277,9 @@ Beginning in 2003, diverse and significant actors, both domestic and internation
 <br><br>
 <b>Total Volume(s):</b> 1
 <br><br>
-<b>Country:</b> <u><a href="#" style="color:#1155c;">Middle East and North Africa, Iraq,</a></u>
+<b>Country:</b> <u><a href="#" style="color:#1155cc;">Middle East and North Africa, Iraq,</a></u>
 <br><br>
-<b>Region:</b> <u><a href="#" style="color:#1155c;">Middle East, North Africa, Afghanistan, and Pakistan,</a></u>
+<b>Region:</b> <u><a href="#" style="color:#1155cc;">Middle East, North Africa, Afghanistan, and Pakistan,</a></u>
 <br><br>
 <b>Disclosure Date:</b> 2019/05/17
 <br><br>
