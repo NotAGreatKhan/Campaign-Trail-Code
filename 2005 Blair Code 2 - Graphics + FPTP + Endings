@@ -484,11 +484,12 @@ endingPicker = (out, totv, aa, quickstats) => {
 
 distributeSeatsUK();
 
-/*
+
 if (!document.getElementById("ending-slide-style")) {
             const style = document.createElement("style");
             style.id = "ending-slide-style";
-            style.innerHTML = `            
+            style.innerHTML = `
+
                 .ending-slide.world-bank-style {
                 font-family: Arial;
                 background-color: #fff;
@@ -498,13 +499,40 @@ if (!document.getElementById("ending-slide-style")) {
                 margin: 0 auto;
                 border: 1px solid #a2a9b1;
                 box-shadow: none;
-                line-height: 1.6;
+                line-height: 1.5;
                 font-size: 16px;
             }
+
+                .ending-slide.campaign-trail-style {
+                font-family: Arial;
+                background-color: #e8fbff;
+                color: #bfe6ff;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+                .ending-slide.mod-jam-style {
+                font-family: Arial;
+                background-color: #cc0000;
+                color: #7c68fb;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
             `;
             document.head.appendChild(style);
         }
-*/
+
 
 function onGameWindowChangeCandidates() {
     const resultsTableHolder = document.getElementById("overall_details_container");
@@ -1297,20 +1325,24 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/aX14st3.jpg
 if (quickstats[0] >= 390) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Happy summer! Enjoy one of our blonde candidates to celebrate Brat Summer, 2024!</h3>
+<div class="ending-slide tv-fade mod-jam-style" style="background-color: #cc0000; color: #7c6f8b; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2010 UK" id="2010"><option value="0">2010 UK</option></select>
 <br><br>
+<div style="background-color: #e8fbff;">
 <img src = https://imgur.com/pG6ZWzH.png>
 <br><br>
 New Labour has been in government for over a decade. In that time, Britain has seen the Iraq War, Tony Blair's resignation, and now the worst recession in 70 years.
 <br><br>
 <li>Gordon Brown must steer the economy safely through difficult times, while deciding how closely to stick to Tony Blair's mixed legacy.</li>
 <li>David Cameron must modernise the "nasty" Conservative Party to lead it back into government after 13 years in Opposition.</li>
+</div>
 <br><br>
 <button>Continue</button>
 <br><br>
 This scenario was made by <button>Various people</button>.
 </p>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -1318,6 +1350,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -1332,6 +1365,7 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -1339,6 +1373,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -1353,6 +1388,7 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -1360,6 +1396,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -1374,6 +1411,7 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -1381,6 +1419,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -1395,6 +1434,7 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -1402,19 +1442,23 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #e8fbff;">
 <img src = https://imgur.com/Sb2rzJ4.png>
 <br><br>
 Heading into the 2005 election, the campaign is being fought in the backdrop of the controversial Iraq War. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
 <br><br>
 <li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
 <li>Michael Howard, elected unopposed after Iain Duncan Smith’s fall, must strategically position himself to clinch victory.</li>
+</div>
 <br><br>
 <button>Continue</button>
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
+</div>
 </p>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
@@ -1423,20 +1467,24 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #e8fbff;">
 <img src = https://imgur.com/q2nEzkL.png>
 <br><br>
 Heading into the 2005 election, the campaign is being fought in the backdrop of the controversial Iraq War. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
 <br><br>
 <li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
 <li>Michael Howard, elected unopposed after Iain Duncan Smith’s fall, must strategically position himself to clinch victory.</li>
+</div>
 <br><br>
 <button>Continue</button>
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
