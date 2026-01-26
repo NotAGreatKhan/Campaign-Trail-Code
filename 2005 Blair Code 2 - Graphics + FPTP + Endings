@@ -1253,8 +1253,6 @@ else if (e.player_answers.includes(15531) && quickstats[0] >= 324) {
 e.pages.push(`
 <h3 style='text-align: center;'>World Bank Group | <i>17th May, 2019</i></font></h3>
 <div class="ending-slide tv-fade world-bank-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-<div style="display: flex; align-items: center;">
 <img src="https://imgur.com/1tvHbXO.png" alt="World Bank logo" style="height: 44px; margin-right: 12px;">
 <br><br>
 <b><a href="#" style="color:#1155cc;">Understanding Poverty / Research & Publications / Documents & Reports</a></b>
@@ -1288,8 +1286,6 @@ Beginning in 2003, diverse and significant actors, both domestic and internation
 <b>Doc Name:</b> The Reconstruction of Iraq after 2003 : What should be Continued and Discarded
 <br><br>
 <b>Keywords:</b> reconstruction activities
-</div>
-</div>
 </div>
 `)
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/aX14st3.jpg"})])
