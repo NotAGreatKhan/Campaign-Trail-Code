@@ -503,6 +503,32 @@ if (!document.getElementById("ending-slide-style")) {
                 font-size: 16px;
             }
 
+            .ending-slide.bbc-style {
+                font-family: Arial;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+            .ending-slide.daily-mail-style {
+                font-family: Whitman;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
                 .ending-slide.campaign-trail-style {
                 font-family: Arial;
                 background-color: #e8fbff;
@@ -1243,8 +1269,11 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/_.jpg"})])
 // Third Slides
 if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
-<h3 style='text-align: center;'>A MONSTER OF DELUSION –– <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a></h3>
+<h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
+<div class="ending-slide tv-fade daily-mail-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<b style="font-size: 1.2em;">A MONSTER OF DELUSION</b>
+<br>
 <img src = https://imgur.com/kyXorvy.png>
 <br>
 <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a>
@@ -1255,14 +1284,18 @@ Tony Blair made an astonishing defence of the invasion of Iraq yesterday despite
 <br><br>
 He even raised the prospect the war could be illegal – with relatives of some of the 170 dead British troops threatening to haul Mr Blair before the courts. Sir John said the UK intervention in Iraq 'went badly wrong, with consequences to this day'. But, in an extraordinary two-hour press conference, a defiant Mr Blair shrugged off the verdict of history and said he would 'take the same decision' to invade again.
 </p>
+</div>
 `)
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
 
 else if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
 e.pages.push(`
-<h3 style='text-align: center;'>A DEMON OF DECEPTION –– <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a></h3>
+<h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
+<div class="ending-slide tv-fade daily-mail-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<b style="font-size: 1.2em;">A MONSTER OF DELUSION</b>
+<br>
 <img src = https://https://imgur.com/kyXorvy.png>
 <br>
 <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a>
@@ -1273,6 +1306,7 @@ Tony Blair made an astonishing defence of the enabling of the invasion of Iraq y
 <br><br>
 He even raised the prospect the war could be illegal – with relatives of the martyr Dr David Kelly threatening to haul Mr Blair before the courts. Sir John said the UK intelligence provided for Iraq 'was badly wrong, with consequences to this day'. But, in an extraordinary hour-long press conference, a defiant Mr Blair shrugged off the verdict of history and said he would 'take the same decision to back America' again.
 </p>
+</div>
 `)
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
