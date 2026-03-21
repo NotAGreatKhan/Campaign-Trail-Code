@@ -9,7 +9,6 @@ function getQuestionNumberFromPk(pk) {
 }
 
 
-
 e = campaignTrail_temp
 
 var Wins = 0;
@@ -22,6 +21,7 @@ var Brown = 0;
 var EUCnstn = 0;
 var Ken = 0;
 var iraq = 0;
+var wmd = 0;
 var Porty = 0;
 var debug = 0;
 var CampaignSign = "PMBlair"
@@ -959,6 +959,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Something's up outside our shores");
     }
 
+    // OTHER MISC. VARIABLES
+    if(ans == 14912){
+      wmd += 1;
+      console.log("You have chosen to move forward with pushing the narrative of WMDs");
+    }
+
 // Resignation Questions
     if(Resign >= 5){
     if(Resign >= 6){
@@ -1165,7 +1171,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14929,
     "fields": {
         "priority": 0,
-        "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+        "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation, salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
         "likelihood": 1
       }
     }
@@ -1176,7 +1182,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14905,
     "fields": {
         "priority": 0,
-        "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+        "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation, salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
         "likelihood": 1
       }
     }
@@ -1490,7 +1496,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(!e.player_answers.includes(14912) && iraq == 1){
+    if(wmd == 0 && iraq == 1){
     campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 15506,
@@ -1973,7 +1979,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 }
 
 
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -2034,7 +2039,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12811,
         "fields": {
             "priority": 0,
-            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation, salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
             "likelihood": 1
         }
     },
@@ -2565,7 +2570,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14929,
         "fields": {
             "priority": 0,
-            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation, salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
             "likelihood": 1
         }
     },
@@ -2574,7 +2579,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14905,
         "fields": {
             "priority": 0,
-            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation. Salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
+            "description": "Now that you have decided to go through with supporting the United States’ initiative, a new daunting task lies ahead. Whilst you have compiled a decent enough justification for a pursuit of “disarming Iraq”, the scrutiny of the international community could be the deciding factor. Iraq has agreed to the presence of UN weapons inspectors under the passage of the first <i>Iraq UN Resolution</i>. Permanent Council members France and Russia look on with trepidation. But, both British and American intelligence already suspect that WMDs are still present in the nation, salivating at the prospect of sinking into the Middle-Eastern dictatorship. How will you try to gain support for the war when your primary reasoning is already starting to look shaky?",
             "likelihood": 1
         }
     },
@@ -9396,7 +9401,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12797,
             "candidate": 12543,
             "affected_candidate": 12543,
-            "global_multiplier": -0.225
+            "global_multiplier": -0.2325
         }
     },
     {
@@ -22647,7 +22652,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 15560,
         "fields": {
             "answer": 15547,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -1,
             "issue_importance": 2
         }
@@ -22657,7 +22662,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 15561,
         "fields": {
             "answer": 15548,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -1,
             "issue_importance": 3
         }
@@ -22667,7 +22672,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 15562,
         "fields": {
             "answer": 15549,
-            "issue": "27",
+            "issue": 27,
             "issue_score": -1,
             "issue_importance": 4
         }
@@ -27465,6 +27470,32 @@ if (!document.getElementById("ending-slide-style")) {
                 font-size: 16px;
             }
 
+            .ending-slide.bbc-style {
+                font-family: Arial;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+            .ending-slide.daily-mail-style {
+                font-family: Whitman;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
                 .ending-slide.campaign-trail-style {
                 font-family: Arial;
                 background-color: #e8fbff;
@@ -28205,8 +28236,11 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/_.jpg"})])
 // Third Slides
 if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
-<h3 style='text-align: center;'>A MONSTER OF DELUSION –– <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a></h3>
+<h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
+<div class="ending-slide tv-fade daily-mail-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<b style="font-size: 1.2em;">A MONSTER OF DELUSION</b>
+<br>
 <img src = https://imgur.com/kyXorvy.png>
 <br>
 <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a>
@@ -28217,14 +28251,18 @@ Tony Blair made an astonishing defence of the invasion of Iraq yesterday despite
 <br><br>
 He even raised the prospect the war could be illegal – with relatives of some of the 170 dead British troops threatening to haul Mr Blair before the courts. Sir John said the UK intervention in Iraq 'went badly wrong, with consequences to this day'. But, in an extraordinary two-hour press conference, a defiant Mr Blair shrugged off the verdict of history and said he would 'take the same decision' to invade again.
 </p>
+</div>
 `)
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
 
 else if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
 e.pages.push(`
-<h3 style='text-align: center;'>A DEMON OF DECEPTION –– <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a></h3>
+<h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
+<div class="ending-slide tv-fade daily-mail-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<b style="font-size: 1.2em;">A MONSTER OF DELUSION</b>
+<br>
 <img src = https://https://imgur.com/kyXorvy.png>
 <br>
 <a style="color:#be2f42;">CHILCOT SPECIAL EDITION</a>
@@ -28235,6 +28273,7 @@ Tony Blair made an astonishing defence of the enabling of the invasion of Iraq y
 <br><br>
 He even raised the prospect the war could be illegal – with relatives of the martyr Dr David Kelly threatening to haul Mr Blair before the courts. Sir John said the UK intelligence provided for Iraq 'was badly wrong, with consequences to this day'. But, in an extraordinary hour-long press conference, a defiant Mr Blair shrugged off the verdict of history and said he would 'take the same decision to back America' again.
 </p>
+</div>
 `)
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
@@ -28673,7 +28712,7 @@ function updateSimplePopup() {
       </p>
   
       <p>
-        <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Promises Kept</span>: 
+        <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Moves Forward</span>: 
         <span ${Wins <= 2 ? "style=\"color:#ad1313;\"" : Wins <= 5 ? "style=\"color:#d58627;\"" : Wins >= 6 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           Wins <= 0 ? 'None at all' :
           Wins === 1 ? 'Few and far between' :
