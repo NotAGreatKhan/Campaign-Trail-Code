@@ -1711,7 +1711,7 @@ function updateSimplePopup() {
       </p>
   
       <p>
-        <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Promises Kept</span>: 
+        <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Moves Forward</span>: 
         <span ${Wins <= 2 ? "style=\"color:#ad1313;\"" : Wins <= 5 ? "style=\"color:#d58627;\"" : Wins >= 6 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           Wins <= 0 ? 'None at all' :
           Wins === 1 ? 'Few and far between' :
