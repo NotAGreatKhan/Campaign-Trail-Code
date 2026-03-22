@@ -965,12 +965,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       wmd += 1;
       console.log("You have chosen to move forward with pushing the narrative of WMDs");
     }
- 
+
     if(ans == 12824 || ans == 12825){
       kelly += 1;
       console.log("Things are escalating...");
     }
-
 
 // Resignation Questions
     if(Resign >= 5){
@@ -1470,17 +1469,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
   }
  }
 }
-    if(e.player_answers.includes(12824) && Cred <= 1){
-    campaignTrail_temp.questions_json[14] = {
-    "model": "campaign_trail.question",
-    "pk": 14281,
-    "fields": {
-        "priority": 0,
-        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
-        "likelihood": 1
-      }
-    }
-  }
     if(ans == 12813 || ans == 12815){
     campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
@@ -1488,17 +1476,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "fields": {
         "priority": 0,
         "description": "The new government in Iraq is finding trouble in establishing itself after the deposition of Saddam Hussein. New terrorist organisations have sprung up, threatening the already fragile hold that the American-backed administration clings on to in the fertile crescent. The people back home are losing faith in your justification for supporting it in the first place. You need to say something, but what?",
-        "likelihood": 1
-      }
-    }
-  }
-    if(e.player_answers.includes(12825)){
-    campaignTrail_temp.questions_json[14] = {
-    "model": "campaign_trail.question",
-    "pk": 13410,
-    "fields": {
-        "priority": 0,
-        "description": "The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
         "likelihood": 1
       }
     }
@@ -1524,6 +1501,41 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
    }
+  }
+    if(e.player_answers.includes(12824)){
+    if(Cred <= 1){
+    campaignTrail_temp.questions_json[14] = {
+    "model": "campaign_trail.question",
+    "pk": 14281,
+    "fields": {
+        "priority": 0,
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "likelihood": 1
+      }
+    }
+   }
+    else{
+    campaignTrail_temp.questions_json[14] = {
+    "model": "campaign_trail.question",
+    "pk": 12831,
+    "fields": {
+        "priority": 0,
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "likelihood": 1
+      }
+    }
+   }
+  }
+    if(e.player_answers.includes(12825)){
+    campaignTrail_temp.questions_json[14] = {
+    "model": "campaign_trail.question",
+    "pk": 13410,
+    "fields": {
+        "priority": 0,
+        "description": "The media controversy has morphed from a thorn in your back, to a shaft up the rear. As the whistleblower to Andrew Gillian continues to feed information indicating the scale of the deception, news and television cameras of civilians – even children – being killed, has continued to sear itself into the minds of the British public. The WMDs have not been found. Stability is far from assured, in the long run. You inquire futilely as to how on Earth you could solve this.",
+        "likelihood": 1
+      }
+    }
   }
     if(e.player_answers.includes(12797)){
     if(e.player_answers.includes(14815)){
