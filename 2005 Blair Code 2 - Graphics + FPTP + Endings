@@ -1621,6 +1621,7 @@ function updateSimplePopup() {
       <p>
         <span class="hover-value" data-tooltip="How secure your standing as Prime Minister is.">Your Premiership</span>: 
         <span ${cResign <= 1 ? "style=\"color:#7ba922;\"" : cResign <= 3 ? "style=\"color:#d58627;\"" : cResign >= 4 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+          cResign <= -2 ? 'Marking a New Era – Hopefully' :
           cResign <= 0 ? 'Secure' :
           cResign === 1 ? 'Stable' :
           cResign === 2 ? 'Showing Stress' :
