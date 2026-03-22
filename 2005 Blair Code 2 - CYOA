@@ -76,6 +76,14 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         CampaignSign = "CotEBrown"
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
     }
+    if(ans == 15347){
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
+        campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
+        CampaignSign = "LabBrown"
+    }
     if(ans == 13508){
         campaignTrail_temp.running_mate_json = JSON.parse(`[{
               "model": "campaign_trail.running_mate",
@@ -100,7 +108,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             window.setTimeout(e.candidateSwitcher, 20)
             e.VpText = "Please select your party leader:"
     }
-    if(Brown == 1){
+    if(e.player_answers.includes(15347)){
     campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
         "pk": 15346,
@@ -166,14 +174,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
           }
         }
-    }
-    if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){   
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
-        campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
-        CampaignSign = "LabBrown"
     }
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
         var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
