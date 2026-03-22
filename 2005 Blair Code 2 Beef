@@ -960,7 +960,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
 
     // OTHER MISC. VARIABLES
-    if(ans == 14912){
+    if(ans == 14912 || ans == 14936 || ans == 12814){
       wmd += 1;
       console.log("You have chosen to move forward with pushing the narrative of WMDs");
     }
