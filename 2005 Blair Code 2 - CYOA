@@ -11,6 +11,7 @@ var EUCnstn = 0;
 var Ken = 0;
 var iraq = 0;
 var wmd = 0;
+var kelly = 0;
 var Porty = 0;
 var debug = 0;
 var CampaignSign = "PMBlair"
@@ -954,6 +955,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have chosen to move forward with pushing the narrative of WMDs");
     }
 
+    if(ans == 12824 || ans == 12825){
+      kelly += 1;
+      console.log("Things are escalating...");
+    }
+
 // Resignation Questions
     if(Resign >= 5){
     if(Resign >= 6){
@@ -1485,7 +1491,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(wmd == 0 && iraq == 1){
+    if(wmd == 0 && kelly == 0 && iraq == 1){
     campaignTrail_temp.questions_json[14] = {
     "model": "campaign_trail.question",
     "pk": 15506,
