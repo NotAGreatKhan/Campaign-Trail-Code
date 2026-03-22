@@ -2093,7 +2093,7 @@ campaignTrail_temp.questions_json = [
         "pk": 14048,
         "fields": {
             "priority": 0,
-            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – consummated by the bowing out of David Davis, Ancram, and even Clarke – culminated in former Home Secretary Michael Howard being elected unopposed. Ahead of his first PMQs as Opposition Leader, where should we train our guns to nail him in the head?",
+            "description": "The house of cards that Party Leader Iain Duncan Smith has tried to lay down, having been teetering since his election in 2001, has finally crashed down. After daring to challenge his MPs to a vote, his blasé was met with the full force and ruthlessness of the Conservative Party. He has lost his own confidence vote 90 to 75. Eight days on, the fate of the newly-created vacancy – consummated by the bowing out of David Davis, Ancram, and even Clarke – culminated in former Home Secretary Michael Howard being elected unopposed. Ahead of his first PMQs as Opposition Leader, where should we train our guns to nail him in the head?",
             "likelihood": 1
         }
     },
@@ -26344,7 +26344,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15172,
             "candidate": 12543,
-            "answer_feedback": "Pivoting back to the stable living conditions has been your ol' reliable for years now. Nevertheless, the Tory backbenches cheer like they rarely do in PMQs, and some queasy onlookers in your own benches wish they never had to deal with it with you standing at the dispatch box. You pray their ravenous looks won't show their ugly side until you resign – of your own volition."
+            "answer_feedback": "Pivoting back to the stable living conditions has been your ol' reliable for years now. Nevertheless, the Tory backbenches cheer like they rarely do in PMQs, and some queasy onlookers in your own benches wish they never had to deal with it with you standing at the dispatch box. You pray their ravenous looks won't show their ugly side until you resign – of your own volition."
         }
     },
     {
@@ -26587,7 +26587,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15360,
             "candidate": 12543,
-            "answer_feedback": "After the thrill of the election fever subsides, you decide to make a call to George Bush, his voice aching and solemn. You both spend the night recounting old memories of the struggles with Iraq, the annoyance he expresses with Europe – which you pray he can't sense your grimace at. The phone line goes dead as the rustling of papers and lugging of boxes faintly thuds in the White House. As the titan of leadership falls to the ground across the pond, you fear you'll be next on death row."
+            "answer_feedback": "After the thrill of the election fever subsides, you decide to make a call to George Bush, his voice aching and solemn. You both spend the night recounting old memories of the struggles with Iraq, the annoyance he expresses with Europe – which you pray he can't sense your grimace at. The phone line goes dead as the rustling of papers and lugging of boxes faintly thuds in the White House. As the titan of leadership falls to the ground across the pond, you fear you'll be next on death row."
         }
     },
     {
@@ -28562,7 +28562,149 @@ e = campaignTrail_temp;
 
 
 // Popup HQ
+let lastKnownStats = { Cred: null, Resign: null, Wins: null, Frgn: null, OldLab: null };
+
+function updateSimplePopup() {
+    const content = document.getElementById("popupContent");
+    if (!content) return;
+
+    const cCred = typeof Cred !== "undefined" ? Cred : 0;
+    const cResign = typeof Resign !== "undefined" ? Resign : 0;
+    const cWins = typeof Wins !== "undefined" ? Wins : 0;
+    const cFrgn = typeof Frgn !== "undefined" ? Frgn : 0;
+    const cOldLab = typeof OldLab !== "undefined" ? OldLab : 0;
+
+    if (
+        lastKnownStats.Cred === cCred &&
+        lastKnownStats.Resign === cResign &&
+        lastKnownStats.Wins === cWins &&
+        lastKnownStats.Frgn === cFrgn &&
+        lastKnownStats.OldLab === cOldLab
+    ) {
+        return; 
+    }
+
+    lastKnownStats = { Cred: cCred, Resign: cResign, Wins: cWins, Frgn: cFrgn, OldLab: cOldLab };
+
+    content.innerHTML = `
+      <p>
+        <span class="hover-value" data-tooltip="The public’s trust in your government heading into the election.">Government Trust</span>: 
+        <span ${cCred <= 1 ? "style=\"color:#ad1313;\"" : cCred <= 6 ? "style=\"color:#d58627;\"" : cCred >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          cCred <= -5 ? 'Catastrophic' :
+          cCred === -4 ? 'Horror incarnate' :
+          cCred === -3 ? 'A trainwreck' :
+          cCred === -2 ? 'In shambles' :
+          cCred === -1 ? 'In the gutter' :
+          cCred === 0 ? 'Falling Sharply' :
+          cCred === 1 ? 'Declining' :
+          cCred === 2 ? 'Deteriorating' :
+          cCred === 3 ? 'Recoverable' :
+          cCred === 4 ? 'Turning heads' :
+          cCred <= 6 ? 'On the right track' :
+          cCred <= 8 ? 'Respectable' :
+          cCred <= 10 ? 'Strong' :
+          cCred <= 12 ? 'Undeniable' :
+          cCred <= 14 ? 'Indomitable' :
+          'In the heavens'
+        }">${cCred.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="How secure your standing as Prime Minister is.">Your Premiership</span>: 
+        <span ${cResign <= 1 ? "style=\"color:#7ba922;\"" : cResign <= 3 ? "style=\"color:#d58627;\"" : cResign >= 4 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+          cResign <= 0 ? 'Secure' :
+          cResign === 1 ? 'Stable' :
+          cResign === 2 ? 'Showing Stress' :
+          cResign === 3 ? 'Threatened' :
+          cResign === 4 ? 'Endangered' :
+          'Compromised – start packing your bags'
+        }">${cResign.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Moves Forward</span>: 
+        <span ${cWins <= 2 ? "style=\"color:#ad1313;\"" : cWins <= 5 ? "style=\"color:#d58627;\"" : cWins >= 6 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          cWins <= 0 ? 'None at all' :
+          cWins === 1 ? 'Few and far between' :
+          cWins === 2 ? 'Little in number' :
+          cWins === 3 ? 'Some, in a sense' :
+          cWins === 4 ? 'A pocket-full of them' :
+          cWins === 5 ? 'A bite-size bag' :
+          cWins === 6 ? 'A rack of them' :
+          cWins === 7 ? 'Many of them' :
+          cWins === 8 ? 'A bevy of them' :
+          cWins === 9 ? 'Eye-watering amounts' :
+          'A duffle bag full of them'
+        }">${cWins.toFixed(1)}</span>
+     </p>
+
+     <p>
+        <span class="hover-value" data-tooltip="How influential we are in foreign affairs.">Our Image Abroad</span>: 
+        <span ${cFrgn <= 2 ? "style=\"color:#ad1313;\"" : cFrgn <= 6 ? "style=\"color:#d58627;\"" : cFrgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          cFrgn <= 0 ? 'An international embarassement' :
+          cFrgn === 1 ? 'Mocked at the UN' :
+          cFrgn === 2 ? 'Getting red-hot glares' :
+          cFrgn === 3 ? 'Seated at the table' :
+          cFrgn === 4 ? 'A valued voice' :
+          cFrgn === 5 ? 'Respected abroad' :
+          cFrgn === 6 ? 'Having Europe’s ear' :
+          cFrgn === 7 ? 'The Trans-Atlantic bridge' :
+          cFrgn === 8 ? 'Eyes and ears everywhere' :
+          cFrgn === 9 ? 'A world statesman' :
+          'The rose-red dove'
+        }">${cFrgn.toFixed(1)}</span>
+      </p>
+  
+      <p>
+        <span class="hover-value" data-tooltip="Your willingness to accept Old Labour, over New.">Labour And You</span>: 
+        <span ${cOldLab <= 1 ? "style=\"color:#ff8097;\"" : cOldLab <= 4 ? "style=\"color:#de1237;\"" : cOldLab >= 5 ? "style=\"color:#99000f;\"" : ""} class="hover-value" data-tooltip="${
+          cOldLab <= 0 ? 'Virtually non-existent' :
+          cOldLab === 1 ? 'But a footnote' :
+          cOldLab === 2 ? 'Reticent, but noticeable' :
+          cOldLab === 3 ? 'Well under way' :
+          cOldLab === 4 ? 'Showing signs of Prime Minister Wilson' :
+          cOldLab === 5 ? 'Embracing traditions of years past' :
+          'Marking a new era'
+        }">${cOldLab.toFixed(1)}</span>
+      </p>
+
+      <p>
+        <img src="https://imgur.com/mB2xqdL.jpg" width="435">
+      </p>
+    `;
+}
+
+const hqContainer = document.getElementById("game_window") || document.body;
+
+const hqUnifiedObserver = new MutationObserver(() => {
+    if (!document.getElementById('headquarter_button')) {
+        const refButton = document.getElementById('view_electoral_map');
+        if (refButton) {
+            const newButton = document.createElement('button');
+            newButton.id = 'headquarter_button';
+            newButton.style.marginLeft = '1.5em';
+            newButton.innerHTML = 'The Government';
+            newButton.addEventListener('click', () => {
+                const popup = document.getElementById("simplePopup");
+                if (popup) {
+                    popup.style.display = (popup.style.display === "none") ? "block" : "none";
+                    updateSimplePopup();
+                }
+            });
+            refButton.insertAdjacentElement('afterend', newButton);
+        }
+    }
+
+    updateSimplePopup();
+});
+
+if (hqContainer) {
+    hqUnifiedObserver.observe(hqContainer, { childList: true, subtree: true });
+}
+
 function createSimplePopup() {
+    if (document.getElementById("simplePopup")) return; // Prevent duplicates
+
     const popup = document.createElement("div");
     popup.id = "simplePopup";
     popup.style.position = "fixed";
@@ -28582,7 +28724,7 @@ function createSimplePopup() {
     popup.style.backgroundSize = "cover";
     popup.style.backgroundRepeat = "no-repeat";
     popup.style.backgroundPosition = "center";
-    popup.style.display = "block";
+    popup.style.display = "none"; // start hidden
 
     const content = document.createElement("div");
     content.id = "popupContent";
@@ -28591,16 +28733,13 @@ function createSimplePopup() {
 
     document.body.appendChild(popup);
 
-    injectTooltipStyles(); // <-- inject styles ONCE
+    injectTooltipStyles();
     makePopupDraggable(popup);
     updateSimplePopup();
 }
 
-
 function makePopupDraggable(popup) {
-    let offsetX = 0;
-    let offsetY = 0;
-    let isDragging = false;
+    let offsetX = 0, offsetY = 0, isDragging = false;
 
     popup.addEventListener("mousedown", (e) => {
         isDragging = true;
@@ -28671,142 +28810,4 @@ function injectTooltipStyles() {
     document.head.appendChild(style);
 }
 
-function updateSimplePopup() {
-    const content = document.getElementById("popupContent");
-    if (!content) return;
-  
-    content.innerHTML = `
-
-      <p>
-        <span class="hover-value" data-tooltip="The public’s trust in your government heading into the election.">Government Trust</span>: 
-        <span ${Cred <= 1 ? "style=\"color:#ad1313;\"" : Cred <= 6 ? "style=\"color:#d58627;\"" : Cred >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
-          Cred <= -5 ? 'Catastrophic' :
-          Cred === -4 ? 'Horror incarnate' :
-          Cred === -3 ? 'A trainwreck' :
-          Cred === -2 ? 'In shambles' :
-          Cred === -1 ? 'In the gutter' :
-          Cred === 0 ? 'Falling Sharply' :
-          Cred === 1 ? 'Declining' :
-          Cred === 2 ? 'Deteriorating' :
-          Cred === 3 ? 'Recoverable' :
-          Cred === 4 ? 'Turning heads' :
-          Cred <= 6 ? 'On the right track' :
-          Cred <= 8 ? 'Respectable' :
-          Cred <= 10 ? 'Strong' :
-          Cred <= 12 ? 'Undeniable' :
-          Cred <= 14 ? 'Indomitable' :
-          'In the heavens'
-        }">${Cred.toFixed(1)}</span>
-      </p>
-  
-      <p>
-        <span class="hover-value" data-tooltip="How secure your standing as Prime Minister is.">Your Premiership</span>: 
-        <span ${Resign <= 1 ? "style=\"color:#7ba922;\"" : Resign <= 3 ? "style=\"color:#d58627;\"" : Resign >= 4 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
-          Resign <= 0 ? 'Secure' :
-          Resign === 1 ? 'Stable' :
-          Resign === 2 ? 'Showing Stress' :
-          Resign === 3 ? 'Threatened' :
-          Resign === 4 ? 'Endangered' :
-          'Compromised – start packing your bags'
-        }">${Resign.toFixed(1)}</span>
-      </p>
-  
-      <p>
-        <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Moves Forward</span>: 
-        <span ${Wins <= 2 ? "style=\"color:#ad1313;\"" : Wins <= 5 ? "style=\"color:#d58627;\"" : Wins >= 6 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
-          Wins <= 0 ? 'None at all' :
-          Wins === 1 ? 'Few and far between' :
-          Wins === 2 ? 'Little in number' :
-          Wins === 3 ? 'Some, in a sense' :
-          Wins === 4 ? 'A pocket-full of them' :
-          Wins === 5 ? 'A bite-size bag' :
-          Wins === 6 ? 'A rack of them' :
-          Wins === 7 ? 'Many of them' :
-          Wins === 8 ? 'A bevy of them' :
-          Wins === 9 ? 'Eye-watering amounts' :
-          'A duffle bag full of them'
-        }">${Wins.toFixed(1)}</span>
-     </p>
-
-     <p>
-        <span class="hover-value" data-tooltip="How influential we are in foreign affairs.">Our Image Abroad</span>: 
-        <span ${Frgn <= 2 ? "style=\"color:#ad1313;\"" : Frgn <= 6 ? "style=\"color:#d58627;\"" : Frgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
-          Frgn <= 0 ? 'An international embarassement' :
-          Frgn === 1 ? 'Mocked at the UN' :
-          Frgn === 2 ? 'Getting red-hot glares' :
-          Frgn === 3 ? 'Seated at the table' :
-          Frgn === 4 ? 'A valued voice' :
-          Frgn === 5 ? 'Respected abroad' :
-          Frgn === 6 ? 'Having Europe’s ear' :
-          Frgn === 7 ? 'The Trans-Atlantic bridge' :
-          Frgn === 8 ? 'Eyes and ears everywhere' :
-          Frgn === 9 ? 'A world statesman' :
-          'The rose-red dove'
-        }">${Frgn.toFixed(1)}</span>
-      </p>
-  
-      <p>
-        <span class="hover-value" data-tooltip="Your willingness to accept Old Labour, over New.">Labour And You</span>: 
-        <span ${OldLab <= 1 ? "style=\"color:#ff8097;\"" : OldLab <= 4 ? "style=\"color:#de1237;\"" : OldLab >= 5 ? "style=\"color:#99000f;\"" : ""} class="hover-value" data-tooltip="${
-          OldLab <= 0 ? 'Virtually non-existent' :
-          OldLab === 1 ? 'But a footnote' :
-          OldLab === 2 ? 'Reticent, but noticeable' :
-          OldLab === 3 ? 'Well under way' :
-          OldLab === 4 ? 'Showing signs of Prime Minister Wilson' :
-          OldLab === 5 ? 'Embracing traditions of years past' :
-          'Marking a new era'
-        }">${OldLab.toFixed(1)}</span>
-      </p>
-
-      <p>
-        <img src="https://imgur.com/mB2xqdL.jpg" width="435">
-      </p>
-    `;
-  }
-  
-
-function observeGameStats() {
-    const gameWindow = document.getElementById("game_window");
-    const config = { childList: true, subtree: true };
-    const observer = new MutationObserver(() => {
-        updateSimplePopup();
-    });
-    if (gameWindow) {
-        observer.observe(gameWindow, config);
-    }
-}
-
-function toggleSimplePopup() {
-    const popup = document.getElementById("simplePopup");
-    if (!popup) return;
-    popup.style.display = (popup.style.display === "none") ? "block" : "none";
-}
-
-function addHeadquarterButton() {
-    if (document.getElementById('headquarter_button')) return;
-    const refButton = document.getElementById('view_electoral_map');
-    if (!refButton) return;
-    const newButton = document.createElement('button');
-    newButton.id = 'headquarter_button';
-    newButton.style.marginLeft = '1.5em';
-    newButton.innerHTML = 'The Government';
-    newButton.addEventListener('click', toggleSimplePopup);
-    refButton.insertAdjacentElement('afterend', newButton);
-}
-
-createSimplePopup();
-observeGameStats();
-
-
-function handleMutations(mutationsList, observer) {
-    if (observerRunning) return;
-    observerRunning = true;
-
-    addHeadquarterButton()
-
-    observer.observe(document.documentElement, { childList: true, subtree: true });
-    observerRunning = false;
-}
-
-let hqObserver = new MutationObserver(handleMutations);
-hqObserver.observe(document.documentElement, { childList: true, subtree: true });
+createSimplePopup(); 
