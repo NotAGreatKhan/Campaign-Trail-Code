@@ -87,6 +87,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         CampaignSign = "CotEBrown"
         campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
     }
+    if(ans == 15347){
+        Resign = -2
+        campaignTrail_temp.candidate_last_name = "Labour";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
+        campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
+        CampaignSign = "LabBrown"
+    }
     if(ans == 13508){
         campaignTrail_temp.running_mate_json = JSON.parse(`[{
               "model": "campaign_trail.running_mate",
@@ -111,7 +120,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             window.setTimeout(e.candidateSwitcher, 20)
             e.VpText = "Please select your party leader:"
     }
-    if(Brown == 1){
+    if(e.player_answers.includes(15347)){
     campaignTrail_temp.questions_json[22] = {
         "model": "campaign_trail.question",
         "pk": 15346,
@@ -177,14 +186,6 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         "likelihood": 1
           }
         }
-    }
-    if(ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){   
-        campaignTrail_temp.candidate_last_name = "Labour";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
-        campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/57XaTnx.png"
-        campaignTrail_temp.candidate_json[0].fields.color_hex = "#ca3f3f"
-        CampaignSign = "LabBrown"
     }
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
         var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
@@ -27489,8 +27490,8 @@ if (!document.getElementById("ending-slide-style")) {
                 font-size: 16px;
             }
 
-            .ending-slide.bbc-style {
-                font-family: Arial;
+                .ending-slide.bbc-style {
+                font-family: BBC Reith;
                 background-color: #fff;
                 color: #202122;
                 padding: 16px;
@@ -27502,8 +27503,21 @@ if (!document.getElementById("ending-slide-style")) {
                 font-size: 16px;
             }
 
-            .ending-slide.daily-mail-style {
+                .ending-slide.daily-mail-style {
                 font-family: Whitman;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+                .ending-slide.guardian-style {
+                font-family: Text Egyptian;
                 background-color: #fff;
                 color: #202122;
                 padding: 16px;
@@ -27902,53 +27916,6 @@ if (used != true) {
 }
 
 
-// Clarke First Slides
-// else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
-// e.pages.push(`
-// <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
-// <p>
-// David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
-// <br><br>
-// In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
-// <br><br>
-// As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
-// <br><br>
-// Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
-// <br><br>
-// After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
-// <br><br>
-// You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
-// <br><br>
-// Into the abyss.
-// </p>
-// `)
-// e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Q7TbQgY.gif"})])
-// }
-
-
-// Portillo First Slides
-// else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
-// e.pages.push(`
-// <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
-// <p>
-// David Dimbleby’s voice rings out across the Party headquarters. You can almost hear your own raging heart amidst the Labour Party faithful, beseeched of their loss right in front of their face. The result hung like an albatross around the emotive neck of the crowd.
-// <br><br>
-// In your deepest, darkest conscience, you knew your fate had been etched into the political history books as soon as the exit poll blared out nation-wide. You clinged on though. You clinged on to any sparse hope – delusion really – of a victory, or at the very least a hung Parliament. But then the seat results come in. Constituency after constituency, colleague after colleague, falling prey to a blue wave of resurgent Conservatives. The sprawling growths of red on the map, cauterized and shrunk to their 20th century splotches.
-// <br><br>
-// As your mind wanders the spiritual wabash, you ponder back to all of those vain weights to the campaign. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? What made him lose to such a weak opposition? Those are the headlines that will brand the papers in the following days – hell, even hours. Michael Howard is going to be Prime Minister by the next setting of the sun, setting on the twilight of the Social Democratic Britain you toiled so hard to try and build. It was all for nothing, the spin doctoring, the tireless campaigning, the haggling through Parliament. All of it will be washed away under the Tory-blue wave that burned your eyes tonight. Your ideals of a stronger, safer nation, burnt to ashes under the boots’ heel of that goddamn war.
-// <br><br>
-// Following such an electoral slaughterhouse, your resignation as Party Leader is assured, and no politicking will change that. Gordon Brown, having had the privilege of quietly doing his work out of the spotlight, will most likely win any leadership election to succeed you. He will provide a more measured, if marginally more parched voice to the Opposition. Even Prime Minister-Elect Howard may not last too long himself, with his age being cited as an issue among journalists. But it won’t be you at that dispatch box, that’s all that truly matters to your ambitious mind. If only Alastair could’ve done something. If only…
-// <br><br>
-// After more than a childhood’s worth of Conservative rule, you did not even get to serve half of that time as Prime Minister. And now, those sniveling sky-blue Tories will scurry their way back into government.
-// <br><br>
-// You can almost feel John Smith’s sorrowful bitterness at you, sighing pitifully down your back, as you stare into the void.
-// <br><br>
-// Into the abyss.
-// </p>
-// `)
-// e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/4GqeqR0.gif"})])
-// }
-
 // Howard First Slides
 else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
 e.pages.push(`
@@ -28103,22 +28070,28 @@ if (used != true) {
 // Second Slides
 if (quickstats[0] >= 324) {     
 e.pages.push(`
-<h3 style='text-align: center;'>Blair defeated on terror bill</h3>
+<h3 style='text-align: center;'><i>The Guardian</i> | <i>9th November, 2005</i></h3>
+<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
-<img src = https://imgur.com/s8s5QFb.png>
+<img src = https://imgur.com/yAU04XO.png>
 <br><br>
-By <b>Matthew Tempest</b>, political correspondent
+<b style="font-size: 1.2em;">Blair defeated on terror bill</b>
 <br><br>
-Tony Blair's government tonight suffered its first ever defeat since coming to power, as MPs voted down proposals to allow police to hold terrorist suspects for 90 days without charge. Despite last-minute appeals from the prime minister, and the return from overseas visits of both Gordon Brown and Jack Straw in order to vote, the government was defeated on the issue by 322 votes to 291, a larger than expected margin of 31. A few minutes later, MPs voted for a rebel Labour amendment increasing the detention period to 28 days. That was passed by 323 votes to 290. But the defeat on 90 days is a personal blow for Mr Blair, who strongly backed the police's demand for a three-month period. According to parliament's division list, 49 Labour MPs rebelled against the government. Mr Blair left the chamber shaking his head.
+<a href="#" style="color:#c70000;"><b>Matthew Tempest</b>, <i>political correspondent</i></a>
+<br><br>
+Tony Blair's government tonight suffered its first ever defeat since coming to power, as MPs voted down proposals to allow police to hold terrorist suspects for 90 days without charge.
+<br><br>
+Despite last-minute appeals from the prime minister, and the return from overseas visits of both Gordon Brown and Jack Straw in order to vote, the government was defeated on the issue by 322 votes to 291, a larger than expected margin of 31. A few minutes later, MPs voted for a rebel Labour amendment increasing the detention period to 28 days. That was passed by 323 votes to 290. But the defeat on 90 days is a personal blow for Mr Blair, who strongly backed the police's demand for a three-month period. Mr Blair left the chamber shaking his head.
 <br><br>
 He later told Sky News he would not be quitting and rejected accusations he was now "a lame duck". He added: "People will believe parliament was deeply irresponsible." The Conservative leader, Michael Howard, said the result left Mr Blair "seriously weakened" and called on him to "consider his position". He added: "The prime minister has shown he no longer carries his party with him - and that is not good for the country." Bookmakers William Hill shortened the odds on Mr Blair leaving office before the end of the year from 3-1 to 7-4 immediately after the vote.
 <br><br>
-MPs continued to vote on the remainder of the bill, which is less controversial. The bill may still face a stormy ride in the House of Lords, where there is no government majority. Around the central lobby of Westminster, MPs were visibly digesting the shock of the government's first defeat. Soon after the vote, the prime minister's official spokesman told reporters Mr Blair was "disappointed", but respected the will of parliament. Asked whether the defeat reflected on Mr Blair's personal authority, the spokesman said: "This has been a one-off issue. It is an issue on which there has traditionally been a tension in parliament between those who, on the one hand, believe you have to do everything to protect the country's security, and, on the other hand, those who wish to protect civil liberties as they see it." The shadow home secretary, David Davis, said: "I am delighted that we have shown Tony Blair that there are limits to what he can do". "This is a victory for parliament and for Britain's freedoms." The director of the civil liberties lobby group, Liberty, Shami Chakrabati, said she was "heartened" by the vote, but she warned it still doubled the existing permitted period for detention without charge. She also criticised the "overt political campaigning of senior police officers" for their part in lobbying MPs. Earlier today, at prime minister's questions, Mr Blair told MPs to have a "sense of responsibility" and back the police's demand for a 90-day limit.
+MPs continued to vote on the remainder of the bill, which is less controversial. The bill may still face a stormy ride in the House of Lords, where there is no government majority. Around the central lobby of Westminster, MPs were visibly digesting the shock of the government's first defeat. Asked whether the defeat reflected on Mr Blair's personal authority, the spokesman said: "This has been a one-off issue. It is an issue on which there has traditionally been a tension in parliament"
 <br><br>
-In heated exchanges between the prime minister and opposition leaders at question time, Mr Blair said it was his duty and "the duty of every member of this house" to support the police's request. In a 30-minute session dominated by the issue, one Tory backbencher shouted "police state" at Mr Blair. Mr Howard said angrily: "We all want to fight terrorism effectively." He argued that the government had failed to justify the need for 90-day detention and warned of riots, like those in France, if minority ethnic communities were alienated by the legislation. Mr Blair reminded undecided Conservative MPs sitting behind Mr Howard that the "the police and those charged with fighting terrorism said the 90-day power was needed to make the country safe". "You and your colleagues are going to have to make your decision today," he told Mr Howard. "We have made ours. We believe this is right for our country. We believe it is necessary to protect our country from terrorism and I'm only sorry you don't agree." With the government unsure of securing victory for the 90-day proposal later this afternoon, the cabinet ministers Mr Brown and Mr Straw were both ordered back from foreign visits by the chief whip to bolster the government's vote in the lobbies. Labour loyalist Janet Anderson tabled a "fallback" amendment of 60 days, but Labour dissenter David Winnick also retabled his original proposal of 28 days - a period the Tories were prepared to accept. Facing the possibility of the first defeat of his premiership, Mr Blair said he preferred to be right and lose than back down given the "compelling" case that the police had made to extend their powers of investigation. "Sometimes it is better to lose and do the right thing than to win and do the wrong thing," he said. Labour backbenchers made clear their concerns about the legislation a week ago, when the government's 66-seat majority was slashed to just one after 31 Labour MPs rebelled over another aspect of the bill. A rebel amendment to make an offence of "glorification" of terrorism carry "intent" was defeated.
+The shadow home secretary, David Davis, said: "I am delighted that we have shown Tony Blair that there are limits to what he can do". "This is a victory for parliament and for Britain's freedoms." The director of the civil liberties lobby group, Liberty, Shami Chakrabati, said she was "heartened" by the vote, but she warned it still doubled the existing permitted period for detention without charge.
 </p>
+</div>
 `)
-e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg"})])
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/yoiAaak.jpg"})])
 }
 
 else if (quickstats[0] >= 324 && e.player_answers.includes(14034)) {
@@ -28223,9 +28196,12 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/OIEc7pW.jpg
 
 else if (Ken == 1 && aa[0].candidate == 12565) {
 e.pages.push(`
-<h3 style='text-align: center,'>Farage touts election result as a “rejection of the Tory-EU establishment”</h3>
+<h3 style='text-align: center,'><i>BBC News</i> | <i>9th June, 2009</i></h3>
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
-<b style="font-size: 1.2em;"><i>BBC News</i> | <i>9th June, 2009</i></b>
+<img src = https://imgur.com/yaV1STg.jpg>
+<br><br>
+<b style="font-size: 1.2em;">Farage touts election result as a “rejection of the Tory-EU establishment”</b>
 <br><br>
 <b>The UK Independence Party has achieved their highest voteshare ever in today’s European elections, showing a “real want for change”, says Nigel Farage.</b>
 <br><br>
@@ -28247,8 +28223,9 @@ In light of this, such as David Davis and Boris Johnson, are hinting at the need
 <br><br>
 But whatever the consequences of this might be, one thing that is undeniable is how much cold water has been poured onto the Tories, and after an unprecedented economic crisis no-less.
 </p>
+</div>
 `)
-e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/_.jpg"})])
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/1H1566f.jpg"})])
 }
 
 
@@ -28631,6 +28608,7 @@ function updateSimplePopup() {
       <p>
         <span class="hover-value" data-tooltip="How secure your standing as Prime Minister is.">Your Premiership</span>: 
         <span ${cResign <= 1 ? "style=\"color:#7ba922;\"" : cResign <= 3 ? "style=\"color:#d58627;\"" : cResign >= 4 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
+          cResign <= -2 ? 'Marking a New Era – Hopefully' :
           cResign <= 0 ? 'Secure' :
           cResign === 1 ? 'Stable' :
           cResign === 2 ? 'Showing Stress' :
@@ -28829,4 +28807,4 @@ function injectTooltipStyles() {
     document.head.appendChild(style);
 }
 
-createSimplePopup(); 
+createSimplePopup();
