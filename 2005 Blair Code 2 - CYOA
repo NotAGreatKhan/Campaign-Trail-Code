@@ -420,7 +420,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
     if(ans == 15457){
-      Cred -= 2;
+      Cred -= 3;
       console.log("You have impacted your credibility");
     }
 
@@ -539,7 +539,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("The hot seat looks dicey");
     }
     if(ans == 15457){
-      Resign += 1;
+      Resign += 2;
       console.log("The hot seat looks dicey");
     }
 
