@@ -996,7 +996,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 15641,
     "fields": {
         "priority": 0,
-        "description": "Q",
+        "description": "It is an all out battle now. If it wasn’t self-evident before, it is as clear as a midnight sky the bitterness the Treasury is grinding through with No 10. The discordant and frenzied bartering between yourself and the Chancellor has proven itself to be unsustainable, and you’re rapidly finding yourself on the losing side of the affair.<p></p>Alastair is on the brink of losing his sanity, as the right wing media cartel ambushes Labour MPs all too willing to spill salacious hearings on it all. All of his drivel about nightmares and restless nights tighten the guilt around your throat.<p></p>It is in the midst of the hurricane that you receive a message on behalf of the Treasury.<br>It’s from Gordon.<p></p>In no uncertain terms, he is threatening to <i>resign</i> from his office – from the rubble – unless you “put country and party over ambition”. In the deepest pit of your soul, you realise the only choice you have.",
         "likelihood": 1
       }
     }
@@ -1039,6 +1039,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     campaignTrail_temp.questions_json[21] = {
     "model": "campaign_trail.question",
     "pk": 13500,
+    "fields": {
+        "priority": 0,
+        "description": "Someday, you knew this day would come. It had to. The preening journalists will be able to concoct a slew of reasons, analysis and justifications for what you are about to do outside the glossy black door of No. 10. But you know the <i>real</i> reason, and he is residing in the flat right next to the one that used to be yours. In your heart of hearts, you know that you are the only man who would have taken the vision of this government – and built further upon it to last.<p></p>You take a deep breath. Grasping the folder containing your last speech as Prime Minister.<p></p>With a last shake of the shoulders, you open the door, and address the nation one last time.",
+        "likelihood": 1
+      }
+    }
+  }
+    if(ans == 15642){
+    campaignTrail_temp.questions_json[21] = {
+    "model": "campaign_trail.question",
+    "pk": 15646,
     "fields": {
         "priority": 0,
         "description": "Someday, you knew this day would come. It had to. The preening journalists will be able to concoct a slew of reasons, analysis and justifications for what you are about to do outside the glossy black door of No. 10. But you know the <i>real</i> reason, and he is residing in the flat right next to the one that used to be yours. In your heart of hearts, you know that you are the only man who would have taken the vision of this government – and built further upon it to last.<p></p>You take a deep breath. Grasping the folder containing your last speech as Prime Minister.<p></p>With a last shake of the shoulders, you open the door, and address the nation one last time.",
