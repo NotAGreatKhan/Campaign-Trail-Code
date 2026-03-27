@@ -17,6 +17,8 @@ var debug = 0;
 var CampaignSign = "PMBlair"
 var altprimary = false;
 var SnapElection = false;
+var {opplastname} = Howard;
+
 
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
 campaignTrail_temp.player_answers = [];
@@ -1596,15 +1598,28 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     }
   }
     if(e.player_answers.includes(15457)){
+    if(Ken == 1){
     campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
-    "pk": 15_568,
+    "pk": 15___,
     "fields": {
         "priority": 0,
-        "description": "“It’s a goddamn shitstorm, they’ve got us wrung by the balls here”, Alastair groans as he perspires without end. In parliament, the Conservatives are now getting the hang of catching the anti-EU lightning in a bottle. As the question of a british referendum on the EU Constitution looms, they are shoving the idea of one on the <i>rejection of<i> the Euro down the governments throat.",
+        "description": "“It’s a goddamn shitstorm, they’ve got us wrung by the balls here”, Alastair groans as he perspires without end. The mere implication that work may begin on actually entering the Eurozone floats ghoulishly lingers around Whitehall. The Conservatives -- astoundingly -- are caught in a bind of their own. With Ken Clarke’s record of support of the currency, their efforts to attack you have lost most of their potency. Do not expect this to just flutter away though, it won’t, unless you act.",
         "likelihood": 1
       }
     }
+   }
+    else{
+    campaignTrail_temp.questions_json[19] = {
+    "model": "campaign_trail.question",
+    "pk": 15568(?),
+    "fields": {
+        "priority": 0,
+        "description": "“It’s a goddamn shitstorm, they’ve got us wrung by the balls here”, Alastair groans as he perspires without end. In parliament, the Conservatives are now getting the hang of catching the anti-EU lightning in a bottle. As the question of a british referendum on the EU Constitution looms, they are shoving the idea of one on the <i>rejection of<i> the Euro down the government’s throat. {opplastname} is only fanning the flames, and continuing to put his thumb on the scale as the Conservative party begins to rally. If you want to save the great ship of the European dream, you better get steering. But, which way to turn?",
+        "likelihood": 1
+      }
+    }
+   }
   }
     if(e.player_answers.includes(14801)){
     campaignTrail_temp.questions_json[22] = {
