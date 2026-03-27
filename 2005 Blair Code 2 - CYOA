@@ -813,11 +813,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // TORY LEADER VARIABLES
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
       Ken += 1;
+      {opplastname} = Clarke;
       console.log("Ken Clarke is now the Tory leader");
     }
 
     if(ans == 14372 || ans == 14378){
       Porty += 1;
+      {opplastname} = Portillo;
       console.log("Michael Portillo is now the Tory leader");
     }
 
