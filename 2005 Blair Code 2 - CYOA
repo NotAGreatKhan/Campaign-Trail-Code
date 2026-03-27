@@ -990,7 +990,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Resignation Questions
     if(Resign >= 5){
-    if(e.player_answers.includes(15457) && (ans == 15565 || ans == 15571)){
+    if((e.player_answers.includes(14815) || e.player_answers.includes(14881)) && (ans == 15565 || ans == 15571)){
     campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
     "pk": 15641,
