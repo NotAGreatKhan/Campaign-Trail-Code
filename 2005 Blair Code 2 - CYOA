@@ -471,6 +471,11 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
+    if(ans == 15565 || ans == 15571 || ans == 15604 || ans == 15623){
+      Cred -= 1;
+      console.log("You have impacted your credibility"); 
+    }
+
     // RESIGNATION
     if(ans == 12814){
       Resign += 1;
@@ -544,6 +549,24 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Resign += 2;
       console.log("The hot seat looks dicey");
     }
+
+    if(ans == 15565){
+      Resign += 2;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 15571){
+      Resign += 2;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 15604){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+    if(ans == 15623){
+      Resign += 1;
+      console.log("The hot seat looks dicey");
+    }
+
 
     // NEGATIVE
     if(ans == 12849){
@@ -967,6 +990,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
 // Resignation Questions
     if(Resign >= 5){
+    if(e.player_answers.includes(15457) && (ans == 15565 || ans == 15571)){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 15641,
+    "fields": {
+        "priority": 0,
+        "description": "Q",
+        "likelihood": 1
+      }
+    }
+  }
     if(Resign >= 6){
     campaignTrail_temp.questions_json[20] = {
     "model": "campaign_trail.question",
@@ -1012,6 +1046,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+
 
 // Michael Portillo
     if(Porty == 1){
