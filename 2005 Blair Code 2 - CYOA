@@ -1595,6 +1595,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
+    if(e.player_answers.includes(15457)){
+    campaignTrail_temp.questions_json[19] = {
+    "model": "campaign_trail.question",
+    "pk": 15_568,
+    "fields": {
+        "priority": 0,
+        "description": "“It’s a goddamn shitstorm, they’ve got us wrung by the balls here”, Alastair groans as he perspires without end. In parliament, the Conservatives are now getting the hang of catching the anti-EU lightning in a bottle. As the question of a british referendum on the EU Constitution looms, they are shoving the idea of one on the <i>rejection of<i> the Euro down the governments throat.",
+        "likelihood": 1
+      }
+    }
+  }
     if(e.player_answers.includes(14801)){
     campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
