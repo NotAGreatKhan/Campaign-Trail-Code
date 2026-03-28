@@ -17,7 +17,7 @@ var debug = 0;
 var CampaignSign = "PMBlair"
 var altprimary = false;
 var SnapElection = false;
-var {opplastname} = Howard;
+window.opplastname = 'Howard';
 
 
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
@@ -836,13 +836,13 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // TORY LEADER VARIABLES
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
       Ken += 1;
-      {opplastname} = Clarke;
+      opplastname = 'Clarke';
       console.log("Ken Clarke is now the Tory leader");
     }
 
     if(ans == 14372 || ans == 14378){
       Porty += 1;
-      {opplastname} = Portillo;
+      opplastname = 'Portillo';
       console.log("Michael Portillo is now the Tory leader");
     }
 
@@ -1678,7 +1678,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 15563,
     "fields": {
         "priority": 0,
-        "description": "“It’s a goddamn shitstorm, they’ve got us wrung by the balls here”, Alastair groans as he perspires without end. In parliament, the Conservatives are now getting the hang of catching the anti-EU lightning in a bottle. As the question of a british referendum on the European Constitution looms, they are shoving the idea of one on the <i>rejection of<i> the Euro down the government’s throat. {opplastname} is only fanning the flames, and continuing to put his thumb on the scale as the Conservative party begins to rally. If you want to save the great ship of the European dream, you better get steering. But, which way to turn?",
+        "description": "“It’s a goddamn shitstorm, they’ve got us wrung by the balls here”, Alastair groans as he perspires without end. In parliament, the Conservatives are now getting the hang of catching the anti-EU lightning in a bottle. As the question of a british referendum on the European Constitution looms, they are shoving the idea of one on the <i>rejection of<i> the Euro down the government’s throat. {{opplastname}} is only fanning the flames, and continuing to put his thumb on the scale as the Conservative party begins to rally. If you want to save the great ship of the European dream, you better get steering. But, which way to turn?",
         "likelihood": 1
       }
     }
@@ -1689,7 +1689,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 15603,
     "fields": {
         "priority": 0,
-        "description": "“It’s a goddamn shitstorm, they’ve got us wrung by the balls here”, Alastair groans as he perspires without end. In parliament, the Conservatives are now getting the hang of catching the anti-EU lightning in a bottle. As the question of a british referendum on the European Constitution looms, they are shoving the idea of one on the <i>rejection of<i> the Euro down the government’s throat. {opplastname} is only fanning the flames, and continuing to put his thumb on the scale as the Conservative party begins to rally. If you want to save the great ship of the European dream, you better get steering. But, which way to turn?",
+        "description": "“It’s a goddamn shitstorm, they’ve got us wrung by the balls here”, Alastair groans as he perspires without end. In parliament, the Conservatives are now getting the hang of catching the anti-EU lightning in a bottle. As the question of a british referendum on the European Constitution looms, they are shoving the idea of one on the <i>rejection of<i> the Euro down the government’s throat. {{opplastname}} is only fanning the flames, and continuing to put his thumb on the scale as the Conservative party begins to rally. If you want to save the great ship of the European dream, you better get steering. But, which way to turn?",
         "likelihood": 1
       }
     }
