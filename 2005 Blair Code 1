@@ -1210,10 +1210,13 @@ function applyGlobalStyles(css, id = 'app-theme') {
 
 const css = `
     #announcement {
-      display: none;
+        display: none;
     }
     .campaign_trail_start_emphasis {
-      background-color: #F8F8F8;
+        background-color: #F8F8F8;
+    }
+    #game_window {
+        background: url(https://imgur.com/RDCPDZf.jpg);
     }
     .game_header {
         background: linear-gradient(to bottom, #df8191, #df8191);
@@ -1225,16 +1228,16 @@ const css = `
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
     .inner_inner_window h3 {
-      background-color: #ffcfcf;
-      background: linear-gradient(to bottom, #ffcfcf, #eadcde);
+        background-color: #ffcfcf;
+        background: linear-gradient(to bottom, #ffcfcf, #eadcde);
     }
     #inner_window_2 {
-      background-repeat: repeat; 
-      height: 494px; 
+        background-repeat: repeat; 
+        height: 494px; 
     }
     #inner_window_3 { 
-      background-repeat: repeat; 
-      height: 494px;
+        background-repeat: repeat; 
+        height: 494px;
     }
     #overall_details_container.done h4 {
         font-size: 14px !important;
