@@ -519,7 +519,7 @@ if (!document.getElementById("ending-slide-style")) {
                 .ending-slide.first-page-style {
                 font-family: Georgia;
                 background-color: #fff;
-                color: #fff;
+                color: #000;
                 padding: 16px;
                 max-width: 800px;
                 margin: 0 auto;
@@ -736,7 +736,7 @@ construct = (a = 1) => {
 // BROWN First Slides
 if (e.player_answers.includes(13511) && quickstats[0] >= 324 && aa[0].candidate == 12565) {  
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won this election, sending New Labour out one last time.</h3>
 <p>
 David Dimbleby’s voice reverberated throughout the Party headquarters, the solemn rejection pounding at the hearts of all of the members of the Party faithful put into mourning. Not just the mourning of the governing party, but of New Labour itself. The beating heart of “economic dynamism” and “social justice” has just been sold for a transplant. The crowd bitterly awaited Gordon's concession speech on the metal stage.
@@ -766,7 +766,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MxyGsWe.gif
 
 else if (e.player_answers.includes(13511) && quickstats[0] >= 324) {  
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party have won this election in a comeback for the ages.</h3>
 <p>
 David Dimbleby’s voice reverberated throughout the Party headquarters.
@@ -778,7 +778,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif
 
 else if (e.player_answers.includes(13511) && aa[0].candidate == 12565) {  
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives are the largest party.</h3>
 <p>
 David Dimbleby’s voice reverberated throughout the Party headquarters.
@@ -790,7 +790,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif
 
 else if (e.player_answers.includes(13511) && aa[0].candidate == 12543) {  
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that Labour are the largest party.</h3>
 <p>
 David Dimbleby’s voice reverberated throughout the Party headquarters.
@@ -803,7 +803,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/AtQRx8w.gif
 // BLAIR First Slides
 else if (quickstats[0] >= 500) {  
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>A Conversation between Prime Minister Tony Blair, and Communications Director Alastair Campbell. March 17, 2003, the day before the anti-war vote.</h3>
 <p>
 [CAMPBELL]: This isn’t looking good, Tony, the upcoming commons vote, it could be the biggest rebellion of MPs in our government’s history.
@@ -831,7 +831,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/MzNIbIL.gif
 
 else if (quickstats[0] >= 400) {    
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide!</h3>
 <p>
 <i>David Dimbleby’s voice rings out across the Party headquarters</i>. The Labour Party HQ shudders and rumbles under the enthusiastic — almost riotous — jiving of the crowds. The amateur dancing of the members, unequivocally dispelling any jitter suspected throughout election night.
@@ -864,7 +864,7 @@ if (used != true) {
 
 else if (quickstats[0] >= 370) {    
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3>
 <p>
 <i>David Dimbleby’s voice rings out across the Party headquarters</i>. A resounding cheer erupts throughout the crowd gathered to witness the results. You’ve done it! Despite the festering pressures abroad, despite the growing controversy of your premiership, and despite the renewed strength of the Tories and Liberal Democrats, you persevered to carry three successive landslide victories for your party. Your colleagues will certainly be thanking you for aiding in their retaining of their seats. 
@@ -880,7 +880,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif
 
 else if (quickstats[0] >= 355) {
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3>
 <p>
 <i>David Dimbleby’s voice rings out across the Party headquarters</i>. You let out perhaps the biggest sigh of relief of your premiership. Despite the significant bleeding of support, you have held on to your position as PM. Though for someone such as yourself, this isn’t exactly a spectacular performance.
@@ -896,7 +896,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif
 
 else if (quickstats[0] >= 340) {     
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a modest majority in Parliament.</h3>
 <p>
 <i>David Dimbleby’s voice rings out across the Party headquarters</i>. All that the Party faithful feel is the bitter disappointment they endured the noir night for. No riveting trepidation of clinging on to power. No comeback story of defying the odds with a strong majority. There will never be a story of perpetual electoral dominance with your name. Not after this.
@@ -924,7 +924,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/Bl8IetH.gif
 
 else if (quickstats[0] >= 324) {     
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, though with a narrow majority in Parliament.</h3>
 <p>
 <i>David Dimbleby’s voice rings out across the Party headquarters</i>. A subtle despondence blankets the Party faithful as they fully grasp the scale of the loss of Labour’s dominance over Parliament. A victory apparently only applicable in name. You can already imagine the sneering media journalists calling out at you when you head to-and-from Number 10.
@@ -987,7 +987,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/wuC82w8.gif
 
 else if (aa[0].candidate == 12565) {
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, with the Conservatives as the largest party.</h3>
 <p>
 David Dimbleby’s voice rings out across the Party headquarters. An awkward state of apoplexia besets the Party faithful who are not already hanging their heads in dispiritedness and confusion. The same thing is on everyone’s mind:
@@ -1027,7 +1027,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif
 
 else if (aa[0].candidate == 12587) {
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, with the Liberal Democrats as the largest party.</h3>
 <p>
 David Dimbleby’s voice rings out across the Party headquarters. An awkward state of apoplexia besets the Party faithful who are not already hanging their heads in dispiritedness and confusion. The same thing is on everyone’s mind:
@@ -1067,7 +1067,7 @@ e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif
 
 else if (aa[0].candidate == 12543) {
 e.pages.push(`
-<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #fff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, with Labour as the largest party.</h3>
 <p>
 David Dimbleby’s voice rings out across the Party headquarters. An awkward state of apoplexia besets the Party faithful who are not already hanging their heads in dispiritedness and confusion. The same thing is on everyone’s mind:
