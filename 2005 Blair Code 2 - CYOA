@@ -178,6 +178,74 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
           }
         }
     }
+
+    if(e.player_answers.includes(15647)){
+    campaignTrail_temp.questions_json[22] = {
+    "model": "campaign_trail.question",
+    "pk": 15346,
+    "fields": {
+        "priority": 0,
+        "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
+        "likelihood": 1
+       }
+     }
+    campaignTrail_temp.questions_json[23] = {
+    "model": "campaign_trail.question",
+    "pk": 1_,
+    "fields": {
+        "priority": 0,
+        "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
+        "likelihood": 1
+       }
+     }
+    campaignTrail_temp.questions_json[24] = {
+    "model": "campaign_trail.question",
+    "pk": 1_,
+    "fields": {
+        "priority": 0,
+        "description": " ",
+        "likelihood": 1
+          }
+        }
+    if(e.player_answers.includes(14430)){
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 1_,
+    "fields": {
+        "priority": 0,
+        "description": " ",
+        "likelihood": 1
+          }
+        }
+      }
+    campaignTrail_temp.questions_json[25] = {
+    "model": "campaign_trail.question",
+    "pk": 1_,
+    "fields": {
+        "priority": 0,
+        "description": " ",
+        "likelihood": 1
+          }
+        }
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 1_,
+    "fields": {
+        "priority": 0,
+        "description": " ",
+        "likelihood": 1
+          }
+        }
+    campaignTrail_temp.questions_json[27] = {
+    "model": "campaign_trail.question",
+    "pk": 14401,
+    "fields": {
+        "priority": 0,
+        "description": "The campaign has unfolded into a chaotic, messy affair. That escapade now, is in the past, Brown. You have many accolades with your name: the Iron Chancellor, the Progressive Centrist, the man who could finally win it to cement Labour for years to come. With you heading the party, it falls to you to finish this election campaign off. What will you do to convince the voters to back Labour at this pivotal penultimate hour?",
+        "likelihood": 1
+          }
+        }
+    }
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
         var id = e.candidate_json.map(p=>p.pk).indexOf(12565)
         campaignTrail_temp.candidate_json[id].fields.color_hex = "#0063b4"
