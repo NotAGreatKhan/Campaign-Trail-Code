@@ -1648,7 +1648,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
 
     if(e.player_answers.includes(15457)){
     if(Ken == 1){
-    if(Wins >= 6){
+    if(Wins >= 3){
     campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 15564,
@@ -1672,7 +1672,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
    }
    }
     else{
-    if(Wins >= 6){
+    if(Wins >= 3){
     campaignTrail_temp.questions_json[19] = {
     "model": "campaign_trail.question",
     "pk": 15563,
