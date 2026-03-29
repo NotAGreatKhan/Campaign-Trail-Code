@@ -243,7 +243,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 15703,
     "fields": {
         "priority": 0,
-        "description": " ",
+        "description": "Michael Portillo is someone you always found to be an interesting character. His smooth, almost silk vernacular weaves together a web of juxtaposing socio-economic “modernism”, and hawkishness on foreign policy and immigration. That last part in particular seems to be something he is rather fond of exploiting. If the polls are any indication, the signs are worrisome. This is not going to be another 2001. How will you keep this Tory leader down?",
         "likelihood": 1
           }
         }
