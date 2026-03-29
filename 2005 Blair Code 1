@@ -1227,6 +1227,9 @@ const css = `
         background: linear-gradient(to bottom, #d03e54, #df8191);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
+    .inner_window_w_desc {
+		background: linear-gradient(#eadcde, #f0ebeb);
+	}
     .inner_inner_window h3 {
         background-color: #ffcfcf;
         background: linear-gradient(to bottom, #ffcfcf, #eadcde);
