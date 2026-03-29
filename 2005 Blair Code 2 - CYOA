@@ -230,13 +230,24 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
     campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
-    "pk": 15703,
+    "pk": 14645,
     "fields": {
         "priority": 0,
-        "description": " {{oppname}} ",
+        "description": "Very rarely have you ever come face to face with Mr Howard in politics. Seeing how Tony batted off and outmanoeuvred, it makes you weary reminding yourself that he’s still their leader at all. All you have to do now is tighten your iron grip around the Tory campaign’s neck, making sure the weasel doesn’t slip through.",
         "likelihood": 1
           }
         }
+    if(Porty == 1){
+    campaignTrail_temp.questions_json[26] = {
+    "model": "campaign_trail.question",
+    "pk": 15703,
+    "fields": {
+        "priority": 0,
+        "description": " ",
+        "likelihood": 1
+          }
+        }
+      }
     campaignTrail_temp.questions_json[27] = {
     "model": "campaign_trail.question",
     "pk": 14401,
