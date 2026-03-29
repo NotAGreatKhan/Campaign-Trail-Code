@@ -18,6 +18,7 @@ var CampaignSign = "PMBlair"
 var altprimary = false;
 var SnapElection = false;
 window.opplastname = 'Howard';
+window.oppname = 'Michael Howard';
 
 
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
@@ -191,7 +192,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
      }
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
-    "pk": 1_,
+    "pk": 15653,
     "fields": {
         "priority": 0,
         "description": "Your mind is abound with dreams and possibilities about the future you wish to build for Britain, social justice, justice for the low paid. There is an incredulous agenda you feel compelled to begin work on. But before all of that, lies the responsibility of making your first big speech outside of No. 10. The eyes of the world are upon you, Gordon, how will you placate their desire?",
@@ -200,27 +201,27 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
      }
     campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
-    "pk": 1_,
+    "pk": 15680,
     "fields": {
         "priority": 0,
-        "description": " ",
+        "description": "Before Tony’s resignation, you only ever truly felt the heat of scrutiny when facing off against whatever Shadow Chancellor the Tories were cycling through in the Commons. It pains you to admit it, but he was right when he said that being Prime Minister is more than just making a few big decisions – it’s making them every single day. The Conservatives (and {{oppname}} above them all), are tearing into your economic record. “Under his Chancellorship, government borrowing, and spending have grown to unsustainable levels, all the while services are strained, and tax money is wasted!” {{opplastname}} spouts – as does most of the right wing press. They’re desperate to bring down your image as the steady hand back to Earth. Desperate, but you cannot let them.",
         "likelihood": 1
           }
         }
-    if(e.player_answers.includes(14430)){
-    campaignTrail_temp.questions_json[25] = {
+    if(e.player_answers.includes(12803) || e.player_answers.includes(13904)){
+    campaignTrail_temp.questions_json[24] = {
     "model": "campaign_trail.question",
-    "pk": 1_,
+    "pk": 15723,
     "fields": {
         "priority": 0,
-        "description": " ",
+        "description": "Before Tony’s resignation, you only ever truly felt the heat of scrutiny when facing off against whatever Shadow Chancellor the Tories were cycling through in the Commons. It pains you to admit it, but he was right when he said that being Prime Minister is more than just making a few big decisions – it’s making them every single day. The Conservatives (and {{oppname}} above them all), are tearing into your economic record. “Under his Chancellorship, government borrowing, and spending have grown to unsustainable levels, all the while services are strained, and tax money is wasted!” {{opplastname}} spouts – as does most of the right wing press. They’re desperate to bring down your image as the steady hand back to Earth. Desperate, but you cannot let them.",
         "likelihood": 1
           }
         }
       }
     campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
-    "pk": 1_,
+    "pk": 15681,
     "fields": {
         "priority": 0,
         "description": " ",
@@ -229,10 +230,10 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
         }
     campaignTrail_temp.questions_json[26] = {
     "model": "campaign_trail.question",
-    "pk": 1_,
+    "pk": 15703,
     "fields": {
         "priority": 0,
-        "description": " ",
+        "description": " {{oppname}} ",
         "likelihood": 1
           }
         }
@@ -904,12 +905,14 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // TORY LEADER VARIABLES
     if(ans == 14123 || ans == 14129 || ans == 14863 || ans == 14864){
       Ken += 1;
+      oppname = 'Ken Clarke';
       opplastname = 'Clarke';
       console.log("Ken Clarke is now the Tory leader");
     }
 
     if(ans == 14372 || ans == 14378){
       Porty += 1;
+      oppname = 'Michael Portillo';
       opplastname = 'Portillo';
       console.log("Michael Portillo is now the Tory leader");
     }
