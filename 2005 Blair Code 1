@@ -1065,7 +1065,7 @@ campaignTrail_temp.running_mate_json = [
 campaignTrail_temp.credits = "<button onclick='credits()'>NoReading, well, and:</button>"
 
 window.credits = function () {
-	const creditsList = ["[Coding]", "By: u/No-Reading9991, with great help from u/ItsAstronomical and u/SnooOwls4610", "", "[Writing]", "By: u/No-Reading9991, with much appreciated help from u/Milothebest", "", "[Extra Code]", "Music Player and 2000s Interface - W.", "FPTP System - From 2024a by AeronauticBlueberry", "Ending Pages Code - 1952 Truman", "Other Interface Jargin – 2016: A Lfietime of This","", "[And A Huge Thanks...]", "To you: The Campaign Trail Community who inspired me so much in the first place!"]
+	const creditsList = ["[Coding]", "By: u/No-Reading9991, with great help from u/ItsAstronomical, u/StrawberryMaster and u/SnooOwls4610", "", "[Writing]", "By: u/No-Reading9991, with much appreciated help from u/Milothebest", "", "[Extra Code]", "Music Player and 2000s Interface - W.", "FPTP System - From 2024a by AeronauticBlueberry", "Ending Pages Code - 1952 Truman", "Other Interface Jargin – 2016: A Lfietime of This","", "[And A Huge Thanks...]", "To you: The Campaign Trail Community who inspired me so much in the first place!"]
 	const text = creditsList.join('\n');
 
 	alert(text);
