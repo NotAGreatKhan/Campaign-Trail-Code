@@ -224,7 +224,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 15681,
     "fields": {
         "priority": 0,
-        "description": " ",
+        "description": "God, it feels good to be your own man at the top. After all of those years of having to subject yourself to the whims of him. His philosophical musings, his grand oratorical visions for the future. You will ensure Labour’s roots are cemented for the future, and you have a chance to with this manifesto. What will your flavour of New Labour be, Gordon?",
         "likelihood": 1
           }
         }
