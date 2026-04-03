@@ -1,3 +1,9 @@
+campaignTrail_temp.cyoa = true;
+
+function getQuestionNumberFromPk(pk) {
+    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
+}
+
 e = campaignTrail_temp
 
 var Wins = 0;
