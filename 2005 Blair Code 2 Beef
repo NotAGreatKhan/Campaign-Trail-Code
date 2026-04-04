@@ -26714,8 +26714,6 @@ function getQuestionNumberFromPk(pk) {
     return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
 }
 
-
-
 e = campaignTrail_temp
 
 var Wins = 0;
@@ -26830,16 +26828,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
             window.setTimeout(e.candidateSwitcher, 20)
             e.VpText = "Please select your party leader:"
     }
-    if(e.player_answers.includes(15347)){
+    if(e.player_answers.includes(13508)){
     campaignTrail_temp.questions_json[22] = {
-        "model": "campaign_trail.question",
-        "pk": 15346,
-        "fields": {
-            "priority": 0,
-            "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
-            "likelihood": 1
-          }
+    "model": "campaign_trail.question",
+    "pk": 15346,
+    "fields": {
+        "priority": 0,
+        "description": "It is a monochrome afternoon in your office. The skies are overcast with the familiar dreariness that England would not be whole without. It is at this time, whilst you toil away behind your towering mountains of paperwork and files, that you feel a familiar ring from the phone. Your hand twitches at the prospect of what it may mean. There is only one person who could be on the other side of the line, the man who you – at his reluctant yet dutiful side – executed your duties to keep Britain… strong… and indeed, stable. The ringing gets louder, the ringing morphing into a near screeching. You plainly can’t resist any longer. With the snap of a wrist, you put the phone to your ear. The voice that at most times seemed debonair, now gently reaches to you, in a tender voice.",
+        "likelihood": 1
        }
+     }
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14399,
@@ -26854,7 +26852,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14400,
     "fields": {
         "priority": 0,
-        "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime MInister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
+        "description": "The Iraq War strangles more and more of your polling numbers every day. Whilst an onlooker from the sidelines, you stood by your Prime Minister resolutely in support of the war. Now that you are the one in the hot seat presently, the bustling press journalists are itching to hear your position. How, <i>Prime Minister</i>, will you articulate your view?",
         "likelihood": 1
           }
         }
@@ -28528,7 +28526,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Cred <= 5){
+    if(Cred <= 5 && !e.player_answers.includes(15347) && !e.player_answers.includes(15647)){
     campaignTrail_temp.questions_json[23] = {
     "model": "campaign_trail.question",
     "pk": 14768,
