@@ -26778,7 +26778,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     if(ans == 15325 || ans == 15332 || ans == 15339){
         document.getElementById("header").src = "https://imgur.com/pdMtkk5.jpg"  
     }
-    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788 || ans == 14402 || ans == 14403 || ans == 14404 || ans == 14405){
+    if(ans == 12862 || ans == 12863 || ans == 12864 || ans == 12865 || ans == 14769 || ans == 14775 || ans == 14781 || ans == 14788){
         document.body.background = "https://imgur.com/r1yqD5R.png"
         campaignTrail_temp.candidate_last_name = "Labour";
         campaignTrail_temp.candidate_image_url = "https://imgur.com/0VBvUlO.png"
@@ -28548,7 +28548,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Wins <= 3 || (e.player_answers.includes(15064) || e.player_answers.includes(15062)) || Resign == 5){
+    if(Wins <= 3 || (e.player_answers.includes(15064) || e.player_answers.includes(15062)) || Resign == 5 && !e.player_answers.includes(15347) && !e.player_answers.includes(15647)){
     campaignTrail_temp.questions_json[25] = {
     "model": "campaign_trail.question",
     "pk": 15546,
