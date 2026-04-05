@@ -1246,6 +1246,10 @@ const css = `
         font-size: 14px !important;
     }
 
+    #menu_container, #overall_result_container {
+        background: none;
+    }
+
     #closeButton {
             background: none;
             border: none;
