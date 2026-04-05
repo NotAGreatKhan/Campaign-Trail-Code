@@ -2365,10 +2365,17 @@ style_overwrite.innerHTML =
   border-color: #94292e;
 }
 .inner_window_question h3 {
-background-color: #ffcfcf;
+  background-color: #ffcfcf;
 }
 .overlay_window h3 {
-background-color: #ffcfcf;
+  background-color: #ffcfcf;
+}
+
+#state_info h3 {
+  background-color: #cf6474;
+}
+#overall_result h3 {
+  background-color: #cf6474;
 }`
 ;
 document.head.appendChild(style_overwrite);
