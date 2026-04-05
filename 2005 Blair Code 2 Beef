@@ -29079,6 +29079,13 @@ background-color: #ffcfcf;
 }
 .overlay_window h3 {
 background-color: #ffcfcf;
+}
+
+#state_info h3 {
+  background-color: #cf6474;
+}
+#overall_result h3 {
+  background-color: #cf6474;
 }`
 ;
 document.head.appendChild(style_overwrite);
