@@ -2328,11 +2328,6 @@ if ($("#campaign_sign")[0]) {
 }
 
 
-#menu_container, #overall_result_container {
-    background: none;
-}
-
-
 function changechart(){
     if (document.getElementById("state_info")!=null) {
     overallthing=document.getElementById("state_info").innerHTML;
