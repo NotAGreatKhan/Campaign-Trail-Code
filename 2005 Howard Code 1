@@ -33,111 +33,121 @@ styleFix.innerHTML = `
   #election_description_window > div {
     min-width: 0;
   }
+  
   `;
   document.head.appendChild(styleFix);
 
+e.CandidText = "Please select your party:";
+e.VpText = "Please select your party leader:";
 
-function removeCandidateSummary() {
-try {
-  const candidateSummary = document.querySelector("#candidate_summary");
-  if (candidateSummary) {
-    const ulList = candidateSummary.querySelector("ul");
-    if (ulList) {
-      candidateSummary.removeChild(ulList);
+// This changes the labels (and values) of unordered lists in the selection screens
+(function () {
+  const originalDescHTML = window.descHTML || descHTML;
+  if (!originalDescHTML) return;
+
+  function isHiddenValue(value) {
+    const text = String(value ?? "").trim().toLowerCase();
+    return text === "" || text === "none";
+  }
+
+  function cleanLabel(label, fallback) {
+    return String(label ?? fallback ?? "").replace(/:\s*$/, "").trim();
+  }
+
+  function fullName(candObj) {
+    return `${candObj.first_name ?? ""} ${candObj.last_name ?? ""}`.trim();
+  }
+
+  function resolveField(candObj, fieldName) {
+    const key = String(fieldName ?? "").trim();
+
+    switch (key) {
+      case "full_name":
+        return fullName(candObj);
+      case "first_name":
+        return candObj.first_name ?? "";
+      case "last_name":
+        return candObj.last_name ?? "";
+      case "party":
+        return candObj.party ?? "";
+      case "state":
+        return candObj.state ?? "";
+      case "abbreviation":
+        return candObj.abbreviation ?? "";
+      case "":
+        return "";
+      default:
+        return candObj[key] ?? "";
     }
   }
-} catch {}
-}
-window.setInterval(removeCandidateSummary,200)
 
-function updateCandidateForm() {
-  formobserver.disconnect();
-  const heading = document.querySelector("#candidate_form form h3");
-
-  if (heading) {
-    heading.textContent = "Please select your party:";
-  }
-  formobserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-
-var formobserver = new MutationObserver(updateCandidateForm);
-formobserver.observe(document.documentElement, { childList: true, subtree: true });
-
-function removeRunningMateSummary() {
-try {
-  const running_mateSummary = document.querySelector("#running_mate_summary");
-  if (running_mateSummary) {
-    const ulList = running_mateSummary.querySelector("ul");
-    if (ulList) {
-      running_mateSummary.removeChild(ulList);
+  function getRows(isRunningMate) {
+    if (isRunningMate) {
+      return [
+        {
+          label: e.RMLabel1 ?? "Name",
+          field: e.RMField1 ?? "full_name",
+        },
+        {
+          label: e.RMLabel2 ?? e.PartyText ?? "Party:",
+          field: e.RMField2 ?? "party",
+        },
+        {
+          label: e.RMLabel3 ?? e.HomeStateText ?? "Home State:",
+          field: e.RMField3 ?? "state",
+        },
+      ];
     }
+
+    return [
+      {
+        label: e.CandLabel1 ?? "Name",
+        field: e.CandField1 ?? "full_name",
+      },
+      {
+        label: e.CandLabel2 ?? e.PartyText ?? "Party:",
+        field: e.CandField2 ?? "party",
+      },
+      {
+        label: e.CandLabel3 ?? e.HomeStateText ?? "Home State:",
+        field: e.CandField3 ?? "state",
+      },
+    ];
   }
-} catch {}
-}
-window.setInterval(removeCandidateSummary,200)
-/*
-function updateRunningMateForm() {
-  runformobserver.disconnect();
-  const heading = document.querySelector("#running_mate_form form h3");
 
-  if (heading) {
-    heading.textContent = "Please select your party leader:";
-  }
-  runformobserver.observe(document.documentElement, { childList: true, subtree: true });
-}
+  window.descHTML = function (descWindow, id) {
+    originalDescHTML(descWindow, id);
 
-var runformobserver = new MutationObserver(updateRunningMateForm);
-runformobserver.observe(document.documentElement, { childList: true, subtree: true });
+    const candObj = PROPS.CANDIDATES.get(String(id));
+    if (!candObj) return;
 
-function removeCandidateSummary() {
-   sumobserver.disconnect();
-  const candidateSummary = document.querySelector("#candidate_summary");
-  if (candidateSummary) {
-    const ulList = candidateSummary.querySelector("ul");
-    if (ulList) {
-      candidateSummary.removeChild(ulList);
-    }
-  }
-  sumobserver.observe(document.body, {childList: true,subtree: true});
-}
-*/
-var sumobserver = new MutationObserver(removeRunningMateSummary);
-sumobserver.observe(document.body, {childList: true,subtree: true});
+    const isRunningMate = descWindow === "#running_mate_description_window";
+    const rows = getRows(isRunningMate);
 
-function removeRunningMateSummary() {
-   sumobserver.disconnect();
-  const running_mateSummary = document.querySelector("#running_mate_summary");
-  if (running_mateSummary) {
-    const ulList = running_mateSummary.querySelector("ul");
-    if (ulList) {
-      running_mateSummary.removeChild(ulList);
-    }
-  }
-  sumobserver.observe(document.body, {childList: true,subtree: true});
-}
+    const $list = $(descWindow).find("ul").first();
+    if (!$list.length) return;
 
-var sumobserver = new MutationObserver(removeRunningMateSummary);
-sumobserver.observe(document.body, {childList: true,subtree: true});
+    $list.empty();
 
-function updateHeader() {
-  var gameHeader = document.getElementsByClassName("game_header")[0];
+    rows.forEach(row => {
+      const label = cleanLabel(row.label);
+      const field = String(row.field ?? "").trim();
 
-  if (gameHeader.getAttribute("id") !== "modifiedHeader") {
-    gameHeader.innerHTML = corrr;
-    gameHeader.style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-    gameHeader.setAttribute("id", "modifiedHeader");
-  }
-}
-window.setInterval(removeRunningMateSummary,10)
-  
-let z = new MutationObserver((mutationsList, observer) => {
-    let runningmateSummary = document.querySelector("#runningmate_summary");
-    if (runningmateSummary && runningmateSummary.children[0].children[2].innerHTML != runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency")) {
-        runningmateSummary.children[0].children[2].innerHTML = runningmateSummary.children[0].children[2].innerHTML.replaceAll("Home State", "Constituency");
-    }
-});
-var headerobserver = new MutationObserver(updateHeader);
-headerobserver.observe(document.documentElement, { childList: true, subtree: true });
+      if (isHiddenValue(label) || isHiddenValue(field)) return;
+
+      const value = resolveField(candObj, field);
+      $list.append($("<li>").text(`${label}: ${value ?? ""}`));
+    });
+  };
+})();
+
+e.CandLabel1 = "Name";
+e.CandLabel2 = "Role";
+e.CandLabel3 = "Ideology";
+
+e.RMLabel1 = "Name";
+e.RMLabel2 = "Role";
+e.RMLabel3 = "Constituency";
 
 RecReading=true
 
@@ -147,10 +157,10 @@ campaignTrail_temp.global_parameter_json = [
         "pk": 1,
         "fields": {
             "vote_variable": 1.125,
-            "max_swing": 0.12,
-            "start_point": 0.94,
-            "candidate_issue_weight": 10,
-            "running_mate_issue_weight": 3,
+            "max_swing": 0.06,
+            "start_point": 0.95,
+            "candidate_issue_weight": 8,
+            "running_mate_issue_weight": 4,
             "issue_stance_1_max": -0.71,
             "issue_stance_2_max": -0.3,
             "issue_stance_3_max": -0.125,
@@ -184,8 +194,8 @@ campaignTrail_temp.election_json = [
         "pk": 12,
         "fields": {
             "year": 2005,
-            "summary": "<div style='overflow-y:scroll;height:250px;'><u>Would the world ever be the same again? <i>He spurns</i> such a notion.</u><br><br>The 2001 election has given forth yet another lashing to the Conservatives, as Blair secured a ”Quiet Landslide” for his government. The gleaming popularity having waned since that ecstatic night in 1997. But even then, it was thought that nothing could be deemed impossible.<br><br>However now, with the blissful peace of the previous decade shattered and burned in the ashes of the World Trade Centre, Blair’s goodwill will be strenuously tested as his agenda shifts for the new century. The Bush Administration prepares for an invasion of Iraq – but the legacy of Britain's role in that war will rest first, and foremost on Blair's own shoulders. And with Chancellor Brown, the fine-tuned economy's smooth chugging needs to maintain its very confidence.<br><br>The Conservative Party must find its way out of the wilderness, if it hopes to ever get back in power. Blair must also defend from multiple flanks by the renewed Liberal Democrats and the Conservatives sniffing Labour-red blood. If he fails, Blair's progressive centre may be strangled as quickly as it was birthed – as the natural party of governance reasserts itself.<br><br>There is not time for dither nor delay. He must take <strong><span style='color:darkred; text-shadow: 0px 0px 8px white, 0px 0px 10px lightred;'>Britain forward, not back</span></strong>.</div>",
-            "image_url": "https://imgur.com/t35sV5w.jpg",
+            "summary": "<div style='overflow-y:scroll;height:250px;'><u>Would the world ever be the same again? <i>He spurns</i> such a notion.</u><br><br>The 2001 election has given forth yet another lashing to the Conservatives, as Blair secured a ”Quiet Landslide” for his government. The gleaming popularity having waned since that ecstatic night in 1997. But even then, it was thought that nothing could be deemed impossible.<br><br>However now, with the blissful peace of the previous decade shattered and burned in the ashes of the World Trade Centre, Blair’s goodwill will be strenuously tested as his agenda shifts for the new century. The Bush Administration prepares for an invasion of Iraq – but the legacy of Britain's role in that war will rest first, and foremost on Blair's own shoulders. And with Chancellor Brown, the fine-tuned economy's churning engine needs to maintain its very confidence.<br><br>The Conservative Party meanwhile, must find its way out of the wilderness if it hopes to ever get back in power. All of this, compounded by the renewed Liberal Democrats along with the Conservatives sniffing Labour-red blood. If he fails, Blair's progressive centre may be strangled as quickly as it was birthed – as the natural party of governance reasserts itself.<br><br>There is not time for dither nor delay. He must take <strong><span style='color:darkred; text-shadow: 0px 0px 8px white, 0px 0px 10px lightred;'>Britain forward, not back</span></strong>.</div>",
+            "image_url": "https://imgur.com/jYV6tkT.jpg",
             "winning_electoral_vote_number": 324,
             "advisor_url": "https://imgur.com/u6zV6LD.jpg",
             "recommended_reading": `<div id="tab-select"> <p class="ftab-active" id="start">Overview</p> <p class="ftab">Britain in 2005</p> <p class="ftab">Sources</p> <p class="ftab" id="end">Further Credits</p></div>
@@ -224,7 +234,7 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 2010,
             "summary": "<div style='overflow-y:scroll;height:250px;'><u>Did it have to end like this? Within his soul, He could never answer that question.</u><br><br>New Labour is drifting further and further away from the idealism and hope that brought it into the halls of Number 10. A bitter and divisive saga between Blair and Brown has finally ripped apart and fizzled out. Resulting in Brown, who had envied Blair's position eternally, finally replacing his former boss’ job in the hot seat.<br><br>The newly sworn in Prime Minister wishes to carve out his own agenda for the future — with many challenges from the opposition this time though. Lower wealth inequality, a stable economy. Progress in the social fabric of the country. Now unshackled by the centrist agenda of Blair, he can at last push ahead on his own term.<br><br>The housing bubble appears to have other plans though…<br><br>Brown will not only need to stave off rumours and attacks in his government, but simultaneously lead the domestic and global effort to combat the devastating 2008 financial crash. Anything less would scratch away the end of the New Labour dream that he has toiled for over a decade to manifest. All the while staving off the modernising and youthful David Cameron; with Nick Clegg to his other flank.<br><br>They said that it would be impossible. To make economic stability and social dynamism go hand in hand, to win 3 successive elections for Labour. And now, he’ll win a fourth. No matter how much blood, sweat, tears — and popularity — he must sacrifice.</div>\n",
-            "image_url": "https://imgur.com/Tps0Miw.png",
+            "image_url": "https://imgur.com/f1VcXFP.png",
             "winning_electoral_vote_number": 326,
             "advisor_url": "https://imgur.com/QjvmIad.png",
             "display_year": "2010 UK - A Future Fair For All"
@@ -236,7 +246,7 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 2001,
             "summary": "<div style='overflow-y:scroll;height:250px;'><u>Simpler times, they were. Simpler times.</u><br><br>The year 1997 marked the greatest rupturing of the British political dynamic in two decades. The Conservative Party collapsing under its own fatigue, sleaze, and incessant infighting. Labour, ushered in on a promise of revitalising the country; that is what they are fervently wedded to accomplish.<br><br>The task ahead of them contains no shortage of risks and perils. The dogged IRA in Northern Ireland continue to make peace in the region little more than a distant dream, that dream must now become finalised with Blair at the helm. The economy — still reeling from Black Wednesday in 1992 — must be steered back into path, in order for newly sworn in Chancellor Brown to make a “fairer Britain for all”. But if they can steer the great ship of state back on course, <i>if</i> they can, then whatever poor sap becomes the Opposition Leader shall provide little strain to be dispatched.<br><br>With such a mountainous task ahead, the general election will shape up to be referendum on the governance of New Labour. Prime Minister Blair, Chancellor Gordon Brown, and the whole party, cannot afford to lose their mandate that they fought for over 18 years to achieve…</div>\n",
-            "image_url": "https://imgur.com/KK8GCoE.png",
+            "image_url": "https://imgur.com/Nz9TIgI.png",
             "winning_electoral_vote_number": 330,
             "advisor_url": "https://imgur.com/QjvmIad.png",
             "display_year": "2001 UK - Ambitions For Britain"
@@ -248,7 +258,7 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 1997,
             "summary": "<div style='overflow-y:scroll;height:250px;'><u>God, what he would do to go back to those days...</u><br><br>At the twilight of the millennium, the Conservatives have been the dominant party in Britain for over a decade under Thatcher, and nearly 7 years of Prime Minister John Major. The vanguard of a new neoliberal order now replaced by a pestering, infighting, and weak minority government. In a twist of fate so sudden it seemed nigh Shakespearean, Major’s upset victory in 1992 was immediately succeeded by a crash in the European Exchange Rate, plunging his falling popularity after the failure to pass the Maastricht Treaty.<br><br>After the tragic death of Labour Leader John Smith, the charismatic centrist Tony Blair took his place, with Gordon Brown at his loyal side. But after he removed the socialist clause from the party constitution, friction has been exacerbated with his left-wing peers. Yet despite all of this, Blair seems poised to secure perhaps the largest mandate in British history.<br><br>To seize the chance at ending the childhood’s worth of Tory rule, Blair must defend and secure his large coalition of many stripes, and effectively press the lurching divisions of the Conservatives. If the campaign drags on, it could spell disaster for Blair’s strained relationship with the left.<br><br>He must seize the chance now, lest Labour never break it’s losing tradition again.</div>\n",
-            "image_url": "https://imgur.com/m2xS7D2.png",
+            "image_url": "https://imgur.com/6VnUFX1.jpg",
             "winning_electoral_vote_number": 330,
             "advisor_url": "https://imgur.com/QjvmIad.png",
             "display_year": "1997 UK - New Labour, New Britain"
@@ -291,10 +301,10 @@ campaignTrail_temp.candidate_json = [
             "first_name": "The",
             "last_name": "Labour Party",
             "election": 12,
-            "party": "Labour",
-            "state": "--",
+            "party": "Her Majesty's Most Loyal Government",
+            "state": "Social Democratic – New Labour",
             "priority": 2,
-            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Labour Party</b></li><li><b>Role: Her Majesty's Most Loyal Government</b></li><li><b>Ideology: Social Democratic – New Labour</b></li><p> </p><b>The Labour Party</b> was founded in the early 1920s by a group of middle-class intellectuals, trade union leaders and socialists to stand as an organisation that truly stood for the working man of Britain. By 1930, it had surpassed the Liberal Party as the second largest party in the nation, standing usually in official opposition to the Conservatives.<br><br>Whilst Labour had achieved some success in Government, such as with Clement Attlee’s Government’s NHS, they had found little success in regards to staying in power against the unified sky-blue tide of the Tories. Whether it be the Labour-SDP split under Michael Foot, the stiff disposition of Neil Kinnock, or the economic stagnation under Harold Wilson, Labour had found great difficulty in cementing a long-term rule. But that would begin to change in the 1990s…<br><br>Following the ascension of the charismatic Tony Blair to leadership in 1994, the party would be completely re-aligned by a significant tack to the centre; symbolised by the removal of Clause 4 from the Party Constitution, no longer tying the party to the ultimate aim of true socialism. The ensuing landslide victories in 1997 and 2001, had vindicated Labour’s overall shift to the centre. Yet presently, new challenges continue to hound the Government, both abroad, and at home.<br><br>The future of the decade and the “Party Of The People” are now at stake, with the Prime Minister dragging a burden greater than anyone could’ve possibly predicted.</div>",
+            "description": "<div style='overflow-y:scroll;height:210px;'> <b>The Labour Party</b> was founded in the early 1920's by a group of middle-class intellectuals, trade union leaders and socialists to stand as an organisation which at last stood as the proletariat's axe at the Yggdrasil tree of Westminster. From the ashes of the annihilated Liberal Party rose <i>this</i> party, who would alternate governing power with the Conservatives since the 1930's.<br><br>Labour tasted the sweet honey of transformative power with Attlee's government, only to fall far from the hive after a string of losses from the Winter of Discontent. 18 years of Thatcher and Major had led the party to desperation. Salvation came with the tragic death of the martyr John Smith, and it was handed to the party in the form of youthful Boomer, Tony Blair. The landslide victories of 1997 and 2001 once again allowed them to climb the great trunk.<br><br>Yet presently, new challenges continue to hound the Government, both abroad, and at home. A swarm of leeches is climbing the branches, each just as furtively snaking as the last...<br><br>The future of the decade and the “Party Of The Working Class” are now at stake, with the Prime Minister dragging a burden greater than anyone could’ve possibly predicted.</div>",
             "color_hex": "#e84545",
             "secondary_color_hex": "#FFA0A0",
             "is_active": 1,
@@ -314,18 +324,18 @@ campaignTrail_temp.candidate_json = [
             "first_name": "Tony C. L.",
             "last_name": "Blair",
             "election": 12,
-            "party": "Labour",
+            "party": "Her Majesty's Most Loyal Government",
             "state": "Sedgefield",
             "priority": 9,
             "description": "'",
             "color_hex": "#e74040",
             "secondary_color_hex": "#FFA0A0",
             "is_active": 0,
-            "image_url": "https://imgur.com/NlFar5m.png",
+            "image_url": "https://imgur.com/P9gVXTQ.jpg",
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<li><b>Name: Tony C. L. Blair</b></li><li><b>Role: Her Majesty's Prime Minister</b></li><li><b>Constituency: Sedgefield</b></li><p> </p><i>”They say I hate the party, and its traditions. I don't. I love this party. There's only one tradition I hated: losing.”</i><p> </p><b>Anthony Charles Lynton Blair</b>. The Etonian barrister. The progressive centrist. And the first Labour Prime Minister to have a tangible shot at securing a third term. In spite of the Troubles in Northern Ireland, the fuel crisis, and swirling rumours about his cabinet – a surplus in the budget, and a revitalised NHS coupled with a low crime rate spurred on Labour's hold over their large mandate in Parliament. Though, some Labour MPs look on him ravenously, eager to peg him down for his attitude to the party's old socialist thought.<br><br>But his charisma, technocratic dogma, and competent exchequer, will not be sufficient to store the keys to Parliamentary dominance. His credibility will have to be preserved with vigour, the vigour that he gave to reforge this party anew. Whether he sticks to his idealistic principles, or goes through the machinations that the paranoia-stricken world will bring on to the isles, the Prime Minister will fight for what he feels is necessary.<p><span style=\"float:right\">Even if nations are brought down, he'll prove to the Devil's hand that he is more than a 'poodle' for America.</span></p>",
+            "description_as_running_mate": "<p> </p><i>”They say I hate the party, and its traditions. I don't. I love this party. There's only one tradition I hated: losing.”</i><p> </p><b>Anthony Charles Lynton Blair</b>. The Etonian barrister. The progressive centrist. And the first Labour Prime Minister to have a tangible shot at securing a third term. In spite of the Troubles in Northern Ireland, the fuel crisis, and swirling rumours about his cabinet – a surplus in the budget, and a revitalised NHS coupled with a low crime rate spurred on Labour's hold over their large mandate in Parliament. Though, some Labour MPs look on him ravenously, eager to peg him down for his attitude to the party's old socialist thought.<br><br>But his charisma, technocratic dogma, and competent exchequer, will not be sufficient to store the keys to Parliamentary dominance. His credibility will have to be preserved with vigour, the vigour that he gave to reforge this party anew. Whether he sticks to his idealistic principles, or goes through the machinations that the paranoia-stricken world will bring on to the isles, the Prime Minister will claw and scrape for what he feels is necessary.<p><span style=\"float:right\">Even if nations are brought down, he'll prove to the Devil's hand that he is more than a 'poodle' for America.</span></p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -337,7 +347,7 @@ campaignTrail_temp.candidate_json = [
             "first_name": "J. Gordon",
             "last_name": "Brown",
             "election": 12,
-            "party": "Labour",
+            "party": "Her Majesty's New Prime Minister",
             "state": "Dumferline East",
             "priority": 9,
             "description": "'",
@@ -348,7 +358,30 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<li><b>Name: J. Gordon Brown</b></li><li><b>Role: Her Majesty's New Prime Minister</b></li><li><b>Constituency: Dumferline East</b></li><p> </p><b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the pearly gates of legends.",
+            "description_as_running_mate": "<b>James Gordon Brown</b> is a man robbed of his destiny. Leadership of the party he held so dearly to his soul was ordained to be handed to him after the death of John Smith. All of the sermons the son of the manse roared to the choir and the masses, all of it subsumed by the media personality and smile of his closest political rival. A tragic story, or perhaps a typical escapade of friends turning on each other. The Prince couldn't wait for the King to die.<br><br>But that's all in the past now, the Iron Chancellor has ascended to the height of parliamentary power. He just needs to ascend one last mountain, touch one last stone, and he may finally reach the pearly gates of legends.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 139,
+        "fields": {
+            "first_name": "Anthony",
+            "last_name": "Blair",
+            "election": 12,
+            "party": "Her Majesty's Terminal Prime Minister",
+            "state": "Sedgefield",
+            "priority": 1,
+            "description": "'",
+            "color_hex": "#4848a8",
+            "secondary_color_hex": "#4848a8",
+            "is_active": 0,
+            "image_url": "https://imgur.com/f1V2M3Z.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<b>BLAIR:</b> Look, Alan, this situation we face... I frankly don't know how we can make it out alive.<br><br><b>MILBURN:</b> It's gonna be a lot, Tony – I'm not going to pull wool over your eyes. But we can salvage this. You'll make it.<br><br><b>BLAIR:</b> I hope so. I really do hope so, maybe Gordon and I [Inaudible].<br><br>The King's crown has fallen far from its crest on the mountain. Its jewels cracked and deformed as their gold housing is battered by the hail and storm.<br><br><span style=\"float:right\">He may never feel the sparkling glimmer of the summit's sunshine again.</span>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -360,10 +393,10 @@ campaignTrail_temp.candidate_json = [
             "first_name": "The",
             "last_name": "Conservative Party",
             "election": 12,
-            "party": "Conservative",
-            "state": "--",
+            "party": "Her Majesty's Most Loyal Opposition",
+            "state": "Classical Conservatism",
             "priority": 2,
-            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Conservative Party</b></li><li><b>Role: Her Majesty's Most Loyal Opposition</b></li><li><b>Ideology: Classical Conservatism</b></li><p> </p><b>The Conservative and Unionist Party</b> is the oldest still-active party in Britain, evolving from the old Tory party that had predominantly overseen the rise of the modern British state. Until the 1990s, it was deemed a simple political fact – a law of nature – that they were 'the natural party of governance'. After the turmoil of the 90's, Prime Minister John Major was routed and swept aside under the red tide of the New Labour revolution. Their ability to have any influence on policy snatched away from their grip. The landslide defeats of '97 and '01 have suppressed the Conservatives to electoral weakness.<br><br>Despite all of this however, they are far from out of the fight. As the new millennium dawns on the world, the War on Terror will consume the Blair government's agenda, and could provide ample opportunity to rip open festering Labour wounds. It is very much possible that regardless of the previous loss, it could still be turned around.<br><br>But they need the right man to wield the great sword of the party.<br><br>If the party leader can effectively take the attack to the Prime Minister, and renew the drive of the Tories, it is possible – feasible even – that they can snuff out the Labour domination just as hastily as it was brought into the halls of Downing Street. Take them back.<br><br>To their natural holders.</div>",
+            "description": "<div style='overflow-y:scroll;height:210px;'> <b>The Conservative and Unionist Party</b> is the oldest still-active party in Britain, evolving from the old Tory party that had predominantly overseen the rise of the modern British state. Until the 1990s, it was deemed a simple political fact – a law of nature – that they were 'the natural party of governance'. After the turmoil of the 90's, Prime Minister John Major was routed and swept aside under the red tide of the New Labour revolution. Their ability to have any influence on policy snatched away from their grip. The landslide defeats of '97 and '01 have suppressed the Conservatives to electoral weakness.<br><br>Despite all of this however, they are far from out of the fight. As the new millennium dawns on the world, the War on Terror will consume the Blair government's agenda, and could provide ample opportunity to rip open festering Labour wounds. It is very much possible that regardless of the previous loss, it could still be turned around.<br><br>But they need the right man to wield the great sword of the party.<br><br>If the party leader can effectively take the attack to the Prime Minister, and renew the drive of the Tories, it is possible – feasible even – that they can snuff out the Labour domination just as hastily as it was brought into the halls of Downing Street. Take them back.<br><br>To their natural holders.</div>",
             "color_hex": "#4848a8",
             "secondary_color_hex": "#4848a8",
             "is_active": 1,
@@ -383,7 +416,7 @@ campaignTrail_temp.candidate_json = [
             "first_name": "Michael",
             "last_name": "Howard",
             "election": 12,
-            "party": "Conservative",
+            "party": "Her Majesty's Leader of the Opposition",
             "state": "Folkestone and Hythe",
             "priority": 1,
             "description": "'",
@@ -394,7 +427,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: Michael Howard</b></li><li><b>Role: Her Majesty's Leader of the Opposition</b></li><li><b>Constituency: Folkestone and Hythe</b></li><p> </p><i>”This is a great party - the longest standing, most successful party in the history of democracy. There has been no other party that has done so much, or achieved so much, as ours. We are its trustees.”</i></p><b>Michael Howard</b> is a long time establishmentarian and parliamentarian who has served in the now-shamed John Major government, having held the position as Home Secretary. He has been generally conducting himself as a classical-moderate Tory, before surviving the New Labour landslide. But that is in the dusty pages of the history books, a new challenge now faces him.<br><br>The leader of the Conservative party scarpering from the lashing of the 2001 election is the MP for Chingford and Woodford, Ian Duncan Smith. A man so uncharismatic and inept, that he only commanded a third of Tory MPs at best during the 2001 leadership election. Whenever his leadership unravels at the seams, and rips apart – and that is a matter of <i>when</i> not if – Howard must ensure that he seizes the leadership hastily and smoothly. But that is only the first hurdle of the long track to Number 10.<br><br>After becoming the head of that slithering sky-blue snake, Howard will have to steer the party back into an opposition that can actually fight – and win – on the same plain as Blair's Labour Party. To accomplish this, he will have to effectively press the weaknesses of the Labour government, and define himself on the issues of the day that can authentically capture the mass public mood. If he can accomplish that however, it is very much possible that the germinating New Labour rose can be cauterised before it has any opportunity to truly plunge its roots.</div>",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:210px;'> <i>”This is a great party - the longest standing, most successful party in the history of democracy. There has been no other party that has done so much, or achieved so much, as ours. We are its trustees.”</i></p><b>Michael Howard</b> is a long time establishmentarian and parliamentarian who has served in the now-shamed John Major government, having held the position as Home Secretary. He has been generally conducting himself as a classical-moderate Tory, before surviving the New Labour landslide. But that is in the dusty pages of the history books, a new challenge now faces him.<br><br>The leader of the Conservative party scarpering from the lashing of the 2001 election is the MP for Chingford and Woodford, Ian Duncan Smith. A man so uncharismatic and inept, that he only commanded a third of Tory MPs at best during the 2001 leadership election. Whenever his leadership unravels at the seams, and rips apart – and that is a matter of <i>when</i> not if – Howard must ensure that he seizes the leadership hastily and smoothly. But that is only the first hurdle of the long track to Number 10.<br><br>After becoming the head of that slithering sky-blue snake, Howard will have to steer the party back into an opposition that can actually fight – and win – on the same plain as Blair's Labour Party. To accomplish this, he will have to effectively press the weaknesses of the Labour government, and define himself on the issues of the day that can authentically capture the mass public mood. If he can accomplish that however, it is very much possible that the germinating New Labour rose can be cauterised before it has any opportunity to truly plunge its roots.</div>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -406,7 +439,7 @@ campaignTrail_temp.candidate_json = [
             "first_name": "Michael",
             "last_name": "Howard",
             "election": 12,
-            "party": "Conservative",
+            "party": "Her Majesty's New Leader of the Opposition",
             "state": "Folkestone and Hythe",
             "priority": 1,
             "description": "'",
@@ -417,7 +450,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<li><b>Name: Michael Howard</b></li><li><b>Role: Her Majesty's New Leader of the Opposition</b></li><li><b>Constituency: Folkestone and Hythe</b></li><p> </p><b>Iain Duncan Smith</b><br><br>",
+            "description_as_running_mate": "<b>Iain Duncan Smith</b> has fallen, and the innocent mishap of the Conservative membership caan at last be corrected.<br><br>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -452,10 +485,10 @@ campaignTrail_temp.candidate_json = [
             "first_name": "The ",
             "last_name": "Liberal Democrats",
             "election": 12,
-            "party": "Liberal Democrat",
-            "state": "--",
+            "party": "Her Majesty's Most Loyal Third Party",
+            "state": "Centre-left Liberalism",
             "priority": 1,
-            "description": "<div style='overflow-y:scroll;height:290px;'><li><b>Name: The Liberal Democrats</b></li><li><b>Role: Her Majesty's Most Loyal Third Party</b></li><li><b>Ideology: Centre-left Liberalism</b></li><p> </p><b>The Liberal Democratic Party</b> is the current largest third party in British parliamentary politics. Having emerged as a result of the former Social Democratic Party (or SDP that broke away from Labour in 1981) and the ailing, dying Liberal Party which once dominated the early 20th century. Towing the line of centre-left liberal ideology, they are loosely placed in the middle of the British political spectrum. The Lib Dems have – to a highly effective degree – proven their mettle as an opposition party able to suck out voter bases from both the Tories <i>and</i> Labour.<br><br>For Blair's Labour in particular, the leader of the party has a rare opportunity to sweep the government from the legs, and snatch voter sects teetering on jumping ship all together. Nobody realises it yet. Nobody yet knows the great trials and horrrors the geopolitical climate has in store. If the LibDem leader plays his cards right, he can pry the pre-existing fissures in the major parties into gaping chasms bleeding an exodus people disenfranchised by the Labour-Tory duopoly.<br><br>The young, the infirmed, the hopeful immigrants, and the disillusioned. They can all have the chance to raise a party which can plunge it's citrus-orange knife into the establishment which has governed without accountability for far too long.</div>",
+            "description": "<div style='overflow-y:scroll;height:210px;'> <b>The Liberal Democratic Party</b> is the current largest third party in British parliamentary politics. Having emerged as a result of the former Social Democratic Party (or SDP that broke away from Labour in 1981) and the ailing, dying Liberal Party which once dominated the early 20th century. Towing the line of centre-left liberal ideology, they are loosely placed in the middle of the British political spectrum. The Lib Dems have – to a highly effective degree – proven their mettle as an opposition party able to suck out voter bases from both the Tories <i>and</i> Labour.<br><br>For Blair's Labour in particular, the leader of the party has a rare opportunity to sweep the government from the legs, and snatch voter sects teetering on jumping ship all together. Nobody realises it yet. Nobody yet knows the great trials and horrrors the geopolitical climate has in store. If the LibDem leader plays his cards right, he can pry the pre-existing fissures in the major parties into gaping chasms bleeding an exodus people disenfranchised by the Labour-Tory duopoly.<br><br>The young, the infirmed, the hopeful immigrants, and the disillusioned. They can all have the chance to raise a party which can plunge it's citrus-orange knife into the establishment which has governed without accountability for far too long.</div>",
             "color_hex": "#ffb752",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -475,7 +508,7 @@ campaignTrail_temp.candidate_json = [
             "first_name": "Charles P.",
             "last_name": "Kennedy",
             "election": 12,
-            "party": "Liberal Democrat",
+            "party": "Her Majesty's Leader of the Liberal Democrats",
             "state": "Folkestone and Hythe",
             "priority": 1,
             "description": "'",
@@ -486,7 +519,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "'",
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<li><b>Name: Charles P. Kennedy</b></li><li><b>Role: Her Majesty's Leader of the Liberal Democrats</b></li><li><b>Constituency: Ross, Skye and Lochaber</b></li><p> </p><i>”Politics is much too serious to be taken too seriously; equally, there are many aspects of it so laughable as to be lamentable.”</i><p> </p><b>Charles Peter Kennedy</b> is the epitmoe of a jovial, affable Scotsman. His cheery, light-hearted persona has simultaneously endeared him to the public, and generated chatter – both suspicious and hopeful – among the media class. Making his name as a principled speaker on the more liberal wing of the party, he has taken a long jounrey to stake himself out as a permanent face of the British national politik.<br><br>His climb to the mountain-top does not end here, however – he knew that all too well. He may be a fresh face after becoming leader in 1999, but his new coalition heading into 2005 must enlargen and secure its tent for those seeking refuge from the betrayal of the major parties. If he can minimise his gaffes on the trail, project strength among the parliamentary cohorts – he may just have a chance to cause the first deadlock since the 1970's.",
+            "description_as_running_mate": "<p> </p><i>”Politics is much too serious to be taken too seriously; equally, there are many aspects of it so laughable as to be lamentable.”</i><p> </p><b>Charles Peter Kennedy</b> is the epitmoe of a jovial, affable Scotsman. His cheery, light-hearted persona has simultaneously endeared him to the public, and generated chatter – both suspicious and hopeful – among the media class. Making his name as a principled speaker on the more liberal wing of the party, he has taken a long jounrey to stake himself out as a permanent face of the British national politik.<br><br>His climb to the mountain-top does not end here, however – he knew that all too well. He may be a fresh face after becoming leader in 1999, but his new coalition heading into 2005 must enlargen and secure its tent for those seeking refuge from the betrayal of the major parties. If he can minimise his gaffes on the trail, project strength among the parliamentary cohorts – he may just have a chance to cause the first deadlock since the 1970's.",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -1031,13 +1064,11 @@ campaignTrail_temp.running_mate_json = [
 
 campaignTrail_temp.credits = "<button onclick='credits()'>NoReading, well, and:</button>"
 
-credits = function() {
-  credits = ["[Coding]", "By: u/No-Reading9991, with great help from u/ItsAstronomical and u/SnooOwls4610", "", "[Writing]", "By: u/No-Reading9991, with much appreciated help from u/Milothebest", "", "[Extra Code]", "Music Player and 2000s Interface - W.", "FPTP System - From 2024a by AeronauticBlueberry", "Ending Pages Code - 1952 Truman", "Other Interface Jargin – 2016: A Lfietime of This","", "[And A Huge Thanks...]", "To you: The Campaign Trail Community who inspired me so much in the first place!"]
-  text = "[CREDITS]:\n\n"
-  for (i in credits) {
-      text += credits[i] + "\n"
-  }
-  alert(text)
+window.credits = function () {
+	const creditsList = ["[Coding]", "By: u/No-Reading9991, with great help from u/ItsAstronomical, u/StrawberryMaster and u/SnooOwls4610", "", "[Writing]", "By: u/No-Reading9991, with much appreciated help from u/Milothebest", "", "[Extra Code]", "Music Player and 2000s Interface - W.", "FPTP System - From 2024a by AeronauticBlueberry", "Ending Pages Code - 1952 Truman", "Other Interface Jargin – 2016: A Lfietime of This","", "[And A Huge Thanks...]", "To you: The Campaign Trail Community who inspired me so much in the first place!"]
+	const text = creditsList.join('\n');
+
+	alert(text);
 }
 
 vpTableHistorical = {
@@ -1128,7 +1159,9 @@ corrr = `
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+$("#game_window")[0].style.backgroundColor = "#f0ebeb";
+// "url(https://imgur.com/RDCPDZf.jpg)"
+$("#game_window")[0].style.backgroundSize = "cover"; 
 $(".container")[0].style.backgroundColor = "#ababab";
 document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
 document.body.background = "https://imgur.com/erWHhIe.png";
@@ -1139,17 +1172,51 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 
 e = campaignTrail_temp
 
+// helper to ensure a stylesheet is appended only once
+function ensureStylesheet(url, id) {
+	// if an id is provided and exists, bail out
+	if (id && document.getElementById(id)) return;
+	// if a link with same href already exists, bail out
+	if (document.querySelector('link[rel="stylesheet"][href="' + url + '"]')) return;
+	const link = document.createElement('link');
+	link.rel = 'stylesheet';
+	link.href = url;
+	if (id) link.id = id;
+	document.head.appendChild(link);
+}
 
-document.head.innerHTML += `<link
-     rel="stylesheet"
-     href="https://unpkg.com/xp.css"
-    >`
-    document.head.innerHTML += `<style>
+ensureStylesheet('https://unpkg.com/xp.css', 'unpkg-xpcss');
+
+function ensureMetaViewport() {
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const m = document.createElement('meta');
+        m.name = 'viewport';
+        m.content = 'width=device-width, initial-scale=1';
+        document.head.appendChild(m);
+    }
+}
+
+applyGlobalStyles.sheets = {};
+
+function applyGlobalStyles(css, id = 'app-theme') {
+    let el = document.getElementById(id);
+    if (!el) {
+        el = document.createElement('style');
+        el.id = id;
+        document.head.appendChild(el);
+    }
+    el.textContent = css;
+}
+
+const css = `
     #announcement {
-      display: none;
+        display: none;
     }
     .campaign_trail_start_emphasis {
-      background-color: #F8F8F8;
+        background-color: #F8F8F8;
+    }
+    #game_window {
+        background: url(https://imgur.com/RDCPDZf.jpg);
     }
     .game_header {
         background: linear-gradient(to bottom, #df8191, #df8191);
@@ -1160,20 +1227,27 @@ document.head.innerHTML += `<link
         background: linear-gradient(to bottom, #d03e54, #df8191);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
+    .inner_window_w_desc {
+		background: linear-gradient(#eadcde, #f0ebeb);
+	}
     .inner_inner_window h3 {
-      background-color: #ffcfcf;
-      background: linear-gradient(to bottom, #ffcfcf, #eadcde);
+        background-color: #ffcfcf;
+        background: linear-gradient(to bottom, #ffcfcf, #eadcde);
     }
     #inner_window_2 {
-      background-repeat: repeat; 
-      height: 494px; 
+        background-repeat: repeat; 
+        height: 494px; 
     }
     #inner_window_3 { 
-      background-repeat: repeat; 
-      height: 494px;
+        background-repeat: repeat; 
+        height: 494px;
     }
     #overall_details_container.done h4 {
         font-size: 14px !important;
+    }
+
+    #menu_container, #overall_result_container {
+        background: none;
     }
 
     #closeButton {
@@ -1204,35 +1278,70 @@ document.head.innerHTML += `<link
   body {display:flex!important;}
   
   #game_window{max-width:1000px;}
-</style>`
+  
+  #election_id_button {
+    margin-top: 3em;
+  }
+`;
 
+ensureMetaViewport();
+applyGlobalStyles(css);
 
-const startScreenUpdater = setInterval(function() {
-      const goBackButton = document.getElementById("candidate_id_back");
-      const candidateButton = document.getElementById("candidate_id_button");
-      const runningMateButton = document.getElementById("running_mate_id_button");
-      
-      if(candidateButton || c != 0){ 
-          var c = document.getElementById("candidate_id")?.value ?? -1;          
-          var r = document.getElementById("running_mate_id")?.value ?? -1;
-          if(c == 12543 && !(candidateButton) && !(runningMateButton)) {
-        	goBackButton.click();
-        	const initContinue = document.getElementById("election_id_button");
-        	initContinue.click();
-    	  }
-          
-          else if(r == 126) {
-        	if(runningMateButton) {
-            	runningMateButton.remove();
-        	}
-    	    }
-	}
-        if(finalScreenID) { // delete back button and delete the interval
-    	finalScreenBB.remove();
-    	clearInterval(startScreenUpdater);
-	}
-}, 1);
+var ch = 12543;
+const targetContainer = document.getElementById("game_window") || document.body;
 
+const screenUpdaterObserver = new MutationObserver((mutations, observer) => {
+    const candidateButton = document.getElementById("candidate_id_button");
+    const runningMateButton = document.getElementById("running_mate_id_button");
+    const finalScreenID = document.getElementById("opponent_selection_id_button");
+
+    const candidateSelect = document.getElementById("candidate_id");
+    const runningMateSelect = document.getElementById("running_mate_id");
+    
+    var c = candidateSelect?.value ?? -1;          
+    var r = runningMateSelect?.value ?? -1;
+
+    if (candidateButton || c != 0) { 
+        if (c == 12543 && !candidateButton && !runningMateButton) {
+            document.getElementById("candidate_id_back")?.click();
+            document.getElementById("election_id_button")?.click();
+        } else if (r == 126) {
+            runningMateButton?.remove();
+        }
+    }
+
+    if (candidateButton && candidateSelect) { 
+        ch = candidateSelect.value;
+        if (ch == 12543) {
+            requestAnimationFrame(() => {
+                storedChar = ch;
+            });
+        }
+    }
+
+    if (finalScreenID) { 
+        document.getElementById("opponent_selection_id_back")?.remove();
+        
+        const dropdown = document.getElementById("difficulty_level_id");
+        if (dropdown && !dropdown.dataset.listenerAttached) {
+            dropdown.addEventListener("input", () => {
+                e.difficultychosen = dropdown.value;
+            });
+            dropdown.dataset.listenerAttached = "true"; 
+        }
+
+        observer.disconnect();
+    }
+});
+
+if (targetContainer) {
+    screenUpdaterObserver.observe(targetContainer, { 
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['value', 'style', 'class']
+    });
+}
 
 let contentBox = document.getElementsByClassName("content_box")[0];
 let contentSingle = document.getElementsByClassName("content_single")[0];
@@ -1334,8 +1443,8 @@ function addDynamicCSS() {
 addDynamicCSS();
 
 tooltipList = [
-	// World Leaders
-	{searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png> President George Walker Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
+	    // World Leaders
+	    {searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png> President George Walker Bush of the United States. He has a particular foreign agenda with the Middle East, one that he would like you to follow."},
         {searchString: "Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
         {searchString: "President Jacques Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
         {searchString: "President Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand, who is a strong backer of the European Constitution, and all that it entails."},
@@ -1343,16 +1452,16 @@ tooltipList = [
         {searchString: "Berlusconi", explanationText: "<img src=https://imgur.com/Qe7DS41.jpg> Italian Prime Minister, Silvio Berlusconi. One of the few friendly voices over there down south."},
 
         // Government Members
-	{searchString: "Gordon", explanationText: "<img src=https://imgur.com/6YJW1sQ.jpg> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. He's been there since the beginning with you. It won't be forever. Eventually he'll want to redefine monetary policy at the top. Sooner, or later."},
-	{searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/6YJW1sQ.jpg> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. He's been there since the beginning with you. It won't be forever. Eventually he'll want to redefine monetary policy at the top. Sooner, or later."},	
+      	{searchString: "Gordon", explanationText: "<img src=https://imgur.com/6YJW1sQ.jpg> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. He's been there since the beginning with you. It won't be forever. Eventually he'll want to redefine monetary policy at the top. Sooner, or later."},
+	    {searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/6YJW1sQ.jpg> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. He's been there since the beginning with you. It won't be forever. Eventually he'll want to redefine monetary policy at the top. Sooner, or later."},	
         {searchString: "John Prescott", explanationText: "<img src=https://imgur.com/ey5qBMg.jpg> The Deputy Prime Minister, and Environment and Transport Secretary. An egging-voter punching, straight-tongued Yorkshire man. Also the only bridge between you and Gordon Brown."},
         {searchString: "Prescott", explanationText: "<img src=https://imgur.com/ey5qBMg.jpg> The Deputy Prime Minister, and Environment and Transport Secretary. An egging-voter punching, straight-tongued Yorkshire man. Also the only bridge between you and Gordon Brown."},
         {searchString: "Hilary Armstrong", explanationText: "<img src=https://imgur.com/UObvacP.jpg> Hilary Armstrong, Chief Whip of the Labour Party. Your hatchetwoman for the backbenches."},
         {searchString: "Armstrong", explanationText: "<img src=https://imgur.com/UObvacP.jpg> Hilary Armstrong, Chief Whip of the Labour Party. Your hatchetwoman for the backbenches."},
         {searchString: "Jack Straw", explanationText: "<img src=https://imgur.com/uOElu71.jpg> Jack Straw, Foreign and Commonwealth Secretary. A security hawk in all forms and names."},
         {searchString: "Straw", explanationText: "<img src=https://imgur.com/uOElu71.jpg> Foreign and Commonwealth Secretary Jack Straw. A security hawk in all forms and names."},
-        {searchString: "David Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Would still be the Home Secretary for the election, if it weren't for his affair with married magazine publisher Kimberly Quinn."},
-        {searchString: "Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Would still be the Home Secretary for the election, if it weren't for his affair with married magazine publisher Kimberly Quinn."},
+        {searchString: "David Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Your pick for Home Secretary since early governing; the first blind man to hold the office. If a skeleton in his closet doesn't fall out on the floor, he should be safe."},
+        {searchString: "Blunkett", explanationText: "<img src=https://imgur.com/Eonxop0.jpg> David Blunkett. Your pick for Home Secretary since early governing; the first blind man to hold the office. If a skeleton in his closet doesn't fall out on the floor, he should be safe."},
         {searchString: "Ian McCartney", explanationText: "<img src=https://imgur.com/MhvvaKu.jpg> Party Chair of the Labour Party. Always the bearer of bad news, it seems."},
         {searchString: "Alan Milburn", explanationText: "<img src=https://imgur.com/Ok5BkBa.jpg> Chief election strategist of Labour. It won't be him who will bring this home, not alone."},
         {searchString: "Milburn", explanationText: "<img src=https://imgur.com/Ok5BkBa.jpg> Chief election strategist of Labour. It won't be him who will bring this home, not alone."},
@@ -1384,102 +1493,50 @@ tooltipList = [
         {searchString: "the razor-thin victory of Kenneth Clarke", explanationText: "<img src=https://imgur.com/K56bJ4X.jpg> Your lagging performance across the channel loomed over the leadership contest, giving way for Kenneth Clarke to take the media by surprise and win a razor-thin upset against former Home Secretary, Michael Howard. Clarke is a sage for many in the Tory party – and the country – but he's not invulnerable."},
         {searchString: "back in that hotel", explanationText: "<img src=https://imgur.com/EfsyXZz.png> The place where the culmination of many inflection points of bickering and slap-fighting for the top job occurred. Where it all could have been so different."},
         {searchString: "Swing Six", explanationText: "<img src=https://imgur.com/N6P6xEv.jpg> A group of nations on the wider security council whose votes helped to sink the Second Resolution, with them being not greatly affiliated with any larger geopolitical bloc. These countries are: Angola, Cameroon, Chile, Guinea, Mexico and Pakistan."},
+        {searchString: "Senator Kerry", explanationText: "<img src=https://imgur.com/rY99yRW.jpg> He earned three purple hearts, he is reporting for duty, and this land has voted for him."},
+        {searchString: "John Kerry", explanationText: "<img src=https://imgur.com/rY99yRW.jpg> He earned three purple hearts, he is reporting for duty, and this land has voted for him."},
+        {searchString: "2004 Presidential election", explanationText: "<img src=https://imgur.com/OiUY2VV.jpg> The 2004 election saw incumbent President Bush be defeated by a hair's breadth at the hands of Massachussets Senator John Kerry. Had it not been for Ohio, Bush would have turned out differently than his father. For better or for worse, a new President will greet the PM after our election is concluded."},
 ];
 
-
-// Difficulty Window
-function changeOpponentSelectionDescription() {
-  selectionObserver.disconnect();
-
-  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
+const setupScreenObserver = new MutationObserver((mutations) => {
+  const descWindow = document.getElementById("opponent_selection_description_window");
   
-  if (opponentSelectionDescription) {
-    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p><p>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by <b>u/ItsAstronomics</b>, and created by <b>u/AeronauticBlueberry</b>.</p>`;
+  if (descWindow && !descWindow.dataset.modded) {
+    descWindow.innerHTML = `<p><span style='text-shadow: -2px 2px 6px white;'><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></span></p><p><span style='text-shadow: -2px 2px 6px white;'>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</span></p><p><span style='text-shadow: -2px 2px 6px white;'>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</span></p><p><span style='text-shadow: -2px 2px 6px white;'>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by</span> <span style='text-shadow: -2px 2px 6px lightblue;'><b>u/ItsAstronomics</b></span>, <span style='text-shadow: -2px 2px 6px white;'>and created by</span> <span style='text-shadow: -2px 2px 6px lightpurple;'><b>u/AeronauticBlueberry</b>.</span></p>`;
+	descWindow.style.backgroundImage = `linear-gradient(to right, transparent, rgba(200, 200, 200, 0.5)), url("https://imgur.com/6wTgfq4.png")`;
+    
+    descWindow.dataset.modded = "true";
   }
-  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-if(!selectionObserver){
-  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
-  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-
-function modifyForm(){
-  modifiedFormobserver.disconnect();
 
   const form = document.querySelector('form[name="game_type_selection"]');
-
-  if (form) {
+  
+  if (form && !form.dataset.modded) {
     const select = form.querySelector('select[name="game_type_id"]');
     const h3 = form.querySelector('h3');
-    const option = select.querySelector('option[value="1"]');
 
-    if (option && option.textContent !== 'Default: First Past The Post') {
-      option.textContent = 'Default: First Past The Post';
+    if (select) {
+      const option1 = select.querySelector('option[value="1"]');
+      const option2 = select.querySelector('option[value="2"]');
+
+      if (option1) option1.textContent = 'Default: First Past The Post';
+      if (option2) option2.remove();
     }
-    if (select && select.querySelector('option[value="2"]')) {
-      const queryTwo = select.querySelector('option[value="2"]');
-      if (queryTwo) {
-        queryTwo.remove();
-      }
-    }
-    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
+
+    if (h3) {
       h3.textContent = 'How would you like the seats to be allocated?';
     }
-  }
-  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-if(!modifiedFormobserver){
-  var modifiedFormobserver = new MutationObserver(modifyForm);
-  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
-}
 
+    form.dataset.modded = "true";
+  }
+});
+
+if (targetContainer) {
+  setupScreenObserver.observe(targetContainer, { childList: true, subtree: true });
+}
 
 /*
 if(localStorage.getItem("variable")){
-function changeOpponentSelectionDescription() {
-  selectionObserver.disconnect();
 
-  const opponentSelectionDescription = document.getElementById("opponent_selection_description_window");
-  
-  if (opponentSelectionDescription) {
-    opponentSelectionDescription.innerHTML = `<p><strong>Use the default First Past The Post system for allocating seats in Parliament.</strong></p><p>The First Past The Post system (FPTP for short), is the electoral system for how the United Kingdom decides the composition of the House of Commons. In real life, every constituency – 646 this year – can vote for a Member of Parliament to represent them. Whichever party putting forward a candidate in said constituency can get the plurality of the votes, wins the seat. For this mod, a seat allocation system is used on 12 regions instead.</p><p>One important aspect of this system compared to the proportional systems of most other European countries, is that while it does not prevent minor parties from entering Parliament entirely, it does trend to significantly under-representing them compared to the two major parties (Labour and the Conservatives since the 1920's). Mainly due to tactical voting, and historically a preference among the populace for the main parties, FPTP has massively favoured said parties. In fact in this election, Labour secured the largest majority with the lowest vote share until the 2024 general election.</p><p>The system utilised in <i>2005: Forward Not Back</i> was graciously provided to me by <b>u/ItsAstronomics</b>, and created by <b>u/AeronauticBlueberry</b>.</p>`;
-  }
-  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-if(!selectionObserver){
-  var selectionObserver = new MutationObserver(changeOpponentSelectionDescription);
-  selectionObserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-
-function modifyForm(){
-  modifiedFormobserver.disconnect();
-
-  const form = document.querySelector('form[name="game_type_selection"]');
-
-  if (form) {
-    const select = form.querySelector('select[name="game_type_id"]');
-    const h3 = form.querySelector('h3');
-    const option = select.querySelector('option[value="1"]');
-
-    if (option && option.textContent !== 'Default: First Past The Post') {
-      option.textContent = 'Default: First Past The Post';
-    }
-    if (select && select.querySelector('option[value="2"]')) {
-      const queryTwo = select.querySelector('option[value="2"]');
-      if (queryTwo) {
-        queryTwo.remove();
-      }
-    }
-    if (h3 && h3.textContent !== 'How would you like the seats to be allocated?') {
-      h3.textContent = 'How would you like the seats to be allocated?';
-    }
-  }
-  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
-}
-if(!modifiedFormobserver){
-  var modifiedFormobserver = new MutationObserver(modifyForm);
-  modifiedFormobserver.observe(document.documentElement, { childList: true, subtree: true });
-}
 }
 */
 
