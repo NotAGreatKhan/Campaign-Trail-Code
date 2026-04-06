@@ -129,6 +129,18 @@ nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#445da2";
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `
+#game_window {
+background: url(https://imgur.com/QJuOQUd.jpg);
+}
+
+#state_info h3 {
+background-color: #445da2;
+}
+
+#overall_result h3 {
+background-color: #445da2;
+}
+
 .game_header {
 background: linear-gradient(to bottom, #8199df, #8199df);
 height: 75px; 
