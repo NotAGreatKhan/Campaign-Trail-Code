@@ -238,18 +238,18 @@ background-color: #d8dee8;
 tooltipList = [
 	// World Leaders
 	{searchString: "Bush", explanationText: "<img src=https://imgur.com/eTcgJLc.png> President George Walker Bush of the United States. Not the brightest man at the desk, and he may have a larger impact here than what we realised."},
-        {searchString: "Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
-        {searchString: "President Jacques Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
-        {searchString: "President Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
+    {searchString: "Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
+    {searchString: "President Jacques Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
+    {searchString: "President Chirac", explanationText: "<img src=https://imgur.com/CG3TfGJ.png> President Jacques René Chirac of the French Republic. A centre-right politician having served as Mayor of Paris and Prime Minister before-hand. Unfortunately for us, a strong backer of the European Constitution."},
 
-        // Government Members
+    // Government Members
 	{searchString: "Gordon", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. The most powerful chancellor in history. All the power to run the country into debt."},
 	{searchString: "Gordon Brown", explanationText: "<img src=https://imgur.com/o1QjCSM.png> James Gordon Brown, Chancellor of the Exchequer, and currently the MP for Dunfermline East. The most powerful chancellor in history. All the power to run the country into debt."},	
 
-        // Characters
-        {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. A good soldier for Maggie Thatcher, and promoter of his strident conservative views."},
-        {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> A fallen symbol of New York, of financial trade and power. The lives lost cannot be for naught."},
-        {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Bruce Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
+    // Characters
+    {searchString: "Leigh", explanationText: "<img src=https://imgur.com/401a2Zt.png> Edward Julian Egerton Leigh, the MP for Gainsborough, and Chair of the Public Accounts Committee. A good soldier for Maggie Thatcher, and promoter of his strident conservative views."},
+    {searchString: "World Trade Centre", explanationText: "<img src=https://imgur.com/4IGNs10.png> A fallen symbol of New York, of financial trade and power. The lives lost cannot be for naught."},
+    {searchString: "Cheney", explanationText: "<img src=https://imgur.com/eVa4VY9.jpg> Richard Bruce Cheney, the Vice President of the United States. Is perhaps even more hawkish than Bush, and a significant driver of American policy in Iraq."},
 ];
 `
 ;
@@ -960,7 +960,7 @@ const hqUnifiedObserver = new MutationObserver(() => {
             const newButton = document.createElement('button');
             newButton.id = 'headquarter_button';
             newButton.style.marginLeft = '1.5em';
-            newButton.innerHTML = 'The Government';
+            newButton.innerHTML = 'The Opposition';
             newButton.addEventListener('click', () => {
                 const popup = document.getElementById("simplePopup");
                 if (popup) {
