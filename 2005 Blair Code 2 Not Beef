@@ -3470,7 +3470,7 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/1H1566f.jpg
 
 
 // Third Slides
-if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
+if (iraq == 1 && e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
 <h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
 <div class="ending-slide tv-fade daily-mail-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
@@ -3492,7 +3492,7 @@ He even raised the prospect the war could be illegal – with relatives of some 
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
 
-else if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
+else if (iraq == 1 && e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
 e.pages.push(`
 <h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
 <div class="ending-slide tv-fade daily-mail-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
@@ -3514,9 +3514,9 @@ He even raised the prospect the war could be illegal – with relatives of the m
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
 
-else if (e.player_answers.includes(15531) && quickstats[0] >= 324) {
+else if (e.player_answers.includes(15531) && iraq == 1 && quickstats[0] >= 324) {
 e.pages.push(`
-<h3 style='text-align: center;'>World Bank Group | <i>17th May, 2019</i></font></h3>
+<h3 style='text-align: center;'>World Bank Group | <i>17th May, 2019</i></h3>
 <div class="ending-slide tv-fade world-bank-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <img src="https://imgur.com/1tvHbXO.png" alt="World Bank logo" style="height: 44px; margin-right: 12px;">
 <br><br>
@@ -3554,6 +3554,48 @@ Beginning in 2003, diverse and significant actors, both domestic and internation
 </div>
 `)
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/aX14st3.jpg"})])
+}
+
+else if (iraq == 1) {
+e.pages.push(`
+<h3 style='text-align: center;'><i>BBC News</i> | <i>17th June, 2014</i></h3>
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<p>
+<a href="#">Home</a> <a href="#">Climate</a> <a href="#">World</a> <a href="#">UK</a> <a href="#">Business</a> <a href="#">Tech</a> <a href="#">Science</a>
+<br><br>
+<b style="font-size: 1.3em;">Iraq’s central government suffers mortal blow</b>
+<br><br>
+<b>Fawaz A Gerges</b>
+<br><br>
+<a style="color:#000033; font-size: 0.9em;">London School of Economics</a>
+<br><br>
+<b>Regardless of whether the Iraqi government in Baghdad rolls back the recent military advances by the Islamic State in Iraq and the Levant (ISIS), the central authority has suffered a mortal blow.</b>
+<br><br>
+ISIS's takeover of most of the so-called Sunni Triangle, as well as Mosul, the second largest city with almost two million people, hammers a deadly nail in the coffin of the post-Saddam Hussein nation-building project.
+<br><br>
+Fragile Iraqi institutions now lie in tatters.
+<br><br>
+It is doubtful if Baghdad could ever establish a monopoly on the use of force in the country, or exercise authority and centralised control over rebellious Sunni Arabs and semi-independent Kurdistan. The best-case scenario for Iraq is devolution of power from the centre in Baghdad to local Shia, Sunni Arabs and Sunni Kurdish communities; the worst is splintering of the country to three separate entities. ISIS's swift advance has exposed the state's structural and institutional weaknesses, as well as a deep ideological and sectarian rift in society.
+<br><br>
+After eight years in office and monopolising power, Prime Minister Nouri Maliki has delivered neither security nor reconciliation and prosperity.
+<br><br>
+<b style="font-size: 1.1em;">Broken system</b>
+<br><br>
+It is misleading to exaggerate ISIS military prowess and exploits as many reports in the Western media do. Its strength stems not only from the weakness of the Iraqi state, but also from the communal and social cleavages that are tearing society apart; it is a manifestation of a bigger revolt by (tribal) Sunni Arabs against what they view as Mr Maliki's sectarian authoritarianism. At the very heart of the fierce struggle raging in Iraq is a broken political system, one based on "muhasasa", or distribution of the spoils of power along communal, ethnic and tribal lines, and put in place after the US invaded and occupied the country in 2003. Sunnis Arabs, particularly in the last four years, have felt excluded and disfranchised by what they view as Mr Maliki's sectarian-based policies. When the US left Iraq in 2011, the al-Qaeda brand was in decline, unpopular among Sunnis.
+<br><br>
+Three years later, ISIS has revived by finding a "hadana shaabiya", or social base, among dissatisfied and alienated Sunni Arabs.
+<br><br>
+<b style="font-size: 1.1em;">Shia monopoly</b>
+<br><br>
+Mr Maliki, along with the Shia leadership, bears a greater responsibility for Iraq's failure. Having taken ownership of the country after the US occupation and overthrow of Saddam Hussein, the Shia leadership has treated Sunni Arabs like second-class citizens and has equated its numerical majority with a licence to monopolise power. Iraq's future depends on the willingness of the dominant social classes to rise up to the historical challenge and prioritise the national interest over the parochial.
+<br><br>
+If history is a guide, the ruling elite might once again fail the Iraq people with catastrophic repercussions for the war-torn country and the regional and international system.
+<br><br>
+<i>Fawaz A Gerges holds the Emirates Chair in Contemporary Middle Eastern Studies at the London School of Economics and Political Science. He is author of several books, including The New Middle East: Social Protest And Revolution In The Arab World.</i>
+</p>
+</div>
+`)
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/___.jpg"})])
 }
 
 
