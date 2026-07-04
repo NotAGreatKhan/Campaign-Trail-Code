@@ -1496,6 +1496,7 @@ tooltipList = [
         {searchString: "Senator Kerry", explanationText: "<img src=https://imgur.com/rY99yRW.jpg> He earned three purple hearts, he is reporting for duty, and this land has voted for him."},
         {searchString: "John Kerry", explanationText: "<img src=https://imgur.com/rY99yRW.jpg> He earned three purple hearts, he is reporting for duty, and this land has voted for him."},
         {searchString: "2004 Presidential election", explanationText: "<img src=https://imgur.com/OiUY2VV.jpg> The 2004 election saw incumbent President Bush be defeated by a hair's breadth at the hands of Massachussets Senator John Kerry. Had it not been for Ohio, Bush would have turned out differently than his father. For better or for worse, a new President will greet the PM after our election is concluded."},
+        {searchString: "NHS", explanationText: "<img src=https://imgur.com/HG6SDkZ.png> The National Health Service. The bedrock of the British health system. So much so that coming out in full opposition to the service is equivalent to political suicide."},
 ];
 
 const setupScreenObserver = new MutationObserver((mutations) => {
