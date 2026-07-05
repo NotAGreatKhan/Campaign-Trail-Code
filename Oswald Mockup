@@ -3,32 +3,29 @@ campaignTrail_temp.election_json = [
         "model": "campaign_trail.election",
         "pk": 20,
         "fields": {
-            "year": 2028,
+            "year": 2016,
             "display_year": "2028",
-            "summary": "Put election description here. You can use html tags here too.",
+            "summary": "In 2026, America limped through the midterms bleeding from her rotten core. The red-hot barrels of ICE’s guns met the great cultural cocktail of America’s forgotten boulevards and street corners. The pseudo-fascists who sought to concentrate the wealth of the greatest economy in the hands of the robber barons’ coffers, turned nations into black-gold geysers – mere playthings as the country roiled through recession after recession into 2028.<br><br>Yet, in the abyss, something sparked.<br><br>The people grit their teeth, trudged through the marshes of the recessionary swamps. The electorate’s votes coiled around the founder of the MAGA cabal. When his congressional trifecta withered away, his half-pint marionette was cast aside out of fear of a slipping Trumpian legacy. The Iran War continues to take away American lives in draped coffins. And amidst it all, there was a young, raging ball of energy. Shaking his shoulders. Getting ready to climb the <b>Embankment To The White House</b><br>",
             "image_url": "https://www.jetsimon.com/public/exampleelection.png",
             "winning_electoral_vote_number": 270,
             "advisor_url": "123",
-            "recommended_reading": "No Further Reading yet available.",
-            "recommended_reading_enabled": true,
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
             "has_visits": 1,
             "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
         }
     }
-];
+]
 
 campaignTrail_temp.temp_election_list = [
     {
         "id": 20,
-        "year": 2028,
+        "year": 2016,
         "is_premium": 0,
         "display_year": "2028"
     }
-];
+]
 
-RecReading = true;
-
-campaignTrail_temp.credits = "NoReadingKhan, featuring Friedrich Oswald";
+campaignTrail_temp.credits = "NoReadingKhan, featuring Friedrich Oswald"
 
 campaignTrail_temp.global_parameter_json = [
     {
@@ -48,29 +45,29 @@ campaignTrail_temp.global_parameter_json = [
             "issue_stance_6_max": 0.71,
             "global_variance": 0.01,
             "state_variance": 0.005,
-            "question_count": 25,
+            "question_count": 30,
             "default_map_color_hex": "#C9C9C9",
             "no_state_map_color_hex": "#999999"
         }
     }
-];
+]
 
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
         "pk": 1001,
         "fields": {
-            "first_name": "Oswald The",
-            "last_name": "Lucky Rabbit",
+            "first_name": "Oswald",
+            "last_name": "The Lucky Rabbit",
             "election": 20,
-            "party": "Democratic",
-            "state": "Idaho",
+            "party": "Democrat",
+            "state": "Washington",
             "priority": 1,
-            "description": "<p>Put description here</p>",
-            "color_hex": "#4040d4",
+            "description": "<b>Oswald the Lucky Rabbit</b> is the working class’ white heat of anger embodied in one man. Saved from his own faltering lungs by the National Health system he now reveres, his worldview has been moulded around a Cypriot mother who had to raise him and his 5 siblings alone in the absence of his Turkish father. Multicultural to his very core, he has tried to grapple with his purpose his entire life.<br><br>Now, he may have just found it. This race must be the climactic death blow to the Republicans and Trumpism once and for all. To succeed where those neoliberal ghouls failed, and banish those political terrorists. Oswald has a lot of items on his agenda of collapsing the authoritarian vulture capitalism the United States has come to represent. He needs a great mandate to do so – he <i>will get his mandate</i>.<br><br>He just has to vanquish all who stand in his way.",
+            "color_hex": "#4747b3",
             "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "image_url": "https://imgur.com/uflQxwl.jpg",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -83,10 +80,56 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 1002,
         "fields": {
-            "first_name": "<strike>Cornel</strike> Felix",
-            "last_name": "<strike>West</strike> The Cat",
+            "first_name": "Felix",
+            "last_name": "The Cat",
             "election": 20,
             "party": "Independent",
+            "state": "California",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#acaccd",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://imgur.com/DBr48Mo.gif",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<strike>Cornel West</strike> Felix the Cat is a man who was forgotten and thrown away to the annals of American electoral history after his brief stint as a minor independent. But Oswald saw something in him, and West Felix now may get swept up into the halls of federal power for the first time.<br><br>If he can keep his head down, and his chin up, he should be able to get through this storm alive. That is, if the storm of Capitol Hill doesn’t sweep him away first…<br>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50000,
+        "fields": {
+            "first_name": "Not the",
+            "last_name": "President",
+            "election": 20,
+            "party": "Turbo Team",
+            "state": "Idaho",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50001,
+        "fields": {
+            "first_name": "Running ",
+            "last_name": "Mate 2",
+            "election": 20,
+            "party": "Turbo Team",
             "state": "Idaho",
             "priority": 1,
             "description": "<p>Put description here</p>",
@@ -97,63 +140,17 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "Description as running mate...",
+            "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": true
         }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 1003,
-        "fields": {
-            "first_name": "<strike>Donald</strike> Mickey",
-            "last_name": "<strike>Trump Jr.</strike> Mouse",
-            "election": 20,
-            "party": "Republican",
-            "state": "State",
-            "priority": 1,
-            "description": "Candidate description here.",
-            "color_hex": "#843939",
-            "secondary_color_hex": null,
-            "is_active": 1,
-            "image_url": "",
-            "electoral_victory_message": "Winner!",
-            "electoral_loss_message": "Loser!",
-            "no_electoral_majority_message": "Majority?",
-            "description_as_running_mate": null,
-            "candidate_score": 1,
-            "running_mate": false
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 1004,
-        "fields": {
-            "first_name": "<strike>Elon</strike>",
-            "last_name": "<strike>Musk</strike> Goofy",
-            "election": 20,
-            "party": "Party",
-            "state": "State",
-            "priority": 1,
-            "description": "Candidate description here.",
-            "color_hex": "#CCCCCC",
-            "secondary_color_hex": null,
-            "is_active": 0,
-            "image_url": "",
-            "electoral_victory_message": "Winner!",
-            "electoral_loss_message": "Loser!",
-            "no_electoral_majority_message": "Majority?",
-            "description_as_running_mate": null,
-            "candidate_score": 1,
-            "running_mate": false
-        }
     }
-];
+]
 
 campaignTrail_temp.running_mate_json = [
     {
         "model": "campaign_trail.running_mate",
-        "pk": 500,
+        "pk": 109261,
         "fields": {
             "candidate": 1001,
             "running_mate": 1002
@@ -161,104 +158,63 @@ campaignTrail_temp.running_mate_json = [
     },
     {
         "model": "campaign_trail.running_mate",
-        "pk": 501,
+        "pk": 172651,
         "fields": {
-            "candidate": 1003,
-            "running_mate": 1004
+            "candidate": 50000,
+            "running_mate": 50001
         }
     }
-];
+]
 
 campaignTrail_temp.opponents_default_json = [
     {
         "election": 20,
         "candidates": [
             1001,
-            1003,
-            1004
+            50000
         ]
     }
-];
+]
 
 campaignTrail_temp.opponents_weighted_json = [
     {
         "election": 20,
         "candidates": [
             1001,
-            1003,
-            1004
+            50000
         ]
     }
-];
+]
 
 jet_data = {
-    "headerColor": "#d31212",
-    "headerTextColor": "#ffffff",
-    "windowColor": "#bdbdbd",
-    "containerColor": "#ffffff",
-    "innerWindowColor": "#ededed",
-    "innerWindowTextColor": "#000000",
-    "descriptionWindowColor": "#f8f8f8",
-    "descriptionWindowTextColor": "#000000",
-    "startButtonColor": "#f8f8f8",
-    "bannerImageUrl": "https://www.newcampaigntrail.com/static/images/banner_classic.png",
-    "backgroundImageUrl": "https://www.jetsimon.com/public/static/images/background.jpg",
-    "gameTitle": "THE CAMPAIGN TRAIL",
-    "customQuote": "",
-    "quoteTextColor": "#ffffff",
-    "endingTextColor": "#000000"
-};
-
-//#startcode
-function applyTheme(theme) {
-    const gameHeader = document.querySelector(".game_header");
-    if (gameHeader && theme.coloring_title) {
-        gameHeader.style.backgroundColor = theme.coloring_title;
-    }
-
-    const gameWindow = document.getElementById("game_window");
-    if (gameWindow && theme.coloring_window) {
-        gameWindow.style.backgroundColor = theme.coloring_window;
-    }
-
-    const container = document.querySelector(".container");
-    if (container && theme.coloring_container) {
-        container.style.backgroundColor = theme.coloring_container;
-    }
-
-    const headerImg = document.getElementById("header");
-    if (headerImg && theme.header_image) {
-        headerImg.src = theme.header_image;
-    }
-
-    if (theme.body_background) {
-        document.body.style.backgroundImage = `url("${theme.body_background}")`;
-        document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundAttachment = "fixed";
-    }
-
-    const style = document.createElement("style");
-    style.textContent = `
-      #results_container { color: #000000; }
-      #wittyquote { color: #ffffff; }
-      .game_header h2 { color: #ffffff; }
-      .inner_window_w_desc { background-color: #ededed !important; color: #000000; }
-      .inner_window_front, .person_description_window, .election_description_window, .description_window_small { background-color: #f8f8f8 !important; color: #000000; }
-      .campaign_trail_start_emphasis { background-color: #f8f8f8 !important; }
-    `;
-    document.head.appendChild(style);
+    "headerColor": "#8d2a2a",
+    "windowColor": "#575757",
+    "containerColor": "#424242",
+    "innerWindowColor": "#878787",
+    "bannerImageUrl": "https://jetsimon.com/public/placeholderbanner.png",
+    "backgroundImageUrl": "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg",
+    "endingTextColor": "#000000",
+    "customQuote": ""
 }
 
+//#startcode
 
 
-const theme = nct_stuff.themes[nct_stuff.selectedTheme];
 
-// define / override theme values
-theme.coloring_title     = "#d31212";
-theme.coloring_window    = "#bdbdbd";
-theme.coloring_container = "#ffffff";
-theme.header_image = "https://www.newcampaigntrail.com/static/images/banner_classic.png";
-theme.body_background = "https://www.jetsimon.com/public/static/images/background.jpg";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#8d2a2a";
 
-applyTheme(theme);
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#575757";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#424242";
+
+document.getElementById("header").src = "https://jetsimon.com/public/placeholderbanner.png";
+
+document.body.background = "https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#878787!important;}</style>";
+
 //#endcode
