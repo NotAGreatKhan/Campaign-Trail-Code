@@ -1158,6 +1158,7 @@ corrr = `
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
+nct_stuff.themes[nct_stuff.selectedTheme].campaign_trail_start_emphasis { background-color: #f8f8f8 !important; }
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 $("#game_window")[0].style.backgroundColor = "#f0ebeb";
 // "url(https://imgur.com/RDCPDZf.jpg)"
