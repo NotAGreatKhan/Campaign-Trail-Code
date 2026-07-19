@@ -2918,7 +2918,7 @@ construct = (a = 1) => {
     e.header = "";
     e.executable = []
 
-// Endings
+// ENDINGS
 
 
 // BROWN First Slides
@@ -3022,15 +3022,23 @@ e.pages.push(`
 <div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide!</h3>
 <p>
-<i>David Dimbleby’s voice rings out across the Party headquarters</i>. The Labour Party HQ shudders and rumbles under the enthusiastic — almost riotous — jiving of the crowds. The amateur dancing of the members, unequivocally dispelling any jitter suspected throughout election night.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. A thunderous applause ruptures the party headquarters, the Party faithful wash with euphoria at the prospect of expanding their political power over Westminster. Euphoria washes over the crowd watching the results, their mouths agape with the shock of the entire country. You can hardly believe it yourself, and in all likelihood, you will not until the vote tallies get certified by the morning.
 <br><br>
-Initially, your scepticism at the exit poll gets the better of you. But then, the seats come in... Constituency after constituency, MP after MP; A sea of red washing over the map, engulfing the entirety of the country. The sky-blue wave of the Conservatives washed away, and scattered by the orange locusts of Liberal Democrats. The Blairite legacy having fully cemented itself in the national zeitgeist.
+The voices within your mind clawing at the notion of legacy are silenced by the red hue glowing from the projected maps on the news channels. The BBC presenters can hardly believe what they’re seeing. The sea of red a pool of blood streaming from the opposition campaigns, the Liberal Democrats have been smothered from their highest ambitions, and the Conservatives have failed yet again to revitalise their party after Major. Labour’s red octopus sprawls far and wide, strangling all who dare to stand in its way.
 <br><br>
-Succeeding in such a total, and dominating, command over the House of Commons, you should have little trouble passing those national security reforms you have desired to obtain in the new terror-stricken millenia. It goes without saying that Gordon Brown is going to thank you when he takes over your office in the next Parliament.
+You then turn to Cherie, her face beaming with the shared joy you feel. It’s done, the campaign mudslinging, the anxiety over your expiry date in No 10 floats away. Without hesitation, you lean into her. You can both rest easy for another few years at least, and that coveted third term is secured. A privilege only granted to Thatcher before you – as far as you can remember anyway.
 <br><br>
-After all of these long years, your fight in the political battlefield has yielded a triumph greater than any leader before you.
+A flurry of calls will come in  from many donors and party bosses who suddenly find themselves grovelling at you, proclaiming how they were always such avid supporters of you, but you will pay no mind to them. This country is yours to shape now. Nevermind the Tories, the third parties, the left, the cabinet, or even <i>Gordon</i>.
 <br><br>
-John Smith would be proud — you’re sure he would. If only Kier Hardie were here too. To see what we have achieved.
+An aide peeks through the door to remind you of your victory speech to deliver. Giving a nod, you dismiss him, and get your notes up for the final leg of the night. Yet, your mind is still elsewhere…
+<br><br>
+Perhaps all politicians do – in fact – have a permanent shelf life, you occasionally mused of the possibility of resignation arriving <i>eventually</i>... With this though, who can say for certain. Gordon is surely seething at the fact your position has been secured for another term in-full. He’ll try to brandish his knives at some point, he will.
+<br><br>
+From now on, you’ll be sure to put him down first – and for good.
+<br><br>
+The transformative “Third Way” agenda you set out to the British people has been unambiguously endorsed. If you are not reckless, you may just reach the tier of truly transformational leaders of the world. Maybe.
+<br><br>
+Surely nothing could get in the way of that.
 </p>
 </div>
 `)
@@ -3307,7 +3315,7 @@ if (used != true) {
 }     
 
 
-// Second Slides
+// SECOND SLIDES
 if (quickstats[0] >= 324) {     
 e.pages.push(`
 <h3 style='text-align: center;'><i>The Guardian</i> | <i>9th November, 2005</i></h3>
@@ -3469,7 +3477,7 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/1H1566f.jpg
 }
 
 
-// Third Slides
+// THIRD SLIDES
 if (iraq == 1 && e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
 <h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
@@ -3600,7 +3608,7 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/___.jpg"})]
 
 
 
-// Fourth Slides
+// FOURTH SLIDES
 if (quickstats[0] >= 390) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Happy summer! Enjoy one of our blonde candidates to celebrate Brat Summer, 2024!</h3>
