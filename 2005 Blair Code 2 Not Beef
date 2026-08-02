@@ -2743,6 +2743,32 @@ if (!document.getElementById("ending-slide-style")) {
                 font-size: 16px;
             }
 
+                .ending-slide.daily-mirror-style {
+                font-family: Kepler;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+                .ending-slide.financial-times-style {
+                font-family: Financier;
+                background-color: #fff1e5;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
                 .ending-slide.campaign-trail-style {
                 font-family: Arial;
                 background-color: #e8fbff;
@@ -3525,7 +3551,7 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg
 else if (e.player_answers.includes(15531) && iraq == 1 && quickstats[0] >= 324) {
 e.pages.push(`
 <h3 style='text-align: center;'>World Bank Group | <i>17th May, 2019</i></h3>
-<div class="ending-slide tv-fade world-bank-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade world-bank-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <img src="https://imgur.com/1tvHbXO.png" alt="World Bank logo" style="height: 44px; margin-right: 12px;">
 <br><br>
 <b><a href="#" style="color:#1155cc;">Understanding Poverty / Research & Publications / Documents & Reports</a></b>
@@ -3567,7 +3593,7 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/aX14st3.jpg
 else if (iraq == 1) {
 e.pages.push(`
 <h3 style='text-align: center;'><i>BBC News</i> | <i>17th June, 2014</i></h3>
-<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <a href="#">Home</a> <a href="#">Climate</a> <a href="#">World</a> <a href="#">UK</a> <a href="#">Business</a> <a href="#">Tech</a> <a href="#">Science</a>
 <br><br>
@@ -3612,7 +3638,7 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/___.jpg"})]
 if (quickstats[0] >= 390) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Happy summer! Enjoy one of our blonde candidates to celebrate Brat Summer, 2024!</h3>
-<div class="ending-slide tv-fade mod-jam-style" style="background-color: #cc0000; color: #7c6f8b; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade mod-jam-style" style="background-color: #cc0000; color: #7c6f8b; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2010 UK" id="2010"><option value="0">2010 UK</option></select>
 <br><br>
@@ -3637,7 +3663,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -3660,7 +3686,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -3683,7 +3709,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -3706,7 +3732,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -3729,7 +3755,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -3754,7 +3780,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
