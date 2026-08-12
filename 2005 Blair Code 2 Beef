@@ -29309,6 +29309,7 @@ async function handleScrollMutation(mutationsList, observer) {
         buttons.forEach(button => button.addEventListener('click', handleClick));
         processedNodes.add(overallResult);
     }
+
     const state_result = document.getElementById('state_result');
     if (state_result && !processedNodes.has(state_result)) {
         state_result.style.overflow = 'auto';
