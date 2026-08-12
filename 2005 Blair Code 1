@@ -1076,6 +1076,15 @@ vpTableHistorical = {
     "The Conservative Party" : "Michael Howard",
     "The Liberal Democrats" : "Charles P. Kennedy",
     "The Scotland National Party" : "Alex E. A. Salmond"
+    "The Green Party" : "Caroline P. Lucas",
+    "The UK Independence Party" : "Roger M. Knapman",
+    "Independent/Others" : "Various Others",
+    "The Democratic Unionist Party" : "Ian R. K. Paisley",
+    "Sinn Féin" : "Gerry Adams",
+    "Plaid Cymru" : "Ieuan W. Jones",
+    "The Ulster Unionist Party" : "W. David Trimble",
+    "SDLP" : "Mark Durkan",
+    "The Speaker" : "Michael J. Martin"
 }
 
 HistEV = {
@@ -1083,13 +1092,22 @@ HistEV = {
     "The Conservative Party" : "198",
     "The Liberal Democrats" : "62",
     "The Scotland National Party" : "6"
+    "The Democratic Unionist Party" : "9"
+    "Sinn Féin" : "5"
+    "Plaid Cymru" : "3"
+    "SDLP" : "3"
+    "The Ulster Unionist Party" : "1"
+    "The UK Independence Party" : "0"
+    "The Green Party" : "0"
+    "Independent/Others" : "1"
+    "The Speaker" : "1"
 }
 
-HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f"];
-HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party"];
-HistEV=["355","198","62","6"];
-HistPV=["9,552,376","8,785,942","5,985,704","412,267"];
-HistPVP=["35.2%","32.4%","22.0%","1.5%"];
+HistHexcolour=["#e84545","#4848a8","#ffb752","#fff81f","#c37c18","#a8ea90","#3a741b","#01ad73","#89e1a4","#a433e1","#71d82c","#b0b0b0","#dedede"];
+HistName=["The Labour Party","The Conservative Party","The Liberal Democrats","The Scotland National Party","The Democratic Unionist Party","Sinn Féin","Plaid Cymru","SDLP","The Ulster Unionist Party","The UK Independence Party","The Green Party","Independent/Others","The Speaker"];
+HistEV=["355","198","62","6","9","5","3","3","1","0","0","1","1"];
+HistPV=["9,552,376","8,785,942","5,985,704","412,267","241,856","174,530","174,838","125,626","127,414","605,973","257,758","689,073","15,153"];
+HistPVP=["35.2%","32.4%","22.0%","1.5%","0.9%","0.6%","0.6%","0.5%","0.5%","2.2%","1.0%","2.5%","0.1%"];
 
 campaignTrail_temp.opponents_default_json = [
     {
