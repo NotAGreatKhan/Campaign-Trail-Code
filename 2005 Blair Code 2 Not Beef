@@ -2599,6 +2599,7 @@ async function handleScrollMutation(mutationsList, observer) {
         buttons.forEach(button => button.addEventListener('click', handleClick));
         processedNodes.add(overallResult);
     }
+
     const state_result = document.getElementById('state_result');
     if (state_result && !processedNodes.has(state_result)) {
         state_result.style.overflow = 'auto';
@@ -2609,6 +2610,7 @@ async function handleScrollMutation(mutationsList, observer) {
         buttons.forEach(button => button.addEventListener('click', handleClick));
         processedNodes.add(state_result);
     }
+
     const overall_details_container = document.getElementById('overall_election_details');
     if (overall_details_container && !processedNodes.has(overall_details_container)) {
         overall_details_container.style.overflow = 'auto';
