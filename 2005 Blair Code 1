@@ -1075,7 +1075,7 @@ vpTableHistorical = {
     "The Labour Party" : "Tony C. L. Blair",
     "The Conservative Party" : "Michael Howard",
     "The Liberal Democrats" : "Charles P. Kennedy",
-    "The Scotland National Party" : "Alex E. A. Salmond"
+    "The Scotland National Party" : "Alex E. A. Salmond",
     "The Green Party" : "Caroline P. Lucas",
     "The UK Independence Party" : "Roger M. Knapman",
     "Independent/Others" : "Various Others",
@@ -1091,15 +1091,15 @@ HistEV = {
     "The Labour Party" : "355",
     "The Conservative Party" : "198",
     "The Liberal Democrats" : "62",
-    "The Scotland National Party" : "6"
-    "The Democratic Unionist Party" : "9"
-    "Sinn Féin" : "5"
-    "Plaid Cymru" : "3"
-    "SDLP" : "3"
-    "The Ulster Unionist Party" : "1"
-    "The UK Independence Party" : "0"
-    "The Green Party" : "0"
-    "Independent/Others" : "1"
+    "The Scotland National Party" : "6",
+    "The Democratic Unionist Party" : "9",
+    "Sinn Féin" : "5",
+    "Plaid Cymru" : "3",
+    "SDLP" : "3",
+    "The Ulster Unionist Party" : "1",
+    "The UK Independence Party" : "0",
+    "The Green Party" : "0",
+    "Independent/Others" : "1",
     "The Speaker" : "1"
 }
 
