@@ -3400,9 +3400,9 @@ if (used != true) {
 if (quickstats[0] >= 324) {     
 e.pages.push(`
 <h3 style='text-align: center;'><i>The Guardian</i> | <i>9th November, 2005</i></h3>
-<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
-<img src = https://imgur.com/yAU04XO.png>
+<img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
 <br><br>
 <b style="font-size: 1.2em;">Blair defeated on terror bill</b>
 <br><br>
@@ -3684,7 +3684,7 @@ If history is a guide, the ruling elite might once again fail the Iraq people wi
 </p>
 </div>
 `)
-e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/HIVIe6r.jpg"})])
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/_______.jpg"})])
 }
 
 else if (e.player_answers.includes(14680)) {
@@ -3713,7 +3713,27 @@ e.pages.push(`
 </p>
 </div>
 `)
-e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/___.jpg"})])
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/HIVIe6r.jpg"})])
+}
+
+else if (e.player_answers.includes(14681)) {
+e.pages.push(`
+<h3 style='text-align: center;'>The Guardian | <i>__th __, 2008</i></h3>
+<p>
+<img src = "https://imgur.com/yAU04XO.png" alt="FT logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">___</b>
+<br><br>
+[Details of the result of the referendum]
+<br><br>
+[Reactions from Labour]
+<br><br>
+[Reactions from Tories and UKIP]
+<br><br>
+</p>
+</div>
+`)
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/______.jpg"})])
 }
 
 
