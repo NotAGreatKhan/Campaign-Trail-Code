@@ -29075,10 +29075,10 @@ style_overwrite.innerHTML =
   border-color: #94292e;
 }
 .inner_window_question h3 {
-background-color: #ffcfcf;
+  background-color: #ffcfcf;
 }
 .overlay_window h3 {
-background-color: #ffcfcf;
+  background-color: #ffcfcf;
 }
 
 #state_info h3 {
@@ -29320,6 +29320,7 @@ async function handleScrollMutation(mutationsList, observer) {
         buttons.forEach(button => button.addEventListener('click', handleClick));
         processedNodes.add(state_result);
     }
+
     const overall_details_container = document.getElementById('overall_election_details');
     if (overall_details_container && !processedNodes.has(overall_details_container)) {
         overall_details_container.style.overflow = 'auto';
@@ -29389,6 +29390,59 @@ if (!document.getElementById("ending-slide-style")) {
             style.id = "ending-slide-style";
             style.innerHTML = `
 
+                .ending-slide.wiki-style {
+                font-family: 'Linux Libertine', 'Georgia', serif;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.6;
+                font-size: 16px;
+            }
+                .ending-slide.wiki-style h1 {
+                font-size: 28px;
+                font-weight: normal;
+                border-bottom: 1px solid #a2a9b1;
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+            }
+                .ending-slide.wiki-style p i {
+                color: #54595d;
+            }
+                .ending-slide.wiki-style a,
+                .ending-slide.wiki-style span[style*="color:#0645AD"] {
+                color: #0645AD;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+                .ending-slide.wiki-style sup {
+                font-size: smaller;
+                vertical-align: super;
+                line-height: 0;
+            }
+                .ending-slide.wiki-style ul {
+                margin-left: 2em;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+                .ending-slide.wiki-style .wiki-header-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 12px;
+                color: #555;
+                margin-bottom: 8px;
+            }
+                .ending-slide.wiki-style .wiki-header-bar span {
+                margin-right: 8px;
+            }
+                .ending-slide.wiki-style .wiki-header-bar-right span {
+                white-space: nowrap;
+            }
+
                 .ending-slide.world-bank-style {
                 font-family: Arial;
                 background-color: #fff;
@@ -29444,6 +29498,32 @@ if (!document.getElementById("ending-slide-style")) {
                 .ending-slide.guardian-style {
                 font-family: Text Egyptian;
                 background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+                .ending-slide.daily-mirror-style {
+                font-family: Kepler;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
+                .ending-slide.financial-times-style {
+                font-family: Financier;
+                background-color: #fff1e5;
                 color: #202122;
                 padding: 16px;
                 max-width: 800px;
@@ -29629,7 +29709,7 @@ construct = (a = 1) => {
     e.header = "";
     e.executable = []
 
-// Endings
+// ENDINGS
 
 
 // BROWN First Slides
@@ -29733,15 +29813,23 @@ e.pages.push(`
 <div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won in a landslide!</h3>
 <p>
-<i>David Dimbleby’s voice rings out across the Party headquarters</i>. The Labour Party HQ shudders and rumbles under the enthusiastic — almost riotous — jiving of the crowds. The amateur dancing of the members, unequivocally dispelling any jitter suspected throughout election night.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. A thunderous applause ruptures the party headquarters, the Party faithful wash with euphoria at the prospect of expanding their political power over Westminster. Euphoria washes over the crowd watching the results, their mouths agape with the shock of the entire country. You can hardly believe it yourself, and in all likelihood, you will not until the vote tallies get certified by the morning.
 <br><br>
-Initially, your scepticism at the exit poll gets the better of you. But then, the seats come in... Constituency after constituency, MP after MP; A sea of red washing over the map, engulfing the entirety of the country. The sky-blue wave of the Conservatives washed away, and scattered by the orange locusts of Liberal Democrats. The Blairite legacy having fully cemented itself in the national zeitgeist.
+The voices within your mind clawing at the notion of legacy are silenced by the red hue glowing from the projected maps on the news channels. The BBC presenters can hardly believe what they’re seeing. The sea of red a pool of blood streaming from the opposition campaigns, the Liberal Democrats have been smothered from their highest ambitions, and the Conservatives have failed yet again to revitalise their party after Major. Labour’s red octopus sprawls far and wide, strangling all who dare to stand in its way.
 <br><br>
-Succeeding in such a total, and dominating, command over the House of Commons, you should have little trouble passing those national security reforms you have desired to obtain in the new terror-stricken millenia. It goes without saying that Gordon Brown is going to thank you when he takes over your office in the next Parliament.
+You then turn to Cherie, her face beaming with the shared joy you feel. It’s done, the campaign mudslinging, the anxiety over your expiry date in No 10 floats away. Without hesitation, you lean into her. You can both rest easy for another few years at least, and that coveted third term is secured. A privilege only granted to Thatcher before you – as far as you can remember anyway.
 <br><br>
-After all of these long years, your fight in the political battlefield has yielded a triumph greater than any leader before you.
+A flurry of calls will come in  from many donors and party bosses who suddenly find themselves grovelling at you, proclaiming how they were always such avid supporters of you, but you will pay no mind to them. This country is yours to shape now. Nevermind the Tories, the third parties, the left, the cabinet, or even <i>Gordon</i>.
 <br><br>
-John Smith would be proud — you’re sure he would. If only Kier Hardie were here too. To see what we have achieved.
+An aide peeks through the door to remind you of your victory speech to deliver. Giving a nod, you dismiss him, and get your notes up for the final leg of the night. Yet, your mind is still elsewhere…
+<br><br>
+Perhaps all politicians do – in fact – have a permanent shelf life, you occasionally mused of the possibility of resignation arriving <i>eventually</i>... With this though, who can say for certain. Gordon is surely seething at the fact your position has been secured for another term in-full. He’ll try to brandish his knives at some point, he will.
+<br><br>
+From now on, you’ll be sure to put him down first – and for good.
+<br><br>
+The transformative “Third Way” agenda you set out to the British people has been unambiguously endorsed. If you are not reckless, you may just reach the tier of truly transformational leaders of the world. Maybe.
+<br><br>
+Surely nothing could get in the way of that.
 </p>
 </div>
 `)
@@ -30018,13 +30106,13 @@ if (used != true) {
 }     
 
 
-// Second Slides
+// SECOND SLIDES
 if (quickstats[0] >= 324) {     
 e.pages.push(`
 <h3 style='text-align: center;'><i>The Guardian</i> | <i>9th November, 2005</i></h3>
-<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
-<img src = https://imgur.com/yAU04XO.png>
+<img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
 <br><br>
 <b style="font-size: 1.2em;">Blair defeated on terror bill</b>
 <br><br>
@@ -30180,8 +30268,8 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/1H1566f.jpg
 }
 
 
-// Third Slides
-if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
+// THIRD SLIDES
+if (iraq == 1 && e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
 e.pages.push(`
 <h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
 <div class="ending-slide tv-fade daily-mail-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
@@ -30203,7 +30291,7 @@ He even raised the prospect the war could be illegal – with relatives of some 
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
 
-else if (e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
+else if (iraq == 1 && e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12820)) {
 e.pages.push(`
 <h3 style='text-align: center;'><i>Daily Mail</i> | <i>6th July, 2016</i></h3>
 <div class="ending-slide tv-fade daily-mail-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
@@ -30225,10 +30313,10 @@ He even raised the prospect the war could be illegal – with relatives of the m
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/uqdjo6N.jpg"})])
 }
 
-else if (e.player_answers.includes(15531) && quickstats[0] >= 324) {
+else if (e.player_answers.includes(15531) && iraq == 1 && quickstats[0] >= 324) {
 e.pages.push(`
-<h3 style='text-align: center;'>World Bank Group | <i>17th May, 2019</i></font></h3>
-<div class="ending-slide tv-fade world-bank-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<h3 style='text-align: center;'>World Bank Group | <i>17th May, 2019</i></h3>
+<div class="ending-slide tv-fade world-bank-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <img src="https://imgur.com/1tvHbXO.png" alt="World Bank logo" style="height: 44px; margin-right: 12px;">
 <br><br>
 <b><a href="#" style="color:#1155cc;">Understanding Poverty / Research & Publications / Documents & Reports</a></b>
@@ -30267,13 +30355,112 @@ Beginning in 2003, diverse and significant actors, both domestic and internation
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/aX14st3.jpg"})])
 }
 
+else if (iraq == 1) {
+e.pages.push(`
+<h3 style='text-align: center;'><i>BBC News</i> | <i>17th June, 2014</i></h3>
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<p>
+<a href="#">Home</a> <a href="#">Climate</a> <a href="#">World</a> <a href="#">UK</a> <a href="#">Business</a> <a href="#">Tech</a> <a href="#">Science</a>
+<br><br>
+<b style="font-size: 1.3em;">Iraq’s central government suffers mortal blow</b>
+<br><br>
+<b>Fawaz A Gerges</b>
+<br><br>
+<a style="color:#000033; font-size: 0.9em;">London School of Economics</a>
+<br><br>
+<b>Regardless of whether the Iraqi government in Baghdad rolls back the recent military advances by the Islamic State in Iraq and the Levant (ISIS), the central authority has suffered a mortal blow.</b>
+<br><br>
+ISIS's takeover of most of the so-called Sunni Triangle, as well as Mosul, the second largest city with almost two million people, hammers a deadly nail in the coffin of the post-Saddam Hussein nation-building project.
+<br><br>
+Fragile Iraqi institutions now lie in tatters.
+<br><br>
+It is doubtful if Baghdad could ever establish a monopoly on the use of force in the country, or exercise authority and centralised control over rebellious Sunni Arabs and semi-independent Kurdistan. The best-case scenario for Iraq is devolution of power from the centre in Baghdad to local Shia, Sunni Arabs and Sunni Kurdish communities; the worst is splintering of the country to three separate entities. ISIS's swift advance has exposed the state's structural and institutional weaknesses, as well as a deep ideological and sectarian rift in society.
+<br><br>
+After eight years in office and monopolising power, Prime Minister Nouri Maliki has delivered neither security nor reconciliation and prosperity.
+<br><br>
+<b style="font-size: 1.1em;">Broken system</b>
+<br><br>
+It is misleading to exaggerate ISIS military prowess and exploits as many reports in the Western media do. Its strength stems not only from the weakness of the Iraqi state, but also from the communal and social cleavages that are tearing society apart; it is a manifestation of a bigger revolt by (tribal) Sunni Arabs against what they view as Mr Maliki's sectarian authoritarianism. At the very heart of the fierce struggle raging in Iraq is a broken political system, one based on "muhasasa", or distribution of the spoils of power along communal, ethnic and tribal lines, and put in place after the US invaded and occupied the country in 2003. Sunnis Arabs, particularly in the last four years, have felt excluded and disfranchised by what they view as Mr Maliki's sectarian-based policies. When the US left Iraq in 2011, the al-Qaeda brand was in decline, unpopular among Sunnis.
+<br><br>
+Three years later, ISIS has revived by finding a "hadana shaabiya", or social base, among dissatisfied and alienated Sunni Arabs.
+<br><br>
+<b style="font-size: 1.1em;">Shia monopoly</b>
+<br><br>
+Mr Maliki, along with the Shia leadership, bears a greater responsibility for Iraq's failure. Having taken ownership of the country after the US occupation and overthrow of Saddam Hussein, the Shia leadership has treated Sunni Arabs like second-class citizens and has equated its numerical majority with a licence to monopolise power. Iraq's future depends on the willingness of the dominant social classes to rise up to the historical challenge and prioritise the national interest over the parochial.
+<br><br>
+If history is a guide, the ruling elite might once again fail the Iraq people with catastrophic repercussions for the war-torn country and the regional and international system.
+<br><br>
+<i>Fawaz A Gerges holds the Emirates Chair in Contemporary Middle Eastern Studies at the London School of Economics and Political Science. He is author of several books, including The New Middle East: Social Protest And Revolution In The Arab World.</i>
+</p>
+</div>
+`)
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/_______.jpg"})])
+}
+
+else if (e.player_answers.includes(14680)) {
+e.pages.push(`
+<h3 style='text-align: center;'>Wikipedia, the free encyclopedia | <i>2026</i></h3>
+<div class="ending-slide tv-fade wiki-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-family: 'Linux Libertine', Georgia, serif;">
+<div style="display: flex; align-items: center;">
+<img src="https://pngimg.com/uploads/wikipedia/wikipedia_PNG40.png" alt="Wikipedia logo" style="height: 40px; margin-right: 12px;">
+        <div style="font-size: 12px; color: #555;">
+          <span style="margin-right: 8px;"><strong>Read</strong></span>
+          <span style="margin-right: 8px;">Edit</span>
+          <span style="margin-right: 8px;">View history</span>
+          <span style="margin-right: 8px;">Tools</span>
+         </div>
+</div>
+    <div style="font-size: 12px; color: #555;">
+      <span style="margin-right: 8px;">Add languages</span>
+      <span style="margin-right: 8px;">Create account</span>
+      <span>Log in</span>
+    </div>
+</div>
+<p>
+<b style="font-size: 1.2em;">British referendum on the European Constitution</b>
+<img src="https://imgur.com/5QZwKYq" alt="2006 UK EU Const. Ref. Success" style="height: 150px; margin-right: 40 px;">
+</p>
+</div>
+`)
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/HIVIe6r.jpg"})])
+}
+
+else if (e.player_answers.includes(14681)) {
+e.pages.push(`
+<h3 style='text-align: center;'>The Guardian | <i>10th December, 2008</i></h3>
+<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<p>
+<img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">Pound Sterling tanks as recession deepens</b>
+<br><br>
+Markets today have continued the trend of selling off the pound, as the global financial crisis deepens worldwide. With the Bank of England deciding to cut rates by 1.50% (the largest single reduction this century so far), anxieties in markets have only deepened about the weakening of the British currency.
+<br><br>
+Chancellor Milburn has not yet commented on the situation in regards to the Euro. In his stead, Gordon Brown has insisted time and time again that the UK will not resort to any bailouts via the Euro to try and solve the issue. After <u><a href="#" style="color:#ee2929;”>our paper exposed</a></u> the breakdown of talks between the mentally strained Alan Milburn and the Bank of Scotland, the government has switched to 
+<br><br>
+In America, the President-Elect Barack Obama, and his Treasury Secretary nominee Timothy Geithner, both stressed that only <u><a href="#" style="color:#ee2929;”>radical intervention</a></u> from their federal government can help rescue the situation. Given how large their new filibuster-proof senate majority is, many in Democrat circles are hopeful that they will have the political capital to recover more banks so that they do not share the same fate as Lehman Brothers and the Bank of Scotland.
+<br><br>
+Recent polling conducted by <u><a href="#" style="color:#ee2929;”>Ipsos and YouGov</a></u> spared no expense in confirming how little sympathy this crisis has garnered for the Euro itself. If anything, it has only further confirmed the public’s aversion to any form of entry into the Eurozone in the long foreseeable future. In the last PMQs before the Christmas holidays, David Cameron and Shadow Chancellor Osborne went for an attack on Labour’s handling of the financial crash, saying “When will the Prime Minister admit that all of his experience as Chancellor has been for naught, that all of the postering and statements on the economy has only led to blunder after blunder, with the British people paying for it with every pound they have?”
+<br><br>
+In response, Brown touted his “large and radical” bailout plan which averted the worst catastrophe. He then alluded to the upcoming G20 summit early next year (which the UK will be hosting). Tellingly, he sidestepped the issue of the pound and how it is being reacted to in the financial centre of London.
+<br><br>
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/w4eIrmF.png"})])
+}
 
 
-// Fourth Slides
+// FOURTH SLIDES
 if (quickstats[0] >= 390) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Happy summer! Enjoy one of our blonde candidates to celebrate Brat Summer, 2024!</h3>
-<div class="ending-slide tv-fade mod-jam-style" style="background-color: #cc0000; color: #7c6f8b; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade mod-jam-style" style="background-color: #cc0000; color: #7c6f8b; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2010 UK" id="2010"><option value="0">2010 UK</option></select>
 <br><br>
@@ -30298,7 +30485,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -30321,7 +30508,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -30344,7 +30531,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -30367,7 +30554,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -30390,7 +30577,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
@@ -30415,7 +30602,7 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
