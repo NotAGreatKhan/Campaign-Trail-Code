@@ -3718,22 +3718,31 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/HIVIe6r.jpg
 
 else if (e.player_answers.includes(14681)) {
 e.pages.push(`
-<h3 style='text-align: center;'>The Guardian | <i>__th __, 2008</i></h3>
+<h3 style='text-align: center;'>The Guardian | <i>10th December, 2008</i></h3>
+<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
 <p>
-<img src = "https://imgur.com/yAU04XO.png" alt="FT logo" style="height: 44px; margin-right: 12px;">
+<img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
 <br><br>
-<b style="font-size: 1.2em;">___</b>
+<b style="font-size: 1.2em;">Pound Sterling tanks as recession deepens</b>
 <br><br>
-[Details of the result of the referendum]
+Markets today have continued the trend of selling off the pound, as the global financial crisis deepens worldwide. With the Bank of England deciding to cut rates by 1.50% (the largest single reduction this century so far), anxieties in markets have only deepened about the weakening of the British currency.
 <br><br>
-[Reactions from Labour]
+Chancellor Milburn has not yet commented on the situation in regards to the Euro. In his stead, Gordon Brown has insisted time and time again that the UK will not resort to any bailouts via the Euro to try and solve the issue. After <u><a href="#" style="color:#ee2929;”>our paper exposed</a></u> the breakdown of talks between the mentally strained Alan Milburn and the Bank of Scotland, the government has switched to 
 <br><br>
-[Reactions from Tories and UKIP]
+In America, the President-Elect Barack Obama, and his Treasury Secretary nominee Timothy Geithner, both stressed that only <u><a href="#" style="color:#ee2929;”>radical intervention</a></u> from their federal government can help rescue the situation. Given how large their new filibuster-proof senate majority is, many in Democrat circles are hopeful that they will have the political capital to recover more banks so that they do not share the same fate as Lehman Brothers and the Bank of Scotland.
+<br><br>
+Recent polling conducted by <u><a href="#" style="color:#ee2929;”>Ipsos and YouGov</a></u> spared no expense in confirming how little sympathy this crisis has garnered for the Euro itself. If anything, it has only further confirmed the public’s aversion to any form of entry into the Eurozone in the long foreseeable future. In the last PMQs before the Christmas holidays, David Cameron and Shadow Chancellor Osborne went for an attack on Labour’s handling of the financial crash, saying “When will the Prime Minister admit that all of his experience as Chancellor has been for naught, that all of the postering and statements on the economy has only led to blunder after blunder, with the British people paying for it with every pound they have?”
+<br><br>
+In response, Brown touted his “large and radical” bailout plan which averted the worst catastrophe. He then alluded to the upcoming G20 summit early next year (which the UK will be hosting). Tellingly, he sidestepped the issue of the pound and how it is being reacted to in the financial centre of London.
 <br><br>
 </p>
 </div>
+</div>
+</div>
 `)
-e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/______.jpg"})])
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/w4eIrmF.png"})])
 }
 
 
