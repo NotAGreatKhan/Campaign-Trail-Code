@@ -1652,7 +1652,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14281,
     "fields": {
         "priority": 0,
-        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, tore apart your government’s handling of the Iraq dossiers – and would have done more on his scheduled select committee testimony. Just when you thought the stress could not crush you enough to shatter, Dr Kelly was found dead in a forest near his home. The public anger all but forced your hand, leading to Lord Hutton leading an inquiry into the conduct of your wartime justifications.<br><br>Today, your steel disposition may just break. In no uncertain times, Hutton has placed the blame (inadvertently or not) at your feet. The exaggerated evidence, the neglect of intelligence procedure, and way too many etceteras for your liking. This has all completely blown apart.",
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, tore apart your government’s handling of the Iraq dossiers – and would have done more on his scheduled select committee testimony. Just when you thought the stress could not crush you enough to shatter, Dr Kelly was found dead in a forest near his home. The public anger all but forced your hand, leading to Lord Hutton leading an inquiry into the conduct of your wartime justifications.<br>Today, your steel disposition may just break. In no uncertain times, Hutton has placed the blame (inadvertently or not) at your feet. The exaggerated evidence, the neglect of intelligence procedure, and way too many etceteras for your liking. This has all completely blown apart.",
         "likelihood": 1
       }
     }
@@ -1663,7 +1663,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 12831,
     "fields": {
         "priority": 0,
-        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, tore apart your government’s handling of the Iraq dossiers – and would have done more on his scheduled select committee testimony. Just when you thought the stress could not crush you enough to shatter, Dr Kelly was found dead in a forest near his home. The public anger all but forced your hand, leading to Lord Hutton leading an inquiry into the conduct of your wartime justifications.<br><br>Today, you may finally get some easier rest (if you can get any). Hutton has deemed the government innocent of any attempt or malice to “sex up” the dossiers – and Dr Kelly’s death as “wholly exceptional.” There is an opening here.",
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, tore apart your government’s handling of the Iraq dossiers – and would have done more on his scheduled select committee testimony. Just when you thought the stress could not crush you enough to shatter, Dr Kelly was found dead in a forest near his home. The public anger all but forced your hand, leading to Lord Hutton leading an inquiry into the conduct of your wartime justifications.<br>Today, you may finally get some easier rest (if you can get any). Hutton has deemed the government innocent of any attempt or malice to “sex up” the dossiers – and Dr Kelly’s death as “wholly exceptional.” There is an opening here.",
         "likelihood": 1
       }
     }
