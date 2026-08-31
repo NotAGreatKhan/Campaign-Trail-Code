@@ -479,6 +479,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
+    if(ans == 15763){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15764){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
     if(ans == 14290){
       Cred -= 2;
       console.log("You have impacted your credibility");
@@ -854,6 +863,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // Question 14 - PUB 
     if(ans == 14209){
       Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 15 – Hutton Inquiry
+    if(ans == 14290){
+      Wins -= 1;
       console.log("Do they like you now?");
     }
 
@@ -1637,7 +1652,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14281,
     "fields": {
         "priority": 0,
-        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, tore apart your government’s handling of the Iraq dossiers – and would have done more on his scheduled select committee testimony. Just when you thought the stress could not crush you enough to shatter, Dr Kelly was found dead in a forest near his home. The public anger all but forced your hand, leading to Lord Hutton leading an inquiry into the conduct of your wartime justifications.<br><br>Today, your steel disposition may just break. In no uncertain times, Hutton has placed the blame (inadvertently or not) at your feet. The exaggerated evidence, the neglect of intelligence procedure, and way too many etceteras for your liking. This has all completely blown apart.",
         "likelihood": 1
       }
     }
@@ -1648,7 +1663,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 12831,
     "fields": {
         "priority": 0,
-        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, tore apart your government’s handling of the Iraq dossiers – and would have done more on his scheduled select committee testimony. Just when you thought the stress could not crush you enough to shatter, Dr Kelly was found dead in a forest near his home. The public anger all but forced your hand, leading to Lord Hutton leading an inquiry into the conduct of your wartime justifications.<br><br>Today, you may finally get some easier rest (if you can get any). Hutton has deemed the government innocent of any attempt or malice to “sex up” the dossiers – and Dr Kelly’s death as “wholly exceptional.” There is an opening here.",
         "likelihood": 1
       }
     }
