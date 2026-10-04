@@ -2826,6 +2826,19 @@ if (!document.getElementById("ending-slide-style")) {
                 font-size: 16px;
             }
 
+                .ending-slide.daily-telegraph-style {
+                font-family: Austin;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
                 .ending-slide.financial-times-style {
                 font-family: Financier;
                 background-color: #fff1e5;
