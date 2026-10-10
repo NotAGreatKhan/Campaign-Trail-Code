@@ -2144,7 +2144,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(OldLab <= 0 && Cred >= 8){
+    if(OldLab <= 0 && Cred >= 6 && Wins >= 6 && iraq == 1 && Foreign >= 4 && e.player_answers.includes(12793) && e.player_answers.includes(14033)){
     campaignTrail_temp.questions_json[37] = {
     "model": "campaign_trail.question",
     "pk": 14364,
