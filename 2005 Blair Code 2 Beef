@@ -27189,6 +27189,15 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
+    if(ans == 15763){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15764){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
     if(ans == 14290){
       Cred -= 2;
       console.log("You have impacted your credibility");
@@ -27564,6 +27573,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     // Question 14 - PUB 
     if(ans == 14209){
       Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 15 – Hutton Inquiry
+    if(ans == 14290){
+      Wins -= 1;
       console.log("Do they like you now?");
     }
 
@@ -28347,7 +28362,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 14281,
     "fields": {
         "priority": 0,
-        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, tore apart your government’s handling of the Iraq dossiers – and would have done more on his scheduled select committee testimony. Just when you thought the stress could not crush you enough to shatter, Dr Kelly was found dead in a forest near his home. The public anger all but forced your hand, leading to Lord Hutton leading an inquiry into the conduct of your wartime justifications.<br>Today, your steel disposition may just break. In no uncertain times, Hutton has placed the blame (inadvertently or not) at your feet. The exaggerated evidence, the neglect of intelligence procedure, and way too many etceteras for your liking. This has all completely blown apart.",
         "likelihood": 1
       }
     }
@@ -28358,7 +28373,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 12831,
     "fields": {
         "priority": 0,
-        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, appeared before a select committee to testify on the evidence surrounding your dossiers making the case for Iraq. Two days after he was set to appear before said committee, Dr. Kelly was found dead in a forest near his home. The public backlash forced you in response, to commission an inquiry led by Lord Hutton surrounding his death and the dossiers of evidence published. Today the inquiry has been published, and it is time to see the verdict of the report.",
+        "description": "The air of Westminster reeks of distrust. The whistleblower, having been revealed to be Weapons Expert Dr David Kelly, tore apart your government’s handling of the Iraq dossiers – and would have done more on his scheduled select committee testimony. Just when you thought the stress could not crush you enough to shatter, Dr Kelly was found dead in a forest near his home. The public anger all but forced your hand, leading to Lord Hutton leading an inquiry into the conduct of your wartime justifications.<br>Today, you may finally get some easier rest (if you can get any). Hutton has deemed the government innocent of any attempt or malice to “sex up” the dossiers – and Dr Kelly’s death as “wholly exceptional.” There is an opening here.",
         "likelihood": 1
       }
     }
@@ -28839,7 +28854,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(OldLab <= 0 && Cred >= 8){
+    if(OldLab <= 0 && Cred >= 6 && Wins >= 6 && Frgn >= 4 && iraq == 1 && wmd == 0 && kelly == 0 && e.player_answers.includes(12793) && e.player_answers.includes(14033)){
     campaignTrail_temp.questions_json[37] = {
     "model": "campaign_trail.question",
     "pk": 14364,
@@ -29521,6 +29536,19 @@ if (!document.getElementById("ending-slide-style")) {
                 font-size: 16px;
             }
 
+                .ending-slide.daily-telegraph-style {
+                font-family: Austin;
+                background-color: #fff;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #a2a9b1;
+                box-shadow: none;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+
                 .ending-slide.financial-times-style {
                 font-family: Financier;
                 background-color: #fff1e5;
@@ -29854,11 +29882,25 @@ e.pages.push(`
 <div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and that a landslide is likely in the election.</h3>
 <p>
-<i>David Dimbleby’s voice rings out across the Party headquarters</i>. A resounding cheer erupts throughout the crowd gathered to witness the results. You’ve done it! Despite the festering pressures abroad, despite the growing controversy of your premiership, and despite the renewed strength of the Tories and Liberal Democrats, you persevered to carry three successive landslide victories for your party. Your colleagues will certainly be thanking you for aiding in their retaining of their seats. 
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. A palpable sigh of relief soothes the nerves of the Party faithful as they begin the slow process of making peace with the results they have just bared witness to. With all of the belligerence hurled around during the campaigns, your party has nonetheless triumphed to a grand victory. The election winning machine still whirrs in every cog of its metallic chassis.
 <br><br>
-With this commanding majority in Parliament, you should have little difficulty in passing those reforms on national security you have desired for so long. Whenever you do end up resigning, Gordon Brown will definitely be satisfied with the majority you have left for him. It seems that at least for now, New Labour will sustain itself for at least 5 years to come. Perhaps, even more.
+In the vast expanses of your mental chasm, there is a miniscule, yet pestering voice within that hungers for more. That voice sees the scattered seats of red on the map switching to ‘CON GAIN’. The vast tentacles sprawling from the Labour octopus, wounded and etched away. But you waft away those thoughts, you still achieved a great victory – regardless of what any critics or pessimists will say.
 <br><br>
-You fought, you triumphed, and in the end, the lion’s share has handsomely fallen into your grasp. Whilst I will of course wish you the best of luck, it seems you can likely do anything with this victory. Good luck Tony!
+Your mind begins to pontificate about the bountiful oyster of possibilities that is beginning to shut its mouth. The few decisions every day that could have been taken, the nagging errors that could have been avoided. Your majority has taken an electoral axe in the old marginal seats, both the junior Liberal Democrats, and the senior Conservatives have come out of the election marginally and truly stronger in parliament than 4 years prior.
+<br><br>
+It is not much time though, before you ensure to remind yourself despite all of the scare-mongering from the media – even your own damn allies in <i>The Mail</i> and <i>The Sun</i> – you have retained your commanding mandate over the House of Commons. All of your grand ambitions and hopes for the party, the advancement of independent schools, a more secure state against the malfeasant forces who seek to degrade the security of the country, the preservation of <i>your</i> New Labour. It is still possible to keep the middle class of Britain alive and beating. Maybe Gordon could keep it too, you entertain in vain to yourself.
+<br><br>
+The lights around you seem to blaze more and more as you contemplate your upcoming speech in your old Sedgefield seat, the agitators at your many addresses are sure to be present – and a blasted annoyance – there too.
+<br><br>
+You picture the looks on Mandleson’s and Alastair’s faces, their grimacing and teeth gnawing watching the election unfold after all they went through. All of the arguing, the backlash, the endless controversy…
+<br><br>
+But that’s just politics — you tell yourself — it’s just part of the job. Not that it has ever come to that for you… yet.
+<br><br>
+Perhaps all politicians have a permanent shelf life, you occasionally mused of the possibility coming <i>eventually</i>, but not quite in this unceremonious manner. Whatever you leave to Gordon Brown, he’ll be immensely grateful that you were finally shown the door. And he’ll be grateful that he’ll be given a workable majority to – at least to a quantifiable degree – pursue his flavour of the New Labour agenda.
+<br><br>
+The transformative “Third Way” agenda you set out to the British people has been cautiously vindicated by them, but tread carefully, Mr Blair.
+<br><br>
+It seems you are still going to need every ounce of luck you can scrounge.
 </p>
 </div>
 `)
@@ -29870,11 +29912,21 @@ e.pages.push(`
 <div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Labour Party has won, and with a strong majority in Parliament.</h3>
 <p>
-<i>David Dimbleby’s voice rings out across the Party headquarters</i>. You let out perhaps the biggest sigh of relief of your premiership. Despite the significant bleeding of support, you have held on to your position as PM. Though for someone such as yourself, this isn’t exactly a spectacular performance.
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. A subdued trepidation is cast over the Party faithful as they fully grasp the scale of the loss of Labour’s dominance over Parliament. A real victory, but one that many will – in sheer spite of you surely – claim that it is one only applicable in name. You can already imagine the sneering media journalists calling out at you when you head to-and-from Number 10.
 <br><br>
-Now that you have snatched a secure Parliament, you should have little trouble in pursuing those national security reforms you have desired for a while now. Take some caution though, you have still bled a lot of colleagues as a result of this election. Your Chancellor is still going to be crossing his fingers for this, that’s for sure.
+Within the farthest confines of your mind, you hungered for that elusive seat count to break into the first truly great tier. But it never came. The Tory-blue wave had been countered, but not at all suppressed. Colleague after colleague, seat after seat, switching from scarlet red to the searing blue: ‘CON GAIN’. The sprawling splotches of red on the map strangled and brought to heel by the Blue mass.
 <br><br>
-You fought the battle with all you could, yet the lion’s share was handed out hesitantly and mildly. Best of luck for your remaining years, Prime Minister, you’ll have a tough last few years ahead of you.
+Your mind searches for all of the little nagging imperfections to the campaign. Decisions that could’ve been made, but were never taken. Your majority has been slashed by an eye-watering margin, meaning any agenda that you wish to pass will be a nightmare to get through in your last days. Your reforms for national security, the advancement for the British education system — finally allowing the schools to innovate on their own, to breathe free. All of it will have to be taken in incredibly cautious steps. Whatever happens though, the Social Democratic dream will die — or at least begin to die — that thought, you are inept of being able to shake off. The Liberal Democrats, despite failing to deadlock the election, have cauterised your majority at the pass. Governance will certainly require a great amount of delicacy and tact, whatever path you choose. If any particularly precipitous cabal of MPs are vocal enough in their opposition – unperturbed by the importance of the national interest – they could virtually sink any bill that you may try to ram through the House.
+<br><br>
+You picture the looks on Mandleson’s and Alastair’s faces, their grimacing and teeth gnawing watching the election unfold after all they went through. All of the arguing, the backlash, the endless controversy. For this…
+<br><br>
+But that’s just politics — you tell yourself — it’s just part of the job. Not that it has ever come to that for you… yet.
+<br><br>
+Perhaps all politicians have a permanent shelf life, you occasionally mused of the possibility coming eventually, but not quite in this unceremonious manner. Whatever you leave to Gordon Brown, he’ll be immensely grateful that you were finally shown the door.
+<br><br>
+Yet in spite of every bludgeoning you endured, every decision you agonised on, the transformative “Third Way” agenda you set out, the British people could not scrape together any love in their hearts to back you all the way. Best of luck to you, Prime Minister.
+<br><br>
+It seems you are going to need it.
 </p>
 </div>
 `)
@@ -30107,9 +30159,127 @@ if (used != true) {
 
 
 // SECOND SLIDES
-if (quickstats[0] >= 324) {     
+if (quickstats[0] < 324 && aa[0].candidate == 12543) {     
 e.pages.push(`
-<h3 style='text-align: center;'><i>The Guardian</i> | <i>9th November, 2005</i></h3>
+<h3 style='text-align: center;'><i>The Guardian</i> | <i>9th June, 2006</i></h3>
+<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<p>
+<img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">Gordon Brown calls snap election to recover majority government</b>
+<br><br>
+<li><b style="font-size: 1.1em;">PM calls election for snap vote on the 25th July</b></li>
+<br>
+<li><b style="font-size: 1.1em;">Conservatives ready to “take the fight” to Labour</b></li>
+<br>
+<li><b style="font-size: 1.1em;">Liberal Democrats move the troops to campaign</b></li>
+<br><br>
+<a href="#" style="color:#c70000;"><b>Matthew Tempest</b>, <i>political correspondent</i></a>
+<br><br>
+Outside the door of No. 10 this morning, Gordon Brown announced he would be dissolving parliament in the next week for a general election just over a year after the last one which saw the Labour Party <u><a href="#" style="color:#ee2929;”>lose its parliamentary majority</a></u> to the Conservatives and the Liberal Democrats. In his speech today, he made the case for Labour to be given a proper mandate to enact his “vision for a future fair for all” while he attacked the Conservatives and Liberal Democrats for “obstructing the policies of the government chosen by the people.”
+<br><br>
+After a string of legislative failures led to the resignation of Tony Blair and the ascension of Brown, he experienced a polling bump unanticipated by those even within his own cabinet. After a lengthy cabinet meeting, he decided to go ahead with the early ending of this parliament to take his case to the country. His reputation as the “Iron Chancellor” has given him a large amount of political capital to be bold with his commitments to the public
+<br><br>
+However, it is far from certain whether his gamble will pay off. The local elections last month saw Labour <u><a href="#" style="color:#ee2929;”>lose nearly two dozen councils</a></u> to the Tories – with a few doled out to the Lib Dems. The polls on many issues the government has tackled, from law and order, to the war on terror and foreign policy, have declined to net disapproval. With the policy of identity cards still to be rolled out, Brown will have to reckon with how much he wishes to tie himself to the Blair legacy.
+<br><br>
+The Conservatives have taken this development with eagerness, taking to the stump ahead of time as parliament gets ready for any last business before the campaign can get underway. They pledged to bring an end to the “floundering mess of a government and bring the party of stability back in power.” Labour felt that they only needed to point to their record on the economy (Brown’s wheelhouse) compared to the last government to shut down their claim.
+<br><br>
+The Shadow Chancellor honed in on the government’s troubled challenges with the economy. Osborne called Brown’s rollback of the 2p income tax cut “incredibly short-sighted and irresponsible.” He has also faced questions about potential rises in fuel duty which he has not yet ruled out. Though, he has kept them frozen multiple times in the past (2001 and 2004), so it is unlikely he will do it before the election.
+<br><br>
+Menzies Campbell said in his opening speech that he is “fired up and ready to go to take on the Labour government and continue to show that we are a serious force on the stage.” His party has pledged to cut taxes on middle-income voters and roll back the government’s restrictions on individual liberties with recent anti-terror legislation, hoping to take advantage of voters who felt they were a violation of their personal rights.
+<br><br>
+Early polling indicates Labour having a deficit of 3% to the Conservatives at 32 to 35%, with the Liberal Democrats rising at 24%. “I accept that this is going to be a tough fight”, one Labour MP said, “but we cannot afford to let up now that we have a new Prime Minister and a platform that has delivered the strongest and most stable economy in a generation.”
+<br><br>
+The party leaders are expected to hit the campaign trail next week when Parliament officially dissolves.
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/JVHLroo.jpg"})])
+}
+
+else if (quickstats[0] >= 324 && e.player_answers.includes(14366)) {     
+e.pages.push(`
+<h3 style='text-align: center;'>BBC News | <i>23rd August, 2006</i></h3>
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<img src = "https://imgur.com/hCpdbg1.png" alt="BBC logo" style="height: 44px; margin-right: 12px;">
+<b style="font-size: 1.2em;">Blair to push for private alternative to healthcare</b>
+<br><br>
+<b>In his statement to the House of Commons, the Prime Minister argued for allowing private care more access to the NHS in providing services.</b>
+<br><br>
+Prime Minister Blair set out plans for private GPs and healthcare organisations to become integrated into the NHS at large. This policy, having been anticipated since the moves by No. 10 to liberalise the public sector in schools and hospitals, is now coming into force.
+<br><br>
+<b><a style="color:#464646;”>‘Freedom to choose’</a></b>
+<br><br>
+The government argues that the policy will give the health service more room to serve lower-income families, while reducing the tax burden for the taxpayer in the long-term. The Prime Minister argued that the allowance of private doctors into more appointments and consultations – along with the previous liberalisations for surgeries – would “give the NHS the freedom and capacity it needs to continue to fully operate public care for the health of the people of Britain.”
+<br><br>
+For other politicians on the right of the debate, they argue that it will be positive for bringing down costs and allowing for higher quality care. Such figures often point to the success of the Nordic countries as examples. Though a counter to this is that their populations are significantly smaller, and therefore these systems bring much less cost to the customer..
+<br><br>
+<b><a style="color:#464646;”>‘Large hill to climb’</a></b>
+<br><br>
+The reaction by Labour backbencher MPs in particular has been strong in its opposition, with them arguing that such moves will only snowball into the eventual privatisation of the Service. Rumours from within Westminster have circulated that the Deputy Prime Minister, John Prescott, will tender his resignation to the Prime Minister if they go through with the bill – something that is appearing more and more likely.
+<br><br>
+In regards to the reaction from the public, the backlash has been notable. A recent Ipsos poll conducted on the subject shows over 70% of those questioned disapprove of the action taken by the government. With only 12% stating that they support the action, it will take a lot of effort from the government to successfully make the case to the public, as indicated by the Health Secretary. Prime Minister Blair himself has acknowledged that there will be a “large hill to climb” to get this deal through.
+<br><br>
+<b><a style="color:#464646;”>‘Sleeping dogs’</a></b>
+<br><br>
+This may not be the done-deal that No. 10 is hoping for, even if it does pass. This bill would be anathema to the crew with No. 11, and could provide further reasoning for the Labour backbenches to push for Chancellor Gordon Brown to replace Tony Blair as Prime Minister.
+<br><br>
+One Labour MP who preferred to remain anonymous said his fellow backbenchers are “sleeping dogs” ready to wake if Blair angers his party too much on healthcare. He went on to say that Gordon Brown felt any intrusions of private care into the NHS felt very “un-Labour” and held many reservations on such moves. Rumours even abound that he would purposefully withhold tax measures to block any attempts to see this Bill come to fruition even if it received royal assent.
+<br><br>
+The Bill will go to the third reading later this week, where the vote of the Commons will give the verdict.
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/ggaSzpg.jpg"})])
+}
+
+else if (quickstats[0] >= 324 && e.player_answers.includes(14367)) {     
+e.pages.push(`
+<h3 style='text-align: center;'>BBC News | <i>11th July, 2006</i></h3>
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<img src = "https://imgur.com/hCpdbg1.png" alt="BBC logo" style="height: 44px; margin-right: 12px;">
+<b style="font-size: 1.2em;">Davis cruises to by-election win</b>
+<br><br>
+<b>Former shadow home secretary David Davis has eased to victory in the Haltemprice and Howden by-election with a 15,355 majority and 72% of the vote.</b>
+<br><br>
+He quit as an MP in June over the government's plans to detain terror suspects for up to 42 days. The Tory MP said voters had delivered a “stunning message to the government”. The turnout was 34%, with the Green Party coming second on 1,758 votes and the English Democrats third on 1,714. The Lib Dems and Labour did not stand.
+<br><br>
+<b><a style="color:#464646;”>‘Ransacked’</a></b>
+<br><br>
+Mr Davis said: “We have fired a shot across the bows of Tony Blair’s arrogant, arbitrary and authoritarian government.” He said he would return to Westminster on Monday with a mandate “to fight Tony Blair’s vision of Big Brother Britain tooth and nail, to stop 42 days in its tracks, to prevent the disaster of ID cards before it happens, to protect our personal privacy from being ransacked by the ever-intrusive state”.
+<br><br>
+He admitted it was unlikely that Tory leader David Cameron would invite him back onto the party's front bench. “I took on board that I would lose my shadow cabinet post and probably my shadow cabinet future,” he said. “I accept that.” Mr Davis denied that he would become a “single-issue campaigner”, but promised to “put a lot of effort” into opposing 42 days' detention. He told BBC Radio 4’s Today programme: “The trouble with this is, from the beginning, the Westminster village hasn't really understood that someone wants to take a stand on a matter of principle that may have some effect on themselves.”
+<br><br>
+<b><a style="color:#464646;”>‘Vain stunt’</a></b>
+<br><br>
+Mr Davis also accused the government of “spectacular cowardice” for not fielding a candidate. But, Home Office minister Tony McNulty called the by-election had been “a vain stunt that became and remains a farce”. He added: “Labour never believed a parliamentary by-election should be held at taxpayers' expense to resolve tensions at the top of the Conservative Party.” 
+<br><br>
+The Green Party questioned Mr Davis's stance on some civil liberties issues - including his support for the 28-day limit on holding terror suspects without charge, increased from 14 days in 2005, and his views on capital punishment and gay rights. Rape law campaigner Jill Saward, who stood as an independent, criticised his opposition to extending the DNA database and CCTV - which she sees as “the very tools the police need to keep us safe”. 
+<br><br>
+Out of a record 26 by-election candidates, 23 lost their deposits after failing to attract 5% of the vote. At the last general election Mr Davis won the seat with a 5,116 majority. However, the 17,113 votes he polled were fewer than the 22,792 he achieved at the 2005 election, and turnout was also down from 70.2%. The Lib Dems - who came second in 2005 - chose not to run because they also opposed the government's plans to extend the time limit on holding terrorism suspects. Labour refused to stand, describing the by-election as a farce and a waste of more than £80,000 of public money. 
+<br><br>
+After the result was declared, Mr Davis said that before he resigned his seat, polls showed 69% of people supported the government on 42 days. That figure now stood at 39%, he added. Among those who backed his campaign and attended debates in the constituency were Bob Geldof, Iraq war veteran Col. Tim Collins and Labour MP Bob Marshall Andrews. 
+<br><br>
+Other parties who contested the election included the English Democrats and Christian Party.
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/eOpChfP.jpg"})])
+}
+
+else if (quickstats[0] >= 324) {     
+e.pages.push(`
+<h3 style='text-align: center;'>The Guardian | <i>9th November, 2005</i></h3>
 <div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
@@ -30163,22 +30333,30 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg
 
 else if (aa[0].candidate == 12565) {
 e.pages.push(`
-<h3 style='text-align: center,'>Protests erupt as House contemplates new Immigration Bill</h3>
-<b style="font-size: 1.2em;"><i>The Daily Mirror</i> | <i>20th September, 2006</i></b>
+<h3 style='text-align: center,'>The Daily Mirror | <i>20th September, 2006</i></h3>
+<div class="ending-slide tv-fade daily-mirror-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<img src = "https://imgur.com/4J8lKmz.png" alt="FT logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">Protests erupt as House contemplates new Immigration Bill</b>
 <br><br>
 <b>As parliament begins the second reading of legislation to restrict immigration into the UK, protesters gather mobilised by new anti-terror measures.</b>
 <br><br>
 With the recent local elections being generally unremarkable for the Conservatives, No 10 has pushed forward with their flagship manifesto policy: immigration restriction.
 <br><br>
-This comes after the government <u><font color='#e06666;'>walked back from its original intention to</font></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
+This comes after the government <u><a href="#" style="color:#e06666;”>walked back from its original intention to</a></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
 <br><br>
-The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><font color='#e06666;'>labelled as “cowardly”</font></u>, according to leaked memos.
+The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><a href="#" style="color:#e06666;”>labelled as “cowardly”</a></u>, according to leaked memos.
 <br><br>
-Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><font color='#e06666;'>using the 7/7 attacks last year</font></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
+Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><a href="#" style="color:#e06666;”>using the 7/7 attacks last year</a></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
 <br><br>
-Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><font color='#e06666;'>in the latest budget</font></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
+Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><a href="#" style="color:#e06666;”>in the latest budget</a></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
 <br><br>
 It remains to be seen if the bill will survive today’s vote. But, if the protests outside Whitehall are of any indication, it won’t go down quietly.
+</div>
+</div>
+</div>
 `)
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/IKStDf4.jpg"})])
 }
@@ -30236,7 +30414,9 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/OIEc7pW.jpg
 else if (Ken == 1 && aa[0].candidate == 12565) {
 e.pages.push(`
 <h3 style='text-align: center,'><i>BBC News</i> | <i>9th June, 2009</i></h3>
-<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
 <p>
 <img src = https://imgur.com/yaV1STg.jpg>
 <br><br>
@@ -30262,6 +30442,8 @@ In light of this, such as David Davis and Boris Johnson, are hinting at the need
 <br><br>
 But whatever the consequences of this might be, one thing that is undeniable is how much cold water has been poured onto the Tories, and after an unprecedented economic crisis no-less.
 </p>
+</div>
+</div>
 </div>
 `)
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/1H1566f.jpg"})])
@@ -30455,13 +30637,44 @@ In response, Brown touted his “large and radical” bailout plan which averted
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/w4eIrmF.png"})])
 }
 
+else if (iraq == 0) {
+e.pages.push(`
+<h3 style='text-align: center;'>Financial TImes | <i>31st January, 2025</i></i></h3>
+<div class="ending-slide tv-fade financial-times-style" style="background-color: #fff1e5; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<p>
+<img src="https://imgur.com/KKPSxVI.png" alt="FT logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">The effects of Brexit 5 years on</b>
+<br><br>
+It has been half a decade since the UK left the European Union. And since then, the country has struggled to make up for the lost benefits being in the bloc provided. And in spite of how much Farage may publicly deny it, he knows it too. For him, that just might be by design.
+<br><br>
+We will first have to start with the economy (as with most things). Since 2020, the national GDP has grown by roughly 44% to £3 trillion – though this margin goes all the way down to 5.2% after considering real GDP since the Coronavirus pandemic. This initial statistic for size draws a good looking initial sketch, but it ignores the finer details of how Brexit inflicted pain upon the real economy outside of the centre of London.
+<br><br>
+A study by the group <i>UK in a changing Europe</i> found that on the whole, Brexit had reduced the size of the economy by anywhere from 6-10%, reduced worker output by 3-4%, and significantly increased the red tape and paperwork businesses had to wade through to trade goods with the rest of the EU. All of this has cost Britain hundreds of billions of pounds, and left the country vulnerable to the shocks of the Coronavirus pandemic and the Russian invasion of Ukraine both disrupting global supply of goods. It was one crisis after another.
+<br><br>
+It is the decline in trade especially which truly marks irony in Brexit. One of the key arguments of the Leave side of the Brexit referendum campaign was, after all, that leaving the EU would enable the UK to enter a whole host of new trade deals with other nations around the globe – in particular the United States. Since we left the trading bloc, though, we have been inept at making up for the lost revenues from European trade, in large part due to the unreliability of the series of American administrations. Save for that, the previous few governments have had little luck with the rest of the world.
+<br><br>
+With immigration, those in the right-wing parties who argued that total migration numbers would come down were bitterly disappointed. Previous controls on small-boat crossings (the lightning rod used by many on the hard right) which existed between Britain and especially France, are gone. Any freedom of movement between citizens that was reduced, was more than made up for by the migration of people globally instead. When Prime Minister Boris Johnson had to reckon with the enormous deficit in the workforce during Covid, he all but let in many migrants to fill shortages in the NHS most of all. Something that every Conservative PM has had to reckon with is the sheer dependence we have for migrant workers.
+<br><br>
+All of this, and for what? High streets across England continue to decline. Resentment against immigrants continues to rise. The party most likely to lead the next government are neither the Tories nor Labour. Austerity, Brexit, the pandemic, and ongoing crises abroad have had a concomitant detriment to our economy; one which may take decades to fully recover.
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/zLwSxH2.jpg"})])
+}
+
 
 // FOURTH SLIDES
-if (quickstats[0] >= 390) {     
+if (quickstats[0] >= 380) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Happy summer! Enjoy one of our blonde candidates to celebrate Brat Summer, 2024!</h3>
-<div class="ending-slide tv-fade mod-jam-style" style="background-color: #cc0000; color: #7c6f8b; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade mod-jam-style" style="background-color: #333399; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #cc0000;">
 <select name="2010 UK" id="2010"><option value="0">2010 UK</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
@@ -30478,6 +30691,8 @@ New Labour has been in government for over a decade. In that time, Britain has s
 This scenario was made by <button>Various people</button>.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -30485,10 +30700,12 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #ffffff;">
 <img src = https://imgur.com/z9KRAk2.png>
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
@@ -30501,6 +30718,8 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -30508,10 +30727,12 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #ffffff;">
 <img src = https://imgur.com/BpmRe6y.png>
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
@@ -30524,6 +30745,8 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -30531,10 +30754,12 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #ffffff;">
 <img src = https://imgur.com/6WEgSOX.png>
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
@@ -30547,6 +30772,8 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -30554,10 +30781,12 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #ffffff;">
 <img src = https://imgur.com/Tx0qRcH.png>
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
@@ -30570,6 +30799,8 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -30577,8 +30808,9 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
@@ -30594,6 +30826,8 @@ Heading into the 2005 election, the campaign is being fought in the backdrop of 
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </div>
+</div>
+</div>
 </p>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
@@ -30602,8 +30836,9 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
@@ -30619,6 +30854,8 @@ Heading into the 2005 election, the campaign is being fought in the backdrop of 
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
+</div>
+</div>
 </div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
