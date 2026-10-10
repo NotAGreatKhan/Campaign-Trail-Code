@@ -3959,11 +3959,12 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/zLwSxH2.jpg
 
 
 // FOURTH SLIDES
-if (quickstats[0] >= 390) {     
+if (quickstats[0] >= 380) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Happy summer! Enjoy one of our blonde candidates to celebrate Brat Summer, 2024!</h3>
-<div class="ending-slide tv-fade mod-jam-style" style="background-color: #cc0000; color: #7c6f8b; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade mod-jam-style" style="background-color: #333399; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #cc0000;">
 <select name="2010 UK" id="2010"><option value="0">2010 UK</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
@@ -3980,6 +3981,8 @@ New Labour has been in government for over a decade. In that time, Britain has s
 This scenario was made by <button>Various people</button>.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -3987,10 +3990,12 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #ffffff;">
 <img src = https://imgur.com/z9KRAk2.png>
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
@@ -4003,6 +4008,8 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -4010,10 +4017,12 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14123) || e.player_answers.includes(14129) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #ffffff;">
 <img src = https://imgur.com/BpmRe6y.png>
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
@@ -4026,6 +4035,8 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -4033,10 +4044,12 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #ffffff;">
 <img src = https://imgur.com/6WEgSOX.png>
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
@@ -4049,6 +4062,8 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -4056,10 +4071,12 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (e.player_answers.includes(14372) || e.player_answers.includes(14378) && aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
+<div style="background-color: #ffffff;">
 <img src = https://imgur.com/Tx0qRcH.png>
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
@@ -4072,6 +4089,8 @@ Heading into the 2005 election, the campaign will be fiercely debated on the fat
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
 </div>
+</div>
+</div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
 }
@@ -4079,8 +4098,9 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12543) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
@@ -4096,6 +4116,8 @@ Heading into the 2005 election, the campaign is being fought in the backdrop of 
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </div>
+</div>
+</div>
 </p>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
@@ -4104,8 +4126,9 @@ e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg
 else if (aa[0].candidate == 12565) {     
 e.pages.push(`
 <h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
-<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #bfe6ff; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
+<div style="background-color: #bfe6ff;">
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
@@ -4121,6 +4144,8 @@ Heading into the 2005 election, the campaign is being fought in the backdrop of 
 <br><br>
 This scenario was made by Sir Daniel Bryan MBE.
 </p>
+</div>
+</div>
 </div>
 `)
 e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
