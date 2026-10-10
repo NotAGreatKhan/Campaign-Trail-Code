@@ -3467,9 +3467,85 @@ The party leaders are expected to hit the campaign trail next week when Parliame
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/JVHLroo.jpg"})])
 }
 
+else if (quickstats[0] >= 324 && e.player_answers.includes(14366)) {     
+e.pages.push(`
+<h3 style='text-align: center;'>BBC News | <i>23rd August, 2006</i></h3>
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<img src = "https://imgur.com/hCpdbg1.png" alt="BBC logo" style="height: 44px; margin-right: 12px;">
+<b style="font-size: 1.2em;">Blair to push for private alternative to healthcare</b>
+<br><br>
+<b>In his statement to the House of Commons, the Prime Minister argued for allowing private care more access to the NHS in providing services.</b>
+<br><br>
+Prime Minister Blair set out plans for private GPs and healthcare organisations to become integrated into the NHS at large. This policy, having been anticipated since the moves by No. 10 to liberalise the public sector in schools and hospitals, is now coming into force.
+<br><br>
+<b><a style="color:#464646;”>‘Freedom to choose’</a></b>
+<br><br>
+The government argues that the policy will give the health service more room to serve lower-income families, while reducing the tax burden for the taxpayer in the long-term. The Prime Minister argued that the allowance of private doctors into more appointments and consultations – along with the previous liberalisations for surgeries – would “give the NHS the freedom and capacity it needs to continue to fully operate public care for the health of the people of Britain.”
+<br><br>
+For other politicians on the right of the debate, they argue that it will be positive for bringing down costs and allowing for higher quality care. Such figures often point to the success of the Nordic countries as examples. Though a counter to this is that their populations are significantly smaller, and therefore these systems bring much less cost to the customer..
+<br><br>
+<b><a style="color:#464646;”>‘Large hill to climb’</a></b>
+<br><br>
+The reaction by Labour backbencher MPs in particular has been strong in its opposition, with them arguing that such moves will only snowball into the eventual privatisation of the Service. Rumours from within Westminster have circulated that the Deputy Prime Minister, John Prescott, will tender his resignation to the Prime Minister if they go through with the bill – something that is appearing more and more likely.
+<br><br>
+In regards to the reaction from the public, the backlash has been notable. A recent Ipsos poll conducted on the subject shows over 70% of those questioned disapprove of the action taken by the government. With only 12% stating that they support the action, it will take a lot of effort from the government to successfully make the case to the public, as indicated by the Health Secretary. Prime Minister Blair himself has acknowledged that there will be a “large hill to climb” to get this deal through.
+<br><br>
+<b><a style="color:#464646;”>‘Sleeping dogs’</a></b>
+<br><br>
+This may not be the done-deal that No. 10 is hoping for, even if it does pass. This bill would be anathema to the crew with No. 11, and could provide further reasoning for the Labour backbenches to push for Chancellor Gordon Brown to replace Tony Blair as Prime Minister.
+<br><br>
+One Labour MP who preferred to remain anonymous said his fellow backbenchers are “sleeping dogs” ready to wake if Blair angers his party too much on healthcare. He went on to say that Gordon Brown felt any intrusions of private care into the NHS felt very “un-Labour” and held many reservations on such moves. Rumours even abound that he would purposefully withhold tax measures to block any attempts to see this Bill come to fruition even if it received royal assent.
+<br><br>
+The Bill will go to the third reading later this week, where the vote of the Commons will give the verdict.
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "__.jpg"})])
+}
+
+else if (quickstats[0] >= 324 && e.player_answers.includes(14367)) {     
+e.pages.push(`
+<h3 style='text-align: center;'>BBC News | <i>11th July, 2006</i></h3>
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<img src = "https://imgur.com/hCpdbg1.png" alt="BBC logo" style="height: 44px; margin-right: 12px;">
+<b style="font-size: 1.2em;">Davis cruises to by-election win</b>
+<br><br>
+<b>Former shadow home secretary David Davis has eased to victory in the Haltemprice and Howden by-election with a 15,355 majority and 72% of the vote.</b>
+<br><br>
+He quit as an MP in June over the government's plans to detain terror suspects for up to 42 days. The Tory MP said voters had delivered a “stunning message to the government”. The turnout was 34%, with the Green Party coming second on 1,758 votes and the English Democrats third on 1,714. The Lib Dems and Labour did not stand.
+<br><br>
+<b><a style="color:#464646;”>‘Ransacked’</a></b>
+<br><br>
+Mr Davis said: “We have fired a shot across the bows of Tony Blair’s arrogant, arbitrary and authoritarian government.” He said he would return to Westminster on Monday with a mandate “to fight Tony Blair’s vision of Big Brother Britain tooth and nail, to stop 42 days in its tracks, to prevent the disaster of ID cards before it happens, to protect our personal privacy from being ransacked by the ever-intrusive state”.
+<br><br>
+He admitted it was unlikely that Tory leader David Cameron would invite him back onto the party's front bench. “I took on board that I would lose my shadow cabinet post and probably my shadow cabinet future,” he said. “I accept that.” Mr Davis denied that he would become a “single-issue campaigner”, but promised to “put a lot of effort” into opposing 42 days' detention. He told BBC Radio 4’s Today programme: “The trouble with this is, from the beginning, the Westminster village hasn't really understood that someone wants to take a stand on a matter of principle that may have some effect on themselves.”
+<br><br>
+<b><a style="color:#464646;”>‘Vain stunt’</a></b>
+<br><br>
+Mr Davis also accused the government of “spectacular cowardice” for not fielding a candidate. But, Home Office minister Tony McNulty called the by-election had been “a vain stunt that became and remains a farce”. He added: “Labour never believed a parliamentary by-election should be held at taxpayers' expense to resolve tensions at the top of the Conservative Party.” 
+<br><br>
+The Green Party questioned Mr Davis's stance on some civil liberties issues - including his support for the 28-day limit on holding terror suspects without charge, increased from 14 days in 2005, and his views on capital punishment and gay rights. Rape law campaigner Jill Saward, who stood as an independent, criticised his opposition to extending the DNA database and CCTV - which she sees as “the very tools the police need to keep us safe”. 
+<br><br>
+Out of a record 26 by-election candidates, 23 lost their deposits after failing to attract 5% of the vote. At the last general election Mr Davis won the seat with a 5,116 majority. However, the 17,113 votes he polled were fewer than the 22,792 he achieved at the 2005 election, and turnout was also down from 70.2%. The Lib Dems - who came second in 2005 - chose not to run because they also opposed the government's plans to extend the time limit on holding terrorism suspects. Labour refused to stand, describing the by-election as a farce and a waste of more than £80,000 of public money. 
+<br><br>
+After the result was declared, Mr Davis said that before he resigned his seat, polls showed 69% of people supported the government on 42 days. That figure now stood at 39%, he added. Among those who backed his campaign and attended debates in the constituency were Bob Geldof, Iraq war veteran Col. Tim Collins and Labour MP Bob Marshall Andrews. 
+<br><br>
+Other parties who contested the election included the English Democrats and Christian Party.
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "__.jpg"})])
+}
+
 else if (quickstats[0] >= 324) {     
 e.pages.push(`
-<h3 style='text-align: center;'><i>The Guardian</i> | <i>9th November, 2005</i></h3>
+<h3 style='text-align: center;'>The Guardian | <i>9th November, 2005</i></h3>
 <div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
