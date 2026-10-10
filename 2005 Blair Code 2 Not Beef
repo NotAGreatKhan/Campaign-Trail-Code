@@ -3599,22 +3599,30 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg
 
 else if (aa[0].candidate == 12565) {
 e.pages.push(`
-<h3 style='text-align: center,'>Protests erupt as House contemplates new Immigration Bill</h3>
-<b style="font-size: 1.2em;"><i>The Daily Mirror</i> | <i>20th September, 2006</i></b>
+<h3 style='text-align: center,'>The Daily Mirror | <i>20th September, 2006</i></h3>
+<div class="ending-slide tv-fade daily-mirror-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<img src = "https://imgur.com/4J8lKmz.png" alt="FT logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">Protests erupt as House contemplates new Immigration Bill</b>
 <br><br>
 <b>As parliament begins the second reading of legislation to restrict immigration into the UK, protesters gather mobilised by new anti-terror measures.</b>
 <br><br>
 With the recent local elections being generally unremarkable for the Conservatives, No 10 has pushed forward with their flagship manifesto policy: immigration restriction.
 <br><br>
-This comes after the government <u><font color='#e06666;'>walked back from its original intention to</font></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
+This comes after the government <u><a href="#" style="color:#e06666;”>walked back from its original intention to</a></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
 <br><br>
-The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><font color='#e06666;'>labelled as “cowardly”</font></u>, according to leaked memos.
+The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><a href="#" style="color:#e06666;”>labelled as “cowardly”</a></u>, according to leaked memos.
 <br><br>
-Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><font color='#e06666;'>using the 7/7 attacks last year</font></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
+Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><a href="#" style="color:#e06666;”>using the 7/7 attacks last year</a></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
 <br><br>
-Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><font color='#e06666;'>in the latest budget</font></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
+Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><a href="#" style="color:#e06666;”>in the latest budget</a></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
 <br><br>
 It remains to be seen if the bill will survive today’s vote. But, if the protests outside Whitehall are of any indication, it won’t go down quietly.
+</div>
+</div>
+</div>
 `)
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/IKStDf4.jpg"})])
 }
@@ -3672,7 +3680,9 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/OIEc7pW.jpg
 else if (Ken == 1 && aa[0].candidate == 12565) {
 e.pages.push(`
 <h3 style='text-align: center,'><i>BBC News</i> | <i>9th June, 2009</i></h3>
-<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
 <p>
 <img src = https://imgur.com/yaV1STg.jpg>
 <br><br>
@@ -3698,6 +3708,8 @@ In light of this, such as David Davis and Boris Johnson, are hinting at the need
 <br><br>
 But whatever the consequences of this might be, one thing that is undeniable is how much cold water has been poured onto the Tories, and after an unprecedented economic crisis no-less.
 </p>
+</div>
+</div>
 </div>
 `)
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/1H1566f.jpg"})])
