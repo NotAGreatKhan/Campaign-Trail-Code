@@ -3425,7 +3425,49 @@ if (used != true) {
 
 
 // SECOND SLIDES
-if (quickstats[0] >= 324) {     
+if (quickstats[0] < 324 && aa[0].candidate == 12543) {     
+e.pages.push(`
+<h3 style='text-align: center;'><i>The Guardian</i> | <i>9th June, 2006</i></h3>
+<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<p>
+<img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">Gordon Brown calls snap election to recover majority government</b>
+<br><br>
+<li><b style="font-size: 1.1em;">PM calls election for snap vote on the 25th July</b></li>
+<br>
+<li><b style="font-size: 1.1em;">Conservatives ready to “take the fight” to Labour</b></li>
+<br>
+<li><b style="font-size: 1.1em;">Liberal Democrats move the troops to campaign</b></li>
+<br><br>
+<a href="#" style="color:#c70000;"><b>Matthew Tempest</b>, <i>political correspondent</i></a>
+<br><br>
+Outside the door of No. 10 this morning, Gordon Brown announced he would be dissolving parliament in the next week for a general election just over a year after the last one which saw the Labour Party <u><a href="#" style="color:#ee2929;”>lose its parliamentary majority</a></u> to the Conservatives and the Liberal Democrats. In his speech today, he made the case for Labour to be given a proper mandate to enact his “vision for a future fair for all” while he attacked the Conservatives and Liberal Democrats for “obstructing the policies of the government chosen by the people.”
+<br><br>
+After a string of legislative failures led to the resignation of Tony Blair and the ascension of Brown, he experienced a polling bump unanticipated by those even within his own cabinet. After a lengthy cabinet meeting, he decided to go ahead with the early ending of this parliament to take his case to the country. His reputation as the “Iron Chancellor” has given him a large amount of political capital to be bold with his commitments to the public
+<br><br>
+However, it is far from certain whether his gamble will pay off. The local elections last month saw Labour <u><a href="#" style="color:#ee2929;”>lose nearly two dozen councils</a></u> to the Tories – with a few doled out to the Lib Dems. The polls on many issues the government has tackled, from law and order, to the war on terror and foreign policy, have declined to net disapproval. With the policy of identity cards still to be rolled out, Brown will have to reckon with how much he wishes to tie himself to the Blair legacy.
+<br><br>
+The Conservatives have taken this development with eagerness, taking to the stump ahead of time as parliament gets ready for any last business before the campaign can get underway. They pledged to bring an end to the “floundering mess of a government and bring the party of stability back in power.” Labour felt that they only needed to point to their record on the economy (Brown’s wheelhouse) compared to the last government to shut down their claim.
+<br><br>
+The Shadow Chancellor honed in on the government’s troubled challenges with the economy. Osborne called Brown’s rollback of the 2p income tax cut “incredibly short-sighted and irresponsible.” He has also faced questions about potential rises in fuel duty which he has not yet ruled out. Though, he has kept them frozen multiple times in the past (2001 and 2004), so it is unlikely he will do it before the election.
+<br><br>
+Menzies Campbell said in his opening speech that he is “fired up and ready to go to take on the Labour government and continue to show that we are a serious force on the stage.” His party has pledged to cut taxes on middle-income voters and roll back the government’s restrictions on individual liberties with recent anti-terror legislation, hoping to take advantage of voters who felt they were a violation of their personal rights.
+<br><br>
+Early polling indicates Labour having a deficit of 3% to the Conservatives at 32 to 35%, with the Liberal Democrats rising at 24%. “I accept that this is going to be a tough fight”, one Labour MP said, “but we cannot afford to let up now that we have a new Prime Minister and a platform that has delivered the strongest and most stable economy in a generation.”
+<br><br>
+The party leaders are expected to hit the campaign trail next week when Parliament officially dissolves.
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/JVHLroo.jpg"})])
+}
+
+else if (quickstats[0] >= 324) {     
 e.pages.push(`
 <h3 style='text-align: center;'><i>The Guardian</i> | <i>9th November, 2005</i></h3>
 <div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
