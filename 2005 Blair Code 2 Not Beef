@@ -3815,6 +3815,36 @@ In response, Brown touted his “large and radical” bailout plan which averted
 e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/w4eIrmF.png"})])
 }
 
+else if (iraq == 0) {
+e.pages.push(`
+<h3 style='text-align: center;'>Financial TImes | <i>31st January, 2025</i></i></h3>
+<div class="ending-slide tv-fade financial-times-style" style="background-color: #fff1e5; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<p>
+<img src="https://imgur.com/KKPSxVI.png" alt="FT logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">The effects of Brexit 5 years on</b>
+<br><br>
+It has been half a decade since the UK left the European Union. And since then, the country has struggled to make up for the lost benefits being in the bloc provided. And in spite of how much Farage may publicly deny it, he knows it too. For him, that just might be by design.
+<br><br>
+We will first have to start with the economy (as with most things). Since 2020, the national GDP has grown by roughly 44% to £3 trillion – though this margin goes all the way down to 5.2% after considering real GDP since the Coronavirus pandemic. This initial statistic for size draws a good looking initial sketch, but it ignores the finer details of how Brexit inflicted pain upon the real economy outside of the centre of London.
+<br><br>
+A study by the group <i>UK in a changing Europe</i> found that on the whole, Brexit had reduced the size of the economy by anywhere from 6-10%, reduced worker output by 3-4%, and significantly increased the red tape and paperwork businesses had to wade through to trade goods with the rest of the EU. All of this has cost Britain hundreds of billions of pounds, and left the country vulnerable to the shocks of the Coronavirus pandemic and the Russian invasion of Ukraine both disrupting global supply of goods. It was one crisis after another.
+<br><br>
+It is the decline in trade especially which truly marks irony in Brexit. One of the key arguments of the Leave side of the Brexit referendum campaign was, after all, that leaving the EU would enable the UK to enter a whole host of new trade deals with other nations around the globe – in particular the United States. Since we left the trading bloc, though, we have been inept at making up for the lost revenues from European trade, in large part due to the unreliability of the series of American administrations. Save for that, the previous few governments have had little luck with the rest of the world.
+<br><br>
+With immigration, those in the right-wing parties who argued that total migration numbers would come down were bitterly disappointed. Previous controls on small-boat crossings (the lightning rod used by many on the hard right) which existed between Britain and especially France, are gone. Any freedom of movement between citizens that was reduced, was more than made up for by the migration of people globally instead. When Prime Minister Boris Johnson had to reckon with the enormous deficit in the workforce during Covid, he all but let in many migrants to fill shortages in the NHS most of all. Something that every Conservative PM has had to reckon with is the sheer dependence we have for migrant workers.
+<br><br>
+All of this, and for what? High streets across England continue to decline. Resentment against immigrants continues to rise. The party most likely to lead the next government are neither the Tories nor Labour. Austerity, Brexit, the pandemic, and ongoing crises abroad have had a concomitant detriment to our economy; one which may take decades to fully recover.
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/zLwSxH2.jpg"})])
+}
+
 
 // FOURTH SLIDES
 if (quickstats[0] >= 390) {     
