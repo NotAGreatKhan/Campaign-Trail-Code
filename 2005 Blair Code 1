@@ -225,7 +225,7 @@ campaignTrail_temp.election_json = [
             "has_visits": 0,
             "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
             "creator": "u/No-Reading9991",
-            "display_year": "2005 UK - Forward Not Back"
+            "display_year": "2005 UK - Forward, Not Back"
         }
     },
     {
@@ -237,7 +237,7 @@ campaignTrail_temp.election_json = [
             "image_url": "https://imgur.com/f1VcXFP.png",
             "winning_electoral_vote_number": 326,
             "advisor_url": "https://imgur.com/QjvmIad.png",
-            "display_year": "2010 UK - A Future Fair For All"
+            "display_year": "2010 UK - The Change We Choose"
         }
      },
      {
@@ -261,7 +261,7 @@ campaignTrail_temp.election_json = [
             "image_url": "https://imgur.com/6VnUFX1.jpg",
             "winning_electoral_vote_number": 330,
             "advisor_url": "https://imgur.com/QjvmIad.png",
-            "display_year": "1997 UK - New Labour, New Britain"
+            "display_year": "1997 UK - Things Can Only Get Better"
         }
      }
 ]
@@ -271,13 +271,13 @@ campaignTrail_temp.temp_election_list = [
         "id": 14,
         "year": 2010,
         "is_premium": 0,
-        "display_year": "2010 UK - A Future Fair For All"
+        "display_year": "2010 UK - The Change We Choose"
     },
     {
         "id": 12,
         "year": 2005,
         "is_premium": 0,
-        "display_year": "2005 UK - Forward Not Back"
+        "display_year": "2005 UK - Forward, Not Back"
     },
     {
         "id": 3,
@@ -289,7 +289,7 @@ campaignTrail_temp.temp_election_list = [
         "id": 6,
         "year": 1997,
         "is_premium": 0,
-        "display_year": "1997 UK - New Labour, New Britain"
+        "display_year": "1997 UK - Things Can Only Get Better"
     }
 ]
 
