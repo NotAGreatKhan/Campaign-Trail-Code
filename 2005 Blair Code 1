@@ -1163,6 +1163,18 @@ jet_data = {
     "gameTitle": "Her Majesty’s Campaign Trail"
 }
 
+campaignTrail_temp.modBoxTheme = {
+  "header_color": "#b71d1d",
+  "header_text_color": "#f5f3f4",
+  "header_image_url": "https://imgur.com/PbhtXkz.jpg",
+  "description_text_color": "#000000",
+  "description_background_color": "#f5f3f4",
+  "main_color": "#b0a9a9",
+  "secondary_color": "#702b30",
+  "ui_text_color": "#FFFFFF"
+}
+
+
 //#startcode
 
 corrr = `
@@ -1604,7 +1616,7 @@ if(localStorage.getItem("variable")){
     <br><br>
           But no one, and truly <i>no one</i>, anticipated the horrors which are stalking in the shadows, ready to unfurl their raven-black, all-consuming wings. Tony Blair was never a man to throw those beside him to the wabash for any decisive action, but now he may just have to. For the first time in his political career, Tony may just have to listen to his convictions deep within his gut, and do something he always recoiled at:
     <br><br>
-          <i>Alienate those he could have bridged to him, and reach their soul.</i>
+          <i>Burn the bridges he spent so long building, in this new fight.</i>
     <br><br>
           Good luck stewarding Britain in <u>2005: Forward Not Back</u>
     <br><br>
