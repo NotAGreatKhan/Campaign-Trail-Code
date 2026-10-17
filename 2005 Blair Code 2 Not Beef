@@ -3866,7 +3866,7 @@ If history is a guide, the ruling elite might once again fail the Iraq people wi
 </p>
 </div>
 `)
-e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/_______.jpg"})])
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/aUzmGYp.jpg"})])
 }
 
 else if (e.player_answers.includes(14680)) {
