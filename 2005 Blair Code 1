@@ -1589,20 +1589,20 @@ if (summaryDiv) {
         background: url(https://imgur.com/RDCPDZf.jpg);
     }
     .game_header {
-        background: linear-gradient(to bottom, #81dfab, #81dfab);
+        background: linear-gradient(to bottom, #ececec, #ececec);
         height: 75px; 
         box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
     }
     .game_header h2 {     
-        background: linear-gradient(to bottom, #32bd69, #81dfab);
+        background: linear-gradient(to bottom, #bdbdbd, #ececec);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
     .inner_window_w_desc {
-		background: linear-gradient(#ffeccf, #f0ebeb);
+		background: linear-gradient(#89b7ee, #f2f2f2);
 	}
     .inner_inner_window h3 {
         background-color: #ffcfcf;
-        background: linear-gradient(to bottom, #fff2da, #ffeccf);
+        background: linear-gradient(to bottom, #fafafa, #89b7ee);
     }
     #inner_window_2 {
         background-repeat: repeat; 
