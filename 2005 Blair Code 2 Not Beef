@@ -1831,15 +1831,12 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       }
     }
   }
-    if(Cred <= 5 && !e.player_answers.includes(15347) && !e.player_answers.includes(15647)){
-    campaignTrail_temp.questions_json[23] = {
-    "model": "campaign_trail.question",
-    "pk": 14768,
-    "fields": {
-        "priority": 0,
-        "description": "With the grilling of Prime Minister’s Questions at last over, you now must announce the election outside the famous large black door of No. 10. All of the cameras and journalists are locked on your face, ready to broadcast your speech. What will you centre your speech around, given that this will be the first shot of the campaign?",
-        "likelihood": 1
-      }
+    if(!e.player_answers.includes(15347) && !e.player_answers.includes(15647)){
+    if (e.question_number === 25 && Wins < 4) {
+        answerSwapper(12865, 14788, true);
+    }
+    if (e.question_number === 25 && iraq == 0) {
+        answerSwapper(12863, 14775, true);
     }
   }
     if(OldLab >= 4){
