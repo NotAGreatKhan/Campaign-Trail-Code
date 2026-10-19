@@ -1457,120 +1457,6 @@ storedChar = elec;
 }
 
 
-if (elec == 12) {
-  const summaryDiv = document.getElementById("election_summary");
-if (summaryDiv) {
-  summaryDiv.style.maxHeight = "none";
-  summaryDiv.style.overflowY = "visible";
-}
-  const styleFix = document.createElement("style");
-  styleFix.id = "descriptionLayoutFix";
-  styleFix.innerHTML = `
-    #announcement {
-        display: none;
-    }
-    .campaign_trail_start_emphasis {
-        background-color: #F8F8F8;
-    }
-    #game_window {
-        background: url(https://imgur.com/RDCPDZf.jpg);
-    }
-    .game_header {
-        background: linear-gradient(to bottom, #df8191, #df8191);
-        height: 75px; 
-        box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
-    }
-    .game_header h2 {     
-        background: linear-gradient(to bottom, #d03e54, #df8191);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    }
-    .inner_window_w_desc {
-		background: linear-gradient(#eadcde, #f0ebeb);
-	}
-    .inner_inner_window h3 {
-        background-color: #ffcfcf;
-        background: linear-gradient(to bottom, #ffcfcf, #eadcde);
-    }
-    #inner_window_2 {
-        background-repeat: repeat; 
-        height: 494px; 
-    }
-    #inner_window_3 { 
-        background-repeat: repeat; 
-        height: 494px;
-    }
-    #overall_details_container.done h4 {
-        font-size: 14px !important;
-    }
-
-    #menu_container, #overall_result_container {
-        background: none;
-    }
-
-    #closeButton {
-            background: none;
-            border: none;
-            outline: none;
-            padding: 0;
-            cursor: pointer;
-        }
-
-        /* Override xp.css focus and hover styles */
-        #closeButton:focus,
-        #closeButton:active,
-        #closeButton:hover {
-            outline: none;
-            box-shadow: none;
-            border: none;
-        }
-
-    h3 {
-      font-size:1.17em!important;
-    }
-  
-    label {
-      font-size:1em!important;
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
-    }
-  body {display:flex!important;}
-  
-  #game_window{max-width:1000px;}
-  
-  #election_id_button {
-    margin-top: 3em;
-  }
-  `;
-  document.head.appendChild(styleFix);
-}
-
-if(elec == 12 && storedChar != 12) {
-console.log("forward not back")
-
-corrr = `
-<div style="font-size: 8px; font-family: monospace; color: white;">
-    <h2 style="font-style: normal;">
-      <img src="https://imgur.com/ovwPvlH.jpg" alt="Her Majesty's Campaign Trail" style="margin-top: 2px;">
-    </h2>
-  </div>
-<font id="wittyquote" size="3" color="white">"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</font>
-`;
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = "#f0ebeb";
-// "url(https://imgur.com/RDCPDZf.jpg)"
-$("#game_window")[0].style.backgroundSize = "cover"; 
-$(".container")[0].style.backgroundColor = "#ababab";
-document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
-document.body.background = "https://imgur.com/erWHhIe.png";
-document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
-
-storedChar = elec;
-}
-
-
 if (elec == 3) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
@@ -1791,6 +1677,120 @@ $("#game_window")[0].style.backgroundColor = "#f0ebeb";
 $("#game_window")[0].style.backgroundSize = "cover"; 
 $(".container")[0].style.backgroundColor = "#787878";
 document.getElementById("header").src = "https://imgur.com/y6gMJMM.jpg";
+document.body.background = "https://imgur.com/erWHhIe.png";
+document.body.style.backgroundSize = "cover"
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+
+storedChar = elec;
+}
+
+
+if (elec == 12) {
+  const summaryDiv = document.getElementById("election_summary");
+if (summaryDiv) {
+  summaryDiv.style.maxHeight = "none";
+  summaryDiv.style.overflowY = "visible";
+}
+  const styleFix = document.createElement("style");
+  styleFix.id = "descriptionLayoutFix";
+  styleFix.innerHTML = `
+    #announcement {
+        display: none;
+    }
+    .campaign_trail_start_emphasis {
+        background-color: #F8F8F8;
+    }
+    #game_window {
+        background: url(https://imgur.com/RDCPDZf.jpg);
+    }
+    .game_header {
+        background: linear-gradient(to bottom, #df8191, #df8191);
+        height: 75px; 
+        box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    .game_header h2 {     
+        background: linear-gradient(to bottom, #d03e54, #df8191);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    .inner_window_w_desc {
+		background: linear-gradient(#eadcde, #f0ebeb);
+	}
+    .inner_inner_window h3 {
+        background-color: #ffcfcf;
+        background: linear-gradient(to bottom, #ffcfcf, #eadcde);
+    }
+    #inner_window_2 {
+        background-repeat: repeat; 
+        height: 494px; 
+    }
+    #inner_window_3 { 
+        background-repeat: repeat; 
+        height: 494px;
+    }
+    #overall_details_container.done h4 {
+        font-size: 14px !important;
+    }
+
+    #menu_container, #overall_result_container {
+        background: none;
+    }
+
+    #closeButton {
+            background: none;
+            border: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        /* Override xp.css focus and hover styles */
+        #closeButton:focus,
+        #closeButton:active,
+        #closeButton:hover {
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+
+    h3 {
+      font-size:1.17em!important;
+    }
+  
+    label {
+      font-size:1em!important;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif!important;
+    }
+  body {display:flex!important;}
+  
+  #game_window{max-width:1000px;}
+  
+  #election_id_button {
+    margin-top: 3em;
+  }
+  `;
+  document.head.appendChild(styleFix);
+}
+
+if(elec == 12 && storedChar != 12) {
+console.log("forward not back")
+
+corrr = `
+<div style="font-size: 8px; font-family: monospace; color: white;">
+    <h2 style="font-style: normal;">
+      <img src="https://imgur.com/ovwPvlH.jpg" alt="Her Majesty's Campaign Trail" style="margin-top: 2px;">
+    </h2>
+  </div>
+<font id="wittyquote" size="3" color="white">"Whatever the dangers of the action we take, the dangers of inaction are far, far greater"</font>
+`;
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+$("#game_window")[0].style.backgroundColor = "#f0ebeb";
+// "url(https://imgur.com/RDCPDZf.jpg)"
+$("#game_window")[0].style.backgroundSize = "cover"; 
+$(".container")[0].style.backgroundColor = "#ababab";
+document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
 document.body.background = "https://imgur.com/erWHhIe.png";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
