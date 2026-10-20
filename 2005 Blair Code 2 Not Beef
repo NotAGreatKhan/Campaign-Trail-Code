@@ -3618,6 +3618,68 @@ The party leaders are expected to hit the campaign trail next week when Parliame
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/JVHLroo.jpg"})])
 }
 
+else if (quickstats[0] >= 324 && e.player_answers.includes(15248)) {     
+e.pages.push(`
+<h3 style='text-align: center;'>The Downing Street Offices | <i>3rd January, 2006</i></h3>
+<div class="ending-slide tv-fade downing-transcript-style" style="background-color: #f2d3a7; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #d9b279;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<p>
+<img src = "https://imgur.com/dLemoTv.png" alt="DSt. logo" style="height: 50px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">A meeting between the Prime Minister, Tony Blair, and the Chancellor of the Exchequer, Gordon Brown, with Labour Party Pollster, Deborah Mattinson (14:57)</b>
+<br><br>
+[BLAIR] Look, Gordon, we have agreed on the fact I will leave the job this parliamentary term, but I was not elected to sit around worrying about this being taken away from me. This… this is not the thing we were elected to-
+<br><br>
+[BROWN] Tony, from the moment the campaign started, you said to me that this term would be your last term, that you would resign and hand the office over to me. Everyone voted for you understanding that you would not be fighting the next election. Let us not forget this is not even the first time you have delayed on-
+<br><br>
+[BLAIR] No-now hold on-
+<br><br>
+[BROWN] -This. First you said you would only serve two terms, then you said you wanted to resign in 2004 because of Iraq. Now, you want to say that you won’t contest a fourth election. Your numbers are in the gutter, your government is flailing, and your leadership has delivered the slimmest majority we have had yet.
+<br><br>
+[BLAIR] My leadership has delivered the largest majorities in British history, Gordon. The single most transformative agenda since Thatcher. Damnit, I rebuilt this party after loss after loss. And now, after all of this, I cannot let all of this go to waste. My philosophy and legacy will not be destroyed for-
+<br><br>
+[BROWN] -For what, Tony? For what? Half of the party is against you. Half of the government is against you. Most of the country is against you. The media is against you. And if you do not clearly outline a proper fucking timetable to go, I may have to go against you.
+<br><br>
+[BLAIR] Go against me? What are you going to do? I am the one who put you in the Chancellor’s office, I-I am the one who gave you so much leeway to do what you want, Gordon. Resign? Challenge my leadership? What are you going t-
+<br><br>
+[BROWN] If it gets to that point, I may just have to! I will-
+<br><br>
+[BLAIR] You’re seriously going to do that? Go on then, damnit! Do it! Go ahead, and stop everything we are trying to do-!
+<br><br>
+[BROWN] I am not going to stop everything we have bloody built, Tony. I always have been, and always will be New Labour! You know that better than anyone else… You haven’t forgotten when we were in opposition, I know you haven’t.
+<br><br>
+[BLAIR] I never doubted you are not New Labour, but I am supposed to be the one at helm, Gordon. I am supposed to be the guiding philosophy of this new government… But…
+<br><br>
+[BROWN] But what, Tony?
+<br><br>
+[BLAIR] But, it won’t be my vision anymore if I’m not leader of the party. It can’t be my vision if-i-if I’m not Prime Minister.
+<br><br>
+[BROWN] You’ve been Prime Minister for nearly 9 years, Tony. Look around you, going on for longer is not sustainable.
+<br><br>
+[BLAIR] I know how long you have wanted to say that to me. [Pause] I’m going to be out by the end of the year, aren’t I?
+<br><br>
+[BROWN] I would say that’s up to you, but many of the backbenchers would disagree [Pause] How does September sound?
+<br><br>
+[BLAIR] God, you’re being pushy [Chuckles] By this winter definitely, we’ll sort something out.
+<br><br>
+[MATTINSON] Gordon? Could I have you for a second, some new polling on you is ready.
+<br><br>
+[BROWN] Yes, I’ll be right over.
+<br><br>
+[BLAIR] Take care, Gordon.
+<br><br>
+[BROWN] …You too, Tony
+<br><br>
+End of Transcript
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/Kl5WTgd.jpg"})])
+}
+
 else if (quickstats[0] >= 324 && e.player_answers.includes(14366)) {     
 e.pages.push(`
 <h3 style='text-align: center;'>BBC News | <i>23rd August, 2006</i></h3>
