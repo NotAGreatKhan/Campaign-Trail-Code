@@ -2992,6 +2992,19 @@ if (!document.getElementById("ending-slide-style")) {
                 font-size: 16px;
             }
 
+                .ending-slide.downing-transcript-style {
+                font-family: Courier;
+                background-color: #f2d3a7;
+                color: #202122;
+                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto;
+                border: 1px solid #d9b279;
+                box-shadow: none;
+                line-height: 1.75;
+                font-size: 16px;
+            }
+
             `;
             document.head.appendChild(style);
         }
