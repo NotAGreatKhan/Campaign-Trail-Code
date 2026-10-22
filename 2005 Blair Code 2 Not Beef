@@ -3625,7 +3625,7 @@ e.pages.push(`
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
 <div style="display: flex; align-items: center;">
 <p>
-<img src = "https://imgur.com/dLemoTv.png" alt="DSt. logo" style="height: 50px; margin-right: 12px;">
+<img src = "https://imgur.com/dLemoTv.png" alt="DSt. logo" style="height: 30px; margin-right: 12px;">
 <br><br>
 <b style="font-size: 1.2em;">A meeting between the Prime Minister, Tony Blair, and the Chancellor of the Exchequer, Gordon Brown, with Labour Party Pollster, Deborah Mattinson (14:57)</b>
 <br><br>
