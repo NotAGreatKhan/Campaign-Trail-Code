@@ -3769,7 +3769,7 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/eOpChfP.jpg
 
 else if (quickstats[0] >= 324 && e.player_answers.includes(14034) && e.player_answers.includes(14388)) {     
 e.pages.push(`
-<h3 style='text-align: center;'>The Guardian | <i>9th November, 2005</i></h3>
+<h3 style='text-align: center;'>BBC News | <i>16th May, 2007</i></h3>
 <div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
 <div style="display: flex; align-items: center;">
@@ -3803,9 +3803,9 @@ The Individual Freedoms Act will take effect in September of this year, which wi
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/GNGygon.jpg"})])
 }
 
-else if (quickstats[0] >= 324) {     
+else if (quickstats[0] >= 324 && !e.player_answers.includes(14034)) {     
 e.pages.push(`
-<h3 style='text-align: center;'>BBC News | <i>16th May, 2007</i></h3>
+<h3 style='text-align: center;'>The Guardian | <i>9th November, 2005</i></h3>
 <div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
@@ -3855,6 +3855,40 @@ e.pages.push(`
 </p>
 `)
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg"})])
+}
+
+else if (quickstats[0] >= 324) {
+e.pages.push(`
+<h3 style='text-align: center,'>The Guardian | <i>1st September, 2006</i></h3>
+<div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<p>
+<img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">Labour MPs send letters en-masse requesting Blair to resign</b>
+<br><br>
+In a new escalation in the battle for the future of No. 10, over 40 Labour backbencher MPs have signed a letter to the Prime Minister’s office asking Tony Blair to resign within one year. According to answers from some of these MPs we were able to gather that the complaints centre around supposed broken promises to Gordon Brown on when Blair was going to leave the office.
+<br><br>
+This comes after Blair gave an interview centred around the possibility of him resigning, but only ended up reinforcing the fact that he would not outline a clear timetable for his exit.
+<br><br>
+The central grievances of the MPs more aligned with the Brown faction have grown dissatisfied with the direction of governance under the beleaguered Prime MInister. One MP said that the government's recent initiatives on national security and student finance were “infringing upon the civil liberties of ordinary Brits and compromising the future of Britain’s young.” The very slim margins of votes in recent legislation has been used by anti-Blair MPs to suggest that his government is no longer stable enough to command the full confidence of the House of Commons.
+<br><br>
+Another key issue among members of Parliament, who are more in favour of Brown, is the continued stalling that Blair has engaged in on a departure timetable. Blair initially believed that two terms was plenty of time for a leader in the modern world. Then he contemplated resigning in 2004 amidst personal stress and overseas trouble. Finally, he is now standing his ground and has thus far not caved to the demands of the MPs who have written to him. Since his decision to seek a third term in the 2005 election, his government has faced close vote after close vote in large part due to the same MPs mentioned above. 
+<br><br>
+Contrastingly, many in the government have reacted with repulsion to the attempt to destabilise the Prime Minister’s standing. With Chief of Staff Johnathan Powell labelling the junior ministers about to resign as “suicide bombers” in leaked memos with the cabinet.
+<br><br>
+There is a long history of animosity between the so-called ‘Blair/Brown camps’ since the beginning of the New Labour government. Infamously, Alastair Campbell remarked of Brown having “psychological problems” in their first term. Last year, Ed Balls labelled the constant questions about Blair continuing on as Prime Minister as “evasive, a way to not just get on with the job.”
+<br><br>
+Failing the letter campaign, there are rumours that junior minister Tom Watson is going to resign to pile on pressure on the New Labour poster child to leave No. 10.
+<br><br>
+The government has become fiercely divided into two camps, the so-called “Blairites” and the “Brownites” in nearly all government departments. Even though a firm – if reduced – majority was won, the in-fighting has only continued since then.
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/mKfL8BP.jpg"})])
 }
 
 else if (aa[0].candidate == 12565) {
