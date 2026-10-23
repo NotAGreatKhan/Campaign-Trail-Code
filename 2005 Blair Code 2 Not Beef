@@ -3756,9 +3756,45 @@ Other parties who contested the election included the English Democrats and Chri
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/eOpChfP.jpg"})])
 }
 
-else if (quickstats[0] >= 324) {     
+else if (quickstats[0] >= 324 && e.player_answers.includes(14034) && e.player_answers.includes(14388)) {     
 e.pages.push(`
 <h3 style='text-align: center;'>The Guardian | <i>9th November, 2005</i></h3>
+<div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div style="display: flex; align-items: center;">
+<p>
+<img src = "https://imgur.com/hCpdbg1.png" alt="BBC logo" style="height: 44px; margin-right: 12px;">
+<br><br>
+<b style="font-size: 1.2em;">Liberty celebrates victory in royal assent of Individual Freedoms Bill</b>
+<br><br>
+On the second reading today, Parliament voted in favour of legislation codifying individuals’ right to contest any usage of surveillance technology on them.
+<br><br>
+For multiple years, the pressure group Liberty has campaigned for the government to prevent an “excessive and pervasive spread of the surveillance state” and endorsed legislation proposed by backbenchers and frontbenchers alike.
+<br><br>
+This year, they have supported a bill proposed by the government which would build upon the Human Rights Act by explicitly stating that the government cannot introduce new surveillance technology in local regions without local approval. By a strong margin, the House of Commons has passed the bill and it will now make its way to the House of Lords. Outside Westminster, protestors on behalf of Liberty cheered as the vote totals were announced by the Commons Speaker.
+<br><br>
+The director of Liberty Sharmishta Chakrabarti praised Parliament for “defending the right of ordinary people against an attempted spying operation.” She argued that this was a “monumental first step” in combatting the “rise of the surveillance state.”
+<br><br>
+In the House, the Prime Minister said the bill is “an excellent step towards ensuring that the rights we have enshrined, for ordinary citizens, the right to a private side of life, and the need for people to keep trust with each other, and the government.” His government began the process for introducing the Individual Freedoms Bill in late 2006, even in spite of <u><a href="#" style="color:#5185b1;”>former ministers being personally opposed</a></u> to it.
+<br><br>
+The bill found some unusual silence from the Opposition benches, with Shadow Home Secretary David Davis only criticising the bill for its lack of action on ‘Law and Order’ and otherwise supporting its principle of civil liberties. The government did face fire from the public when Labour MP Andy Burnham was criticised for <u><a href="#" style="color:#5185b1;”>potentially insinuating a relationship</a></u> between Davis and Chakrabarti in a speech earlier this month. The Liberty director soon condemned the speech, and Burnham apologised after.
+<br><br>
+Multiple of Blair’s former ministers, including most notably David Blunkett, who said that Parliament made an “erroneous error in voting for this” adding that “all this would do is limit the government’s ability to guarantee the security of the people, in an age where the threat of terror is stronger than ever.”
+<br><br>
+Critics of the policy would argue further that it would clog up the courts, as judges would face many lawsuits from citizens feeling paranoid about what the government knows about them, distracting them from more serious terror cases. As the government seems set to continue its course with <u><a href="#" style="color:#5185b1;”>reducing the number of days terror suspects can be held without detention</a></u> for, some see the government as sacrificing security when it can ill afford to do so.
+<br><br>
+The Individual Freedoms Act will take effect in September of this year, which will be soon after the new Prime Minister takes over from Blair.
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/GNGygon.jpg"})])
+}
+
+else if (quickstats[0] >= 324) {     
+e.pages.push(`
+<h3 style='text-align: center;'>BBC News | <i>16th May, 2007</i></h3>
 <div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <p>
 <img src = "https://imgur.com/yAU04XO.png" alt="Guardian logo" style="height: 44px; margin-right: 12px;">
