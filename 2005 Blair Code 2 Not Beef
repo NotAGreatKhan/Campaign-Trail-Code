@@ -600,7 +600,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
-    if(ans == 15764){
+    if(ans == 15768){
       Cred -= 1;
       console.log("You have impacted your credibility");
     }
@@ -1927,7 +1927,17 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
    }
    }
   }
-
+   if(e.player_answers.includes(14034) && e.player_answers.includes(14388)){
+    campaignTrail_temp.questions_json[20] = {
+    "model": "campaign_trail.question",
+    "pk": 15772,
+    "fields": {
+        "priority": 0,
+        "description": "__",
+        "likelihood": 1
+      }
+    }
+  }
     if(e.player_answers.includes(14801)){
     campaignTrail_temp.questions_json[22] = {
     "model": "campaign_trail.question",
