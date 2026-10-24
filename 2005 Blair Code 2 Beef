@@ -30569,7 +30569,7 @@ Other parties who contested the election included the English Democrats and Chri
 </div>
 </div>
 `)
-e.executable.push([1, (() => {e.image = e.image = "https:
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/ggaSzpg.jpg"})])
 }
 
 else if (quickstats[0] >= 324) {
