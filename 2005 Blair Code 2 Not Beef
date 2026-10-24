@@ -688,6 +688,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("You have impacted your credibility");
     }
 
+    // Question 21 – Blunkett resigning
+    if(ans == 15773 || ans == 15795){
+      Cred += 1;
+      console.log("You have impacted your credibility");
+    }
+    if(ans == 15783){
+      Cred -= 1;
+      console.log("You have impacted your credibility");
+    }
+
     if(ans == 15565 || ans == 15571 || ans == 15604 || ans == 15623){
       Cred -= 1;
       console.log("You have impacted your credibility"); 
@@ -1052,6 +1062,16 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
       console.log("Do they like you now?");
     }
     if(ans == 15020){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+
+    // Question 21 – Blunkett Resigning
+    if(ans == 15789){
+      Wins += 1;
+      console.log("Do they like you now?");
+    }
+    if(ans == 15795){
       Wins += 1;
       console.log("Do they like you now?");
     }
@@ -1933,7 +1953,7 @@ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length
     "pk": 15772,
     "fields": {
         "priority": 0,
-        "description": "__",
+        "description": "Peter Mandelson’s resignation was a bitter one of scandal, but the one today is bitter due to policy disagreement. Your Home Secretary since 2001, David Blunkett, is hanging up the cap and wishing to leave his post. He grumbles about your government shifting on the War on Terror and national security, grumbling to your face that “you have neglected the safety of the public when they needs it most.” He hints at Jack Straw considering resigning himself too. So Tony, It seems a cabinet reshuffle is in order. How will you play your deck of cards from the cabinet?",
         "likelihood": 1
       }
     }
@@ -3777,7 +3797,7 @@ Other parties who contested the election included the English Democrats and Chri
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/eOpChfP.jpg"})])
 }
 
-else if (quickstats[0] >= 324 && e.player_answers.includes(14034) && e.player_answers.includes(14388)) {     
+else if (quickstats[0] >= 324 && e.player_answers.includes(14034) && e.player_answers.includes(14388) && (e.player_answers.includes(15789) ||e.player_answers.includes(15795))) {     
 e.pages.push(`
 <h3 style='text-align: center;'>BBC News | <i>16th May, 2007</i></h3>
 <div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
