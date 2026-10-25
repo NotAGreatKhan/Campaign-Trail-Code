@@ -409,7 +409,7 @@ function ensureStylesheet(url, id) {
 	document.head.appendChild(link);
 }
 
-ensureStylesheet('https://unpkg.com/xp.css', 'unpkg-xpcss');
+ensureStylesheet('https://unpkg.com/7.css', 'unpkg-7css');
 
 function ensureMetaViewport() {
     if (!document.querySelector('meta[name="viewport"]')) {
