@@ -309,7 +309,7 @@ vpTableHistorical = {
 
 HistEV = {
     "The Conservative Party" : "306",
-    "The Labour Party" : "355",
+    "The Labour Party" : "258",
     "The Liberal Democrats" : "62",
     "The Scotland National Party" : "6",
     "The Democratic Unionist Party" : "9",
@@ -325,7 +325,7 @@ HistEV = {
 
 HistHexcolour=["#4848a8","#e84545","#ffb752","#fff81f","#c37c18","#a8ea90","#3a741b","#01ad73","#89e1a4","#a433e1","#71d82c","#b0b0b0","#dedede"];
 HistName=["The Conservative Party","The Labour Party","The Liberal Democrats","The Scotland National Party","The Democratic Unionist Party","Sinn Féin","Plaid Cymru","SDLP","The Ulster Unionist Party","The UK Independence Party","The Green Party","Independent/Others","The Speaker"];
-HistEV=["306","198","62","6","9","5","3","3","1","0","0","1","1"];
+HistEV=["306","258","57","6","9","5","3","3","1","0","0","1","1"];
 HistPV=["9,552,376","8,785,942","5,985,704","412,267","241,856","174,530","174,838","125,626","127,414","605,973","257,758","689,073","15,153"];
 HistPVP=["35.2%","32.4%","22.0%","1.5%","0.9%","0.6%","0.6%","0.5%","0.5%","2.2%","1.0%","2.5%","0.1%"];
 
@@ -387,7 +387,7 @@ $("#game_window")[0].style.backgroundColor = "#f0ebeb";
 // "url(https://imgur.com/RDCPDZf.jpg)"
 $("#game_window")[0].style.backgroundSize = "cover"; 
 $(".container")[0].style.backgroundColor = "#ababab";
-document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
+document.getElementById("header").src = "https://imgur.com/gp8MS62.jpg";
 document.body.background = "https://imgur.com/erWHhIe.png";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
