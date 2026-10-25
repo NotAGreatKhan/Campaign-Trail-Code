@@ -30532,7 +30532,7 @@ The Bill will go to the third reading later this week, where the vote of the Com
 </div>
 </div>
 `)
-e.executable.push([1, (() => {e.image = e.image = "https:
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/ggaSzpg"})])
 }
 
 else if (quickstats[0] >= 324 && e.player_answers.includes(14367)) {
