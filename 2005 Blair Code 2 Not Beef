@@ -1,3 +1,13 @@
+campaignTrail_temp.cyoa = true;
+
+function getQuestionNumberFromPk(pk) {
+    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
+}
+
+e = campaignTrail_temp
+
+
+
 // pk -> index lookup for questions
 let _questionIdxByPk = null;
 
@@ -115,14 +125,6 @@ function updateFeedback(pkValue, newFeedback) {
 }
 
 
-
-campaignTrail_temp.cyoa = true;
-
-function getQuestionNumberFromPk(pk) {
-    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
-}
-
-e = campaignTrail_temp
 
 var Wins = 0;
 var Resign = 0;
