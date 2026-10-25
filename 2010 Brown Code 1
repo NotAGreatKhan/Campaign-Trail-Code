@@ -360,7 +360,7 @@ jet_data = {
 campaignTrail_temp.modBoxTheme = {
   "header_color": "#962222",
   "header_text_color": "#f5f3f4",
-  "header_image_url": "https://imgur.com/PbhtXkz.jpg",
+  "header_image_url": "https://imgur.com/gLHeoq8.jpg",
   "description_text_color": "#000000",
   "description_background_color": "#f5f3f4",
   "main_color": "#4b4646",
@@ -381,14 +381,14 @@ corrr = `
 `;
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#444446";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = "#f0ebeb";
-// "url(https://imgur.com/RDCPDZf.jpg)"
+$("#game_window")[0].style.backgroundColor = "#444446";
+
 $("#game_window")[0].style.backgroundSize = "cover"; 
-$(".container")[0].style.backgroundColor = "#ababab";
+$(".container")[0].style.backgroundColor = "#383636";
 document.getElementById("header").src = "https://imgur.com/gp8MS62.jpg";
-document.body.background = "https://imgur.com/erWHhIe.png";
+document.body.background = "https://imgur.com/5iW7LMv.jpg";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
 
@@ -445,7 +445,7 @@ const css = `
     }
 
     #game_window {
-        background: url(https://imgur.com/RDCPDZf.jpg);
+        background: url(https://imgur.com/kL0O9IB.jpg);
     }
     .game_header {
         background: linear-gradient(to bottom, #592929, #592929);
@@ -609,6 +609,7 @@ function createBanner(url, sibling, isLeft) {
 }
 
 
+
 // Tooltips
 function addDynamicCSS() {
     var css = `
@@ -759,9 +760,9 @@ if(localStorage.getItem("variable")){
     <p>
           <img src="https://imgur.com/7OYhnkP.jpg" width="750">
     <br>
-	      Britain enters the new millennium, blissful and hopeful. But a new era shall bring with it its own myriad of challenges that, although braced for, never seem as close as they could be.
+	  Britain enters the new millennium, blissful and hopeful. But a new era shall bring with it its own myriad of challenges that, although braced for, never seem as close as they could be.
     <br><br>
-	      Until they are, and they're right in your face.
+	  Until they are, and they're right in your face.
     <br><br>
           When Prime Minister Tony Blair won the 2001 election, it was – all things considered – a rather muted night. There was no great mountain to climb, and no calamitous obstacle he had to triumph over. And the civil service of which he revered so much, gave him nothing but gridlock and the gnashing of his teeth. There was always something <i>itching</i> at him. Something he still needed to conquer to seal his name in the history books.
     <br><br>
@@ -1448,18 +1449,14 @@ setupMusicPlayer();
 
 
 // Default Election Popups
-e.ElectionPopup = "Election night has, at last, arrived. We shall now see the decision of the people – as Big Ben of the Clock Tower tolls. Best of luck to you, you'll certainly need it."
-e.LossPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have determined your end. Click 'OK' to view the choice of the nation, and may life provide a more just conclusion than politics already has."
-e.WinPopup = "The hand of fate has cast its die, and the numbers it enscribed unto you, have enshrined upon you your hard-fought victory. Click 'OK' to view the choice of the nation, and may the colosseum of public life continue to provide you bountiful success."
-e.SelAnsContText = "Just, make sure to select something first, alright?"
+e.ElectionPopup = "Finally, election night is here. Tuck in for the night, it will be tense."
+e.LossPopup = "The election is lost, despite how much you pleaded for it to be the opposite. Click 'OK' to view the choice of Britain, hopefully life will bless you more than politics has."
+e.WinPopup = "We have won. At last, we have won. Click 'OK' to view the choice of Britain, and keep up the fight."
+e.SelAnsContText = "We will wait for the answer you pick."
 
 
 // Achievements
 campaignTrail_temp.achievements = {
     // Opponents
-     "A Loser Of The Night" : { 
-        "image" : "https://imgur.com/hB7tcCc.png",
-        "description" : "Defeat an Employment Secretary",
-        "cannotBeCheated" : true
-     },
+
 }
