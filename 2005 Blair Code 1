@@ -1245,6 +1245,11 @@ const css = `
     .campaign_trail_start_emphasis {
         background-color: #F8F8F8;
     }
+    #overall_details_container {
+        overflow: auto;
+        height: 475px;
+    }
+
     #game_window {
         background: url(https://imgur.com/RDCPDZf.jpg);
     }
