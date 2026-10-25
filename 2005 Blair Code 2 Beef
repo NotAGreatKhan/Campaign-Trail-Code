@@ -30623,7 +30623,7 @@ e.pages.push(`
 "Exactly. We’ll make it look like we’ve got a plan while we figure out what that plan actually is. Welcome to politics, mate."
 </p>
 `)
-e.executable.push([1, (() => {e.image = e.image = "https:
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/ggaSzpg.jpg"})])
 }
 
 else if (aa[0].candidate == 12565) {
