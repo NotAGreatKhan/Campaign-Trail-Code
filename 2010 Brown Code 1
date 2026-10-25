@@ -353,19 +353,19 @@ jet_data = {
     "bannerImageUrl": "https://imgur.com/WFzudpB.jpg",
     "backgroundImageUrl": "https://imgur.com/erWHhIe.png",
     "endingTextColor": "#000000",
-    "customQuote": "\"Whatever the dangers of the action we take, the dangers of inaction are far, far greater\"",
+    "customQuote": "\"I give my thanks to you, the British people\"",
     "gameTitle": "Her Majesty’s Campaign Trail"
 }
 
 campaignTrail_temp.modBoxTheme = {
-  "header_color": "#b71d1d",
+  "header_color": "#962222",
   "header_text_color": "#f5f3f4",
   "header_image_url": "https://imgur.com/PbhtXkz.jpg",
   "description_text_color": "#000000",
   "description_background_color": "#f5f3f4",
-  "main_color": "#b0a9a9",
-  "secondary_color": "#702b30",
-  "ui_text_color": "#FFFFFF"
+  "main_color": "#4b4646",
+  "secondary_color": "#211e35",
+  "ui_text_color": "#ffffff"
 }
 
 
@@ -439,6 +439,11 @@ const css = `
     .campaign_trail_start_emphasis {
         background-color: #F8F8F8;
     }
+    #overall_details_container {
+        overflow: auto;
+        height: 475px;
+    }
+
     #game_window {
         background: url(https://imgur.com/RDCPDZf.jpg);
     }
