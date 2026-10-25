@@ -30473,17 +30473,17 @@ e.pages.push(`
 <br><br>
 <a href="#" style="color:#c70000;"><b>Matthew Tempest</b>, <i>political correspondent</i></a>
 <br><br>
-Outside the door of No. 10 this morning, Gordon Brown announced he would be dissolving parliament in the next week for a general election just over a year after the last one which saw the Labour Party <u><a href="#" style="color:#ee2929;”>lose its parliamentary majority</a></u> to the Conservatives and the Liberal Democrats. In his speech today, he made the case for Labour to be given a proper mandate to enact his “vision for a future fair for all” while he attacked the Conservatives and Liberal Democrats for “obstructing the policies of the government chosen by the people.”
+Outside the door of No. 10 this morning, Gordon Brown announced he would be dissolving parliament in the next week for a general election just over a year after the last one which saw the Labour Party <u><a href="#" style="color:#ee2929;">lose its parliamentary majority</a></u> to the Conservatives and the Liberal Democrats. In his speech today, he made the case for Labour to be given a proper mandate to enact his “vision for a future fair for all” while he attacked the Conservatives and Liberal Democrats for “obstructing the policies of the government chosen by the people.”
 <br><br>
 After a string of legislative failures led to the resignation of Tony Blair and the ascension of Brown, he experienced a polling bump unanticipated by those even within his own cabinet. After a lengthy cabinet meeting, he decided to go ahead with the early ending of this parliament to take his case to the country. His reputation as the “Iron Chancellor” has given him a large amount of political capital to be bold with his commitments to the public
 <br><br>
-However, it is far from certain whether his gamble will pay off. The local elections last month saw Labour <u><a href="#" style="color:#ee2929;”>lose nearly two dozen councils</a></u> to the Tories – with a few doled out to the Lib Dems. The polls on many issues the government has tackled, from law and order, to the war on terror and foreign policy, have declined to net disapproval. With the policy of identity cards still to be rolled out, Brown will have to reckon with how much he wishes to tie himself to the Blair legacy.
+However, it is far from certain whether his gamble will pay off. The local elections last month saw Labour <u><a href="#" style="color:#ee2929;">lose nearly two dozen councils</a></u> to the Tories – with a few doled out to the Lib Dems. The polls on many issues the government has tackled, from law and order, to the war on terror and foreign policy, have declined to net disapproval. With the policy of identity cards still to be rolled out, Brown will have to reckon with how much he wishes to tie himself to the Blair legacy.
 <br><br>
 The Conservatives have taken this development with eagerness, taking to the stump ahead of time as parliament gets ready for any last business before the campaign can get underway. They pledged to bring an end to the “floundering mess of a government and bring the party of stability back in power.” Labour felt that they only needed to point to their record on the economy (Brown’s wheelhouse) compared to the last government to shut down their claim.
 <br><br>
 The Shadow Chancellor honed in on the government’s troubled challenges with the economy. Osborne called Brown’s rollback of the 2p income tax cut “incredibly short-sighted and irresponsible.” He has also faced questions about potential rises in fuel duty which he has not yet ruled out. Though, he has kept them frozen multiple times in the past (2001 and 2004), so it is unlikely he will do it before the election.
 <br><br>
-Menzies Campbell said in his opening speech that he is “fired up and ready to go to take on the Labour government and continue to show that we are a serious force on the stage.” His party has pledged to cut taxes on middle-income voters and roll back the government’s restrictions on individual liberties with recent anti-terror legislation, hoping to take advantage of voters who felt they were a violation of their personal rights.
+Menzies Campbell said in his opening speech that he is “fired up and ready to go to take on the Labour government and continue to show that we are a serious force on the stage.” His party has pledged to cut taxes on middle-income voters and roll backthe government’s restrictions on individual liberties with recent anti-terror legislation, hopingto take advantage of voters who felt they were a violation of their personal rights.
 <br><br>
 Early polling indicates Labour having a deficit of 3% to the Conservatives at 32 to 35%, with the Liberal Democrats rising at 24%. “I accept that this is going to be a tough fight”, one Labour MP said, “but we cannot afford to let up now that we have a new Prime Minister and a platform that has delivered the strongest and most stable economy in a generation.”
 <br><br>
@@ -30509,19 +30509,19 @@ e.pages.push(`
 <br><br>
 Prime Minister Blair set out plans for private GPs and healthcare organisations to become integrated into the NHS at large. This policy, having been anticipated since the moves by No. 10 to liberalise the public sector in schools and hospitals, is now coming into force.
 <br><br>
-<b><a style="color:#464646;”>‘Freedom to choose’</a></b>
+<b><a style="color:#464646;">‘Freedom to choose’</a></b>
 <br><br>
 The government argues that the policy will give the health service more room to serve lower-income families, while reducing the tax burden for the taxpayer in the long-term. The Prime Minister argued that the allowance of private doctors into more appointments and consultations – along with the previous liberalisations for surgeries – would “give the NHS the freedom and capacity it needs to continue to fully operate public care for the health of the people of Britain.”
 <br><br>
 For other politicians on the right of the debate, they argue that it will be positive for bringing down costs and allowing for higher quality care. Such figures often point to the success of the Nordic countries as examples. Though a counter to this is that their populations are significantly smaller, and therefore these systems bring much less cost to the customer..
 <br><br>
-<b><a style="color:#464646;”>‘Large hill to climb’</a></b>
+<b><a style="color:#464646;">‘Large hill to climb’</a></b>
 <br><br>
 The reaction by Labour backbencher MPs in particular has been strong in its opposition, with them arguing that such moves will only snowball into the eventual privatisation of the Service. Rumours from within Westminster have circulated that the Deputy Prime Minister, John Prescott, will tender his resignation to the Prime Minister if they go through with the bill – something that is appearing more and more likely.
 <br><br>
 In regards to the reaction from the public, the backlash has been notable. A recent Ipsos poll conducted on the subject shows over 70% of those questioned disapprove of the action taken by the government. With only 12% stating that they support the action, it will take a lot of effort from the government to successfully make the case to the public, as indicated by the Health Secretary. Prime Minister Blair himself has acknowledged that there will be a “large hill to climb” to get this deal through.
 <br><br>
-<b><a style="color:#464646;”>‘Sleeping dogs’</a></b>
+<b><a style="color:#464646;">‘Sleeping dogs’</a></b>
 <br><br>
 This may not be the done-deal that No. 10 is hoping for, even if it does pass. This bill would be anathema to the crew with No. 11, and could provide further reasoning for the Labour backbenches to push for Chancellor Gordon Brown to replace Tony Blair as Prime Minister.
 <br><br>
@@ -30532,7 +30532,7 @@ The Bill will go to the third reading later this week, where the vote of the Com
 </div>
 </div>
 `)
-e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/ggaSzpg"})])
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/ggaSzpg.jpg"})])
 }
 
 else if (quickstats[0] >= 324 && e.player_answers.includes(14367)) {
@@ -30548,13 +30548,13 @@ e.pages.push(`
 <br><br>
 He quit as an MP in June over the government's plans to detain terror suspects for up to 42 days. The Tory MP said voters had delivered a “stunning message to the government”. The turnout was 34%, with the Green Party coming second on 1,758 votes and the English Democrats third on 1,714. The Lib Dems and Labour did not stand.
 <br><br>
-<b><a style="color:#464646;”>‘Ransacked’</a></b>
+<b><a style="color:#464646;">‘Ransacked’</a></b>
 <br><br>
 Mr Davis said: “We have fired a shot across the bows of Tony Blair’s arrogant, arbitrary and authoritarian government.” He said he would return to Westminster on Monday with a mandate “to fight Tony Blair’s vision of Big Brother Britain tooth and nail, to stop 42 days in its tracks, to prevent the disaster of ID cards before it happens, to protect our personal privacy from being ransacked by the ever-intrusive state”.
 <br><br>
 He admitted it was unlikely that Tory leader David Cameron would invite him back onto the party's front bench. “I took on board that I would lose my shadow cabinet post and probably my shadow cabinet future,” he said. “I accept that.” Mr Davis denied that he would become a “single-issue campaigner”, but promised to “put a lot of effort” into opposing 42 days' detention. He told BBC Radio 4’s Today programme: “The trouble with this is, from the beginning, the Westminster village hasn't really understood that someone wants to take a stand on a matter of principle that may have some effect on themselves.”
 <br><br>
-<b><a style="color:#464646;”>‘Vain stunt’</a></b>
+<b><a style="color:#464646;">‘Vain stunt’</a></b>
 <br><br>
 Mr Davis also accused the government of “spectacular cowardice” for not fielding a candidate. But, Home Office minister Tony McNulty called the by-election had been “a vain stunt that became and remains a farce”. He added: “Labour never believed a parliamentary by-election should be held at taxpayers' expense to resolve tensions at the top of the Conservative Party.”
 <br><br>
@@ -30640,13 +30640,13 @@ e.pages.push(`
 <br><br>
 With the recent local elections being generally unremarkable for the Conservatives, No 10 has pushed forward with their flagship manifesto policy: immigration restriction.
 <br><br>
-This comes after the government <u><a href="#" style="color:#e06666;”>walked back from its original intention to</a></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
+This comes after the government <u><a href="#" style="color:#e06666;">walked back from its original intention to</a></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
 <br><br>
-The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><a href="#" style="color:#e06666;”>labelled as “cowardly”</a></u>, according to leaked memos.
+The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><a href="#" style="color:#e06666;">labelled as “cowardly”</a></u>, according to leaked memos.
 <br><br>
-Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><a href="#" style="color:#e06666;”>using the 7/7 attacks last year</a></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
+Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><a href="#" style="color:#e06666;">using the 7/7 attacks last year</a></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
 <br><br>
-Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><a href="#" style="color:#e06666;”>in the latest budget</a></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
+Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><a href="#" style="color:#e06666;">in the latest budget</a></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
 <br><br>
 It remains to be seen if the bill will survive today’s vote. But, if the protests outside Whitehall are of any indication, it won’t go down quietly.
 </div>
@@ -30869,7 +30869,7 @@ If history is a guide, the ruling elite might once again fail the Iraq people wi
 </p>
 </div>
 `)
-e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/_______.jpg"})])
+e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/HIVIe6r.jpg"})])
 }
 
 else if (e.player_answers.includes(14680)) {
@@ -30914,11 +30914,11 @@ e.pages.push(`
 <br><br>
 Markets today have continued the trend of selling off the pound, as the global financial crisis deepens worldwide. With the Bank of England deciding to cut rates by 1.50% (the largest single reduction this century so far), anxieties in markets have only deepened about the weakening of the British currency.
 <br><br>
-Chancellor Milburn has not yet commented on the situation in regards to the Euro. In his stead, Gordon Brown has insisted time and time again that the UK will not resort to any bailouts via the Euro to try and solve the issue. After <u><a href="#" style="color:#ee2929;”>our paper exposed</a></u> the breakdown of talks between the mentally strained Alan Milburn and the Bank of Scotland, the government has switched to
+Chancellor Milburn has not yet commented on the situation in regards to the Euro. In his stead, Gordon Brown has insisted time and time again that the UK will not resort to any bailouts via the Euro to try and solve the issue. After <u><a href="#" style="color:#ee2929;">our paper exposed</a></u> the breakdown of talks between the mentally strained Alan Milburn and the Bank of Scotland, the government has switched to
 <br><br>
-In America, the President-Elect Barack Obama, and his Treasury Secretary nominee Timothy Geithner, both stressed that only <u><a href="#" style="color:#ee2929;”>radical intervention</a></u> from their federal government can help rescue the situation. Given how large their new filibuster-proof senate majority is, many in Democrat circles are hopeful that they will have the political capital to recover more banks so that they do not share the same fate as Lehman Brothers and the Bank of Scotland.
+In America, the President-Elect Barack Obama, and his Treasury Secretary nominee Timothy Geithner, both stressed that only <u><a href="#" style="color:#ee2929;">radical intervention</a></u> from their federal government can help rescue the situation. Given how large their new filibuster-proof senate majority is, many in Democrat circles are hopeful that they will have the political capital to recover more banks so that they do not share the same fate as Lehman Brothers and the Bank of Scotland.
 <br><br>
-Recent polling conducted by <u><a href="#" style="color:#ee2929;”>Ipsos and YouGov</a></u> spared no expense in confirming how little sympathy this crisis has garnered for the Euro itself. If anything, it has only further confirmed the public’s aversion to any form of entry into the Eurozone in the long foreseeable future. In the last PMQs before the Christmas holidays, David Cameron and Shadow Chancellor Osborne went for an attack on Labour’s handling of the financial crash, saying “When will the Prime Minister admit that all of his experience as Chancellor has been for naught, that all of the postering and statements on the economy has only led to blunder after blunder, with the British people paying for it with every pound they have?”
+Recent polling conducted by <u><a href="#" style="color:#ee2929;">Ipsos and YouGov</a></u> spared no expense in confirming how little sympathy this crisis has garnered for the Euro itself. If anything, it has only further confirmed the public’s aversion to any form of entry into the Eurozone in the long foreseeable future. In the last PMQs before the Christmas holidays, David Cameron and Shadow Chancellor Osborne went for an attack on Labour’s handling of the financial crash, saying “When will the Prime Minister admit that all of his experience as Chancellor has been for naught, that all of the postering and statements on the economy has only led to blunder after blunder, with the British people paying for it with every pound they have?”
 <br><br>
 In response, Brown touted his “large and radical” bailout plan which averted the worst catastrophe. He then alluded to the upcoming G20 summit early next year (which the UK will be hosting). Tellingly, he sidestepped the issue of the pound and how it is being reacted to in the financial centre of London.
 <br><br>
@@ -30932,7 +30932,7 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/w4eIrmF.png
 
 else if (iraq == 0) {
 e.pages.push(`
-<h3 style='text-align: center;'>Financial TImes | <i>31st January, 2025</i></i></h3>
+<h3 style='text-align: center;'>Financial TImes | <i>31st January, 2025</i></h3>
 <div class="ending-slide tv-fade financial-times-style" style="background-color: #fff1e5; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
 <div style="display: flex; align-items: center;">
@@ -35157,17 +35157,17 @@ e.pages.push(`
 <br><br>
 <a href="#" style="color:#c70000;"><b>Matthew Tempest</b>, <i>political correspondent</i></a>
 <br><br>
-Outside the door of No. 10 this morning, Gordon Brown announced he would be dissolving parliament in the next week for a general election just over a year after the last one which saw the Labour Party <u><a href="#" style="color:#ee2929;”>lose its parliamentary majority</a></u> to the Conservatives and the Liberal Democrats. In his speech today, he made the case for Labour to be given a proper mandate to enact his “vision for a future fair for all” while he attacked the Conservatives and Liberal Democrats for “obstructing the policies of the government chosen by the people.”
+Outside the door of No. 10 this morning, Gordon Brown announced he would be dissolving parliament in the next week for a general election just over a year after the last one which saw the Labour Party <u><a href="#" style="color:#ee2929;">lose its parliamentary majority</a></u> to the Conservatives and the Liberal Democrats. In his speech today, he made the case for Labour to be given a proper mandate to enact his “vision for a future fair for all” while he attacked the Conservatives and Liberal Democrats for “obstructing the policies of the government chosen by the people.”
 <br><br>
 After a string of legislative failures led to the resignation of Tony Blair and the ascension of Brown, he experienced a polling bump unanticipated by those even within his own cabinet. After a lengthy cabinet meeting, he decided to go ahead with the early ending of this parliament to take his case to the country. His reputation as the “Iron Chancellor” has given him a large amount of political capital to be bold with his commitments to the public
 <br><br>
-However, it is far from certain whether his gamble will pay off. The local elections last month saw Labour <u><a href="#" style="color:#ee2929;”>lose nearly two dozen councils</a></u> to the Tories – with a few doled out to the Lib Dems. The polls on many issues the government has tackled, from law and order, to the war on terror and foreign policy, have declined to net disapproval. With the policy of identity cards still to be rolled out, Brown will have to reckon with how much he wishes to tie himself to the Blair legacy.
+However, it is far from certain whether his gamble will pay off. The local elections last month saw Labour <u><a href="#" style="color:#ee2929;">lose nearly two dozen councils</a></u> to the Tories – with a few doled out to the Lib Dems. The polls on many issues the government has tackled, from law and order, to the war on terror and foreign policy, have declined to net disapproval. With the policy of identity cards still to be rolled out, Brown will have to reckon with how much he wishes to tie himself to the Blair legacy.
 <br><br>
 The Conservatives have taken this development with eagerness, taking to the stump ahead of time as parliament gets ready for any last business before the campaign can get underway. They pledged to bring an end to the “floundering mess of a government and bring the party of stability back in power.” Labour felt that they only needed to point to their record on the economy (Brown’s wheelhouse) compared to the last government to shut down their claim.
 <br><br>
 The Shadow Chancellor honed in on the government’s troubled challenges with the economy. Osborne called Brown’s rollback of the 2p income tax cut “incredibly short-sighted and irresponsible.” He has also faced questions about potential rises in fuel duty which he has not yet ruled out. Though, he has kept them frozen multiple times in the past (2001 and 2004), so it is unlikely he will do it before the election.
 <br><br>
-Menzies Campbell said in his opening speech that he is “fired up and ready to go to take on the Labour government and continue to show that we are a serious force on the stage.” His party has pledged to cut taxes on middle-income voters and roll back the government’s restrictions on individual liberties with recent anti-terror legislation, hoping to take advantage of voters who felt they were a violation of their personal rights.
+Menzies Campbell said in his opening speech that he is “fired up and ready to go to take onthe Labour government and continue to show that we are a serious force on the stage.” His party has pledged to cut taxes on middle-income voters and roll back the government’s restrictions on individual liberties with recent anti-terror legislation, hoping to take advantage of voters who felt they were a violation of their personal rights.
 <br><br>
 Early polling indicates Labour having a deficit of 3% to the Conservatives at 32 to 35%, with the Liberal Democrats rising at 24%. “I accept that this is going to be a tough fight”, one Labour MP said, “but we cannot afford to let up now that we have a new Prime Minister and a platform that has delivered the strongest and most stable economy in a generation.”
 <br><br>
@@ -35255,19 +35255,19 @@ e.pages.push(`
 <br><br>
 Prime Minister Blair set out plans for private GPs and healthcare organisations to become integrated into the NHS at large. This policy, having been anticipated since the moves by No. 10 to liberalise the public sector in schools and hospitals, is now coming into force.
 <br><br>
-<b><a style="color:#464646;”>‘Freedom to choose’</a></b>
+<b><a style="color:#464646;">‘Freedom to choose’</a></b>
 <br><br>
 The government argues that the policy will give the health service more room to serve lower-income families, while reducing the tax burden for the taxpayer in the long-term. The Prime Minister argued that the allowance of private doctors into more appointments and consultations – along with the previous liberalisations for surgeries – would “give the NHS the freedom and capacity it needs to continue to fully operate public care for the health of the people of Britain.”
 <br><br>
 For other politicians on the right of the debate, they argue that it will be positive for bringing down costs and allowing for higher quality care. Such figures often point to the success of the Nordic countries as examples. Though a counter to this is that their populations are significantly smaller, and therefore these systems bring much less cost to the customer..
 <br><br>
-<b><a style="color:#464646;”>‘Large hill to climb’</a></b>
+<b><a style="color:#464646;">‘Large hill to climb’</a></b>
 <br><br>
 The reaction by Labour backbencher MPs in particular has been strong in its opposition, with them arguing that such moves will only snowball into the eventual privatisation of the Service. Rumours from within Westminster have circulated that the Deputy Prime Minister, John Prescott, will tender his resignation to the Prime Minister if they go through with the bill – something that is appearing more and more likely.
 <br><br>
 In regards to the reaction from the public, the backlash has been notable. A recent Ipsos poll conducted on the subject shows over 70% of those questioned disapprove of the action taken by the government. With only 12% stating that they support the action, it will take a lot of effort from the government to successfully make the case to the public, as indicated by the Health Secretary. Prime Minister Blair himself has acknowledged that there will be a “large hill to climb” to get this deal through.
 <br><br>
-<b><a style="color:#464646;”>‘Sleeping dogs’</a></b>
+<b><a style="color:#464646;">‘Sleeping dogs’</a></b>
 <br><br>
 This may not be the done-deal that No. 10 is hoping for, even if it does pass. This bill would be anathema to the crew with No. 11, and could provide further reasoning for the Labour backbenches to push for Chancellor Gordon Brown to replace Tony Blair as Prime Minister.
 <br><br>
@@ -35294,13 +35294,13 @@ e.pages.push(`
 <br><br>
 He quit as an MP in June over the government's plans to detain terror suspects for up to 42 days. The Tory MP said voters had delivered a “stunning message to the government”. The turnout was 34%, with the Green Party coming second on 1,758 votes and the English Democrats third on 1,714. The Lib Dems and Labour did not stand.
 <br><br>
-<b><a style="color:#464646;”>‘Ransacked’</a></b>
+<b><a style="color:#464646;">‘Ransacked’</a></b>
 <br><br>
 Mr Davis said: “We have fired a shot across the bows of Tony Blair’s arrogant, arbitrary and authoritarian government.” He said he would return to Westminster on Monday with a mandate “to fight Tony Blair’s vision of Big Brother Britain tooth and nail, to stop 42 days in its tracks, to prevent the disaster of ID cards before it happens, to protect our personal privacy from being ransacked by the ever-intrusive state”.
 <br><br>
 He admitted it was unlikely that Tory leader David Cameron would invite him back onto the party's front bench. “I took on board that I would lose my shadow cabinet post and probably my shadow cabinet future,” he said. “I accept that.” Mr Davis denied that he would become a “single-issue campaigner”, but promised to “put a lot of effort” into opposing 42 days' detention. He told BBC Radio 4’s Today programme: “The trouble with this is, from the beginning, the Westminster village hasn't really understood that someone wants to take a stand on a matter of principle that may have some effect on themselves.”
 <br><br>
-<b><a style="color:#464646;”>‘Vain stunt’</a></b>
+<b><a style="color:#464646;">‘Vain stunt’</a></b>
 <br><br>
 Mr Davis also accused the government of “spectacular cowardice” for not fielding a candidate. But, Home Office minister Tony McNulty called the by-election had been “a vain stunt that became and remains a farce”. He added: “Labour never believed a parliamentary by-election should be held at taxpayers' expense to resolve tensions at the top of the Conservative Party.” 
 <br><br>
@@ -35337,13 +35337,13 @@ This year, they have supported a bill proposed by the government which would bui
 <br><br>
 The director of Liberty Sharmishta Chakrabarti praised Parliament for “defending the right of ordinary people against an attempted spying operation.” She argued that this was a “monumental first step” in combatting the “rise of the surveillance state.”
 <br><br>
-In the House, the Prime Minister said the bill is “an excellent step towards ensuring that the rights we have enshrined, for ordinary citizens, the right to a private side of life, and the need for people to keep trust with each other, and the government.” His government began the process for introducing the Individual Freedoms Bill in late 2006, even in spite of <u><a href="#" style="color:#5185b1;”>former ministers being personally opposed</a></u> to it.
+In the House, the Prime Minister said the bill is “an excellent step towards ensuring that the rights we have enshrined, for ordinary citizens, the right to a private side of life, and the need for people to keep trust with each other, and the government.” His government began the process for introducing the Individual Freedoms Bill in late 2006, even in spite of <u><a href="#" style="color:#5185b1;">former ministers being personally opposed</a></u> to it.
 <br><br>
-The bill found some unusual silence from the Opposition benches, with Shadow Home Secretary David Davis only criticising the bill for its lack of action on ‘Law and Order’ and otherwise supporting its principle of civil liberties. The government did face fire from the public when Labour MP Andy Burnham was criticised for <u><a href="#" style="color:#5185b1;”>potentially insinuating a relationship</a></u> between Davis and Chakrabarti in a speech earlier this month. The Liberty director soon condemned the speech, and Burnham apologised after.
+The bill found some unusual silence from the Opposition benches, with Shadow Home Secretary David Davis only criticising the bill for its lack of action on ‘Law and Order’ and otherwise supporting its principle of civil liberties. The government did face fire from the public when Labour MP Andy Burnham was criticised for <u><a href="#" style="color:#5185b1;">potentially insinuating a relationship</a></u> between Davis and Chakrabarti in a speech earlier this month. The Liberty director soon condemned the speech, and Burnham apologised after.
 <br><br>
 Multiple of Blair’s former ministers, including most notably David Blunkett, who said that Parliament made an “erroneous error in voting for this” adding that “all this would do is limit the government’s ability to guarantee the security of the people, in an age where the threat of terror is stronger than ever.”
 <br><br>
-Critics of the policy would argue further that it would clog up the courts, as judges would face many lawsuits from citizens feeling paranoid about what the government knows about them, distracting them from more serious terror cases. As the government seems set to continue its course with <u><a href="#" style="color:#5185b1;”>reducing the number of days terror suspects can be held without detention</a></u> for, some see the government as sacrificing security when it can ill afford to do so.
+Critics of the policy would argue further that it would clog up the courts, as judges would face many lawsuits from citizens feeling paranoid about what the government knows about them, distracting them from more serious terror cases. As the government seems set to continue its course with <u><a href="#" style="color:#5185b1;">reducing the number of days terror suspects can be held without detention</a></u> for, some see the government as sacrificing security when it can ill afford to do so.
 <br><br>
 The Individual Freedoms Act will take effect in September of this year, which will be soon after the new Prime Minister takes over from Blair.
 </p>
@@ -35382,7 +35382,7 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/yoiAaak.jpg
 
 else if (quickstats[0] >= 324 && e.player_answers.includes(14034)) {
 e.pages.push(`
-<h3 style='text-align: center,'>Behind the scenes on the Minister of Education</h3>
+<h3 style='text-align: center;'>Behind the scenes on the Minister of Education</h3>
 <p>
 "Tony, the election's in the bag, but the chatter's already started about your focus on education. Everyone’s calling you the 'Minister of Education' now. So, what's the grand plan? How are we really going to transform the system?"
 <br><br>
@@ -35410,7 +35410,7 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/BPNYUvZ.jpg
 
 else if (quickstats[0] >= 324) {
 e.pages.push(`
-<h3 style='text-align: center,'>The Guardian | <i>1st September, 2006</i></h3>
+<h3 style='text-align: center;'>The Guardian | <i>1st September, 2006</i></h3>
 <div class="ending-slide tv-fade guardian-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
 <div style="display: flex; align-items: center;">
@@ -35444,7 +35444,7 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/mKfL8BP.jpg
 
 else if (aa[0].candidate == 12565) {
 e.pages.push(`
-<h3 style='text-align: center,'>The Daily Mirror | <i>20th September, 2006</i></h3>
+<h3 style='text-align: center;'>The Daily Mirror | <i>20th September, 2006</i></h3>
 <div class="ending-slide tv-fade daily-mirror-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
 <div style="display: flex; align-items: center;">
@@ -35456,13 +35456,13 @@ e.pages.push(`
 <br><br>
 With the recent local elections being generally unremarkable for the Conservatives, No 10 has pushed forward with their flagship manifesto policy: immigration restriction.
 <br><br>
-This comes after the government <u><a href="#" style="color:#e06666;”>walked back from its original intention to</a></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
+This comes after the government <u><a href="#" style="color:#e06666;">walked back from its original intention to</a></u> withdraw from the Geneva conventions. Though, ever the audacious politician he is, Prime Minister Howard has continued to push ahead with withdrawal from the ECHR. Despite his unabashed support for what he calls a “needed measure for a new time of needed border enforcement”.
 <br><br>
-The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><a href="#" style="color:#e06666;”>labelled as “cowardly”</a></u>, according to leaked memos.
+The policy itself appears to be just as polarising as it was in the election last year. Support from the general public has always been dicey with the legislation snaking its way through parliament right now. Even though the government has tested the waters with leaving multiple cornerstone European institutions, not even Howard or Davis have dared to float the possibility of leaving the Customs Union of the EU. Something that members of the Tory right-wing <u><a href="#" style="color:#e06666;">labelled as “cowardly”</a></u>, according to leaked memos.
 <br><br>
-Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><a href="#" style="color:#e06666;”>using the 7/7 attacks last year</a></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
+Support for the bill in the House of Commons is unclear as well. Due to the nature of parliamentary arithmetic, it is unlikely that the government can safely pass it without a deal of sorts with opposition parties. If Howard and Secretary Davis can thread the needle between <u><a href="#" style="color:#e06666;">using the 7/7 attacks last year</a></u> to shore up the security hawks – <i>and</i> convince moderates on the other side to bring it over the finish line, they may just make history in tearing down the Blair legacy.
 <br><br>
-Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><a href="#" style="color:#e06666;”>in the latest budget</a></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
+Speaking of the opposition, the Labour party has taken no time to ruthlessly attack the legislation, with Brown labelling it a “cruel attack on the many who make this country great”. The spats on immigration in the House have gotten intense. The only semblance of bipartisan consensus the Howard government has gotten on the subject was increased funding to border checks <u><a href="#" style="color:#e06666;">in the latest budget</a></u> which only narrowly passed. The Liberal Democrats too, have also wasted no time in getting some kicks in, with Leader Campbell plainly stating the bill goes “much too far”.
 <br><br>
 It remains to be seen if the bill will survive today’s vote. But, if the protests outside Whitehall are of any indication, it won’t go down quietly.
 </div>
@@ -35474,7 +35474,7 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/IKStDf4.jpg
 
 else if (Porty == 1 && aa[0].candidate == 12565) {
 e.pages.push(`
-<h3 style='text-align: center,'>The Portillo Interview | YouTube</h3>
+<h3 style='text-align: center;'>The Portillo Interview | YouTube</h3>
 <p>
 <b style="font-size: 1.2em;">thatcheritescot</b> <button>Subscribe</button>
 <br>
@@ -35524,7 +35524,7 @@ e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/OIEc7pW.jpg
 
 else if (Ken == 1 && aa[0].candidate == 12565) {
 e.pages.push(`
-<h3 style='text-align: center,'><i>BBC News</i> | <i>9th June, 2009</i></h3>
+<h3 style='text-align: center;'>BBC News | <i>9th June, 2009</i></h3>
 <div class="ending-slide tv-fade bbc-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
 <div style="display: flex; align-items: center;">
@@ -35732,11 +35732,11 @@ e.pages.push(`
 <br><br>
 Markets today have continued the trend of selling off the pound, as the global financial crisis deepens worldwide. With the Bank of England deciding to cut rates by 1.50% (the largest single reduction this century so far), anxieties in markets have only deepened about the weakening of the British currency.
 <br><br>
-Chancellor Milburn has not yet commented on the situation in regards to the Euro. In his stead, Gordon Brown has insisted time and time again that the UK will not resort to any bailouts via the Euro to try and solve the issue. After <u><a href="#" style="color:#ee2929;”>our paper exposed</a></u> the breakdown of talks between the mentally strained Alan Milburn and the Bank of Scotland, the government has switched to 
+Chancellor Milburn has not yet commented on the situation in regards to the Euro. In his stead, Gordon Brown has insisted time and time again that the UK will not resort to any bailouts via the Euro to try and solve the issue. After <u><a href="#" style="color:#ee2929;">our paper exposed</a></u> the breakdown of talks between the mentally strained Alan Milburn and the Bank of Scotland, the government has switched to 
 <br><br>
-In America, the President-Elect Barack Obama, and his Treasury Secretary nominee Timothy Geithner, both stressed that only <u><a href="#" style="color:#ee2929;”>radical intervention</a></u> from their federal government can help rescue the situation. Given how large their new filibuster-proof senate majority is, many in Democrat circles are hopeful that they will have the political capital to recover more banks so that they do not share the same fate as Lehman Brothers and the Bank of Scotland.
+In America, the President-Elect Barack Obama, and his Treasury Secretary nominee Timothy Geithner, both stressed that only <u><a href="#" style="color:#ee2929;">radical intervention</a></u> from their federal government can help rescue the situation. Given how large their new filibuster-proof senate majority is, many in Democrat circles are hopeful that they will have the political capital to recover more banks so that they do not share the same fate as Lehman Brothers and the Bank of Scotland.
 <br><br>
-Recent polling conducted by <u><a href="#" style="color:#ee2929;”>Ipsos and YouGov</a></u> spared no expense in confirming how little sympathy this crisis has garnered for the Euro itself. If anything, it has only further confirmed the public’s aversion to any form of entry into the Eurozone in the long foreseeable future. In the last PMQs before the Christmas holidays, David Cameron and Shadow Chancellor Osborne went for an attack on Labour’s handling of the financial crash, saying “When will the Prime Minister admit that all of his experience as Chancellor has been for naught, that all of the postering and statements on the economy has only led to blunder after blunder, with the British people paying for it with every pound they have?”
+Recent polling conducted by <u><a href="#" style="color:#ee2929;">Ipsos and YouGov</a></u> spared no expense in confirming how little sympathy this crisis has garnered for the Euro itself. If anything, it has only further confirmed the public’s aversion to any form of entry into the Eurozone in the long foreseeable future. In the last PMQs before the Christmas holidays, David Cameron and Shadow Chancellor Osborne went for an attack on Labour’s handling of the financial crash, saying “When will the Prime Minister admit that all of his experience as Chancellor has been for naught, that all of the postering and statements on the economy has only led to blunder after blunder, with the British people paying for it with every pound they have?”
 <br><br>
 In response, Brown touted his “large and radical” bailout plan which averted the worst catastrophe. He then alluded to the upcoming G20 summit early next year (which the UK will be hosting). Tellingly, he sidestepped the issue of the pound and how it is being reacted to in the financial centre of London.
 <br><br>
@@ -35750,7 +35750,7 @@ e.executable.push([2, (() => {e.image = e.image = "https://imgur.com/w4eIrmF.png
 
 else if (iraq == 0) {
 e.pages.push(`
-<h3 style='text-align: center;'>Financial TImes | <i>31st January, 2025</i></i></h3>
+<h3 style='text-align: center;'>Financial TImes | <i>31st January, 2025</i></h3>
 <div class="ending-slide tv-fade financial-times-style" style="background-color: #fff1e5; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
 <div style="display: flex; align-items: center;">
