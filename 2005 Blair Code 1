@@ -1363,24 +1363,29 @@ if (summaryDiv) {
     .campaign_trail_start_emphasis {
         background-color: #F8F8F8;
     }
+    #overall_details_container {
+        overflow: auto;
+        height: 475px;
+    }
+
     #game_window {
-        background: url(https://imgur.com/RDCPDZf.jpg);
+        background: url(https://imgur.com/kL0O9IB.jpg);
     }
     .game_header {
-        background: linear-gradient(to bottom, #df8191, #df8191);
+        background: linear-gradient(to bottom, #592929, #592929);
         height: 75px; 
         box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 2px 5px rgba(0, 0, 0, 0.4);
     }
     .game_header h2 {     
-        background: linear-gradient(to bottom, #d03e54, #df8191);
+        background: linear-gradient(to bottom, #962222, #592929);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
     .inner_window_w_desc {
-		background: linear-gradient(#eadcde, #f0ebeb);
+		background: linear-gradient(#4b4646, #363153);
 	}
     .inner_inner_window h3 {
         background-color: #ffcfcf;
-        background: linear-gradient(to bottom, #ffcfcf, #eadcde);
+        background: linear-gradient(to bottom, #363153, #4b4646);
     }
     #inner_window_2 {
         background-repeat: repeat; 
@@ -1447,14 +1452,14 @@ corrr = `
 `;
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#d03e54";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#f0ebeb";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#444446";
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = "#f0ebeb";
-// "url(https://imgur.com/RDCPDZf.jpg)"
+$("#game_window")[0].style.backgroundColor = "#444446";
+
 $("#game_window")[0].style.backgroundSize = "cover"; 
-$(".container")[0].style.backgroundColor = "#ababab";
-document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
-document.body.background = "https://imgur.com/erWHhIe.png";
+$(".container")[0].style.backgroundColor = "#383636";
+document.getElementById("header").src = "https://imgur.com/gp8MS62.jpg";
+document.body.background = "https://imgur.com/5iW7LMv.jpg";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
 
