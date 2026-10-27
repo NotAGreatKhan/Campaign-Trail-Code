@@ -1265,8 +1265,8 @@ const css = `
 		background: linear-gradient(#4b4646, #363153);
 	}
     .inner_inner_window h3 {
-        background-color: #ffcfcf;
-        background: linear-gradient(to bottom, #363153, #4b4646);
+        background-color: #663037;
+        background: linear-gradient(to bottom, #663037, #706565);
     }
     #inner_window_2 {
         background-repeat: repeat; 
