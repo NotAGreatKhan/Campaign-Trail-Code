@@ -300,6 +300,66 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
+        "pk": 150,
+        "fields": {
+            "first_name": "Tony C. L.",
+            "last_name": "Blair",
+            "election": 14,
+            "party": "Her Majesty’s Terminal Prime Minister",
+            "state": "Sedgefield",
+            "priority": 9,
+            "description": "“Sometimes the only way you conquer the pull of power is to set it down.”
+                            <br><br>
+                            <b>Anthony Charles Lynton Blair</b> took a sip from the poison chalice of decisiveness in the wars of today, and he is paying the price.
+                            <br><br>
+                            The New Labour poster child was brought into power with the red wave of his electoral dynamism. His Faustian bargain gave away complete political independence, in exchange for the keys to No 10 – provided it is a popular residency. The other end of the bargain now stares at him directly in the face.
+                            <br><br>
+                            With his pledge to not contest a fourth election in 2005, he has knowingly signed away any dreams of serving for 13 years (and even that is naïve). As much as he would wish to focus on sole governance in his last term, he will face a barrage from cynical MPs who backed him to the hilt just last term. He is not only battling to change Britain for the future, he will be <i>battling for his very survival</i>.
+                            <br><br>
+                            <span style=\"float:right\">God help him, because the party certainly won’t.</span>",
+            "color_hex": "#00C100",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "https://imgur.com/nTpHjkd.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15706,
+        "fields": {
+            "first_name": "J. Gordon",
+            "last_name": "Brown",
+            "election": 14,
+            "party": "Her Majesty’s New Prime Minister",
+            "state": "Kirkcaldy and Cowdenbeath",
+            "priority": 1,
+            "description": "“I remember words that have stayed with me since my childhood and which matter a great deal to me today, my school motto: ‘I will try my utmost’”
+                            <br><br>
+                            <b>James Gordon Brown</b> was robbed baby-and-cradle of his destiny. The greyed son of the manse bellows to the choir like no one else. The Labour singers see in him the salvation the party needs to hold on to power. Where his predecessor could reach out to the darling centrists Tories, Brown is as Labour as it comes. Blair’s Cheshire smile and media savvy were more attractive to Brown’s own sermon audience in 1994, and he has craved his boss’ job since. The prince couldn’t wait for the king to die.
+                            <br><br>
+                            The crown, now, belongs to him. He has Scottish grit, a sharp grasp of policy as Iron Chancellor, and a New Labour agenda tackling inequality, public service function, and social welfare. If he can show clarity in judgement, and make the case for Labour and against the Conservatives, he may just make Labour the real party of governance.
+                            <br><br>
+                            <span style=\"float:right\">After that, only fate can say if he will be elected himself.</span>",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://imgur.com/H8UBi08.jpg",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
         "pk": 143,
         "fields": {
             "first_name": "The",
@@ -455,29 +515,6 @@ campaignTrail_temp.candidate_json = [
             "electoral_loss_message": "'",
             "no_electoral_majority_message": "'",
             "description_as_running_mate": "<p>Besides Fairbanks, Elmer Burkett is the only candidate for Vice President with significant support, and Hughes could attempt to elevate him. Burkett has served as Representative and Senator from Nebraska, striking a moderate course on many of the labor and economic issues of the day. His region is more in favor of peace, vis a vis Europe, as well. Nationally, he is less well-known than Fairbanks.</p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 150,
-        "fields": {
-            "first_name": "Tony C. L.",
-            "last_name": "Blair",
-            "election": 14,
-            "party": "Her Majesty’s Terminal Prime Minister",
-            "state": "Sedgefield",
-            "priority": 9,
-            "description": "'",
-            "color_hex": "#00C100",
-            "secondary_color_hex": "#A1FFA1",
-            "is_active": 0,
-            "image_url": "'",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "'",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -905,29 +942,6 @@ campaignTrail_temp.candidate_json = [
             "election": 14,
             "party": "Party",
             "state": "State",
-            "priority": 1,
-            "description": "Running mate description here.",
-            "color_hex": "#CCCCCC",
-            "secondary_color_hex": null,
-            "is_active": 0,
-            "image_url": "",
-            "electoral_victory_message": "Winner!",
-            "electoral_loss_message": "Loser!",
-            "no_electoral_majority_message": "Majority?",
-            "description_as_running_mate": null,
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 15706,
-        "fields": {
-            "first_name": "J. Gordon",
-            "last_name": "Brown",
-            "election": 14,
-            "party": "Her Majesty’s New Prime Minister",
-            "state": "Kirkcaldy and Cowdenbeath",
             "priority": 1,
             "description": "Running mate description here.",
             "color_hex": "#CCCCCC",
