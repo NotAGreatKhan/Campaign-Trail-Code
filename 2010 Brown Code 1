@@ -1544,7 +1544,7 @@ if(localStorage.getItem("variable")){
     contentEl.innerHTML = generatePrologueHTML(CONFIG);
 
     if (gameStart) {
-        gameStart.innerHTML = '<strong>Recover the ship.</strong>';
+        gameStart.innerHTML = '<strong>Steer the ship.</strong>';
         const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
         if (window.jQuery) $('#game_start').on('click', clearHeight);
         else gameStart.addEventListener('click', clearHeight);
@@ -1555,15 +1555,17 @@ if(localStorage.getItem("variable")){
     <p>
           <img src="https://imgur.com/bbXJhbm.jpg" width="750">
     <br>
-	      The United Kingdom escapes the height of the War on Terror beleaguered. Her fears of national security have given way to a trade of civil liberties, and people are starting to notice. The country is feeling tensions in society, as she does in the economy with certain banking firms feeling the pinch.
+	      The United Kingdom escapes the height of the War on Terror beleaguered. Her fears of national security have given way to a trade of civil liberties, and people are starting to notice. The country is feeling tensions in society, as it does in the economy with certain banking firms feeling the pinch.
     <br><br>
-          Tensions within the cabinet, and the war with Iraq has cratered the government’s standing. Any notions of the Blair-Brown Pact have become dilpaidated beyond repair. It may as well be open conflict between their factions in the various ministerial departments, with the now-embattled Prime Minister Tony Blair has contempt for everyone in his way: the civil service, the cabinet, <i>Gordon Brown</i>.
+          As said economy shows signs of slowing down, the Labour government will have to deal with an issue more seriously than they have ever had to before. The treasury, lead by the so-called Iron Chancellor, has to steward this changing landscape – whether its boss is Brown, or someone else.
+    <br><br>
+          Tensions within the cabinet, and the war with Iraq has cratered the government’s standing. Any notions of the Blair-Brown Pact have become dilpaidated beyond repair. It may as well be open conflict between their factions in the various ministerial departments, with the now-embattled Prime Minister Tony Blair has contempt for everyone in his way: the civil service, the cabinet, the media (he was meant to have that), and <i>Gordon Brown</i>.
     <br><br>
           Tony Blair knows that his time may just be running out. If he wants to leave the office with any shred of dignity, he may have his labour cut out for him. No doubt, Gordon Brown will grabbing the biggest knife he can find.
     <br><br>
-          I of course wish you all the best, but there will still be a storm ahead in <u>2010: The Change We Choose</u>
+          I, of course, wish you all the best, but there will be a storm ahead in <u>2010: The Change We Choose</u>
     <br><br>
-          Grab the captain_s wheel, Prime Minster.
+          So grab the captain’s wheel, Prime Minster.
     </p>
     `;
     }
