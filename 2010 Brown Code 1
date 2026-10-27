@@ -275,11 +275,796 @@ campaignTrail_temp.temp_election_list = [
 ]
 
 campaignTrail_temp.candidate_json = [
-    
+ {
+        "model": "campaign_trail.candidate",
+        "pk": 142,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Labour Party",
+            "election": 14,
+            "party": "Democrat",
+            "state": "New Jersey",
+            "priority": 1,
+            "description": "<p>Woodrow Wilson won in a 1912 landslide, and has passed an array of legislation in his first term. In 1916, however, foreign affairs are beginning to dominate. A loud minority of Democrats are aggressively anti-war and expect the same from Wilson. Can Wilson make the case that his passage of an antitrust act, a child labor law, an income tax Amendment, and the Federal Reserve Act, all warrant reelection? His recent remarriage has also fed some gossip.</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/woodrow-wilson-1916.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 1916 election.</h3><p>In spite of a hard-fought challenge from Charles Evans Hughes, you have held on to the Presidency.</p><p>On the domestic front, it appears that your support of labor and progressivism has been rewarded. Internationally, let's all hope that fears of war with Germany prove to be unfounded.</p>",
+            "electoral_loss_message": "<h3>Sorry, you have lost the 1916 election.</h3><p>Maybe 1912 was just an anomaly, brought about by Roosevelt's grandstanding. It has been over 20 years since the Democrats defeated a united Republican Party, and that advantage shows no sign of abating.</p><p>On the domestic front, let's hope that your achievements survive. Internationally, no one can say what might happen next. In a novel move, you have offered to do your part by resigning immediately, rather than waiting until March 4th.</p>",
+            "no_electoral_majority_message": "<h3>No candidate has captured an Electoral College majority.</h3><p>Elections for Congress have also resulted in an even split among members, and it is extremely unclear who might ultimately win this election. Best of luck in what is sure to be a contentious process.</p>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 143,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Conservative Party",
+            "election": 14,
+            "party": "Republican",
+            "state": "New York",
+            "priority": 2,
+            "description": "<p>Charles Evans Hughes is the former Governor of New York. He served on the Supreme Court from 1910, until resigning to accept the Republican Nomination. Hughes is a compromise candidate -- he was serving on the Court during the messy 1912 schism. It will be difficult for Hughes to condemn Wilson's legislation without losing support from progressives such as Roosevelt. Many Republicans also favor an aggressive stance against Germany, while others believe Hughes should finesse the issue.</p>",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/charles-evans-hughes-1916.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 1916 election.</h3><p>After the tumultuous 1912, the natural supremacy of the Republican Party has reasserted itself. The next steps are up to you -- perhaps you can lead the repeal of the Adamson Act, or replace it with something more measured and comprehensive. In regards to Europe, best of luck in whatever may occur over the next four years. Finally, Wilson plans to resign before your March 4th inauguration, so that you might assume the office now.</p>",
+            "electoral_loss_message": "<h3>Sorry, you have lost the 1916 election.</h3><p>Ultimately, the popularity of Woodrow Wilson was just a little much to overcome.</p><p>It appears that Wilson's agenda will remain in effect domestically. In world affairs, it remains to be seen how the situation in Europe will finally resolve itself. As to your own prospects, it is unclear what your next steps will be. The Supreme Court seat you once enjoyed has now been lost for the foreseeable future.</p>",
+            "no_electoral_majority_message": "<h3>No candidate has captured an Electoral College majority.</h3><p>Elections for Congress have also resulted in an even split among members, and it is extremely unclear who might ultimately win this election. Best of luck in what is sure to be a contentious process.</p>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 144,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Liberal Democrats",
+            "election": 14,
+            "party": "Socialist",
+            "state": "Michigan",
+            "priority": 3,
+            "description": "'",
+            "color_hex": "#00C100",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 145,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Scotland National Party",
+            "election": 14,
+            "party": "Prohibition",
+            "state": "Indiana",
+            "priority": 4,
+            "description": "'",
+            "color_hex": "#FFFF00",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 146,
+        "fields": {
+            "first_name": "Alex E. A.",
+            "last_name": "Salmond",
+            "election": 14,
+            "party": "Democrat",
+            "state": "Indiana",
+            "priority": 5,
+            "description": "'",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/thomas-r-marshall-1916.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Thomas R. Marshall has served as Wilson's Vice President since 1913, but the two have had icy relations. However, keeping Marshall on the ticket would preserve party unity and avoid a distracting storyline during the campaign. Marshall was previously the Governor of Indiana and is popular in that state. Politically, he is more moderate than Wilson has been.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 147,
+        "fields": {
+            "first_name": "Ieuan W.",
+            "last_name": "Jones",
+            "election": 14,
+            "party": "Democrat",
+            "state": "Ohio",
+            "priority": 6,
+            "description": "'",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/newton-baker-1916.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Newton Baker has served as Secretary of War since the early part of 1916. Some advisors are encouraging Wilson to replace Marshall with Baker. The two have a much better working relationship, and Baker was formerly the mayor of Cleveland, Ohio. His nomination may help in Ohio, but it would also create headlines and arouse some Marshall supporters.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 148,
+        "fields": {
+            "first_name": "Nick W. P.",
+            "last_name": "Clegg",
+            "election": 14,
+            "party": "Republican",
+            "state": "Indiana",
+            "priority": 7,
+            "description": "'",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/charles-w-fairbanks-1916.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Charles W. Fairbanks has served as a Senator from Indiana, and as Vice President under Teddy Roosevelt. He was seeking the top of the ticket this year, but has agreed to serve as Vice President a second time. Fairbanks supported William Howard Taft during the split in 1912, and would balance the ticket in a more conservative direction.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 149,
+        "fields": {
+            "first_name": "Gerry",
+            "last_name": "Adams",
+            "election": 14,
+            "party": "Republican",
+            "state": "Nebraska",
+            "priority": 8,
+            "description": "'",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://thecampaigntrail.net/static/images/elmer-burkett-1916.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Besides Fairbanks, Elmer Burkett is the only candidate for Vice President with significant support, and Hughes could attempt to elevate him. Burkett has served as Representative and Senator from Nebraska, striking a moderate course on many of the labor and economic issues of the day. His region is more in favor of peace, vis a vis Europe, as well. Nationally, he is less well-known than Fairbanks.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 150,
+        "fields": {
+            "first_name": "Tony C. L.",
+            "last_name": "Blair",
+            "election": 14,
+            "party": "Her Majesty’s Terminal Prime Minister",
+            "state": "Sedgefield",
+            "priority": 9,
+            "description": "'",
+            "color_hex": "#00C100",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 151,
+        "fields": {
+            "first_name": "David D.",
+            "last_name": "Cameron",
+            "election": 14,
+            "party": "Prohibition",
+            "state": "Indiana",
+            "priority": 10,
+            "description": "'",
+            "color_hex": "#FFFF00",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15157,
+        "fields": {
+            "first_name": "",
+            "last_name": "Plaid Cymru",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15265,
+        "fields": {
+            "first_name": "",
+            "last_name": "Sinn Féin",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15319,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Green Party",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15373,
+        "fields": {
+            "first_name": "The",
+            "last_name": "UK Independence Party",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15697,
+        "fields": {
+            "first_name": "The",
+            "last_name": "British National Party",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15211,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Democratic Unionist Party",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15427,
+        "fields": {
+            "first_name": "",
+            "last_name": "SDLP",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15481,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Alliance",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15535,
+        "fields": {
+            "first_name": "",
+            "last_name": "Independent/Others",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15589,
+        "fields": {
+            "first_name": "The",
+            "last_name": "Speaker",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15698,
+        "fields": {
+            "first_name": "Caroline P.",
+            "last_name": "Lucas",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15699,
+        "fields": {
+            "first_name": "Lord Pearson of",
+            "last_name": "Rannoch",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15700,
+        "fields": {
+            "first_name": "Nick J.",
+            "last_name": "Griffin",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15701,
+        "fields": {
+            "first_name": "Peter D.",
+            "last_name": "Robinson",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15702,
+        "fields": {
+            "first_name": "Margaret",
+            "last_name": "Ritchie",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15703,
+        "fields": {
+            "first_name": "David",
+            "last_name": "Ford",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15704,
+        "fields": {
+            "first_name": "Various",
+            "last_name": "Others",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15705,
+        "fields": {
+            "first_name": "John S.",
+            "last_name": "Bercow",
+            "election": 14,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 15706,
+        "fields": {
+            "first_name": "J. Gordon",
+            "last_name": "Brown",
+            "election": 14,
+            "party": "Her Majesty’s New Prime Minister",
+            "state": "Kirkcaldy and Cowdenbeath",
+            "priority": 1,
+            "description": "Running mate description here.",
+            "color_hex": "#CCCCCC",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    }
 ]
 
 campaignTrail_temp.running_mate_json = [
-    
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 96,
+        "fields": {
+            "candidate": 142,
+            "running_mate": 150
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 97,
+        "fields": {
+            "candidate": 143,
+            "running_mate": 151
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 94,
+        "fields": {
+            "candidate": 144,
+            "running_mate": 148
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 92,
+        "fields": {
+            "candidate": 145,
+            "running_mate": 146
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 93,
+        "fields": {
+            "candidate": 15157,
+            "running_mate": 147
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 95,
+        "fields": {
+            "candidate": 15265,
+            "running_mate": 149
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 98,
+        "fields": {
+            "candidate": 15319,
+            "running_mate": 15698
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 99,
+        "fields": {
+            "candidate": 15373,
+            "running_mate": 15699
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 100,
+        "fields": {
+            "candidate": 15697,
+            "running_mate": 15700
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 101,
+        "fields": {
+            "candidate": 15211,
+            "running_mate": 15701
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 102,
+        "fields": {
+            "candidate": 15427,
+            "running_mate": 15702
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 103,
+        "fields": {
+            "candidate": 15481,
+            "running_mate": 15703
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 104,
+        "fields": {
+            "candidate": 15535,
+            "running_mate": 15704
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 105,
+        "fields": {
+            "candidate": 15589,
+            "running_mate": 15705
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 106,
+        "fields": {
+            "candidate": 142,
+            "running_mate": 15706
+        }
+    }
 ]
 
 campaignTrail_temp.credits = "<button onclick='credits()'>NoReading, well, and:</button>"
@@ -333,6 +1118,20 @@ campaignTrail_temp.opponents_default_json = [
     {
         "election": 14,
         "candidates": [
+            142,
+            143,
+            144,
+            145,
+            15157,
+            15265,
+            15319,
+            15373,
+            15697,
+            15211,
+            15427,
+            15481,
+            15535,
+            15589
         ]
     }
 ]
@@ -341,6 +1140,20 @@ campaignTrail_temp.opponents_weighted_json = [
     {
         "election": 14,
         "candidates": [
+            142,
+            143,
+            144,
+            145,
+            15157,
+            15265,
+            15319,
+            15373,
+            15697,
+            15211,
+            15427,
+            15481,
+            15535,
+            15589
         ]
     }
 ]
