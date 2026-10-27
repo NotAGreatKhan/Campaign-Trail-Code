@@ -282,8 +282,8 @@ campaignTrail_temp.candidate_json = [
             "first_name": "The",
             "last_name": "Labour Party",
             "election": 14,
-            "party": "Democrat",
-            "state": "New Jersey",
+            "party": "Her Majesty_s Most Loyal Government",
+            "state": "Social Democratic – New Labour",
             "priority": 1,
             "description": "<p>Woodrow Wilson won in a 1912 landslide, and has passed an array of legislation in his first term. In 1916, however, foreign affairs are beginning to dominate. A loud minority of Democrats are aggressively anti-war and expect the same from Wilson. Can Wilson make the case that his passage of an antitrust act, a child labor law, an income tax Amendment, and the Federal Reserve Act, all warrant reelection? His recent remarriage has also fed some gossip.</p>",
             "color_hex": "#0000FF",
@@ -1055,14 +1055,6 @@ campaignTrail_temp.running_mate_json = [
         "fields": {
             "candidate": 15589,
             "running_mate": 15705
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 106,
-        "fields": {
-            "candidate": 142,
-            "running_mate": 15706
         }
     }
 ]
