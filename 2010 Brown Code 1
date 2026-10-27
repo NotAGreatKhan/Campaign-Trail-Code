@@ -177,17 +177,6 @@ campaignTrail_temp.global_parameter_json = [
 ]
 
 
-const introTitle = document.querySelector("#inner_window_1 h3");
-  if (introTitle) {
-	introTitle.textContent = "Welcome to the 2005 British General Election";
-  }
-
-document.getElementById("inner_window_1").children[1].innerHTML = `<img src="https://imgur.com/7OYhnkP.jpg" width="645"><br>Britain enters the new millennium, blissful and hopeful. But a new era shall bring with it its own myriad of challenges that, although braced for, never seem as close as they could be.<br>Until they are, and they're right in your face.<br><br>When Prime Minister Tony Blair won the 2001 election, it was – all things considered – a rather muted night. There was no great mountain to climb, or calamitous obstacle he had to triumph over. And the civil service of which he revered so much, gave him nothing but gridlock. There was always something <i>itching at him. Something to secure his legacy for the ages.</i> But no one anticipated the horrors which are stalking in the shadows, ready to unfurl their noir all-consuming wings. For the first time in his political career, Tony may just have to listen to his convictions deep within his gut, and do something he always recoiled at:<br><i>Burn the bridges he spent so long building, in this new fight.</i><br><br>Good luck stewarding Britain in <u>2005: Forward Not Back</u><br>Because by God, you'll need it.<br><img src="https://imgur.com/nsrx8L0.jpg" width="525">`;
-document.styleSheets[0].insertRule(".inner_window_w_desc{ margin:1em 0 0 0.5em !important;padding-top: 0.5em !important;}", 0);
-document.styleSheets[0].insertRule(".inner_window_question{ margin:1em 0 .7em 0.5em !important;padding-top: 0.3em !important;}", 0);
-document.styleSheets[0].insertRule("#main_content_area { height:82% !important;}", 0);
-document.getElementById("game_start").innerHTML = `<strong>Take the reigns.</strong>`;
-
 campaignTrail_temp.election_json = [
      {
         "model": "campaign_trail.election",
@@ -282,7 +271,7 @@ campaignTrail_temp.candidate_json = [
             "first_name": "The",
             "last_name": "Labour Party",
             "election": 14,
-            "party": "Her Majesty_s Most Loyal Government",
+            "party": "Her Majesty’s Most Loyal Government",
             "state": "Social Democratic – New Labour",
             "priority": 1,
             "description": "<p>Woodrow Wilson won in a 1912 landslide, and has passed an array of legislation in his first term. In 1916, however, foreign affairs are beginning to dominate. A loud minority of Democrats are aggressively anti-war and expect the same from Wilson. Can Wilson make the case that his passage of an antitrust act, a child labor law, an income tax Amendment, and the Federal Reserve Act, all warrant reelection? His recent remarriage has also fed some gossip.</p>",
@@ -1550,12 +1539,12 @@ if(localStorage.getItem("variable")){
     // temporary auto resize
     if (gameWindow) gameWindow.style.height = 'auto';
 
-    headingEl.innerHTML = `<h3 style="color: #000000; letter-spacing: 1px">Welcome to the 2005 General Election</h3>`;
+    headingEl.innerHTML = `<h3 style="color: #000000; letter-spacing: 1px">Welcome to the 2010 General Election</h3>`;
     Object.assign(contentEl.style, { marginLeft: CONFIG.margin, width: CONFIG.widthCalc });
     contentEl.innerHTML = generatePrologueHTML(CONFIG);
 
     if (gameStart) {
-        gameStart.innerHTML = '<strong>Take the reigns.</strong>';
+        gameStart.innerHTML = '<strong>Recover the ship.</strong>';
         const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
         if (window.jQuery) $('#game_start').on('click', clearHeight);
         else gameStart.addEventListener('click', clearHeight);
@@ -1564,25 +1553,17 @@ if(localStorage.getItem("variable")){
     function generatePrologueHTML({ titleColor, imageHeight, imageSrc }) {
         return `
     <p>
-          <img src="https://imgur.com/7OYhnkP.jpg" width="750">
+          <img src="https://imgur.com/bbXJhbm.jpg" width="750">
     <br>
-	  Britain enters the new millennium, blissful and hopeful. But a new era shall bring with it its own myriad of challenges that, although braced for, never seem as close as they could be.
+	      The United Kingdom escapes the height of the War on Terror beleaguered. Her fears of national security have given way to a trade of civil liberties, and people are starting to notice. The country is feeling tensions in society, as she does in the economy with certain banking firms feeling the pinch.
     <br><br>
-	  Until they are, and they're right in your face.
+          Tensions within the cabinet, and the war with Iraq has cratered the government’s standing. Any notions of the Blair-Brown Pact have become dilpaidated beyond repair. It may as well be open conflict between their factions in the various ministerial departments, with the now-embattled Prime Minister Tony Blair has contempt for everyone in his way: the civil service, the cabinet, <i>Gordon Brown</i>.
     <br><br>
-          When Prime Minister Tony Blair won the 2001 election, it was – all things considered – a rather muted night. There was no great mountain to climb, and no calamitous obstacle he had to triumph over. And the civil service of which he revered so much, gave him nothing but gridlock and the gnashing of his teeth. There was always something <i>itching</i> at him. Something he still needed to conquer to seal his name in the history books.
+          Tony Blair knows that his time may just be running out. If he wants to leave the office with any shred of dignity, he may have his labour cut out for him. No doubt, Gordon Brown will grabbing the biggest knife he can find.
     <br><br>
-          <i>Something to secure his legacy for the ages.</i> 
+          I of course wish you all the best, but there will still be a storm ahead in <u>2010: The Change We Choose</u>
     <br><br>
-          But no one, and truly <i>no one</i>, anticipated the horrors which are stalking in the shadows, ready to unfurl their raven-black, all-consuming wings. Tony Blair was never a man to throw those beside him to the wabash for any decisive action, but now he may just have to. For the first time in his political career, Tony may just have to listen to his convictions deep within his gut, and do something he always recoiled at:
-    <br><br>
-          <i>Burn the bridges he spent so long building, in this new fight.</i>
-    <br><br>
-          Good luck stewarding Britain in <u>2005: Forward Not Back</u>
-    <br><br>
-          Because by God, you'll need it.
-    <br>
-          <img src="https://imgur.com/nsrx8L0.jpg" width="550">
+          Grab the captain_s wheel, Prime Minster.
     </p>
     `;
     }
