@@ -1,17 +1,24 @@
 const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
-  summaryDiv.style.maxHeight = "none";
-  summaryDiv.style.overflowY = "visible";
+  summaryDiv.style.maxHeight = "310px";
+  summaryDiv.style.overflowY = "auto";
 }
   const styleFix = document.createElement("style");
   styleFix.id = "descriptionLayoutFix";
 styleFix.innerHTML = `
 #election_description_window {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   height: auto;
   min-height: 270px;
+  overflow: hidden;
 }
+
+  #election_image {
+    float: none;
+    flex: 0 0 300px;
+  }
 
   #election_image img {
     width: 300px;
@@ -22,12 +29,16 @@ styleFix.innerHTML = `
 
   #election_summary {
     max-width: 580px;
+    min-width: 0;
     flex-grow: 1;
     overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: normal;
     display: block;
-    min-height: 200px;
+    min-height: 0;
+    max-height: 310px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   #election_description_window > div {
@@ -1351,8 +1362,8 @@ elec = document.getElementById("election_id").value;
 if (elec == 14 && storedChar != 14) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
-  summaryDiv.style.maxHeight = "none";
-  summaryDiv.style.overflowY = "visible";
+  summaryDiv.style.maxHeight = "310px";
+  summaryDiv.style.overflowY = "auto";
 }
   const styleFix = document.createElement("style");
   styleFix.id = "electionThemeFix";
@@ -1471,8 +1482,8 @@ storedChar = elec;
 if (elec == 3 && storedChar != 3) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
-  summaryDiv.style.maxHeight = "none";
-  summaryDiv.style.overflowY = "visible";
+  summaryDiv.style.maxHeight = "310px";
+  summaryDiv.style.overflowY = "auto";
 }
   const styleFix = document.createElement("style");
   styleFix.id = "electionThemeFix";
@@ -1586,8 +1597,8 @@ storedChar = elec;
 if (elec == 6 && storedChar != 6) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
-  summaryDiv.style.maxHeight = "none";
-  summaryDiv.style.overflowY = "visible";
+  summaryDiv.style.maxHeight = "310px";
+  summaryDiv.style.overflowY = "auto";
 }
   const styleFix = document.createElement("style");
   styleFix.id = "electionThemeFix";
@@ -1701,8 +1712,8 @@ storedChar = elec;
 if (elec == 12 && storedChar != 12) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
-  summaryDiv.style.maxHeight = "none";
-  summaryDiv.style.overflowY = "visible";
+  summaryDiv.style.maxHeight = "310px";
+  summaryDiv.style.overflowY = "auto";
 }
   const styleFix = document.createElement("style");
   styleFix.id = "electionThemeFix";
@@ -2267,6 +2278,7 @@ function setupMusicPlayer() {
       "https://imgur.com/8jjrwrt.png",
       "https://audio.jukehost.co.uk/SQ9HYrmYdUCLfa2OGjAzAe19sMZqTrvf"
     );
+
 
   playlist.addSong(song1);
   playlist.addSong(song2);
