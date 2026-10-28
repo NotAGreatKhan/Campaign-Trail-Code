@@ -1196,7 +1196,7 @@ $(".container")[0].style.backgroundColor = "#ababab";
 document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
 document.body.background = "https://imgur.com/erWHhIe.png";
 document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+document.head.insertAdjacentHTML("beforeend", "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>");
 
 //#endcode
 
@@ -1345,17 +1345,17 @@ var gamemodElem = document.getElementById('game_type_id');
 if(initialButton) { // reset theme at main menu
        
 elec = document.getElementById("election_id").value;
-console.log(elec + "   " + storedChar);
 
 
-if (elec == 14) {
+
+if (elec == 14 && storedChar != 14) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
   summaryDiv.style.maxHeight = "none";
   summaryDiv.style.overflowY = "visible";
 }
   const styleFix = document.createElement("style");
-  styleFix.id = "descriptionLayoutFix";
+  styleFix.id = "electionThemeFix";
   styleFix.innerHTML = `
     #announcement {
         display: none;
@@ -1436,6 +1436,7 @@ if (summaryDiv) {
     margin-top: 3em;
   }
   `;
+  document.getElementById("electionThemeFix")?.remove();
   document.head.appendChild(styleFix);
 }
 
@@ -1461,20 +1462,20 @@ $(".container")[0].style.backgroundColor = "#383636";
 document.getElementById("header").src = "https://imgur.com/gp8MS62.jpg";
 document.body.background = "https://imgur.com/5iW7LMv.jpg";
 document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+document.head.insertAdjacentHTML("beforeend", "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>");
 
 storedChar = elec;
 }
 
 
-if (elec == 3) {
+if (elec == 3 && storedChar != 3) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
   summaryDiv.style.maxHeight = "none";
   summaryDiv.style.overflowY = "visible";
 }
   const styleFix = document.createElement("style");
-  styleFix.id = "descriptionLayoutFix";
+  styleFix.id = "electionThemeFix";
   styleFix.innerHTML = `
     #announcement {
         display: none;
@@ -1550,10 +1551,11 @@ if (summaryDiv) {
     margin-top: 3em;
   }
   `;
+  document.getElementById("electionThemeFix")?.remove();
   document.head.appendChild(styleFix);
 }
 
-else if(elec == 3 && storedChar != 3) {
+if(elec == 3 && storedChar != 3) {
 console.log("ambitions for britain")
 
 corrr = `
@@ -1575,20 +1577,20 @@ $(".container")[0].style.backgroundColor = "#593d14";
 document.getElementById("header").src = "https://imgur.com/czIXgZ4.jpg";
 document.body.background = "https://imgur.com/erWHhIe.png";
 document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+document.head.insertAdjacentHTML("beforeend", "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>");
 
 storedChar = elec;
 }
 
 
-if (elec == 6) {
+if (elec == 6 && storedChar != 6) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
   summaryDiv.style.maxHeight = "none";
   summaryDiv.style.overflowY = "visible";
 }
   const styleFix = document.createElement("style");
-  styleFix.id = "descriptionLayoutFix";
+  styleFix.id = "electionThemeFix";
   styleFix.innerHTML = `
     #announcement {
         display: none;
@@ -1664,10 +1666,11 @@ if (summaryDiv) {
     margin-top: 3em;
   }
   `;
+  document.getElementById("electionThemeFix")?.remove();
   document.head.appendChild(styleFix);
 }
 
-else if(elec == 6 && storedChar != 6) {
+if(elec == 6 && storedChar != 6) {
 console.log("ambitions for britain")
 
 corrr = `
@@ -1689,20 +1692,20 @@ $(".container")[0].style.backgroundColor = "#787878";
 document.getElementById("header").src = "https://imgur.com/y6gMJMM.jpg";
 document.body.background = "https://imgur.com/erWHhIe.png";
 document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+document.head.insertAdjacentHTML("beforeend", "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>");
 
 storedChar = elec;
 }
 
 
-if (elec == 12) {
+if (elec == 12 && storedChar != 12) {
   const summaryDiv = document.getElementById("election_summary");
 if (summaryDiv) {
   summaryDiv.style.maxHeight = "none";
   summaryDiv.style.overflowY = "visible";
 }
   const styleFix = document.createElement("style");
-  styleFix.id = "descriptionLayoutFix";
+  styleFix.id = "electionThemeFix";
   styleFix.innerHTML = `
     #announcement {
         display: none;
@@ -1778,6 +1781,7 @@ if (summaryDiv) {
     margin-top: 3em;
   }
   `;
+  document.getElementById("electionThemeFix")?.remove();
   document.head.appendChild(styleFix);
 }
 
@@ -1803,13 +1807,13 @@ $(".container")[0].style.backgroundColor = "#ababab";
 document.getElementById("header").src = "https://imgur.com/WFzudpB.jpg";
 document.body.background = "https://imgur.com/erWHhIe.png";
 document.body.style.backgroundSize = "cover"
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
+document.head.insertAdjacentHTML("beforeend", "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>");
 
 storedChar = elec;
 }
 
 }
-}, 1);
+}, 100);
 
 
 const targetContainer = document.getElementById("game_window") || document.body;
@@ -2139,9 +2143,10 @@ const callback = (mutationList, observer) => {
     if(visitWindow == null || visitWindow.classList.contains("done")) {
         return;
     }
+    let titleBar = visitWindow.querySelector("h3");
+    if (!titleBar) return;
     visitWindow.classList.add("done");
     visitWindow.classList.add("window");
-    let titleBar = visitWindow.querySelector("h3");
     titleBar.classList.add("title-bar");
     titleBar.classList.add("title-bar-text")
     titleBar.style.paddingLeft = "3px";
@@ -2202,7 +2207,7 @@ function changePlaylist(newPlaylist) {
   updateUI(playlist);
   const audio = document.getElementById("audio");
   audio.src = playlist.getCurrentSong().audioLink;
-  audio.play();
+  audio.play().catch(err => { if (err.name !== "AbortError" && err.name !== "NotAllowedError") console.warn(err); });
 }
 window.changePlaylist=changePlaylist
 
@@ -2332,7 +2337,7 @@ const infoContainer = document.createElement("div");
   playPauseButton.addEventListener("click", function () {
     const audio = document.getElementById("audio");
     if (audio.paused) {
-      audio.play();
+      audio.play().catch(err => { if (err.name !== "AbortError" && err.name !== "NotAllowedError") console.warn(err); });
       playPauseButton.src = "https://imgur.com/TMvlg4x.png"; // Set the pause image
     } else {
       audio.pause();
@@ -2345,7 +2350,7 @@ nextButton.addEventListener("click", function () {
   updateUI(playlist);
   const audio = document.getElementById("audio");
   audio.src = playlist.getCurrentSong().audioLink;
-  audio.play();
+  audio.play().catch(err => { if (err.name !== "AbortError" && err.name !== "NotAllowedError") console.warn(err); });
 });
 
 prevButton.addEventListener("click", function () {
@@ -2353,7 +2358,7 @@ prevButton.addEventListener("click", function () {
   updateUI(playlist);
   const audio = document.getElementById("audio");
   audio.src = playlist.getCurrentSong().audioLink;
-  audio.play();
+  audio.play().catch(err => { if (err.name !== "AbortError" && err.name !== "NotAllowedError") console.warn(err); });
 });
 
   const progressBarContainer = document.createElement("div");
@@ -2432,7 +2437,7 @@ volumeContainer.appendChild(volumeLabel);
 	  playlist.playNext();
 	  updateUI(playlist);
 	  audio.src = playlist.getCurrentSong().audioLink;
-	  audio.play();
+	  audio.play().catch(err => { if (err.name !== "AbortError" && err.name !== "NotAllowedError") console.warn(err); });
 	});
 
     let currentVolume = 1; // Initial volume
@@ -2453,7 +2458,7 @@ volumeContainer.appendChild(volumeLabel);
   }
 
   document.body.appendChild(audio);
-  audio.play();
+  audio.play().catch(err => { if (err.name !== "AbortError" && err.name !== "NotAllowedError") console.warn(err); });
 
   // Update the UI when the page loads
   updateUI(playlist);
