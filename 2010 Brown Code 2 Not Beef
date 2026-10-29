@@ -1,7 +1,104 @@
+// Courtesy of StrawberryMaster
+// The answer swapper function, taken and
+// modified from 1972: More Than Ever
+function answerSwapper(pk1, pk2, takeEffects = true) {
+    const answerData = campaignTrail_temp.answers_json;
+
+   // find the indices of the objects with the specified PKs
+    const index1 = answerData.findIndex(item => Number(item.pk) === Number(pk1));
+    const index2 = answerData.findIndex(item => Number(item.pk) === Number(pk2));
+
+    // check if objects with those PKs exist
+    if (index1 === -1 || index2 === -1) return;
+
+    // swap the question assignment
+    const tempQuestion = answerData[index1].fields.question;
+    answerData[index1].fields.question = answerData[index2].fields.question;
+    answerData[index2].fields.question = tempQuestion;
+
+    // if takeEffects is true, answers swap effects also
+    if (takeEffects) {
+        const otherJsons = [
+            campaignTrail_temp.answer_score_global_json,
+            campaignTrail_temp.answer_score_issue_json,
+            campaignTrail_temp.answer_score_state_json,
+            campaignTrail_temp.answer_feedback_json
+        ];
+
+        otherJsons.forEach(jsonData => {
+            jsonData.forEach(item => {
+                if (item.fields.answer === pk1) item.fields.answer = -99999;
+            });
+            jsonData.forEach(item => {
+                if (item.fields.answer === pk2) item.fields.answer = pk1;
+            });
+            jsonData.forEach(item => {
+                if (item.fields.answer === -99999) item.fields.answer = pk2;
+            });
+        });
+    }
+}
+
+
+
+campaignTrail_temp.cyoa = true;
+
+function getQuestionNumberFromPk(pk) {
+    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
+}
+
+e = campaignTrail_temp
+
+var PolCap = 4;
+var Unity = 1;
+var Wins = 0;
+var Resol = 4;
+var Good = 0;
+var Econ = 3;
+var Frgn = 3;
+var Iraq = 0;
+var Bail = 0;
+var PM = "Blair"
+var CampaignSign = "PMBlair"
+
+
+ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+campaignTrail_temp.player_answers = [];
+
+cyoAdventure = function(a) {
+ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+    if(ans == ___){
+        campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
+        campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
+        campaignTrail_temp.running_mate_last_name = "Brown";
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+        CampaignSign = "PMBrown"
+        PM = "Brown"
+        document.getElementById("header").src = "____.jpg"  
+        document.body.background = "____.jpg"  
+        campaignTrail_temp.election_json[0].fields.advisor_url = "https://imgur.com/wM1tHiy.jpg";
+        Unity = 5
+        Frgn += 2
+
+        campaignTrail_temp.running_mate_json = JSON.parse(`[{
+              "model": "campaign_trail.running_mate",
+              "pk": 1,
+              "fields": {
+                  "candidate": ___,
+                  "running_mate": ___
+              }
+        }]`);
+            window.setTimeout(e.candidateSwitcher, 20)
+            e.VpText = "Please select your party leader:"
+    }   
+}
+
+
+
 e = campaignTrail_temp
 
 	campaignTrail_temp.answer_feedback_flg = 1;
-	campaignTrail_temp.game_start_logging_id = '3662479999';
+	campaignTrail_temp.game_start_logging_id = '3662489999';
 	
 	const targetNode = document.getElementById("game_window");
 	const config = { attributes: true, childList: true, subtree: true };
@@ -20,19 +117,13 @@ function updateQuestionBanner() {
 		if(!questionBanner || questionBanner.nodeName != "DIV") return;
 		let img = document.createElement('img');
 		if(CampaignSign == "PMBlair"){
-			img.src = 'https://imgur.com/vheneLE.png';
+			img.src = 'https://imgur.com/ed8RDJv.png';
 		}
-        else if(CampaignSign == "CotEBrown"){
-			img.src = 'https://imgur.com/aswORgv.png';
-		}
-        else if(CampaignSign == "TonyGordon"){
-			img.src = 'https://imgur.com/nxFwooH.png';
-		}
-        else if(CampaignSign == "LabBlair"){
-			img.src = 'https://imgur.com/coFQrUF.png';
+        else if(CampaignSign == "PMBrown"){
+			img.src = 'https://imgur.com/4cLPc1k.png';
 		}
         else if(CampaignSign == "LabBrown"){
-            img.src = 'https://imgur.com/Rwq6mLt.png';
+            img.src = 'https://imgur.com/VUmfWHZ.png';
         }
 		questionBanner.replaceWith(img);
 }
