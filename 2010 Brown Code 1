@@ -1050,12 +1050,14 @@ campaignTrail_temp.running_mate_json = [
 
 campaignTrail_temp.credits = "<button onclick='credits()'>NoReading, well, and:</button>"
 
+
 window.credits = function () {
 	const creditsList = ["[Coding]", "By: u/No-Reading9991, with great help from u/ItsAstronomical, u/StrawberryMaster and u/SnooOwls4610", "", "[Writing]", "By: u/No-Reading9991, with much appreciated help from u/Milothebest", "", "[Extra Code]", "Music Player and 2000s Interface - W.", "FPTP System - From 2024a by AeronauticBlueberry", "Ending Pages Code - 1952 Truman", "Other Interface Jargin – 2016: A Lfietime of This","", "[And A Huge Thanks...]", "To you: The Campaign Trail Community who inspired me so much in the first place!"]
 	const text = creditsList.join('\n');
 
 	alert(text);
 }
+
 
 vpTableHistorical = {
     "The Labour Party" : "J. Gordon Brown",
@@ -1064,36 +1066,39 @@ vpTableHistorical = {
     "The Scotland National Party" : "Alex E. A. Salmond",
     "The Green Party" : "Caroline P. Lucas",
     "The UK Independence Party" : "Lord Pearson of Rannoch",
-    "Independent/Others" : "Various Others",
+    "The British National Party" : "Nick J. Griffin",
     "The Democratic Unionist Party" : "Peter D. Robinson",
     "Sinn Féin" : "Gerry Adams",
     "Plaid Cymru" : "Ieuan W. Jones",
     "The Alliance" : "David Ford",
-    "SDLP" : "Margaret Ritchie",
-    "The Speaker" : "John S. Bercow"
+    "The SDLP" : "Margaret Ritchie",
+    "The Speaker" : "John S. Bercow",
+    "Independents/Others" : "Various Others"
 }
 
 HistEV = {
     "The Conservative Party" : "306",
     "The Labour Party" : "258",
-    "The Liberal Democrats" : "62",
+    "The Liberal Democrats" : "57",
     "The Scotland National Party" : "6",
-    "The Democratic Unionist Party" : "9",
+    "The Democratic Unionist Party" : "8",
+    "The British National Party": "0",
     "Sinn Féin" : "5",
     "Plaid Cymru" : "3",
-    "SDLP" : "3",
-    "The Ulster Unionist Party" : "1",
+    "The SDLP" : "3",
+    "The Alliance" : "1",
     "The UK Independence Party" : "0",
-    "The Green Party" : "0",
+    "The Green Party" : "1",
     "Independent/Others" : "1",
     "The Speaker" : "1"
 }
 
-HistHexcolour=["#4848a8","#e84545","#ffb752","#fff81f","#c37c18","#a8ea90","#3a741b","#01ad73","#89e1a4","#a433e1","#71d82c","#b0b0b0","#dedede"];
-HistName=["The Conservative Party","The Labour Party","The Liberal Democrats","The Scotland National Party","The Democratic Unionist Party","Sinn Féin","Plaid Cymru","SDLP","The Ulster Unionist Party","The UK Independence Party","The Green Party","Independent/Others","The Speaker"];
-HistEV=["306","258","57","6","9","5","3","3","1","0","0","1","1"];
-HistPV=["9,552,376","8,785,942","5,985,704","412,267","241,856","174,530","174,838","125,626","127,414","605,973","257,758","689,073","15,153"];
-HistPVP=["35.2%","32.4%","22.0%","1.5%","0.9%","0.6%","0.6%","0.5%","0.5%","2.2%","1.0%","2.5%","0.1%"];
+HistHexcolour=["#4848a8","#e84545","#ffb752","#c37c18","#fff81f","#a8ea90","#3a741b","#01ad73","#89e1a4","#71d82c","#b0b0b0","#dedede","#a433e1","#000000"];
+HistName=["The Conservative Party","The Labour Party","The Liberal Democrats","The Democratic Unionist Party","The Scotland National Party","Sinn Féin","Plaid Cymru","The SDLP","The Alliance","The Green Party","Independent/Others","The Speaker","The UK Independence Party","The British National Party"];
+HistEV=["306","258","57","8","6","5","3","3","1","1","1","1","0","0"];
+HistPV=["10,703,754","8,609,527","6,836,824","168,216","491,386","171,942","165,394","110,970","42,762","265,247","614,845","22,860","919,546","564,331"];
+HistPVP=["36.1%","29.0%","23.0%","0.6%","1.7%","0.6%","0.6%","0.4%","0.1%","0.9%","1.9%","0.1%","3.1%","1.9%"];
+
 
 campaignTrail_temp.opponents_default_json = [
     {
