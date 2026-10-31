@@ -841,68 +841,94 @@ e = campaignTrail_temp;
 
 
 // Popup HQ
-let lastKnownStats = { Cred: null, Resign: null, Wins: null, Frgn: null, OldLab: null };
+let lastKnownStats = { Unity: null, Wins: null, Frgn: null, PolCap: null, Resol: null, Good: null, Econ: null };
 
 function updateSimplePopup() {
     const content = document.getElementById("popupContent");
     if (!content) return;
 
-    const cCred = typeof Cred !== "undefined" ? Cred : 0;
-    const cResign = typeof Resign !== "undefined" ? Resign : 0;
+    const cPolCap = typeof PolCap !== "undefined" ? PolCap : 0;
+    const cUnity = typeof Unity !== "undefined" ? Unity : 0;
+    const cResol = typeof Resol !== "undefined" ? Resol : 0;
     const cWins = typeof Wins !== "undefined" ? Wins : 0;
+    const cGood = typeof Good !== "undefined" ? Good : 0;
+    const cEcon = typeof Econ !== "undefined" ? Econ : 0;
     const cFrgn = typeof Frgn !== "undefined" ? Frgn : 0;
-    const cOldLab = typeof OldLab !== "undefined" ? OldLab : 0;
 
     if (
-        lastKnownStats.Cred === cCred &&
-        lastKnownStats.Resign === cResign &&
+        lastKnownStats.PolCap === cPolCap &&
+        lastKnownStats.Unity === cUnity &&
+        lastKnownStats.Resol === cResol &&
         lastKnownStats.Wins === cWins &&
-        lastKnownStats.Frgn === cFrgn &&
-        lastKnownStats.OldLab === cOldLab
+        lastKnownStats.Good === cGood &&
+        lastKnownStats.Econ === cEcon &&
+        lastKnownStats.Frgn === cFrgn
     ) {
         return; 
     }
 
-    lastKnownStats = { Cred: cCred, Resign: cResign, Wins: cWins, Frgn: cFrgn, OldLab: cOldLab };
+    lastKnownStats = { Unity: cUnity, Wins: cWins, Frgn: cFrgn, PolCap: cPolCap, Resol: cResol, Good: cGood, Econ: cEcon };
 
     content.innerHTML = `
       <p>
-        <span class="hover-value" data-tooltip="The public’s trust in your government heading into the election.">Government Trust</span>: 
-        <span ${cCred <= 1 ? "style=\"color:#ad1313;\"" : cCred <= 6 ? "style=\"color:#d58627;\"" : cCred >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
-          cCred <= -5 ? 'Catastrophic' :
-          cCred === -4 ? 'Horror incarnate' :
-          cCred === -3 ? 'A trainwreck' :
-          cCred === -2 ? 'In shambles' :
-          cCred === -1 ? 'In the gutter' :
-          cCred === 0 ? 'Falling Sharply' :
-          cCred === 1 ? 'Declining' :
-          cCred === 2 ? 'Deteriorating' :
-          cCred === 3 ? 'Recoverable' :
-          cCred === 4 ? 'Turning heads' :
-          cCred <= 6 ? 'On the right track' :
-          cCred <= 8 ? 'Respectable' :
-          cCred <= 10 ? 'Strong' :
-          cCred <= 12 ? 'Undeniable' :
-          cCred <= 14 ? 'Indomitable' :
+        <span class="hover-value" data-tooltip="The extent of which you can push initiatives.">Political Capital</span>: 
+        <span ${cPolCap <= 1 ? "style=\"color:#ad1313;\"" : cPolCap <= 6 ? "style=\"color:#d58627;\"" : cPolCap >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          cPolCap <= -5 ? 'Catastrophic' :
+          cPolCap === -4 ? 'Horror incarnate' :
+          cPolCap === -3 ? 'A trainwreck' :
+          cPolCap === -2 ? 'In shambles' :
+          cPolCap === -1 ? 'In the gutter' :
+          cPolCap === 0 ? 'Falling Sharply' :
+          cPolCap === 1 ? 'Declining' :
+          cPolCap === 2 ? 'Deteriorating' :
+          cPolCap === 3 ? 'Recoverable' :
+          cPolCap === 4 ? 'Turning heads' :
+          cPolCap <= 6 ? 'On the right track' :
+          cPolCap <= 8 ? 'Respectable' :
+          cPolCap <= 10 ? 'Strong' :
+          cPolCap <= 12 ? 'Undeniable' :
+          cPolCap <= 14 ? 'Indomitable' :
           'In the heavens'
-        }">${cCred.toFixed(1)}</span>
+        }">${cPolCap.toFixed(1)}</span>
+      </p>
+
+      <p>
+        <span class="hover-value" data-tooltip="How united Labour is behind you.">Party Unity</span>: 
+        <span ${cUnity <= 1 ? "style=\"color:#ad1313;\"" : cUnity <= 6 ? "style=\"color:#d58627;\"" : cUnity >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          cUnity <= -5 ? 'Catastrophic' :
+          cUnity === -4 ? 'Horror incarnate' :
+          cUnity === -3 ? 'A trainwreck' :
+          cUnity === -2 ? 'In shambles' :
+          cUnity === -1 ? 'In the gutter' :
+          cUnity === 0 ? 'Falling Sharply' :
+          cUnity === 1 ? 'Declining' :
+          cUnity === 2 ? 'Deteriorating' :
+          cUnity === 3 ? 'Recoverable' :
+          cUnity === 4 ? 'Turning heads' :
+          cUnity <= 6 ? 'On the right track' :
+          cUnity <= 8 ? 'Respectable' :
+          cUnity <= 10 ? 'Strong' :
+          cUnity <= 12 ? 'Undeniable' :
+          cUnity <= 14 ? 'Indomitable' :
+          'In the heavens'
+        }">${cUnity.toFixed(1)}</span>
+      </p>
+
+      <p>
+        <span class="hover-value" data-tooltip="Britain’s perception of your leadership.">Resoluteness</span>: 
+        <span ${cResol <= 1 ? "style=\"color:#ad1313;\"" : cResol <= 6 ? "style=\"color:#d58627;\"" : cResol >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          cResol <= -5 ? 'Catastrophic' :
+          cResol === -4 ? 'Horror incarnate' :
+          cResol === 0 ? 'Falling Sharply' :
+          cResol === 1 ? 'Declining' :
+          cResol <= 12 ? 'Undeniable' :
+          cResol <= 14 ? 'Indomitable' :
+          'In the heavens'
+        }">${cResol.toFixed(1)}</span>
       </p>
   
       <p>
-        <span class="hover-value" data-tooltip="How secure your standing as Prime Minister is.">Your Premiership</span>: 
-        <span ${cResign <= 1 ? "style=\"color:#7ba922;\"" : cResign <= 3 ? "style=\"color:#d58627;\"" : cResign >= 4 ? "style=\"color:#ad1313;\"" : ""} class="hover-value" data-tooltip="${
-          cResign <= -2 ? 'Marking a New Era – Hopefully' :
-          cResign <= 0 ? 'Secure' :
-          cResign === 1 ? 'Stable' :
-          cResign === 2 ? 'Showing Stress' :
-          cResign === 3 ? 'Threatened' :
-          cResign === 4 ? 'Endangered' :
-          'Compromised – start packing your bags'
-        }">${cResign.toFixed(1)}</span>
-      </p>
-  
-      <p>
-        <span class="hover-value" data-tooltip="The victories your government has secured since 2001.">Moves Forward</span>: 
+        <span class="hover-value" data-tooltip="The victories your government has secured since 2005.">Moves Forward</span>: 
         <span ${cWins <= 2 ? "style=\"color:#ad1313;\"" : cWins <= 5 ? "style=\"color:#d58627;\"" : cWins >= 6 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           cWins <= 0 ? 'None at all' :
           cWins === 1 ? 'Few and far between' :
@@ -919,7 +945,33 @@ function updateSimplePopup() {
      </p>
 
      <p>
-        <span class="hover-value" data-tooltip="How influential we are in foreign affairs.">Our Image Abroad</span>: 
+        <span class="hover-value" data-tooltip="Our work’s success for the people.">The Public Good</span>: 
+        <span ${cGood <= 1 ? "style=\"color:#ad1313;\"" : cGood <= 6 ? "style=\"color:#d58627;\"" : cGood >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          cGood <= -5 ? 'Catastrophic' :
+          cGood === -4 ? 'Horror incarnate' :
+          cGood === 0 ? 'Falling Sharply' :
+          cGood === 1 ? 'Declining' :
+          cGood <= 12 ? 'Undeniable' :
+          cGood <= 14 ? 'Indomitable' :
+          'In the heavens'
+        }">${cGood.toFixed(1)}</span>
+     </p>
+
+     <p>
+        <span class="hover-value" data-tooltip="How well the economy is performing.">The Economy</span>: 
+        <span ${cEcon <= 1 ? "style=\"color:#ad1313;\"" : cEcon <= 6 ? "style=\"color:#d58627;\"" : cEcon >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
+          cEcon <= -5 ? 'Catastrophic' :
+          cEcon === -4 ? 'Horror incarnate' :
+          cEcon === 0 ? 'Falling Sharply' :
+          cEcon === 1 ? 'Declining' :
+          cEcon <= 12 ? 'Undeniable' :
+          cEcon <= 14 ? 'Indomitable' :
+          'In the heavens'
+        }">${cEcon.toFixed(1)}</span>
+     </p>
+
+     <p>
+        <span class="hover-value" data-tooltip="How much sway we have on the world stage.">Britain Abroad</span>: 
         <span ${cFrgn <= 2 ? "style=\"color:#ad1313;\"" : cFrgn <= 6 ? "style=\"color:#d58627;\"" : cFrgn >= 7 ? "style=\"color:#7ba922;\"" : ""} class="hover-value" data-tooltip="${
           cFrgn <= 0 ? 'An international embarassement' :
           cFrgn === 1 ? 'Mocked at the UN' :
@@ -928,24 +980,10 @@ function updateSimplePopup() {
           cFrgn === 4 ? 'A valued voice' :
           cFrgn === 5 ? 'Respected abroad' :
           cFrgn === 6 ? 'Having Europe’s ear' :
-          cFrgn === 7 ? 'The Trans-Atlantic bridge' :
-          cFrgn === 8 ? 'Eyes and ears everywhere' :
-          cFrgn === 9 ? 'A world statesman' :
+          cFrgn === 7 ? 'Eyes and ears everywhere' :
+          cFrgn === 8 ? 'A world statesman' :
           'The rose-red dove'
         }">${cFrgn.toFixed(1)}</span>
-      </p>
-  
-      <p>
-        <span class="hover-value" data-tooltip="Your willingness to accept Old Labour, over New.">Labour And You</span>: 
-        <span ${cOldLab <= 1 ? "style=\"color:#ff8097;\"" : cOldLab <= 4 ? "style=\"color:#de1237;\"" : cOldLab >= 5 ? "style=\"color:#99000f;\"" : ""} class="hover-value" data-tooltip="${
-          cOldLab <= 0 ? 'Virtually non-existent' :
-          cOldLab === 1 ? 'But a footnote' :
-          cOldLab === 2 ? 'Reticent, but noticeable' :
-          cOldLab === 3 ? 'Well under way' :
-          cOldLab === 4 ? 'Showing signs of Prime Minister Wilson' :
-          cOldLab === 5 ? 'Embracing traditions of years past' :
-          'Marking a new era'
-        }">${cOldLab.toFixed(1)}</span>
       </p>
 
       <p>
