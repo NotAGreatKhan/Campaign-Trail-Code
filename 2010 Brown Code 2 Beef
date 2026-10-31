@@ -16286,13 +16286,12 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ];
 
-//#startcode
-campaignTrail_temp.candidate_image_url = '/static/images/charles-evans-hughes-1916.jpg';
-campaignTrail_temp.running_mate_image_url = '/static/images/charles-w-fairbanks-1916.jpg';
-campaignTrail_temp.candidate_last_name = 'Hughes';
-campaignTrail_temp.running_mate_last_name = 'Fairbanks';
-campaignTrail_temp.running_mate_state_id = '419';
-//#endcode
+
+campaignTrail_temp.candidate_image_url = 'https://imgur.com/RzlDlUU.jpg';
+campaignTrail_temp.running_mate_image_url = 'https://imgur.com/BS9nyl9.jpg';
+campaignTrail_temp.candidate_last_name = 'Labour';
+campaignTrail_temp.running_mate_last_name = 'Blair';
+
 
 campaignTrail_temp.jet_data = [{
     "nicknames": {
@@ -16388,9 +16387,8 @@ cyoAdventure = function(a) {
 ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
     if(ans == ___){
         campaignTrail_temp.candidate_last_name = "<small>Prime Minister</small>";
-        campaignTrail_temp.candidate_image_url = "https://imgur.com/W039QAR.png"
         campaignTrail_temp.running_mate_last_name = "Brown";
-        campaignTrail_temp.running_mate_image_url = "https://imgur.com/6tjeQpZ.png"
+        campaignTrail_temp.running_mate_image_url = "https://imgur.com/d3p2jMd.jpg"
         CampaignSign = "PMBrown"
         PM = "Brown"
         document.getElementById("header").src = "____.jpg"  
