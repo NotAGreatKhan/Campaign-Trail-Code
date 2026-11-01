@@ -1187,7 +1187,7 @@ $("#game_window")[0].style.backgroundColor = "#444446";
 $("#game_window")[0].style.backgroundSize = "cover"; 
 $(".container")[0].style.backgroundColor = "#383636";
 document.getElementById("header").src = "https://imgur.com/gp8MS62.jpg";
-document.body.background = "https://imgur.com/5iW7LMv.jpg";
+document.body.background = "https://imgur.com/kx8xkhn.jpg";
 document.body.style.backgroundSize = "cover"
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#eadcde!important;}</style>";
 
