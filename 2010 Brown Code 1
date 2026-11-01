@@ -278,7 +278,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": "#90C0FF",
             "is_active": 1,
-            "image_url": "https://thecampaigntrail.net/static/images/woodrow-wilson-1916.jpg",
+            "image_url": "https://imgur.com/z8uqfWe.jpg",
             "electoral_victory_message": "<h3>Congratulations! You have won the 1916 election.</h3><p>In spite of a hard-fought challenge from Charles Evans Hughes, you have held on to the Presidency.</p><p>On the domestic front, it appears that your support of labor and progressivism has been rewarded. Internationally, let's all hope that fears of war with Germany prove to be unfounded.</p>",
             "electoral_loss_message": "<h3>Sorry, you have lost the 1916 election.</h3><p>Maybe 1912 was just an anomaly, brought about by Roosevelt's grandstanding. It has been over 20 years since the Democrats defeated a united Republican Party, and that advantage shows no sign of abating.</p><p>On the domestic front, let's hope that your achievements survive. Internationally, no one can say what might happen next. In a novel move, you have offered to do your part by resigning immediately, rather than waiting until March 4th.</p>",
             "no_electoral_majority_message": "<h3>No candidate has captured an Electoral College majority.</h3><p>Elections for Congress have also resulted in an even split among members, and it is extremely unclear who might ultimately win this election. Best of luck in what is sure to be a contentious process.</p>",
