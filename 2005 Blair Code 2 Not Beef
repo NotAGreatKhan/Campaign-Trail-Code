@@ -4010,6 +4010,45 @@ But whatever the consequences of this might be, one thing that is undeniable is 
 e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/1H1566f.jpg"})])
 }
 
+else if (aa[0].candidate == 12587) {
+e.pages.push(`
+<h3 style='text-align: center;'>Wikipedia, the free encyclopedia | <i>2010</i></h3>
+<div class="ending-slide tv-fade wiki-style" style="background-color: #fff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-family: 'Linux Libertine', Georgia, serif;">
+<div style="display: flex; align-items: center;">
+<img src="https://pngimg.com/uploads/wikipedia/wikipedia_PNG40.png" alt="Wikipedia logo" style="height: 40px; margin-right: 12px;">
+        <div style="font-size: 12px; color: #555;">
+          <span style="margin-right: 8px;"><strong>Read</strong></span>
+          <span style="margin-right: 8px;">Edit</span>
+          <span style="margin-right: 8px;">View history</span>
+          <span style="margin-right: 8px;">Tools</span>
+         </div>
+</div>
+    <div style="font-size: 12px; color: #555;">
+      <span style="margin-right: 8px;">Add languages</span>
+      <span style="margin-right: 8px;">Create account</span>
+      <span>Log in</span>
+    </div>
+</div>
+<p>
+<b style="font-size: 1.2em;">2005 Labour Party Leadership Election</b>
+<img src="https://imgur.com/EjthOZL.jpg" alt="2005 Labour Leadership Election" style="height: 600px; margin-right: 40 px;">
+<br>
+The <b>2005 Labour Party leadership election</b> was triggered on 21 June 2005 by incumbent leader <a href="#" style="color:#3366cc;">Tony Blair</a>'s announcement that he would resign as leader on 5 May after <a href="#" style="color:#3366cc;">the 2005 general election.</a> At the same time that Blair resigned, <a href="#" style="color:#3366cc;">John Prescott</a> resigned as <a href="#" style="color:#3366cc;">Deputy Leader</a>, triggering <a href="#" style="color:#3366cc;">a concurrent election for the deputy leadership.</a><sup><a href="#" style="color:#3366cc;">[1]</a><a href="#" style="color:#3366cc;">[2]</a></sup>
+<br><br>
+Informal campaigning had been ongoing ever since Blair announced in 2004 that he would not be fighting a fourth general election as leader. After the Labour Party lost to the Liberal Democrats in the 2005 election, Blair was pressured to resign to make way for a new leader to turn the party around.<sup><a href="#" style="color:#3366cc;">[3]</a></sup> Labour’s <a href="#" style="color:#3366cc;">National Executive Committee</a> (NEC) met on 24 June 2005 to decide a timetable.<sup><a href="#" style="color:#3366cc;">[4]</a><a href="#" style="color:#3366cc;">[5]</a></sup> Nominations opened on 25 June and closed at 12:30 UTC+1 on 28 June 2005.
+<br><br>
+Blair said that he wished for <a href="#" style="color:#3366cc;">Gordon Brown</a> to succeed him, and that Brown “would make an excellent party leader”. When nominations for the leadership elections opened, Blair was one of those nominating Brown.<sup><a href="#" style="color:#3366cc;">[6]</a></sup> Initially, most observers considered Brown the favourite to succeed Blair; <a href="#" style="color:#3366cc;">John McDonnell</a>, his first challenger, failed to secure enough nominations in order to get on the ballot, and conceded defeat thereafter.<sup><a href="#" style="color:#3366cc;">[7]</a></sup> However, <a href="#" style="color:#3366cc;">David Miliband</a> decided to also challenge Brown. To the surprise of observers, Miliband secured more than enough nominations to get on the ballot. Miliband received 46% of nominations to Brown’s 45%, and McDonnell’s 9%, meaning it was mathematically impossible for anyone else to be nominated. After a campaign focused on the future of the party after their defeat, Brown’s chances of securing the leadership looked increasingly tenuous.<sup><a href="#" style="color:#3366cc;">[8]</a></sup>
+<br><br>
+The election process concluded with Miliband pulling a major upset against Brown and being declared leader at a special conference on 5 August 2005. On 8 August, Blair resigned as <a href="#" style="color:#3366cc;">Party Leader</a> and was succeeded by Miliband.<sup><a href="#" style="color:#3366cc;">[9]</a></sup>
+<br><br>
+This was the first leadership election of the Labour Party where Labour Party members could directly elect a new party leader.
+</p>
+</div>
+`)
+e.executable.push([1, (() => {e.image = e.image = "https://imgur.com/WGT6vyV.jpg"})])
+}
+
 
 // THIRD SLIDES
 if (iraq == 1 && e.player_answers.includes(12814) || e.player_answers.includes(14584) && e.player_answers.includes(12819)) {
