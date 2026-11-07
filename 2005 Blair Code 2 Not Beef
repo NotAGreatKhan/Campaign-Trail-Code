@@ -3385,7 +3385,6 @@ if (used != true) {
 }
 
 
-// Howard First Slides
 else if (quickstats[0] >= 324 && aa[0].candidate == 12565) {
 e.pages.push(`
 <h3 style='text-align: center;'>As Big Ben strikes 10, we can predict that the Conservatives have won the election, in a definitive repudiation of Tony Blair’s government.</h3>
@@ -3486,6 +3485,52 @@ You sure as hell are going to need it.
 </div>
 `)
 e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/lEhHSIt.gif"})])
+}
+
+else if (aa[0].candidate == 12587) {
+e.pages.push(`
+<div class="ending-slide tv-fade first-page-style" style="background-color: #fff; color: #000; padding: 16px; max-width: 960px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<h3 style='text-align: center;'>As Big Ben strikes 10, we can predict a hung Parliament for Britain, with the Liberal Democrats as the largest party.</h3>
+<i>David Dimbleby’s voice rings out across the Party headquarters</i>. An bewildered state of apoplexia besets the Party faithful, who are not already hanging their heads in utter embarrassment. The same thing is on everyone’s mind:
+<br><br>
+What happens now?
+<br><br>
+You yourself are watching the returns roll in on the BBC’s outside floor map, surrounded by chipper, tired students stocking up on yellow highlighters. You cannot fathom it, a sea of red being washed away like sand by a tide of orange. The blotches of Democrat orange sprawl outwards like a plague, contaminating and killing (politically) Labour MPs as red constituencies flash ‘LD GAIN’ instead of going to the traditional holders of the Tories. It is not just Labour on the chopping block, the Conservative MPs teetering on marginal seats are swept under, as all of Southern England is speckled by the pimples popping the two-party system away.
+<br><br>
+The pundits and stars on the BBC were not comforting in the slightest. Paxman, Marr, and Dimbleby all chatter about the “significance this poses to the dominance of the major parties”, the salt only gets rubbed in the red wound more whenever they interview dejected Labour supporters who still believed in the project. Those who still believed in <i>you</i>.
+<br><br>
+And all this time, you thought this election would vindicate your vision for forever more.
+<br><br>
+Your mind declines to a spiralling cascade of possibilities that never were, and decisions that were never taken. Every mistake you made, every decision that spurred on those damn protests, every attack that you let run amuck in the media. Where was the election-winning machine Tony Blair? Why didn’t his heart beat with middle Britain this time around? How did he let <i>the Liberal Democrats</i> of all parties snatch the rug from right under him? Those are the headlines that will be etched into the papers in the following days — hell, even hours. Your neck feels as if it’s being hung by a coarse noose of electoral humiliation. You run through all of the possible scenarios of the next Labour government. Anything, damnit…
+<br><br>
+…A Labour-Liberal coalition was arithmetically sensible, but unfeasible with how seething the Liberal Democratic MPs are to you…
+<br><br>
+…A coalition with any of the devolved parties – or hell all of them – was not a route. The MPs gained would be too bloody small…
+<br><br>
+…Nearly a century ago, a parliamentary coalition of individual MPs was tried even when the PM resigned as party leader…
+<br><br>
+…When he reached that point of arguing, he knew to throw in the towel and hang up his hat.
+<br><br>
+It is not long before you recline yourself to the backroom, the flashing lights replaced by a frigid, unfeeling, subdued darkness. It isn’t long, however, before a nasal tune rings from your mobile phone. Jolted to your senses, you hastily unfold it, the tactile button is pressed, and a familiar voice you hear on the other end.
+<br><br>
+“Hey Tony, this has really gone balls up, hasn’t it.” His voice sounds defeated.
+<br><br>
+“No, no it hasn't exactly gone our way,” you tighten the grip on your phone – although conscious to not snap it in two beneath your disconcertment, “The bloody Lib Dems have gone in and swept us from behind.”
+<br><br>
+“Yeah, fucking hell I don’t see how you can recover from this.”
+<br><br>
+You can nigh feel Alastair Campbell rubbing his eyes under his thickset eyebrows.
+<br><br>
+“By the way, Alastair, I hope you’ve been feeling alright. That whole thing whilst you were in government, it was a lot and-”
+<br><br>
+“It’s alright, Tony. I’m doin’ okay. We’re just going to have to prepare for the worst and get ready for Opposition.” The ex-journalist replies.
+<br><br>
+You both exchange your memorised closing platitudes, and with a sigh, close your phone and withdraw it back within your pocket – pondering some upcoming grueling negotiations you may imminently be embroiled in. The room feels darker than ever before.
+<br><br>
+In spite of every bludgeoning you endured, every decision you agonised on, the transformative “Third Way” agenda you set out, the British people threw it to the ground. And whatever you do post-politics, I wish it will bring more happiness than all of this has.
+</div>
+`)
+e.executable.push([0, (() => {e.image = e.image = "https://imgur.com/8XxAxzg.jpg"})])
 }
 
 else if (aa[0].candidate == 12543) {
