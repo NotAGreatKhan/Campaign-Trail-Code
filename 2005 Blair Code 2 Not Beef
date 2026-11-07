@@ -4239,7 +4239,7 @@ e.pages.push(`
 <select name="2010 UK" id="2010"><option value="0">2010 UK</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
-<img src = https://imgur.com/pG6ZWzH.png>
+<img src = "https://imgur.com/pG6ZWzH.png">
 <br><br>
 New Labour has been in government for over a decade. In that time, Britain has seen the Iraq War, Tony Blair's resignation, and now the worst recession in 70 years.
 <br><br>
@@ -4267,7 +4267,7 @@ e.pages.push(`
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
-<img src = https://imgur.com/z9KRAk2.png>
+<img src = "https://imgur.com/z9KRAk2.png">
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
 <br><br>
@@ -4294,7 +4294,7 @@ e.pages.push(`
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
-<img src = https://imgur.com/BpmRe6y.png>
+<img src = "https://imgur.com/BpmRe6y.png">
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
 <br><br>
@@ -4321,7 +4321,7 @@ e.pages.push(`
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
-<img src = https://imgur.com/6WEgSOX.png>
+<img src = "https://imgur.com/6WEgSOX.png">
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
 <br><br>
@@ -4348,7 +4348,7 @@ e.pages.push(`
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
-<img src = https://imgur.com/Tx0qRcH.png>
+<img src = "https://imgur.com/Tx0qRcH.png">
 <br><br>
 Heading into the 2005 election, the campaign will be fiercely debated on the fate of the UK in the European Union. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
 <br><br>
@@ -4375,7 +4375,7 @@ e.pages.push(`
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
-<img src = https://imgur.com/Sb2rzJ4.png>
+<img src = "https://imgur.com/Sb2rzJ4.png">
 <br><br>
 Heading into the 2005 election, the campaign is being fought in the backdrop of the controversial Iraq War. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
 <br><br>
@@ -4403,12 +4403,41 @@ e.pages.push(`
 <select name="2005" id="2005"><option value="0">2005</option></select>
 <br><br>
 <div style="background-color: #ffffff;">
-<img src = https://imgur.com/q2nEzkL.png>
+<img src = "https://imgur.com/q2nEzkL.png">
 <br><br>
 Heading into the 2005 election, the campaign is being fought in the backdrop of the controversial Iraq War. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
 <br><br>
 <li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
 <li>Michael Howard, elected unopposed after Iain Duncan Smith’s fall, must strategically position himself to clinch victory.</li>
+</div>
+<br><br>
+<button>Continue</button>
+<br><br>
+This scenario was made by Sir Daniel Bryan MBE.
+</p>
+</div>
+</div>
+</div>
+`)
+e.executable.push([3, (() => {e.image = e.image = "https://imgur.com/WotSF9e.jpg"})])
+}
+
+else if (aa[0].candidate == 12587) {     
+e.pages.push(`
+<h3 style='text-align: center;'>Do you have what it takes to win a General Election?</h3>
+<div class="ending-slide tv-fade campaign-trail-style" style="background-color: #e8fbff; color: #202122; padding: 16px; max-width: 800px; margin: 0 auto; border: 1px solid #a2a9b1;">
+<p>
+<div style="background-color: #bfe6ff;">
+<select name="2005" id="2005"><option value="0">2005</option></select>
+<br><br>
+<div style="background-color: #ffffff;">
+<img src = "https://imgur.com/NiqiAwv.png">
+<br><br>
+Heading into the 2005 election, the campaign is being fought in the backdrop of the controversial Iraq War. The economy is running smoothly, but crime, healthcare, and immigration will still be hotly discussed on the trail.
+<br><br>
+<li>Prime Minister Blair, entering the race down in the polls from 2001, must defend his record and keep the Tories down.</li>
+<li>Michael Howard, elected after Iain Duncan Smith’s fall, must strategically position himself to clinch victory.</li>
+<li>Charles Kennedy hopes to end the two-party system and be the first liberal to lead the government in nearly a century.</li>
 </div>
 <br><br>
 <button>Continue</button>
