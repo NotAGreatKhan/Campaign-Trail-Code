@@ -275,7 +275,7 @@ campaignTrail_temp.candidate_json = [
             "state": "Social Democratic – New Labour",
             "priority": 1,
             "description": "<p>Woodrow Wilson won in a 1912 landslide, and has passed an array of legislation in his first term. In 1916, however, foreign affairs are beginning to dominate. A loud minority of Democrats are aggressively anti-war and expect the same from Wilson. Can Wilson make the case that his passage of an antitrust act, a child labor law, an income tax Amendment, and the Federal Reserve Act, all warrant reelection? His recent remarriage has also fed some gossip.</p>",
-            "color_hex": "#0000FF",
+            "color_hex": "#ca3f3f",
             "secondary_color_hex": "#90C0FF",
             "is_active": 1,
             "image_url": "https://imgur.com/z8uqfWe.jpg",
